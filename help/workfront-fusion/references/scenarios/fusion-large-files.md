@@ -4,9 +4,9 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 4422a0d9236c4fe783b3b8d2757a86c91bcca748
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,9 @@ Pour la version initiale, les connecteurs suivants prennent en charge les fichie
 * Adobe Experience Manager Assets > Charger le document
 * Workfront Proof > Charger un fichier
 * Adobe Authenticator > Effectuer un appel API personnalisé
+* SharePoint > Créer un fichier et SharePoint > Obtenir un fichier
+* Salesforce > Charger un fichier
+* AWS S3 > Télécharger le fichier et AWS S3 > Obtenir le fichier
 * HTTP
 
 D’autres connecteurs seront pris en charge dans les prochaines versions.
