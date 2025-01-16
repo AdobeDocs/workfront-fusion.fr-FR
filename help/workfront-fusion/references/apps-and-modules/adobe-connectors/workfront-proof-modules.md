@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
+source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
 workflow-type: tm+mt
-source-wordcount: '2727'
-ht-degree: 84%
+source-wordcount: '2664'
+ht-degree: 80%
 
 ---
 
@@ -25,6 +25,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
 <table style="table-layout:auto">
@@ -32,35 +34,37 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail], [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation du travail]</p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Informations sur Workfront Proof
 
@@ -100,11 +104,11 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Proof] directem
                 <td>Saisir le nom de la connexion</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>Sélectionnez s’il s’agit d’un environnement de production ou d’un environnement de non-production tel que Prévisualisation ou Sandbox.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>Sélectionnez s’il s’agit d’un compte de service ou d’un compte personnel.</td>
             </tr>
             <tr>
@@ -125,7 +129,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Proof] directem
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>Sélectionnez une connexion à un environnement de production, de prévisualisation ou personnalisé.</td>
+                <td>Environnement de production, d’aperçu ou personnalisé auquel vous souhaitez vous connecter.</td>
             </tr>
         </tbody>
     </table>
@@ -147,9 +151,61 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-* [Regarder les épreuves](#watch-proofs)
 * [Regarder les résumés PDF](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Regarder les épreuves](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+Ce module de déclenchement instantané exécute un scénario lorsque quelqu’un crée un résumé PDF pour une épreuve.
+
+Un webhook est nécessaire pour ce module.
+
+Le module renvoie tous les champs standard associés à l’épreuve, ainsi que tous les champs et valeurs personnalisés auxquels la connexion a accès. Il crée également un nouvel abonnement aux événements pour les résumés PDF et génère le contenu de l’attribut `pdf_url` envoyé dans la payload. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>Saisissez ou mappez un nom pour le nouveau webhook</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+Ce module de déclenchement exécute un scénario lorsqu’une activité spécifiée se produit sur une épreuve.
+
+Le module renvoie tous les champs standard associés à l’épreuve, ainsi que tous les champs et valeurs personnalisés auxquels la connexion a accès. Il crée également un nouvel abonnement aux événements pour les résumés PDF et génère le contenu de l’attribut `pdf_url` envoyé dans la payload. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>Choisissez si vous souhaitez observer une nouvelle décision (y compris les modifications du statut de l’épreuve) ou des modifications générales du statut de l’épreuve uniquement.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -173,71 +229,15 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">Type d’enregistrement</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL Workfront Proof] que vous voulez que le module regarde.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Sorties</td> 
-   <td> <p>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
+   <td>Choisissez si vous souhaitez rechercher de nouvelles épreuves ou de nouvelles décisions globales relatives aux épreuves.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Limite</td> 
    <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-Ce module de déclenchement instantané exécute un scénario lorsque quelqu’un crée un résumé PDF pour une épreuve.
-
-Un webhook est nécessaire pour ce module.
-
-Le module renvoie tous les champs standard associés à l’épreuve, ainsi que tous les champs et valeurs personnalisés auxquels la connexion a accès. Il crée également un nouvel abonnement aux événements pour les résumés PDF et génère le contenu de l’attribut « pdf_url » envoyé dans la payload. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
-
-Lorsque vous configurez ce module, les champs suivants s’affichent.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>Vous pouvez sélectionner un webhook existant ou en créer un nouveau. Pour plus d’informations, voir <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).--> » class=« MCXref xref »&gt;Déclencheurs instantanés (webhooks) dans [!DNL Adobe Workfront Fusion]</a>. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-Ce module de déclenchement exécute un scénario lorsqu’une activité spécifiée se produit sur une épreuve.
-
-Le module renvoie tous les champs standard associés à l’épreuve, ainsi que tous les champs et valeurs personnalisés auxquels la connexion a accès. Il crée également un nouvel abonnement aux événements pour les résumés PDF et génère le contenu de l’attribut `pdf_url` envoyé dans la payload. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
-
-Lorsque vous configurez ce module, les champs suivants s’affichent.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>Choisissez si vous souhaitez consulter les nouvelles décisions (y compris les changements de statut des [!UICONTROL proof]) ou les changements de statut globaux de l’épreuve uniquement.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Éléments par page</td> 
+   <td> <p>Pour paginer les résultats, saisissez ou mappez le nombre de résultats renvoyés qui doivent apparaître sur chaque page de résultats. Ce nombre doit être inférieur ou égal à 100.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,11 +254,13 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Create Proof]
 
+<!--Cannot test Jan 2025-->
+
 Ce module d’action crée une nouvelle épreuve ou une nouvelle version d’une épreuve dans [!DNL Workfront Proof].
 
 Vous spécifiez les paramètres de la nouvelle épreuve et de l’épreuve source si vous créez une nouvelle version.
 
-Le module renvoie l’ID de la nouvelle épreuve ou de la nouvelle version de l’épreuve. Vous pouvez mapper cette information dans les modules suivants du scénario.
+Le module renvoie l’identifiant de la nouvelle épreuve ou version de l’épreuve. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -372,7 +374,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Indiquez si vous souhaitez utiliser l’option de connexion obligatoire pour l’épreuve créée. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Indiquez si vous souhaitez utiliser l’option de connexion obligatoire pour l’épreuve créée. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -400,6 +402,8 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -459,7 +463,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details]. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details].  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,11 +561,11 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details]. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details]. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>Indiquez la date d’échéance pour la relecture de l’épreuve créée. Utilisez le format de date suivant :</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>Indiquez la date d’échéance pour la relecture de l’épreuve créée. Utilisez le format de date <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -585,7 +589,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Indiquez si les personnes qui ne sont pas inscrites sont autorisées à s’abonner à l’épreuve.<br>Si vous sélectionnez cette option, vous pouvez également sélectionner le [!UICONTROL Default Role] pour les abonnés, comme décrit dans ce tableau.</td> 
+   <td>Indiquez si les personnes qui ne sont pas inscrites sont autorisées à s’abonner à l’épreuve.<br>Si vous sélectionnez cette option, vous pouvez également sélectionner une option dans le champ [!UICONTROL Default Role] .</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -613,7 +617,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Indiquez si vous souhaitez utiliser l’option de connexion obligatoire pour l’épreuve créée. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Indiquez si vous souhaitez utiliser l’option de connexion obligatoire pour l’épreuve créée. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -718,25 +722,3 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-Ce module de recherche répertorie tous les modèles de workflow disponibles.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Saisissez ou mappez le nombre maximum de modèles que vous souhaitez que le module renvoie au cours de chaque cycle d’exécution de scénario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>

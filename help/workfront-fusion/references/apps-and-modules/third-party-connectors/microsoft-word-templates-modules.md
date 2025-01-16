@@ -4,10 +4,10 @@ description: Dans un scénario d’Adobe Workfront Fusion, vous pouvez automat
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 95%
+source-wordcount: '1228'
+ht-degree: 87%
 
 ---
 
@@ -21,42 +21,46 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p> </td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Ou</p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
-   <td>Votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser les fonctionnalités décrites dans cet article.</td> 
-  </tr> <!--
-   <tr> 
-    <td role="rowheader">Access level configurations*</td> 
-    <td> 
-      <p>You must be a Workfront Fusion administrator for your organization.</p>
-     --> <!--
-      <p>You must be a Workfront Fusion administrator for your team.</p>
-     --> </td> 
-   </tr>
+   <td>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
+   <p>Ou</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
@@ -133,11 +137,6 @@ Dans le document, le numéro de téléphone se présente comme suit :
 
 Vous pouvez utiliser un libellé de boucle, également appelée balise de section, pour répéter une section de texte. Enveloppez le texte en le plaçant entre les balises de boucle d’ouverture et de fermeture. Le nom d’une balise d’ouverture est précédé d’un signe dièse # ; le nom d’une balise de fermeture est précédé d’une barre oblique /.
 
-* [Balise de boucle avec remplissage d’un module de document](#loop-tag-with-fill-out-a-document-module)
-  <!-- [Loop tag with Fill a document with a batch of data module](#loop-tag-with-fill-a-document-with-a-batch-of-data-module)-->
-
-#### Balise de boucle avec remplissage d’un module de document {#loop-tag-with-fill-out-a-document-module}
-
 **Exemple :** pour produire un document qui répertorie le nom et le numéro de téléphone de chaque contact dans une liste de clientes et de clients, vous pouvez utiliser un module [!DNL Microsoft Word Template] et créer le modèle suivant :
 
 ```
@@ -158,29 +157,6 @@ Le module crée le document suivant :
 > Eduard Salo, 4445552345
 ```
 
-<!--
-
-#### Loop tag with Fill a document with a batch of data module {#loop-tag-with-fill-a-document-with-a-batch-of-data-module}
-
-**Example:** You can export Google contacts into a table that you create using loop tags.
-
-The first module loads the template. The next module retrieves all contacts from the group you specify in [!DNL Google Contacts]. The aggregator module aggregates all values retrieved from Google Contacts and merges them into the template. And the last module saves the filled template to the desired location.
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-scenario-350x124.png)
-
-You could use this scenario with the following template:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-template-350x26.png)
-
-To do this, you would set up the module as follows:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-module-setup-350x323.png)
-
-The module would create the following document:
-
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-document-350x46.png)
--->
-
 ## Modules [!DNL Microsoft Word Template]
 
 Ces modules ne nécessitent pas de connexion.
@@ -198,15 +174,15 @@ Ce module du transformateur permet de remplir un document avec les données indi
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer au début du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Entrée<code>&#91;&#91;</code> si vous souhaitez remplacer un texte similaire à celui-ci : <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer au début du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Saisissez <code>&#91;&#91;</code> pour remplacer <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer la fin du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>saisissez <code>&#93;&#93;</code> si vous souhaitez remplacer un texte similaire à celui-ci : <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer la fin du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Saisissez <code>&#93;&#93;</code> remplacer <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple, HTTP &gt; Obtenir un fichier ou un Dropbox &gt; Obtenir un module de fichier). Vous pouvez également saisir le fichier de données manuellement.</p> </td> 
+   <td> <p> Sélectionnez un fichier source à partir d’un module précédent ou mappez les données du fichier source.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
@@ -260,11 +236,11 @@ Ce module d’agrégation est particulièrement utile pour la création de liste
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
-   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer au début du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Entrée<code>&#91;&#91;</code> si vous souhaitez remplacer un texte similaire à celui-ci : <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer au début du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Saisissez <code>&#91;&#91;</code> pour remplacer <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
-   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer la fin du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>saisissez <code>&#93;&#93;</code> si vous souhaitez remplacer un texte similaire à celui-ci : <code>[[replace_me]]</code></p> </td> 
+   <td> <p>Saisissez le ou les caractères que vous souhaitez marquer la fin du texte remplacé. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span>Saisissez <code>&#93;&#93;</code> pour remplacer <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by]</td> 
@@ -276,15 +252,11 @@ Ce module d’agrégation est particulièrement utile pour la création de liste
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p> Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple, HTTP &gt; Obtenir un fichier ou un Dropbox &gt; Obtenir un module de fichier). Vous pouvez également saisir le fichier de données manuellement.</p> </td> 
+   <td> <p> Sélectionnez un fichier source à partir d’un module précédent ou mappez les données du fichier source.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
    <td>Saisissez un nom de fichier (extension incluse) pour le fichier de sortie cible.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
-   <td> <p>Sélectionnez une option pour indiquer si les données que vous utilisez proviennent d’un formulaire ou d’une collecte de données brutes (données informatiques non traitées).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values]</td> 
