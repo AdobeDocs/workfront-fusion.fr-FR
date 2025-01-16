@@ -4,9 +4,9 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez util
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 70%
 
 ---
@@ -74,7 +74,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Activez cette option pour convertir le format GitHub Flavored Markdown en HTML.</p> <p>Pour plus d’informations, voir l’[!DNL ]antisèche sur Markdown dans la documentation [!DNL GitHub].</p> </td> 
+   <td> <p>Activez cette option pour convertir le format GitHub Flavored Markdown en HTML.</p> <p>Pour plus d’informations, reportez-vous à l’antisèche de Markdown dans la documentation [!DNL GitHub].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

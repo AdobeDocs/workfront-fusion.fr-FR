@@ -4,9 +4,9 @@ description: Avec les modules Adobe Photoshop, vous pouvez lancer un scénario A
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 19%
 
 ---
@@ -143,7 +143,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Photoshop], procédez com
               <p>Saisissez le mot de passe du fichier.</p>
             </li>
             <li value="5">
-              <p>Cliquez sur <b>Enregistrer</b> pour extraire le fichier et revenir à la configuration de la connexion [!UICONTROL ].</p>
+              <p>Cliquez sur <b>Enregistrer</b> pour extraire le fichier et revenir à la configuration de la connexion.</p>
             </li>
           </ol>
         </td>
