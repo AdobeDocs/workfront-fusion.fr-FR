@@ -4,10 +4,10 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 3%
 
 ---
 
@@ -27,15 +27,26 @@ Pour gérer des fichiers plus volumineux, vos scénarios doivent être mis à jo
 
 ## Connecteurs prenant en charge les fichiers volumineux
 
-Pour la version initiale, les connecteurs suivants prennent en charge les fichiers volumineux.
+Actuellement, les connecteurs suivants prennent en charge les fichiers volumineux.
 
-* Workfront > Charger le document
-* Adobe Experience Manager Assets > Charger le document
-* Workfront Proof > Charger un fichier
-* Adobe Authenticator > Effectuer un appel API personnalisé
-* SharePoint > Créer un fichier et SharePoint > Obtenir un fichier
-* Salesforce > Charger un fichier
-* AWS S3 > Télécharger le fichier et AWS S3 > Obtenir le fichier
+* Workfront
+   * Charger le document
+   * Télécharger document
+* Adobe Experience Manager Assets
+   * Charger le document
+* Workfront Proof
+   * Charger fichier
+   * Télécharger l&#39;épreuve
+* Adobe Authenticator
+   * Effectuer un appel API personnalisé
+* SharePoint
+   * Créer un fichier
+   * Obtenir un fichier
+* Salesforce
+   * Charger fichier
+* AWS S3
+   * Charger fichier
+   * Obtenir le fichier
 * HTTP
 
 D’autres connecteurs seront pris en charge dans les prochaines versions.
@@ -74,7 +85,7 @@ Non, le nombre d’opérations exécutées par un module est le même.
 
 ### Quand l’interface utilisateur de Fusion sera-t-elle mise à jour pour afficher les données de transfert de fichiers ?
 
-Nous travaillons activement sur des mises à jour de l’interface utilisateur de Fusion pour le transfert de fichiers sur la page des détails de tableau de bord et d’exécution de scénario, avec une version ciblée au premier trimestre 2025.
+Cette fonctionnalité a déjà été terminée et déployée en production.
 
 ### Quelles sont les différentes manières d’appréhender les nouvelles limites de traitement des fichiers pour faciliter la conception de scénarios ?
 
