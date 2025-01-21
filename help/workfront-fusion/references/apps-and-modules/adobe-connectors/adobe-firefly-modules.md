@@ -4,7 +4,7 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 30%
@@ -64,9 +64,9 @@ Avant d’utiliser le connecteur [!DNL Adobe Firefly], vous devez vous assurer q
 
 * Vous devez disposer d’un compte [!DNL Adobe Firefly].
 
-## Informations sur l’API Adobe Campaign
+## Informations sur l’API Adobe Firefly
 
-Le connecteur Adobe Campaign utilise les éléments suivants :
+Le connecteur d’Adobe Firefly utilise les éléments suivants :
 
 <table style="table-layout:auto"> 
  <col> 
@@ -109,11 +109,11 @@ Pour créer une connexion pour vos modules [!DNL Adobe Firefly], procédez comme
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d’informations, consultez la section Détails du [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d’informations, consultez la section Détails du [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
