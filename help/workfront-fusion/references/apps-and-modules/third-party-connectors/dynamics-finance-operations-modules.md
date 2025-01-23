@@ -4,10 +4,10 @@ description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 27%
+source-wordcount: '920'
+ht-degree: 26%
 
 ---
 
@@ -154,7 +154,7 @@ Ce module d&#39;action effectue un appel personnalisé à l&#39;API Dynamics Fin
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 

@@ -4,10 +4,10 @@ description: Ce module  [!DNL Adobe Workfront Fusion]  vous permet de configurer
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 759e3a0624b4ff683782b08071669451ef48db89
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 82%
+source-wordcount: '806'
+ht-degree: 81%
 
 ---
 
@@ -90,7 +90,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 

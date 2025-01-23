@@ -4,10 +4,10 @@ description: Avec les modules Événements d’Adobe I/O , vous pouvez démarrer
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 39%
+source-wordcount: '876'
+ht-degree: 38%
 
 ---
 
@@ -279,7 +279,7 @@ Ce module d’action effectue un appel API personnalisé à l’API [!DNL Adobe 
         <p>[!UICONTROL Method]</p>
       </td>
       <td>
-  <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP dans [!DNL Adobe Workfront Fusion]</a>.</p>  
+  <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p>  
       </td>
     </tr>
     <tr>

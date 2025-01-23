@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion Adobe 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 53%
@@ -104,7 +104,7 @@ Vous pouvez créer une connexion à votre compte Workfront directement depuis un
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre identifiant client Workfront. Vous pouvez le trouver dans la zone Applications OAuth2 de la configuration de Workfront. Si vous ne disposez pas d’un secret client pour votre application OAuth2 dans Workfront, vous pouvez en générer un autre. Pour plus d’informations, consultez la documentation de Workfront.</td>
+        <td>Saisissez votre secret client Workfront. Vous pouvez le trouver dans la zone Applications OAuth2 de la configuration de Workfront. Si vous ne disposez pas d’un secret client pour votre application OAuth2 dans Workfront, vous pouvez en générer un autre. Pour plus d’informations, consultez la documentation de Workfront.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
