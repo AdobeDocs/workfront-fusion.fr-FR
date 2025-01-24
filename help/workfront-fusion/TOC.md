@@ -1,16 +1,16 @@
 ---
-user-guide-title: Documentation Adobe Workfront Fusion
+user-guide-title: Documentation sur Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
-user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser Adobe Workfront Fusion efficacement dans votre entreprise.
+user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '1639'
-ht-degree: 60%
+ht-degree: 62%
 
 ---
 
 
-# Documentation Adobe Workfront Fusion {#using}
+# Documentation sur Adobe Workfront Fusion {#using}
 
 * [Documentation Adobe Workfront Fusion](home.md)
 * {#fusion-release-activity} d’activité de libération de Fusion
