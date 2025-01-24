@@ -4,9 +4,9 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 3%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->La fonctionnalité de fichiers volumineux est disponible uniquement pour les clients Workfront Ultimate et correspond à un déploiement échelonné. Toutes les organisations Fusion disposant d’un plan Workfront Ultimate disposeront d’une fonctionnalité de fichiers importante d’ici janvier 2025.
+>La fonctionnalité de fichiers volumineux n’est disponible que pour les organisations qui utilisent le package Workfront Ultimate.
 
 Des fonctionnalités améliorées de transfert de données sont désormais disponibles dans Workfront Fusion, ce qui permet aux scénarios de traiter des fichiers beaucoup plus volumineux.
 
 Pour gérer des fichiers plus volumineux, vos scénarios doivent être mis à jour.
-
->[!NOTE]
->
->Cette fonctionnalité est disponible uniquement pour les utilisateurs et utilisatrices du package Ultimate Workfront.
 
 ## Connecteurs prenant en charge les fichiers volumineux
 
