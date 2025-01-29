@@ -4,10 +4,10 @@ description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 74%
+source-wordcount: '1994'
+ht-degree: 63%
 
 ---
 
@@ -79,7 +79,7 @@ Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre li
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Créez des lots personnalisés en ajoutant des éléments de tableau. Le tableau est constitué de paires nom-valeur.</p> </td> 
+   <td> <p>Créez des lots personnalisés en ajoutant des éléments de tableau. Pour chaque élément à ajouter au lot, cliquez sur <b>Ajouter un élément</b> et saisissez le nom et la valeur de l’élément.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre li
 
 Ce module récupère les valeurs créées précédemment par le module [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
 
-Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Multiple Variables]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Pour plus d’informations sur l’ordre d’exécution des modules, consultez la section [Module de routeur dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Multiple Variables]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Ajoutez les variables que vous souhaitez que le module récupère.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>Pour chaque variable que vous ajoutez, mappez le nom de la variable que vous souhaitez obtenir.</td>
+        <td>Pour chaque variable que le module doit obtenir, cliquez sur <b>Ajouter un élément</b> et saisissez le nom de la variable.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**Exemples :** les utilisations possibles des modules [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] sont les suivantes :
->
->* Pour stocker une valeur calculée en vue d’une utilisation ultérieure, même sur un autre itinéraire. Cela s’avère utile lorsque la valeur est utilisée dans plusieurs modules et que la formule de calcul de la valeur est trop complexe.
->* Pour déboguer une formule, procédez comme suit : Si une formule utilisée dans un module ne semble pas fournir un résultat correct, copiez-la et collez-la dans un module [!UICONTROL Set Variable] que vous insérez avant le module approprié. Déconnectez le ou les modules après le module [!UICONTROL Set Variable] et exécutez le scénario. Vérifiez la sortie du module [!UICONTROL Set Variable], ajustez ou simplifiez la formule, exécutez à nouveau le scénario et continuez à le faire jusqu’à ce que le problème soit résolu.
+>[!BEGINSHADEBOX]
+
+**Exemples :** les utilisations possibles des modules [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] sont les suivantes :
+
+* Pour stocker une valeur calculée en vue d’une utilisation ultérieure, même sur un autre itinéraire. Cela s’avère utile lorsque la valeur est utilisée dans plusieurs modules et que la formule de calcul de la valeur est trop complexe.
+* Pour déboguer une formule, procédez comme suit : Si une formule utilisée dans un module ne semble pas fournir un résultat correct, copiez-la et collez-la dans un module [!UICONTROL Set Variable] que vous insérez avant le module approprié. Déconnectez le ou les modules après le module [!UICONTROL Set Variable] et exécutez le scénario. Vérifiez la sortie du module [!UICONTROL Set Variable], ajustez ou simplifiez la formule, exécutez à nouveau le scénario et continuez à le faire jusqu’à ce que le problème soit résolu.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 Ce module récupère une valeur qui a été précédemment créée par le module [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
 
-Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Variable]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Variable]. Pour plus d’informations sur l’ordre d’exécution des modules, consultez la section [Module de routeur dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Variable]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Variable]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ Ce module peut lire les variables qui ont été définies n’importe où dans l
 
 #### [!UICONTROL Increment function]
 
-Ce module renvoie une valeur incrémentée de 1 après chaque opération du module.
+Ce module renvoie une valeur incrémentée de 1 après chaque cycle ou chaque exécution de scénario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ Ce module renvoie une valeur incrémentée de 1 après chaque opération du mod
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>Sélectionnez cette option lorsque vous souhaitez que le module incrémente la valeur. </p> 
+   <td> <p>Sélectionnez cette option lorsque vous souhaitez que le module réinitialise la valeur. C’est à ce moment que vous souhaitez que la valeur recommence à la première valeur.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ Ce module renvoie une valeur incrémentée de 1 après chaque opération du mod
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exemple :**
->
->L’une des utilisations du module est de mettre en œuvre une affectation « à tour de rôle » de tâches, de leads, d’e-mails, etc., aux utilisateurs et utilisatrices d’un groupe. L’algorithme choisit les personnes cessionnaires d’un groupe dans un ordre rationnel, allant généralement du haut vers le bas d’une liste. Lorsque l’algorithme atteint la fin de la liste, il attribue l’affectation suivante à l’utilisateur ou à l’utilisatrice en haut de la liste et continue à effectuer des affectations vers le bas de la liste.
->
->Le scénario suivant envoie un e-mail à la première personne destinataire après chaque exécution d’un scénario à numéro impair, et à la deuxième personne destinataire après chaque exécution d’un scénario à numéro pair.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. Pour créer ce scénario, procédez comme suit :
->1. Définissez le champ **[!UICONTROL Reset a value]** du module sur Jamais.
->1. Définissez l’itinéraire des valeurs impaires. Définissez le filtre pour cet itinéraire à l’aide de la fonction mathématique modulaire qui équivaut à `1` :
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **Remarque** : n&#39;oubliez pas de remplacer l&#39;opérateur [!UICONTROL Equal to] par défaut [!UICONTROL Text] opérateur par l&#39;opérateur [!UICONTROL Numeric].
->
->1. Définissez l’itinéraire des valeurs paires à l’aide de la fonction mathématique modulaire qui équivaut à `0` :
->
->La fonction Incrémenter en ajoute une chaque fois que le scénario s’exécute. Les filtres vérifient l’incrément et agissent sur sa valeur, en s’assurant que les e-mails sont répartis de manière égale.
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+Ce module peut être utilisé pour implémenter une affectation « circulaire » de tâches, de prospects, d’e-mails, etc., aux utilisateurs d’un groupe. L’algorithme choisit les personnes cessionnaires d’un groupe dans un ordre rationnel, allant généralement du haut vers le bas d’une liste. Lorsque l’algorithme atteint la fin de la liste, il attribue l’affectation suivante à l’utilisateur ou à l’utilisatrice en haut de la liste et continue à effectuer des affectations vers le bas de la liste.
+
+Le scénario suivant envoie un e-mail à la première personne destinataire après chaque exécution d’un scénario à numéro impair, et à la deuxième personne destinataire après chaque exécution d’un scénario à numéro pair.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+Pour créer ce scénario, procédez comme suit :
+
+1. Définissez le champ **[!UICONTROL Reset a value]** du module sur Jamais.
+1. Définissez l’itinéraire des valeurs impaires. Définissez le filtre pour cet itinéraire à l’aide de la fonction mathématique modulaire qui équivaut à `1` :
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**Remarque** : n&#39;oubliez pas de remplacer l&#39;opérateur [!UICONTROL Equal to] par défaut [!UICONTROL Text] opérateur par l&#39;opérateur [!UICONTROL Numeric].
+
+1. Définissez l’itinéraire des valeurs paires à l’aide de la fonction mathématique modulaire qui équivaut à `0` :
+
+La fonction Incrémenter en ajoute une chaque fois que le scénario s’exécute. Les filtres vérifient l’incrément et agissent sur sa valeur, en s’assurant que les e-mails sont répartis de manière égale.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ Ce module crée des variables qui peuvent être mappées par d’autres modules 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>Ajoutez les variables que le module doit définir.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>Pour chaque variable, saisissez le nom de la variable. Ce nom s’affiche lors du mappage de la variable dans d’autres modules. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>Pour chaque variable, saisissez la valeur de la variable. </td> 
+   <td>Pour chaque variable à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez le nom et la valeur de la variable.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Sélectionnez la durée de validité des variables (conservez la même valeur).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable est valide pour un cycle. Utile lorsque plusieurs webhooks dans un scénario d’exécution sont reçus (plus de webhooks = plus de cycles). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: la variable est valide pour un cycle. Cela s’avère utile lorsque plusieurs webhooks dans une exécution de scénario sont reçus, car d’autres webhooks créent d’autres cycles. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: la variable est valide pour l’exécution d’un scénario. Une exécution peut contenir un ou plusieurs cycles.</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ Cette fonction peut s’avérer utile, par exemple, si vous souhaitez réduire l
 
 >[!TIP]
 >
->Si vous souhaitez suspendre le flux pendant de plus longues périodes, nous vous suggérons de diviser votre scénario en deux scénarios :
+>Si vous souhaitez suspendre le flux pendant des périodes plus longues, nous vous recommandons de diviser votre scénario en deux scénarios :
 >
 >* un premier scénario contenant la partie avant la pause,
 >* le deuxième scénario contenant la partie après.
@@ -358,19 +351,21 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
    <td> <p>Définissez une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont séparées en groupes ayant la même valeur d’expression. Chaque groupe génère une sortie en tant que lot distinct contenant une clé avec l’expression évaluée et le texte agrégé. Ce faisant, vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> Saisissez ou mappez le texte que vous souhaitez que le module agrège.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>Sélectionnez cette option pour arrêter le scénario lorsqu’il n’y a aucun résultat.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> Saisissez ou mappez le texte que vous souhaitez que le module agrège.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exemple :** vous pouvez utiliser l’agrégateur de texte pour insérer d’autres valeurs (par exemple, les noms de clientes et clients ou les notes) dans un lot unique et envoyer un e-mail contenant toutes les valeurs du corps de l’e-mail ou de son objet.
+>[!BEGINSHADEBOX]
+
+**Exemple :** vous pouvez utiliser l’agrégateur de texte pour insérer d’autres valeurs (par exemple, les noms de clientes et clients ou les notes) dans un lot unique et envoyer un e-mail contenant toutes les valeurs du corps de l’e-mail ou de son objet.
+
+>[!ENDSHADEBOX]
 
 ### Transformateurs
 
@@ -380,7 +375,7 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
 
 #### [!UICONTROL Compose a string]
 
-Convertit n’importe quelle valeur en type de données chaîne de caractères (texte). Cela facilite le mappage, par exemple, de données binaires.
+Convertit n’importe quelle valeur en type de données chaîne de caractères (texte). Cela facilite le mappage lors du mappage, par exemple, de données binaires.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ Vérifie la valeur d’entrée pour une correspondance avec la liste de valeurs 
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>Si l’entrée contient une valeur saisie dans le champ [!UICONTROL Pattern] , la valeur saisie dans le champ [!UICONTROL Output] est renvoyée.</p> <p>Si l’entrée ne correspond à aucune des valeurs que vous avez définies dans un champ de [!UICONTROL Pattern], l’un des événements suivants se produit :</p> 
+   <td> Pour chaque cas à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez le modèle et la sortie de l’élément. <p>Si l’entrée contient une valeur saisie dans le champ [!UICONTROL Pattern] , la valeur saisie dans le champ [!UICONTROL Output] est renvoyée.</p> <p>Si l’entrée ne correspond à aucune des valeurs que vous avez définies dans un champ de [!UICONTROL Pattern], l’un des événements suivants se produit :</p> 
     <ul> 
      <li>La valeur du champ [!UICONTROL Else] est renvoyée</li> 
      <li>Si le champ [!UICONTROL Else] ne contient aucune valeur, aucune sortie n’est renvoyée.</li> 
