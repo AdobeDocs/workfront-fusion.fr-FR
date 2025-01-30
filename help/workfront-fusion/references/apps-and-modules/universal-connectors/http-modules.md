@@ -4,10 +4,10 @@ description: L’application HTTP  [!DNL Adobe Workfront Fusion]  fournit divers
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 92%
+source-wordcount: '394'
+ht-degree: 91%
 
 ---
 
@@ -105,7 +105,7 @@ Il est possible de générer un jeton JWT à l’aide de fonctions intégrées 
 
 En-tête :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![En-tête JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 Code à copier-coller :
 
@@ -115,7 +115,7 @@ Code à copier-coller :
 
 Payload :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![Payload JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 Code à copier-coller :
 
@@ -125,7 +125,7 @@ Code à copier-coller :
 
 Jeton :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![ Jeton JWT ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Code à copier-coller :
 

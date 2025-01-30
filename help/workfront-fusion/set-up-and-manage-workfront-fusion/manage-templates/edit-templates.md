@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 25%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Cliquez sur **[!UICONTROL All Templates]** dans le panneau de navigation de gauche.
 1. Cliquez sur **[!UICONTROL Detail]** à droite du modèle que vous souhaitez modifier.
 1. (Facultatif) Renommez le modèle en cliquant sur **Options** dans le coin supérieur droit et en sélectionnant **Renommer**.
-1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png), puis sélectionnez la langue dans le menu déroulant Langue .
+1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Create a new template]**’icône ![Paramètres du scénario](assets/fusion-scenario-settings-icon.png), puis sélectionnez la langue dans la liste déroulante Langue.
 
    >[!IMPORTANT]
    >
    >La sélection Langues correspond aux langues disponibles dans les paramètres du système et ne concerne que le nom du modèle public et sa description. Vous ne pouvez pas modifier la langue d’un modèle une fois le modèle enregistré.
 
-1. (Facultatif) Pour modifier la description du modèle, cliquez sur **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png), puis saisissez la description.
+1. (Facultatif) Pour modifier la description du modèle, cliquez sur **[!UICONTROL Set up a template]** ![icône des paramètres du scénario](assets/fusion-scenario-settings-icon.png), puis saisissez la description.
 1. Ajoutez ou modifiez des applications, des modules et des outils de la même manière que lors de la création d’un scénario standard.
 
    Pour ajouter une aide contextuelle aux modules, consultez [Configuration de [!UICONTROL Wizard] fonctionnalité](#set-up-wizard-functionality) dans cet article.
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >Si votre modèle comprend des modules qui nécessitent l’ajout de la connexion, des informations d’identification ou d’autres informations sensibles à la confidentialité, ces informations ne sont pas partagées avec les utilisateurs et utillisatrices du modèle.
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Run once]** pour tester le modèle.
-1. Cliquez sur l’icône **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Cliquez sur l’icône **[!UICONTROL Save]** ![Icône Enregistrer](assets/save-icon.png).
 
 
 ## Configurer la fonctionnalité de [!UICONTROL Wizard]

@@ -4,9 +4,9 @@ description: Lorsque des erreurs se produisent pendant l’exécution d’un sc�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 26%
 
 ---
@@ -82,7 +82,7 @@ Pour ajouter un gestionnaire d’erreurs à un module :
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez avec le bouton droit sur le module après lequel vous souhaitez ajouter un itinéraire de gestionnaire d’erreurs, puis sélectionnez **[!UICONTROL Add error handler]** :
 
-   ![](assets/error-handler-route.png)
+   ![Itinéraire du gestionnaire d’erreurs](assets/error-handler-route.png)
 
    Un itinéraire de gestionnaire d’erreurs est ajouté au module . Si le module est le dernier module dans un itinéraire, le gestionnaire d’erreurs suit directement le module. Si le module comporte d’autres modules par la suite, un itinéraire de gestionnaire d’erreurs distinct est ajouté.
 

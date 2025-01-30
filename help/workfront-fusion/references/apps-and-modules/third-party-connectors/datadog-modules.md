@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 82%
+source-wordcount: '795'
+ht-degree: 81%
 
 ---
 
@@ -213,10 +213,10 @@ URL : `/v1/dashboard`
 
 Méthode : `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Exemple d’appel API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 Le résultat se trouve dans la sortie du module sous Bundle > Body > dashboards.
 
 Dans notre exemple, 3 tableaux de bord ont été renvoyés :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Réponse de l’API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

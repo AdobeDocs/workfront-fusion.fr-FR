@@ -4,10 +4,10 @@ description: Certains services ne permettent pas aux solutions d’intégration 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 44%
+source-wordcount: '958'
+ht-degree: 43%
 
 ---
 
@@ -185,7 +185,7 @@ Pour plus d’informations sur les modules JSON, voir [Modules JSON](/help/wor
 
 1. Saisissez ou mappez les valeurs à partir desquelles vous souhaitez créer JSON.
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![Valeurs JSON](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. Connectez le module JSON > Créer un module JSON au module HTTP > Effectuer une requête .
 1. Mappez la chaîne JSON du module Créer JSON au champ Contenu de la requête dans le HTTP > Effectuer une requête .

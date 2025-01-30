@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 27%
 
 ---
@@ -74,7 +74,7 @@ Workfront Fusion vous permet d’automatiser des workflows simples ou complexes 
 
 Dans cet exemple, le scénario se déclenche lorsqu’un champ spécifié est modifié dans une tâche ou un problème dans [!DNL Workfront]. Lorsqu’il est déclenché, le scénario récupère des informations dans le projet concerné et crée une mise à jour personnalisée pour une personne affectée à un rôle spécifique dans le projet.
 
-![](assets/fusion-template-example.png)
+![ Exemple de modèle ](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ De nombreuses applications disposent de connecteurs [!DNL Workfront Fusion] déd
 
 Dans cet exemple, le scénario se déclenche lors de l’ajout d’un utilisateur ou d’une utilisatrice à une feuille de calcul [!DNL Excel]. Le scénario vérifie si l’utilisateur ou l’utilisatrice est dans [!DNL Workfront]. Si ce n’est pas le cas, le scénario crée l’utilisateur ou l’utilisatrice dans [!DNL Workfront] et ajoute son ID d’utilisateur ou d’utilisatrice Workfront à la feuille de calcul.
 
-![](assets/fusion-integration-example.png)
+![Exemple d’intégration](assets/fusion-integration-example.png)
 
 Pour obtenir la liste des connecteurs dédiés, voir [Références des applications Fusion et de leurs modules : index d’article](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

@@ -4,10 +4,10 @@ description: Le dossier [!UICONTROL Incomplete executions] stocke les exécution
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 37%
+source-wordcount: '821'
+ht-degree: 31%
 
 ---
 
@@ -86,7 +86,7 @@ L’onglet [!UICONTROL History] affiche plus de détails que ce qui est disponib
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénario, cliquez sur la flèche de gauche ![](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez sur **Historique** près du nom du scénario.
    ![onglet historique](assets/history-tab.png)
@@ -115,7 +115,7 @@ L’onglet [!UICONTROL History] affiche plus de détails que ce qui est disponib
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénario, cliquez sur la flèche de gauche ![](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez sur l’onglet **[!UICONTROL History]** dans le panneau de droite.
 1. (Facultatif) Pour plus d’informations sur l’exécution d’un scénario sélectionné, cliquez sur l’exécution dans le panneau de droite.
@@ -133,7 +133,7 @@ L’onglet [!UICONTROL History] affiche plus de détails que ce qui est disponib
 Vous pouvez filtrer l’historique d’exécution pour n’afficher que les exécutions disposant des valeurs spécifiées.
 
 1. Ouvrez l’historique pleine page d’un scénario, comme décrit dans la section [Afficher l’historique d’exécution du scénario sur l’onglet [!UICONTROL History]](#view-scenario-history-on-the-history-tab) dans cet article.
-1. Cliquez sur l’icône [!UICONTROL filter] ![](assets/fusion-scenario-filter-icon.png) dans l’en-tête de la colonne selon laquelle vous souhaitez effectuer le filtrage.
+1. Cliquez sur l’icône [!UICONTROL filter] ![icône de filtre de scénario](assets/fusion-scenario-filter-icon.png) dans l’en-tête de la colonne selon laquelle vous souhaitez effectuer le filtrage.
 1. Dans la boîte de dialogue [!UICONTROL filter], saisissez les valeurs en fonction desquelles vous souhaitez effectuer le filtrage.
 1. Cliquez sur **[!UICONTROL Save]**.
 

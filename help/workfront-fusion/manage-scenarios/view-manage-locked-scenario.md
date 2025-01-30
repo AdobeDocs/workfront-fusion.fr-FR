@@ -7,9 +7,9 @@ description: Gérer des scénarios verrouillés dans  [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 72%
 
 ---
@@ -92,4 +92,4 @@ Pour déverrouiller manuellement un scénario verrouillé :
 1. Cliquez sur **[!UICONTROL Options]** dans le coin supérieur droit de l’écran.
 1. Sélectionnez **[!UICONTROL Unlock execution]**.
 1. Cliquez sur **[!UICONTROL Unlock]**.
-   ![](assets/unlock-scenario.png)
+   ![Déverrouiller le scénario](assets/unlock-scenario.png)

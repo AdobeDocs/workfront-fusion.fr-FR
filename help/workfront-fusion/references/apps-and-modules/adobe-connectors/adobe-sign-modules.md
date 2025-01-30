@@ -4,9 +4,9 @@ description: Les modules  [!DNL Adobe Acrobat Sign]  vous permettent de lancer u
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 77%
 
 ---
@@ -82,9 +82,9 @@ Les nouveaux utilisateurs et utilisatrices d’[!DNL Adobe Sign] doivent prêter
 
 Les accords [!DNL Adobe Sign] ont besoin d’un champ avec lequel travailler. Il existe plusieurs options pour ce faire, mais la plus simple et la plus courante consiste à charger un document transitoire et à le faire correspondre à votre accord.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Recommandations Adobe Sign](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
-## Modules et champs [!DNL Adobe Acrobat Sign]
+## Modules [!DNL Adobe Acrobat Sign] et leurs champs
 
 Lorsque vous configurez les modules [!DNL Adobe Acrobat Sign], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Acrobat Sign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
@@ -941,11 +941,11 @@ Chargez un document transitoire. Un document transitoire est disponible pendant 
 
 **Exemple :** dans ce workflow, le document à signer (précédemment téléchargé depuis Workfront) est chargé en tant que document transitoire.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 Le module [!UICONTROL Upload document] fournit au document un identifiant de [!DNL Adobe Acrobat Sign] qui peut être référencé dans les modules ultérieurs. Lorsque le contrat est créé, l’ID du document chargé est inclus dans le champ [!UICONTROL Files to send].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Exemple Sign](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

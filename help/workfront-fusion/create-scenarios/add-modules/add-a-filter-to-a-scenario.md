@@ -4,9 +4,9 @@ description: Dans certains scénarios, vous devez travailler uniquement avec des
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 34%
 
 ---
@@ -87,7 +87,7 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
 
    Par exemple, si vous souhaitez que le filtre transmette les fichiers dans [!DNL Adobe Workfront] se terminant par XML, vous devez saisir **[!UICONTROL File name]** dans la première zone et .**[!UICONTROL xml]** dans la deuxième case. Dans le menu déroulant situé entre les deux, sélectionnez **[!UICONTROL Ends with (case insensitive)]**. Ce filtre s’applique aux lots entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
 
-   ![](assets/set-up-filter-box.png)
+   ![Configurer un filtre](assets/set-up-filter-box.png)
 
 1. Cliquez sur **[!DNL OK]**.
 
@@ -110,7 +110,7 @@ Pour copier un filtre sans copier de modules, vous pouvez utiliser l’outil de 
 
    Si l’icône DevTool ne s’affiche pas, consultez [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) pour obtenir des instructions sur l’ouverture de l’outil de développement.
 
-1. Cliquez sur l’icône **[!UICONTROL Tools]** ![](assets/devtools-tools-icon.png) dans la barre latérale gauche.
+1. Cliquez sur l’icône **[!UICONTROL Tools]** ![Outils de développement](assets/devtools-tools-icon.png) dans la barre latérale gauche.
 
 1. Cliquez sur **[!UICONTROL Copy Filter]**, puis configurez l’outil **[!UICONTROL Copy Filter]** dans le panneau latéral droit :
 

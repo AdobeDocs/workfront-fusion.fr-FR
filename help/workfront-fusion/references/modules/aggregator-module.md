@@ -4,9 +4,9 @@ description: Un module d’agrégation est un type de module conçu pour fusionn
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 14%
 
 ---
@@ -68,7 +68,7 @@ Lorsqu’un module [!UICONTROL Aggregator] s’exécute, il effectue les opérat
 
 L’image suivante présente une configuration type du module [!UICONTROL Aggregator] :
 
-![](assets/array-aggregator.png)
+![Agrégateur de tableau](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ L’image suivante présente une configuration type du module [!UICONTROL Aggreg
 
 Cet exemple de scénario montre comment compresser toutes les pièces jointes d’e-mail et charger le fichier ZIP vers [!DNL Dropbox].
 
-![](assets/dropbox-archive.png)
+![Exemple d&#39;archive Dropbox ](assets/dropbox-archive.png)
 
 Le scénario ci-dessous montre comment :
 
@@ -129,4 +129,4 @@ Le scénario ci-dessous montre comment :
 
 Vous trouverez ci-dessous un exemple de configuration de l’agrégateur [!UICONTROL Archive] > [!UICONTROL Create an archive] :
 
-![](assets/archive-create-an-archive.png)
+![Créer une archive](assets/archive-create-an-archive.png)

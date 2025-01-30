@@ -4,9 +4,9 @@ description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 63%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 63%
 
 La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles qui peuvent améliorer votre scénario.
 
-[!UICONTROL Tools] modules sont disponibles à partir de la liste des applications ou à partir de l’icône [!UICONTROL Tools] ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en bas de l’écran.
+[!UICONTROL Tools] modules sont disponibles à partir de la liste des applications ou à partir de l’icône [!UICONTROL Tools] ![icône Outils](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en bas de l’écran.
 
 ## Conditions d’accès
 
@@ -161,14 +161,14 @@ Ce module peut être utilisé pour implémenter une affectation « circulaire »
 
 Le scénario suivant envoie un e-mail à la première personne destinataire après chaque exécution d’un scénario à numéro impair, et à la deuxième personne destinataire après chaque exécution d’un scénario à numéro pair.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Exemple d’e-mail](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 Pour créer ce scénario, procédez comme suit :
 
 1. Définissez le champ **[!UICONTROL Reset a value]** du module sur Jamais.
 1. Définissez l’itinéraire des valeurs impaires. Définissez le filtre pour cet itinéraire à l’aide de la fonction mathématique modulaire qui équivaut à `1` :
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Nombres impairs](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Remarque** : n&#39;oubliez pas de remplacer l&#39;opérateur [!UICONTROL Equal to] par défaut [!UICONTROL Text] opérateur par l&#39;opérateur [!UICONTROL Numeric].
 

@@ -4,9 +4,9 @@ description: Vous pouvez utiliser  [!DNL Adobe Workfront Fusion]  pour vous conn
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 86%
 
 ---
@@ -92,6 +92,6 @@ Si un autre module tente d’accéder aux mêmes données, il doit attendre que 
 
 Activez la validation automatique. La validation automatique termine (valide) chaque transaction immédiatement après l’exécution du module.
 
-1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)en bas de l’écran).
+1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![icône des paramètres de scénario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) en bas de l’écran.
 1. Cochez la case **[!UICONTROL Auto commit]** .
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer les paramètres du scénario.

@@ -4,10 +4,10 @@ description: Les variables mathématiques suivantes sont disponibles dans le pan
 author: Becky
 feature: Workfront Fusion
 exl-id: b309f035-4d46-473b-b915-6938587b0bcf
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 91%
+source-wordcount: '50'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Renvoie un nombre pseudo-aléatoire à virgule flottante dans l’intervalle [`0
 
 Utilisez la formule suivante pour générer un nombre entier pseudo-aléatoire dans l’intervalle [`min`,`max`] (incluant `min` et `max`) :
 
-![](assets/math-variable-random-350x61.png)
+![Aléatoire](assets/math-variable-random-350x61.png)
 
 ```
 floor(random * (1.max - 1.min + 1)) + 1.min

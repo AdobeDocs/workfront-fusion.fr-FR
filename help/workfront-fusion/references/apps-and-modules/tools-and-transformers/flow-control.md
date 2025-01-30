@@ -4,9 +4,9 @@ description: Lorsque vous créez ou modifiez un scénario, vous pouvez configure
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 50%
 
 ---
@@ -62,13 +62,13 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Repeater] pour envoyer c
 
 Pour utiliser un module [!UICONTROL Repeater] :
 
-1. Cliquez sur l’icône [!UICONTROL Flow Control] ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en bas de l’écran, puis sur **[!UICONTROL Repeater]** dans le menu qui s’affiche.
+1. Cliquez sur l’icône [!UICONTROL Flow Control] ![Icône Contrôle de flux](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en bas de l’écran, puis sur **[!UICONTROL Repeater]** dans le menu qui s’affiche.
 1. Cliquez sur le lot [!UICONTROL Repeater], puis sur **[!UICONTROL Connect automatically]** dans la zone qui s’affiche.
 1. Dans la zone [!UICONTROL Flow Control] qui s’affiche, saisissez le nombre de répétitions (lots sortis) souhaité dans la zone **[!UICONTROL Repeats]**.
 
    Dans notre exemple d’e-mail, vous devez saisir 5.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    La valeur de l&#39;article augmente à chaque répétition de cette valeur spécifiée dans le champ **[!UICONTROL Step]**, que vous pouvez afficher en sélectionnant **[!UICONTROL Show advanced settings]**. Ce nombre est 1 par défaut.
 
@@ -79,7 +79,7 @@ Pour utiliser un module [!UICONTROL Repeater] :
 
    Dans notre exemple d’e-mail, vous devez saisir Hello dans la zone de [!UICONTROL Subject], puis mapper les `i` du module de répétition.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Élément | Description |
 |---|---|

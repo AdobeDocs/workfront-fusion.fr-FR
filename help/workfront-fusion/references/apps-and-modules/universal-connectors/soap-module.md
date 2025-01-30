@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le module SOAP pour vous connecter aux API SOA
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 62%
@@ -119,7 +119,7 @@ Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie dive
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Ouvrez une nouvelle fenêtre ou un nouvel onglet du navigateur web.
 1. Collez l’URL WSDL dans la barre d’adresse du navigateur web et récupérez le fichier XML.
@@ -129,7 +129,7 @@ Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie dive
 1. Si le fichier WSDL ne s’affiche pas directement dans le navigateur web, ouvrez le fichier téléchargé dans un éditeur de texte.
 1. Recherchez la balise `<service>` ou `<wsdl:service>` :
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Une fois localisée, copiez l’URL à partir de l’attribut `location`.
 1. Dans [!DNL Workfront Fusion], collez l’URL dans le champ URL du module HTTP.
@@ -141,7 +141,7 @@ Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie dive
 1. Dans [!UICONTROL Workfront Fusion], collez le contenu copié dans le champ URL du module.
 1. Indiquez des valeurs pour les paramètres sélectionnés en remplaçant les points d’interrogation par des valeurs réelles :
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Fermez la configuration du module en cliquant sur **[!UICONTROL OK]**.
 1. Exécutez le scénario ou le module.

@@ -4,10 +4,10 @@ description: Le Devtool d’Adobe Workfront Fusion vous permet de comprendre d
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 77%
+source-wordcount: '1324'
+ht-degree: 76%
 
 ---
 
@@ -103,7 +103,7 @@ Le Devtool de Workfront Fusion est divisé en trois sections principales. Vous 
 
 Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur Exécuter une fois dans votre scénario.
 
-1. Cliquez sur l’icône **[!UICONTROL Live Stream]** ![](assets/live-stream-icon.png) pour ouvrir la section Diffusion en direct .
+1. Cliquez sur l’icône **[!UICONTROL Live Stream]** ![Icône de diffusion en direct](assets/live-stream-icon.png) pour ouvrir la section Diffusion en direct .
 1. Effectuez l’une des opérations suivantes :
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur
 
 Le débogueur de scénario est utile pour les scénarios plus complexes. Il affiche l’historique du scénario qui s’exécute et vous permet de rechercher les modules par leur nom ou ID.
 
-1. Cliquez sur l’icône **[!UICONTROL Scenario Debugger]** ![](assets/scenario-debugger-icon.png) pour ouvrir Scenario Debugger.
+1. Cliquez sur l’icône **[!UICONTROL Scenario Debugger]** ![icône Debugger](assets/scenario-debugger-icon.png) pour ouvrir le débogueur de scénario.
 1. (Facultatif) Saisissez le terme de recherche (nom ou ID de module) dans le champ de recherche.
 1. Cliquez sur le nom du module.
 1. Cliquez sur l’opération pour afficher les détails de la requête.
@@ -162,7 +162,7 @@ Le débogueur de scénario est utile pour les scénarios plus complexes. Il affi
 
 Le Devtool [!DNL Workfront Fusion] contient des outils qui facilitent la configuration de scénario.
 
-1. Cliquez sur l’icône **[!UICONTROL Tools]** ![](assets/console-tools-icon.png) pour ouvrir les outils.
+1. Cliquez sur l’icône **[!UICONTROL Tools]** ![icône Outils de la console](assets/console-tools-icon.png) pour ouvrir les outils.
 1. Sélectionnez l’outil que vous souhaitez utiliser.
 1. Configurez les champs comme indiqué ci-dessous.
 1. Cliquez sur **[!UICONTROL Run]**.

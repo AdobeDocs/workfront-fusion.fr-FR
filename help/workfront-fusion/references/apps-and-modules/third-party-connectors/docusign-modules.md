@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 85%
+source-wordcount: '1637'
+ht-degree: 84%
 
 ---
 
@@ -229,13 +229,13 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
 >
 >Indique le moment où la requête commence à vérifier les modifications de statut des enveloppes du compte.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+>![Exemple de configuration Docusign](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >Le résultat se trouve dans la sortie du module sous Lot > Corps > Enveloppes.
 >
 >Dans notre exemple, six enveloppes ont été renvoyées :
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>![Exemple de sortie docusign ](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

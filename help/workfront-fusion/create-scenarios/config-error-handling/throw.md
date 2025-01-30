@@ -8,9 +8,9 @@ description: Dans certains cas, vous pouvez arrêter de force l’exécution du 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '380'
 ht-degree: 32%
 
 ---
@@ -85,4 +85,4 @@ Vous pouvez ensuite joindre l’une des directives de gestion des erreurs à l�
 
 L’exemple suivant illustre l’utilisation de la directive [!DNL Rollback] :
 
-![](assets/rollback-directive.png)
+![directive de restauration](assets/rollback-directive.png)

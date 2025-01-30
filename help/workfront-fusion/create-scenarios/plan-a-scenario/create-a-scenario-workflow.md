@@ -4,10 +4,10 @@ description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: f190217891c1d583e49cacb820e2076b995f6a3d
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 22%
+source-wordcount: '723'
+ht-degree: 21%
 
 ---
 
@@ -34,19 +34,19 @@ Raccourcis clavier
 ## Créer et nommer le scénario
 
 1. Connectez-vous à votre compte [!DNL Workfront Fusion].
-1. Cliquez sur **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) dans le panneau de gauche.
+1. Cliquez sur **[!UICONTROL Scenarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche.
 
    >[!NOTE]
    >
    >Si le panneau de navigation de gauche ou ses icônes ne s’affichent pas, cliquez sur l’icône menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Facultatif) Dans le panneau [!UICONTROL **Dossiers**], cliquez sur l’icône **[!UICONTROL Add folder]** ![](assets/add-folder-icon.png), puis saisissez un nom tel que « Scénarios d’exercices pratiques » pour votre premier dossier.
+1. (Facultatif) Dans le panneau [!UICONTROL **Dossiers**], cliquez sur l’icône **[!UICONTROL Add folder]** ![icône Ajouter un dossier](assets/add-folder-icon.png), puis saisissez un nom tel que « Scénarios d’exercices pratiques » pour votre premier dossier.
 
 1. (Facultatif) Ouvrez le dossier, puis cliquez sur **[!UICONTROL Create a new scenario]** dans le coin supérieur droit de la page.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL New scenario]** dans le coin supérieur gauche, puis saisissez un nom tel que « Scénario d’exercices pratiques 1 ».
 
-   ![](assets/name-the-scenario.png)
+   ![Nommez le scénario](assets/name-the-scenario.png)
 
 1. Continuez avec [Connecter le premier module](#2-connect-the-first-module) ci-dessous.
 
@@ -106,7 +106,7 @@ Le test de votre scénario vous permet de déterminer si celui-ci fonctionne com
    * Pour obtenir des informations générales sur la lecture des informations d’exécution de scénario, voir [Flux d’exécution de scénario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
    * Pour plus d’informations sur les lots traités, consultez la section [Exécution, cycles et phases d’un scénario [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Dans [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Save]** ![](assets/save-icon.png) près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
+1. Dans [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Save]** ![icône Enregistrer](assets/save-icon.png) près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
 
    >[!IMPORTANT]
    >

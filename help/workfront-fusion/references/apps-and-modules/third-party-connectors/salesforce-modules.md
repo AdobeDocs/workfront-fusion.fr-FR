@@ -4,9 +4,9 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2708'
 ht-degree: 75%
 
 ---
@@ -448,7 +448,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 >
 >Dans notre exemple, 6 utilisateurs ou utilisatrices ont été renvoyés :
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+>![Correspond à la recherche](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Upload Attachment/Document]

@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 91%
+source-wordcount: '1800'
+ht-degree: 90%
 
 ---
 
@@ -333,7 +333,7 @@ La fonction `formatDate` renvoie une représentation textuelle de la valeur Date
 
 **Exemples :** le scénario et le fuseau horaire web ont tous deux été définis sur `Europe/Prague` dans ces exemples.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Exemple de fonction Date/Heure](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Cette section est adaptée à [!DNL Workfront Fusion]. Elle est tirée de la pag
 
 Si vous devez calculer une date correspondant au n-ième jour de la semaine dans le mois (par exemple, premier mardi, troisième vendredi, etc.), vous pouvez utiliser la formule suivante :
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calculer le énième jour](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Si vous ne souhaitez calculer qu’un seul cas spécifique, par exemple tous les
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![Nième valeur de variable de jour](assets/nth-day-variable-value-350x33.png)
 
 #### Explication :
 
@@ -521,7 +521,7 @@ Si vous ne souhaitez calculer qu’un seul cas spécifique, par exemple tous les
 
 Une possibilité consiste à utiliser l’expression suivante :
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Calculer les jours entre les dates](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Lorsque vous spécifiez une période, par exemple dans un module de recherche, s
 
 La formule ci-dessous présente une méthode de calcul du dernier jour du mois précédent :
 
-![](assets/last-day-prev-month.png)
+![Dernier jour du mois précédent](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ Dans certains cas, vous devez calculer non seulement le dernier jour du mois, ma
 
 Cette formule présente un moyen de calculer la dernière milliseconde du mois précédent :
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Dernière milliseconde du mois précédent](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

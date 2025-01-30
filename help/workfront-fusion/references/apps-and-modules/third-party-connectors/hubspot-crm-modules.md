@@ -4,9 +4,9 @@ description: Les modules CRM HubSpot  [!DNL Adobe Workfront Fusion]  vous permet
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5655'
+source-wordcount: '5661'
 ht-degree: 33%
 
 ---
@@ -1969,13 +1969,13 @@ Permet d’effectuer un appel API personnalisé.
 >
 >**Méthode** : `GET`
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
+>![Configuration de l’API Hubspot](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
 >Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts].
 >
 >Dans notre exemple, 3 contacts ont été renvoyés :
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
+>![Sortie de l’API Hubspot](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
 
 +++
 

@@ -4,10 +4,10 @@ description: L’application XML vous permet d’analyser un texte au format XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 64%
+source-wordcount: '1302'
+ht-degree: 63%
 
 ---
 
@@ -95,7 +95,7 @@ Le module [!UICONTROL XML] > [!UICONTROL Parse XML] analyse un texte au format X
 >
 >   **URL** : URL du fichier XML (par exemple, `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![Exemple d’URL de fichier XML](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Cliquez sur **[!UICONTROL OK]**&#x200B;pour enregistrer et fermer la configuration du module.
 1. Ajoutez le module [!UICONTROL XML] > [!UICONTROL Parse XML], connectez-le après le module [!UICONTROL HTTP] > [!UICONTROL Get a file] et configurez-le comme suit :
@@ -143,7 +143,7 @@ Par défaut, le module [!UICONTROL XML] > [!UICONTROL Parse XML] place les attri
 
 est converti en ce lot :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML converti en lot](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Créer du XML
 
@@ -198,7 +198,7 @@ La configuration du module nécessite une structure de données qui décrit la s
 >
 1. Cliquez sur le bouton **[!UICONTROL Generator]** et collez votre exemple XML dans le champ [!UICONTROL Sample data] :
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Exemple de champ de données](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Cliquez sur **[!UICONTROL Save]**. Le champ des spécifications de la structure de données contient désormais la structure générée.
 1. Remplacez le nom de votre structure de données par un nom plus spécifique, puis cliquez sur **[!UICONTROL Save]**. Un champ correspondant à l’attribut de tableau racine apparaît comme champ mappable dans la configuration du module JSON.

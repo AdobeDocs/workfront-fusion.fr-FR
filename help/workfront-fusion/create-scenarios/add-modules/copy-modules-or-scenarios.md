@@ -4,9 +4,9 @@ description: Vous pouvez copier des modules, des groupes de modules ou des scén
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 53%
 
 ---
@@ -103,7 +103,7 @@ Le clonage d’un scénario crée une copie du scénario, que vous pouvez ensuit
 
       Ou
 
-      Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+      Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez avec le bouton droit sur **[!UICONTROL Options]** dans le coin supérieur droit de la page.
 1. Sélectionnez **[!UICONTROL Clone]**.

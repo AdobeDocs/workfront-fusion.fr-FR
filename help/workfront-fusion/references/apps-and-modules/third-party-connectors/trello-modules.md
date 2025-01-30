@@ -4,9 +4,9 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 69%
 
 ---
@@ -1212,7 +1212,7 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
 
 Si vous souhaitez modifier une carte ou créer un commentaire, vous devez connaître l’ID de la carte ou son lien court. Vous pouvez obtenir ces informations à partir de la sortie du déclencheur [!UICONTROL New Card]. Le lien court d’une carte peut également être obtenu en ouvrant la carte et en cliquant sur le bouton [!UICONTROL Share] . Le lien court se trouve dans la zone de [!UICONTROL Link to this card], à la fin de l’URL après `https://trello.com/c/`.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![Partager et plus](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### Comment trouver les ID d’autres objets dans [!DNL Trello]
 

@@ -4,9 +4,9 @@ description: Certains modules ont la capacité de traiter des fichiers. Ces modu
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 39%
 
 ---
@@ -92,10 +92,10 @@ Pour mapper un fichier :
 1. Dans le module cible, qui est la cible que vous mappez, recherchez la zone **Fichier Source**.
 1. Pour mapper un fichier généré par un module précédent, sélectionnez le module qui génère le fichier.
 
-   ![](assets/wf-download-document.png)
+   ![Document de téléchargement Workfront](assets/wf-download-document.png)
 
 1. Pour mapper manuellement le nom et les données, sélectionnez Mapper, puis saisissez ou mappez le nom et les données du fichier.
 
-   ![](assets/use-the-map-option.png)
+   ![Utilisation de l’option de mappage](assets/use-the-map-option.png)
 
 1. Continuez à configurer le module ou cliquez sur **OK**.

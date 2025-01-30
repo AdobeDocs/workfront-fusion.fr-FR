@@ -4,10 +4,10 @@ description: Certains modules déclencheur vous permettent de sélectionner le p
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 60%
+source-wordcount: '325'
+ht-degree: 59%
 
 ---
 
@@ -73,7 +73,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
    Cliquez avec le bouton droit de la souris sur l’icône du module de déclenchement, puis sélectionnez **Choisir par où commencer**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Choisir par où commencer](assets/choose-where-to-start.png)
 
 1. Sélectionnez une option dans la zone de **[!UICONTROL Choose where to start]** qui s’affiche.
 

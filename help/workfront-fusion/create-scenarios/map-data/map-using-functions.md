@@ -4,10 +4,10 @@ description: Lorsque vous mappez des éléments, vous pouvez utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 36%
+source-wordcount: '620'
+ht-degree: 35%
 
 ---
 
@@ -105,7 +105,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 
 Dans cet exemple, la fonction substring limite le nom du projet à 50 caractères.
 
-![](assets/example-meet-length-restriction-350x184.png)
+![Exemple de restriction de durée de réunion](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ Vous pouvez imbriquer des fonctions entre elles.
 
 Dans cet exemple, la fonction sous-chaîne limite le nom du projet tronqué à 50 caractères.
 
-![](assets/trimmed-name-under-50.png)
+![Nom tronqué](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ Si [!DNL Workfront Fusion] n’offre pas une fonction que vous souhaitez utilise
 
       Vous pouvez utiliser la sortie des modules précédents comme vous le faites habituellement.
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![Utilisation des fonctions Google Sheets](assets/exploit-google-sheet-functions-350x218.png)
 
 1. Insérez le module **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** pour obtenir le résultat calculé.
 1. Configurez le module à l’aide du même ID de cellule que celui utilisé à l’étape 4.
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Utilisation des fonctions Google Sheets](assets/exploit-google-sheet-functions-2-350x187.png)

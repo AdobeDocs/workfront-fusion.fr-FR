@@ -4,9 +4,9 @@ description: L’application JSON d’Adobe Workfront Fusion fournit des modul
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1129'
 ht-degree: 63%
 
 ---
@@ -91,7 +91,7 @@ Si le champ Chaîne de caractères JSON contient une collection `{ ... }`, la so
 ```
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![ Collection JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -115,7 +115,7 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 ]
 ```
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![ Tableau JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -303,6 +303,6 @@ Lorsque vous utilisez des instructions conditionnelles telles que `if` dans JSON
 
 **Exemple :**
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![Citations dans JSON](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

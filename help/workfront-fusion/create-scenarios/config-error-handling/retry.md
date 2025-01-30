@@ -4,9 +4,9 @@ description: Parfois, il est utile de réexécuter un module en échec s’il ex
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 9%
 
 ---
@@ -124,7 +124,7 @@ La solution de contournement du module Répéteur est plus complexe, mais plus p
 
 Dans cet exemple de scénario, le module [!UICONTROL HTTP] > [!UICONTROL Make a request] représente le module potentiellement en échec :
 
-![](assets/http-make-request.png)
+![HTTP Effectuer une requête](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

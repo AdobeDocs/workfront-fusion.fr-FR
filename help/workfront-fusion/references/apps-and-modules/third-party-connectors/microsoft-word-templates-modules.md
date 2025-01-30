@@ -4,10 +4,10 @@ description: Dans un scénario d’Adobe Workfront Fusion, vous pouvez automat
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 87%
+source-wordcount: '1245'
+ht-degree: 86%
 
 ---
 
@@ -84,11 +84,11 @@ Vous pouvez utiliser un module [!DNL Microsoft Word Template] pour fusionner les
 
 Par exemple, vous pouvez utiliser ce modèle [!DNL Microsoft Word] :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Modèle Word antérieur](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 Pour créer ce document :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![modèle Word rempli](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## À propos des balises de valeur
 
@@ -110,7 +110,7 @@ Une balise de valeur simple est simplement remplacée par une valeur corresponda
 
 Pour ce faire, vous devez configurer le module comme suit :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Valeur simple du modèle Word](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Balise de condition {#condition-tag}
 
@@ -125,7 +125,7 @@ Vous pouvez utiliser une balise de condition pour renvoyer à la ligne le texte 
 
 Pour ce faire, vous devez configurer le module comme suit :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Modèle Word conditionnel](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 Dans le document, le numéro de téléphone se présente comme suit :
 
@@ -148,7 +148,7 @@ Vous pouvez utiliser un libellé de boucle, également appelée balise de sectio
 Pour ce faire, vous devez configurer le module comme suit :
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Remplir un document](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 Le module crée le document suivant :
 

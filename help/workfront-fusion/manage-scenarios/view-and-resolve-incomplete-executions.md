@@ -4,9 +4,9 @@ description: Le dossier [!UICONTROL Incomplete executions] stocke les exécution
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 60%
 
 ---
@@ -79,7 +79,7 @@ Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exéc
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ Si vous souhaitez consulter le journal de toutes les opérations du module avant
 1. Ouvrez le journal du module, où toutes les opérations du module sont affichées.
 1. Recherchez l’opération ayant échoué et cliquez sur **[!UICONTROL Resolve]** :
 
-   ![](assets/resolve-btn-350x188.png)
+   ![bouton Résoudre](assets/resolve-btn-350x188.png)
 
 ## Options relatives aux exécutions incomplètes
 

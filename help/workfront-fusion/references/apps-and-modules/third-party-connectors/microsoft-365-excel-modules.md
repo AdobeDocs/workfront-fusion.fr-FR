@@ -4,9 +4,9 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 76%
 
 ---
@@ -426,7 +426,7 @@ Ce déclencheur lance un scénario lorsqu’une nouvelle ligne est ajoutée à u
 >
 >Le tableau désigne ici l’élément de tableau incorporé dans le classeur. Il ne s’agit pas du tableau complet (classeur/feuille).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![Table incorporée](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

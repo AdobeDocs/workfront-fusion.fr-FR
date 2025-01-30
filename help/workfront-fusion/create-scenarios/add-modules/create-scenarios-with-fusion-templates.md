@@ -4,10 +4,10 @@ description: La fonctionnalité Modèles d’Adobe Workfront Fusion vous permet 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 32%
+source-wordcount: '433'
+ht-degree: 31%
 
 ---
 
@@ -66,7 +66,7 @@ Les modèles publics sont disponibles sans aucune condition préalable.
 
 ## Créer un scénario à partir d’un modèle
 
-1. Cliquez sur l’onglet **Modèles** ![](assets/templates-icon.png) dans le panneau de navigation de gauche.
+1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Cliquez sur l’onglet contenant le modèle que vous souhaitez utiliser (**Modèles publics** ou **Modèles d’équipe**).
 1. Recherchez un modèle spécifique à l’aide de la barre de recherche située dans le coin supérieur gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
 1. Cliquez sur le modèle à utiliser pour créer un scénario.
@@ -84,6 +84,6 @@ Les modèles publics sont disponibles sans aucune condition préalable.
 
 1. Lorsque vous avez configuré tous les paramètres requis pour le modèle, vous recevez une notification indiquant que le modèle est prêt à être utilisé. Les options du scénario standard s’affichent en bas de l’écran. Vous pouvez maintenant continuer à créer votre scénario.
 
-1. Cliquez sur l’icône **Enregistrer** ![](assets/save-icon.png) en bas de l’écran pour enregistrer votre scénario.
+1. Cliquez sur l’icône **Enregistrer** ![Icône Enregistrer](assets/save-icon.png) en bas de l’écran pour enregistrer votre scénario.
 
    Le scénario est enregistré dans la zone Scénarios de Workfront Fusion.

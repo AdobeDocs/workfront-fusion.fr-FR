@@ -4,9 +4,9 @@ description: Cet article décrit les événements qui se produisent pendant l’
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 31%
 
 ---
@@ -67,7 +67,7 @@ Si une erreur se produit au cours de la phase d&#39;opération ou de validation 
 >
 >Tous les modules [!DNL Workfront Fusion] qui prennent en charge la restauration (également connue sous le nom de transactionnalité) comportent la balise ACID.
 >
->![](assets/acid-modules.png)
+>![Modules acides](assets/acid-modules.png)
 >
 >Les modules qui ne portent pas cette balise ne peuvent pas être ramenés à leur état initial lorsque des erreurs se produisent dans d’autres modules. Un exemple typique de module non-ACID est l&#39;action [!UICONTROL Email] >[!UICONTROL Send an Email]. Une fois l’e-mail envoyé, vous ne pouvez pas annuler l’envoi.
 

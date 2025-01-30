@@ -4,9 +4,9 @@ description: Les modèles Adobe Workfront Fusion vous permettent de créer et 
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 45%
 
 ---
@@ -64,7 +64,7 @@ Vous devez créer un modèle avant de pouvoir l’utiliser.
 
 ## Créer un scénario à partir d’un modèle
 
-1. Cliquez sur l’icône **[!UICONTROL Templates]** ![](assets/templates-icon.png) dans le panneau de navigation de gauche.
+1. Cliquez sur l’icône **[!UICONTROL Templates]** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Cliquez sur l’onglet contenant le modèle à utiliser (Modèles publics ou Modèles d’équipe).
 1. Cliquez sur le modèle à utiliser pour créer un scénario. Vous pouvez utiliser la zone de recherche située dans le coin supérieur droit pour rechercher le modèle en fonction de son nom ou du nom de l’application qui y est incluse.
 1. (Conditionnel) Si vous êtes membre de plusieurs organisations ou équipes, sélectionnez l’organisation ou l’équipe pour laquelle vous souhaitez créer le scénario et cliquez sur **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Vous devez créer un modèle avant de pouvoir l’utiliser.
 
    Pour plus d’informations sur la création d’un scénario, voir [Workflow de création d’un scénario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Cliquez sur l’icône **[!UICONTROL Save]** ![](assets/save-icon.png) pour enregistrer votre scénario. Le scénario s’enregistre dans la zone Scénario de Workfront Fusion.
+1. Cliquez sur l’icône **[!UICONTROL Save]** ![Icône Enregistrer](assets/save-icon.png) pour enregistrer votre scénario. Le scénario s’enregistre dans la zone Scénario de Workfront Fusion.

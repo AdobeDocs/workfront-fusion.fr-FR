@@ -4,10 +4,10 @@ description: Un entrepôt de données, comparable à une base de données ou à 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 72%
+source-wordcount: '1215'
+ht-degree: 71%
 
 ---
 
@@ -197,8 +197,8 @@ Vous pouvez modifier les propriétés et le contenu d’un magasin de données e
 
 Les propriétés d’un magasin de données incluent la structure de données utilisée par le magasin de données, ainsi que la taille du magasin de données.
 
-1. Cliquez sur **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data stores].
-1. Cliquez sur **[!UICONTROL Edit]** ![](assets/data-store-edit.png) en regard du magasin de données à modifier.
+1. Cliquez sur **[!UICONTROL Data stores]** ![icône du magasin de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data stores].
+1. Cliquez sur **[!UICONTROL Edit]** ![Modifier le magasin de données](assets/data-store-edit.png) en regard du magasin de données à modifier.
 1. (Facultatif) Si vous souhaitez modifier la structure de données utilisée par ce magasin de données en une autre structure de données existante, sélectionnez-la dans la liste déroulante **[!UICONTROL Data structure]**.
 
    Ou
@@ -210,7 +210,7 @@ Les propriétés d’un magasin de données incluent la structure de données ut
 
 ### Modifier le contenu d’un magasin de données
 
-1. Cliquez sur l’icône **[!UICONTROL Data Store]** ![](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data Store].
+1. Cliquez sur l’icône **[!UICONTROL Data Store]** ![icône du magasin de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data Store].
 1. Cliquez sur **[!UICONTROL Browse]** en regard du magasin de données à modifier.
 1. (Facultatif) Réorganisez les colonnes en les faisant glisser à l’emplacement souhaité.
 1. (Facultatif) [!UICONTROL Edit] une seule cellule en cliquant sur l’icône **[!UICONTROL Edit]** dans cette cellule, puis en saisissant la valeur souhaitée.

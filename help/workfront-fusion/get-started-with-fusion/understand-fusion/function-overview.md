@@ -4,10 +4,10 @@ description: Lorsque vous mappez des éléments, vous pouvez utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 11%
+source-wordcount: '181'
+ht-degree: 9%
 
 ---
 
@@ -24,11 +24,11 @@ Le panneau de mappage comprend les onglets suivants. Chaque onglet comprend des 
 
 | Type de fonctions | Pour plus d’informations, voir : |
 |---|---|
-| **Mappage à partir d’autres modules**<br>![](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Fonctions générales**<br>![](assets/toolbar-icon-general-function.png) | [Fonctions générales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Fonctions mathématiques**<br>![](assets/toolbar-icon-math-functions.png) | [Fonctions mathématiques](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Fonctions texte et binaires**<br>![](assets/toolbar-icon-text&binary-functions.png) | [Fonctions de chaîne](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
-| **Date et heure** <br> ![](assets/toolbar-icon-date&time-functions.png) | <ul><li>[Fonctions de date et d’heure](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Jetons pour le formatage de la date et de l’heure](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Jetons pour l’analyse de date et d’heure](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
-| **Fonctions pour l’utilisation de tableaux**<br> ![](assets/toolbar-icon-functions-for-arrays.png) | [Fonctions de tableau](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+| **Mappage à partir d’autres modules**<br>![ Mappage à partir d’autres modules](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Fonctions générales**<br>![ Fonctions générales](assets/toolbar-icon-general-function.png) | [Fonctions générales](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Fonctions mathématiques**<br>![ Fonctions mathématiques](assets/toolbar-icon-math-functions.png) | [Fonctions mathématiques](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Fonctions texte et binaires**<br>![ Fonctions de chaîne](assets/toolbar-icon-text&binary-functions.png) | [Fonctions de chaîne](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Date et heure** <br> ![Fonctions de date et d’heure](assets/toolbar-icon-date&time-functions.png) | <ul><li>[Fonctions de date et d’heure](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Jetons pour le formatage de la date et de l’heure](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Jetons pour l’analyse de date et d’heure](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+| **Fonctions pour l’utilisation de tableaux**<br> ![Fonctions de tableau](assets/toolbar-icon-functions-for-arrays.png) | [Fonctions de tableau](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![](assets/functions-toolbar-350x189.png)
+![Barre d’outils Fonctions](assets/functions-toolbar-350x189.png)

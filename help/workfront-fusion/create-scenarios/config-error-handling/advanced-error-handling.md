@@ -4,9 +4,9 @@ description: Vous pouvez ajouter des techniques avancées de gestion des erreurs
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 12%
 
 ---
@@ -89,11 +89,11 @@ Cet exemple de scénario montre comment ces filtres fonctionnent pour la gestion
 
 Si vous utilisez le module Dropbox > Create a folder alors qu’un dossier portant le même nom existe déjà, le module renvoie une erreur DataError :
 
-![](assets/dropbox.png)
+![Erreur dans le Dropbox ](assets/dropbox.png)
 
 Le scénario complet fonctionne comme suit :
 
-![](assets/dropbox-scenario.png)
+![scénario Dropbox ](assets/dropbox-scenario.png)
 
 1. Le module Outils > Définir la variable contient le nom du dossier
 1. Le module HTTP > Get a file récupère le fichier qui doit être téléchargé dans le dossier
@@ -111,19 +111,19 @@ Vous trouverez ci-dessous une explication détaillée de l’itinéraire DataErr
 
 Pour utiliser le dossier existant dans vos modules suivants, tel que Charger un fichier, vous devez ajouter un itinéraire de gestionnaire d’erreurs au module et récupérer le chemin du dossier à mapper dans le module de directive de reprise qui suit :
 
-![](assets/add-error-handler-route.png)
+![Ajouter un itinéraire de gestionnaire d&#39;erreurs](assets/add-error-handler-route.png)
 
 Le filtre sur le premier itinéraire est défini pour gérer uniquement l’erreur particulière (DataError) qui apparaît lorsqu’un dossier portant le même nom existe déjà :
 
-![](assets/condition.png)
+![Condition](assets/condition.png)
 
 Le module Dropbox > Répertorier tous les fichiers d’un dossier est configuré pour renvoyer tous les dossiers du dossier cible. Le filtre suivant ne transmet que celui que nous tentions de créer à l’origine. (Le nom du dossier est stocké dans le 33. Élément du nom du dossier.)
 
-![](assets/condition2.png)
+![Condition](assets/condition2.png)
 
 La directive Resume fournit ensuite le chemin d’accès Folder comme sortie pour le module en échec. Notez que l’ID de dossier a été laissé vide, car il n’est pas nécessaire pour le module Charger un fichier .
 
-![](assets/flow-control.png)
+![Contrôle de flux](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Exemple :
 
 Un itinéraire de gestionnaire d’erreurs imbriqué avec des filtres :
 
-![](assets/nested-error-handling-route.png)
+![Itinéraire de gestion des erreurs imbriqué](assets/nested-error-handling-route.png)
 
 Dans ce scénario, le deuxième itinéraire de gestionnaire d’erreurs est imbriqué sous le premier itinéraire de gestionnaire d’erreurs.
 

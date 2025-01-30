@@ -4,10 +4,10 @@ description: Vous pouvez restaurer une version précédente d’un scénario. Ce
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 72%
+source-wordcount: '199'
+ht-degree: 71%
 
 ---
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
 ## Restaurer une version de scénario
 
 1. Ouvrez votre scénario.
-1. Cliquez sur l’icône [!UICONTROL More] ![](assets/more-icon.png) en bas de l’écran, puis sur **[!UICONTROL Previous Versions]**.
+1. Cliquez sur l’icône [!UICONTROL More] ![icône Plus](assets/more-icon.png) en bas de l’écran, puis sur **[!UICONTROL Previous Versions]**.
 
 1. Cliquez sur le **[!UICONTROL Pick the version]**, puis sur la version à restaurer.
 1. Cliquez sur **[!UICONTROL OK]**.

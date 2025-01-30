@@ -4,10 +4,10 @@ description: Vous pouvez mapper un tableau ou des éléments de tableau individu
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 25%
+source-wordcount: '875'
+ht-degree: 24%
 
 ---
 
@@ -106,7 +106,7 @@ Pour ajouter des éléments au tableau :
 
 Les éléments de tableau s’affichent sous la forme d’un nombre entre crochets après le nom du tableau. Vous pouvez mapper un élément individuel d’un tableau dans un champ à l’aide de ce numéro d’index.
 
-![](assets/map-array-1st-element.png)
+![Mapper le premier élément](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Pour mapper un élément de tableau :
 
 1. Pour mapper un autre élément du tableau, cliquez sur le [1] et saisissez le numéro d’index de l’élément du tableau que vous souhaitez mapper.
 
-   ![](assets/access-another-element.png)
+   ![Accéder à un autre élément](assets/access-another-element.png)
 
 ### Mapper l’élément d’un tableau avec une clé donnée
 
@@ -138,13 +138,13 @@ Certains tableaux contiennent des collections avec des éléments clé-valeur te
 
 L’exemple suivant illustre la sortie de l’application [!DNL Jira].
 
-![](assets/output-of-jira-app-350x100.png)
+![ Sortie du module Jira ](assets/output-of-jira-app-350x100.png)
 
 Cet exemple obtient un nom de fichier à partir d’un tableau de pièces jointes, pour la pièce jointe spécifique avec l’ID 10108.
 
 Cet exemple génère la sortie suivante :
 
-![](assets/output-from-jira-350x261.png)
+![ Sortie du module Jira ](assets/output-from-jira-350x261.png)
 
 La formule peut être expliquée comme suit :
 
@@ -153,7 +153,7 @@ La formule peut être expliquée comme suit :
    1. Le premier paramètre de la fonction `map()` est l’élément de tableau entier.
    1. Le deuxième paramètre est le nom brut de l’élément de valeur. Pour obtenir le nom brut, passez la souris sur l’élément dans le panneau [!UICONTROL mapping] :
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![Obtenir le nom brut](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ La formule peut être expliquée comme suit :
 
    1. Le troisième paramètre est le nom brut de l’élément de clé :
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![Troisième paramètre](assets/3rd-parameter-350x166.png)
 
    1. Le quatrième paramètre est la valeur de clé donnée.
 
@@ -175,7 +175,7 @@ La formule peut être expliquée comme suit :
 
 Cet exemple génère la sortie suivante :
 
-![](assets/output-from-jira-350x261.png)
+![Sortie du module Jira](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Pour plus d&#39;informations sur la fonction `get()`, voir [Fonctions générale
 
 Les tableaux peuvent être convertis en une série de lots à l’aide du module [!UICONTROL Iterator]. Pour plus d’informations, voir [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Série de lots](assets/series-of-bundles.png)

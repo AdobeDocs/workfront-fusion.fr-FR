@@ -5,10 +5,10 @@ description: Nous vous recommandons d’ajouter des notes sur chaque module, ce 
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 48%
+source-wordcount: '100'
+ht-degree: 45%
 
 ---
 
@@ -23,6 +23,6 @@ Nous vous recommandons d’ajouter des notes sur chaque module, ce qui est facul
 
 1. Fermez la zone de **[!UICONTROL Notes]**.
 
-   Une fois que vous avez ajouté une note à un scénario, un point orange s’affiche sur l’icône **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) en bas de l’éditeur de scénarios.
+   Après avoir ajouté une note à un scénario, un point orange s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) au bas de l’éditeur de scénarios.
 
-1. Cliquez sur l’icône **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) pour afficher vos notes.
+1. Cliquez sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) pour afficher vos notes.

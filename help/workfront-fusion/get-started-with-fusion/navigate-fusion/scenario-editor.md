@@ -4,9 +4,9 @@ description: L’éditeur de scénario vous permet de créer et de modifier des 
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 34%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 34%
 
 L’éditeur de scénario vous permet de créer et de modifier des scénarios dans une interface visuelle.
 
-![](assets/scenario-editor.jpg)
+![Éditeur de scénarios](assets/scenario-editor.jpg)
 
 ## Conditions d’accès
 
@@ -71,7 +71,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Ouvrez l’éditeur de scénarios et ajoutez un module :
 
-1. Cliquez sur **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) dans le panneau de gauche.
+1. Cliquez sur **[!UICONTROL Scenarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche.
 1. Cliquez sur l’icône de point d’interrogation ![icône de question](assets/question-mark-full-size.png), puis recherchez et cliquez sur l’application ou le service avec lequel vous souhaitez commencer. Pour plus d’informations sur la configuration d’un module, voir [Configuration d’un module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Actions disponibles dans l’éditeur de scénario

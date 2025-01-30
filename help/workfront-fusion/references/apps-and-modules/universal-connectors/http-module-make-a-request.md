@@ -4,9 +4,9 @@ description: Le module Adobe Workfront Fusion HTTP > Effectuer une demande est
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 4377870d9441a3e84c51a547f17f154a78fb8f59
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 73%
 
 ---
@@ -169,7 +169,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 >
 >**Exemple :** cet exemple montre comment configurer le module pour envoyer une requête [!UICONTROL POST] avec une payload JSON :
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![Créer un exemple de requête](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

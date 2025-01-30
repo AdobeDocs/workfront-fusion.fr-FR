@@ -4,10 +4,10 @@ description: Cet article explique les raisons pour lesquelles les scénarios act
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 57%
+source-wordcount: '303'
+ht-degree: 56%
 
 ---
 
@@ -87,7 +87,7 @@ Pour obtenir des instructions sur la création d’un scénario, voir [Processus
 
 ## Activez ou désactivez un scénario en procédant comme suit :
 
-1. Cliquez sur **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) dans le panneau de gauche, puis sur le scénario pour l’ouvrir.
+1. Cliquez sur **[!UICONTROL Scenarios]**’icône ![Scénarios](assets/scenarios-icon.png) dans le panneau de gauche, puis cliquez sur le scénario pour l’ouvrir.
 1. Cliquez sur le bouton (bascule) Activer/Désactiver dans le coin supérieur droit de la page des détails du scénario.
 
    ![Bouton bascule d’activation des détails](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ Pour obtenir des instructions sur la création d’un scénario, voir [Processus
 
    Cliquez sur le diagramme pour accéder à l’éditeur de scénarios, puis cliquez sur le bouton **[!UICONTROL On/Off]** dans le coin inférieur gauche de la fenêtre.
 
-   ![](assets/on-off-switch.jpg)
+   ![interrupteur marche-arrêt](assets/on-off-switch.jpg)

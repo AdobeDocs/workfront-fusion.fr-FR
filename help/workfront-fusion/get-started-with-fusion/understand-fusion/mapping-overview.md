@@ -4,10 +4,10 @@ description: Le mappage désigne le processus d’affectation des sorties d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 14%
+source-wordcount: '432'
+ht-degree: 13%
 
 ---
 
@@ -32,15 +32,15 @@ Lorsque vous cliquez sur un champ dans lequel vous pouvez insérer une valeur g�
 
 Un seul élément
 
-![](assets/map-single.png)
+![Mapper un seul élément](assets/map-single.png)
 
 Plusieurs éléments avec du texte
 
-![](assets/map-multiple-with-text.png)
+![Mapper plusieurs éléments](assets/map-multiple-with-text.png)
 
 Fonction avec plusieurs éléments et du texte
 
-![](assets/map-formula-with-text.png)
+![Formule de mappage avec du texte](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ Pour plus d’informations sur le mappage, consultez les articles sous [Mapper d
 
 Lorsque vous cliquez dans un champ où vous pouvez mapper des données, le panneau de mappage s’ouvre.
 
-Le premier onglet affiche ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) les éléments que vous pouvez mapper à partir d’autres modules.
+Le premier onglet ![Mapper à partir d’autres modules](assets/toolbar-icon-functions-you-map-from-other-modules.png) affiche les éléments que vous pouvez mapper à partir d’autres modules.
 
 Les autres onglets comprennent des fonctions, des opérateurs et des mots-clés que vous pouvez utiliser pour créer des formules. Elles sont triées dans différents onglets en fonction du type de données qu’elles traitent.
 
-![](assets/mapping-panel-blank.png)
+![Panneau Mappage](assets/mapping-panel-blank.png)
 
 
 Pour plus d’informations sur les onglets de fonction, voir [Présentation des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -73,13 +73,13 @@ Les éléments peuvent contenir plusieurs valeurs de différents types. Il s’a
 
 Les lots de type collection s’affichent `(Collection)` en regard du libellé du lot dans la sortie du module.
 
-![](assets/collection.png)
+![Collection](assets/collection.png)
 
 Dans la plupart des cas, vous mappez les éléments de la collection plutôt que l’élément qui représente l’ensemble de la collection.
 
 Pour localiser l’élément d’une collection dans le panneau de mappage, cliquez sur la flèche en regard de la collection.
 
-![](assets/collection-dropdown.png)
+![Liste déroulante de collection](assets/collection-dropdown.png)
 
 Pour plus d’informations sur les collections, voir [Types de données d’élément](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -93,6 +93,6 @@ Les lots de type tableau s’affichent `(Array)` en regard du libellé du lot da
 
 Dans le panneau de mappage, les tableaux s’affichent avec des crochets. Vous pouvez identifier un élément de type tableau par les crochets à la fin du libellé de l’élément. Pour localiser un élément de tableau spécifique dans le panneau de mappage, cliquez sur la flèche en regard du tableau.
 
-![](assets/array.png)
+![Tableau](assets/array.png)
 
 Pour plus d’informations et d’instructions sur le mappage de tableaux et d’éléments de tableau, voir [Mapper des tableaux et des éléments de tableau](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

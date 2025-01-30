@@ -4,10 +4,10 @@ description: Les modules Adobe Workfront Fusion [!DNL Google Docs]  [!DNL Google
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 66%
+source-wordcount: '3221'
+ht-degree: 65%
 
 ---
 
@@ -609,11 +609,11 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
 
 [!UICONTROL GET]
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![Exemple d’appel API](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 Les détails du document récupéré se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Body].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
+![Sortie d’appel API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 #### [!UICONTROL Make All Links in a Document Clickable]
 

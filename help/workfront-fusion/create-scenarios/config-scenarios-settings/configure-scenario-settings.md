@@ -5,10 +5,10 @@ description: Vous pouvez configurer des paramètres spécifiques pour les scéna
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 46%
+source-wordcount: '1198'
+ht-degree: 45%
 
 ---
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône en forme d’engrenage près du coin inférieur gauche de la page.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Paramètres du scénario](assets/scenario-settings-350x221.png)
 
    Dans le panneau [!UICONTROL Scenario settings] qui s’affiche, vous pouvez configurer différents paramètres avancés pour le scénario.
 1. Activez ou désactivez les paramètres du scénario, au besoin. Voir [Options des paramètres du scénario](#scenario-settings-options) ci-dessous.
@@ -162,13 +162,13 @@ La définition de davantage de cycles peut s’avérer utile lorsque vous souhai
 
 **Exemples :** [!DNL Workfront] > [!UICONTROL Watch record] recherche les nouveaux événements qui se présentent et [!DNL Workfront] >[!UICONTROL Convert object] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Paramètres du scénario](assets/scenario-settings-ex-1-350x157.png)
 
 Un paramètre [!UICONTROL more cycles] est appliqué uniquement lorsque vous planifiez l’exécution du scénario. Lorsque vous utilisez le bouton [!UICONTROL Run once], les paramètres du cycle sont pris en compte.
 
 #### Le nombre maximal de cycles est défini sur 1 (valeur par défaut).
 
-![](assets/max-number-cycles-1-350x201.png)
+![Nombre maximal de cycles](assets/max-number-cycles-1-350x201.png)
 
 Le nombre maximal de cycles dans le module Workfront > Enregistrements de contrôle est défini sur `10`.
 Si 100 requêtes sont envoyées à [!DNL Workfront] et que le champ Nombre maximal de cycles est défini sur 10, 90 fichiers ne sont pas traités après l’exécution d’un scénario. Les 10 fichiers suivants sont traités lors de la prochaine exécution planifiée du scénario.
@@ -183,7 +183,7 @@ Tous les fichiers sont traités dans un scénario d’exécution.
 
 Vous pouvez voir les cycles déjà exécutés dans les détails du scénario :
 
-![](assets/scenario-detail-350x207.png)
+![Détails du scénario](assets/scenario-detail-350x207.png)
 
 Pour plus d’informations sur cette page, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

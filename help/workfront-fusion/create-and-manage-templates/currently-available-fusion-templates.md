@@ -4,10 +4,10 @@ description: Les modèles publics suivants sont actuellement disponibles dans Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: ba205314949f2b061ba483efa8b972367928f8fe
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 90%
+source-wordcount: '1279'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Les modèles publics suivants sont actuellement disponibles dans Adobe Workfron
 
 Votre équipe ou votre entreprise peut disposer d’autres modèles créés par l’équipe.
 
-Pour afficher les modèles disponibles, cliquez sur l’icône **Modèles** ![](assets/templates-icon.png) dans le menu de navigation latéral de Fusion.
+Pour afficher les modèles disponibles, cliquez sur l’icône **Modèles** ![Icône Modèles](assets/templates-icon.png) dans le menu de navigation latéral dans Fusion.
 
 ## Modèles Workfront
 

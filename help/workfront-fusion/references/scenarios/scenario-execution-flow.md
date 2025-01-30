@@ -5,9 +5,9 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 27%
 
 ---
@@ -36,7 +36,7 @@ La première étape du scénario, réalisée par le premier module, consiste à 
 
 Si le premier module renvoie un lot, le lot passe par le reste du scénario. Dans cet exemple, le lot accède au deuxième module , qui convertit la requête en projet.
 
-![](assets/example-execution-flow-wf-only.png)
+![Flux d’exécution du scénario Workfront](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ La première étape du scénario, effectuée par le premier module, consiste à 
 
 Si un lot est renvoyé, le lot passe par le reste du scénario. Dans cet exemple, le reste du scénario est constitué du deuxième module , qui charge le lot dans le dossier [!DNL Dropbox].
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Flux d’exécution du scénario d’intégration](assets/example-execution-flow-wf-dropbox.png)
 
 Si le premier module renvoie plusieurs lots, le premier lot est chargé sur [!DNL Dropbox] avant le second. Ensuite, le deuxième lot est chargé, puis le troisième, et ainsi de suite.
 
@@ -71,7 +71,7 @@ Pour chaque module, le lot passe par un processus en 4 étapes avant de passer a
 
 Une fois l’exécution d’un scénario terminée, chaque module affiche une icône indiquant le nombre d’opérations effectuées. Vous pouvez cliquer sur cette icône pour afficher les informations détaillées sur les lots traités pour chaque étape du processus. Vous pouvez voir quels paramètres de module ont été utilisés et quels lots ont été renvoyés par chaque module.
 
-![](assets/Info-processed-bundles.png)
+![Lots traités](assets/Info-processed-bundles.png)
 
 Dans cet example, le module a reçu des informations d&#39;entrée telles que:
 

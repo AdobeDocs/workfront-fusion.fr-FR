@@ -4,9 +4,9 @@ description: De nombreux services proposent des webhooks pour envoyer des notifi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 28%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 De nombreux services fournissent des Webhooks pour diffuser des notifications instantanées chaque fois qu’une certaine modification (événement) se produit dans le service. Pour traiter ces événements, il est recommandé d’utiliser des déclencheurs instantanés. Les déclencheurs instantanés affichent la balise `Instant` dans la liste des modules d&#39;un connecteur donné.
 
-![](assets/instant.png)
+![Instantané](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
 Lorsque vous configurez un déclencheur instantané, vous êtes invité à choisir le moment où il s’exécute.
 
-![](assets/schedule-setting.png)
+![Paramètre de planification](assets/schedule-setting.png)
 
 Sélectionnez `Immediately` pour exécuter immédiatement le scénario lorsque [!DNL Workfront Fusion] reçoit de nouveaux événements du service. Ces événements sont immédiatement envoyés dans une file d’attente, puis traités dans le scénario, un par un, dans l’ordre de réception des données.
 
@@ -62,7 +62,7 @@ Pour plus d’informations sur les cycles, voir [Exécution du scénario, cycles
 
 Si vous utilisez un autre paramètre de planification que [!UICONTROL Immediately], le scénario s’exécute aux intervalles que vous spécifiez. Étant donné que plusieurs webhooks peuvent être regroupés dans la file d’attente pendant l’intervalle, nous vous recommandons de définir l’option [!UICONTROL Maximum number of cycles] sur une valeur supérieure à la valeur par défaut 1 afin de traiter d’autres webhooks dans une seule exécution de scénario :
 
-1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![](assets/scenario-settings-icon.png) au bas de votre scénario.
+1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![icône des paramètres du scénario](assets/scenario-settings-icon.png) au bas de votre scénario.
 1. Dans le panneau **[!UICONTROL Scenario settings]** qui s’affiche, saisissez un nombre dans le champ **[!UICONTROL Max number of cycles]** pour indiquer le nombre d’événements de la file d’attente que vous souhaitez exécuter chaque fois que vous exécutez le scénario.
 
 Les événements restants dans la file d’attente seront traités la prochaine fois que le scénario sera exécuté, jusqu’au nombre défini dans le champ Nombre maximal de cycles .

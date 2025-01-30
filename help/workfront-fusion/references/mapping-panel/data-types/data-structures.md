@@ -4,10 +4,10 @@ description: Une structure de données est un document qui décrit en détail le
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 83%
+source-wordcount: '216'
+ht-degree: 82%
 
 ---
 
@@ -24,4 +24,4 @@ Les types de données pris en charge sont décrits dans l’article [Types de do
 
 Vous n’avez pas toujours à créer les structures de données. Vous pouvez vous faciliter la tâche en utilisant un modèle issu de notre générateur intégré. En fournissant un échantillon de données, le générateur crée automatiquement une structure de données basée sur l’échantillon de données que vous avez saisi. La structure de données créée peut alors être modifiée manuellement.
 
-![](assets/data-structure-generator-350x341.jpg)
+![Générateur de structure de données](assets/data-structure-generator-350x341.jpg)

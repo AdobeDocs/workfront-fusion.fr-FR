@@ -4,9 +4,9 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Forms]  vous perme
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 82%
 
 ---
@@ -85,7 +85,7 @@ Pour travailler avec vos réponses de formulaire, la feuille de calcul de vos r�
 
 1. Ouvrez votre formulaire.
 1. Accédez à l’onglet **[!UICONTROL Responses]** .
-1. Cliquez sur l’icône **[!UICONTROL Create Spreadsheet]** ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Cliquez sur l’icône **[!UICONTROL Create Spreadsheet]** ![icône de feuille de calcul](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Indiquez si vous souhaitez créer une feuille de calcul ou une feuille de calcul existante.
 1. Cliquez sur **[!UICONTROL Create]**.

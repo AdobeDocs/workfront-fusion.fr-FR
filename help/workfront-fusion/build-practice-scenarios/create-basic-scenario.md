@@ -7,9 +7,9 @@ description: Découvrez comment créer un scénario d’automatisation simple av
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 27%
 
 ---
@@ -124,7 +124,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
    Le nom apparaît juste en dessous du module. En dessous, [!DNL Workfront Fusion] inclut une brève description du type d’action effectuée par le module.
 
-   ![](assets/module-renamed-wf.png)
+   ![ Module renommé ](assets/module-renamed-wf.png)
 
 1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
 
@@ -191,9 +191,9 @@ Dans ce scénario, un test réussi permet de localiser la requête et de la conv
 >
 >1. Fermez la zone de **[!UICONTROL Notes]**.
 >
->     Une fois que vous avez ajouté une note à un scénario, un point orange s’affiche sur l’icône **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) en bas de l’éditeur de scénarios.
+>     Après avoir ajouté une note à un scénario, un point orange s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) au bas de l’éditeur de scénarios.
 >
->1. Cliquez sur l’icône **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) pour afficher vos notes.
+>1. Cliquez sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) pour afficher vos notes.
 >
 
 ## Activer le scénario

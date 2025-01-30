@@ -4,10 +4,10 @@ description: Vous pouvez utiliser l’outil d’analyse de texte pour analyser l
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 79%
+source-wordcount: '1156'
+ht-degree: 78%
 
 ---
 
@@ -267,21 +267,21 @@ Cette expression régulière génère normalement une correspondance complète.
 
 Cependant, l’implémentation de cette expression dans votre analyseur de texte n’entraîne pas de correspondance :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![Aucune correspondance](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 Cela est dû au fait que la valeur « i » indique uniquement le nombre de correspondances par correspondance. Dans ce cas, nous avons deux correspondances, il y a donc après la valeur « i » une valeur numérique 1 et 2. Le cas d’utilisation à appliquer ici est que, si vous devez faire correspondre ou transférer des données via un filtre vers la seconde valeur correspondante, vous pouvez spécifier la valeur à l’aide de sa représentation numérique.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![Correspondance](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 Pour obtenir les valeurs de correspondance dont vous avez besoin pour ajouter des intervalles à la partie que vous souhaitez analyser (par exemple, pour extraire uniquement « docx » de « filename.docx »), selon l’expression régulière que nous utilisons pour ce scénario, vous devez appliquer les intervalles sur \.(.+)
 
 Cela capture « docx », le place dans un groupe et ignore « . » .
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![Obtenir les correspondances](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 Dans la sortie affichée dans l’image ci-dessous, le groupe de capture correspondra à n’importe quel caractère (sauf pour les terminaisons de ligne).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![Output](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 Une autre solution qui intègre également l’expression régulière consiste à utiliser la fonction Remplacer.
 

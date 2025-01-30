@@ -4,10 +4,10 @@ description: Le module routeur vous permet de diviser votre flux en plusieurs it
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 15%
+source-wordcount: '829'
+ht-degree: 14%
 
 ---
 
@@ -71,13 +71,13 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 1. Dans l&#39;éditeur de scénarios, cliquez sur la poignée droite du module après lequel vous souhaitez ajouter le routeur.
 1. Sélectionnez **[!UICONTROL Flow Control]** > **Router** dans la liste des modules qui s’affiche.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Connecter l’itinéraire](assets/connect-the-router-350x108.png)
 
    Ou
 
    Pour insérer le module Router entre deux modules, cliquez sur l&#39;icône de clé à molette sous l&#39;itinéraire reliant les deux modules et sélectionnez **[!UICONTROL Add a router]** dans le menu.
 
-   ![](assets/insert-router-350x191.png)
+   ![Insérer un routeur](assets/insert-router-350x191.png)
 1. Ajoutez la première route au routeur en cliquant sur la poignée droite du routeur et ajoutez un module, comme pour ajouter un module.
 1. Pour ajouter un autre itinéraire, cliquez sur le module de routeur. Un itinéraire s’affiche. Ajoutez des modules à cet itinéraire, si vous le souhaitez.
 
@@ -125,13 +125,13 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![](assets/fallback-route-350x260.png)
+   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 
 L’itinéraire de secours est signalé par une flèche différente dans le module Router :
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Routeur de connexion fléché](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Exemple : cas d’utilisation `if/else`
 
@@ -141,10 +141,10 @@ Un cas d’utilisation type de la route de secours consiste à poursuivre le flu
 
 Dans cet exemple, le premier itinéraire est configuré avec un filtre. Il s’agit du composant `if`.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Configurer un filtre dans l’itinéraire](assets/set-up-a-filter-2-350x242.png)
 
 La deuxième route est configurée comme route de secours. Il s’agit du composant `else`.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Activer l’option de secours](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]
