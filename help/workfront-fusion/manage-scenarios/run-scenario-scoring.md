@@ -4,14 +4,18 @@ description: L’expert en notation de scénario peut vous aider à vous assurer
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 20%
 
 ---
 
 # Exécuter l’expert en notation de scénario
+
+>[!IMPORTANT]
+>
+>L’expert en notation de scénario a été temporairement désactivé.
 
 L’expert en notation de scénario peut vous aider à vous assurer que votre scénario est configuré de manière à suivre les bonnes pratiques. Il vérifie votre scénario et fournit des recommandations pour sa structure et son organisation.
 
