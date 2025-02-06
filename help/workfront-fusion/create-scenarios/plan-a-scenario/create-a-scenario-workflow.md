@@ -4,10 +4,10 @@ description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 19%
+source-wordcount: '772'
+ht-degree: 20%
 
 ---
 
@@ -26,6 +26,7 @@ Les scénarios sont conçus pour répondre aux besoins de votre entreprise, avec
 * [Configurer les paramètres du scénario](#onfigure-scenario-settings)
 * [Tester et réviser](#test-and-revise)
 * [Activer le scénario](#activate-the-scenario)
+* [Raccourcis clavier du scénario Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Raccourcis clavier
 
