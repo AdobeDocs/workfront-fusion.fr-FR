@@ -4,10 +4,10 @@ description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
+source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 21%
+source-wordcount: '767'
+ht-degree: 19%
 
 ---
 
@@ -139,35 +139,41 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Ctrl+Maj+S</td> 
-   <td><span style="font-weight: normal;">Cmd+Maj+S</span> </td> 
+   <td>Cmd+Maj+S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl+Maj+Entrée</td> 
-   <td><span style="font-weight: normal;">Cmd+Maj+Entrée</span> </td> 
+   <td>Cmd+Maj+Entrée</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Ctrl+C</td> 
-   <td><span style="font-weight: normal;">Commande+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Ctrl+V</td> 
-   <td><span style="font-weight: normal;">Commande+V</span> </td> 
+   <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Maj+Glisser</td> 
-   <td><span style="font-weight: normal;">Maj+Glisser</span> </td> 
+   <td>Maj+Glisser</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td>Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Collez cURL dans le scénario pour créer le module HTTP .</td> 
+   <td colspan="2">Copiez cURL, puis collez-la n’importe où dans l’éditeur de scénarios.<p>Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Utiliser cURL pour ajouter un module HTTP</a>.</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
