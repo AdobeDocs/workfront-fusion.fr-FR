@@ -4,9 +4,9 @@ description: Vous pouvez utiliser l’IA pour saisir une invite de texte décriv
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 10%
 
 ---
@@ -68,6 +68,15 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 +++
 
+## Conditions préalables
+
+Votre entreprise doit remplir les conditions préalables suivantes pour utiliser cette fonctionnalité :
+
+* Votre entreprise doit avoir participé au programme Beta de l’assistant d’IA pour Workfront.
+* L’Adobe doit avoir un accord IA généralisée d’Adobe signé dans un fichier pour votre organisation.
+
+  Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
+
 ## Applications de module d’IA actuellement prises en charge
 
 L’IA dédiée à Fusion peut actuellement générer des modules qui se connectent aux applications suivantes :
@@ -95,15 +104,8 @@ L’IA dédiée à Fusion peut actuellement générer des modules qui se connect
 1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un module.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Cliquez sur l’icône Générer avec l’IA ![Générer avec l’IA](assets/generate-with-ai-icon-beta.png) en bas de la page de l’éditeur de scénarios.
-
-   Ou
-
-   Commencez à ajouter un module et sélectionnez **Générer avec l’IA** dans la liste des applications. Cette option n’apparaît pas lors de l’ajout du premier module (déclencheur) à un scénario.
-
-   Le panneau Assistant d’IA s’ouvre.
-1. (Conditionnel) Si c’est la première fois que l’IA vous permet d’ajouter un segment de scénario, lisez le contrat qui s’affiche et cliquez sur **Accepter**.
-1. Saisissez une invite de texte dans la zone.
+1. Cliquez sur l’icône **Assistant AI** ![icône de l’assistant AI](assets/ai-assistant-icon.png) près du coin supérieur droit de l’écran.
+1. Saisissez une invite de texte dans le panneau de l’assistant d’IA.
 
    Pour obtenir des conseils sur les invites, voir [Conseils pour créer des invites pour les segments de scénario](#tips-for-creating-prompts-for-scenario-segments) dans cet article.
 
