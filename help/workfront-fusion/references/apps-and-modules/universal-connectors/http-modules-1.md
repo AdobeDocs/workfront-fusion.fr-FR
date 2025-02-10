@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: 1be98b5f6d869f93e1786b1c2be7a325037d7c02
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 95%
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 L’application HTTP fournit divers modules de communication basés sur le protocole HTTP (Hypertext Transfer Protocol). HTTP est la base de la communication des données pour le World Wide Web. Vous pouvez utiliser les modules pour télécharger des pages et des fichiers web, appeler des webhooks et des points de terminaison d’API, etc.
 
-Le choix du module dépend du mécanisme d’authentification/autorisation utilisé par la ressource à laquelle vous souhaitez accéder.
+Le bon choix du module dépend du mécanisme d’authentification/d’autorisation utilisé par la ressource à laquelle vous souhaitez accéder.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Le choix du module dépend du mécanisme d’authentification/autorisation utili
 
 Consultez les articles suivants pour obtenir des instructions relatives à un module spécifique :
 
-* [HTTP > Module [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [http > module [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] > module [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > module [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] > module [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)

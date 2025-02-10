@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7357044d19f93a91d22cede81e7316ff86733fdf
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 79%
+source-wordcount: '1340'
+ht-degree: 74%
 
 ---
 
@@ -21,42 +21,46 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
@@ -97,6 +101,14 @@ Pour créer une connexion pour vos modules [!DNL ServiceNow], procédez comme su
       <td>Saisir un nom pour la nouvelle connexion [!DNL ServiceNow]</td> 
      </tr> 
      <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td>Indiquez si vous vous connectez à un environnement de production ou hors production.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
+      <td>Indiquez si vous vous connectez à un compte de service ou à un compte personnel. </td> 
+     </tr> 
+     <tr> 
       <td role="rowheader"> <p>[!UICONTROL Username]</p> </td> 
       <td>Saisissez votre nom d’utilisateur ou d’utilisatrice [!DNL ServiceNow]</td> 
      </tr> 
@@ -123,22 +135,13 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 >[!NOTE]
 >
->Si un enregistrement personnalisé est sélectionné dans un champ « [!UICONTROL Record type] », le chargement des champs personnalisés peut prendre un certain temps.
+>* Si un enregistrement personnalisé est sélectionné dans un champ « [!UICONTROL Record type] », le chargement des champs personnalisés peut prendre un certain temps.
 >
->S’il n’existe aucun enregistrement personnalisé, le menu déroulant est vide.
+>* S’il n’existe aucun enregistrement personnalisé, la liste déroulante du champ « Type d’enregistrement » est vide.
 
-* [[!UICONTROL Watch records]](#watch-records)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Search for records]](#search-for-records)
+### Déclencheurs
 
-### [!UICONTROL Watch records]
+#### [!UICONTROL Watch records]
 
 Ce module déclencheur active un scénario lorsqu’un enregistrement est créé ou mis à jour.
 
@@ -177,7 +180,43 @@ Ce module déclencheur active un scénario lorsqu’un enregistrement est créé
  </tbody> 
 </table>
 
-### [!UICONTROL Custom API Call]
+### Actions
+
+* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
+* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Download an attachment]](#download-an-attachment)
+* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+* [[!UICONTROL Update a record]](#update-a-record)
+
+#### [!UICONTROL Create a record]
+
+Ce module d’action crée un enregistrement [!DNL ServiceNow].
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td>Indiquez si vous souhaitez créer un enregistrement dans un tableau personnalisé ou un standard.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>Sélectionnez le type d’enregistrement [!DNL ServiceNow] que vous souhaitez que le module crée. Vous pouvez ensuite remplir les champs disponibles pour ce type d’enregistrement.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Custom API Call]
 
 Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL ServiceNow]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL ServiceNow].
 
@@ -193,11 +232,11 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Saisissez l’adresse sur le serveur web avec lequel le module doit interagir.</p> <p>Vous pouvez saisir une URL relative, ce qui signifie que vous n’avez pas besoin d’inclure le protocole (comme <code>http://</code>) au début. Cela indique au serveur web que l’interaction se produit sur le serveur.</p> <p>Par exemple : <code>[!DNL /api/conversations].create</code></p> </td> 
+   <td> Saisir un chemin relatif à <code>https://&ltinstance_url&gt/api/</code>. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -217,7 +256,70 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Read a record]
+#### [!UICONTROL Deactivate a User]
+
+Ce module d’action désactive un utilisateur ou une utilisatrice dans [!DNL ServiceNow] à l’aide de l’ID système.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL User System ID]</td> 
+   <td> Saisissez ou mappez l’ID [!DNL ServiceNow] unique de l’utilisateur ou l’utilisatrice que le module doit désactiver.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a record]
+
+Ce module d’action supprime un incident ou une personne.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>Indiquez si vous souhaitez supprimer un incident ou une personne.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td>Saisissez ou mappez l’identifiant [!DNL ServiceNow] unique de l’enregistrement que vous souhaitez que le module supprime.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download an attachment]
+
+Ce module d’action télécharge une pièce jointe dans un enregistrement [!DNL ServiceNow].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
+   <td> Saisissez ou mappez l’ID [!DNL ServiceNow] unique de la pièce jointe que le module doit télécharger.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Read a record]
 
 Ce module d’action lit un enregistrement [!DNL ServiceNow] à l’aide de l’ID système.
 
@@ -256,101 +358,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Deactivate a User]
-
-Ce module d’action désactive un utilisateur ou une utilisatrice dans [!DNL ServiceNow] à l’aide de l’ID système.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL User System ID]</td> 
-   <td> Saisissez ou mappez l’ID [!DNL ServiceNow] unique de l’utilisateur ou l’utilisatrice que le module doit désactiver.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Download an attachment]
-
-Ce module d’action télécharge une pièce jointe dans un enregistrement [!DNL ServiceNow].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
-   <td> Saisissez ou mappez l’ID [!DNL ServiceNow] unique de la pièce jointe que le module doit télécharger.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Upload an attachment]
-
-Ce module d’action charge une pièce jointe dans un enregistrement [!DNL ServiceNow].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table name]</td> 
-   <td>Saisissez ou mappez le nom de la table dans laquelle vous souhaitez charger la pièce jointe.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>Saisissez ou mappez l’ID [!DNL ServiceNow] unique du système dans lequel vous souhaitez charger la pièce jointe.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Saisissez ou mappez un nom pour la pièce jointe.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File content]</td> 
-   <td>Saisissez ou mappez le fichier que vous souhaitez charger dans [!DNL ServiceNow].</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Create a record]
-
-Ce module d’action crée un enregistrement [!DNL ServiceNow].
-
-Lorsque vous configurez ce module, les champs suivants s’affichent.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
-   <td>Indiquez si vous souhaitez créer un enregistrement dans un tableau personnalisé ou un standard.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL ServiceNow] que vous souhaitez que le module crée. Vous pouvez ensuite remplir les champs disponibles pour ce type d’enregistrement.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Update a record]
+#### [!UICONTROL Update a record]
 
 Ce module d’action crée un enregistrement [!DNL ServiceNow].
 
@@ -379,11 +387,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a record]
+#### [!UICONTROL Upload an attachment]
 
-Ce module d’action supprime un incident ou une personne.
-
-Lorsque vous configurez ce module, les champs suivants s’affichent.
+Ce module d’action charge une pièce jointe dans un enregistrement [!DNL ServiceNow].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,17 +400,23 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte ServiceNow à [!DNL Workfront Fusion], voir <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL ServiceNow] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Indiquez si vous souhaitez supprimer un incident ou une personne.</td> 
+   <td role="rowheader">[!UICONTROL Table name]</td> 
+   <td>Saisissez ou mappez le nom de la table dans laquelle vous souhaitez charger la pièce jointe.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>Saisissez ou mappez l’identifiant [!DNL ServiceNow] unique de l’enregistrement que vous souhaitez que le module supprime.</td> 
+   <td>Saisissez ou mappez l’ID de [!DNL ServiceNow] unique de l’élément dans lequel vous souhaitez charger la pièce jointe.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search for records]
+### Recherches
+
+#### [!UICONTROL Search for records]
 
 Ce module recherche des enregistrements en fonction des critères que vous sélectionnez.
 
@@ -444,7 +456,7 @@ Le module renvoie tous les champs standard associés à l’enregistrement, ains
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>Saisissez les critères selon lesquels vous souhaitez que le module recherche. <!--For more information on setting up search filters, see <a href="." class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p>--> </li> 
+       <li> <p>[!UICONTROL Search Criteria]</p> <p>Saisissez les critères selon lesquels vous souhaitez que le module recherche. </li> 
        <li> <p>[!UICONTROL Sort by]</p> <p>Indiquez le champ selon lequel le module doit trier les résultats et si ceux-ci doivent être triés par ordre croissant ou décroissant.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 

@@ -2,7 +2,7 @@
 user-guide-title: Documentation sur Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 61%
@@ -282,7 +282,7 @@ ht-degree: 61%
          * [[!UICONTROL HTTP] > module [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP] > module [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
          * [[!UICONTROL HTTP] > module [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP] > Autres modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [Module SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [Modules FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)

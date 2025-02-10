@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ddebec2d03d9d843c46182d92df6c8a871799999
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 73%
+source-wordcount: '1560'
+ht-degree: 65%
 
 ---
 
@@ -15,50 +15,48 @@ ht-degree: 73%
 
 Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Microsoft Office 365 Calendar] et le connecter à plusieurs applications et services tiers.
 
-Pour utiliser [!DNL Office 365 Calendar] avec [!DNL Adobe Workfront Fusion], vous devez disposer d’un compte [!DNL Office 365 Excel]. Vous pouvez en créer un à l’adresse [www.office.com](https://www.office.com/).
-
-Pour obtenir des instructions sur la connexion de votre compte Office 365 à [!DNL Workfront Fusion], voir [Créer une connexion à Adobe  [!DNL Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
-
-Une fois le consentement accordé, vous êtes redirigé vers la page d’administration de [!UICONTROL Workfront Fusion], où vous pouvez continuer à créer votre scénario.
-
 ## Conditions d’accès
+
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
@@ -111,124 +109,12 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Événement
 
-* [[!UICONTROL Watch Events]](#watch-events)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Get an Event]](#get-an-event)
 * [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Update an Event]](#update-an-event)
 * [[!UICONTROL Delete an Event]](#delete-an-event)
-
-#### [!UICONTROL Watch Events]
-
-Ce module de déclenchement récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
-
->[!NOTE]
->
->Pour rechercher les occurrences supprimées d’une série d’événements, sélectionnez [!UICONTROL By Updated Time] dans le champ [!UICONTROL Watch events] . Ce module ne recherche pas les événements uniques supprimés ni les séries d’événements supprimées.
-
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watch events]</td> 
-   <td> <p>Sélectionnez le mode de surveillance des événements.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By Created Time]</strong> </p> <p>Surveillez les nouveaux événements.</p> </li> 
-     <li> <p><strong>[!UICONTROL By Updated Time]</strong> </p> <p>Surveillez les événements mis à jour.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar]</td> 
-   <td> <p>Sélectionnez le calendrier spécifique à surveiller.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td>Définissez les conditions de filtrage pour filtrer les résultats par objet, identifiant d’événement ou corps.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Saisissez le nombre maximum de messages que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Search Events]
-
-Ce module de recherche récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar]</td> 
-   <td> <p>Sélectionnez le calendrier spécifique à surveiller.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Définissez les conditions de filtrage pour filtrer les résultats. Vous pouvez filtrer selon les propriétés suivantes :</p> 
-    <ul> 
-     <li>[!UICONTROL Subject]</li> 
-     <li>[!UICONTROL Event ID]</li> 
-     <li>[!UICONTROL Created Date Time]</li> 
-     <li>[!UICONTROL Last Modified Date Time]</li> 
-     <li>[!UICONTROL Body Preview]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
-   <td> <p>Sélectionnez le mode de classement des résultats.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Subject]</strong>, croissant ou décroissant</li> 
-     <li><strong>[!UICONTROL Created Date Time]</strong>, croissant ou décroissant</li> 
-     <li><strong>[!UICONTROL Last Modified Date Time]</strong>, croissant ou décroissant</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Saisissez le nombre maximal d’événements que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get an Event]
-
-Ce module d’action récupère les détails de l’événement spécifié.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Event ID]</td> 
-   <td> <p>Saisissez ou mappez l’ID de l’événement dont vous souhaitez récupérer les détails.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Get an Event]](#get-an-event)
+* [[!UICONTROL Search Events]](#search-events)
+* [[!UICONTROL Update an Event]](#update-an-event)
+* [[!UICONTROL Watch Events]](#watch-events)
 
 #### [!UICONTROL Create an Event]
 
@@ -240,7 +126,6 @@ Ce module d’action crée un nouvel événement.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -249,11 +134,11 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Saisissez le moment où l’événement commence, en indiquant une date et une heure. Utilisez le format <code>({date}T{time}</code> ; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Saisissez le moment où l’événement commence, en indiquant une date et une heure. Utilisez le format <code>{date}T{time}</code>; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> Saisissez le moment où l’événement se termine, en indiquant une date et une heure. Utilisez le format <code>{date}T{time}</code> ; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Saisissez le moment où l’événement se termine, en indiquant une date et une heure. Utilisez le format <code>{date}T{time}</code> ; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 
@@ -292,7 +177,7 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
-   <td> <p>Saisissez les détails de l’emplacement de l’événement.</p> </td> 
+   <td> <p>Saisissez ou mappez les détails du lieu de l’événement.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Response requested]</td> 
@@ -312,15 +197,100 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attendees]</p> </td> 
-   <td> <p>Ajoutez des personnes participant à l’événement.</p> 
+   <td> <p>Pour chaque participant à inclure, cliquez sur <b>Ajouter un élément</b> et saisissez les informations suivantes :</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Saisissez le nom de la personne participante.</p> </li> 
-     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Saisissez l’adresse e-mail de la personne participante.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Saisissez ou mappez le nom du participant.</p> </li> 
+     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Saisissez ou mappez l’adresse e-mail du participant.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Category]</td> 
-   <td>Saisissez ou mappez les catégories que vous souhaitez que l’événement affiche comme sur le calendrier.</td> 
+   <td role="rowheader">[!UICONTROL Categories]</td> 
+   <td>Pour chaque catégorie que l'événement doit afficher dans le calendrier, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez la catégorie.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete an Event]
+
+Ce module d’action supprime un événement existant.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Event ID]</td> 
+   <td> <p>Saisissez ou mappez l’ID de l’événement que vous souhaitez supprimer.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get an Event]
+
+Ce module d’action récupère les détails de l’événement spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Event ID]</td> 
+   <td> <p>Saisissez ou mappez l’ID de l’événement dont vous souhaitez récupérer les détails.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Search Events]
+
+Ce module de recherche récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar]</td> 
+   <td> <p>Sélectionnez le calendrier spécifique à surveiller.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td> <p>Définissez les conditions de filtrage pour filtrer les résultats. Vous pouvez filtrer selon les propriétés suivantes :</p> 
+    <ul> 
+     <li>[!UICONTROL Subject]</li> 
+     <li>[!UICONTROL Event ID]</li> 
+     <li>[!UICONTROL Created Date Time]</li> 
+     <li>[!UICONTROL Last Modified Date Time]</li> 
+     <li>[!UICONTROL Body Preview]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td> <p>Sélectionnez le mode de classement des résultats.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Subject]</strong>, croissant ou décroissant</li> 
+     <li><strong>[!UICONTROL Created Date Time]</strong>, croissant ou décroissant</li> 
+     <li><strong>[!UICONTROL Last Modified Date Time]</strong>, croissant ou décroissant</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Saisissez le nombre maximal d’événements que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -335,7 +305,6 @@ Ce module d’action met à jour un événement existant.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -344,7 +313,7 @@ Ce module d’action met à jour un événement existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
-   <td> <p>Saisissez ou mappez un titre pour l’événement créé.</p> </td> 
+   <td> <p>Saisissez ou mappez un nouveau titre pour l’événement.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
@@ -424,9 +393,14 @@ Ce module d’action met à jour un événement existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Event]
+#### [!UICONTROL Watch Events]
 
-Ce module d’action supprime un événement existant.
+Ce module de déclenchement récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
+
+>[!NOTE]
+>
+>Pour rechercher les occurrences supprimées d’une série d’événements, sélectionnez [!UICONTROL By Updated Time] dans le champ [!UICONTROL Watch events] . Ce module ne recherche pas les événements uniques supprimés ni les séries d’événements supprimées.
+
 
 <table style="table-layout:auto"> 
  <col> 
@@ -434,107 +408,59 @@ Ce module d’action supprime un événement existant.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event ID]</td> 
-   <td> <p>Saisissez ou mappez l’ID de l’événement que vous souhaitez supprimer.</p> </td> 
+   <td role="rowheader">[!UICONTROL Watch events]</td> 
+   <td> <p>Sélectionnez le mode de surveillance des événements.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By Created Time]</strong> </p> <p>Surveillez les nouveaux événements.</p> </li> 
+     <li> <p><strong>[!UICONTROL By Updated Time]</strong> </p> <p>Surveillez les événements mis à jour.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar]</td> 
+   <td> <p>Sélectionnez le calendrier spécifique à surveiller.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td>Définissez les conditions de filtrage pour filtrer les résultats par objet, identifiant d’événement ou corps.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Saisissez le nombre maximum de messages que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Calendrier
 
-* [[!UICONTROL List Calendars]](#list-calendars)
-* [[!UICONTROL Get a Calendar]](#get-a-calendar)
 * [[!UICONTROL Create a Calendar]](#create-a-calendar)
-* [[!UICONTROL Update a Calendar]](#update-a-calendar)
 * [[!UICONTROL Delete a Calendar]](#delete-a-calendar)
+* [[!UICONTROL Get a Calendar]](#get-a-calendar)
+* [[!UICONTROL List Calendars]](#list-calendars)
+* [[!UICONTROL Update a Calendar]](#update-a-calendar)
 
-#### [!UICONTROL List Calendars]
 
-Ce module de recherche récupère une liste de tous les calendriers de la personne authentifiée.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient les calendriers à répertorier.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Saisissez le nombre maximal de calendriers que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Calendar]
-
-Ce module d’action récupère les détails d’un seul calendrier.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Saisissez ou mappez l’ID du calendrier dont vous souhaitez récupérer les détails.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 #### [!UICONTROL Create a Calendar]
 
-Ce module d’action crée un nouveau calendrier dans votre compte Google.
+Ce module d&#39;action crée un calendrier dans votre compte Office 365.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar name]</td> 
-   <td> <p>Saisissez un nom pour le nouveau calendrier.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update a Calendar]
-
-Ce module d’action modifie un calendrier existant.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Saisissez le [!UICONTROL Calendar ID] du calendrier à mettre à jour. </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New Calendar name]</td> 
    <td> <p>Saisissez un nom pour le nouveau calendrier.</p> </td> 
   </tr> 
  </tbody> 
@@ -550,12 +476,76 @@ Ce module d&#39;action supprime un calendrier existant.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
    <td>Saisissez l’ID [!UICONTROL Calendar] pour le calendrier à supprimer.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Calendar]
+
+Ce module d’action récupère les détails d’un seul calendrier.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
+   <td> <p>Saisissez ou mappez l’ID du calendrier dont vous souhaitez récupérer les détails.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Calendars]
+
+Ce module de recherche récupère une liste de tous les calendriers de la personne authentifiée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient les calendriers à répertorier.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Saisissez le nombre maximal de calendriers que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Update a Calendar]
+
+Ce module d’action modifie un calendrier existant.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
+   <td>Saisissez le [!UICONTROL Calendar ID] du calendrier à mettre à jour. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New Calendar name]</td> 
+   <td> <p>Saisissez un nouveau nom pour le calendrier.</p> </td> 
   </tr> 
  </tbody> 
 </table>
