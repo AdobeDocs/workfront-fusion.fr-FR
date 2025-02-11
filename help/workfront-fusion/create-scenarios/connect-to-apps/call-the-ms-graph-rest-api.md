@@ -1,12 +1,12 @@
 ---
 title: Appeler l’API REST MS Graph
-description: Appelez l’API REST MS Graph via le module HTTP &gt; Make an OAuth 2.0 request d’Adobe Workfront Fusion.
+description: Appeler l’API REST MS Graph via le HTTP Adobe Workfront Fusion et effectuer une requête OAuth 2.0
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '679'
 ht-degree: 21%
 
 ---

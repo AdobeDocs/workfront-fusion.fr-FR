@@ -1,12 +1,12 @@
 ---
-title: Module HTTP > Effectuer une requête OAuth 2.0
+title: HTTP > Effectuer une requête OAuth 2.0
 description: Pour effectuer une requête HTTP(S)  [!DNL Adobe Workfront Fusion]  auprès de serveurs nécessitant une autorisation OAuth 2.0, vous devez d’abord créer une connexion OAuth. [!DNL Adobe Workfront Fusion]  s’assure que tous les appels effectués avec cette connexion comportent les en-têtes d’autorisation appropriés et actualise automatiquement les jetons associés lorsque cela est nécessaire.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 71%
 
 ---

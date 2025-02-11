@@ -1,13 +1,13 @@
 ---
-title: Module HTTP > Effectuer une demande
-description: Le module Adobe Workfront Fusion HTTP > Effectuer une demande est un module universel qui vous permet de configurer une demande HTTP et de la soumettre à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
+title: HTTP > Effectuer une requête
+description: Le module HTTP > Effectuer une requête d’Adobe Workfront Fusion est un module universel qui vous permet de configurer une requête HTTP et de l’envoyer à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 67%
+source-wordcount: '815'
+ht-degree: 63%
 
 ---
 

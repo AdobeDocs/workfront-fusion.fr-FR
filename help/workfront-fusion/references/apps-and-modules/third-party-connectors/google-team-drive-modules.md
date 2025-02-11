@@ -4,7 +4,7 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Team Drive]  vous 
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 74%
@@ -162,7 +162,7 @@ Charge un fichier vers le lecteur partagé spécifié.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Indiquez le fichier que vous souhaitez charger sur le lecteur partagé.</p> <p>Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] ou [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], ou saisissez manuellement le nom et les données du fichier.</p> </td> 
+   <td> <p>Indiquez le fichier que vous souhaitez charger sur le lecteur partagé.</p> <p>Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Dropbox] &gt; [!UICONTROL Get a file)], ou saisissez manuellement le nom et les données du fichier.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

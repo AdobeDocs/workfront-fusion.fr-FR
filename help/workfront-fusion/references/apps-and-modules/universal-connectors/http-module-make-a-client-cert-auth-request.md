@@ -1,12 +1,12 @@
 ---
-title: Module HTTP > Effectuer une requête d’autorisation de certificat client
+title: HTTP > Effectuer une requête d’autorisation de certificat client
 description: Ce module  [!DNL Adobe Workfront Fusion]  vous permet de configurer une requête HTTP avec une autorisation de certificat client HTTP et de la soumettre à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 81%
 
 ---
@@ -114,7 +114,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>Le [!UICONTROL Multipart/form-data] est une requête HTTP multipartie utilisée pour envoyer des fichiers et des données. Elle est fréquemment utilisée pour charger des fichiers sur le serveur.</p> <p>Ajouter des champs à envoyer dans la requête. Chaque champ doit contenir une paire clé-valeur.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Saisissez la clé et la valeur à envoyer dans le corps de la requête.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Saisissez la clé et indiquez le fichier source à envoyer dans le corps de la requête.</p> <p>Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], ou saisissez manuellement le nom et les données du fichier.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Saisissez la clé et indiquez le fichier source à envoyer dans le corps de la requête.</p> <p>Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt; [!UICONTROL Download a File)], ou saisissez manuellement le nom et les données du fichier.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
