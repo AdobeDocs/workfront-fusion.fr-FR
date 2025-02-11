@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
 source-wordcount: '1858'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -83,7 +83,7 @@ Le connecteur Airtable utilise les éléments suivants :
 -->
 1. Ouvrez Workfront Fusion et la boîte de dialogue **Créer une connexion** du module souhaité.
 1. Saisissez un nom pour la connexion.
-1. (Facultatif) Cliquez sur Afficher les paramètres avancés, puis saisissez votre ID client Airtable et votre secret client.
+1. (Facultatif) Cliquez sur Afficher les paramètres avancés, puis saisissez votre ID client Airtable et votre Secret client.
 1. Cliquez sur le bouton **Continuer** pour créer la connexion et revenir au module.
 
 ## Modules Airtable et leurs champs
