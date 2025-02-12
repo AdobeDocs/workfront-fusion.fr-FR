@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez dé
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 69%
+source-wordcount: '1395'
+ht-degree: 57%
 
 ---
 
@@ -17,42 +17,54 @@ Avec les modules [!DNL Adobe Workfront Planning], vous pouvez déclencher un sc�
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
-   </td>  
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Conditions préalables
+
+Pour accéder à Workfront Planning, vous devez disposer des éléments suivants :
+
+* Un nouveau package et une nouvelle licence Workfront. Workfront Planning n’est pas disponible pour les packages ou licences Workfront hérités.
+* Un package Workfront Planning.
+* L’instance de Workfront de votre organisation doit être intégrée à l’expérience unifiée Adobe.
 
 ## Informations sur l’API Adobe Workfront Planning
 
@@ -110,7 +122,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] direc
           <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Facultatif)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Saisissez l’URL que votre instance de Workfront utilisera pour authentifier cette connexion. <p>La valeur par défaut est <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -119,9 +131,22 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] direc
         </tr>
       </tbody>
     </table>
+
 1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
 
 ## Modules [!DNL Adobe Workfront Planning] et leurs champs
+
+Lorsque vous configurez des modules Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. D’autres champs Workfront peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+
+![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Déclencheurs](#triggers)
+* [Actions](#actions)
+* [Recherches](#searches)
+* [Non catégorisé](#uncategorized)
 
 ### Déclencheurs
 
@@ -199,7 +224,7 @@ Ce module d&#39;action supprime un seul type d&#39;enregistrement dans Workfront
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>Saisissez ou mappez l’ID du champ à supprimer.</td> 
+      <td>Saisissez ou mappez l’identifiant du type d’enregistrement à supprimer.</td> 
       </tr>
   </tbody>
 </table>
@@ -246,21 +271,61 @@ Ce module lance un appel API personnalisé à l’API [!DNL Adobe Workfront Plan
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets autour de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
 </table>
 
-<!--
-### Searches
 
-#### Search records
+### Recherches
 
-This action module retrieves a list of records based on criteria you specify.
+#### Rechercher des enregistrements
 
--->
+Ce module d’action récupère une liste d’enregistrements en fonction des critères que vous spécifiez.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Saisissez ou mappez le Workspace contenant les enregistrements que vous souhaitez rechercher.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Sélectionnez le type d’enregistrement à rechercher.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>Pour chaque champ à utiliser dans votre recherche, localisez ce champ, sélectionnez l’opérateur et saisissez ou mappez la valeur à rechercher. Les champs sont disponibles en fonction du type d’enregistrement sélectionné.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>Sélectionnez la condition de vos filtres :<ul><li><b>ET</b><p>Le module renvoie les enregistrements qui respectent <b>toutes</b> les valeurs de champ que vous avez sélectionnées.</p></li><li><b>OU</b><p>Le module renvoie les enregistrements qui correspondent à l’<b>une </b> valeurs de champ que vous avez sélectionnées.</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### Non catégorisé
 
@@ -287,7 +352,7 @@ Cette action crée un enregistrement unique dans Workfront Planning.
       <td role="rowheader">
         <p>Autres champs</p>
       </td>
-      <td>Ces champs sont basés sur le type d’enregistrement que vous avez sélectionné.</td> 
+      <td>Saisissez les valeurs que vous souhaitez attribuer au nouvel enregistrement. Ces champs sont basés sur le type d’enregistrement que vous avez sélectionné.</td> 
       </tr>
      <tr>
   </tbody>
@@ -313,31 +378,6 @@ Ce module d&#39;action supprime l&#39;enregistrement spécifié dans Workfront P
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### Obtenir un enregistrement
 
@@ -378,11 +418,11 @@ Ce module d’action récupère tous les enregistrements du type spécifié.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Sélectionnez le type d’enregistrement que vous souhaitez récupérer.</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -397,6 +437,10 @@ Ce module d’action récupère une liste de types d’enregistrement dans un co
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>Sélectionnez ou mappez l’espace de travail contenant les types d’enregistrements à récupérer.</td>
     </tr>
   </tbody>
 </table>
@@ -423,7 +467,7 @@ Cette action met à jour un seul enregistrement dans Workfront Planning.
       <td role="rowheader">
         <p>Autres champs</p>
       </td>
-      <td>Ces champs sont basés sur le type d’enregistrement que vous avez sélectionné.</td> 
+      <td>Saisissez les nouvelles valeurs que vous souhaitez attribuer à l'enregistrement. Ces champs sont basés sur le type d’enregistrement que vous avez sélectionné.</td> 
       </tr>
      <tr>
   </tbody>
