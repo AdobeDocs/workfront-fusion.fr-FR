@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
 workflow-type: tm+mt
-source-wordcount: '2876'
-ht-degree: 87%
+source-wordcount: '2870'
+ht-degree: 78%
 
 ---
 
@@ -21,6 +21,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
@@ -70,7 +74,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Informations sur l’API Dropbox
 
-Le connecteur de Dropbox utilise les éléments suivants :
+Le connecteur Dropbox utilise les éléments suivants :
 
 <table style="table-layout:auto"> 
  <col> 
@@ -131,6 +135,10 @@ Pour créer une connexion pour vos modules [!DNL Dropbox], procédez comme suit�
         <td role="rowheader">[!UICONTROL Account Type]</td>
         <td>Choisissez si vous vous connectez à un compte personnel Dropbox ou à un compte professionnel (Dropbox Business).</td>
         </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>Activez cette option pour exclure l’en-tête dropbox-api-path-root pour les applications Dropbox avec un accès au dossier de l’application</td>
+        </tr>
       </tbody>
     </table>
 
@@ -180,52 +188,11 @@ Ce module de type Déclencheur renvoie les détails du fichier lorsque le fichie
 
 ### Modules pour l’obtention de fichiers et de dossiers [!DNL Dropbox]
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders]
-
-Ce module de recherche recherche les enregistrements dans un objet dans [!DNL Dropbox] qui correspondent à la requête que vous avez spécifiée.
-
-Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Dropbox] à [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-dropbox" class="MCXref xref">Créer une connexion à [!DNL Dropbox]</a> dans cet article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>Saisissez le terme de recherche.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Sélectionnez le dossier où vous souhaitez rechercher. Ce module recherche l’intégralité de [!DNL Dropbox] si vous ne sélectionnez pas de dossier.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Statut du fichier</td> 
-   <td> <p> Sélectionnez le statut du fichier pour limiter la recherche au statut du fichier sélectionné.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Catégories de fichiers</td> 
-   <td> <p> Sélectionnez les catégories de fichiers pour limiter la recherche aux catégories sélectionnées.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Extensions de fichiers</td> 
-   <td> <p> Sélectionnez les extensions de fichiers à rechercher.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Limite </td> 
-   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -345,7 +312,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>Chemin du fichier / Fichier</p> </td> 
-   <td> <p style="font-weight: bold;">Chemin du fichier</p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p style="font-weight: bold;">Fichier</p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
+   <td> <p><b>Chemin du fichier</b></p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p><b>Fichier</b></p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>Limite</p> </td> 
@@ -354,28 +321,13 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### Modules pour la création et la modification de fichiers et de dossiers [!DNL Dropbox]
+#### [!UICONTROL Search Files/Folders]
 
-* [[!UICONTROL Upload] un fichier](#upload-a-file)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+Ce module de recherche recherche les enregistrements dans un objet dans [!DNL Dropbox] qui correspondent à la requête que vous avez spécifiée.
 
-#### [!UICONTROL Upload a File]
+Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
-Ce module d’action charge un fichier dans un dossier.
-
-Vous spécifiez des informations telles que l’emplacement du document, le fichier à charger et éventuellement un nouveau nom pour le fichier.
-
-Le module renvoie l’ID du fichier et tous les champs associés, ainsi que les valeurs et les champs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
-
-Lorsque vous configurez ce module, les champs suivants s’affichent.
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
@@ -384,19 +336,42 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Dropbox] à [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-dropbox" class="MCXref xref">Créer une connexion à [!DNL Dropbox]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td> <p> Sélectionnez le dossier de votre [!DNL Dropbox] dans lequel vous souhaitez charger le fichier.</p> </td> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>Saisissez le terme de recherche.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Saisissez ou mappez le fichier que vous souhaitez ajouter au dossier [!DNL Dropbox] sélectionné ci-dessus.</p> <p style="font-weight: bold;">[!UICONTROL File name]</p> <p>Saisissez ou mappez le nom du fichier, y compris son extension.</p> <p style="font-weight: bold;">[!UICONTROL File data]</p> <p>Saisissez ou mappez les données du fichier (provenant du module précédent, par exemple [!UICONTROL Google Drive] &gt; [!UICONTROL Get a File)].</p> <p>Remarque : la taille maximale du fichier chargé est de 150 Mo.</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Sélectionnez le dossier où vous souhaitez rechercher. Ce module recherche l’intégralité du compte [!DNL Dropbox]account si vous ne sélectionnez pas de dossier.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> Activez cette option pour remplacer le fichier existant par le nouveau fichier. Si cette option est désactivée, le fichier chargé est renommé.</p> </td> 
+   <td>Statut du fichier</td> 
+   <td> <p> Sélectionnez le statut du fichier que vous souhaitez inclure dans la recherche.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Catégories de fichiers</td> 
+   <td> <p> Sélectionnez les catégories de fichiers à inclure dans la recherche.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Extensions de fichiers</td> 
+   <td> <p>Pour chaque extension de fichier que vous souhaitez inclure dans la recherche, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’extension de fichier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Limite </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### Modules pour la création et la modification de fichiers et de dossiers [!DNL Dropbox]
+
+* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
+* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
+* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
+* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
+* [[!UICONTROL Restore a File]](#restore-a-file)
+* [[!UICONTROL Upload] un fichier](#upload-a-file)
 
 #### [!UICONTROL Create a Folder]
 
@@ -422,7 +397,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>Saisissez ou mappez le chemin où vous souhaitez créer un dossier.</p> <p>Note :   <p>Si vous utilisez un compte [!DNL Dropbox Business] (avec espaces d’équipe), vous devez supprimer la barre oblique <code>/</code>, ou ne cliquez pas sur <strong>[!UICONTROL Click here] pour choisir un dossier</strong> pour créer un dossier d’équipe à la racine.</p> <p>Si la barre oblique n’est pas supprimée, une erreur <code>[409] path/malformed_path/..</code> est renvoyée.</p> </p> </td> 
+   <td> <p>Saisissez ou mappez le chemin où vous souhaitez créer un dossier.</p> <p>Note :   <p>Si vous utilisez un compte [!DNL Dropbox Business] (avec espaces d’équipe), vous devez supprimer la barre oblique <code>/</code> ou ne cliquez pas sur <strong>Cliquez ici pour choisir un dossier</strong> pour créer un dossier d’équipe à la racine.</p> <p>Si la barre oblique n’est pas supprimée, une erreur <code>[409] path/malformed_path/..</code> est renvoyée.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
@@ -433,11 +408,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Create/Overwrite a Text File]
 
-Ce module d’action crée un fichier DOC ou remplace le contenu d’un fichier existant.
+Ce module d&#39;action crée un fichier DOC ou remplace le contenu d&#39;un fichier existant.
 
 Vous spécifiez le fichier source et le dossier.
-
-Le module renvoie l’ID du dossier et tous les champs associés, ainsi que les valeurs et les champs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -451,15 +424,11 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
-   <td> <p> Indiquez si vous souhaitez créer ou remplacer un fichier DOC.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Sélectionnez l’emplacement cible où vous souhaitez créer un fichier.</p> </td> 
+   <td> <p> Indiquez si vous souhaitez créer ou remplacer un fichier DOC.</p><ul><li><b>Créer</b></p>Sélectionnez le dossier dans lequel vous souhaitez créer un fichier.</li><li><b>Remplacer</b><p>Sélectionnez le mode de sélection du fichier à remplacer, puis mappez le chemin d’accès au fichier ou sélectionnez le fichier. </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Saisissez ou mappez le fichier que vous souhaitez ajouter au dossier [!DNL Dropbox].</p> <p style="font-weight: bold;">Nom du fichier</p> <p>Saisissez le nom du nouveau fichier DOC (sans extension).</p> <p style="font-weight: bold;">Contenu du fichier</p> <p>Saisissez le contenu textuel du fichier DOC.</p> </td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le contenu du fichier source. </p> <p>Si vous créez un fichier, sélectionnez <b>Vide</b>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,30 +457,31 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Saisissez ou mappez le chemin d’accès au fichier cible.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Sélectionnez le fichier cible.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>Indiquez si le lien est public, pour l’équipe ou restreint par un mot de passe.</p> <p>Remarque : les options [!UICONTROL Team only] et [!UICONTROL Access with password] ne sont disponibles que pour les utilisateurs disposant d’une version [!DNL Dropbox Pro] ou supérieure.</p> </td> 
+   <td> <p>Indiquez si le lien est public, pour l’équipe ou restreint par un mot de passe.</p> <p><b>Note :</b></p><p> [!UICONTROL Team only] est disponible uniquement pour les comptes professionnels Dropbox. [!UICONTROL Access with password] n’est disponible que pour les comptes professionnels [!DNL Dropbox Pro] ou Dropbox.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
-   <td> <p> Saisissez la date et l’heure d’expiration du lien, il ne sera alors plus accessible. Si ce champ n’est pas renseigné, le lien n’expire pas. Pour consulter une liste des formats de date et d’heure pris en charge, voir la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p> <p>Remarque : les options [!UICONTROL Team only] et [!UICONTROL Access with password] ne sont disponibles que pour les utilisateurs disposant de versions [!UICONTROL Dropbox Pro] ou supérieures.</p> </td> 
+   <td> <p> Saisissez la date et l’heure d’expiration du lien, il ne sera alors plus accessible. Si ce champ n’est pas renseigné, le lien n’expire pas. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercition</a>.</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>Définissez l’autorisation de la personne destinataire du lien.</p> <p><strong>[!UICONTROL Viewer]</strong> Les utilisateurs et utilisatrices qui utilisent le lien peuvent afficher le contenu et le commenter.</p> <p><strong>[!UICONTROL Editor]</strong> Les utilisateurs et utilisatrices qui utilisent le lien peuvent modifier, afficher et commenter le contenu.</p> <p><strong>[!UICONTROL Max]</strong> Les utilisateurs et utilisatrices qui utilisent le lien reçoivent le niveau d’accès maximal auquel vous pouvez définir le lien.</p> </td> 
+   <td> <p>Définissez l’autorisation de la personne destinataire du lien.</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>Les utilisateurs et utilisatrices qui utilisent le lien peuvent afficher le contenu et le commenter.</p> </li><li><strong>[!UICONTROL Editor]</strong><p> Les utilisateurs et utilisatrices qui utilisent le lien peuvent modifier, afficher et commenter le contenu. Ce niveau d’accès est disponible uniquement pour les documents cloud.</p> </li><li><strong>[!UICONTROL Max]</strong> <p>Les utilisateurs et utilisatrices qui utilisent le lien reçoivent le niveau d’accès maximal auquel vous pouvez définir le lien.</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Restore a File]
 
-Ce module d’action restaure une version précédente d’un fichier.
+#### [!UICONTROL Delete a File/Folder]
 
-Vous spécifiez le fichier et le numéro de la révision que vous souhaitez.
+Ce module d’action supprime un fichier ou un dossier.
 
-Le module renvoie l’identifiant de la version et de tous les champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+Vous spécifiez le fichier ou le dossier.
+
+Le module renvoie l’ID de l’enregistrement et tous les champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion accède. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -528,12 +498,8 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p> Indiquez si vous souhaitez mapper ou saisir le chemin du fichier, ou sélectionnez le fichier manuellement.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
-   <td> <p>Saisissez ou mappez le numéro de révision de la révision que vous souhaitez restaurer.</p> </td> 
+   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Saisissez ou mappez le chemin cible vers le fichier ou le dossier.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Sélectionnez le fichier ou le dossier dans le menu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,12 +523,12 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Dropbox] à [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-dropbox" class="MCXref xref">Créer une connexion à [!DNL Dropbox]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files] </td> 
-   <td> <p>Indiquez si vous souhaitez mapper ou saisir le chemin du fichier, ou sélectionnez le fichier manuellement.</p> </td> 
+   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td> <p>Indiquez si vous souhaitez mapper ou saisir le chemin d’accès au fichier ou au dossier, ou sélectionnez le fichier ou le dossier manuellement.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File/Folder Path] / [!UICONTROL File/Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Saisissez ou mappez le chemin cible vers le fichier ou le dossier.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Sélectionnez le fichier ou le dossier dans le menu.</p> </td> 
+   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Saisissez ou mappez le chemin cible vers le fichier ou le dossier.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Indiquez si vous déplacez un fichier ou un dossier, puis le fichier ou le dossier.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL To Folder]</p> </td> 
@@ -607,22 +573,23 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>Chemin d’accès au fichier/dossier/Fichier/Dossier</p> </td> 
-   <td> <p style="font-weight: bold;">Chemin d’accès au fichier/dossier</p> <p>Saisissez ou mappez le chemin cible vers le fichier ou le dossier.</p> <p style="font-weight: bold;">Fichier ou dossier</p> <p>Sélectionnez le fichier ou le dossier dans le menu.</p> </td> 
+   <td> <p style="font-weight: bold;">Chemin d’accès au fichier/dossier</p> <p>Saisissez ou mappez le chemin cible vers le fichier ou le dossier.</p> <p style="font-weight: bold;">Fichier ou dossier</p> <p>Indiquez si vous déplacez un fichier ou un dossier, puis le fichier ou le dossier.</p> </td> 
   </tr> 
   <tr> 
    <td>Renommer </td> 
-   <td> <p>Saisissez le [!UICONTROL target name] du fichier, y compris son extension.</p> </td> 
+   <td> <p>Saisissez le nouveau nom du fichier, y compris son extension.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
 
-Ce module d’action supprime un fichier ou un dossier.
+#### [!UICONTROL Restore a File]
 
-Vous spécifiez le fichier ou le dossier.
+Ce module d’action restaure une version précédente d’un fichier.
 
-Le module renvoie l’ID de l’enregistrement et tous les champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion accède. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+Vous spécifiez le fichier et le numéro de la révision que vous souhaitez.
+
+Le module renvoie l’identifiant de la version et de tous les champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -640,10 +607,48 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
+   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Saisissez ou mappez le chemin cible sur le fichier.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Sélectionnez le fichier dans le menu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>Saisissez ou mappez le numéro de révision de la révision que vous souhaitez restaurer.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Upload a File]
+
+Ce module d’action charge un fichier dans un dossier.
+
+Vous spécifiez des informations telles que l’emplacement du document, le fichier à charger et éventuellement un nouveau nom pour le fichier.
+
+Le module renvoie l’ID du fichier et tous les champs associés, ainsi que les valeurs et les champs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Dropbox] à [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-dropbox" class="MCXref xref">Créer une connexion à [!DNL Dropbox]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td> <p> Sélectionnez le dossier de votre [!DNL Dropbox] dans lequel vous souhaitez charger le fichier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> <p><b>Note :</b></p><p> La taille maximale du fichier chargé est de 150 Mo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td> <p> Activez cette option pour remplacer le fichier existant par le nouveau fichier. Si cette option est désactivée, le fichier chargé est renommé.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 ### Autres modules
 
@@ -663,7 +668,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Saisissez un chemin relatif à <code>https://api.dropboxapi.com</code>. Par exemple, <code>/2/files/list_folder</code></p> <p>Pour obtenir la liste des points d’entrée disponibles, voir la <a href="https://www.dropbox.com/developers/documentation/http/documentation">Documentation de l’API Dropbox v2</a>.</p> </td> 
+   <td> <p>Saisissez un chemin relatif à <code>https://api.dropboxapi.com</code>. Par exemple, <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Method]</p> </td> 
@@ -687,29 +692,30 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Exemple :** l’appel API suivant renvoie le 10 premiers fichiers du dossier [!DNL /Text files] de votre compte [!DNL Dropbox] :
->
->URL : `/2/files/list_folder`
->
->Corps :
-> 
->`{`
->
->`"path": "/Text files",`
->
->`"limit": 10,`
->
->`"recursive": false,`
->
->`"include_deleted": false`
->
->`}`
->
->Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Body] > entrées.
->
->Dans notre exemple, 10 tickets ont été renvoyés :
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+L’appel API suivant renvoie les 10 premiers fichiers du dossier [!DNL /Text files] de votre compte [!DNL Dropbox] :
+
+URL : `/2/files/list_folder`
+
+Corps :
+
+```
+{
+"path": "/Text files",
+"limit": 10,
+"recursive": false,
+"include_deleted": false
+}
+```
+
+Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Body] > entrées.
+
+Dans notre exemple, 10 billets ont été retournés.
+
+>[!ENDSHADEBOX]
 
 ## Problèmes courants
 
@@ -718,7 +724,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Impossible de charger ou de mettre à jour un fichier
 
-Il existe plusieurs situations dans lesquelles le chargement ou la mise à jour d’un fichier échoue :
+Voici quelques raisons possibles de l’échec du chargement ou de la mise à jour d’un fichier :
 
 * Le fichier chargé est trop volumineux et dépasse la taille de fichier maximale autorisée pour votre plan [!DNL Dropbox] ou vous avez utilisé la totalité des quotas de stockage de votre compte [!DNL Dropbox]. Vous devez supprimer des fichiers existants de votre compte [!DNL Dropbox] ou mettre à niveau votre plan.
 * Le dossier précédemment sélectionné, dans lequel le fichier est chargé, n’existe plus. Le scénario s’arrête et vous devez sélectionner à nouveau le dossier cible.
