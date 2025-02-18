@@ -4,10 +4,10 @@ description: De nombreux connecteurs  [!DNL Adobe Workfront Fusion]  ne nécessi
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 46%
+source-wordcount: '457'
+ht-degree: 42%
 
 ---
 
@@ -72,6 +72,8 @@ Pour créer une connexion dans un module [!DNL Workfront Fusion], procédez comm
 
 1. Cliquez sur **[!UICONTROL Add]** en regard de la zone de [!UICONTROL Connection] pour ouvrir le panneau **[!UICONTROL Create a connection]**.
 1. (Facultatif) Modifiez le **[!UICONTROL Connection name]** par défaut.
+1. Dans le champ Environnement , indiquez s’il s’agit d’un environnement de production ou d’un environnement hors production. Ces informations s’affichent dans la zone Connexions de Fusion.
+1. Dans le champ Type , indiquez s’il s’agit d’un compte de service ou personnel. Ces informations s’affichent dans la zone Connexions de Fusion.
 1. (Conditionnel) Si l’application nécessite des paramètres de connexion avancés, tels qu’un identifiant, une clé ou une [!UICONTROL secret], saisissez ces informations.
 
    Vous devrez peut-être cliquer sur **[!UICONTROL Show advanced settings]** pour afficher les champs dans lesquels vous pouvez saisir ce type d’informations.
