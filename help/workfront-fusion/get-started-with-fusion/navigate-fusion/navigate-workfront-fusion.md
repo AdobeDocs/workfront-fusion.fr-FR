@@ -4,7 +4,7 @@ description: Lorsque vous ouvrez Fusion, vous disposez de nombreuses options d�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 8%
@@ -32,3 +32,4 @@ Cet article présente ces zones et fournit des liens vers des informations suppl
 >[!NOTE]
 >
 >Toutes les zones sous le titre Équipe appartiennent à des équipes individuelles. Pour afficher la page appartenant à une autre équipe (par exemple, la page Scénarios d’une autre équipe), cliquez sur la liste déroulante Équipe située en haut de la page, puis sélectionnez une autre équipe.
+
