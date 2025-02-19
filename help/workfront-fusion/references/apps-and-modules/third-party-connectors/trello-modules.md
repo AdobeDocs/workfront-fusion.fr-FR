@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 60%
+source-wordcount: '4370'
+ht-degree: 58%
 
 ---
 
@@ -872,7 +872,7 @@ Ce module d’action renvoie les cartes qui correspondent à la requête.
 
 +++ **[!UICONTROL Watch cards]**
 
-Ce module déclencheur est activé lorsqu’une nouvelle carte est ajoutée.
+Ce module de déclenchement lance un scénario lorsqu’une nouvelle carte est ajoutée.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Ce module déclencheur est activé lorsqu’une nouvelle carte est ajoutée.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Nombre maximum de cartes que [!DNL Workfront Fusion] renvoie au cours d’un cycle d’exécution.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Ce module d’action récupère des informations sur les membres du [!UICONTROL 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Saisissez le nom complet ou le nom d’utilisateur ou d’utilisatrice de la personne que vous souhaitez rechercher.</p> </td> 
+   <td> <p>Saisissez le nom ou le nom d’utilisateur de l’utilisateur que vous souhaitez rechercher.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Ce module d’action récupère des informations sur les membres du [!UICONTROL 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> Nombre maximum de personnes membres que [!DNL Workfront Fusion] renverra au cours d’un cycle d’exécution.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Ce module d’action crée une liste de contrôle sur la carte sélectionnée.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Choisissez si vous souhaitez ajouter la liste de contrôle en haut ou la liste de contrôle [!UICONTROL append the] en bas de la carte.</p> </td> 
+   <td> <p>Choisissez d’ajouter la liste de contrôle en haut ou d’ajouter la liste de contrôle en bas de la carte.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Saisissez ou mappez l’ID d’une liste de contrôle source que vous souhaitez copier dans la nouvelle liste.</p> </td> 
+   <td> <p>Si vous créez la liste de contrôle en copiant une liste existante, saisissez ou mappez l’identifiant d’une liste de contrôle source que vous souhaitez copier dans la nouvelle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Ce module d’action ajoute un élément à une liste de contrôle spécifique.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la liste de contrôle à laquelle vous souhaitez ajouter un élément.</p> 
+   <td> <p> Si vous créez une liste de contrôle en copiant une liste existante, sélectionnez la manière dont vous souhaitez saisir l’identifiant de la liste de contrôle dans laquelle vous souhaitez ajouter un élément.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Checklist ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une liste de contrôle.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous souhaitez ajouter une liste de contrôle, puis la liste qui contient la carte, puis la carte elle-même, et enfin la liste de contrôle.</p> </li> 
@@ -1136,7 +1136,7 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Saisissez le commentaire que vous souhaitez ajouter à la carte sélectionnée.</p> </td> 
+   <td> <p>Saisissez ou mappez le commentaire que vous souhaitez ajouter à la carte sélectionnée.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Récupère les détails du commentaire lorsqu’il y a un nouveau commentaire dans un emplacement indiqué.
+Ce module de déclenchement lance un scénario lorsqu’un commentaire est ajouté.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Récupère les détails du commentaire lorsqu’il y a un nouveau commentaire da
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Le nombre maximum de commentaires que [!DNL Workfront Fusion] renverra au cours d’un cycle d’exécution.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum de commentaires que vous souhaitez que le module renvoie lors de chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Si vous souhaitez modifier une carte ou créer un commentaire, vous devez conna�
 
 ### Comment trouver les ID d’autres objets dans [!DNL Trello]
 
-Les ID du panorama, de la liste et des commentaires ne peuvent être obtenus qu’à l’aide de déclencheurs. Le site web [!DNL trello.com] n’affiche pas ces ID.
+Les ID du panorama, de la liste et des commentaires ne peuvent être obtenus qu’à l’aide de déclencheurs. Le site web [!DNL `trello.com`] n’affiche pas ces ID.
