@@ -4,10 +4,10 @@ description: Ce module  [!DNL Adobe Workfront Fusion]  vous permet de configurer
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 81%
+source-wordcount: '847'
+ht-degree: 74%
 
 ---
 
@@ -105,7 +105,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
    <td> <p>Le corps du message HTTP est constitué des octets de données transmis dans un message de transaction HTTP, immédiatement après les en-têtes, le cas échéant.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Le type de corps Raw convient généralement à la plupart des requêtes HTTP, même dans les cas où la documentation de développement ne spécifie pas les données à envoyer.</p> <p>Spécifiez un formulaire d’analyse des données dans le champ [!UICONTROL Content type] .</p> <p>Malgré le type de contenu sélectionné, le module saisit les données dans n’importe quel format stipulé ou exigé par la documentation destinée à l’équipe de développement.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Ce type de corps permet de [!UICONTROL POST] des données à l’aide de <code>application/x-www-form-urlencoded</code>.</p> <p>Pour <code>[!UICONTROL application/x-www-form-urlencoded]</code>, le corps du message HTTP envoyé au serveur est essentiellement une chaîne de requête. Les clés et les valeurs sont encodées dans des paires clé-valeur séparées par <code>&amp;</code> et avec un <code>=</code> entre la clé et la valeur. </p> <p>Pour les données binaires, utilisez plutôt <code>[!UICONTROL multipart/form-data]</code>.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Ce type de corps permet de [!UICONTROL POST] des données à l’aide de <code>application/x-www-form-urlencoded</code>.</p> <p>Pour <code>[!UICONTROL application/x-www-form-urlencoded]</code>, le corps du message HTTP envoyé au serveur est essentiellement une chaîne de requête. Les clés et les valeurs sont encodées dans des paires clé-valeur séparées par <code>&amp;</code> et avec un <code>=</code> entre la clé et la valeur. </p> <p>Pour les données binaires, utilisez plutôt <code>[!UICONTROL multipart/form-data]</code>.</p> <p>Pour chaque paire clé-valeur à ajouter, dans le champ Champs , cliquez sur <b>Ajouter un élément</b> et saisissez la clé et la valeur.</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Exemple :</b></span></span> 
        <p>Exemple du format de requête HTTP obtenu :</p> 
@@ -114,7 +114,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>Le [!UICONTROL Multipart/form-data] est une requête HTTP multipartie utilisée pour envoyer des fichiers et des données. Elle est fréquemment utilisée pour charger des fichiers sur le serveur.</p> <p>Ajouter des champs à envoyer dans la requête. Chaque champ doit contenir une paire clé-valeur.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Saisissez la clé et la valeur à envoyer dans le corps de la requête.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Saisissez la clé et indiquez le fichier source à envoyer dans le corps de la requête.</p> <p>Mappez le fichier que vous souhaitez charger à partir du module précédent (par exemple [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt; [!UICONTROL Download a File)], ou saisissez manuellement le nom et les données du fichier.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Saisissez la clé et indiquez le fichier source à envoyer dans le corps de la requête. Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -132,7 +132,25 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Chargez votre certificat si vous souhaitez utiliser TLS à l’aide de votre certificat auto-signé.</p> </td> 
+   <td> <p>Pour ajouter un certificat auto-signé :</p>
+          <ol>
+            <li value="1">
+              <p>Cliquez sur <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Sélectionnez le type de fichier que vous extrayez.</p>
+            </li>
+            <li value="3">
+              <p>Sélectionnez le fichier contenant le certificat ou .</p>
+            </li>
+            <li value="4">
+              <p>Saisissez le mot de passe du fichier.</p>
+            </li>
+            <li value="5">
+              <p>Cliquez sur <b>[!UICONTROL Save]</b> pour extraire le fichier et revenir à la configuration du module.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -156,7 +174,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Activez cette option pour utiliser le protocole TLS mutuel dans la requête HTTP.</p> <p>Pour plus d’informations sur le protocole TLS mutuel, voir <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Utiliser le protocole TLS mutuel dans les modules HTTP dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Activez cette option pour utiliser le protocole TLS mutuel dans la requête HTTP.</p> <p>Pour plus d’informations sur le protocole Mutual TLS, voir <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Utilisation du protocole Mutual TLS dans les modules HTTP</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
