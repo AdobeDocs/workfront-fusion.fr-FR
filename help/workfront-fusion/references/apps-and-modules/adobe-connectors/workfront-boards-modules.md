@@ -4,9 +4,9 @@ description: Vous pouvez utiliser le connecteur de tableaux Adobe Workfront pour
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
+source-wordcount: '2659'
 ht-degree: 11%
 
 ---
@@ -25,6 +25,8 @@ Vous pouvez utiliser les modules des tableaux Adobe Workfront pour lire ou mettr
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td>
-  <td> <p>Tous</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td>
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : [!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail], [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation du travail]</p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
 
 ## Conditions préalables
 
@@ -148,51 +151,6 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Balises](#tags)
 * [Commentaires](#comments)
 * [Autre](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### vignette
 
@@ -298,7 +256,7 @@ Ce module d’action déplace une carte vers une autre colonne du même panorama
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Saisissez ou mappez l’ID du panorama contenant la carte à déplacer.<p>L’ID de la carte se trouve dans l’URL lors de l’affichage de la carte dans Workfront.</p></td> 
+   <td>Saisissez ou mappez l’ID du panorama contenant la carte à déplacer.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ Ce module d’action récupère des informations sur une carte spécifique.
    <td>[!UICONTROL Card ID]</td> 
    <td>Saisissez ou mappez l’identifiant de la carte que vous souhaitez lire.<p>L’ID de la carte se trouve dans l’URL lors de l’affichage de la carte dans Workfront.</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>Saisissez ou mappez l’identifiant du panorama contenant la carte que vous souhaitez lire.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ Ce module d’action met à jour les informations d’une carte que vous spécif
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Saisissez ou mappez l’ID du panorama contenant la carte à mettre à jour.<p>L’ID de la carte se trouve dans l’URL lors de l’affichage de la carte dans Workfront.</p></td> 
+   <td>Saisissez ou mappez l’ID du panorama contenant la carte à mettre à jour.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>Saisissez ou mappez un nouveau nom pour la carte.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Saisissez ou mappez une nouvelle description pour la carte.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>Saisissez ou mappez une estimation du temps nécessaire pour terminer cette carte.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>Saisissez ou mappez la date d'échéance de cette carte.</p>
+   <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>Sélectionnez un nouveau statut pour la carte.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ Ce module d’action crée un panorama dans Workfront. Vous pouvez indiquer le t
    <td>Saisissez ou mappez un nom pour le nouveau panorama.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>Sélectionnez le type de panorama à créer.</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>Sélectionnez le modèle correspondant au type de panorama que vous souhaitez créer.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ Ce module d’action crée une colonne sur le panorama spécifié.
    <td>[!UICONTROL Column name]</td> 
    <td>Saisissez ou mappez un nouveau nom pour la colonne.</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>Saisissez ou mappez une nouvelle limite de travail en cours pour la colonne.</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ Ce module d&#39;action met à jour le nom ou la limite des travaux en cours de l
    <td>[!UICONTROL Column Name]</td> 
    <td>Saisissez ou mappez le nom de la colonne à récupérer.</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>Saisissez ou mappez une nouvelle limite de travail en cours pour la colonne.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Balises
 
-* [Ajouter une balise à une carte](#add-card-tag)
+* [Ajouter une balise à une carte](#add-a-tag-to-a-card)
 * [Créer une balise](#create-a-tag)
 
 #### Ajouter une balise à une carte
@@ -633,10 +609,50 @@ Ce module d’action effectue un appel personnalisé à l’API Workfront Boards
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un Graphql incorporé JSON </p> <p>Exemple :</p><p>Cet exemple montre comment mettre à jour le nom d'une colonne. Vous pouvez inclure les <code>boardId</code> et <code>columnId</code> en tant que GUID codés en dur ou mappés à partir d’un module précédent.<p><pre>{<br> « query »: « mutation { updateColumn(boardId: \« \ », columnId: \« \ », updateColumnInput: { name: \« \ » }) { id name }} »<br>}</pre><p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un Graphql incorporé JSON </p> <p>Exemple :</p><p>Cet exemple montre comment mettre à jour le nom d'une colonne. Vous pouvez inclure les <code>boardId</code> et <code>columnId</code> en tant que GUID codés en dur ou mappés à partir d’un module précédent.<p><pre>{<br> « query »: « mutation { updateColumn(boardId: \« \ », columnId: \« \ », updateColumnInput: { name: \« \ » }) { id name }} »<br>}</pre><p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### Effectuer un appel API GraphQL personnalisé
+
+Ce module d’action envoie une requête GraphQL personnalisée à l’API Workfront Boards.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Sélectionnez la méthode de cet appel. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Ajoutez la requête pour l’appel API sous la forme d’un objet JSON standard.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>Saisissez un nom pour cette opération. Cela peut faciliter le suivi et le débogage de l’appel .</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>Indiquez si les variables proviennent d’un formulaire ou d’une collection.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>Pour chaque variable à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez la clé et la valeur de la variable.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+   </tr> 
  </tbody> 
 </table>
