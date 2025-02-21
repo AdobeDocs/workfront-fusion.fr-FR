@@ -4,10 +4,10 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Forms]  vous perme
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 82%
+source-wordcount: '1199'
+ht-degree: 77%
 
 ---
 
@@ -23,42 +23,46 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
@@ -81,7 +85,7 @@ Le connecteur Google Forms utilise les éléments suivants :
 
 ## Créer une feuille de calcul à partir du formulaire
 
-Pour travailler avec vos réponses de formulaire, la feuille de calcul de vos réponses doit être créée.
+Pour utiliser vos réponses de formulaire, vous devez d’abord créer la feuille de calcul de réponse.
 
 1. Ouvrez votre formulaire.
 1. Accédez à l’onglet **[!UICONTROL Responses]** .
@@ -151,8 +155,8 @@ Contrôle le formulaire pour trouver de nouvelles réponses.
 ### Actions
 
 * [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
 * [[!UICONTROL Delete a Response]](#delete-a-response)
+* [[!UICONTROL Update a Response]](#update-a-response)
 
 #### [!UICONTROL Add a Response]
 
@@ -178,7 +182,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Saisissez les valeurs souhaitées dans les colonnes de la feuille.</p> <p>Pour la colonne [!UICONTROL Timestamp] au format correct, utilisez la valeur suivante :</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
+   <td> <p>Saisissez les valeurs souhaitées dans les colonnes de la feuille. Les colonnes sont disponibles en fonction de la feuille.</p> <p>Pour la colonne [!UICONTROL Timestamp], utilisez la valeur suivante :</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -195,6 +199,33 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
      <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>Les nouvelles données remplacent les données existantes dans les zones où elles sont écrites. L’ajout de données à la fin de la feuille insère de nouvelles lignes ou colonnes afin que les données puissent être écrites.</p> </li> 
      <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>Des lignes sont insérées pour les nouvelles données.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Response]
+
+Ce module supprime une réponse sélectionnée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td> <p>Sélectionnez la feuille de calcul qui contient la feuille dans laquelle vous souhaitez supprimer une réponse.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td> <p> Sélectionnez la feuille contenant les réponses du formulaire.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
+   <td> <p>Saisissez ou mettez en corresponsance le nombre de lignes à supprimer.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -227,7 +258,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Saisissez les nouvelles valeurs dans les colonnes de votre choix.</p> </td> 
+   <td> <p>Saisissez les nouvelles valeurs des colonnes souhaitées. Les colonnes sont disponibles en fonction de la feuille.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -236,33 +267,6 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Les valeurs saisies par l’utilisateur ou l’utilisatrice ne sont pas traitées et sont stockées en l’état. </p> </li> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Les valeurs sont traitées comme si l’utilisateur ou l’utilisatrice les avait saisies dans l’interface utilisateur. Les nombres restent des nombres, mais les chaînes peuvent être converties en nombres, en dates ou en autres formats en suivant les mêmes règles que celles qui s’appliquent lors d’une saisie de texte dans une cellule dans l’interface utilisateur de [!DNL Google Sheets].</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Response]
-
-Ce module supprime une réponse sélectionnée.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
-   <td> <p>Sélectionnez la feuille de calcul qui contient la feuille dans laquelle vous souhaitez supprimer une réponse.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
-   <td> <p> Sélectionnez la feuille contenant les réponses du formulaire.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
-   <td> <p>Saisissez ou mettez en corresponsance le nombre de lignes à supprimer.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -348,7 +352,7 @@ Ce module effectue une recherche à l’aide de [[!DNL Google Charts Query Langu
    <td> <p> Sélectionnez la feuille contenant les réponses du formulaire.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p>Définissez la requête à l’aide de <a href="https://developers.google.com/chart/interactive/docs/querylanguage?hl=fr">[!DNL Google Charts Query Language]</a>.</p> <p>Exemple : <code>select * where C = "John"</code> récupère toutes les valeurs de la ligne à l’endroit où la colonne C est « John ».</p> </td> 
   </tr> 
   <tr>
