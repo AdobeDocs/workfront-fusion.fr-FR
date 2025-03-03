@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 81%
+source-wordcount: '942'
+ht-degree: 73%
 
 ---
 
@@ -21,52 +21,52 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Conditions préalables
 
 Pour utiliser [!DNL Microsoft OneDrive for Business] avec [!DNL Adobe Workfront Fusion], vous devez disposer d’un compte [!DNL Microsoft].
 
-Pour obtenir des instructions sur la connexion de votre compte [!DNL OneDrive for Business] à [!DNL Workfront Fusion], voir [Créer une connexion à Adobe  [!DNL Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-
-
-
-## Connexion du service  à . [!DNL Microsoft OneDrive for Business][!DNL Workfront Fusion]
+## Connexion du service [!DNL Microsoft OneDrive for Business] à [!DNL Workfront Fusion].
 
 Pour savoir comment connecter votre compte [!DNL Microsoft OneDrive for Business] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -110,7 +110,7 @@ Ce module déclencheur s’active lorsqu’un nouveau fichier est ajouté ou mis
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p> Sélectionnez le dossier que vous souhaitez surveiller. Dans un scénario, vous ne pouvez surveiller qu’un seul dossier.</p> <p>Conseil : pour effectuer le suivi de plusieurs dossiers, créez un scénario indépendant pour chacun d’eux.</p> </td> 
+   <td> <p> Sélectionnez le dossier que vous souhaitez surveiller. Dans un scénario, vous ne pouvez surveiller qu’un seul dossier.</p> <p>Conseil : pour surveiller plusieurs dossiers, créez un scénario indépendant pour chacun d’eux.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
@@ -118,7 +118,7 @@ Ce module déclencheur s’active lorsqu’un nouveau fichier est ajouté ou mis
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
-   <td> <p> Définissez le nombre maximal de résultats avec lesquels [!DNL Workfront Fusion] fonctionnera avec pendant un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de résultats que le module doit renvoyer au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -149,23 +149,23 @@ Ce module de déclenchement s’active lorsqu’un nouveau dossier est ajouté a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
-   <td> <p> Définissez le nombre maximal de résultats avec lesquels [!DNL Workfront Fusion] fonctionnera pendant un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de résultats que le module doit renvoyer au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Actions
 
-* [[!UICONTROL Upload a file]](#upload-a-file)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Create a folder]](#create-a-folder)
+* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Delete a folder]](#delete-a-folder)
+* [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
+* [[!UICONTROL Upload a file]](#upload-a-file)
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Create a folder]
 
-Ce module d’action charge un fichier binaire ou un fichier de texte dans un dossier spécifié.
+Crée un dossier à l’intérieur du dossier parent spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -173,34 +173,20 @@ Ce module d’action charge un fichier binaire ou un fichier de texte dans un do
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td><strong>[!UICONTROL Connection]</strong> </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
-   <td> <p>Sélectionnez le lecteur vers lequel vous souhaitez charger un fichier.</p> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
+   <td> <p>Sélectionnez le lecteur sur lequel vous souhaitez créer un dossier.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Sélectionnez le dossier dans le lecteur.</p> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Folder]</strong> </td> 
+   <td> <p>Sélectionnez le dossier dans lequel vous souhaitez créer un dossier.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL If the file with the same name exists]</td> 
-   <td> <p> Sélectionnez ce que vous souhaitez faire si un fichier portant le même nom que le fichier que vous essayez de charger existe déjà.</p> 
-    <ul> 
-     <li>[!UICONTROL Replace the existing file]</li> 
-     <li>[!UICONTROL Rename the new file]</li> 
-     <li>[!UICONTROL End with an error]</li> 
-    </ul> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Folder name]</strong> </td> 
+   <td>Saisissez ou mappez un nom pour le nouveau dossier.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -217,17 +203,36 @@ Ce module d’action déplace le fichier spécifié vers la corbeille.
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Sélectionnez le lecteur sur lequel vous souhaitez supprimer un fichier.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
    <td> <p>Saisissez l’ID du fichier que vous souhaitez supprimer. </p> </td> 
-   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a folder]
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Drive ID]</td> 
+   <td> <p>Sélectionnez le lecteur sur lequel vous souhaitez supprimer un fichier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder ID]</td> 
+   <td> <p>Saisissez ou mappez l’ID du dossier à supprimer. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -244,74 +249,14 @@ Ce module d’action récupère le fichier avec l’ID donné.
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Sélectionnez le lecteur à partir duquel vous souhaitez récupérer un fichier.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
    <td> <p>Saisissez l’ID du fichier que vous souhaitez récupérer. </p> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a folder]
-
-Crée un dossier à l’intérieur du dossier parent spécifié.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td><strong>[!UICONTROL Connection]</strong> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
-   <td> <p>Sélectionnez le lecteur sur lequel vous souhaitez créer un dossier.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Folder]</strong> </td> 
-   <td> <p>Sélectionnez le dossier dans lequel vous souhaitez créer un dossier.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Folder name]</strong> </td> 
-   <td>Saisissez ou mappez un nom pour le nouveau dossier.</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a folder]
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
-   <td> <p>Sélectionnez le lecteur sur lequel vous souhaitez supprimer un fichier.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder ID]</td> 
-   <td> <p>Saisissez ou mappez l’ID du dossier à supprimer. </p> </td> 
-   <td> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -328,27 +273,59 @@ Ce module récupère un lien que vous pouvez partager pour accorder l’accès a
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Sélectionnez le lecteur vers lequel vous souhaitez charger un fichier.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enter]</td> 
    <td> <p>Indiquez si vous souhaitez choisir un fichier à l’aide de l’ID du fichier ou du chemin d’accès au fichier. Saisissez l’ID du fichier ou le chemin d’accès dans le champ qui s’affiche.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permission type]</p> </td> 
    <td> <p>Sélectionnez si vous souhaitez que les personnes qui reçoivent le lien disposent d’autorisations de lecture et d’écriture ou de lecture seule.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Scope]</td> 
    <td> <p> Indiquez si vous souhaitez que le fichier soit accessible à toute personne disposant du lien ou accessible uniquement aux personnes membres de votre organisation.</p> </td> 
-   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Upload a file]
+
+Ce module d’action charge un fichier binaire ou un fichier de texte dans un dossier spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Drive ID]</td> 
+   <td> <p>Sélectionnez le lecteur vers lequel vous souhaitez charger un fichier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Sélectionnez le dossier dans le lecteur.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL If the file with the same name exists]</td> 
+   <td> <p> Sélectionnez ce que vous souhaitez faire si un fichier portant le même nom que le fichier que vous essayez de charger existe déjà.</p> 
+    <ul> 
+     <li>[!UICONTROL Replace the existing file]</li> 
+     <li>[!UICONTROL Rename the new file]</li> 
+     <li>[!UICONTROL End with an error]</li> 
+    </ul> </td> 
   </tr> 
  </tbody> 
 </table>

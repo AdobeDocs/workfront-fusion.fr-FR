@@ -4,10 +4,10 @@ description: Avec les modules Adobe Lightroom, vous pouvez démarrer un scénari
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 21%
+source-wordcount: '2019'
+ht-degree: 22%
 
 ---
 
@@ -500,7 +500,7 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Définissez le nombre maximal de ressources que [!DNL Workfront Fusion] renverrez au cours d’un cycle d’exécution. Ce nombre doit être inférieur ou égal à 100.</p>
+        <p>Saisissez le nombre maximum d’enregistrements que le module doit renvoyer au cours de chaque cycle d’exécution de scénario.</p>
       </td>
     </tr>
     <tr>
