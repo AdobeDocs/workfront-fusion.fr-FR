@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 70038b21d9b486da23895533cad0fa1f58850e76
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 17%
+source-wordcount: '2432'
+ht-degree: 18%
 
 ---
 
@@ -87,7 +87,7 @@ Le connecteur Adobe Firefly utilise les éléments suivants :
 
 Pour créer une connexion pour vos modules [!DNL Adobe Firefly], procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -113,16 +113,16 @@ Pour créer une connexion pour vos modules [!DNL Adobe Firefly], procédez comme
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d’informations, consultez la section Détails du [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous pouvez le consulter dans la section des détails [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d’informations, consultez la section Détails du [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le consulter dans la section des détails [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules [!DNL Adobe Firefly] et leurs champs
 
@@ -151,7 +151,7 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Saisissez ou mappez une invite pour le contenu avec lequel vous souhaitez développer l’image. Si aucune invite n’est fournie, l’image est développée avec le contenu correspondant à l’image d’origine.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’image développées.</td> 
   </tr> 
   <tr> 
@@ -159,11 +159,11 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Sélectionnez le mode de fourniture du fichier source :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expanded image format]</td> 
+   <td role="rowheader">[!UICONTROL Format d’image développé]</td> 
    <td>Sélectionnez le format de fichier sous lequel l’image développée sera enregistrée.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td role="rowheader">[!UICONTROL Développer par]</td> 
    <td>  <p>Choisissez si vous souhaitez développer l’image à l’aide de l’emplacement de l’image ou d’un masque.</p> 
    <ul>
    <li><b>Emplacement</b><p>Saisissez l’alignement horizontal et vertical, ainsi que l’incrustation de l’image placée sur les bords.</p></li>
@@ -202,11 +202,11 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Campaign], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL Image &gt; Source]</td> 
    <td>Sélectionnez la manière de fournir le fichier source d’image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td role="rowheader">[!UICONTROL Mask &gt; Source]</td> 
    <td>Sélectionnez la manière dont vous fournissez le fichier source du masque :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -214,11 +214,11 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Saisissez ou mappez une invite pour le contenu avec lequel vous souhaitez remplir l’image. Si aucune invite n’est fournie, l’image est remplie avec le contenu correspondant à l’image d’origine.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’images remplies.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filled image format]</td> 
+   <td role="rowheader">[!UICONTROL Format d’image plein]</td> 
    <td>Sélectionnez le format de fichier sous lequel l’image remplie sera enregistrée.</td> 
   </tr> 
   </tr> 
@@ -260,7 +260,7 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Saisissez ou mappez une invite pour l’image que vous souhaitez générer. Plus de détails dans l’invite vous permettront de mieux contrôler ce qui apparaît dans l’image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’image.</td> 
   </tr> 
   <tr> 
@@ -268,27 +268,27 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Sélectionnez le format de fichier sous lequel l’image développée sera enregistrée. Si vous sélectionnez par défaut, le format du fichier est JPEG si aucune image de référence n’est fournie. Si une image de référence est fournie, le format de fichier de l’image générée est identique à celui de l’image de référence.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL Structure &gt; Référence d’image]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour la structure de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL Structure &gt; Force]</td> 
     <td>Saisissez un nombre compris entre 0 et 100 pour contrôler la manière dont Firefly suit strictement la structure de l’image source. Des valeurs plus élevées signifient que Firefly suit l’image plus strictement.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL Style &gt; Référence d’image]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour le style de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL Structure &gt; Force]</td> 
     <td>Saisissez un nombre compris entre 0 et 100 pour contrôler le respect strict du style de l’image source par Firefly. Des valeurs plus élevées signifient que Firefly suit l’image plus strictement.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td role="rowheader">[!UICONTROL Style &gt; Préréglages]</td> 
    <td>Si vous souhaitez utiliser un style prédéfini, cliquez sur Ajouter un élément et saisissez ou mappez le style que vous souhaitez utiliser.<p>Pour obtenir une liste des styles prédéfinis, voir <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Styles de modèle d’image</a> dans la documentation destinée aux développeurs d’Adobe.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Negative prompt]</td> 
+   <td role="rowheader">[!UICONTROL Invite négative]</td> 
    <td>Saisissez ou mappez les mots à éviter dans le contenu généré. </td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
    <td>Sélectionnez la taille de l’image générée.</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Visual intensity]</td> 
+   <td role="rowheader">[!UICONTROL Intensité visuelle]</td> 
    <td>Saisissez ou mappez un entier qui représente l’intensité globale des caractéristiques visuelles existantes de la photo. </td> 
   </tr> 
   <tr> 
@@ -339,15 +339,15 @@ Ce module d’action combine des images générées par Firefly pour créer un c
    <td>Saisissez ou mappez une invite pour l’image que vous souhaitez générer. Plus de détails dans l’invite vous permettront de mieux contrôler ce qui apparaît dans l’image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td role="rowheader">[!UICONTROL Content class]</td> 
    <td>Choisissez si vous souhaitez que l’image générée ressemble davantage à une photo ou à un tableau.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL Image &gt; Source]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour la structure de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -355,15 +355,15 @@ Ce module d’action combine des images générées par Firefly pour créer un c
    <td>Sélectionnez le format de fichier sous lequel l’image développée sera enregistrée. Si vous sélectionnez par défaut, le format du fichier est JPEG si aucune image de référence n’est fournie. Si une image de référence est fournie, le format de fichier de l’image générée est identique à celui de l’image de référence.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL Style &gt; Référence d’image]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour le style de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+   <td role="rowheader">[!UICONTROL Structure &gt; Force]</td> 
     <td>Saisissez un nombre compris entre 0 et 100 pour contrôler le respect strict du style de l’image source par Firefly. Des valeurs plus élevées signifient que Firefly suit l’image plus strictement.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td role="rowheader">[!UICONTROL Style &gt; Préréglages]</td> 
    <td>Si vous souhaitez utiliser un style prédéfini, cliquez sur Ajouter un élément et saisissez ou mappez le style que vous souhaitez utiliser.<p>Pour obtenir une liste des styles prédéfinis, voir <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Styles de modèle d’image</a> dans la documentation destinée aux développeurs d’Adobe.</td> 
   </tr> 
   <tr> 
@@ -386,7 +386,7 @@ Ce module d’action génère des images similaires à l’image source que vous
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Campaign], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’image.</td> 
   </tr> 
   <tr> 
@@ -394,11 +394,11 @@ Ce module d’action génère des images similaires à l’image source que vous
    <td>Sélectionnez le format de fichier sous lequel l’image développée sera enregistrée. Si vous sélectionnez par défaut, le format du fichier est JPEG si aucune image de référence n’est fournie. Si une image de référence est fournie, le format de fichier de l’image générée est identique à celui de l’image de référence.</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td role="rowheader">[!UICONTROL Image &gt; Source]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour la structure de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+   <td role="rowheader">[!UICONTROL Style &gt; Référence d’image]</td> 
     <td>Sélectionnez la manière dont vous fournissez le fichier source pour le style de la nouvelle image :<ul><li><p><b>Fichier</b></p><p>Sélectionnez un fichier source dans un module précédent ou mappez le nom de fichier image de référence et le fichier image de référence du fichier source.</p></li><li><p><b>URL prédéfinie</b></p><p>Saisissez ou mappez l’URL de l’image source.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -434,7 +434,7 @@ Pour connaître les API spécifiques disponibles, consultez [API Adobe Firefly](
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>Saisir un chemin relatif à <code>https://firefly-api.adobe.io/</code>.</p>
+        <p>Saisissez un chemin d’accès relatif à <code>https://firefly-api.adobe.io/</code>.</p>
       </td>
     </tr>
     <tr>

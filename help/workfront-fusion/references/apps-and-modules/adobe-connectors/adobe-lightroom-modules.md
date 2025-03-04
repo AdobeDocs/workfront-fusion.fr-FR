@@ -4,10 +4,10 @@ description: Avec les modules Adobe Lightroom, vous pouvez démarrer un scénari
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 22%
+source-wordcount: '2376'
+ht-degree: 24%
 
 ---
 
@@ -30,7 +30,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
       <td>
-        <p>[!UICONTROL Pro] ou une version ultérieure</p>
+        <p>[!UICONTROL Pro] ou version supérieure</p>
       </td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ Le connecteur Adobe Lightroom utilise les éléments suivants :
 
 Pour créer une connexion pour vos modules [!DNL Adobe Lightroom], procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -115,16 +115,16 @@ Pour créer une connexion pour vos modules [!DNL Adobe Lightroom], procédez com
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous pouvez le trouver dans la section des détails des [!UICONTROL Credentials] du [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section des détails des [!UICONTROL Credentials] du [!DNL Adobe Developer Console]</td>
         </tr>
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
 
@@ -223,13 +223,13 @@ Ce module d’action crée et charge un fichier original pour une ressource.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Longueur du contenu en octets]</td>
       <td>
         <p>Saisissez ou mappez la longueur du contenu en octets.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Byte range]</td>
+      <td role="rowheader">[!UICONTROL Plage d’octets]</td>
       <td>
         <p>Saisissez ou mappez la plage d’octets de la requête, y compris le premier et le dernier octets et la longueur de l’entité, comme défini dans le document RFC 2616. Ne doit être inclus que lorsque les données sont trop volumineuses pour être chargées dans un seul appel.</p>
       </td>
@@ -269,7 +269,7 @@ Ce module d’action crée une ressource avec les métadonnées initiales et les
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset type]</td>
+      <td role="rowheader">[!UICONTROL Type de ressource]</td>
       <td>
         <p>Indiquez si la ressource est une image ou une vidéo.</p>
       </td>
@@ -287,7 +287,7 @@ Ce module d’action crée une ressource avec les métadonnées initiales et les
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Date captured]</td>
+      <td role="rowheader">[!UICONTROL Date capturée]</td>
       <td>
         <p>Saisissez ou mappez une date au format <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
@@ -308,13 +308,13 @@ Ce module d’action prend en charge deux workflows. Le premier workflow consist
       <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Lightroom], voir <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Créer une connexion à [!DNL Adobe Lightroom]</a> dans cet article.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Longueur du contenu en octets]</td>
       <td>
         <p>Saisissez ou mappez la longueur du contenu en octets.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Upload new or copy XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL Charger un nouveau fichier ou copier le fichier XMP/develop]</td>
       <td>
         <p>Indiquez si vous téléchargez un nouveau fichier ou si vous copiez un fichier à partir d’une ressource existante.</p>
       </td>
@@ -332,7 +332,7 @@ Ce module d’action prend en charge deux workflows. Le premier workflow consist
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Link to XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL Lien vers XMP/fichier de développement]</td>
       <td>
         <p>Saisissez ou mappez un lien vers le fichier que vous souhaitez télécharger ou copier.</p><p>Ce fichier doit être au format JSON en cas de copie de fichier ou XML en cas de chargement de fichier.</p>
       </td>
@@ -353,13 +353,13 @@ Ce module d’action génère de manière asynchrone des rendus pour un fichier 
       <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Lightroom], voir <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Créer une connexion à [!DNL Adobe Lightroom]</a> dans cet article.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition Type(s) (semi-colon separated)]</td>
+      <td role="rowheader">[!UICONTROL Type(s) de rendu (séparés par des points-virgules)]</td>
       <td>
         <p>Saisissez le type de rendu pour le rendu que vous souhaitez créer. Si vous saisissez plusieurs types, séparez-les par un point-virgule (;). <p>Types possibles :</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Longueur du contenu en octets]</td>
       <td>
         <p>Saisissez ou mappez la longueur du contenu en octets.</p>
       </td>
@@ -459,7 +459,7 @@ Ce module d’action récupère le dernier rendu de ressource du type spécifié
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition type]</td>
+      <td role="rowheader">[!UICONTROL Type de rendu]</td>
       <td>
         <p>Sélectionnez le type de rendu à récupérer.</p>
       </td>
@@ -486,31 +486,31 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Starting timestamp]</td>
+      <td role="rowheader">[!UICONTROL Date et heure de début]</td>
       <td>
         <p>Saisissez ou mappez une date et heure. Le module renvoie les enregistrements qui ont été mis à jour après cet horodatage.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL Renvoyer les ressources capturées avant]</td>
       <td>
         <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured after</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
+      <td role="rowheader">[!UICONTROL Nombre maximal de ressources renvoyées]</td>
       <td>
         <p>Saisissez le nombre maximum d’enregistrements que le module doit renvoyer au cours de chaque cycle d’exécution de scénario.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
+      <td role="rowheader">[!UICONTROL SHA256 Valeur de hachage du fichier original]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ? »]</td>
       <td>
         <p></p>
       </td>
@@ -528,7 +528,7 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Types of assets to exclude]</td>
+      <td role="rowheader">[!UICONTROL Types de ressources à exclure]</td>
       <td>
         <p>Sélectionnez cette option pour exclure les ressources complètes ou incomplètes. Pour inclure toutes les ressources, laissez ce champ vide.</p>
       </td>
@@ -545,7 +545,7 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Favorite status]</td>
+      <td role="rowheader">[!UICONTROL Favori status]</td>
       <td>
         <p></p>
       </td>
@@ -599,7 +599,7 @@ Ce module d’action ajoute une ou plusieurs ressources à l’album spécifié.
         <p>Saisissez ou mappez l’identifiant de la ressource que vous souhaitez ajouter à l’album</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Is this asset an album cover?]</td>
+      <td role="rowheader">[!UICONTROL Cette ressource est-elle une couverture d'album ?]</td>
       <td>
         <p>Indiquez si vous souhaitez que cette ressource s’affiche sous la forme de l’image représentant l’album.</p>
       </td>
@@ -614,7 +614,7 @@ Ce module d’action ajoute une ou plusieurs ressources à l’album spécifié.
         <p>Saisissez ou mappez toutes les métadonnées que vous souhaitez inclure à la ressource. Il doit s’agir d’une seule chaîne de texte d’une longueur maximale de 1 à 24 caractères.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL ID distant]</td>
       <td>
         <p>Saisissez l’identifiant de la ressource.</p>
       </td>
@@ -679,7 +679,7 @@ Ce module d’action permet de créer un album dans Lightroom.
         <p>Saisissez ou mappez l’ID d’une ressource à utiliser comme couverture de cet album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL ID distant]</td>
       <td>
         <p>Saisissez l’identifiant de la ressource.</p>
       </td>
@@ -696,19 +696,19 @@ Ce module d’action permet de créer un album dans Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Is the album deleted?]</td>
+      <td role="rowheader">[!UICONTROL L'album est-il supprimé ?]</td>
       <td>
         <p>Activez cette option si le contenu affilié de manière externe a été supprimé.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to edit affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL de l’emplacement pour modifier le contenu affilié]</td>
       <td>
         <p>S'il existe une URL où les utilisateurs peuvent modifier le contenu de cet album, saisissez-la ici.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to view affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL de l'emplacement pour afficher le contenu affilié]</td>
       <td>
         <p>S'il existe une URL où les utilisateurs peuvent voir le contenu de cet album, saisissez-la ici.</p>
       </td>
@@ -743,7 +743,7 @@ L’album supprimé doit avoir été créé par la même application cliente qui
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Delete child albums?]</td>
+      <td role="rowheader">[!UICONTROL Supprimer les albums enfants ?]</td>
       <td>
         <p>Choisissez si vous souhaitez supprimer les albums enfants de l'album supprimé.</p>
       </td>
@@ -809,13 +809,13 @@ Ce module d&#39;action récupère une liste d&#39;albums dans le catalogue spéc
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name of album to precede current results]</td>
+      <td role="rowheader">[!UICONTROL Nom de l'album qui précède les résultats actuels]</td>
       <td>
         <p>Si vous paginez vos résultats, saisissez ou mappez le nom du dernier album sur la page précédente.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL Nombre maximal d'albums renvoyés]</td>
       <td>
         <p>Définissez le nombre maximal de ressources que [!DNL Workfront Fusion] renverrez au cours d’un cycle d’exécution. La valeur par défaut de ce champ est 100. Ce module peut renvoyer plus d'albums que cette limite si plusieurs albums à la limite ont la même valeur de <code>name_after</code>.</p>
       </td>

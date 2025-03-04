@@ -4,10 +4,10 @@ description: Avec le connecteur  [!DNL Adobe Experience Manager Forms]  pour com
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 76%
+source-wordcount: '575'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <tbody> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
@@ -38,13 +38,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
    <td>
    <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Exigences de licence héritées : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Conditions requises du produit actuel : si vous disposez de la formule [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi que [!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article. [!DNL Workfront Fusion] est inclus dans la formule [!DNL Workfront] [!UICONTROL Ultimate].</p>
    <p>Ou</p>
    <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
    </td> 
@@ -79,7 +79,7 @@ Le connecteur Adobe Experience Manager Assets utilise les éléments suivants :
 
 Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Forms] :
 
-1. Cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -121,19 +121,19 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Forms]
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre ID client [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez votre ID client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre secret client [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez votre secret client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Org ID]</td>
-        <td>Saisissez votre ID d’organisation [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez votre ID d’organisation [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Meta Scopes]</td>
@@ -166,7 +166,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Forms]
     </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Module Adobe Experience Manager Forms et ses champs
 

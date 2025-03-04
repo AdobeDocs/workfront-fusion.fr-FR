@@ -4,10 +4,10 @@ description: Les modules FTP vous permettent de surveiller les modifications de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c5e9c643c828e5556e386a5f46e1d17680b7d4e9
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 84%
+source-wordcount: '1328'
+ht-degree: 94%
 
 ---
 
@@ -17,46 +17,50 @@ Les modules FTP vous permettent de surveiller les modifications de fichier dans 
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
+
 ## Conditions préalables
 
-Pour utiliser [Application de fusion] avec [!DNL Workfront Fusion], vous devez disposer d’un compte FTP.
+Pour utiliser les modules FTP, vous devez disposer d’un compte FTP.
 
 ## Créer une connexion dans un module FTP {#create-a-connection}
 
@@ -112,9 +116,9 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
 
 ### Déclencheurs
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL Contrôle des fichiers]
 
-[!UICONTROL Watch files] est le seul module de déclenchement pour FTP. Il contrôle le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est inséré dans le dossier spécifié.
+[!UICONTROL Contrôle des fichiers] est le seul module déclencheur pour FTP. Il contrôle le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est inséré dans le dossier spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -122,7 +126,7 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
@@ -137,16 +141,16 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
 
 ### Actions
 
-* [[!UICONTROL Change permissions]](#change-permissions)
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL List of files in a folder]](#list-of-files-in-a-folder)
-* [[!UICONTROL Move a file or folder]](#move-a-file-or-folder)
-* [[!UICONTROL Upload] un fichier](#upload-a-file)
+* [[!UICONTROL Modifier les autorisations]](#change-permissions)
+* [[!UICONTROL Créer un dossier]](#create-a-folder)
+* [[!UICONTROL Supprimer un fichier]](#delete-a-file)
+* [[!UICONTROL Supprimer un dossier]](#delete-a-folder)
+* [[!UICONTROL Obtenir un fichier]](#get-a-file)
+* [[!UICONTROL Liste des fichiers dans un dossier]](#list-of-files-in-a-folder)
+* [[!UICONTROL Déplacer un fichier ou un dossier]](#move-a-file-or-folder)
+* [[!UICONTROL Charger] un fichier](#upload-a-file)
 
-#### [!UICONTROL Change permissions]
+#### [!UICONTROL Modifier des autorisations]
 
 Ce module d’action modifie les paramètres d’autorisation d’un fichier ou d’un dossier.
 
@@ -156,7 +160,7 @@ Ce module d’action modifie les paramètres d’autorisation d’un fichier ou 
    <tbody>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Change permission settings of]</td>
@@ -178,7 +182,7 @@ Ce module d’action modifie les paramètres d’autorisation d’un fichier ou 
    </tbody>
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Créer un dossier]
 
 Ce module d’action crée un dossier.
 
@@ -188,7 +192,7 @@ Ce module d’action crée un dossier.
    <tbody>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Folder path]</td>
@@ -203,7 +207,7 @@ Ce module d’action crée un dossier.
    </tbody>
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Supprimer un fichier]
 
 Supprime un fichier du dossier spécifié.
 
@@ -213,7 +217,7 @@ Supprime un fichier du dossier spécifié.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -226,7 +230,7 @@ Supprime un fichier du dossier spécifié.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Supprimer un dossier]
 
 Ce module d’action supprime définitivement le dossier spécifié.
 
@@ -236,7 +240,7 @@ Ce module d’action supprime définitivement le dossier spécifié.
    <tbody>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Folder]</td>
@@ -247,7 +251,7 @@ Ce module d’action supprime définitivement le dossier spécifié.
    </tbody>
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtenir un fichier]
 
 Récupère un fichier du serveur FTP qui peut être traité ultérieurement, par exemple transféré vers [!DNL Dropbox].
 
@@ -266,7 +270,7 @@ Récupère un fichier du serveur FTP qui peut être traité ultérieurement, par
  </tbody> 
 </table>
 
-#### [!UICONTROL List of files in a folder]
+#### [!UICONTROL Liste des fichiers dans un dossier]
 
 Récupère les informations sur le fichier et/ou le dossier.
 
@@ -297,7 +301,7 @@ Récupère les informations sur le fichier et/ou le dossier.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file or folder]
+#### [!UICONTROL Déplacer un fichier ou un dossier]
 
 Ce module d’action déplace un fichier ou un dossier vers un autre emplacement.
 
@@ -307,7 +311,7 @@ Ce module d’action déplace un fichier ou un dossier vers un autre emplacement
    <tbody>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour obtenir des instructions sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Old file path]</td>
@@ -325,7 +329,7 @@ Ce module d’action déplace un fichier ou un dossier vers un autre emplacement
 </table>
 
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Charger un fichier]
 
 Charge un fichier sur le serveur FTP.
 

@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '3275'
-ht-degree: 26%
+source-wordcount: '3704'
+ht-degree: 29%
 
 ---
 
@@ -33,7 +33,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
       <td>
-        <p>[!UICONTROL Pro] ou une version ultérieure</p>
+        <p>[!UICONTROL Pro] ou version supérieure</p>
       </td>
     </tr>
     <tr>
@@ -47,13 +47,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
       <td>
    <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Exigences de licence héritées : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Produit</td>
       <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Conditions requises du produit actuel : si vous disposez de la formule [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi que [!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article. [!DNL Workfront Fusion] est inclus dans la formule [!DNL Workfront] [!UICONTROL Ultimate].</p>
    <p>Ou</p>
    <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
    </td>
@@ -97,7 +97,7 @@ Le connecteur Adobe Journey Optimizer utilise les éléments suivants :
 
 Vous pouvez créer une connexion dans n’importe quel module Adobe Journey Optimizer.
 
-1. Cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -123,15 +123,15 @@ Vous pouvez créer une connexion dans n’importe quel module Adobe Journey Opti
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous pouvez le trouver dans la section des détails des [!UICONTROL Credentials] du [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section des détails des [!UICONTROL Credentials] du [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Saisissez votre [!UICONTROL Organization ID] de [!DNL Adobe]. Pour plus d’informations, consultez la section [!UICONTROL Credentials] les détails du [!DNL Adobe Developer Console]</td>
+        <td>Saisissez votre [!UICONTROL Organization ID] [!DNL Adobe]. Vous pouvez le trouver dans la section des détails des [!UICONTROL Credentials] du [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Sandbox Name]</td>
@@ -215,15 +215,15 @@ Ce module d’action crée une configuration de plafonnement ou de limitation.
    <td>Indiquez si vous utilisez une action ou une source de données pour cette configuration.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL Nombre maximal de connexions HTTP]</td> 
    <td>Saisissez ou mappez le nombre maximal de connexions simultanées à ce point d’entrée.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum calls]</td> 
+   <td role="rowheader">[!UICONTROL Nombre maximal d’appels]</td> 
    <td>Saisissez ou mappez le nombre maximal d’appels à effectuer au cours de la période spécifiée dans le champ Période.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Time period (milliseconds)]</td> 
+   <td role="rowheader">[!UICONTROL Période (millisecondes)]</td> 
    <td>Saisissez ou mappez le nombre de millisecondes associé au champ Nombre maximal d’appels .</td> 
   </tr> 
  </tbody> 
@@ -251,15 +251,15 @@ Ce module d’action crée une configuration de plafonnement ou de limitation.
    <td>Sélectionnez les méthodes à utiliser dans cette configuration.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max throughput]</td> 
+   <td role="rowheader">[!UICONTROL Débit maximal]</td> 
    <td>Indiquez si vous utilisez une action ou une source de données pour cette configuration.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL Nombre maximal de connexions HTTP]</td> 
    <td>Saisissez ou mappez le nombre maximal de connexions simultanées à ce point d’entrée.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum calls]</td> 
+   <td role="rowheader">[!UICONTROL Nombre maximal d’appels]</td> 
    <td>Saisissez ou mappez le débit maximal souhaité pour ce point d’entrée. Cette valeur doit être comprise entre 200 et 5 000.</td> 
   </tr> 
  </tbody> 
@@ -282,7 +282,7 @@ Ce module d’action déploie la configuration de plafonnement ou de limitation 
    <td>Choisissez si vous déployez une configuration de plafonnement ou de limitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de configuration]</td> 
    <td>Saisissez ou mappez l’identifiant de la configuration que vous souhaitez déployer.</td> 
   </tr> 
  </tbody> 
@@ -324,7 +324,7 @@ Ce module d’action annule le déploiement d’une configuration de plafonnemen
    <td>Indiquez si vous annulez le déploiement d’une configuration de plafonnement ou de limitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de configuration]</td> 
    <td>Saisissez ou mappez l’identifiant de la configuration que vous souhaitez annuler le déploiement.</td> 
   </tr> 
  </tbody> 
@@ -347,7 +347,7 @@ Ce module d’action vérifie si une configuration de plafonnement ou de limitat
    <td>Indiquez si vous vérifiez une configuration de plafonnement ou de limitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de configuration]</td> 
    <td>Saisissez ou mappez l’identifiant de la configuration que vous souhaitez vérifier.</td> 
   </tr> 
  </tbody> 
@@ -372,7 +372,7 @@ Si la configuration a été déployée, elle doit être annulée avant de pouvoi
    <td>Indiquez si vous supprimez une configuration de plafonnement ou de limitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de configuration]</td> 
    <td>Saisissez ou mappez l’identifiant de la configuration à supprimer.</td> 
   </tr> 
  </tbody> 
@@ -395,7 +395,7 @@ Ce module d’action renvoie la configuration de plafonnement ou de limitation i
    <td>Indiquez si vous récupérez une configuration de plafonnement ou de limitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de configuration]</td> 
    <td>Saisissez ou mappez l’identifiant de la configuration que vous souhaitez récupérer.</td> 
   </tr> 
  </tbody> 
@@ -411,7 +411,7 @@ Ce module d’action renvoie la configuration de plafonnement ou de limitation i
 * [Supprimer un package](#delete-a-package)
 * [Recherche d’un package](#look-up-a-package)
 * [Importer un package](#import-a-package)
-* [Publish d’un package](#publish-a-package)
+* [Publication d’un package](#publish-a-package)
 * [Soumettre un import](#submit-an-import)
 
 
@@ -441,7 +441,7 @@ Ce module d’action crée un package multi-artefacts.
    <td>Saisissez ou mappez la date et l’heure qui définissent la date d’expiration du package. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package type]</td> 
+   <td role="rowheader">[!UICONTROL Type de package]</td> 
    <td>Sélectionnez le type de package que vous souhaitez créer.<ul><li><p><b>Plein</b></p>Le package inclut tous les artefacts</p></li><li><p><b>Partiel</b></p><p>Le package inclut uniquement les artefacts que vous ajoutez. </p></li><ul></td> 
   </tr> 
   <tr> 
@@ -487,7 +487,7 @@ Ce module d’action supprime un package multi-artefacts.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package que vous souhaitez supprimer.</td> 
   </tr> 
  </tbody> 
@@ -506,7 +506,7 @@ Ce module d’action récupère les détails du package spécifié.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package pour lequel vous souhaitez renvoyer des détails.</td> 
   </tr> 
  </tbody> 
@@ -527,7 +527,7 @@ Vous devez publier un package avant de pouvoir l’importer.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package que vous souhaitez importer.</td> 
   </tr> 
     <tr> 
@@ -537,7 +537,7 @@ Vous devez publier un package avant de pouvoir l’importer.
  </tbody> 
 </table>
 
-#### Publish d’un package
+#### Publication d’un package
 
 Vous devez publier un package avant de pouvoir l’importer.
 
@@ -550,7 +550,7 @@ Vous devez publier un package avant de pouvoir l’importer.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package que vous souhaitez publier.</td> 
   </tr> 
  </tbody> 
@@ -569,7 +569,7 @@ Ce module d&#39;action envoie un import pour un package après avoir vérifié l
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package que vous souhaitez publier.</td> 
   </tr> 
   <tr> 
@@ -581,23 +581,23 @@ Ce module d&#39;action envoie un import pour un package après avoir vérifié l
    <td>Saisir ou mapper une description de la tâche d’importation</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) Name]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox de destination) Name]</td> 
    <td>Saisissez ou mappez le nom du sandbox auquel vous envoyez l’importation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) IMS Org ID]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox de destination) ID d’organisation IMS]</td> 
    <td>Saisissez ou mappez l’ID d’organisation Adobe IMS pour le sandbox auquel vous envoyez l’importation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) ID]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox Source) ID]</td> 
    <td>Saisissez ou mappez l’identifiant du sandbox qui contient le package que vous souhaitez publier.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) Type]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox Source) Type]</td> 
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) Link]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox Source) Link]</td> 
    <td>Saisissez ou mappez le lien pour le package que vous souhaitez publier.</td> 
   </tr> 
  </tbody> 
@@ -954,7 +954,7 @@ Ce module d’action supprime un modèle ou un fragment de contenu.
 
 #### Correctif d’un enregistrement
 
-Ce module d’action met à jour un enregistrement à l’aide du PATCH au format du pointeur JSON
+Ce module d’action met à jour un enregistrement à l’aide de PATCH avec le format de pointeur JSON
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1024,7 +1024,7 @@ Ce module d&#39;action déclenche un message unitaire aux destinataires que vous
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de requête]</td> 
    <td>Saisissez ou mappez l’identifiant de la demande associée à ce message.</td> 
   </tr> 
   <tr> 
@@ -1061,7 +1061,7 @@ Ce module d’action déclenche l’exécution d’un message basé sur une audi
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de requête]</td> 
    <td>Saisissez ou mappez l’identifiant de la demande associée à ce message.</td> 
   </tr> 
   <tr> 
@@ -1088,7 +1088,7 @@ Ce module d’action vérifie l’état d’un message par lots basé sur une au
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message execution ID]</td> 
+   <td role="rowheader">[!UICONTROL ID d’exécution du message]</td> 
    <td>Saisissez ou mappez l’identifiant de l’exécution du message que vous souhaitez vérifier.</td> 
   </tr> 
  </tbody> 
@@ -1132,7 +1132,7 @@ Ce module d’action vérifie les dépendances pour les artefacts de package. Vo
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package pour lequel vous souhaitez vérifier les autorisations.</td> 
   </tr> 
   <tr> 
@@ -1182,11 +1182,11 @@ Ce module de recherche répertorie tous les objets dépendants pour les objets d
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Journey Optimizer], voir <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Créer une connexion à [!DNL Adobe Journey Optimizer]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package objects]</td> 
+   <td role="rowheader">[!UICONTROL Package Objects]</td> 
    <td>Pour chaque objet du package pour lequel vous souhaitez renvoyer un objet dépendant, cliquez sur <b>Ajouter un objet</b> et saisissez le nom et le type de l’objet.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de package]</td> 
    <td>Saisissez ou mappez l’identifiant du package pour lequel vous souhaitez répertorier les objets dépendants.</td> 
   </tr> 
     <tr> 
@@ -1240,7 +1240,7 @@ Ce module de recherche répertorie la tâche d’exportation et d’importation 
       <td>Choisissez de classer les résultats par date de création ou date de modification.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">[!UICONTROL Paramètre de requête]</td> 
    <td>Pour chaque paramètre de requête sur lequel vous souhaitez appliquer un filtre, cliquez sur <b>Ajouter un paramètre de requête</b>, sélectionnez le champ et l’opérateur, puis saisissez la valeur du champ pour le filtre.</td> 
   </tr> 
  </tbody> 
@@ -1273,7 +1273,7 @@ Ce module de recherche répertorie tous les packages de votre organisation. Vous
       <td>Choisissez de classer les résultats par date de création ou date de modification.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">[!UICONTROL Paramètre de requête]</td> 
    <td>Pour chaque paramètre de requête sur lequel vous souhaitez appliquer un filtre, cliquez sur <b>Ajouter un paramètre de requête</b>, sélectionnez le champ et l’opérateur, puis saisissez la valeur du champ pour le filtre.</td> 
   </tr> 
  </tbody> 
@@ -1308,7 +1308,7 @@ Ce module de recherche répertorie toutes les configurations de plafonnement ou 
    <td>Saisissez ou mappez le nom du paramètre selon lequel vous souhaitez trier cette liste. Ajoutez des <code>-</code> ou des <code>+</code> pour trier par ordre décroissant ou croissant. Si aucun signe n’est spécifié, la liste est triée par ordre décroissant.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by property]</td> 
+   <td role="rowheader">[!UICONTROL Filtrer par propriété]</td> 
    <td>Pour chaque filtre de propriété à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez la clé et la valeur de la propriété. Les enregistrements qui incluent la valeur spécifiée pour la propriété sont inclus dans la liste.</td> 
   </tr> 
  </tbody> 

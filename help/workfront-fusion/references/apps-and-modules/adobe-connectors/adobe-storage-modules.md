@@ -8,10 +8,10 @@ description: Dans un  [!DNL Adobe Workfront Fusion] , vous devez créer et gére
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 18%
+source-wordcount: '1386'
+ht-degree: 20%
 
 ---
 
@@ -106,7 +106,7 @@ Sur la page Adobe Admin Console , sélectionnez l’onglet Produits dans la barr
 
 Pour créer une connexion pour vos modules [!DNL Adobe Storage], procédez comme suit :
 
-1. Cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -127,11 +127,11 @@ Pour créer une connexion pour vos modules [!DNL Adobe Storage], procédez comme
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credential details] du projet dans la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet de la [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credential details] du projet dans la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet de la [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
@@ -140,7 +140,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Storage], procédez comme
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules de stockage Adobe et leurs champs
 
