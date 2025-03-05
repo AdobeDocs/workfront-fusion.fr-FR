@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 73%
+source-wordcount: '3042'
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ Pour plus d’informations sur les possibilités de recherche, voir la documenta
 
 Pour créer une connexion pour vos modules [!DNL Salesforce], procédez comme suit :
 
-1. Dans n’importe quel module de [!DNL Salesforce], cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans un module [!DNL Salesforce], cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -160,7 +160,7 @@ Pour créer une connexion pour vos modules [!DNL Salesforce], procédez comme su
     </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
 ## Modules [!DNL Salesforce] et leurs champs
@@ -171,11 +171,11 @@ Pour créer une connexion pour vos modules [!DNL Salesforce], procédez comme su
 
 ### Déclencheurs
 
-* [[!UICONTROL Watch a field]](#watch-a-field)
-* [[!UICONTROL Watch for Records]](#watch-for-records)
-* [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
+* [[!UICONTROL Surveiller un champ]](#watch-a-field)
+* [[!UICONTROL Surveiller des enregistrements]](#watch-for-records)
+* [[!UICONTROL Surveiller des messages sortants]](#watch-outbound-messages)
 
-#### [!UICONTROL Watch a field]
+#### [!UICONTROL Surveiller un champ]
 
 Ce module de déclenchement lance un scénario lorsqu’un champ est mis à jour dans [!DNL Salesforce].
 
@@ -189,7 +189,7 @@ Ce module de déclenchement lance un scénario lorsqu’un champ est mis à jour
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Sélectionnez le type d’enregistrement qui contient le champ que le module doit surveiller. Vous devez choisir un type d’enregistrement qui a [!UICONTROL Field History] activé dans la configuration de [!DNL Salesforce]. Pour plus d’informations, consultez la section <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Suivi de l’historique des champs</a> dans la documentation [!DNL Salesforce]. </p> </td> 
+   <td> <p>Sélectionnez le type d’enregistrement qui contient le champ que le module doit surveiller. Vous devez choisir un type d’enregistrement pour lequel [!UICONTROL Field History] est activé dans la configuration de [!DNL Salesforce]. Pour plus d’informations, consultez la section <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Suivi de l’historique des champs</a> dans la documentation [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -202,7 +202,7 @@ Ce module de déclenchement lance un scénario lorsqu’un champ est mis à jour
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch for Records]
+#### [!UICONTROL Surveiller des enregistrements]
 
 Ce module de déclenchement exécute un scénario lorsqu’un enregistrement d’un objet est créé ou mis à jour. Le module renvoie tous les champs standard associés à l’enregistrement ou aux enregistrements, ainsi que les champs et valeurs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -218,14 +218,14 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
-   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que vous souhaitez que le module surveille.</p> </td> 
+   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que le module doit surveiller.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Fields]</td> 
    <td>Sélectionnez les champs que le module doit surveiller. Les champs disponibles dépendent du type d’enregistrement.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
+   <td>[!UICONTROL Maximal count of records].</td> 
    <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
   <tr> 
@@ -235,7 +235,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Outbound Messages]
+#### [!UICONTROL Surveiller des messages sortants]
 
 Ce module de déclenchement exécute un scénario lorsqu’une personne envoie un message. Le module renvoie tous les champs standard associés à l’enregistrement ou aux enregistrements, ainsi que les champs et valeurs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -243,25 +243,25 @@ Ce module nécessite une configuration supplémentaire :
 
 1. Accédez à la page de configuration de [!DNL Salesforce].
 
-   Pour accéder à la page de configuration, recherchez et cliquez sur le bouton intitulé « [!UICONTROL Setup] » dans le coin supérieur droit du compte [!DNL Salesforce]. Sur la page de configuration du [!DNL Salesforce], recherchez la barre « [!UICONTROL Quick Find / Search] » sur le côté gauche. Recherchez « [!UICONTROL Workflow Rules] ».
+   Pour accéder à la page de configuration, recherchez le bouton intitulé « [!UICONTROL Configuration] » dans le coin supérieur droit du compte [!DNL Salesforce] et cliquez dessus. Dans la page de configuration de [!DNL Salesforce], recherchez la barre de « [!UICONTROL Recherche rapide/Recherche] » située à gauche. Recherchez « [!UICONTROL Règles de workflow] ».
 
-1. Cliquez sur **[!UICONTROL Workflow Rules]**.
-1. Sur la page [!UICONTROL Workflow Rules] qui s’affiche, cliquez sur **[!UICONTROL New Rule]** et sélectionnez le type d’objet auquel la règle s’appliquera (par exemple, « [!UICONTROL Opportunity] » si vous surveillez les mises à jour des enregistrements d’opportunité).
-1. Cliquez sur **[!UICONTROL Next]**.
-1. Définissez un nom de règle, des critères d’évaluation et des critères de règle, puis cliquez sur **[!UICONTROL Save]** et **[!UICONTROL Next]**.
+1. Cliquez sur **[!UICONTROL Règles de workflow]**.
+1. Dans la page [!UICONTROL Règles de workflow] qui s’affiche, cliquez sur **[!UICONTROL Nouvelle règle]** et sélectionnez le type d’objet auquel la règle s’appliquera (par exemple, « [!UICONTROL Opportunité] » si vous surveillez les mises à jour des enregistrements d’opportunité).
+1. Cliquez sur **[!UICONTROL Suivant]**.
+1. Définissez un nom de règle, des critères d’évaluation et des critères de règle, puis cliquez sur **[!UICONTROL Enregistrer]** et **[!UICONTROL Suivant]**.
 
-1. Cliquez sur **[!UICONTROL Done]**.
-1. Dans la règle de workflow nouvellement créée, cliquez sur **[!UICONTROL Edit]**.
-1. Dans la liste déroulante **[!UICONTROL Add Workflow Action]** , sélectionnez **[!UICONTROL New Outbound Message]**.
+1. Cliquez sur **[!UICONTROL Terminé]**.
+1. Dans la règle de workflow nouvellement créée, cliquez sur **[!UICONTROL Modifier]**.
+1. Dans la liste déroulante **[!UICONTROL Ajouter une action de workflow]**, sélectionnez **[!UICONTROL Nouveau message sortant]**.
 
-1. Indiquez le nom, la description, l’URL du point d’entrée et les champs à inclure dans le nouveau message sortant, puis cliquez sur **[!UICONTROL Save]**.
+1. Indiquez le nom, la description, l’URL du point d’entrée et les champs que vous souhaitez inclure dans le nouveau message sortant, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-   Le champ **[!UICONTROL Endpoint URL]** contient l’URL fournie sur le [!UICONTROL Outbound Message] [!DNL Salesforce] dans [!DNL Workfront Fusion].
+   Le champ **[!UICONTROL URL du point d’entrée]** contient l’URL indiquée sur le [!UICONTROL Message sortant] [!DNL Salesforce] dans [!DNL Workfront Fusion].
 
-1. Configurez un scénario commençant par l’événement [!UICONTROL Outbound Message].
+1. Configurez un scénario commençant par l’événement [!UICONTROL Message sortant].
 
 1. Cliquez sur l’icône **&lt;/>** en bas à droite et copiez l’URL fournie.
-1. Revenez à la page **[!UICONTROL Workflow Rules]**, recherchez la règle nouvellement créée, puis cliquez sur **[!UICONTROL Activate]**.
+1. Revenez à la page **[!UICONTROL Règles de workflow]**, recherchez la règle nouvellement créée, puis cliquez sur **[!UICONTROL Activer]**.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -271,7 +271,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>Sélectionnez le webhook que vous souhaitez utiliser pour surveiller les messages sortants. Pour ajouter un webhook, cliquez sur <strong>[!UICONTROL Add]</strong> et saisissez le nom et la connexion du webhook.</p> <p>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base</a></p> </td> 
+   <td> <p>Sélectionnez le webhook que vous souhaitez utiliser pour surveiller les messages sortants. Pour ajouter un webhook, cliquez sur <strong>[!UICONTROL Add]</strong> et saisissez le nom et la connexion du webhook.</p> <p>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -286,15 +286,15 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Actions
 
-* [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL Créer un enregistrement]](#create-a-record)
+* [[!UICONTROL Appel API personnalisé]](#custom-api-call)
+* [[!UICONTROL Supprimer un enregistrement]](#delete-a-record)
+* [[!UICONTROL Télécharger la pièce jointe/le document]](#download-attachmentdocument)
+* [[!UICONTROL Lire un enregistrement]](#read-a-record)
+* [[!UICONTROL Charger la pièce jointe/le document]](#upload-attachmentdocument)
 * [Charger fichier](#upload-file)
 
-#### [!UICONTROL Create a Record]
+#### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée un nouvel enregistrement dans un objet.
 
@@ -314,7 +314,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
-   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que vous souhaitez que le module crée. Les champs sont disponibles en fonction du type d’enregistrement sélectionné dans le champ [!UICONTROL Record Type]. Ces champs reposent sur l’API [!DNL Salesforce].</p> </td> 
+   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que vous souhaitez que le module crée. Les champs deviennent disponibles en fonction du type d’enregistrement sélectionné dans le champ [!UICONTROL Record Type]. Ces champs reposent sur l’API [!DNL Salesforce].</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -323,18 +323,18 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Appel API personnalisé]
 
 Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Salesforce]. De cette façon, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Salesforce].
 
 Le module renvoie les éléments suivants :
 
-* **[!UICONTROL Status Code]** (nombre) : indique le succès ou l’échec de votre requête HTTP. Ce sont des codes standard que vous pouvez consulter sur Internet.
-* **[!UICONTROL Headers]** (objet) : contexte plus détaillé pour le code de réponse/statut qui n’est pas lié au corps de sortie. Tous les en-têtes qui apparaissent dans un en-tête de réponse ne sont pas des en-têtes de réponse. Certains peuvent donc ne pas vous être utiles.
+* **[!UICONTROL Code d’état]** (nombre) : indique la réussite ou l’échec de votre requête HTTP. Ce sont des codes standard que vous pouvez consulter sur Internet.
+* **[!UICONTROL En-têtes]** (objet) : contexte plus détaillé pour le code de réponse/d’état qui ne se rapporte pas au corps de sortie. Tous les en-têtes qui apparaissent dans un en-tête de réponse ne sont pas des en-têtes de réponse. Certains peuvent donc ne pas vous être utiles.
 
   Les en-têtes de réponse dépendent de la requête HTTP que vous avez choisie lors de la configuration du module.
 
-* **[!UICONTROL Body]** (objet) : selon la requête HTTP que vous avez choisie lors de la configuration du module, vous pouvez recevoir des données en retour. Ces données, telles que les données d’une requête [!UICONTROL GET], sont contenues dans cet objet.
+* **[!UICONTROL Corps]** (objet) : selon la requête HTTP que vous avez choisie lors de la configuration du module, vous pouvez recevoir des données en retour. Ces données, telles que les données d’une requête [!UICONTROL GET], sont contenues dans cet objet.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -372,7 +372,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
+#### [!UICONTROL Supprimer un enregistrement]
 
 Ce module d’action supprime un enregistrement existant dans un objet.
 
@@ -392,7 +392,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que le module doit supprimer.</p> </td> 
+   <td> <p>Sélectionnez le type d’enregistrement [!DNL Salesforce] que le module doit supprimer.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -401,7 +401,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Download Attachment/Document]
+#### [!UICONTROL Télécharger la pièce jointe/le document]
 
 Ce module d’action permet de télécharger un document ou une pièce jointe à partir d’un enregistrement.
 
@@ -425,7 +425,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
      <ul> 
       <li>[!UICONTROL Attachment]</li> 
       <li>[!UICONTROL Document]</li> 
-      <li>[!UICONTROL ContentDocument] (Il s’agit d’un document qui a été chargé dans une bibliothèque en [!DNL Saleforce CRM Content] ou [!DNL Salesforce Files].)</li> 
+      <li>[!UICONTROL ContentDocument] (Il s’agit d’un document qui a été chargé dans une bibliothèque de [!DNL Saleforce CRM Content] ou [!DNL Salesforce Files]).</li> 
      </ul> </td>
   </tr> 
   <tr>
@@ -435,7 +435,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action lit les données d’un seul objet dans [!DNL Salesforce].
 
@@ -455,7 +455,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
-    <td>Sélectionnez le type d’enregistrement [!DNL Salesforce] que vous souhaitez que le module [action].read.</td>
+    <td>Sélectionnez le type d’enregistrement [!DNL Salesforce] que le module doit lire.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>
@@ -480,16 +480,16 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 >
 >* **Clé** : `q`
 >
->* **Valeur** : `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+>* **Valeur** :`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
 >
->Les correspondances de la recherche se trouvent dans la sortie du module sous **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
+>Les correspondances de la recherche se trouvent dans la sortie du module sous **[!UICONTROL Bundle] > [!UICONTROL Corps] > [!UICONTROL Enregistrements]**.
 >
 >Dans notre exemple, 6 utilisateurs ou utilisatrices ont été renvoyés :
 >
 >![Correspond à la recherche](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
-#### [!UICONTROL Update a Record]
+#### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action modifie un enregistrement dans un objet.
 
@@ -523,7 +523,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 </table>
 
 
-#### [!UICONTROL Upload Attachment/Document]
+#### [!UICONTROL Charger la pièce jointe/le document]
 
 Ce module d’action charge un fichier et le joint à un enregistrement spécifié, ou charge un document.
 
@@ -577,7 +577,7 @@ Ce module d’action charge un seul fichier dans Salesforce.
    <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td role="rowheader">[!UICONTROL Liaison de documents]</td> 
    <td>Indiquez s’il faut appliquer un lien vers le document de contenu.</td> 
   </tr> 
   <tr> 
@@ -595,7 +595,7 @@ Ce module d’action charge un seul fichier dans Salesforce.
 
 ### Recherches
 
-#### [!UICONTROL Search with Query]
+#### [!UICONTROL Recherche avec requête]
 
 Ce module de recherche permet de rechercher les enregistrements d’un objet dans [!DNL Salesforce] qui correspondent à la requête de recherche que vous avez spécifiée. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -624,16 +624,16 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>Saisissez la requête par laquelle vous souhaitez effectuer la recherche.</p> <p>Pour plus d’informations sur SOSL, consultez la section <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> dans la documentation [!DNL Salesforce].</p> <p>Pour plus d’informations sur SOQL, consultez la section <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> dans la documentation [!DNL Salesforce].</p> <p>Note : la valeur du paramètre <code>RETURNING </code> influence la sortie du module. Si vous utilisez <code>LIMIT</code>, [!DNL Fusion] ignorerez les paramètres du champ [!UICONTROL Maximal count of records] . Si vous ne définissez aucune limite, Fusion insère la valeur [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
+   <td> <p>Saisissez la requête par laquelle vous souhaitez effectuer la recherche.</p> <p>Pour plus d’informations sur SOSL, consultez la section <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> dans la documentation [!DNL Salesforce].</p> <p>Pour plus d’informations sur SOQL, consultez la section <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> dans la documentation [!DNL Salesforce].</p> <p>Note : la valeur du paramètre <code>RETURNING </code> influence la sortie du module. Si vous utilisez <code>LIMIT</code>, [!DNL Fusion] ignorera les paramètres du champ [!UICONTROL Maximal count of records]. Si vous ne définissez aucune limite, Fusion insérera la valeur [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
+   <td>[!UICONTROL Maximal count of records].</td> 
    <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Rechercher]
 
 Ce module d’action permet de récupérer tous les enregistrements répondant à un critère donné.
 

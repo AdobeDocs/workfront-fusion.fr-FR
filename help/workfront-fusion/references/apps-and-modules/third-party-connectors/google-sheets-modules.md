@@ -4,10 +4,10 @@ description: Pour utiliser  [!DNL Google Sheets]  avec l’extension  [!DNL Adob
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 994dffd83d5b7d8b72396f147df352dfb74d6219
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 62%
+source-wordcount: '3957'
+ht-degree: 70%
 
 ---
 
@@ -62,7 +62,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Conditions préalables
 
-Pour utiliser les modules [!UICONTROL Google Sheets], vous devez disposer d’un compte [!UICONTROL Google].
+Pour utiliser les modules [!UICONTROL Google Sheets], vous devez avoir un compte [!UICONTROL Google].
 
 ## Informations sur l’API Google Sheets
 
@@ -97,7 +97,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-#### [!UICONTROL Watch Rows]
+#### [!UICONTROL Surveiller les lignes]
 
 Récupère les valeurs des nouvelles lignes ajoutées dans la feuille de calcul.
 
@@ -156,19 +156,19 @@ Le module récupère uniquement les nouvelles lignes qui n’ont pas été rempl
 
 ### Actions
 
-* [[!UICONTROL Add a Row]](#add-a-row)
-* [[!UICONTROL Add a Sheet]](#add-a-sheet)
-* [[!UICONTROL Clear a Cell]](#clear-a-cell)
-* [[!UICONTROL Clear a Row]](#clear-a-row)
-* [[!UICONTROL Create a Spreadsheet]](#create-a-spreadsheet)
-* [[!UICONTROL Delete a Row]](#delete-a-row)
-* [[!UICONTROL Delete a Sheet]](#delete-a-sheet)
-* [[!UICONTROL Get a Cell]](#get-a-cell)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Update a Cell]](#update-a-cell)
-* [[!UICONTROL Update a Row]](#update-a-row)
+* [[!UICONTROL Ajouter une ligne]](#add-a-row)
+* [[!UICONTROL Ajouter une feuille]](#add-a-sheet)
+* [[!UICONTROL Effacer une cellule]](#clear-a-cell)
+* [[!UICONTROL Effacer une ligne]](#clear-a-row)
+* [[!UICONTROL Créer une feuille de calcul]](#create-a-spreadsheet)
+* [[!UICONTROL Supprimer une ligne]](#delete-a-row)
+* [[!UICONTROL Supprimer une feuille]](#delete-a-sheet)
+* [[!UICONTROL Obtenir une cellule]](#get-a-cell)
+* [[!UICONTROL Effectuer un appel API]](#make-an-api-call)
+* [[!UICONTROL Mettre à jour une cellule]](#update-a-cell)
+* [[!UICONTROL Mettre à jour une ligne]](#update-a-row)
 
-#### [!UICONTROL Add a Row]
+#### [!UICONTROL Ajouter une ligne]
 
 Ce module ajoute une ligne à une feuille.
 
@@ -233,7 +233,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Sheet]
+#### [!UICONTROL Ajouter une feuille]
 
 Crée une feuille dans une feuille de calcul sélectionnée.
 
@@ -260,7 +260,7 @@ Crée une feuille dans une feuille de calcul sélectionnée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Cell]
+#### [!UICONTROL Effacer une cellule]
 
 Supprime une valeur d’une cellule spécifiée.
 
@@ -287,7 +287,7 @@ Supprime une valeur d’une cellule spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Row]
+#### [!UICONTROL Effacer une ligne]
 
 Supprime les valeurs d’une ligne spécifiée.
 
@@ -314,7 +314,7 @@ Supprime les valeurs d’une ligne spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Spreadsheet]
+#### [!UICONTROL Créer une feuille de calcul]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -347,7 +347,7 @@ Supprime les valeurs d’une ligne spécifiée.
   </tr> 
   <tr> 
    <td>[!UICONTROL Number format]</td> 
-   <td> <p>Sélectionnez le format par défaut de toutes les cellules de la feuille de calcul.</p> <p><strong>[!UICONTROL Text]</strong>: mise en forme du texte. Exemple : <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: formatage des nombres. Exemple : <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: formatage en pourcentage. Exemple : <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>: formatage de la devise. Exemple : <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: formatage des dates. Exemple : <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: formatage de l’heure. Exemple : <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>: formatage de la date et de l’heure. Exemple : <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: formatage scientifique des nombres. Exemple : <code>1. 01E+03</code></p> </td> 
+   <td> <p>Sélectionnez le format par défaut de toutes les cellules de la feuille de calcul.</p> <p><strong>[!UICONTROL Text]</strong> : mise en forme du texte. Exemple : <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong> : mise en forme des nombres. Exemple : <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong> : mise en forme des pourcentages. Exemple : <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong> : mise en forme de la devise. Exemple : <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong> : mise en forme des dates. Exemple : <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong> : mise en forme de l’heure. Exemple : <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong> : mise en forme de la date et de l’heure. Exemple : <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong> : Formatage scientifique des nombres. Exemple : <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sheets] </td> 
@@ -356,7 +356,7 @@ Supprime les valeurs d’une ligne spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Row]
+#### [!UICONTROL Supprimer une ligne]
 
 Supprime une ligne spécifiée.
 
@@ -383,7 +383,7 @@ Supprime une ligne spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Sheet]
+#### [!UICONTROL Supprimer une feuille]
 
 Supprime une feuille spécifique.
 
@@ -406,7 +406,7 @@ Supprime une feuille spécifique.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Cell]
+#### [!UICONTROL Obtenir une cellule]
 
 Récupère une valeur d’une cellule sélectionnée.
 
@@ -441,7 +441,7 @@ Récupère une valeur d’une cellule sélectionnée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module d’action vous permet d’effectuer un appel API personnalisé.
 
@@ -451,11 +451,11 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [Fusion App] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td>Saisir un chemin relatif à <code>https://sheets.googleapis.com/v4/</code>.</td> 
+   <td>Saisissez un chemin d’accès relatif à <code>https://sheets.googleapis.com/v4/</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -479,7 +479,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Cell]
+#### [!UICONTROL Mettre à jour une cellule]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -516,7 +516,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Row]
+#### [!UICONTROL Mettre à jour une ligne]
 
 Ce module permet de modifier le contenu d’une cellule dans une ligne sélectionnée.
 
@@ -530,7 +530,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
-   <td> <p>Indiquez si vous souhaitez sélectionner la feuille de calcul et la feuille manuellement ou par mappage.</p> <p>Remarque : La mise en correspondance manuelle est utile, par exemple, lorsqu'une nouvelle feuille de calcul est créée dans le scénario [!UICONTROL Workfront Fusion] et que vous souhaitez y ajouter des données directement.</p> </td> 
+   <td> <p>Indiquez si vous souhaitez sélectionner la feuille de calcul et la feuille manuellement ou par mappage.</p> <p>Remarque : le mappage manuel est utile, par exemple, lorsqu’une nouvelle feuille de calcul est créée dans le scénario [!UICONTROL Workfront Fusion] et que vous souhaitez ajouter des données à la nouvelle feuille de calcul directement dans le scénario.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -569,12 +569,12 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
 
 ### Recherches
 
-* [[!UICONTROL Get Range Values]](#get-range-values)
-* [[!UICONTROL List Sheets]](#list-sheets)
-* [[!UICONTROL Search Rows]](#search-rows)
-* [[!UICONTROL Search Rows (Advanced)]](#search-rows-advanced)
+* [[!UICONTROL Obtenir les valeurs de plage]](#get-range-values)
+* [[!UICONTROL Répertorier les feuilles]](#list-sheets)
+* [[!UICONTROL Effectuer une recherche dans les lignes]](#search-rows)
+* [[!UICONTROL Effectuer une recherche dans les lignes (avancé)]](#search-rows-advanced)
 
-#### [!UICONTROL Get Range Values]
+#### [!UICONTROL Obtenir les valeurs de plage]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -615,7 +615,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
  </tbody> 
 </table>
 
-#### [!UICONTROL List Sheets]
+#### [!UICONTROL Répertorier les feuilles]
 
 Ce module renvoie une liste de toutes les feuilles d’une feuille de calcul.
 
@@ -634,7 +634,7 @@ Ce module renvoie une liste de toutes les feuilles d’une feuille de calcul.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows]
+#### [!UICONTROL Effectuer une recherche dans les lignes]
 
 Effectue une recherche dans les lignes à l’aide des options de filtre.
 
@@ -644,7 +644,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [Fusion App] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -656,7 +656,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
   </tr> 
   <tr> 
    <td>[!UICONTROL Table contains headers]</td> 
-   <td> <p> Indiquez si la feuille de calcul contient la ligne d’en-tête. Si l’option [!UICONTROL Yes] est sélectionnée, le module ne récupère pas la ligne d’en-tête, car les données de sortie et les noms des variables dans la sortie sont alors appelés par les en-têtes. Si l’option [!UICONTROL No] est sélectionnée, le module récupère également la première ligne du tableau, et les noms des variables dans la sortie sont alors appelés simplement A, B, C, D, etc.</p> </td> 
+   <td> <p> Indiquez si la feuille de calcul contient la ligne d’en-tête. Si l’option [!UICONTROL Yes] est sélectionnée, le module ne récupère pas la ligne d’en-tête, car les données de sortie et les noms de variable dans la sortie sont alors appelés par les en-têtes. Si l’option [!UICONTROL No] est sélectionnée, le module récupère également la première ligne de tableau et les noms de variable dans la sortie sont alors appelés uniquement A, B, C, D, etc.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Column range]</td> 
@@ -689,7 +689,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows (Advanced)]
+#### [!UICONTROL Effectuer une recherche sur les lignes (avancé)]
 
 Renvoie des résultats correspondant aux critères donnés.
 
@@ -731,7 +731,7 @@ Pour plus de détails, voir [developers.google.com/sheets/api/limits](https://de
 
 ### Récupérer des cellules vides à partir d’un [!DNL Google Sheet]
 
-Pour obtenir des cellules vides, vous pouvez utiliser le module [!UICONTROL Search Rows (Advanced)]. Utilisez cette formule pour obtenir les colonnes vides.
+Pour obtenir des cellules vides, vous pouvez utiliser le module [!UICONTROL Rechercher des lignes (avancé)]. Utilisez cette formule pour obtenir les colonnes vides.
 
 ```
 select * where E is null
@@ -745,14 +745,14 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 
 1. Copiez l’URL du webhook.
 1. Exécutez le scénario.
-1. Dans Google Sheets, choisissez **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... dans la barre de menus principale.
+1. Dans Google Sheets, choisissez **[!UICONTROL Insérer]** > **[!UICONTROL Dessin]**... dans la barre de menu principale.
 
-1. Dans la fenêtre [!UICONTROL Drawing], cliquez sur l’icône **[!UICONTROL Text box]** ![zone de texte](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) en haut de la fenêtre.
-1. Créez un bouton et cliquez sur le bouton **[!UICONTROL Save and Close]** dans le coin supérieur droit :
+1. Dans la fenêtre [!UICONTROL Dessin], cliquez sur l&#39;icône **[!UICONTROL Zone de texte]** ![Zone de texte](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) située en haut de la fenêtre.
+1. Créez un bouton et cliquez sur le bouton **[!UICONTROL Enregistrer et fermer]** dans le coin supérieur droit :
 1. Le bouton est placé dans votre feuille de calcul. Cliquez sur les trois points verticaux dans le coin supérieur droit du bouton :
-1. Choisissez **[!UICONTROL Assign script..].** dans le menu.
-1. Saisissez le nom de votre script (fonction), par exemple `runScenario` et cliquez sur **[!UICONTROL OK]** :
-1. Choisissez **[!UICONTROL Tools]** > **[!UICONTROL Script editor]** dans la barre de menus principale.
+1. Choisissez **[!UICONTROL Attribuer un script...]** dans le menu.
+1. Saisissez le nom de votre script (fonction), par exemple `runScenario`, et cliquez sur **[!UICONTROL OK]** :
+1. Choisissez **[!UICONTROL Outils]** > **[!UICONTROL Éditeur de script]** dans la barre de menu principale.
 
 1. Insérez le code suivant :
 
@@ -765,7 +765,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
      }
      ```
 
-1. Appuyez sur **[!UICONTROL Ctrl+S]** pour enregistrer le fichier de script, saisissez un nom de projet et cliquez sur **[!UICONTROL OK]**.
+1. Appuyez sur **[!UICONTROL Ctrl + S]** pour enregistrer le fichier script, saisissez un nom de projet et cliquez sur **[!UICONTROL OK]**.
 
 1. Revenez à [!DNL Google Sheets] et cliquez sur votre nouveau bouton.
 1. Accorder l’autorisation obligatoire au script :
@@ -779,13 +779,13 @@ Si vous stockez une valeur Date dans une feuille de calcul sans mise en forme, e
 
 Pour [!DNL Google Sheets] aider à comprendre la date, mettez-la en forme avec la fonction `formatDate` . Le format correct transmis à la fonction en tant que deuxième argument dépend des paramètres locaux de la feuille de calcul.
 
-Pour plus d’informations sur cette fonction, voir [[!UICONTROL formatDate] (date ; format ; [fuseau horaire])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) dans l’article Fonctions de date et d’heure .
+Pour plus d’informations sur cette fonction, voir [[!UICONTROL formatDate] (date ; format ; [fuseau horaire])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) dans l’article Fonctions de date et d’heure.
 
 Pour déterminer le format correct :
 
-1. Dans Google Sheets, choisissez **[!UICONTROL File]** > Paramètres **[!UICONTROL Spreadsheet]** dans le menu principal pour vérifier et définir le paramètre régional.
+1. Dans Google Sheets, choisissez **[!UICONTROL Fichier]** > **[!UICONTROL Feuille de calcul]** dans le menu principal pour vérifier et définir le paramètre régional.
 
-1. Après avoir vérifié ou défini le paramètre régional approprié, déterminez le format de date et d’heure correspondant en choisissant **[!UICONTROL Format]** > **[!UICONTROL Number]** dans le menu principal. Le format est affiché à côté de l’élément de menu Date et heure :
+1. Après avoir vérifié ou défini le paramètre régional approprié, déterminez le format de date et d’heure correspondant en choisissant **[!UICONTROL Format]** > **[!UICONTROL Nombre]** dans le menu principal. Le format est affiché à côté de l’élément de menu Date et heure :
 
 1. Pour composer le format correct à transmettre à la fonction [!UICONTROL formatDate()], reportez-vous à la liste de [Jetons pour le formatage de la date et de l’heure](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md).
 
@@ -808,6 +808,6 @@ Pour utiliser une fonction intégrée à partir de Google Sheets, vous pouvez l�
 Si une chaîne de nombres que vous utilisez comme texte est interprétée comme une date dans une feuille de calcul [!DNL Google], vous pouvez préformater le nombre en tant que texte brut pour éviter cela. Par exemple, si vous tapez 1-2019, dans le but de l’utiliser comme texte, Google peut l’interpréter comme une date.
 
 1. Dans [!DNL Google Sheets], mettez en évidence la colonne ou la cellule contenant le ou les nombres.
-1. Cliquez sur **[!UICONTROL Format]** > **[!UICONTROL Number]** > **[!UICONTROL Plain text]**.
+1. Cliquez sur **[!UICONTROL Format]** > **[!UICONTROL Nombre]** > **[!UICONTROL Texte brut]**.
 
 Une autre solution dans [!DNL Workfront Fusion] consiste à saisir une apostrophe (&#39;) avant un nombre, par exemple &#39;1-2019&#39; ou &#39;1/47&#39;. L’apostrophe ne s’affiche pas dans la cellule après l’envoi des données depuis [!DNL Workfront Fusion].

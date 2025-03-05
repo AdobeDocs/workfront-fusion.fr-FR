@@ -4,10 +4,10 @@ description: Les modules  [!DNL Adobe Acrobat Sign]  vous permettent de lancer u
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '5503'
-ht-degree: 77%
+source-wordcount: '6666'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <tbody> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
@@ -36,13 +36,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
    <td>
    <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Exigences de licence héritées : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>  
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Conditions requises du produit actuel : si vous disposez de la formule [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi que [!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article. [!DNL Workfront Fusion] est inclus dans la formule [!DNL Workfront] [!UICONTROL Ultimate].</p>
    <p>Ou</p>
    <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
    </td> 
@@ -103,7 +103,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Watch for events](#watch-for-events)
 -->
 
-+++ **[!UICONTROL Watch for agreements]**
++++ **[!UICONTROL Surveiller les accords]**
 
 Ce module déclencheur lance un scénario lorsqu’un accord est créé ou mis à jour.
 
@@ -113,7 +113,7 @@ Ce module déclencheur lance un scénario lorsqu’un accord est créé ou mis �
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-<td>Pour savoir comment connecter votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td>  </tr> 
+<td>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
    <td>Indiquez si vous souhaitez surveiller les nouveaux enregistrements, les enregistrements mis à jour ou les deux.</td> 
@@ -135,7 +135,7 @@ Ce module déclencheur lance un scénario lorsqu’un accord est créé ou mis �
 
 +++
 
-+++ **[!UICONTROL Watch for events]**
++++ **[!UICONTROL Surveiller les événements]**
 
 Ce module déclencheur lance un scénario lorsqu’un événement que vous sélectionnez se produit.
 
@@ -162,7 +162,7 @@ Ce module déclencheur lance un scénario lorsqu’un événement que vous séle
      <li> <p>[!UICONTROL Account]</p> </li> 
      <li> <p>[!UICONTROL Group]</p> </li> 
      <li> <p>[!UICONTROL User]</p> </li> 
-     <li> <p>[!UICONTROL Resource]</p> <p>Si vous sélectionnez [!UICONTROL Resource], saisissez l’ID de ressource et le type de ressource.</p> </li> 
+     <li> <p>[!UICONTROL Resource]</p> <p>Si vous sélectionnez [!UICONTROL Resource], saisissez l’identifiant de la ressource et le type de ressource.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -189,11 +189,11 @@ Ce module déclencheur lance un scénario lorsqu’un événement que vous séle
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Problem notification emails]</td> 
-   <td> <p>Ce paramètre ne fonctionne que pour les comptes d’administration.</p> <p>Pour chaque adresse e-mail à laquelle vous souhaitez envoyer des e-mails de notification de problème, cliquez sur <b>[!UICONTROL Add]</b> et saisissez l’adresse e-mail.</p> </td> 
+   <td> <p>Ce paramètre ne fonctionne que pour les comptes d’administration.</p> <p>Pour chaque adresse e-mail à laquelle vous souhaitez envoyer des messages de notification de problème, cliquez sur <b>[!UICONTROL Add]</b> et saisissez l’adresse e-mail.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Agreement conditional parameters]</td> 
-   <td>Si vous souhaitez ajouter des paramètres conditionnels, sélectionnez <b>[!UICONTROL Yes]</b> sur le type d’enregistrement auquel vous souhaitez ajouter des paramètres, puis sélectionnez <b>[!UICONTROL Yes]</b> sur les paramètres que vous souhaitez activer.</td> 
+   <td>Si vous souhaitez ajouter des paramètres conditionnels, sélectionnez <b>[!UICONTROL Yes]</b> sur le type d’enregistrement auquel vous souhaitez ajouter des paramètres, puis sélectionnez <b>[!UICONTROL Yes]</b> sur tous les paramètres que vous souhaitez activer.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -215,7 +215,7 @@ Ce module déclencheur lance un scénario lorsqu’un événement que vous séle
 * [Upload document](#upload-document)
 -->
 
-+++ **[!UICONTROL Create a record]**
++++ **[!UICONTROL Créer un enregistrement]**
 
 Ce module d’action crée un enregistrement du type sélectionné.
 
@@ -225,7 +225,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour savoir comment connecter votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -243,13 +243,13 @@ Ce module d’action crée un enregistrement du type sélectionné.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group info]</td> 
-   <td> <p>Saisissez ou mappez les [!UICONTROL Name] et les [!UICONTROL ID] du groupe et indiquez si ce groupe est le groupe par défaut pour le compte.</p> </td> 
+   <td> <p>Saisissez ou mappez le [!UICONTROL Name] et l’[!UICONTROL ID] du groupe et indiquez si ce groupe est le groupe par défaut du compte.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Library document info]</td> 
    <td> <p>Remplissez les champs suivants :</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>Pour chaque fichier à ajouter, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs.</p> 
+     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>Pour chaque fichier que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add item]</b> et remplissez les champs.</p> 
       <ul> 
        <li><b>[!UICONTROL Transient document ID]</b> <p>Saisir l’identifiant du document transitoire</p> </li> 
        <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Remplissez les champs suivants :</p> 
@@ -300,33 +300,33 @@ Ce module d’action crée un enregistrement du type sélectionné.
      <li> <p><b>[!UICONTROL Web form state]</b> </p> <p>Sélectionnez le statut dans lequel le nouveau formulaire web doit être créé.</p> </li> 
      <li> <p><b>[!UICONTROL Web form participant set info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque membre que vous souhaitez ajouter au jeu de participants, cliquez sur <b>[!UICONTROL Add item]</b>. </p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque personne membre que vous souhaitez ajouter à l’ensemble des participantes et participants, cliquez sur <b>[!UICONTROL Add item]</b>. </p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Laissez cette option vide.</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si vous souhaitez ajouter une option de sécurité pour authentifier cet utilisateur, sélectionnez <b>[!UICONTROL Yes]</b>, puis sélectionnez l’option de sécurité et renseignez les champs de votre choix.</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si vous souhaitez ajouter une option de sécurité pour l’authentification de cette personne, sélectionnez <b>[!UICONTROL Yes]</b>, puis sélectionnez l’option de sécurité et remplissez les champs requis.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> <p>Sélectionnez le rôle. Les personnes membres de cet ensemble de participantes et participants partagent le rôle.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Web form additional participant sets info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque membre que vous souhaitez ajouter au jeu de participants, cliquez sur <b>[!UICONTROL Add item]</b>.</p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque personne membre que vous souhaitez ajouter à l’ensemble des participantes et participants, cliquez sur <b>[!UICONTROL Add item]</b>.</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Laissez cette option vide.</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si vous souhaitez ajouter une option de sécurité pour authentifier cet utilisateur, sélectionnez <b>[!UICONTROL Yes]</b>, puis sélectionnez l’option de sécurité et renseignez les champs de votre choix.</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Si vous souhaitez ajouter une option de sécurité pour l’authentification de cette personne, sélectionnez <b>[!UICONTROL Yes]</b>, puis sélectionnez l’option de sécurité et remplissez les champs requis.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Web form participant ID] </b> </p> <p>Saisissez l’identifiant du participant ou de la participante au formulaire web.</p> </li> 
        <li> <p><b>[!UICONTROL Order]</b> </p> <p>Indiquez l’ordre dans lequel cet ensemble de participantes et participants doit interagir avec le formulaire web. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit passer en premier, 2 doit passer ensuite, et ainsi de suite. Les numéros d’ordre doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
        <li> <p><b>[!UICONTROL Provider participant set info]</b> </p> <p>Si la personne participante est inconnue, indiquez si le fournisseur doit fournir des informations sur la personne participante et saisissez un message contenant les informations requises pour la personne participante inconnue.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>Si vous souhaitez fournir une page d’erreur ou d’échec à vos utilisateurs, sélectionnez <b>[!UICONTROL Yes]</b>, puis renseignez les champs suivants :</p> 
+     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>Si vous souhaitez fournir une page d’échec ou d’erreur à vos utilisateurs et utilisatrices, sélectionnez <b>[!UICONTROL Yes]</b>, puis remplissez les champs suivants :</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>Saisissez l’URL de la page d’erreur.</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>Activez cette option si vous souhaitez que la page d’erreur apparaisse dans le formulaire web.</p> </li> 
        <li> <p><b>[!UICONTROL Delay]</b> </p> <p>Saisissez le délai, en secondes, avant que la personne ne soit redirigée vers la page d’erreur.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Pour chaque adresse e-mail à laquelle vous souhaitez envoyer un e-mail lors de la signature de l’accord final sur le formulaire web, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail.</p> </li> 
-     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">Si vous souhaitez fournir une page de succès à vos utilisateurs, sélectionnez <b>[!UICONTROL Yes]</b>, puis renseignez les champs suivants :</p> 
+     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Pour chaque adresse e-mail que vous souhaitez recevoir lorsque l’accord final sur le formulaire web est signé, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail.</p> </li> 
+     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">Si vous souhaitez fournir une page de succès à vos utilisateurs et utilisatrices, sélectionnez <b>[!UICONTROL Yes]</b>, puis remplissez les champs suivants :</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>Saisissez l’URL de la page de succès.</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>Activez cette option si vous souhaitez que la page de succès apparaisse à l’intérieur du formulaire web.</p> </li> 
@@ -335,7 +335,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
      <li> <p><b>[!UICONTROL Group ID]</b> </p> <p>Saisissez l’identifiant du groupe auquel le formulaire web appartient. Si rien n’est saisi, le formulaire web appartient au groupe principal de l’utilisateur ou de l’utilisatrice du compte.</p> </li> 
      <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Saisissez la date du dernier événement survenu sur le formulaire web. Utilisez le format <code>yyyy-MM-dd'T'HH:mm:ssZ</code>.</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez les paramètres régionaux de la personne. Cela détermine la langue de l’interface utilisateur. </p> </li> 
-     <li> <p><b>[!UICONTROL Security optio]n</b> </p> <p>Saisissez le mot de passe utilisé pour sécuriser le document. Vous devez communiquer séparément ce mot de passe à toutes les parties concernées.</p> </li> 
+     <li> <p><b>[!UICONTROL Security option]</b> </p> <p>Saisissez le mot de passe utilisé pour sécuriser le document. Vous devez communiquer séparément ce mot de passe à toutes les parties concernées.</p> </li> 
      <li> <p><b>[!UICONTROL Vaulting info]</b> </p> <p>Si votre compte est configuré pour l’archivage des documents et l’option d’activation par accord, vous pouvez activer cette option pour l’archivage de cet accord.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -344,13 +344,13 @@ Ce module d’action crée un enregistrement du type sélectionné.
 
 +++
 
-+++ **[!UICONTROL Create an agreement]**
++++ **[!UICONTROL Créer un accord]**
 
 Ce module d’action crée un accord, l’envoie pour signature et renvoie l’identifiant de l’accord.
 
 >[!NOTE]
 >
->Nous vous recommandons de charger le document à signer en tant que document transitoire, puis de le mapper au champ [!UICONTROL File to send] dans le module de [!UICONTROL Create an agreement]. Pour un exemple, voir « Charger un document » dans cet article.
+>Nous recommandons de charger le document à signer en tant que document transitoire, puis de l’associer au champ [!UICONTROL Fichier à envoyer] dans le module [!UICONTROL Créer un accord]. Pour un exemple, voir « Charger un document » dans cet article.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -358,14 +358,14 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-<td>Pour savoir comment connecter votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td>  </tr> 
+<td>Pour savoir comment connecter votre compte [!DNL Adobe Acrobat Sign] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
    <td>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 
-   <td> <p>Pour chaque élément que vous souhaitez inclure dans le contrat, cliquez sur <b>[!UICONTROL Add Item]</b> et renseignez les champs suivants :</p> 
+   <td> <p>Pour chaque élément que vous souhaitez inclure dans l’accord, cliquez sur <b>[!UICONTROL Add Item]</b> et remplissez les champs suivants :</p> 
     <ul> 
      <li> <p><b>[!UICONTROL File Type]</b> </p> 
       <ul> 
@@ -397,9 +397,9 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Participant sets info]</td> 
-   <td> <p>Pour chaque jeu de participants à ajouter, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs suivants.</p> 
+   <td> <p>Pour chaque ensemble de participantes et participants que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs suivants.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Members]</b> </p> <p>Pour chaque personne que vous souhaitez ajouter au jeu de participants, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez son adresse e-mail.</p> </li> 
+     <li> <p><b>[!UICONTROL Members]</b> </p> <p>Pour chaque personne que vous souhaitez ajouter à l’ensemble de participantes et participants, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail de la personne.</p> </li> 
      <li> <p><b>[!UICONTROL Order]</b> </p> <p>Précisez l’ordre dans lequel cet ensemble de participantes et participants doit signer l’accord. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit signer en premier, 2 doit signer ensuite, et ainsi de suite. Les numéros d’ordre doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
      <li> <p><b>[!UICONTROL Role]</b> </p> <p>Sélectionnez un rôle pour cet ensemble de participantes et participants. Tous les participantes et participants de l’ensemble reçoivent ce rôle.</p> </li> 
      <li> <p><b>[!UICONTROL ID]</b> </p> <p>Saisissez ou mappez l’identifiant de cet ensemble de participantes et participants.</p> </li> 
@@ -428,7 +428,7 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CCs]</td> 
-   <td> <p>Vous pouvez envoyer cet accord aux parties intéressées qui n’ont pas besoin de le signer, telles que les parties prenantes. Celles-ci reçoivent un e-mail au début du processus de signature et un autre lorsque la signature finale est reçue. Elles reçoivent également une copie PDF de l’accord. </p> <p>Pour chaque personne que vous souhaitez mettre en copie conforme dans ce contrat, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs suivants :</p> 
+   <td> <p>Vous pouvez envoyer cet accord aux parties intéressées qui n’ont pas besoin de le signer, telles que les parties prenantes. Celles-ci reçoivent un e-mail au début du processus de signature et un autre lorsque la signature finale est reçue. Elles reçoivent également une copie PDF de l’accord. </p> <p>Pour chaque personne que vous souhaitez ajouter en copie à cet accord, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs suivants :</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>Saisissez ou mappez l’adresse e-mail que vous souhaitez ajouter en copie à l’accord.</p> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>Saisissez ou mappez un libellé pour cette adresse e-mail, tel qu’indiqué dans la description du workflow.</p> </li> 
@@ -451,7 +451,7 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Merge field info]</td> 
-   <td> <p>Pour chaque champ du contrat pour lequel vous souhaitez définir une valeur par défaut, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez la valeur par défaut et le nom du champ.</p> <p>Les valeurs seront présentées aux personnes signataires pour les champs modifiables. Pour les champs en lecture seule, les valeurs fournies ne seront pas modifiables pendant le processus de signature.</p> </td> 
+   <td> <p>Pour les champs de l’accord dans lesquels vous souhaitez saisir une valeur par défaut, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez la valeur par défaut et le nom du champ.</p> <p>Les valeurs seront présentées aux personnes signataires pour les champs modifiables. Pour les champs en lecture seule, les valeurs fournies ne seront pas modifiables pendant le processus de signature.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Notary info]</td> 
@@ -469,7 +469,7 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Post sign option]</td> 
-   <td> <p>Indiquez si vous souhaitez que les personnes signataires soient dirigées vers une page qui confirme la réussite après la signature de l’accord. Si vous sélectionnez <b>[!UICONTROL Yes]</b>, renseignez les champs suivants :</p> 
+   <td> <p>Indiquez si vous souhaitez que les personnes signataires soient dirigées vers une page qui confirme la réussite après la signature de l’accord. Si vous sélectionnez <b>[!UICONTROL Yes]</b>, renseignez les champs suivants :</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Redirect delay]</b> </p> <p>Saisissez ou mappez un nombre qui représente le nombre de secondes avant que la personne signataire ne soit redirigée vers la page de confirmation de réussite. Si cette valeur est supérieure à 0, la personne voit d’abord le message de confirmation de réussite standard d’[!DNL Adobe Sign], puis, après un moment, est redirigée vers votre page de confirmation de réussite.</p> </li> 
      <li> <p><b>[!UICONTROL Redirect URL]</b> </p> <p>Saisissez ou mappez une URL accessible publiquement vers laquelle la personne sera dirigée après avoir terminé avec succès le processus de signature.</p> </li> 
@@ -488,7 +488,7 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
 
 +++
 
-+++ **[!UICONTROL Create related records]**
++++ **[!UICONTROL Créer des enregistrements connexes]**
 
 Ce module d’action crée des enregistrements liés à un module de votre choix.
 
@@ -519,12 +519,12 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
      <li> <p><b>[!UICONTROL Form fields]</b> </p> <p>Saisissez l’identifiant du modèle qui contient les champs que vous souhaitez créer.</p> </li> 
      <li> <p><b>[!UICONTROL Reminders]</b> </p> <p>Remplissez les champs suivants :</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>Pour chaque participant pour lequel vous souhaitez recevoir un rappel, cliquez sur [!UICONTROL Add item], puis saisissez son identifiant.</p> </li> 
+       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>Pour chaque personne participante à qui vous souhaitez envoyer un rappel, cliquez sur [!UICONTROL Add item] et saisissez l’identifiant de la personne participante.</p> </li> 
        <li> <p><b>[!UICONTROL Status]</b> </p> <p>Pour les nouveaux enregistrements, le statut doit être [!UICONTROL Active].</p> </li> 
        <li> <p><b>[!UICONTROL First reminder delay]</b> </p> <p>Saisissez le délai en heures avant l’envoi du premier rappel. La valeur minimale autorisée est d’1 heure et la valeur maximale ne peut pas être supérieure à la différence entre l’heure de création de l’accord et l’heure d’expiration de l’accord en heures. Si ce délai n’est pas défini, le premier rappel sera basé sur la fréquence.</p> </li> 
        <li> <p><b>[!UICONTROL Reminder frequency]</b> </p> <p>Définissez la fréquence à laquelle vous souhaitez envoyer le rappel. Si la fréquence n’est pas indiquée, le rappel ne sera envoyé qu’une seule fois.</p> </li> 
        <li> <p><b>[!UICONTROL Last sent date]</b> </p> <p>Ce champ est automatiquement défini par le système.</p> </li> 
-       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>Ce champ doit être vide ou [!UICONTROL ONCE].</p> </li> 
+       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>Ce champ doit être vide ou réglé sur [!UICONTROL ONCE].</p> </li> 
        <li> <p><b>[!UICONTROL Note]</b> </p> <p>Saisissez une note à joindre au rappel. Cela permet d’expliquer à la personne pourquoi sa participation est requise.</p> </li> 
        <li> <p><b>[!UICONTROL Start reminder counter from]</b> </p> <p>Indiquez si le rappel est envoyé en fonction de la date de création de l’accord ou de sa disponibilité.</p> </li> 
       </ul> </li> 
@@ -532,21 +532,21 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
      <li> <p><b>[!UICONTROL Views]</b> </p> <p>Saisissez les champs suivants.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue que vous souhaitez créer.</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur à l’URL renvoyée.</p> </li> 
-       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si ce champ est laissée vide, les pages [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice à l’URL renvoyée.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
-       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page incorporée sans en-tête ni pied de page de navigation.</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section Chargement de fichier soit modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens des documents de bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que le bouton de chargement de fichier local apparaisse. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens joignent des documents provenant de sources web. La valeur par défaut est Oui.</p> </li> 
-       <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour définir la page Composer sur le mode Création.</p> </li> 
+       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens vers les documents de la bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que le bouton de chargement de fichiers locaux apparaisse. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez afficher les liens permettant de joindre des documents provenant de sources web. La valeur par défaut est Oui.</p> </li> 
+       <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour mettre la page Composer en mode Création.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Pour chaque membre avec lequel vous souhaitez partager le contrat, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail du membre, ainsi qu’un message destiné à ce membre.</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Pour chaque personne membre avec qui vous souhaitez partager l’accord, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail de la personne membre ainsi qu’un message qui lui est destiné.</p> </li> 
      <li> <p>[!UICONTROL Delegate participant set]</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Participant set ID]</b> </p> <p>Saisir l’ID de l’ensemble de participantes et participants</p> </li> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque membre que vous souhaitez ajouter, cliquez sur [!UICONTROL Add item] et saisissez l’adresse e-mail et les informations téléphoniques du membre.</p> </li> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>Pour chaque personne membre que vous souhaitez ajouter, cliquez sur [!UICONTROL Add item] et saisissez l’adresse e-mail et les informations téléphoniques de la personne membre.</p> </li> 
        <li> <p><b>[!UICONTROL Private message]</b> </p> <p>Saisissez un message. Toutes les personnes membres de l’ensemble de participantes et participants reçoivent ce message.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -556,17 +556,17 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
    <td> <p>Remplissez les champs suivants :</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Saisissez un nom pour le modèle de bibliothèque. Ce nom est utilisé dans les e-mails et sur les sites web.</p> </li> 
-     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur à l’URL renvoyée.</p> </li> 
-     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si ce champ est laissée vide, les pages [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice à l’URL renvoyée.</p> </li> 
+     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
-     <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page incorporée sans en-tête ni pied de page de navigation.</p> </li> 
-     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez configurer la vue [!UICONTROL Send], puis renseignez les champs suivants.</p> 
+     <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
+     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour configurer la vue [!UICONTROL Send], puis remplissez les champs suivants.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Agreement name]</b> </p> <p>Saisissez ou mappez le nom de l’accord pour le document de bibliothèque sur la page de composition.</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section Chargement de fichier soit modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens des documents de bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens joignent des documents provenant de sources web. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>L’aperçu est-il sélectionné ?</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour définir la page Composer sur le mode Création.</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour que les liens vers les documents de bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher les liens permettant de joindre des documents provenant de sources web. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>L’aperçu est-il sélectionné ?</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour mettre la page Composer en mode Création.</p> </li> 
       </ul> <p> </p> </li> 
     </ul> </td> 
   </tr> 
@@ -575,9 +575,9 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
    <td> <p>Remplissez les champs suivants.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue utilisateur demandée.</p> </li> 
-     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur. Sélectionnez <b>[!UICONTROL No]</b> pour exiger des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
+     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice. Sélectionnez <b>[!UICONTROL No]</b> pour demander des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
      <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
-     <li> <p><b>Pas d’indicateur Chrome</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page incorporée sans en-tête ni pied de page de navigation.</p> </li> 
+     <li> <p><b>Pas d’indicateur Chrome</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -587,19 +587,19 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
      <li> <p>[!UICONTROL Views]</p> <p>Remplissez les champs suivants.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue du formulaire web demandée.</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur. Sélectionnez <b>[!UICONTROL No]</b> pour exiger des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
-       <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si ce champ est laissée vide, les pages [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice. Sélectionnez <b>[!UICONTROL No]</b> pour demander des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
+       <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
-       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page incorporée sans en-tête ni pied de page de navigation.</p> </li> 
-       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>Si vous souhaitez configurer une vue de signature personnalisée, sélectionnez <b>[!UICONTROL Yes]</b> et renseignez les champs suivants :</p> 
+       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
+       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>Si vous souhaitez configurer une vue de signature personnalisée, sélectionnez <b>[!UICONTROL Yes]</b> et remplissez les champs suivants :</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Saisissez l’adresse e-mail de la personne qui recevra le formulaire web nouvellement créé.</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Entrez un commentaire décrivant la façon dont l’entité appelant l’API a établi l’identité de la personne signataire. Cette information apparaît dans le journal d’audit d’[!DNL Adobe Acrobat Sign].</p> </li> 
          <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Entrez une date d’expiration pour la personnalisation de ce formulaire web. </p> <p>Pour consulter une liste des formats de date et d’heure pris en charge, voir la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
-         <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que le signataire prévu puisse signer le formulaire plusieurs fois.</p> </li> 
+         <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour que la personne signataire prévue puisse signer le formulaire plusieurs fois.</p> </li> 
         </ul> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Pour chaque membre avec lequel vous souhaitez partager le contrat, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail du membre, ainsi qu’un message destiné à ce membre.</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>Pour chaque personne membre avec qui vous souhaitez partager l’accord, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez son adresse e-mail ainsi qu’un message qui lui est destiné.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -607,8 +607,8 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
 
 +++
 
-+++ **[!UICONTROL Custom API Call]**
-Ce module vous permet d’effectuer un appel API personnalisé.
++++ **[!UICONTROL Appel API personnalisé]**
+Ce module vous permet d’effectuer un appel API personnalisé.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -636,7 +636,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles comme <code>if</code> dans votre JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -650,7 +650,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
 
 +++
 
-+++ **[!UICONTROL List records]**
++++ **[!UICONTROL Répertorier les enregistrements]**
 
 Ce module d’action répertorie tous les enregistrements du type sélectionné auxquels le compte a accès.
 
@@ -688,11 +688,11 @@ Ce module d’action répertorie tous les enregistrements du type sélectionné 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cursor] / [!UICONTROL Start index]</td> 
-   <td> <p>Saisissez le numéro du premier enregistrement que le module doit renvoyer. </p> <p>Remarque : ce champ est combiné avec le champ [!UICONTROL Maximum number of returned records] pour la pagination. Par exemple, si la [!UICONTROL Maximum number of returned events] est 100 et que la [!UICONTROL Start index] est 101, le module renvoie les enregistrements 101 à 200, ou la deuxième page de résultats.</p> </td> 
+   <td> <p>Saisissez le numéro du premier enregistrement que le module doit renvoyer. </p> <p>Note : ce champ est combiné avec le champ [!UICONTROL Maximum number of returned records] pour la pagination. Par exemple, si le [!UICONTROL Maximum number of returned events] est de 100 et que l’[!UICONTROL Start index] est de 101, le module renvoie les enregistrements compris entre 101 et 200, soit la deuxième page de résultats.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned records]</td> 
-   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit [action] au cours de chaque cycle d’exécution du scénario.</p> <p>Remarque : ce champ est combiné avec le champ [!UICONTROL Cursor] ou [!UICONTROL Start Index] pour la pagination. Par exemple, si la [!UICONTROL Maximum number of returned events] est 100 et que la [!UICONTROL Start index] est 101, le module renvoie les enregistrements 101 à 200, ou la deuxième page de résultats.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> <p>Note : ce champ est combiné au champ [!UICONTROL Cursor] ou [!UICONTROL Start Index] pour la pagination. Par exemple, si le [!UICONTROL Maximum number of returned events] est de 100 et que l’[!UICONTROL Start index] est de 101, le module renvoie les enregistrements compris entre 101 et 200, soit la deuxième page de résultats.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
@@ -703,7 +703,7 @@ Ce module d’action répertorie tous les enregistrements du type sélectionné 
 
 +++
 
-+++ **[!UICONTROL Read a record]**
++++ **[!UICONTROL Lire un enregistrement]**
 
 Ce module d’action permet de récupérer des informations au sujet d’un seul enregistrement.
 
@@ -732,7 +732,7 @@ Ce module d’action permet de récupérer des informations au sujet d’un seul
 
 +++
 
-+++ **[!UICONTROL Read related records]**
++++ **[!UICONTROL Lire les enregistrements associés]**
 
 Consultez les informations complémentaires relatives à un seul enregistrement.
 
@@ -753,7 +753,7 @@ Consultez les informations complémentaires relatives à un seul enregistrement.
    <td>Sélectionnez le type d’enregistrement pour lequel vous souhaitez récupérer des enregistrements associés.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record ID] (Exemple : [!UICONTROL Account ID])</td> 
+   <td role="rowheader">[!UICONTROL Record ID] (Exemple : [!UICONTROL Account ID])</td> 
    <td>Saisissez ou mappez l’identifiant de l’enregistrement pour lequel vous souhaitez extraire des enregistrements associés.</td> 
   </tr> 
   <tr> 
@@ -765,7 +765,7 @@ Consultez les informations complémentaires relatives à un seul enregistrement.
 
 +++
 
-+++ **[!UICONTROL Update a record]**
++++ **[!UICONTROL Mettre à jour un enregistrement]**
 
 Ce module d’action met à jour un seul enregistrement dans [!DNL Adobe Acrobat Sign].
 
@@ -826,7 +826,7 @@ Ce module d’action met à jour un seul enregistrement dans [!DNL Adobe Acrobat
 
 +++
 
-+++ **[!UICONTROL Update related record]**
++++ **[!UICONTROL Mettre à jour l’enregistrement correspondant]**
 
 Ce module d’action met à jour les enregistrements relatifs à un objet spécifique.
 
@@ -875,9 +875,9 @@ Ce module d’action met à jour les enregistrements relatifs à un objet spéci
         <ul> 
          <li> <p><b>[!UICONTROL Status]</b> </p> <p>Sélectionnez le nouveau statut de la personne.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>Saisissez l’identifiant unique du groupe.</p> </li> 
-         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour faire de cet utilisateur un administrateur de groupe.</p> </li> 
-         <li> <p><b>Est le groupe principal</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour mettre à jour ce groupe vers le groupe principal de l’utilisateur.</p> </li> 
-         <li> <p><b>[!UICONTROL Created date]</b> </p> <p>Saisissez la date de création du groupe.</p> <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type dans [!UICONTROL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour rendre cette personne administratrice de groupes.</p> </li> 
+         <li> <p><b>Est le groupe principal</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour mettre à jour ce groupe et en faire le groupe principal de la personne.</p> </li> 
+         <li> <p><b>[!UICONTROL Created date]</b> </p> <p>Saisissez la date de création du groupe.</p> <p>Pour une liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type dans [!UICONTROL Adobe Workfront Fusion]</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Name]</b> </p> <p>Saisissez ou mappez le nom du groupe.</p> </li> 
          <li> <p><b>[!UICONTROL Library document creation visible]</b> </p> <p>Ces paramètres déterminent si la personne peut créer des documents de bibliothèque.</p> 
           <ul> 
@@ -908,7 +908,7 @@ Ce module d’action met à jour les enregistrements relatifs à un objet spéci
 
 +++
 
-+++ **[!UICONTROL Upload document]**
++++ **[!UICONTROL Charger un document]**
 
 Chargez un document transitoire. Un document transitoire est disponible pendant 7 jours après son chargement.
 
@@ -943,7 +943,7 @@ Chargez un document transitoire. Un document transitoire est disponible pendant 
 
 (/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
-Le module [!UICONTROL Upload document] fournit au document un identifiant de [!DNL Adobe Acrobat Sign] qui peut être référencé dans les modules ultérieurs. Lorsque le contrat est créé, l’ID du document chargé est inclus dans le champ [!UICONTROL Files to send].
+Le module [!UICONTROL Charger un document] donne au document un identifiant [!DNL Adobe Acrobat Sign] qui peut être référencé dans les modules suivants. Lors de la création de l’accord, l’identifiant du document chargé est inclus dans le champ [!UICONTROL Fichiers à envoyer].
 
 ![Exemple Sign](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
@@ -951,7 +951,7 @@ Le module [!UICONTROL Upload document] fournit au document un identifiant de [!D
 
 ### Recherches
 
-+++ **[!UICONTROL Search agreements]**
++++ **[!UICONTROL Rechercher des accords]**
 
 Ce module de recherche permet de rechercher des accords sur la base des critères que vous avez définis.
 
@@ -989,23 +989,23 @@ Ce module de recherche permet de rechercher des accords sur la base des critère
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL External ID]</td> 
-   <td> <p> L’identifiant externe est un identifiant attribué à l’accord par la personne qui l’envoie, qui peut prendre n’importe quelle forme, mais qui se présente généralement sous la forme « &lt;groupID&gt;:&lt;ID&gt; ».</p> <p>Pour chaque ID externe à ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID externe.</p> </td> 
+   <td> <p> L’identifiant externe est un identifiant attribué à l’accord par la personne qui l’envoie, qui peut prendre n’importe quelle forme, mais qui se présente généralement sous la forme « &lt;groupID&gt;:&lt;ID&gt; ».</p> <p>Pour chaque identifiant externe que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant externe.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group ID]</td> 
-   <td> <p>L’identifiant du groupe est un identifiant attribué lors de la création du groupe.</p> <p>Pour chaque ID externe à ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID externe.</p> </td> 
+   <td> <p>L’identifiant du groupe est un identifiant attribué lors de la création du groupe.</p> <p>Pour chaque identifiant externe que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant externe.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Il s’agit de l’identifiant attribué à l’accord spécifique. </p> <p>Pour chaque ID externe à ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID externe.</p> </td> 
+   <td> <p>Il s’agit de l’identifiant attribué à l’accord spécifique. </p> <p>Pour chaque identifiant externe que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant externe.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent ID]</td> 
-   <td> <p>Il s’agit de l’identifiant attribué à l’objet parent de l’accord. </p> <p>Pour chaque ID externe à ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID externe.</p> </td> 
+   <td> <p>Il s’agit de l’identifiant attribué à l’objet parent de l’accord. </p> <p>Pour chaque identifiant externe que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant externe.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Participant email]</td> 
-   <td> <p>L’adresse e-mail d’un participant ou d’une participante. </p> <p>Pour chaque ID externe à ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID externe.</p> </td> 
+   <td> <p>L’adresse e-mail d’un participant ou d’une participante. </p> <p>Pour chaque identifiant externe que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant externe.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Role]</td> 
@@ -1016,7 +1016,7 @@ Ce module de recherche permet de rechercher des accords sur la base des critère
    <td>Si vous souhaitez que le module trie les résultats, sélectionnez le champ sur lequel vous souhaitez trier les résultats.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort orde]r</td> 
+   <td role="rowheader">[!UICONTROL Sort order]</td> 
    <td>Si vous souhaitez que le module trie les résultats, sélectionnez le tri croissant ou décroissant.</td> 
   </tr> 
   <tr> 
@@ -1033,7 +1033,7 @@ Ce module de recherche permet de rechercher des accords sur la base des critère
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL User ID]</td> 
-   <td> <p>L’identifiant d’utilisateur ou d’utilisatrice avec lequel l’accord est partagé.</p> <p>Pour chaque ID utilisateur que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’ID utilisateur.</p> </td> 
+   <td> <p>L’identifiant d’utilisateur ou d’utilisatrice avec lequel l’accord est partagé.</p> <p>Pour chaque identifiant d’utilisateur ou d’utilisatrice que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add]</b> et saisissez ou mappez l’identifiant d’utilisateur ou d’utilisatrice.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Visibility]</td> 
@@ -1041,11 +1041,11 @@ Ce module de recherche permet de rechercher des accords sur la base des critère
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start index]</td> 
-   <td> <p>Saisissez la position du premier résultat que vous souhaitez renvoyer. Combinez-le avec la [!UICONTROL maximum returned results] pour paginer les résultats</p> <p>Exemple : si vous obtenez 100 résultats à la fois, saisissez 100 pour obtenir les résultats de 100 à 200.</p> </td> 
+   <td> <p>Saisissez la position du premier résultat que vous souhaitez renvoyer. Combinez ceci avec les [!UICONTROL maximum returned results] pour paginer les résultats.</p> <p>Exemple : si vous obtenez 100 résultats à la fois, saisissez 100 pour obtenir les résultats de 100 à 200.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit [action] au cours de chaque cycle d’exécution du scénario.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,65 +4,108 @@ description: Les modules d’image Adobe Workfront Fusion vous permettent d’
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3834bb9c7f07e0097783c44558fd656d455337b4
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '743'
 ht-degree: 81%
 
 ---
 
 # Modules d’image
 
-[!DNL Adobe Workfront Fusion] modules [!UICONTROL Image] vous permettent d’obtenir des informations sur une image spécifique (dimensions, type, etc.), de convertir une image dans un autre format de fichier et de modifier directement la taille de l’image.
+Les modules d’[!UICONTROL image] [!DNL Adobe Workfront Fusion] vous permettent d’obtenir des informations sur une image spécifique (dimensions, type, etc.), de convertir une image dans un autre format de fichier et de modifier directement la taille de l’image.
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
-   <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail], [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation du travail]</p>
+   <p>Aucune exigence de licence Workfront Fusion.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez la section Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Modules d’[!UICONTROL image] et leurs champs
+
+Lorsque vous configurez ce module, les champs suivants s’affichent. Un titre en gras dans un module indique un champ obligatoire.
+
+* [[!UICONTROL Convertir un format]](#convert-a-format)
+* [[!UICONTROL Extraire les métadonnées]](#extract-metadata)
+* [[!UICONTROL Redimensionner]](#resize)
+
+### [!UICONTROL Convertir un format]
+
+Ce module du transformateur modifie le format d’un fichier image. Ce module est compatible avec les formats suivants :
+
+* PNG
+* JPG
+* GIF
+* BMP
+
+Le fichier source et la sortie doivent être dans l’un de ces formats. Par exemple, le module [!UICONTROL Image] > [!UICONTROL Convertir un format] peut transformer un fichier PNG en fichier BMP ou un fichier BMP en JPG.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td>Sélectionnez le format dans lequel vous souhaitez que le module convertisse le fichier source. </td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+### [!UICONTROL Extraire les métadonnées]
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Ce module du transformateur renvoie des informations de base sur un module.
 
-## Modules [!UICONTROL Image] et leurs champs
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
-Lorsque vous configurez ce module, les champs suivants s’affichent. Un titre en gras dans un module indique un champ obligatoire.
-
-* [[!UICONTROL Resize]](#resize)
-* [[!UICONTROL Convert a format]](#convert-a-format)
-* [[!UICONTROL Extract metadata]](#extract-metadata)
-
-### [!UICONTROL Resize]
+### [!UICONTROL Redimensionner]
 
 Ce module du transformateur modifie la hauteur et la largeur d’une image en fonction des critères que vous spécifiez.
 
@@ -72,15 +115,7 @@ Ce module du transformateur modifie la hauteur et la largeur d’une image en fo
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Sélectionnez la source de l’image que vous souhaitez convertir. Vous pouvez sélectionner la sortie d’un module précédent ou mapper le fichier de données et le nom de fichier. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Mappez le fichier que vous souhaitez convertir. Ce champ est disponible si vous avez sélectionné [!UICONTROL Map] dans le champ [!UICONTROL Source file] .</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Saisissez un nom pour le fichier converti. Ce champ est disponible si vous avez sélectionné [!UICONTROL Map] dans le champ [!UICONTROL Source file] .</td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL I want to]</td> 
@@ -107,72 +142,19 @@ Ce module du transformateur modifie la hauteur et la largeur d’une image en fo
    <td role="rowheader">[!UICONTROL Height]</td> 
    <td>Saisissez ou mappez la hauteur souhaitée de l’image redimensionnée en pixels.</td> 
   </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Convert a format]
-
-Ce module du transformateur modifie le format d’un fichier image. Ce module est compatible avec les formats suivants :
-
-* PNG
-* JPG
-* GIF
-* BMP
-
-Le fichier source et la sortie doivent être dans l’un de ces formats. Par exemple, le module [!UICONTROL Image] >[!UICONTROL Convert a format] peut transformer un fichier PNG en fichier BMP, ou un fichier BMP en mot de passe JPG.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Sélectionnez la source de l’image que vous souhaitez convertir. Vous pouvez sélectionner la sortie d’un module précédent ou mapper le fichier de données et le nom de fichier. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Mappez le fichier que vous souhaitez convertir. Ce champ est disponible si vous avez sélectionné [!UICONTROL Map] dans le champ [!UICONTROL Source file] .</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Saisissez un nom pour le fichier converti. Ce champ est disponible si vous avez sélectionné [!UICONTROL Map] dans le champ [!UICONTROL Source file] .</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Output format]</td> 
-   <td>Sélectionnez le format dans lequel vous souhaitez que le module convertisse le fichier source. </td> 
+   <td role="rowheader">[!UICONTROL Change by percentage]</td> 
+   <td>Si vous avez choisi de modifier l’image en pourcentage, saisissez ou mappez le pourcentage selon lequel vous souhaitez modifier l’image.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Extract metadata]
-
-Ce module du transformateur renvoie des informations de base sur un module.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Sélectionnez la source de l’image que vous souhaitez convertir. Vous pouvez sélectionner la sortie d’un module précédent ou mapper le fichier de données et le nom de fichier. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Mappez le fichier que vous souhaitez convertir. Ce champ est disponible si vous avez sélectionné Mapper dans le champ [!UICONTROL Source file] .</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Saisissez un nom pour le fichier converti. Ce champ est disponible si vous avez sélectionné Mapper dans le champ [!UICONTROL Source file] .</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## Problèmes possibles
+## Dépannage
 
 ### Action terminée avec une erreur
 
-Il existe trois cas dans lesquels une action peut se terminer par une erreur :
+une action peut se terminer par une erreur pour l’une des raisons suivantes :
 
-* Les données reçues n’étaient pas au format JPG/GIF/PNG/BMP.
-* La limite de largeur/hauteur maximale a été dépassée lors de la modification des dimensions de l’image. La taille de l’image ne doit pas dépasser 3 840 pixels de largeur et 2 160 pixels de hauteur.
+* Les données reçues ne sont pas au format JPG/GIF/PNG/BMP.
+* La limite largeur/hauteur maximale a été dépassée lors de la modification des dimensions de l’image. La taille de l’image ne doit pas dépasser 3 840 pixels de largeur et 2 160 pixels de hauteur.
 * La taille maximale autorisée d’une image a été dépassée lors de la modification des dimensions ou du format de l’image.

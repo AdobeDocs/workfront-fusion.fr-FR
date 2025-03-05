@@ -4,10 +4,10 @@ description: Les modules FTP vous permettent de surveiller les modifications de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: c5e9c643c828e5556e386a5f46e1d17680b7d4e9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 94%
+source-wordcount: '1381'
+ht-degree: 81%
 
 ---
 
@@ -60,54 +60,67 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Conditions préalables
 
-Pour utiliser les modules FTP, vous devez disposer d’un compte FTP.
+Pour utiliser les modules FTP, vous devez disposer d’un compte avec un service FTP.
 
 ## Créer une connexion dans un module FTP {#create-a-connection}
 
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection name]</td> 
-   <td> <p> Saisissez le nom de votre connexion FTP.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Host] </td> 
-   <td> <p>Saisissez le nom d’hôte du serveur FTP. Par exemple : <code>myftp123.server.com</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Port] </td> 
-   <td> <p>Saisissez le numéro de port du serveur FTP. Par exemple : <code>21</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL User name] </td> 
-   <td> <p>Saisissez le nom d’utilisateur ou d’utilisatrice de votre compte FTP.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Password] </td> 
-   <td> <p>Saisissez le mot de passe de votre compte FTP.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>Utiliser une connexion sécurisée (TLS)</p> </td> 
-   <td> <p>Indiquez si vous souhaitez utiliser une connexion sécurisée.</p> <p style="font-weight: bold;">[!UICONTROL No]</p> <p>La connexion n’est pas sécurisée.</p> <p style="font-weight: bold;">[!UICONTROL Explicit encryption or Implicit encryption]</p> <p>La connexion est sécurisée à l’aide de SSL.</p> </td> 
-  </tr> 
-  <tr> 
+1. Dans n’importe quel module FTP, cliquez sur **Ajouter** en regard de la zone de connexion.
+1. Remplissez les champs suivants.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Connection name]</td> 
+      <td> <p> Saisissez le nom de votre connexion FTP.</p> </td> 
+     </tr> 
+     <tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>Choisissez si vous utilisez un environnement de production ou hors production.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>Choisissez si vous utilisez un compte de service ou un compte personnel.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Host] </td> 
+      <td> <p>Saisissez le nom d’hôte du serveur FTP. Exemple : <code>myftp123.server.com</code></p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Port] </td> 
+      <td> <p>Saisissez le numéro de port du serveur FTP. Exemple : <code>21</code></p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL User name] </td> 
+      <td> <p>Saisissez le nom d’utilisateur ou d’utilisatrice de votre compte FTP.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Password] </td> 
+      <td> <p>Saisissez le mot de passe de votre compte FTP.</p> </td> 
+     </tr> 
+     <tr> 
+      <td> <p>Utiliser une connexion sécurisée (TLS)</p> </td> 
+      <td> <p>Indiquez si vous souhaitez utiliser une connexion sécurisée.</p> <ul><li><p><b>[!UICONTROL No]</b></p> <p>La connexion n’est pas sécurisée.</p></li><li> <p><b> Chiffrement explicite </b> ou <b> Chiffrement implicite </b></p> <p>La connexion est sécurisée à l’aide de SSL.</p> </td> 
+     </tr> 
+    <tr> 
    <td> <p>[!UICONTROL Reject unauthorized certificates]</p> </td> 
    <td> <p>Activez cette option pour vérifier le certificat du serveur FTP. Si la vérification échoue, la connexion ne sera pas créée. Pour réussir la vérification, le certificat doit répondre à l’un des critères suivants :</p> 
     <ul> 
-     <li>être signé par une <a href="https://fr.wikipedia.org/wiki/Autorité_de_certification">Autorité de certification émettant des certificats racines</a></li> 
-     <li>être signé par une autorité de certification intermédiaire (voir par exemple <a href="https://knowledge.digicert.com/solution/SO16297.html">Fonctionnement des chaînes de certification</a> pour plus d’informations). Dans ce cas, tous les certificats intermédiaires doivent être installés sur le serveur FTP.</li> 
+     <li>être signé par une autorité de certification racine</a></li> 
+     <li>être signé par une autorité de certification intermédiaire. Dans ce cas, tous les certificats intermédiaires doivent être installés sur le serveur FTP.</li> 
      <li>être un certificat auto-signé fourni dans le champ [!UICONTROL Self-signed certificate] (voir ci-dessous)</li> </ul>
+     <p>Si cette option est désactivée, le certificat du serveur FTP n’est pas vérifié. Nous vous déconseillons vivement de désactiver cette option, car elle rend la connexion non sécurisée et pose un risque sérieux pour la sécurité.</p></td>
+    </tr> 
+    <tr> 
+     <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
+     <td> <p>Cliquez sur le bouton <b>[!UICONTROL Extract]</b> pour ouvrir la boîte de dialogue de chargement.</p> <p>Chargez le certificat pour utiliser le TLS avec votre certificat auto-signé. [!DNL Workfront Fusion] ne conserve ni ne stocke les données que vous fournissez, telles que les fichiers et les mots de passe. Le fichier et le mot de passe sont utilisés uniquement pour extraire le certificat.</p> </td> 
+    </tr> 
+   </tbody> 
+   </table>
 
-Si cette option est désactivée, le certificat du serveur FTP n’est pas vérifié. Nous vous déconseillons vivement de désactiver cette option, car elle rend la connexion non sécurisée et pose un risque sérieux pour la sécurité.</td>
-</tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-   <td> <p>Cliquez sur le bouton <b>[!UICONTROL Extract]</b> pour ouvrir la boîte de dialogue de chargement.</p> <p>Chargez le certificat pour utiliser le TLS avec votre certificat auto-signé. [!DNL Workfront Fusion] ne conserve ni ne stocke les données que vous fournissez, telles que les fichiers et les mots de passe. Le fichier et le mot de passe sont utilisés uniquement pour extraire le certificat.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules FTP et leurs champs
 
@@ -118,7 +131,7 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
 
 #### [!UICONTROL Contrôle des fichiers]
 
-[!UICONTROL Contrôle des fichiers] est le seul module déclencheur pour FTP. Il contrôle le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est inséré dans le dossier spécifié.
+[!UICONTROL Contrôle des fichiers] est le seul module déclencheur pour FTP. Il contrôle le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est ajouté au dossier spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -130,11 +143,11 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>Sélectionnez le dossier que vous souhaitez consulter.</p> <p><b>Remarque :</b> un seul dossier est autorisé par scénario. Les sous-dossiers sont ignorés.</p> <p><b>Conseil :</b> pour effectuer le suivi de plusieurs dossiers, créez un scénario indépendant pour chacun d’eux.</p> </td> 
+   <td> <p>Sélectionnez le dossier que vous souhaitez consulter.</p> <p><b>Remarque :</b> un seul dossier est autorisé par scénario. Les sous-dossiers sont ignorés.</p> <p><b>Conseil :</b> pour observer plusieurs dossiers, créez un scénario distinct pour chacun d’eux.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files] </td> 
-   <td> <p>Définissez le nombre maximal de résultats avec lesquels [!DNL Workfront Fusion] fonctionnera pendant un cycle. Si la valeur est définie sur une valeur trop élevée, la connexion peut être interrompue du côté du service tiers donné (délai d’expiration). [!DNL Workfront Fusion] n’a aucune influence sur cela. Nous vous recommandons de définir une valeur inférieure et de définir une valeur supérieure pour le nombre maximal de cycles ou d’exécuter le scénario plus fréquemment.</p> </td> 
+   <td> <p>Définissez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle. Si la valeur est trop élevée, la connexion peut être interrompue du côté du serveur FTP. [!DNL Workfront Fusion] n’a aucune influence sur cela. Nous vous recommandons de définir une valeur inférieure et de définir une valeur supérieure pour le nombre maximal de cycles ou d’exécuter le scénario plus fréquemment.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -154,27 +167,27 @@ Si cette option est désactivée, le certificat du serveur FTP n’est pas véri
 
 Ce module d’action modifie les paramètres d’autorisation d’un fichier ou d’un dossier.
 
-<table style="width: 100%;" class="TableStyle-TableStyle-List-options-in-steps" cellspacing="0">
-   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1" />
-   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2" />
+<table>
+   <col>
+   <col>
    <tbody>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+         <tr>
+            <td>[!UICONTROL Connection]</td>
+            <td>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Change permission settings of]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-MediumGray">
+         <tr>
+            <td>[!UICONTROL Change permission settings of]</td>
+            <td>
                <p>Indiquez si vous souhaitez modifier les paramètres d’un fichier ou d’un dossier.</p>
             </td>
          </tr>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL File path]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Entrez ou mappez le chemin d’accès au fichier sur le dossier ou le fichier.</td>
+         <tr>
+            <td>[!UICONTROL File path]</td>
+            <td>Entrez ou mappez le chemin d’accès au fichier sur le dossier ou le fichier.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-MediumGray" role="rowheader">[!UICONTROL Permissions]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-MediumGray">
+         <tr>
+            <td>[!UICONTROL Permissions]</td>
+            <td>
                <p>Définissez les autorisations de fichier ou de dossier de votre choix. Utilisez les paramètres chmod. Par exemple, saisissez <code>777 </code> ou <code>-rwxrwxrwx</code>.</p>
                <p>Les autorisations doivent correspondre au motif <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
             </td>
@@ -186,21 +199,21 @@ Ce module d’action modifie les paramètres d’autorisation d’un fichier ou 
 
 Ce module d’action crée un dossier.
 
-<table style="width: 100%;" class="TableStyle-TableStyle-List-options-in-steps" cellspacing="0">
-   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1" />
-   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2" />
+<table>
+   <col>
+   <col>
    <tbody>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+         <tr>
+            <td>[!UICONTROL Connection]</td>
+            <td>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Folder path]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-MediumGray">Entrez ou mappez le chemin du fichier sur le nouveau dossier.</td>
+         <tr>
+            <td>[!UICONTROL Folder path]</td>
+            <td>Entrez ou mappez le chemin du fichier sur le nouveau dossier.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL New folder name]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">
+         <tr>
+            <td>[!UICONTROL New folder name]</td>
+            <td>
                <p>Saisissez ou mappez un nom pour le nouveau dossier.</p>
             </td>
          </tr>
@@ -209,7 +222,7 @@ Ce module d’action crée un dossier.
 
 #### [!UICONTROL Supprimer un fichier]
 
-Supprime un fichier du dossier spécifié.
+Ce module d&#39;action supprime un fichier du dossier spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -217,7 +230,7 @@ Supprime un fichier du dossier spécifié.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+            <td>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -234,17 +247,17 @@ Supprime un fichier du dossier spécifié.
 
 Ce module d’action supprime définitivement le dossier spécifié.
 
-<table style="width: 100%;" class="TableStyle-TableStyle-HeaderRow" cellspacing="15">
-   <col style="width: 301px;" class="TableStyle-TableStyle-HeaderRow-Column-Column1" />
-   <col style="width: 50%;" class="TableStyle-TableStyle-HeaderRow-Column-Column1" />
+<table>
+   <col>
+   <col>
    <tbody>
-         <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+         <tr>
+            <td>[!UICONTROL Connection]</td>
+            <td>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Folder]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyA-Column1-MediumGray">
+         <tr>
+            <td>[!UICONTROL Folder]</td>
+            <td>
                <p>Sélectionnez le dossier FTP dans lequel vous souhaitez supprimer un fichier.</p>
             </td>
          </tr>
@@ -253,7 +266,7 @@ Ce module d’action supprime définitivement le dossier spécifié.
 
 #### [!UICONTROL Obtenir un fichier]
 
-Récupère un fichier du serveur FTP qui peut être traité ultérieurement, par exemple transféré vers [!DNL Dropbox].
+Ce module d’action récupère un fichier du serveur FTP.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -272,7 +285,7 @@ Récupère un fichier du serveur FTP qui peut être traité ultérieurement, par
 
 #### [!UICONTROL Liste des fichiers dans un dossier]
 
-Récupère les informations sur le fichier et/ou le dossier.
+Ce module d’action récupère les informations sur les fichiers et/ou les dossiers.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -292,11 +305,11 @@ Récupère les informations sur le fichier et/ou le dossier.
   </tr> 
   <tr> 
    <td>[!UICONTROL Search] </td> 
-   <td> <p>Saisissez le terme de recherche. Si aucun terme de recherche n’est saisi, tous les fichiers et dossiers du dossier spécifié seront récupérés.</p> </td> 
+   <td> <p>Saisissez le terme de recherche. Si aucun terme de recherche n’est saisi, tous les fichiers ou dossiers du dossier spécifié seront récupérés.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files]</td> 
-   <td> <p> Définissez le nombre maximal de fichiers récupérés par ce module.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -305,23 +318,23 @@ Récupère les informations sur le fichier et/ou le dossier.
 
 Ce module d’action déplace un fichier ou un dossier vers un autre emplacement.
 
-<table style="width: 100%;" class="TableStyle-TableStyle-HeaderRow" cellspacing="15">
-   <col style="width: 301px;" class="TableStyle-TableStyle-HeaderRow-Column-Column1" />
-   <col style="width: 50%;" class="TableStyle-TableStyle-HeaderRow-Column-Column1" />
+<table>
+   <col>
+   <col>
    <tbody>
-         <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
+         <tr>
+            <td>[!UICONTROL Connection]</td>
+            <td>Pour plus d’informations sur l’établissement d’une connexion au compte FTP, voir <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] dans un module FTP</a> dans cet article.</td>
          </tr>
-         <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Old file path]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-MediumGray">
+         <tr>
+            <td>[!UICONTROL Old file path]</td>
+            <td>
                <p>Saisissez le chemin d’accès à partir duquel vous souhaitez déplacer le fichier. Exemple : <code>/folder1/document.txt</code>.</p>
             </td>
          </tr>
-         <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-LightGray" style="font-weight: bold;">[!UICONTROL New file path]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyA-Column1-LightGray">
+         <tr>
+            <td>[!UICONTROL New file path]</td>
+            <td>
                <p>Saisissez le chemin vers lequel vous souhaitez déplacer le fichier. Exemple : <code>/folder2/document.txt</code>.</p>
             </td>
          </tr>
