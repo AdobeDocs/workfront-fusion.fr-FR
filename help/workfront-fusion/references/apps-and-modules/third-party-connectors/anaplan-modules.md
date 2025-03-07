@@ -3,10 +3,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 91%
+source-wordcount: '1983'
+ht-degree: 82%
 
 ---
 
@@ -87,7 +87,7 @@ Le connecteur Anaplan utilise les éléments suivants :
   </tr> 
   <tr> 
    <td role="rowheader">Balise API</td> 
-   <td>v1.11.5/td&gt; 
+   <td>v1.11.5</td> 
  </tbody> 
 </table>
 
@@ -96,7 +96,49 @@ Le connecteur Anaplan utilise les éléments suivants :
 Pour créer une connexion pour vos modules [!DNL Anaplan], procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Ajouter]** en regard de la zone [!UICONTROL Connexion].
-1. Sélectionnez le type de connexion.
+1. Remplissez les champs suivants :
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Saisissez un nom pour la nouvelle connexion.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Indiquez si vous vous connectez à un environnement de production ou hors production.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL email]</td>
+        <td>
+          <p>Saisissez l’adresse e-mail de ce compte Anaplan</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Password]</td>
+        <td>Saisissez le mot de passe de ce compte Anaplan.</td>
+      </tr>
+     </tbody>
+    </table>
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
+
+<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+1. Select the connection type.
 
    <table style="table-layout:auto">
     <col> 
@@ -104,16 +146,16 @@ Pour créer une connexion pour vos modules [!DNL Anaplan], procédez comme suit�
     <tbody> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
-      <td> <p>La création d’une connexion [!UICONTROL Basic] [!DNL Anaplan] nécessite uniquement une adresse électronique et un mot de passe. </p> <p>Saisissez un nom pour la connexion, puis votre adresse e-mail et le mot de passe de votre compte [!DNL Anaplan].</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL Basic] connection requires only an email address and password to create the connection. </p> <p>Enter a name for the connection, then enter your email address and the password of your [!DNL Anaplan] account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
-      <td> <p>Une connexion [!UICONTROL CA Certificate] [!DNL Anaplan] requiert ces éléments : [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] et [!UICONTROL Encoded Signed Data]. Vous pouvez les générer dans votre compte [!DNL Anaplan]. Pour obtenir des instructions, consultez la documentation [!DNL Anaplan].</p> <p>Saisissez un nom pour la connexion, puis saisissez les informations [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] et [!UICONTROL Encoded Signed Data] que vous avez générées dans votre compte [!DNL Anaplan].</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL CA Certificate] connection requires a [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data]. You can generate these in your [!DNL Anaplan] account. For instructions, see the [!DNL Anaplan] documentation.</p> <p>Enter a name for the connection, then enter the [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data] that you generated in your [!DNL Anaplan] account.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
 ## Modules [!DNL Anaplan] et leurs champs
 
@@ -163,6 +205,9 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement du typ
 ### Actions
 
 * [[!UICONTROL Créer un élément de liste]](#create-a-list-item)
+* [Supprimer un enregistrement](#delete-a-record)
+* [Exporter des données](#export-data)
+* [Importer des données](#import-data)
 * [[!UICONTROL Lancer un appel API personnalisé]](#make-a-custom-api-call)
 * [[!UICONTROL Lire un enregistrement]](#read-a-record)
 * [[!UICONTROL Exécuter une action]](#run-an-action)
@@ -208,8 +253,98 @@ Ce module d’action ajoute un nouvel élément à une liste dans Anaplan.
     </tr>
     <tr>
         <td>[!UICONTROL Subsets]</td>
-        <td>Si la liste dans laquelle vous souhaitez ajouter des éléments comporte des sous-ensembles personnalisés, sélectionnez les sous-ensembles auxquels vous souhaitez ajouter l’élément, puis sélectionnez <b>[!UICONTROL Yes]</b> pour ajouter le nouvel élément à ce sous-ensemble.</td>
+        <td>Si la liste à laquelle vous souhaitez ajouter des éléments comporte des sous-ensembles personnalisés, sélectionnez les sous-ensembles auxquels vous souhaitez ajouter l’élément.</td>
     </tr>
+</table>
+
+#### [!UICONTROL Supprimer un enregistrement]
+
+Ce module d’action supprime un enregistrement existant.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Anaplan] à [!DNL Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Sélectionnez ou mappez l’identifiant de l’espace de travail Anaplan qui contient l’objet que vous souhaitez supprimer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Saisissez ou mappez l’identifiant du modèle qui contient l’objet que vous souhaitez supprimer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type d'enregistrement</td> 
+   <td> <p>Sélectionnez le type d’objet à supprimer.</p> 
+    <ul> 
+     <li> <p><b>Actions</b> </p> <p>Sélectionnez ou mappez l’action à supprimer.</p> </li> 
+     <li> <p><b>Élément de liste</b> </p> <p>Sélectionnez la liste dans laquelle vous souhaitez supprimer un élément, puis saisissez ou mappez l’identifiant ou le code de l’élément à supprimer.</p>  </li> 
+     <li> <p><b>[!UICONTROL File]</b> </p> <p>Sélectionnez ou mappez le fichier à supprimer.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+#### [!UICONTROL Exporter des données]
+
+Ce module d’action récupère les données d’Anaplan à l’aide des Définitions d’exportation .
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Anaplan] à [!DNL Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Sélectionnez ou mappez l’identifiant du Workspace Anaplan contenant les données à exporter.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Saisissez ou mappez l’identifiant du modèle contenant les données à exporter.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de définition de l’exportation</td> 
+   <td> <p>Saisissez ou mappez l’identifiant de la définition d’exportation Anaplan que vous souhaitez utiliser.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Importer des données
+
+Ce module d’action importe des données dans Anaplan.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Anaplan] à [!DNL Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Sélectionnez ou mappez l’identifiant du Workspace Anaplan sur lequel vous souhaitez importer les données.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Saisissez ou mappez l'identifiant du modèle sur lequel vous souhaitez importer les données.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de définition de l’exportation</td> 
+   <td> <p>Saisissez ou mappez l'ID de la définition d'importation Anaplan que vous souhaitez utiliser.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### [!UICONTROL Lancer un appel API personnalisé]
@@ -250,38 +385,6 @@ Ce module vous permet d’effectuer un appel API personnalisé à l’API [!DNL 
  </tbody> 
 </table>
 
-#### [!UICONTROL Supprimer un enregistrement]
-
-Ce module d’action supprime un enregistrement existant.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Anaplan] à [!DNL Workfront Fusion]</a> dans cet article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>Sélectionnez ou mappez l’identifiant de l’espace de travail Anaplan qui contient l’objet que vous souhaitez supprimer.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>Saisissez ou mappez l’identifiant du modèle qui contient l’objet que vous souhaitez supprimer.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Supprimer</td> 
-   <td> <p>Sélectionnez le type d’objet à supprimer.</p> 
-    <ul> 
-     <li> <p><b>Actions</b> </p> <p>Sélectionnez ou mappez l’action à supprimer.</p> </li> 
-     <li> <p><b>Élément de liste</b> </p> <p>Sélectionnez la liste dans laquelle vous souhaitez supprimer un élément, puis saisissez ou mappez l’identifiant ou le code de l’élément à supprimer.</p>  </li> 
-     <li> <p><b>[!UICONTROL File]</b> </p> <p>Sélectionnez ou mappez le fichier à supprimer.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action lit un seul enregistrement.
@@ -303,6 +406,7 @@ Ce module d’action lit un seul enregistrement.
      <li> <p><b>Version du modèle</b> </p> <p>Sélectionnez ou mappez l’identifiant du modèle que vous souhaitez lire.</p> </li> 
      <li> <p><b>Utilisateur ou utilisatrice</b> </p> <p>Indiquez si vous souhaitez renvoyer des données sur le ou la propriétaire du compte utilisé ou sur une autre personne. Si vous sélectionnez une autre personne, sélectionnez son nom.</p> </li> 
      <li> <p><b>Espace de travail</b> </p> <p>Sélectionnez ou mappez l’identifiant de l’espace de travail que vous souhaitez lire.</p> </li> 
+     <li> <p><b>Afficher</b> </p> <p>Sélectionnez ou mappez l'identifiant du modèle contenant la vue que vous souhaitez lire.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -410,9 +514,9 @@ Ce module d’action met à jour un seul enregistrement dans [!UICONTROL Anaplan
  </tbody> 
 </table>
 
-#### [!UICONTROL Charger un fichier]
+#### [!UICONTROL Charger le fichier pour action]
 
-Ce module d’action charge un fichier vers Anaplan. Le fichier doit avoir déjà été chargé vers Anaplan. Vous pouvez utiliser ce module pour le charger vers d’autres emplacements dans Anaplan.
+Ce module d’action charge un fichier existant dans Anaplan vers des emplacements supplémentaires dans Anaplan.
 <table style="table-layout:auto">
 <col>
 <col>

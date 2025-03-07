@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 975c67b557e4576ee1f81df6db3049b0739d919e
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 70%
+source-wordcount: '2165'
+ht-degree: 76%
 
 ---
 
@@ -123,7 +123,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Marketo] directement depu
       <tr>
         <td role="rowheader">[!UICONTROL Account / Munchkin ID]</td>
         <td>
-          <p>Saisissez votre compte [!DNL Marketo] ou [!DNL Marketo] ID de [!UICONTROL Munchkin]. Il s’agit de la partie unique de l’URL de base ou du point d’entrée attribué à votre compte que vous utilisez pour accéder à [!DNL Marketo] via son API [!UICONTROL REST]. Pour obtenir des instructions sur la localisation de ce paramètre, consultez [URL de base](https://developers.marketo.com/rest-api/base-url/) dans la documentation [!DNL Marketo].</p>
+          <p>Saisissez votre compte [!DNL Marketo] ou [!DNL Marketo] identifiant [!UICONTROL Munchkin]. Il s’agit de la partie unique de l’URL de base ou du point d’entrée attribué à votre compte que vous utilisez pour accéder à [!DNL Marketo] via son API [!UICONTROL REST]. Pour obtenir des instructions sur la localisation de ce paramètre, consultez [URL de base](https://developers.marketo.com/rest-api/base-url/) dans la documentation [!DNL Marketo].</p>
         </td>
       </tr>
       <tr>
@@ -136,7 +136,8 @@ Vous pouvez créer une connexion à votre compte [!DNL Marketo] directement depu
       </tr>
      </tbody>
     </table>
-1. Cliquez sur **[!UICONTROL Continue]** pour créer la connexion et revenir au module .
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et revenez au module.
 
 ## Modules [!DNL Marketo] et leurs champs
 
@@ -152,10 +153,10 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-* [[!UICONTROL Watch events (Instant)]](#watch-events-instant)
-* [[!UICONTROL Watch records]](#watch-records)
+* [[!UICONTROL Regarder des événements (instantané)]](#watch-events-instant)
+* [[!UICONTROL Surveiller les enregistrements]](#watch-records)
 
-#### [!UICONTROL Watch events (Instant)]
+#### [!UICONTROL Regarder des événements (instantané)]
 
 Ce module de déclenchement lance un scénario lorsqu’un enregistrement est créé ou mis à jour.
 
@@ -174,7 +175,7 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch records]
+#### [!UICONTROL Regarder des enregistrements]
 
 Ce module de déclenchement lance un scénario lorsqu’un enregistrement est créé ou mis à jour.
 
@@ -184,7 +185,7 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -208,18 +209,18 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
 
 ### Actions
 
-* [[!UICONTROL Add Leads to a List]](#add-leads-to-a-list)
-* [[!UICONTROL Clone a Program]](#clone-a-program)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Custom API call]](#custom-api-call)
-* [[!UICONTROL Download a File]](#download-a-file)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Remove Leads from a List]](#remove-leads-from-a-list)
-* [[!UICONTROL Schedule a Campaign]](#schedule-a-campaign)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Upload a File]](#upload-a-file)
+* [[!UICONTROL Ajouter des leads à une liste]](#add-leads-to-a-list)
+* [[!UICONTROL Cloner un programme]](#clone-a-program)
+* [[!UICONTROL Créer un enregistrement]](#create-a-record)
+* [[!UICONTROL Appel API personnalisé]](#custom-api-call)
+* [[!UICONTROL Télécharger un fichier]](#download-a-file)
+* [[!UICONTROL Lire un enregistrement]](#read-a-record)
+* [[!UICONTROL Supprimer des leads d’une liste]](#remove-leads-from-a-list)
+* [[!UICONTROL Planifier une campagne]](#schedule-a-campaign)
+* [[!UICONTROL Mettre à jour un enregistrement]](#update-a-record)
+* [[!UICONTROL Charger un fichier]](#upload-a-file)
 
-#### [!UICONTROL Add Leads to a List]
+#### [!UICONTROL Ajouter des leads à une liste]
 
 Ce module d’action ajoute un ou plusieurs prospects à une liste à l’aide de l’identifiant de prospect. Vous pouvez ajouter jusqu’à 300 prospects à la fois.
 
@@ -237,12 +238,12 @@ Ce module d’action ajoute un ou plusieurs prospects à une liste à l’aide d
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>Pour chaque prospect que vous souhaitez ajouter à la liste, cliquez sur <b>[!UICONTROL Add]</b>, puis saisissez ou mappez l’identifiant du prospect que vous souhaitez ajouter. Vous pouvez ajouter jusqu’à 300 leads pour que le module les ajoute à la liste.</p> <p>Cliquez sur le bouton Mapper pour mapper une collection existante de leads que vous souhaitez ajouter à la liste.</p> </td> 
+   <td> <p>Pour chaque lead à ajouter à la liste, cliquez sur <b>[!UICONTROL Add]</b>, puis saisissez ou mappez l’ID du lead à ajouter. Vous pouvez ajouter jusqu’à 300 leads pour que le module les ajoute à la liste.</p> <p>Cliquez sur le bouton Mapper pour mapper une collection existante de leads que vous souhaitez ajouter à la liste.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Clone a Program]
+#### [!UICONTROL Cloner un programme]
 
 Ce module d’action effectue une copie d’un programme à l’aide de l’ID du programme existant.
 
@@ -269,7 +270,7 @@ Ce module d’action effectue une copie d’un programme à l’aide de l’ID d
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée un nouvel enregistrement dans [!DNL Marketo].
 
@@ -279,7 +280,7 @@ Ce module d’action crée un nouvel enregistrement dans [!DNL Marketo].
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -326,9 +327,9 @@ Ce module d’action crée un nouvel enregistrement dans [!DNL Marketo].
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API call]
+#### [!UICONTROL Appel API personnalisé]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Marketo]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Marketo].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Marketo]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Marketo].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -336,11 +337,11 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], consultez la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> de cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Saisir un chemin relatif à <code>https://{your-base-url}.mktorest.com/</code>.</td> 
+   <td>Saisissez un chemin d’accès relatif à <code>https://{your-base-url}.mktorest.com/</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -361,7 +362,7 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
  </tbody> 
 </table>
 
-#### [!UICONTROL Download a File]
+#### [!UICONTROL Télécharger un fichier]
 
 Ce module d’action télécharge un fichier à l’aide de l’identifiant de fichier.
 
@@ -371,7 +372,7 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -380,7 +381,7 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action lit des informations concernant un enregistrement à l’aide de son identifiant.
 
@@ -390,7 +391,7 @@ Ce module d’action lit des informations concernant un enregistrement à l’ai
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -406,16 +407,16 @@ Ce module d’action lit des informations concernant un enregistrement à l’ai
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.
-Les champs sont disponibles en fonction des [!UICONTROL Record Type] que vous avez sélectionnés.</td> 
+Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL <Object> ID]</td> 
+   <td role="rowheader">[!UICONTROL &lt;Object&gt; ID]</td> 
    <td>Saisissez ou mappez l’identifiant de l’objet dont vous souhaitez récupérer les informations.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove Leads from a List]
+#### [!UICONTROL Supprimer des leads d’une liste]
 
 Ce module d’action supprime un ou plusieurs prospects d’une liste à l’aide de l’identifiant de prospect. Vous pouvez supprimer jusqu’à 300 prospects à la fois.
 
@@ -433,12 +434,12 @@ Ce module d’action supprime un ou plusieurs prospects d’une liste à l’aid
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>Pour chaque prospect à supprimer de la liste, cliquez sur <b>[!UICONTROL Add item]</b>, puis saisissez ou mappez l’identifiant du prospect à supprimer. Vous pouvez ajouter jusqu’à 300 leads pour que le module les supprime de la liste. </p> <p>Cliquez sur le bouton Mapper pour mapper une collection de leads existante à supprimer de la liste.</p> </td> 
+   <td> <p>Pour chaque lead à supprimer de la liste, cliquez sur <b>[!UICONTROL Add item]</b>, puis saisissez ou mappez l’identifiant du lead à supprimer. Vous pouvez ajouter jusqu’à 300 leads pour que le module les supprime de la liste. </p> <p>Cliquez sur le bouton Mapper pour mapper une collection de leads existante à supprimer de la liste.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Schedule a Campaign]
+#### [!UICONTROL Planifier une campagne]
 
 Ce module d’action planifie une campagne existante pour une certaine date.
 
@@ -461,7 +462,7 @@ Ce module d’action planifie une campagne existante pour une certaine date.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action met à jour un enregistrement existant à l’aide de son identifiant.
 
@@ -471,7 +472,7 @@ Ce module d’action met à jour un enregistrement existant à l’aide de son i
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -517,9 +518,9 @@ Ce module d’action met à jour un enregistrement existant à l’aide de son i
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Charger un fichier]
 
-Ce module d&#39;action charge un nouveau fichier dans [!UICONTROL Marketo].
+Ce module d’action charge un nouveau fichier vers [!UICONTROL Marketo].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -527,7 +528,7 @@ Ce module d&#39;action charge un nouveau fichier dans [!UICONTROL Marketo].
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -546,10 +547,10 @@ Ce module d&#39;action charge un nouveau fichier dans [!UICONTROL Marketo].
 
 ### Recherches
 
-* [[!UICONTROL List records]](#list-records)
-* [[!UICONTROL Search Records]](#update-a-record)
+* [[!UICONTROL Répertorier des enregistrements]](#list-records)
+* [[!UICONTROL Rechercher des enregistrements]](#update-a-record)
 
-#### [!UICONTROL List records]
+#### [!UICONTROL Répertorier des enregistrements]
 
 Ce module d’action récupère tous les enregistrements d’un type spécifique.
 
@@ -559,7 +560,7 @@ Ce module d’action récupère tous les enregistrements d’un type spécifique
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -577,7 +578,7 @@ Ce module d’action récupère tous les enregistrements d’un type spécifique
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.
-Les champs sont disponibles en fonction des [!UICONTROL Record Type] que vous avez sélectionnés.</td> 
+Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -586,7 +587,7 @@ Les champs sont disponibles en fonction des [!UICONTROL Record Type] que vous av
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Records]
+#### [!UICONTROL Rechercher des enregistrements]
 
 Ce module de recherche récupère une liste d’enregistrements correspondant à des critères de recherche spécifiques.
 
@@ -613,7 +614,7 @@ Ce module de recherche récupère une liste d’enregistrements correspondant à
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Value / values]</td> 
-   <td>Saisissez la valeur du champ que vous souhaitez rechercher. Si le champ vous permet de rechercher plusieurs valeurs, pour chaque valeur à rechercher, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez la valeur.</td> 
+   <td>Saisissez la valeur du champ que vous souhaitez rechercher. Si le champ vous permet de rechercher plusieurs valeurs, pour chaque valeur que vous souhaitez rechercher, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez la valeur.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 

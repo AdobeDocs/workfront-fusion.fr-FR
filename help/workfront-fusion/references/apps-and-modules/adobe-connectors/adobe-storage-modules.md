@@ -8,7 +8,7 @@ description: Dans un  [!DNL Adobe Workfront Fusion] , vous devez créer et gére
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 20%
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # Modules de stockage Adobe
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous devez créer et gérer des projets dans le Adobe Admin Console.
+Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez créer et gérer des projets dans le Adobe Admin Console.
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
