@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
-ht-degree: 96%
+source-wordcount: '4088'
+ht-degree: 95%
 
 ---
 
@@ -207,8 +207,6 @@ Ce module d’action copie un fichier dans un nouvel emplacement de dossier.
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Créer un dossier]
 
 Ce module d’action crée un dossier dans le lecteur spécifié.
@@ -231,7 +229,7 @@ Ce module d’action crée un dossier dans le lecteur spécifié.
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Site's Drive]</b> </p> <p>Sélectionnez la site [!DNL SharePoint] où vous souhaitez créer un dossier. Les sites disponibles sont des sites suivis par la personne connectée.</p> </li> 
-     <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Sélectionnez le groupe propriétaire du lecteur dans lequel vous souhaitez créer un dossier.</p> </li> 
+     <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Sélectionnez le groupe propriétaire du lecteur sur lequel vous souhaitez créer un dossier.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -255,7 +253,7 @@ Ce module d’action crée un dossier dans le lecteur spécifié.
 
 #### [!UICONTROL Supprimer un fichier/dossier]
 
-Ce module d’action supprime le fichier sélectionné.
+Ce module d&#39;action supprime le fichier ou le dossier sélectionné.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Ce module effectue un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
