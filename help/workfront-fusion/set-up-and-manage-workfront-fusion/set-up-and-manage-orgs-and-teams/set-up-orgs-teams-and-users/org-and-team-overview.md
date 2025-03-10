@@ -4,10 +4,10 @@ description: Les fonctionnalités Organisation et Équipes Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 45%
+source-wordcount: '518'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ Une organisation est la plus grande entité d’Adobe Workfront Fusion. Par exem
 
 Les équipes sont des groupes plus petits au sein de l’organisation et partagent des ressources Fusion telles que des scénarios, des connexions et des modèles.
 
+Pour obtenir des instructions sur la création d’une équipe, voir [Créer une équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md).
+
 ## Organisations
 
 Les utilisateurs et utilisatrices [!DNL Workfront Fusion] appartiennent à une organisation.
@@ -29,11 +31,11 @@ Les utilisateurs doivent être ajoutés à une organisation avant d’être ajou
 
 Un utilisateur ou une utilisatrice possède l’un des rôles suivants dans une organisation :
 
-* **[!UICONTROL Owner]** : le propriétaire dispose de toutes les autorisations disponibles dans l’organisation.
-* **[!UICONTROL Admin]** : les administrateurs peuvent créer et gérer des équipes et des utilisateurs pour l’organisation et approuver des modèles.
-* **[!UICONTROL Member]** : les membres peuvent utiliser [!DNL Workfront Fusion] mais ne peuvent pas apporter de modifications organisationnelles.
-* **[!UICONTROL Accountant]** : Les comptables peuvent voir les informations de licence dans le tableau de bord de l&#39;organisation, mais ne peuvent effectuer aucune action.
-* **[!UICONTROL App Developer]** : la fonctionnalité de ce rôle n’est pas disponible actuellement et sera disponible dans un avenir proche. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
+* **[!UICONTROL Personne propriétaire]** : la personne propriétaire dispose de toutes les autorisations disponibles dans l’organisation.
+* **[!UICONTROL Administrateur]** : les administrateurs peuvent créer et gérer des équipes et des utilisateurs pour l’organisation et approuver des modèles.
+* **[!UICONTROL Membre]** : les membres peuvent utiliser [!DNL Workfront Fusion], mais ne peuvent pas apporter de modifications organisationnelles.
+* **[!UICONTROL Comptable]** : les comptables peuvent afficher les informations de licence dans le tableau de bord de l&#39;organisation, mais ne peuvent effectuer aucune action.
+* **[!UICONTROL Développeur ou développeuse d’applications]** : les fonctionnalités de ce rôle ne sont actuellement pas disponibles. Elle seront disponibles ultérieurement. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
 
 Pour plus d’informations sur les actions spécifiques dont disposent les utilisateurs et les utilisatrices pour chaque rôle d’organisation, voir [Rôles d’organisation et d’équipe](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
@@ -61,10 +63,10 @@ Les utilisateurs et les utilisatrices peuvent sélectionner leur équipe dans la
 
 Un utilisateur ou une utilisatrice possède l’un des rôles suivants dans chacune de ses équipes :
 
-* **[!UICONTROL Team Admin]** : les administrateurs peuvent ajouter, supprimer ou modifier le rôle d’un membre de l’équipe. Ils peuvent également effectuer toute action disponible pour les autres rôles d&#39;équipe.
-* **[!UICONTROL Team Member]** : le rôle de membre d’équipe permet aux utilisateurs de créer et d’exécuter des scénarios.
-* **[!UICONTROL Team Monitoring]** : le rôle [!UICONTROL monitoring] permet aux utilisateurs et utilisatrices d’accéder aux informations d’exécution des scénarios, mais ils ou elles ne peuvent pas concevoir de scénarios ni modifier leur statut « Actif ».
-* **[!UICONTROL Team Operator]** : le rôle [!UICONTROL operator] permet aux utilisateurs et utilisatrices d’afficher les données d’exécution et de modifier le statut « Actif » des scénarios.
-* **[!UICONTROL Team Restricted Member]** : la fonctionnalité de ce rôle n’est pas disponible actuellement et sera disponible dans un avenir proche. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
+* **[!UICONTROL Administrateur d’équipe]** : les administrateurs peuvent ajouter, supprimer ou modifier le rôle d’un membre de l’équipe. Ils peuvent également effectuer toute action disponible pour les autres rôles d&#39;équipe.
+* **[!UICONTROL Personne membre de l’équipe]** : le rôle de personne membre de l’équipe permet aux utilisateurs et aux utilisatrices de créer et d’exécuter des scénarios.
+* **[!UICONTROL Surveillance de l’équipe]** : le rôle de [!UICONTROL surveillance] permet aux utilisateurs et aux utilisatrices d’accéder aux informations d’exécution pour les scénarios, mais ils ne peuvent pas concevoir de scénarios ou modifier leur statut « actif ».
+* **[!UICONTROL Opérateur ou opératrice d’équipe]** : le rôle d’[!UICONTROL opérateur ou opératrice] permet aux utilisateurs et aux utilisatrices d’afficher les données d’exécution et de modifier le statut « actif » des scénarios.
+* **[!UICONTROL Personne membre de l’équipe limitée]** : les fonctionnalités de ce rôle ne sont actuellement pas disponibles. Elles seront disponibles ultérieurement. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
 
 Pour plus d’informations sur les actions spécifiques dont les utilisateurs et les utilisatrices disposent dans chaque rôle d’équipe, voir [Rôles d’organisation et d’équipe](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
