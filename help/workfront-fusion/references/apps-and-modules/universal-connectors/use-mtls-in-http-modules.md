@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le protocole TLS mutuel dans vos modules HTTP 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 1fa1ef68267d971a2769400a031b333de2f684ce
+source-git-commit: b9c4ad720e5b73f8c28fa52e77503dbf6ea5c62a
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 87%
+source-wordcount: '783'
+ht-degree: 75%
 
 ---
 
@@ -82,24 +82,42 @@ Pour obtenir des instructions sur le chargement du certificat public [!DNL Adobe
 >
 >Vous devrez peut-être fournir d’autres informations en plus du certificat. Pour plus d’informations sur les exigences d’un service web, consultez la documentation de l’API du service web.
 
-Vous pouvez utiliser les liens suivants pour télécharger les certificats publics Workfront Fusion :
+Vous pouvez utiliser les liens suivants pour télécharger les certificats publics de Workfront Fusion. Pour localiser votre centre de données, consultez la section [Identifier votre centre de données](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) dans l’article Configurer des adresses IP pour Fusion dans la place sur la liste autorisée de données de votre entreprise.
 
-### Certificats du mercredi 23 avril 2024 au jeudi 7 mai 2025
+### Certificats pour 2025
 
 >[!IMPORTANT]
 >
->* Ces certificats publics  expirent le 7 mai 2025. [!DNL Workfront Fusion] Une fois le vôtre arrivé à expiration, vous devrez charger un nouveau certificat vers le service web. Nous vous recommandons ce qui suit :
+>* Ces certificats publics [!DNL Workfront Fusion] expirent le **4 avril 2026** (États-Unis et UE) ou le **25 novembre 2025** (Azure). Une fois le vôtre arrivé à expiration, vous devrez charger un nouveau certificat vers le service web. Nous vous recommandons ce qui suit :
 >
 >   * Notez la date d’expiration et définissez un rappel pour penser à charger le certificat vers votre service web.
 >   * Mettez cette page en signet pour trouver facilement les nouveaux certificats.
 >
 >* Il s’agit de certificats mTLS non génériques.
 
-* [Télécharger le Certificat  [!DNL Workfront Fusion]  2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem)
-* [Télécharger le Certificat UE  [!DNL Workfront Fusion]  2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem)
+| Datacenter | Lien de téléchargement | Dates valides |
+|---|---|---|
+| Centre de données des États-Unis | [Télécharger [!DNL Workfront Fusion] certificat US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Du 3 mars 2025 au 4 avril 2026 |
+| Centre de données de l’UE | [Télécharger [!DNL Workfront Fusion] le certificat UE 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Du 3 mars 2025 au 4 avril 2026 |
+| Cluster Azure | [Télécharger [!DNL Workfront Fusion] Certificat Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | Du 24 octobre 2024 au 25 novembre 2025 |
 
-  À utiliser dans l’UE
 
+### Certificats pour 2024
+
+>[!IMPORTANT]
+>
+>* Nous vous recommandons d’installer les certificats pour 2025, disponibles ci-dessus.
+>* Ces certificats publics [!DNL Workfront Fusion] expirent le **7 mai 2025**. Une fois le vôtre arrivé à expiration, vous devrez charger un nouveau certificat vers le service web. Nous vous recommandons ce qui suit :
+>
+>   * Notez la date d’expiration et définissez un rappel pour penser à charger le certificat vers votre service web.
+>   * Mettez cette page en signet pour trouver facilement les nouveaux certificats.
+>
+>* Il s’agit de certificats mTLS non génériques.
+
+| Datacenter | Lien de téléchargement | Dates valides |
+|---|---|---|
+| Centre de données des États-Unis | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | Du 5 avril 2024 au 7 mai 2025 |
+| Centre de données de l’UE | [Télécharger [!DNL Workfront Fusion] certificat UE 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | Du 5 avril 2024 au 7 mai 2025 |
 
 ## Activer le protocole TLS mutuel dans les modules HTTP d’[!DNL Workfront Fusion]
 
