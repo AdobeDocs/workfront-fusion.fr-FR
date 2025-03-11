@@ -4,16 +4,20 @@ description: Ces vidéos peuvent s’avérer utiles pour planifier un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 73%
+source-wordcount: '60'
+ht-degree: 65%
 
 ---
 
 # Présentation vidéo
 
 Ces vidéos vous aideront à vous familiariser avec certaines fonctionnalités d’Adobe Workfront Fusion.
+
+## Navigation
+
+* [Workfront Fusion sur Adobe Unified Shell](https://video.tv.adobe.com/v/3412392/){target=_blank}
 
 ## Concepts de base
 
