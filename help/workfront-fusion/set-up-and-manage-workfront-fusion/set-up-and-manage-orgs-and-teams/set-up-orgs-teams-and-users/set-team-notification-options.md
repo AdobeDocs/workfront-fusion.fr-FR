@@ -4,16 +4,18 @@ description: Les options de notification par e-mail sont définies au niveau de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 70%
+source-wordcount: '300'
+ht-degree: 66%
 
 ---
 
 # Définir les options de notification d’équipe
 
-Dans Workfront Fusion, vous recevez des notifications par le biais de la zone des Notifications d’Adobe . Vous pouvez choisir les notifications qu’une équipe reçoit. Les notifications sont définies au niveau de l’équipe.
+Si votre entreprise utilise Adobe Unified Shell, vous recevez des notifications via la zone des Notifications Adobe.
+
+Si votre organisation n’a pas été migrée vers Adobe Unified Shell, vous pouvez choisir les notifications qu’une équipe reçoit. Les notifications sont définies au niveau de l’équipe.
 
 ## Conditions d’accès
 
@@ -31,7 +33,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -44,7 +46,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -69,10 +71,12 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Définir les options de notification
 
+Si votre organisation ne figure pas dans Adobe Unified Shell, vous pouvez définir les paramètres de notification directement dans Fusion.
+
 Les options de notification par e-mail sont définies au niveau de l’équipe.
 
-1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Team]**
-1. Sélectionnez l’onglet **[!UICONTROL Notification Options]** .
+1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Équipe]**.
+1. Sélectionnez l’onglet **[!UICONTROL Options de notification]**.
 1. Activez les notifications que vous souhaitez que l’équipe reçoive.
 
    <table style="table-layout:auto"> 
@@ -80,7 +84,7 @@ Les options de notification par e-mail sont définies au niveau de l’équipe.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[!UICONTROL Warning in scenario run]'</td> 
+      <td role="rowheader">« [!UICONTROL Warning in scenario run] »</td> 
       <td> <p>Recevez un e-mail lorsqu’un avertissement se produit dans une exécution de scénario.</p> </td> 
      </tr> 
      <tr> 
