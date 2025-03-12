@@ -4,10 +4,10 @@ description: Les modèles publics suivants sont actuellement disponibles dans Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 89%
+source-wordcount: '1351'
+ht-degree: 84%
 
 ---
 
@@ -25,11 +25,15 @@ Ces modèles permettent l’automatisation des processus et des workflows Workfr
 
 ### [!BADGE Nouveau !]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Supprimer les cartes archivées d’une colonne désignée d’un panorama désigné à la demande.
+
+### Tableaux Workfront > Créer une liste de contrôle standard basée sur la colonne Tableaux
+
 Ce modèle de fusion crée une liste de contrôle standard pour toutes les cartes qui entrent ponctuellement dans une colonne spécifique sur un panorama spécifique.
 
-### [!BADGE Nouveauté]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Tableaux Workfront - Créez un tableau à partir d’une configuration personnalisée
 
 Ce scénario est déclenché par la création d’un projet. Avec ce scénario, vous pouvez créer un panorama nommé en fonction du projet, renommer ou créer des colonnes en fonction de vos besoins, créer des balises personnalisées et associer un filtre de colonne d’entrée au projet d’origine.  Des milliers de modifications supplémentaires pourraient être apportées, mais en commençant ici, vous verrez les possibilités de créer un point de départ pour la normalisation des conseils d’administration de votre organisation.
 
@@ -96,6 +100,12 @@ Une fois par mois, passez en revue vos modèles de projet en appliquant votre pr
 ## Workfront - Modèles Workfront Proof
 
 Ces modèles automatisent les workflows qui associent Workfront et Workfront Proof.
+
+### [!BADGE Nouveauté]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Ce modèle recherche les projets qui se mettent à jour vers des statuts correspondant à rejeté, terminé ou immobilisé. Ensuite, il convertit tous les utilisateurs ayant des décisions d’épreuve en attente en lecture seule. Enfin, il verrouille les BAT et envoie une mise à jour aux documents.
 
 ### Workfront Proof > Workfront - Mise à jour du projet sur le statut de décision de l’épreuve
 
