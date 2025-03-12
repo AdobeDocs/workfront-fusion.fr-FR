@@ -4,10 +4,10 @@ description: Avec le module Adobe Authenticator, vous pouvez vous connecter à 
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 65%
+source-wordcount: '1277'
+ht-degree: 72%
 
 ---
 
@@ -28,13 +28,13 @@ Pour obtenir la liste des API d’Adobe disponibles, voir [API d’Adobe](https:
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] paquet</td>
       <td>
-        <p>Nouveau : Tous</p><p>Ou</p><p>En cours : [!UICONTROL Pro] ou supérieur</p>
+        <p>Nouveau : Tous</p><p>Ou</p><p>Actuelle : [!UICONTROL Pro] ou licence supérieure</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] licence</td>
       <td>
-        <p>Nouveau : Standard</p><p>Ou</p><p>En cours : [!UICONTROL Plan], [!UICONTROL Work]</p>
+        <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Plan], [!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
@@ -42,13 +42,13 @@ Pour obtenir la liste des API d’Adobe disponibles, voir [API d’Adobe](https:
       <td>
    <p>Exigence de licence Fusion actuelle : aucune licence [!DNL Workfront Fusion] requise.</p>
    <p>Ou</p>
-   <p>Exigence de licence Fusion héritée : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Exigence de licence Fusion héritée : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Produit</td>
       <td>
-   <p>Nouveau plan Workfront : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter des [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Nouvelle formule Workfront : si vous disposez de la formule [!UICONTROL Select] ou [!UICONTROL Prime][!DNL Adobe Workfront], votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article. [!DNL Workfront Fusion] est inclus dans la formule [!DNL Workfront] [!UICONTROL Ultimate].</p>
    <p>Ou</p>
    <p>Formule Workfront actuelle : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
    </td>
@@ -121,11 +121,11 @@ Pour créer une connexion, procédez comme suit :
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre ID client [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez votre ID client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre secret client [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez votre secret client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Scopes]</td>
@@ -133,11 +133,11 @@ Pour créer une connexion, procédez comme suit :
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Si vous avez sélectionné une connexion JWT, saisissez votre ID d’organisation [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+        <td>Si vous avez sélectionné une connexion JWT, saisissez votre ID d’organisation [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Meta Scopes]</td>
@@ -186,7 +186,7 @@ Pour créer une connexion, procédez comme suit :
     </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules
 
@@ -195,7 +195,7 @@ Pour créer une connexion, procédez comme suit :
 
 ### Effectuer un appel API personnalisé.
 
-Ce module d’action vous permet d’effectuer un appel vers n’importe quelle API Adobe. Il prend en charge les fichiers volumineux, au lieu des corps de texte uniquement.
+Ce module d’action vous permet d’effectuer un appel vers n’importe quelle API d’Adobe. Il prend en charge les fichiers volumineux, au lieu des corps de texte uniquement.
 
 Ce module a été rendu disponible le 14 novembre 2024. Tout appel Adobe Authenticator > Effectuer un appel API personnalisé configuré avant cette date ne gère pas les fichiers volumineux. Il est désormais considéré comme le module Effectuer un appel API personnalisé (hérité) .
 
@@ -246,17 +246,29 @@ Ce module a été rendu disponible le 14 novembre 2024. Tout appel Adobe Authent
       <td role="rowheader">[!UICONTROL Body Type]</td>
    <td> Sélectionnez le type de corps de cette requête API :
    <ul>
-   <li>application/x-www-form-urlencoded</li>
    <li>Brut</li>
+   <li>application/x-www-form-urlencoded</li>
    <li>multipart/form-data</li>
    </ul>
       </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Request content]  </td>
+      <td>
+        <p>Saisissez le contenu de la demande. Cette option est disponible si vous avez sélectionné le type de corps <code>Raw</code></p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Fields]  </td>
       <td>
-        <p>Pour chaque fichier que vous souhaitez ajouter à la requête API, cliquez sur <b>Ajouter un élément</b> et saisissez le texte du fichier (pour les données brutes), ou saisissez le <code>uploadedFile</code> de clé et mappez les données du fichier.</p>
+        <p>Pour chaque fichier que vous souhaitez ajouter à la requête API, cliquez sur <b>Ajouter un élément</b> et saisissez le texte du fichier (pour les données brutes), ou saisissez le <code>uploadedFile</code> de clé et mappez les données du fichier. Cette option est disponible si vous avez sélectionné le type de corps <code>application</code> ou <code>multipart</code>.</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Type de sortie]  </td>
+      <td>
+        <p>Sélectionnez le type de données que le module doit générer. Si vous ne sélectionnez pas de type, le module en sélectionne un automatiquement.</p>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -310,7 +322,7 @@ Ce module d’action vous permet d’effectuer un appel à n’importe quelle AP
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez des guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
