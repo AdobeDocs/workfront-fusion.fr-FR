@@ -4,10 +4,10 @@ description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessit
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 70%
+source-wordcount: '871'
+ht-degree: 61%
 
 ---
 
@@ -55,8 +55,8 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 ## Webhooks
 
 * La taille maximale par défaut d’un payload est de **5 Mo**.
-* Les webhooks sont limités à **100 demandes par seconde**. Lorsque cette limite est atteinte, Workfront Fusion envoie un statut 429 ([!UICONTROL Too Many Requests]).
-* [!DNL Workfront Fusion] stocke les payloads des webhooks pendant 30 jours. L’accès à une payload webhook plus de 30 jours après sa réception entraîne l’erreur « [!UICONTROL Failed to read file from storage.] »
+* Les webhooks sont limités à **100 demandes par seconde**. Lorsque cette limite est atteinte, Workfront Fusion envoie un statut 429 ([!UICONTROL Trop de demandes]).
+* [!DNL Workfront Fusion] stocke les payloads de webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa réception entraîne l’erreur « [!UICONTROL Échec de la lecture du fichier à partir de l’enregistrement.] »
 * Les webhooks sont désactivés automatiquement si l’une des conditions suivantes s’applique :
 
    * Le webhook n’a été connecté à aucun scénario depuis plus de 5 jours.
@@ -76,3 +76,17 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 ## Reprises
 
 * Lors de l’utilisation du module Break et de la spécification de la directive Réessayer, si un scénario échoue consécutivement 10 fois dans un délai de 2 minutes, le scénario est automatiquement désactivé.
+
+## Récursivité
+
+La récursivité se produit lorsqu’un scénario déclenche une nouvelle exécution de lui-même, ce qui déclenche une nouvelle exécution, et ainsi de suite dans une boucle infinie.
+
+Par exemple, un scénario est déclenché lorsqu’une tâche est créée, et ce scénario crée une tâche. La nouvelle tâche déclenche à nouveau le scénario, ce qui crée une autre tâche. Chaque fois qu’une tâche est créée, le scénario est déclenché, et chaque fois qu’il s’exécute, une tâche est créée.
+
+La récursivité peut entraîner des problèmes de performances à la fois pour l’organisation propriétaire du scénario récursif et pour d’autres organisations.
+
+Tenez compte des points suivants concernant la récursivité :
+
+* **Lorsqu’un scénario provoque une récursivité, il est désactivé par l’équipe d’ingénieurs de Fusion afin d’éviter d’autres problèmes de performances.**
+* La récursivité étant le résultat de la conception de scénario, vous devez concevoir vos scénarios de manière à ce que le scénario n’inclue pas d’actions qui déclenchent le scénario.
+

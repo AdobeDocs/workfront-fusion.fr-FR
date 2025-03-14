@@ -4,10 +4,10 @@ description: Les modules Adobe Workfront Fusion [!DNL Google Docs]  [!DNL Google
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
-ht-degree: 84%
+source-wordcount: '4045'
+ht-degree: 81%
 
 ---
 
@@ -498,8 +498,12 @@ Ce module d’action remplace le texte dans un document.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Mappez ou sélectionnez le document dans lequel vous souhaitez remplacer le texte.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace a Text]</p> </td> 
-   <td> <p>Ajoutez chaque texte à remplacer.</p> 
+   <td> <p>Pour chaque texte à remplacer, cliquez sur <b>Ajouter un élément</b> et saisissez les informations suivantes :</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Old text to be replaced]</strong> </p> <p>Saisissez le texte à remplacer.</p> </li> 
      <li> <p><strong>[!UICONTROL New text to be inserted]</strong> </p> <p>Saisissez le nouveau texte.</p> </li> 
@@ -538,8 +542,12 @@ Ce module d’action remplace une image existante. Les proportions de l’image 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
-   <td> <p>Saisissez ou mappez l’URL de la nouvelle image qui remplacera l’image existante.</p> <p>Les images sont répertoriées dans l’ordre dans lequel elles apparaissent dans le document. Par exemple : <code>Body: Image No. 1</code> est la première image du document.</p> </td> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Mappez ou sélectionnez le document dans lequel vous souhaitez remplacer une image.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Images replace]</p> </td> 
+   <td> Pour chaque image à remplacer, cliquez sur <b>Ajouter un élément</b> et saisissez l’identifiant de l’image existante, puis saisissez ou mappez l’URL de la nouvelle image qui remplacera l’image existante. <p>Les images sont répertoriées dans l’ordre dans lequel elles apparaissent dans le document. Par exemple : <code>Body: Image No. 1</code> est la première image du document.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Ce module de déclenchement renvoie les détails du document lorsqu’un nouveau
 
 ### Autre
 
-* [[!UICONTROL Effectuer un appel API]](#make-an-api-call)
 * [[!UICONTROL Rendre tous les liens d’un document cliquables]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Effectuer un appel API]](#make-an-api-call)
+
+#### [!UICONTROL Rendre tous les liens d’un document cliquables]
+
+Ce module d’action recherche tous les liens du document et les rend cliquables.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Sélectionnez cette option pour mapper le modèle de document.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Sélectionnez cette option pour sélectionner le document dans le menu déroulant.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Sélectionnez le type de lecteur sur lequel se trouve le document dans lequel vous souhaitez que les liens soient cliquables. Cette option est disponible si vous avez sélectionné [!UICONTROL By Dropdown] dans le champ précédent.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document dans lequel vous souhaitez rendre les liens cliquables.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document dans lequel vous souhaitez rendre les liens cliquables.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document dans lequel vous souhaitez que les liens puissent être cliquables, puis sélectionnez le document.</p> <p>Remarque : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>Sélectionnez le lecteur contenant le document dans lequel vous souhaitez mettre à jour les liens, puis sélectionnez un document. Cette option est disponible si vous avez sélectionné [!DNL My Drive] dans le champ [!UICONTROL Choose a Drive field].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p> Sélectionnez ou mappez le document dans lequel vous souhaitez mettre à jour les liens.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Effectuer un appel API]
 
@@ -620,6 +668,8 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Exemple :** l’appel API suivant récupère les détails du document spécifié dans Google Docs :
 
 **URL :**
@@ -636,42 +686,4 @@ Les détails du document récupéré se trouvent dans la sortie du module sous [
 
 ![Sortie d’appel API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Rendre tous les liens d’un document cliquables]
-
-Ce module d’action recherche tous les liens du document et les rend cliquables.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Sélectionnez cette option pour mapper le modèle de document.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Sélectionnez cette option pour sélectionner le document dans le menu déroulant.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Sélectionnez le type de lecteur sur lequel se trouve le document dans lequel vous souhaitez que les liens soient cliquables. Cette option est disponible si vous avez sélectionné [!UICONTROL By Dropdown] dans le champ précédent.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document sur lequel vous souhaitez que les liens soient cliquables, puis sélectionnez le document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document sur lequel vous souhaitez que les liens soient cliquables, puis sélectionnez le document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document dans lequel vous souhaitez que les liens puissent être cliquables, puis sélectionnez le document.</p> <p>Remarque : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Sélectionnez le lecteur contenant le document dans lequel vous souhaitez mettre à jour les liens, puis sélectionnez un document. Cette option est disponible si vous avez sélectionné [!DNL My Drive] dans le champ [!UICONTROL Choose a Drive field].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> Sélectionnez ou mappez le document dans lequel vous souhaitez mettre à jour les liens.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
