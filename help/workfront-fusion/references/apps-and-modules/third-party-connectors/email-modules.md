@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez conn
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: add63edf94cc430113bf2cfd0c389cca04aa92f8
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 49%
+source-wordcount: '2460'
+ht-degree: 70%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -69,24 +69,24 @@ Utilisez cette option pour créer des scénarios avec des modules de messagerie 
 
 Vous pouvez créer une connexion à votre compte [!DNL Google] directement depuis un module d’e-mail.
 
-1. Dans un module de messagerie, cliquez sur **[!UICONTROL Add]** en regard du champ [!UICONTROL Connection] .
+1. Dans n’importe quel module d’e-mail, cliquez sur **[!UICONTROL Ajouter]** en regard du champ [!UICONTROL Connexion].
 1. Sélectionnez **[!DNL Google]** comme type de connexion.
 1. Saisissez un nom pour la connexion.
-1. (Facultatif) Saisissez vos [!UICONTROL [!DNL Google] Client ID] et [!UICONTROL Client Secret].
-1. Cliquez sur **[!UICONTROL Continue]** pour créer la connexion et revenir au module .
+1. (Facultatif) Saisissez votre ID client [!UICONTROL [!DNL Google]] et votre [!UICONTROL Secret client].
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et revenir au module.
 
 ### Se connecter à d’autres services de messagerie (IMAP)
 
 La connexion IMAP vous permet d&#39;accéder à votre boîte aux lettres à distance et de lire ou manipuler des messages dans votre boîte aux lettres. La connexion IMAP est utilisée par la plupart des modules de messagerie.
 
-1. Dans un module de messagerie, cliquez sur **[!UICONTROL Add]** en regard du champ [!UICONTROL Connection] .
-1. Sélectionnez **[!UICONTROL Others (SMTP)]** comme type de connexion.
-1. Saisissez un **[!UICONTROL Name]** pour la connexion.
-1. Sélectionnez votre **[!UICONTROL Email provider]** dans la liste. Si votre fournisseur de messagerie ne figure pas dans la liste, sélectionnez Autre.
-1. Saisissez le **[!UICONTROL User name]** et votre **[!UICONTROL Password]** pour le compte e-mail.
-1. (Conditionnel) Si votre fournisseur ne figure pas dans la liste, saisissez vos **[!UICONTROL SMTP server]** et **[!UICONTROL Port]**, puis indiquez si vous souhaitez **[!UICONTROL Use a secure connection (TLS)]**. Pour obtenir ces informations, consultez la section [!UICONTROL Help] de votre boîte aux lettres. Si vous ne disposez pas de ces informations, contactez votre fournisseur de services de messagerie.
+1. Dans n’importe quel module d’e-mail, cliquez sur **[!UICONTROL Ajouter]** en regard du champ [!UICONTROL Connexion].
+1. Sélectionnez **[!UICONTROL Autres (SMTP)]** comme type de connexion.
+1. Saisissez un **[!UICONTROL nom]** pour la connexion.
+1. Sélectionnez votre **[!UICONTROL fournisseur de messagerie]** dans la liste. Si votre fournisseur de messagerie ne figure pas dans la liste, sélectionnez Autre.
+1. Saisissez le **[!UICONTROL Nom d’utilisateur]** et votre **[!UICONTROL Mot de passe]** pour le compte de messagerie.
+1. (Le cas échéant) Si votre fournisseur ne figure pas sur la liste, saisissez votre **[!UICONTROL Serveur SMTP]** et le **[!UICONTROL Port]**, puis indiquez si vous souhaitez **[!UICONTROL Utiliser une connexion sécurisée (TLS)]**. Pour trouver ces informations, consultez la section [!UICONTROL Aide] de votre messagerie. Si vous ne disposez pas de ces informations, contactez votre fournisseur de services de messagerie.
 1. Pour utiliser un certificat auto-signé, activez l’option **Rejeter les certificats non autorisés** et chargez votre certificat auto-signé. Pour obtenir des instructions, voir [Charger un certificat auto-signé](#upload-a-self-signed-certificate)
-1. Cliquez sur **[!UICONTROL Continue]** pour créer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
 
 #### Charger un certificat auto-signé
 
@@ -98,9 +98,9 @@ Pour ajouter un certificat auto-signé :
 1. Saisissez le mot de passe du fichier.
 1. Cliquez sur **Enregistrer** pour extraire le fichier et revenir à la configuration du module.
 
-## Modules [!UICONTROL Email] et leurs champs
+## Modules [!UICONTROL E-mail] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Email], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL E-mail], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Certains champs de l’e-mail peuvent déjà contenir des données si vous les avez utilisées dans un autre module dans le scénario. Consultez la documentation d’aide à propos des e-mails si vous avez besoin d’informations à leur sujet.
 
@@ -110,7 +110,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 >[!NOTE]
 >
->L’ID d’e-mail unique connu sous le nom de « [!UICONTROL Email ID (UID)] » est l’identifiant de l’e-mail. L’identifiant e-mail est spécifique à chacun des dossiers de l’e-mail.
+>L’identifiant unique d’e-mail appelé « [!UICONTROL Identifiant e-mail (UID)] » est l’identifiant de l’e-mail. L’identifiant e-mail est spécifique à chacun des dossiers de l’e-mail.
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -118,7 +118,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-#### [!UICONTROL Watch Emails]
+#### [!UICONTROL Surveiller des e-mails]
 
 Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est reçu pour traitement en fonction de critères spécifiés.
 
@@ -128,7 +128,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est re�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder] </td> 
@@ -168,16 +168,16 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est re�
 
 ### Actions
 
-* [[!UICONTROL Copy an Email]](#copy-an-email)
-* [[!UICONTROL Create a Draft]](#create-a-draft)
-* [[!UICONTROL Delete an Email]](#delete-an-email)
-* [[!UICONTROL Get Emails]](#get-emails)
-* [[!UICONTROL Mark an Email as Read]](#mark-an-email-as-read)
-* [[!UICONTROL Mark an Email as Unread]](#mark-an-email-as-unread)
-* [[!UICONTROL Move an Email]](#move-an-email)
-* [[!UICONTROL Send an Email]](#send-an-email)
+* [[!UICONTROL Copier un e-mail]](#copy-an-email)
+* [[!UICONTROL Créer un brouillon]](#create-a-draft)
+* [[!UICONTROL Supprimer un e-mail]](#delete-an-email)
+* [[!UICONTROL Obtenir des e-mails]](#get-emails)
+* [[!UICONTROL Marquer un e-mail comme lu]](#mark-an-email-as-read)
+* [[!UICONTROL Marquer un e-mail comme non lu]](#mark-an-email-as-unread)
+* [[!UICONTROL Déplacer un e-mail]](#move-an-email)
+* [[!UICONTROL Envoyer un e-mail]](#send-an-email)
 
-#### [!UICONTROL Copy an Email]
+#### [!UICONTROL Copier un e-mail]
 
 Ce module d’action copie un e-mail ou un brouillon dans un dossier sélectionné.
 
@@ -187,7 +187,7 @@ Ce module d’action copie un e-mail ou un brouillon dans un dossier sélectionn
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source Folder]</td> 
@@ -199,12 +199,12 @@ Ce module d’action copie un e-mail ou un brouillon dans un dossier sélectionn
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez copier dans le dossier de destination.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module [!UICONTROL Email] &gt; [!UICONTROL Watch Email] ou du module [!UICONTROL Search Email] .</p> </td> 
+   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez copier dans le dossier de destination.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module [!UICONTROL Email] &gt; [!UICONTROL Watch Email] ou du module [!UICONTROL Search Email].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Draft]
+#### [!UICONTROL Créer un brouillon]
 
 Ce module d’action crée et ajoute un nouveau brouillon à un dossier sélectionné.
 
@@ -214,7 +214,7 @@ Ce module d’action crée et ajoute un nouveau brouillon à un dossier sélecti
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -230,7 +230,7 @@ Ce module d’action crée et ajoute un nouveau brouillon à un dossier sélecti
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>Saisissez ou mappez le contenu de l’e-mail au format HTML à l’aide de balises HTMLS ou en texte brut.</p> </td> 
+   <td> <p>Saisissez ou mappez le contenu de l’e-mail au format HTML à l’aide des balises HTML ou en texte brut.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
@@ -289,7 +289,7 @@ Ce module d’action crée et ajoute un nouveau brouillon à un dossier sélecti
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Email]
+#### [!UICONTROL Supprimer un e-mail]
 
 Ce module d’action supprime un e-mail ou un brouillon du dossier sélectionné.
 
@@ -299,7 +299,7 @@ Ce module d’action supprime un e-mail ou un brouillon du dossier sélectionné
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -307,16 +307,16 @@ Ce module d’action supprime un e-mail ou un brouillon du dossier sélectionné
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez supprimer.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email] .</p> </td> 
+   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez supprimer.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>Activez cette option pour supprimer définitivement tous les messages marqués comme [!UICONTROL Deleted] dans la boîte aux lettres actuellement ouverte.</p> <p>Remarque : en [!DNL Gmail], ce comportement est piloté par le paramètre de la section [!UICONTROL Settings] &gt; [!UICONTROL Forwarding POP/IMAP in IMAP access] .</p> </td> 
+   <td> <p>Activez cette option pour supprimer définitivement tous les messages marqués comme [!UICONTROL Deleted] dans la boîte aux lettres actuellement ouverte.</p> <p>Remarque : dans [!DNL Gmail], ce comportement est piloté par le paramètre dans la section [!UICONTROL Settings] &gt;[!UICONTROL Forwarding POP/IMAP in IMAP access].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Emails]
+#### [!UICONTROL Obtenir des e-mails]
 
 Ce module renvoie les e-mails qui correspondent aux critères spécifiés.
 
@@ -326,7 +326,7 @@ Ce module renvoie les e-mails qui correspondent aux critères spécifiés.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder] </td> 
@@ -371,7 +371,7 @@ Ce module renvoie les e-mails qui correspondent aux critères spécifiés.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Saisissez l’identifiant d’e-mail (UID) de l’adresse e-mail dont vous souhaitez récupérer les détails.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide [!UICONTROL  Watch Email] module ou [!UICONTROL Search Email] de [!DNL Workfront Fusion].</p> </td> 
+   <td> <p> Saisissez l’identifiant d’e-mail (UID) de l’adresse e-mail dont vous souhaitez récupérer les détails.</p> <p>Vous pouvez obtenir l’UID de l’e-mail en utilisant les modules de [!DNL Workfront Fusion] [!UICONTROL Watch Email] ou [!UICONTROL Search Email].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
@@ -384,9 +384,9 @@ Ce module renvoie les e-mails qui correspondent aux critères spécifiés.
  </tbody> 
 </table>
 
-#### [!UICONTROL Mark an Email as Read]
+#### [!UICONTROL Marquer un e-mail comme lu]
 
-Ce module d’action marque un e-mail ou un brouillon dans un dossier sélectionné comme lu, en définissant l’indicateur [!UICONTROL Read] .
+Ce module d&#39;action marque un email ou un brouillon dans un dossier sélectionné comme lu, en définissant l&#39;indicateur [!UICONTROL Read].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,7 +394,7 @@ Ce module d’action marque un e-mail ou un brouillon dans un dossier sélection
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -402,12 +402,12 @@ Ce module d’action marque un e-mail ou un brouillon dans un dossier sélection
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez marquer comme lu.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email] .</p> </td> 
+   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez marquer comme lu.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Mark an Email as Unread]
+#### [!UICONTROL Marquer un e-mail comme non lu]
 
 Marque un e-mail ou un brouillon dans un dossier sélectionné comme non lu en activant l’indicateur Non lu.
 
@@ -417,7 +417,7 @@ Marque un e-mail ou un brouillon dans un dossier sélectionné comme non lu en a
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -425,12 +425,12 @@ Marque un e-mail ou un brouillon dans un dossier sélectionné comme non lu en a
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez marquer comme non lu.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email] .</p> </td> 
+   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez marquer comme non lu.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an Email]
+#### [!UICONTROL Déplacer un e-mail]
 
 Déplace un e-mail ou un brouillon sélectionné vers un dossier sélectionné.
 
@@ -440,7 +440,7 @@ Déplace un e-mail ou un brouillon sélectionné vers un dossier sélectionné.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la procédure de connexion de votre compte de messagerie à [!UICONTROL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source Folder]</td> 
@@ -452,12 +452,12 @@ Déplace un e-mail ou un brouillon sélectionné vers un dossier sélectionné.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez déplacer vers le dossier de destination.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email] .</p> </td> 
+   <td> <p>Saisissez l’UID de l’e-mail que vous souhaitez déplacer vers le dossier de destination.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module E-mail &gt; Observer l’e-mail ou du module [!UICONTROL Search Email].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Send an Email]
+#### [!UICONTROL Envoyer un e-mail]
 
 Envoie un nouvel e-mail.
 
@@ -467,11 +467,11 @@ Envoie un nouvel e-mail.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte de messagerie à [!DNL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse de messagerie à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la procédure de connexion de votre compte de messagerie à [!DNL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>Une fois l’e-mail envoyé, il est enregistré dans votre messagerie. Activez cette option si vous souhaitez enregistrer les e-mails envoyés à l'aide de [!DNL Workfront Fusion] dans le dossier <i>[!UICONTROL Sent mail]</i> ou dans un autre dossier de votre boîte aux lettres. Certains services de messagerie, tels que [!DNL Gmail], enregistrent automatiquement les messages envoyés.</td> 
+   <td>Une fois l’e-mail envoyé, il est enregistré dans votre messagerie. Activez cette option si vous souhaitez enregistrer les e-mails envoyés à l’aide de [!DNL Workfront Fusion] vers le dossier <i>[!UICONTROL Sent mail]</i> ou un autre dossier de votre messagerie. Certains services de messagerie, tels que [!DNL Gmail], enregistrent automatiquement les messages envoyés.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -483,7 +483,7 @@ Envoie un nouvel e-mail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Content Type]</p> </td> 
-   <td> <p>Sélectionnez le type de [!UICONTROL content] de l’e-mail :</p> 
+   <td> <p>Sélectionnez le type de [!UICONTROL content] de l’e-mail :</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Plaintext]</li> 
@@ -491,7 +491,7 @@ Envoie un nouvel e-mail.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content] </td> 
-   <td> <p>Saisissez ou mappez le contenu de l’e-mail au format HTML à l’aide de balises HTML, ou dans le texte brut, selon ce que vous avez choisi dans le champ [!UICONTROL Content Type].</p> </td> 
+   <td> <p>Saisissez ou mappez le contenu de l’e-mail au format HTML à l’aide de balises HTML, ou en texte brut, selon ce que vous avez choisi dans le champ [!UICONTROL Content Type].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
@@ -512,7 +512,7 @@ Envoie un nouvel e-mail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
-   <td> <p>Saisissez ou mappez l’adresse e-mail qui apparaît dans le champ [!UICONTROL Sender] de l’e-mail.</p> <p>Conseil : si vous ne savez pas si vous allez choisir d’utiliser ce champ ou le champ « De », nous vous conseillons de choisir le champ « De ».</p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code></p> </td> 
+   <td> <p>Saisissez ou mappez l’adresse e-mail qui apparaît dans le champ [!UICONTROL Sender] dans l’e-mail.</p> <p>Conseil : si vous ne savez pas si vous allez choisir d’utiliser ce champ ou le champ « De », nous vous conseillons de choisir le champ « De ».</p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reply-To]</td> 
@@ -545,14 +545,14 @@ Envoie un nouvel e-mail.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Saisissez ou mappez l’adresse e-mail (et le nom, le cas échéant) qui apparaît dans le champ [!UICONTROL From] de l’e-mail. </p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Note : normalement, [!DNL Workfront Fusion] utilise l’adresse e-mail que vous avez saisie lors de la création de la connexion en tant qu’adresse d’expédition. Si vous saisissez une autre adresse e-mail, une erreur peut se produire lors de l’envoi d’un message, car votre compte peut ne pas être autorisé à envoyer des e-mails depuis une autre adresse que la vôtre. Par exemple : <code>test@mail.com</code> ou <code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Saisissez ou mappez l’adresse e-mail (et le nom, le cas échéant) qui apparaît dans le champ [!UICONTROL From] dans l’e-mail. </p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Note : normalement, [!DNL Workfront Fusion] utilise l’adresse e-mail que vous avez saisie lors de la création de la connexion en tant qu’adresse d’expédition. Si vous saisissez une autre adresse e-mail, une erreur peut se produire lors de l’envoi d’un message, car votre compte peut ne pas être autorisé à envoyer des e-mails depuis une autre adresse que la vôtre. Par exemple : <code>test@mail.com</code> ou <code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Itérateurs
 
-#### [!UICONTROL Iterate Attachments]
+#### [!UICONTROL Itérer les pièces jointes]
 
 Itère une par une les pièces jointes reçues.
 

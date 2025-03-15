@@ -4,10 +4,10 @@ description: Lorsque vous créez ou modifiez un scénario, vous pouvez configure
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 38%
+source-wordcount: '640'
+ht-degree: 68%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,12 +58,12 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
 
 ## Répéteur
 
-Vous pouvez utiliser un module [!UICONTROL Repeater] pour répéter une tâche un certain nombre de fois. Un module [!UICONTROL Repeater] génère des lots, l’un après l’autre.
+Vous pouvez utiliser un module [!UICONTROL Répéteur] pour répéter une tâche un nombre de fois défini. Une module [!UICONTROL Répéteur] génère des lots l’un après l’autre.
 
 
 <table>
     <tr>
-        <td>[!UICONTROL Initial value]</td>
+        <td>[!UICONTROL Valeur initiale]</td>
         <td>Saisissez ou mappez la valeur que le module doit avoir dans la première itération. La valeur par défaut est 1.</td>
     </tr>
     <tr>
@@ -78,27 +78,27 @@ Vous pouvez utiliser un module [!UICONTROL Repeater] pour répéter une tâche u
 
 >[!BEGINSHADEBOX]
 
-Par exemple, vous pouvez utiliser un module [!UICONTROL Repeater] pour envoyer cinq e-mails avec les sujets « Hello 1 », « Hello 2 », etc., en connectant le module **[!UICONTROL Email]>[!UICONTROL Send me an email]** au module [!UICONTROL Repeater].
+Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer cinq e-mails avec les objets « Bonjour 1 », « Bonjour 2 », et ainsi de suite, en connectant le module **[!UICONTROL E-mail] > [!UICONTROL M’envoyer un e-mail]** au module [!UICONTROL Répéteur].
 
-1. Cliquez sur l’icône [!UICONTROL Flow Control] ![Icône Contrôle de flux](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en bas de l’écran, puis sur **[!UICONTROL Repeater]** dans le menu qui s’affiche.
-1. Cliquez sur le module [!UICONTROL Repeater], puis sur **[!UICONTROL Connect automatically]** dans la zone qui s&#39;affiche.
+1. Cliquez sur l’icône [!UICONTROL Contrôle de flux] ![Icône Contrôle de flux](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) en bas de l’écran, puis cliquez sur **[!UICONTROL Répéteur]** dans le menu qui s’affiche.
+1. Cliquez sur le module [!UICONTROL Répéteur], puis sur **[!UICONTROL Se connecter automatiquement]** dans la zone qui s&#39;affiche.
 
    Le module Répéteur s’ouvre.
 
-1. Dans le champ **[!UICONTROL Repeats]** , saisissez le nombre de répétitions (lots sortis) que le module doit produire.
+1. Dans le champ **[!UICONTROL Répétitions]**, saisissez le nombre de répétitions (lots sortis) que le module doit produire.
 
    Dans cet exemple, entrez 5.
 
    ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
-   La valeur de l&#39;article augmente à chaque répétition de cette valeur spécifiée dans le champ **[!UICONTROL Step]**, que vous pouvez afficher en sélectionnant **[!UICONTROL Show advanced settings]**. Ce nombre est 1 par défaut.
+   La valeur de l’élément augmente à chaque répétition selon la valeur spécifiée dans le champ **[!UICONTROL Étape]** que vous pouvez afficher en sélectionnant **[!UICONTROL Afficher les paramètres avancés]**. Ce nombre est 1 par défaut.
 
-1. Cliquez sur **[!UICONTROL OK]** pour fermer la boîte de **[!UICONTROL Flow Control]**.
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la zone **[!UICONTROL Contrôle du flux]**.
 
-1. Cliquez sur le module d’application ou de service connecté au module de [!UICONTROL Repeater].
+1. Cliquez sur l’application ou le module de service connecté au module [!UICONTROL Répéteur].
 1. Dans la zone qui s’affiche, saisissez les informations que vous souhaitez répéter.
 
-   Dans notre exemple d’e-mail, vous devez saisir Hello dans la zone de [!UICONTROL Subject], puis mapper les `i` du module de répétition.
+   Dans notre exemple d’e-mail, vous devez saisir Bonjour dans le champ [!UICONTROL Objet], puis mapper `i` à partir du module répéteur.
 
    ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
@@ -106,21 +106,21 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Repeater] pour envoyer c
 
 >[!NOTE]
 >
->Le nombre de répétitions n’est pas déterminé par la valeur de `i`, comme c’est le cas dans une boucle de programmation. Le module répétera le nombre de fois indiqué dans le champ [!UICONTROL Repeats]. La valeur `i` change à chaque itération du module [!DNL repeater] et peut être mappée à des modules ultérieurs. L’exemple ci-dessus mappe la valeur de `i` au message Bonjour, ce qui entraîne la création des messages « Bonjour 1 », « Bonjour 2 », et ainsi de suite.
+>Le nombre de répétitions n’est pas déterminé par la valeur de `i`, comme c’est le cas dans une boucle de programmation. Le module effectue autant de répétitions que le nombre indiqué dans le champ [!UICONTROL Répétitions]. La valeur `i` change à chaque itération du module [!DNL repeater] et peut être mappée à des modules ultérieurs. L’exemple ci-dessus mappe la valeur de `i` au message Bonjour, ce qui entraîne la création des messages « Bonjour 1 », « Bonjour 2 », et ainsi de suite.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Iterator]
+## [!UICONTROL Itérateur]
 
-Un [!UICONTROL Iterator] est un type spécial de module qui convertit un tableau en une série de lots. Chaque élément de tableau sera un lot distinct dans la sortie du module [!UICONTROL Iterator]. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
+Un [!UICONTROL Itérateur] est un type spécial de module qui convertit un tableau en une série de lots. Chaque élément du tableau constitue un lot distinct dans la sortie du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Agrégateur de tableaux
 
 Un agrégateur de tableaux est un type spécial de module qui permet de fusionner plusieurs lots en un seul lot. Pour plus d’informations, voir [Module d’agrégation](/help/workfront-fusion/references/modules/aggregator-module.md).
 
-## [!UICONTROL Router]
+## [!UICONTROL Routeur]
 
-Le module [!UICONTROL Router] vous permet de diviser votre flux en plusieurs itinéraires et de traiter différemment les données au sein de chaque itinéraire. Une fois qu&#39;un module [!UICONTROL Router] reçoit un lot, il le transmet à chaque route connectée dans l&#39;ordre dans lequel les routes ont été rattachées au module [!UICONTROL Router]. Pour plus d’informations, voir [Module Routeur dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Le module [!UICONTROL Routeur] vous permet de diviser votre flux en plusieurs itinéraires et de traiter les données de chaque itinéraire de manière différente. Dès qu’un module [!UICONTROL Routeur] reçoit un lot, il le transfère vers chaque itinéraire connecté dans l’ordre dans lequel les itinéraires ont été associés au module [!UICONTROL Routeur]. Pour plus d’informations, voir [Module Routeur dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 ## Directives
 

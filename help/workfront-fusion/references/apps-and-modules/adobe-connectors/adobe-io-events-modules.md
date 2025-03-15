@@ -4,10 +4,10 @@ description: Avec les modules Adobe I/O Events, vous pouvez démarrer un scénar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 34%
+source-wordcount: '957'
+ht-degree: 36%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -192,7 +192,7 @@ Pour créer un webhook :
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Fournisseur d’événements]
          </td>
          <td>
            Sélectionnez le produit ou le compte à partir duquel vous souhaitez créer des événements.
@@ -243,7 +243,7 @@ Ce module de recherche récupère tous les événements d’un enregistrement da
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL Renvoyer les événements qui se produisent après]
          </td>
          <td>
          </td>
@@ -333,7 +333,7 @@ Ce module de recherche obtient les identifiants Adobe I/O Events pour le fournis
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Fournisseur d’événements]
          </td>
          <td>
            Sélectionnez le fournisseur pour lequel vous souhaitez récupérer l’identifiant.

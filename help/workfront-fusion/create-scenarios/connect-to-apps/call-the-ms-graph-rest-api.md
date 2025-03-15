@@ -4,7 +4,7 @@ description: Appeler l’API REST MS Graph via le HTTP Adobe Workfront Fusion et
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 21%
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 

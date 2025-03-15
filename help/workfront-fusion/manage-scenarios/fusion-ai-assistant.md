@@ -4,7 +4,7 @@ description: Assistant d’IA dans Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 19%
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -68,7 +68,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 ## Conditions préalables
 
-L’Adobe doit avoir un accord IA généralisée d’Adobe signé dans son dossier.
+Adobe doit disposer d’un contrat Adobe Gen AI signé dans ce fichier.
 
 Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
 

@@ -4,10 +4,10 @@ description: Dans un scénario d’Adobe Workfront Fusion, vous pouvez automat
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 86%
+source-wordcount: '1339'
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -70,7 +70,7 @@ Pour utiliser [!DNL Miscrosoft Word Templates] avec [!DNL Adobe Workfront Fusion
 
 ## Connexion du service [!DNL Office] à [!DNL Workfront Fusion].
 
-Pour savoir comment connecter votre compte [!DNL Office] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Office] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Un modèle [!DNL Microsoft Word] est un document [!DNL Microsoft Word] normal (f
 
 ### Balise de valeur simple {#simple-value-tag}
 
-Une balise de valeur simple est simplement remplacée par une valeur correspondante. Le nom de la balise correspond à la valeur du champ [!UICONTROL Key], qui est placée entre des accolades doubles ; par exemple, `{{name}}`.
+Une balise de valeur simple est simplement remplacée par une valeur correspondante. Le nom de la balise correspond à la valeur du champ [!UICONTROL Key], qui est placée entre des accolades doubles, par exemple `{{name}}`.
 
 **Exemple :** pour créer un document qui indique « Bonjour, Petr ! », vous pouvez utiliser un module [!DNL Microsoft Word Template] pour créer le modèle suivant :
 
@@ -164,7 +164,7 @@ Ces modules ne nécessitent pas de connexion.
 * [Remplir un document](#fill-out-a-document)
 * [Remplir un document avec un lot de données](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL Remplir un document] {#fill-out-a-document}
 
 Ce module du transformateur permet de remplir un document avec les données indiquées. Il peut être utilisé avec des balises de valeurs simples, des balises conditionnelles ou des balises de boucle.
 
@@ -216,7 +216,7 @@ Ce module du transformateur permet de remplir un document avec les données indi
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL Remplir un document avec un lot de données] {#fill-a-document-with-a-batch-of-data}
 
 Ce module d’agrégation s’avère utile si vos entrées de données sont des lots distincts. Grâce à ce module, vous pouvez facilement configurer la structure requise pour le champ Valeur et mapper les éléments à chaque élément de valeur. Contrairement au module Remplir un document, le champ Valeurs du module Remplir un document avec un lot de données n’autorise qu’une seule entrée contenant des variables.
 

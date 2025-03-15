@@ -4,10 +4,10 @@ description: Parfois, il est utile de réexécuter un module en échec s’il ex
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 9%
+source-wordcount: '756'
+ht-degree: 18%
 
 ---
 
@@ -38,7 +38,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -60,7 +60,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 +++
 
-## Solution de contournement de la directive de gestion des erreurs [!UICONTROL Retry]
+## Solutions de contournement à la directive de gestion des erreurs de [!UICONTROL reprise]
 
 Workfront Fusion ne propose actuellement pas la directive de gestion des erreurs `retry`. Utilisez l’une des solutions suivantes pour imiter la fonctionnalité de reprise.
 
@@ -80,9 +80,9 @@ Pour obtenir des instructions sur la résolution des exécutions incomplètes, v
 #### Inconvénients
 
 * L’intervalle de reprise minimal est d’une minute.
-* Si le module traite plusieurs lots et que le traitement d’un lot échoue, l’exécution partielle (uniquement le lot qui a provoqué l’erreur) est déplacée vers le dossier exécutions incomplètes et des reprises sont planifiées en fonction des paramètres de la directive [!UICONTROL Break]. Cependant, l’exécution en cours se poursuit et le module continue de traiter les lots suivants.
+* Si le module traite plusieurs lots et que le traitement d’un lot échoue, l’exécution partielle (uniquement le lot à l’origine de l’erreur) est déplacée vers le dossier des exécutions incomplètes et planifiée pour les reprises, conformément aux paramètres de la directive [!UICONTROL Interrompre]. Cependant, l’exécution en cours se poursuit et le module continue de traiter les lots suivants.
 
-  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL Sequential processing] » dans le [!UICONTROL Scenario settings].
+  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL  Traitement séquentiel ] » dans les [!UICONTROL  paramètres du scénario].
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -92,37 +92,37 @@ La solution de contournement du module Répéteur est plus complexe, mais plus p
 
 #### Configurer l’itinéraire du gestionnaire d’erreurs
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter la solution de contournement.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône **Contrôle de flux** ![Contrôle de flux](assets/flow-control-icon.png) et sélectionnez **Répéteur**.
-1. Dans le module Répéteur, définissez le champ **[!UICONTROL Repeats]** sur le nombre maximal de fois où vous souhaitez que le scénario réessaye.
-1. Connectez le module potentiellement défaillant après le module **[!UICONTROL Repeater]**.
+1. Dans le module Répéteur, définissez le champ **[!UICONTROL Répétitions]** sur le nombre maximal de fois où vous souhaitez que le scénario réessaye.
+1. Connectez le module potentiellement défaillant après le module **[!UICONTROL Répéteur]**.
 1. Joignez un itinéraire de gestionnaire d’erreurs au module potentiellement en échec.
 
    Pour obtenir des instructions, voir [Ajouter la gestion des erreurs](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
-1. Ajoutez le module **[!UICONTROL Tools]>[!UICONTROL Sleep]** à l’itinéraire du gestionnaire d’erreurs et définissez son champ **[!UICONTROL Delay]** sur le nombre de secondes entre les tentatives de reprise.
+1. Ajoutez le module **[!UICONTROL Outils] > [!UICONTROL Veille]** à l’itinéraire du gestionnaire d’erreurs et définissez son champ **[!UICONTROL Délai]** sur le nombre de secondes entre les nouvelles tentatives.
 
-1. Ajoutez la directive **[!UICONTROL Ignore]** après le module **[!UICONTROL Tools]>[!UICONTROL Sleep]** .
+1. Ajoutez la directive **[!UICONTROL Ignorer]** après le module **[!UICONTROL Outils] > [!UICONTROL Veille]**.
 1. Passez à [Configurer l’itinéraire par défaut](#configure-the-default-route).
 
 #### Configurer l’itinéraire par défaut
 
-1. Ajoutez le module **[!UICONTROL Tools]>[!UICONTROL Set variable]** dans un itinéraire distinct (gestionnaire de non-erreur) après le module potentiellement défaillant et configurez-le pour stocker le résultat du module dans une variable nommée, telle que `Result`.
+1. Ajoutez le module **[!UICONTROL Outils] > [!UICONTROL Définir la variable]** dans un itinéraire distinct (gestionnaire de non-erreur) après le module potentiellement en échec et configurez-le pour stocker le résultat du module dans une variable nommée, telle que `Result`.
 
-1. Ajoutez le module **[!UICONTROL Array aggregator]** après le **[!UICONTROL Tools]>[!UICONTROL Set variable]**, puis sélectionnez le module **[!DNL Repeater]** dans le champ Module Source .
+1. Ajoutez le module **[!UICONTROL Agrégateur de tableaux]** après le module **[!UICONTROL Outils] > [!UICONTROL Définir la variable]** et sélectionnez le module **[!DNL Repeater]** dans son champ Module Source .
 
-1. Ajoutez le module **[!UICONTROL Tools]>[!UICONTROL Get variable]** après le module **[!UICONTROL Array aggregator]** et mappez-lui la valeur de la variable `Result` .
+1. Ajoutez le module **[!UICONTROL Tools] > [!UICONTROL Get variable]** après le module **[!UICONTROL Array aggregator]** et mappez-lui la valeur de la variable `Result`.
 
-1. Insérez le module **[!UICONTROL Tools]>[!UICONTROL Get variable]** entre le module **[!UICONTROL Repeater]** et le module potentiellement défaillant, et mappez-y la valeur de la variable `Result`.
+1. Insérez le module **[!UICONTROL Outils] > [!UICONTROL Obtenir la variable]** entre le module **[!UICONTROL Répéteur]** et le module potentiellement défaillant, puis mappez-lui la valeur de la variable `Result`.
 
-1. Insérez un filtre entre ce module **[!UICONTROL Tools]>[!UICONTROL Get variable]** et le module potentiellement défaillant pour continuer uniquement si la variable `Result` n’existe pas.
+1. Insérez un filtre entre le module **[!UICONTROL Outils] > [!UICONTROL Obtenir une variable]** et le module potentiellement défaillant pour ne continuer que si la variable `Result` n’existe pas.
 
 >[!BEGINSHADEBOX]
 
 **Exemple :**
 
-Dans cet exemple de scénario, le module [!UICONTROL HTTP] > [!UICONTROL Make a request] représente le module potentiellement en échec :
+Dans cet exemple de scénario, le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête] représente le module potentiellement en échec :
 
 ![HTTP Effectuer une requête](assets/http-make-request.png)
 

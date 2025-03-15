@@ -4,18 +4,18 @@ description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 63%
+source-wordcount: '2286'
+ht-degree: 86%
 
 ---
 
-# [!UICONTROL Tools]
+# [!UICONTROL Outils]
 
 La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles qui peuvent améliorer votre scénario.
 
-[!UICONTROL Tools] modules sont disponibles à partir de la liste des applications ou à partir de l’icône [!UICONTROL Tools] ![icône Outils](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) en bas de l’écran.
+[!UICONTROL Outils] les modules sont disponibles à partir de la liste des applications ou à partir de l’icône [!UICONTROL Outils] ![Icône Outils](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) située en bas de l’écran.
 
 ## Conditions d’accès
 
@@ -38,7 +38,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,7 +58,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 +++
 
-## [!UICONTROL Tools] et leurs champs
+## [!UICONTROL Outils] et leurs champs
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -67,11 +67,11 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ### Déclencheurs
 
-#### [!UICONTROL Basic trigger]
+#### [!UICONTROL Déclencheur de base]
 
 Ce module vous permet de créer un déclencheur personnalisé et de définir ses lots d’entrée.
 
-Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre liste planifiée pour être envoyée à une adresse e-mail spécifiée (comme les modules [!UICONTROL Email] >[!UICONTROL Send an Email] ou [!DNL Gmail] >[!UICONTROL Send an Email] ), ou comme un simple rappel à déclencher quand vous le souhaitez.
+Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre liste dont l’envoi est programmé vers une adresse e-mail spécifiée (comme les modules du type [!UICONTROL E-mail] > [!UICONTROL Envoyer un e-mail], ou [!DNL Gmail] > [!UICONTROL Envoyer un e-mail]), ou en tant que simple rappel à déclencher quand vous le souhaitez.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -86,18 +86,18 @@ Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre li
 
 ### Actions
 
-* [[!UICONTROL Get Multiple Variables]](#get-multiple-variables)
-* [[!UICONTROL Get Variable]](#get-variable)
-* [[!UICONTROL Increment function]](#increment-function)
-* [[!UICONTROL Set Multiple Variables]](#set-multiple-variables)
-* [[!UICONTROL Set Variable]](#set-variable)
-* [[!UICONTROL Sleep]](#sleep)
+* [[!UICONTROL Obtenir plusieurs variables]](#get-multiple-variables)
+* [[!UICONTROL Obtenir une variable]](#get-variable)
+* [[!UICONTROL Fonction « Incrémenter »]](#increment-function)
+* [[!UICONTROL Définir plusieurs variables]](#set-multiple-variables)
+* [[!UICONTROL Définir une variable]](#set-variable)
+* [[!UICONTROL Veille]](#sleep)
 
-#### [!UICONTROL Get Multiple Variables]
+#### [!UICONTROL Obtenir plusieurs variables]
 
-Ce module récupère les valeurs créées précédemment par le module [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
+Ce module récupère les valeurs qui ont été créées précédemment par le module [!UICONTROL Définir une variable] ou [!UICONTROL Définir plusieurs variables].
 
-Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Multiple Variables]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Ce module peut lire des variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Obtenir plusieurs variables]. La seule condition est que le module [!UICONTROL Outils] > [!UICONTROL Définir une variable] ou [!UICONTROL Outils] > [!UICONTROL Définir plusieurs variables] soit exécuté avant le module [!UICONTROL Outils] > [!UICONTROL Obtenir plusieurs variables]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
@@ -108,19 +108,19 @@ Ce module peut lire les variables qui ont été définies n’importe où dans l
 
 >[!BEGINSHADEBOX]
 
-**Exemples :** les utilisations possibles des modules [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] sont les suivantes :
+**Exemples :** vous trouverez ci-dessous des utilisations possibles des modules [!UICONTROL Définir]/[!UICONTROL Obtenir une/plusieurs variable(s)] :
 
 * Pour stocker une valeur calculée en vue d’une utilisation ultérieure, même sur un autre itinéraire. Cela s’avère utile lorsque la valeur est utilisée dans plusieurs modules et que la formule de calcul de la valeur est trop complexe.
-* Pour déboguer une formule, procédez comme suit : Si une formule utilisée dans un module ne semble pas fournir un résultat correct, copiez-la et collez-la dans un module [!UICONTROL Set Variable] que vous insérez avant le module approprié. Déconnectez le ou les modules après le module [!UICONTROL Set Variable] et exécutez le scénario. Vérifiez la sortie du module [!UICONTROL Set Variable], ajustez ou simplifiez la formule, exécutez à nouveau le scénario et continuez à le faire jusqu’à ce que le problème soit résolu.
+* Pour déboguer une formule, procédez comme suit : Si une formule utilisée dans un module ne semble pas donner un résultat correct, copiez-la et collez-la dans un module [!UICONTROL Définir la variable] que vous insérez avant le module concerné. Déconnectez le ou les modules après le module [!UICONTROL Définir la variable] et exécutez le scénario. Vérifiez la sortie du module [!UICONTROL Définir la variable], ajustez ou simplifiez la formule, exécutez à nouveau le scénario, puis continuez jusqu’à ce que le problème soit résolu.
 
 >[!ENDSHADEBOX]
 
 
-#### [!UICONTROL Get Variable]
+#### [!UICONTROL Obtenir une variable]
 
-Ce module récupère une valeur qui a été précédemment créée par le module [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
+Ce module récupère une valeur qui a été créée précédemment par le module [!UICONTROL Définir une variable] ou [!UICONTROL Définir plusieurs variables].
 
-Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie dans un itinéraire différent de celui où se trouve le module [!UICONTROL Get Variable]. La seule exigence est que le module [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] soit exécuté avant le module [!UICONTROL Tools] > [!UICONTROL Get Variable]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Ce module peut lire les variables qui ont été définies n’importe où dans le scénario, même si la variable a été définie sur un itinéraire différent de celui où se trouve le module [!UICONTROL Obtenir une variable]. La seule condition requise est que le module [!UICONTROL Outils] > [!UICONTROL Définir une variable] ou [!UICONTROL Outils] > [!UICONTROL Définir plusieurs variables] soit exécuté avant l’exécution du module [!UICONTROL Outils] > [!UICONTROL Obtenir une variable]. Pour plus d’informations sur l’ordre dans lequel les modules sont exécutés, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -133,7 +133,7 @@ Ce module peut lire les variables qui ont été définies n’importe où dans l
  </tbody> 
 </table>
 
-#### [!UICONTROL Increment function]
+#### [!UICONTROL Fonction Incrémenter]
 
 Ce module renvoie une valeur incrémentée de 1 après chaque cycle ou chaque exécution de scénario.
 
@@ -165,12 +165,12 @@ Le scénario suivant envoie un e-mail à la première personne destinataire apr�
 
 Pour créer ce scénario, procédez comme suit :
 
-1. Définissez le champ **[!UICONTROL Reset a value]** du module sur Jamais.
+1. Définissez le champ **[!UICONTROL Réinitialiser une valeur]** du module sur Jamais.
 1. Définissez l’itinéraire des valeurs impaires. Définissez le filtre pour cet itinéraire à l’aide de la fonction mathématique modulaire qui équivaut à `1` :
 
    ![Nombres impairs](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
-**Remarque** : n&#39;oubliez pas de remplacer l&#39;opérateur [!UICONTROL Equal to] par défaut [!UICONTROL Text] opérateur par l&#39;opérateur [!UICONTROL Numeric].
+**Note** : n’oubliez pas de modifier l’opérateur [!UICONTROL Égal à] en remplaçant l’opérateur par défaut [!UICONTROL Texte] par l’opérateur [!UICONTROL Numérique].
 
 1. Définissez l’itinéraire des valeurs paires à l’aide de la fonction mathématique modulaire qui équivaut à `0` :
 
@@ -178,9 +178,9 @@ La fonction Incrémenter en ajoute une chaque fois que le scénario s’exécute
 
 >[!ENDSHADEBOX]
 
-#### [!UICONTROL Set Multiple Variables]
+#### [!UICONTROL Définir plusieurs variables]
 
-Ce module crée des variables qui peuvent être mappées par d’autres modules de l’itinéraire. La variable peut également être mappée aux modules [!UICONTROL Get Variable] ou [!UICONTROL Get Multiple Variables] pour n’importe quel itinéraire du scénario.
+Ce module crée des variables qui peuvent être mappées par d’autres modules de l’itinéraire. La variable peut également être mappée aux modules [!UICONTROL Obtenir une variable] ou [!UICONTROL Obtenir plusieurs variables] pour n’importe quel itinéraire dans le scénario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -194,16 +194,16 @@ Ce module crée des variables qui peuvent être mappées par d’autres modules 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Sélectionnez la durée de validité des variables (conservez la même valeur).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable est valide pour un cycle. Cela s’avère utile lorsque plusieurs webhooks dans une exécution de scénario sont reçus, car d’autres webhooks créent d’autres cycles. </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: la variable est valide pour l’exécution d’un scénario. Une exécution peut contenir un ou plusieurs cycles.</li> 
+     <li><strong>[!UICONTROL One cycle]</strong> : la variable est valide pour un cycle. Cela s’avère utile lorsque plusieurs webhooks dans une exécution de scénario sont reçus, car d’autres webhooks créent d’autres cycles. </li> 
+     <li><strong>[!UICONTROL One execution]</strong> : la variable est valide pour une exécution de scénario. Une exécution peut contenir un ou plusieurs cycles.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Set Variable]
+#### [!UICONTROL Définir une variable]
 
-Ce module crée une variable qui peut être mappée par d’autres modules de l’itinéraire. La variable peut également être mappée aux modules [!UICONTROL Get Variable] ou [!UICONTROL Get Multiple Variables] pour n’importe quel itinéraire du scénario.
+Ce module crée une variable qui peut être mappée par d’autres modules de l’itinéraire. La variable peut également être mappée aux modules [!UICONTROL Obtenir une variable] ou [!UICONTROL Obtenir plusieurs variables] pour n’importe quel itinéraire dans le scénario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -217,8 +217,8 @@ Ce module crée une variable qui peut être mappée par d’autres modules de l�
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Sélectionnez la durée de validité des variables (conservez la même valeur).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: la variable est valide pour un cycle. Utile lorsque plusieurs webhooks dans un scénario d’exécution sont reçus (plus de webhooks = plus de cycles). </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: la variable est valide pour l’exécution d’un scénario. Une exécution peut contenir un ou plusieurs cycles.</li> 
+     <li><strong>[!UICONTROL One cycle]</strong> : la variable est valide pour un cycle. Utile lorsque plusieurs webhooks dans un scénario d’exécution sont reçus (plus de webhooks = plus de cycles). </li> 
+     <li><strong>[!UICONTROL One execution]</strong> : la variable est valide pour une exécution de scénario. Une exécution peut contenir un ou plusieurs cycles.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -228,7 +228,7 @@ Ce module crée une variable qui peut être mappée par d’autres modules de l�
  </tbody> 
 </table>
 
-#### [!UICONTROL Sleep]
+#### [!UICONTROL Veille]
 
 Ce module vous permet de retarder le flux du scénario jusqu’à 300 secondes (5 minutes).
 
@@ -256,15 +256,15 @@ Cette fonction peut s’avérer utile, par exemple, si vous souhaitez réduire l
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->Pour plus d’informations sur des modules d’entrepôt de données spécifiques, voir [[!UICONTROL Data store] des modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
+>Pour plus d’informations sur des modules d’entrepôt de données spécifiques, voir [[!UICONTROL modules d’entrepôt de données]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 ### Agrégateurs
 
-* [[!UICONTROL Numeric aggregator]](#numeric-aggregator)
-* [[!UICONTROL Table aggregator]](#table-aggregator)
-* [[!UICONTROL Text aggregator]](#text-aggregator)
+* [[!UICONTROL Agrégateur numérique]](#numeric-aggregator)
+* [[!UICONTROL Agrégateur de tableau]](#table-aggregator)
+* [[!UICONTROL Agrégateur de texte]](#text-aggregator)
 
-#### [!UICONTROL Numeric aggregator]
+#### [!UICONTROL Agrégateur numérique]
 
 Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’une des fonctions sélectionnées (SUM, AVG, COUNT, MAX, MIN) et de renvoyer le résultat dans un seul lot.
 
@@ -295,7 +295,7 @@ Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’
  </tbody> 
 </table>
 
-#### [!UICONTROL Table aggregator]
+#### [!UICONTROL Agrégateur de tableau]
 
 Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un seul lot à l’aide d’un séparateur de colonne et de ligne spécifié (ce qui vous permet de créer un tableau).
 
@@ -313,11 +313,11 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les colonnes de valeurs de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère que vous souhaitez utiliser pour séparer les valeurs dans le champ séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les colonnes de valeurs de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère que vous souhaitez utiliser pour séparer les valeurs dans le champ séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -330,7 +330,7 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
  </tbody> 
 </table>
 
-#### [!UICONTROL Text aggregator]
+#### [!UICONTROL Agrégateur de texte]
 
 Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un seul lot.
 
@@ -344,7 +344,7 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère que vous souhaitez utiliser pour séparer les valeurs dans le champ séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -369,11 +369,11 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
 
 ### Transformateurs
 
-* [[!UICONTROL Compose a string]](#compose-a-string)
-* [[!UICONTROL Convert the encoding of the text]](#convert-the-encoding-of-the-text)
-* [[!UICONTROL Switch]](#switch)
+* [[!UICONTROL Composer une chaîne de caractères]](#compose-a-string)
+* [[!UICONTROL Convertir l’encodage du texte]](#convert-the-encoding-of-the-text)
+* [[!UICONTROL Changer]](#switch)
 
-#### [!UICONTROL Compose a string]
+#### [!UICONTROL Composer une chaîne de caractères]
 
 Convertit n’importe quelle valeur en type de données chaîne de caractères (texte). Cela facilite le mappage lors du mappage, par exemple, de données binaires.
 
@@ -388,7 +388,7 @@ Convertit n’importe quelle valeur en type de données chaîne de caractères (
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert the encoding of the text]
+#### [!UICONTROL Convertir l’encodage du texte]
 
 Convertit le texte d’entrée saisi (ou les données binaires) en codage sélectionné.
 
@@ -411,7 +411,7 @@ Convertit le texte d’entrée saisi (ou les données binaires) en codage sélec
  </tbody> 
 </table>
 
-#### [!UICONTROL Switch]
+#### [!UICONTROL Changer]
 
 Vérifie la valeur d’entrée pour une correspondance avec la liste de valeurs fournie. Renvoie une sortie basée sur le résultat.
 
@@ -438,10 +438,10 @@ Vérifie la valeur d’entrée pour une correspondance avec la liste de valeurs 
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> Pour chaque cas à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez le modèle et la sortie de l’élément. <p>Si l’entrée contient une valeur saisie dans le champ [!UICONTROL Pattern] , la valeur saisie dans le champ [!UICONTROL Output] est renvoyée.</p> <p>Si l’entrée ne correspond à aucune des valeurs que vous avez définies dans un champ de [!UICONTROL Pattern], l’un des événements suivants se produit :</p> 
+   <td> Pour chaque cas à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez le modèle et la sortie de l’élément. <p>Si l’entrée contient une valeur saisie dans le champ [!UICONTROL Pattern], la valeur saisie dans le champ [!UICONTROL Output] est renvoyée.</p> <p>Si l’entrée ne correspond à aucune des valeurs que vous avez définies dans un champ [!UICONTROL Pattern], l’un des scénarios suivants se produit :</p> 
     <ul> 
-     <li>La valeur du champ [!UICONTROL Else] est renvoyée</li> 
-     <li>Si le champ [!UICONTROL Else] ne contient aucune valeur, aucune sortie n’est renvoyée.</li> 
+     <li>La valeur du champ [!UICONTROL Else] est renvoyée.</li> 
+     <li>Si aucune valeur n’est renseignée dans le champ [!UICONTROL Else], aucune sortie n’est renvoyée.</li> 
     </ul> </td> 
   </tr> 
   <tr> 

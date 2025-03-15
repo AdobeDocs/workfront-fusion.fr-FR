@@ -4,16 +4,16 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '4370'
-ht-degree: 58%
+source-wordcount: '5217'
+ht-degree: 74%
 
 ---
 
 # Modules [!UICONTROL Trello]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!UICONTROL Trello] et le connecter à plusieurs applications et services tiers.
+Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!UICONTROL Trello], et le connecter à de multiples applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -91,11 +91,11 @@ Le connecteur Trello utilise les éléments suivants :
 
 ## Connecter [!UICONTROL Trello] à [!DNL Workfront Fusion]
 
-Pour suivre la procédure de connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez la section [Créer une connexion à  [!DNL Adobe Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+Pour savoir comment connecter votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir la section [Créer une connexion à  [!DNL Adobe Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
-## Modules et champs [!UICONTROL Trello]
+## Modules [!UICONTROL Trello] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Trello], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!UICONTROL Trello] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL Trello], [!DNL Workfront Fusion] affiche les champs énumérés ci-dessous. En plus de ces champs, d’autres champs [!UICONTROL Trello] peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -111,7 +111,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Panneaux
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
++++ **[!UICONTROL Archiver ou désarchiver un panorama]**
 
 Ce module d’action ferme (archive) ou rouvre (désarchive) un panorama que vous spécifiez.
 
@@ -121,7 +121,7 @@ Ce module d’action ferme (archive) ou rouvre (désarchive) un panorama que vou
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board ID]</td> 
@@ -136,7 +136,7 @@ Ce module d’action ferme (archive) ou rouvre (désarchive) un panorama que vou
 
 +++
 
-+++ **[!UICONTROL Assign a Member to a Board]**
++++ **[!UICONTROL Affecter une personne membre à un panorama]**
 
 Ce module d’action affecte une personne membre à un panorama que vous spécifiez.
 
@@ -146,7 +146,7 @@ Ce module d’action affecte une personne membre à un panorama que vous spécif
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board ID]</td> 
@@ -160,9 +160,9 @@ Ce module d’action affecte une personne membre à un panorama que vous spécif
    <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
    <td> <p>Sélectionnez le type de membre que vous souhaitez affecter au nouveau membre.</p> 
     <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: un administrateur de panorama peut effectuer n’importe quelle action sur le panorama.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: un membre normal est simplement un membre du conseil d’administration.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: un observateur est un membre disposant d’un accès en lecture seule au panorama. <br>Les observateurs ne sont disponibles que pour les équipes disposant de [!UICONTROL Trello Business Class].</li> 
+     <li><strong>[!UICONTROL Admin]</strong> : un administrateur ou une administratrice de panorama peut effectuer n’importe quelle action sur le panorama.</li> 
+     <li><strong>[!UICONTROL Normal]</strong> : une personne membre normale est simplement membre du panorama.</li> 
+     <li><strong>[!UICONTROL Observer]</strong> : une personne observatrive est une personne membre ayant un accès en lecture seule au panorama. <br>Les observateurs et observatrices ne sont disponibles que pour les équipes avec [!UICONTROL Trello Business Class].</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -174,7 +174,7 @@ Ce module d’action affecte une personne membre à un panorama que vous spécif
 
 +++
 
-+++ **[!UICONTROL Create a Board]**
++++ **[!UICONTROL Créer un panorama]**
 
 Ce module d’action crée un nouveau panorama avec les paramètres sélectionnés.
 
@@ -184,7 +184,7 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -200,23 +200,23 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple, si votre forum est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaires comme [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
+   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple, si votre forum est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaires sur [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
     <ul> 
-     <li><strong>[!UICONTROL Private]</strong>: 
+     <li><strong>[!UICONTROL Private]</strong> : 
       Membres, membres et observateurs</li> 
-     <li><strong>[!UICONTROL For organization]</strong>: 
+     <li><strong>[!UICONTROL Pour l’organisation]</strong> : 
       Membres, membres et observateurs, membres de l'organisation</li> 
-     <li><strong>[!UICONTROL Public]</strong>: 
+     <li><strong>[!UICONTROL Public]</strong> : 
       Membres, Membres et observateurs, Membres de l'organisation, Tous</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Voir le champ [!UICONTROL Permission level] pour connaître les limites de vote sur les niveaux d’autorisation.</p> </td> 
+   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de vote en fonction des niveaux d’autorisation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Voir le champ [!UICONTROL Permission level] pour commenter les limites sur les niveaux d’autorisation.</p> </td> 
+   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de commentaires en fonction des niveaux d’autorisation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Invitations]</p> </td> 
@@ -232,7 +232,7 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Default lists]</p> </td> 
-   <td> <p>Choisissez s’il faut ajouter l’ensemble de listes par défaut au panorama ([!UICONTROL To Do], [!UICONTROL Doing], [!UICONTROL Done]).</p> </td> 
+   <td> <p>Choisissez d’ajouter ou non l’ensemble des listes par défaut au panorama ([!UICONTROL To Do], [!UICONTROL Doing], [!UICONTROL Done]).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Board source ID]</p> </td> 
@@ -240,22 +240,22 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card Covers]</p> </td> 
-   <td> <p>Sélectionnez <strong>[!UICONTROL Yes]</strong> si vous souhaitez activer les couvertures de carte pour le panorama.</p> </td> 
+   <td> <p>Sélectionnez <strong>[!UICONTROL Yes]</strong> si vous souhaitez activer les couvertures de cartes du panorama.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Background]</p> </td> 
-   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Remarque : les arrière-plans personnalisés ne sont disponibles que pour les abonnés [!UICONTROL Trello Gold and Business Class].</p> </td> 
+   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Note : les arrière-plans personnalisés sont disponibles uniquement pour les personnes abonnées à [!UICONTROL Trello Gold and Business Class].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> Si vous avez choisi d’utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background] , saisissez ou mappez l’identifiant de l’arrière-plan que vous souhaitez utiliser.</p> </td> 
+   <td> <p> Si vous avez choisi d'utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background], saisissez ou mappez l'identifiant de l'arrière-plan que vous souhaitez utiliser.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Choisissez entre deux modes d’expiration des cartes. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Pirate mode]</strong>: les cartes se déchirent, jaunissent et se fissurent comme une vieille carte de pirate en vieillissant.</li> 
-     <li><strong>[!UICONTROL Regular mode ]</strong>: les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
+     <li><strong>[!UICONTROL Mode Pirate]</strong> : Les cartes se déchirent, jaunissent et se fissurent comme une vieille carte pirate en vieillissant.</li> 
+     <li><strong>[!UICONTROL Mode normal ]</strong> : Les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -263,7 +263,7 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
 
 +++
 
-+++ **[!UICONTROL Edit a Board]**
++++ **[!UICONTROL Modifier un panorama]**
 
 Ce module d’action permet de modifier les paramètres d’un panorama existant.
 
@@ -275,11 +275,11 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>Saisissez ou mappez l’ID de [!UICONTROL Trello] unique du panorama que le module doit créer. Vous pouvez récupérer l’ID du panorama à l’aide d’un autre module, tel que le module Surveiller les panoramas.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+   <td> <p>Saisissez ou mappez l’ID unique [!UICONTROL Trello] du panorama que vous voulez que le module crée. Vous pouvez récupérer l’ID du panorama à l’aide d’un autre module, tel que le module Surveiller les panoramas.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New name]</td> 
@@ -291,7 +291,7 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Saisissez ou mappez l’ID de [!UICONTROL Trello] unique du panorama que le module doit modifier.  </p> </td> 
+   <td> <p>Saisissez ou mappez l’identifiant [!UICONTROL Trello] unique du panorama que vous souhaitez que le module modifie.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
@@ -299,23 +299,23 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple : si votre forum est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaires comme [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
+   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple : si votre panorama est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaire sur [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
     <ul> 
-     <li><strong>[!UICONTROL Private]</strong>: 
+     <li><strong>[!UICONTROL Private]</strong> : 
       Membres, membres et observateurs</li> 
-     <li><strong>[!UICONTROL For organization]</strong>: 
+     <li><strong>[!UICONTROL Pour l’organisation]</strong> : 
       Membres, membres et observateurs, membres de l'organisation</li> 
-     <li><strong>[!UICONTROL Public]</strong>: 
+     <li><strong>[!UICONTROL Public]</strong> : 
       Membres, Membres et observateurs, Membres de l'organisation, Tous</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Voir le champ [!UICONTROL Permission level] pour connaître les limites de vote sur les niveaux d’autorisation.</p> </td> 
+   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de vote en fonction des niveaux d’autorisation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Voir le champ [!UICONTROL Permission level] pour commenter les limites sur les niveaux d’autorisation.</p> </td> 
+   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de commentaires en fonction des niveaux d’autorisation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Invitations] </td> 
@@ -331,18 +331,18 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background] </td> 
-   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Remarque : les arrière-plans personnalisés ne sont disponibles que pour les abonnés [!UICONTROL Trello Gold and Business Class].</p> </td> 
+   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Note : les arrière-plans personnalisés sont disponibles uniquement pour les personnes abonnées à [!UICONTROL Trello Gold and Business Class].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> Si vous avez choisi d’utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background] , saisissez ou mappez l’identifiant de l’arrière-plan que vous souhaitez utiliser.</p> </td> 
+   <td> <p> Si vous avez choisi d'utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background], saisissez ou mappez l'identifiant de l'arrière-plan que vous souhaitez utiliser.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Choisissez entre deux modes d’expiration des cartes. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Pirate mode]</strong>: les cartes se déchirent, jaunissent et se fissurent comme une vieille carte de pirate en vieillissant.</li> 
-     <li><strong>[!UICONTROL Regular mode]</strong>: les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
+     <li><strong>[!UICONTROL Mode Pirate]</strong> : Les cartes se déchirent, jaunissent et se fissurent comme une vieille carte pirate en vieillissant.</li> 
+     <li><strong>[!UICONTROL Mode normal]</strong> : les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -350,7 +350,7 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
    <td> <p> Indiquez si le flux de calendrier est activé ou pas.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL <Color> label name]</td> 
+   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
    <td> <p> Affectez un nom au libellé de couleur souhaité.</p> </td> 
   </tr> 
   <tr> 
@@ -363,7 +363,7 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
 
 +++
 
-+++ **[!UICONTROL Get a Board]**
++++ **[!UICONTROL Obtenir un panorama]**
 
 Ce module d’action permet de récupérer les détails d’un panorama.
 
@@ -373,7 +373,7 @@ Ce module d’action permet de récupérer les détails d’un panorama.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
@@ -394,7 +394,7 @@ Ce module de recherche permet d’obtenir des informations sur un panorama indiq
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
@@ -406,7 +406,7 @@ Ce module de recherche permet d’obtenir des informations sur un panorama indiq
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Partial] </p> </td> 
-   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si les [!UICONTROL Partial] sont activées, vous pouvez rechercher « dev » mais pas « development ».</p> </td> 
+   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si vous avez activé [!UICONTROL Partial], vous pourrez rechercher « dév » mais pas « veloppement ».</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Boards] </td> 
@@ -417,7 +417,7 @@ Ce module de recherche permet d’obtenir des informations sur un panorama indiq
 
 +++
 
-+++ **[!UICONTROL Unassign a Member from a Board]**
++++ **[!UICONTROL Retirer l’affectation d’une personne membre à un panorama]**
 
 Ce module d’action permet de supprimer une personne membre d’un panorama.
 
@@ -427,7 +427,7 @@ Ce module d’action permet de supprimer une personne membre d’un panorama.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board ID]</td> 
@@ -442,7 +442,7 @@ Ce module d’action permet de supprimer une personne membre d’un panorama.
 
 +++
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Surveiller les panoramas]**
 
 Ce module déclencheur lance un scénario lorsqu’un nouveau panorama est ajouté.
 
@@ -452,7 +452,7 @@ Ce module déclencheur lance un scénario lorsqu’un nouveau panorama est ajout
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -465,7 +465,7 @@ Ce module déclencheur lance un scénario lorsqu’un nouveau panorama est ajout
 
 ### Listes
 
-+++ **[!UICONTROL Create a List]**
++++ **[!UICONTROL Créer une liste]**
 
 Ce module d’action crée une liste sur un panorama que vous spécifiez.
 
@@ -475,7 +475,7 @@ Ce module d’action crée une liste sur un panorama que vous spécifiez.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board ID]</td> 
@@ -493,7 +493,7 @@ Ce module d’action crée une liste sur un panorama que vous spécifiez.
    <td role="rowheader">[!UICONTROL Copy list]</td> 
    <td> <p> Si vous copiez une liste, sélectionnez le mode de saisie de l’identifiant de la liste à copier.</p> 
     <ul> 
-     <li> <p><strong>Saisie manuelle</strong> </p> <p>Dans le champ <strong>[!UICONTROL List ID]</strong> , saisissez ou mappez l’identifiant de la liste à copier.<br></p> </li> 
+     <li> <p><strong>Saisir manuellement</strong> </p> <p>Dans le champ <strong>[!UICONTROL List ID]</strong>, saisissez ou mappez l’ID de la liste que vous souhaitez copier.<br></p> </li> 
      <li> <p><strong>Sélectionner</strong> </p> <p>Sélectionnez le panorama qui contient la liste que vous souhaitez copier, puis sélectionnez la liste.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -502,7 +502,7 @@ Ce module d’action crée une liste sur un panorama que vous spécifiez.
 
 +++
 
-+++ **[!UICONTROL Edit a List]**
++++ **[!UICONTROL Modifier une liste]**
 
 Ce module d’action permet de modifier une liste existante.
 
@@ -512,7 +512,7 @@ Ce module d’action permet de modifier une liste existante.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List ID]</td> 
@@ -539,7 +539,7 @@ Ce module d’action permet de modifier une liste existante.
 
 +++
 
-+++ **[!UICONTROL Get a List]**
++++ **[!UICONTROL Obtenir une liste]**
 
 Ce module d’action permet de récupérer les détails d’une liste spécifique.
 
@@ -549,7 +549,7 @@ Ce module d’action permet de récupérer les détails d’une liste spécifiqu
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL List ID]</p> </td> 
@@ -560,7 +560,7 @@ Ce module d’action permet de récupérer les détails d’une liste spécifiqu
 
 +++
 
-+++ **[!UICONTROL Watch cards moved to a list]**
++++ **[!UICONTROL Surveiller les cartes ajoutées à une liste]**
 
 Ce module déclencheur s’active lorsqu’un panorama est déplacé vers une liste spécifique.
 
@@ -570,7 +570,7 @@ Ce module déclencheur s’active lorsqu’un panorama est déplacé vers une li
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board]</td> 
@@ -591,7 +591,7 @@ Ce module déclencheur s’active lorsqu’un panorama est déplacé vers une li
 
 ### vignette
 
-+++ **[!UICONTROL Add an Attachment]**
++++ **[!UICONTROL Ajouter une pièce jointe]**
 
 Ce module d’action ajoute une pièce jointe à la carte sélectionnée.
 
@@ -601,13 +601,13 @@ Ce module d’action ajoute une pièce jointe à la carte sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter card ID]</td> 
    <td> <p> Sélectionnez le mode de saisie de l’identifiant de la carte à laquelle vous souhaitez ajouter une pièce jointe.</p> 
     <ul> 
-     <li> <p><strong>Saisie manuelle</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une pièce jointe.<br></p> </li> 
+     <li> <p><strong>Saisie manuelle</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une pièce jointe.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama contenant la carte à laquelle vous souhaitez ajouter une pièce jointe, puis sélectionnez la liste contenant la carte, puis sélectionnez la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -624,7 +624,7 @@ Ce module d’action ajoute une pièce jointe à la carte sélectionnée.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Archiver ou désarchiver une carte]**
 
 Ce module d’action permet d’archiver ou de renvoyer une carte sur le panorama.
 
@@ -634,7 +634,7 @@ Ce module d’action permet d’archiver ou de renvoyer une carte sur le panoram
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Card ID]</td> 
@@ -649,7 +649,7 @@ Ce module d’action permet d’archiver ou de renvoyer une carte sur le panoram
 
 +++
 
-+++ **[!UICONTROL Create a card]**
++++ **[!UICONTROL Créer une carte]**
 
 Ce module d’action crée une carte dans une liste sélectionnée.
 
@@ -659,13 +659,13 @@ Ce module d’action crée une carte dans une liste sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a list ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la liste dans laquelle vous souhaitez ajouter une carte.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL List ID]</strong> , saisissez ou mappez l’identifiant de la liste dans laquelle vous souhaitez ajouter une carte.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL List ID]</strong>, saisissez ou mappez l’ID de la liste dans laquelle vous souhaitez ajouter une carte.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama contenant la liste dans laquelle vous souhaitez ajouter une carte, puis sélectionnez la liste.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -704,7 +704,7 @@ Ce module d’action crée une carte dans une liste sélectionnée.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
    <td> <p>Saisissez ou mappez les informations d’un fichier que vous souhaitez ajouter en tant que pièce jointe à la carte. Sélectionner un fichier à partir d’un module antérieur, ou mapper le nom et les données du fichier</p> 
-     <p>Note : le chargement de fichiers est limité à 10 Mo par pièce jointe. Toutefois, les membres [!UICONTROL Business Class] et [!UICONTROL Trello Gold] ont une limite de chargement de fichier de 250 Mo par pièce jointe.</p> 
+     <p>Note : le chargement de fichiers est limité à 10 Mo par pièce jointe. Cependant, les personnes membres de [!UICONTROL Business Class] et [!UICONTROL Trello Gold] ont une limite de chargement de fichiers de 250 Mo par pièce jointe.</p> 
      </li> 
     </ul> </td> 
   </tr> 
@@ -712,7 +712,7 @@ Ce module d’action crée une carte dans une liste sélectionnée.
    <td role="rowheader">[!UICONTROL Copy card]</td> 
    <td> <p> Si vous créez une carte en tant que copie d’une carte existante, sélectionnez la manière dont vous souhaitez saisir l’identifiant de la carte à copier.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte à copier.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’ID de la carte que vous souhaitez copier.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à copier, puis la liste qui contient la carte, et enfin la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -721,7 +721,7 @@ Ce module d’action crée une carte dans une liste sélectionnée.
 
 +++
 
-+++ **[!UICONTROL Edit a Card]**
++++ **[!UICONTROL Modifier une carte]**
 
 Ce module d’action permet de modifier une carte existante.
 
@@ -731,13 +731,13 @@ Ce module d’action permet de modifier une carte existante.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Card ID]</td> 
    <td> <p> Sélectionnez le mode de saisie de l’ID de la carte que vous souhaitez modifier.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte à modifier.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’ID de la carte que vous souhaitez modifier.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte que vous souhaitez modifier, puis sélectionnez la liste qui contient la carte, puis sélectionnez la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -759,7 +759,7 @@ Ce module d’action permet de modifier une carte existante.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Choisissez si vous souhaitez ajouter la carte en haut ou [!UICONTROL append] la carte en bas de la liste.</p> </td> 
+   <td> <p>Indiquez si vous souhaitez ajouter la carte en haut ou [!UICONTROL append] la carte en bas de la liste.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -790,7 +790,7 @@ Ce module d’action permet de modifier une carte existante.
 
 +++
 
-+++ **[!UICONTROL Get a Card]**
++++ **[!UICONTROL Obtenir une carte]**
 
 Ce module d’action permet de récupérer les détails d’une carte sélectionnée.
 
@@ -800,7 +800,7 @@ Ce module d’action permet de récupérer les détails d’une carte sélection
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board ID]</td> 
@@ -810,7 +810,7 @@ Ce module d’action permet de récupérer les détails d’une carte sélection
    <td role="rowheader">[!UICONTROL Enter card ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la carte dont vous souhaitez récupérer les détails.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte dont vous souhaitez récupérer les détails.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’ID de la carte dont vous souhaitez récupérer les détails.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte dont vous voulez récupérer les détails, puis la liste qui contient la carte, et enfin la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -819,7 +819,7 @@ Ce module d’action permet de récupérer les détails d’une carte sélection
 
 +++
 
-+++ **[!UICONTROL Search for Cards]**
++++ **[!UICONTROL Rechercher des cartes]**
 
 Ce module d’action renvoie les cartes qui correspondent à la requête.
 
@@ -829,7 +829,7 @@ Ce module d’action renvoie les cartes qui correspondent à la requête.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Board] </td> 
@@ -842,14 +842,14 @@ Ce module d’action renvoie les cartes qui correspondent à la requête.
      <li><code><strong>-operator</strong></code> <p>Vous pouvez ajouter « - » à n’importe quel opérateur pour effectuer une recherche négative, par exemple <code>[!UICONTROL -has:members]</code> pour rechercher les cartes auxquelles aucune personne membre n’a été affectée.</p> </li> 
      <li><code><strong>@name</strong></code> <p>Renvoie les cartes attribuées à une personne membre. Vous pouvez également utiliser <code>member:</code>. Utilisez <code>@me</code> pour inclure uniquement vos cartes.</p> </li> 
      <li><code><strong>#label</strong></code> <p>Renvoie les cartes étiquetées. Vous pouvez également utiliser <code>label:</code>. Par exemple, <code>label:"FIX IT"</code> renverra les cartes avec le libellé « FIX IT ».</p> </li> 
-     <li><code><strong>board:id</strong></code> <p>Renvoie les cartes d’un panorama spécifique. Par exemple, <code>board:Trello</code> renverra des cartes sur les panoramas dont le nom contient [!UICONTROL Trello].</p> </li> 
+     <li><code><strong>board:id</strong></code> <p>Renvoie les cartes d’un panorama spécifique. Par exemple, <code>board:Trello</code> renverra des cartes sur des panoramas dont le nom contient [!UICONTROL Trello].</p> </li> 
      <li><code><strong>list:name</strong></code> <p>Renvoie les cartes de la liste nommée « nom ».</p> </li> 
      <li><code><strong>has:attachments</strong></code> <p>Renvoie les cartes avec des pièces jointes. L’opérateur <code>has</code>: peut également être utilisé avec d’autres attributs, tels que <code>has:description</code>, <code>has:cover</code>, <code>has:members</code> ou <code>has:stickers</code>.</p> </li> 
      <li><code><strong>due:day</strong></code> <p>Renvoie les cartes dont l’échéance est dans les 24 prochaines heures. L’opérateur <code>due:</code> peut également être utilisé avec d’autres délais, tels que <code>due:week</code>, <code>due:month</code> ou <code>due:overdue</code>. Vous pouvez également rechercher une période spécifique. Par exemple, l’ajout de <code>due:14</code> à la recherche inclut les cartes dont l’échéance est dans les 14 prochains jours.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>Renvoie les cartes créées au cours des dernières 24 heures. L’opérateur <code> created:</code> peut également être utilisé avec d’autres délais, tels que <code>created:week</code> ou <code>created:month</code>. Vous pouvez également rechercher une période spécifique. Par exemple, l’ajout de <code>created:14</code> à la recherche inclut les cartes créées au cours des 14 derniers jours.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>Renvoie les cartes modifiées au cours des dernières 24 heures. L’opérateur <code>edited:</code> peut également être utilisé avec d’autres délais, tels que <code>edited:week</code> ou <code>edited:month</code>. Vous pouvez également rechercher une période spécifique. Par exemple, l’ajout de <code>edited:21</code> à la recherche inclut les cartes modifiées au cours des 21 derniers jours.</p> </li> 
      <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Renvoie les cartes correspondant au texte des descriptions, des listes de contrôle, des commentaires ou des noms de cartes. Par exemple, <code>comment:"FIX IT"</code> renverra des cartes avec « CORRIGEZ-LE » dans un commentaire.</p> </li> 
-     <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Renvoie les cartes ouvertes ou archivées. Si aucun n’est spécifié, [!UICONTROL Trello] renvoie les deux types.</p> </li> 
+     <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Renvoie les cartes ouvertes ou archivées. Si vous ne spécifiez aucun type, [!UICONTROL Trello] renvoie les deux.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>N’inclut que les cartes sur les panoramas marqués d’une étoile.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -859,7 +859,7 @@ Ce module d’action renvoie les cartes qui correspondent à la requête.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
-   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si les [!UICONTROL Partial] sont activées, vous pouvez rechercher « dev » mais pas « development ».</p> </td> 
+   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si vous avez activé [!UICONTROL Partial], vous pourrez rechercher « dév » mais pas « veloppement ».</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
@@ -870,7 +870,7 @@ Ce module d’action renvoie les cartes qui correspondent à la requête.
 
 +++
 
-+++ **[!UICONTROL Watch cards]**
++++ **[!UICONTROL Surveiller les cartes]**
 
 Ce module de déclenchement lance un scénario lorsqu’une nouvelle carte est ajoutée.
 
@@ -880,7 +880,7 @@ Ce module de déclenchement lance un scénario lorsqu’une nouvelle carte est a
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watched object]</td> 
@@ -902,7 +902,7 @@ Ce module de déclenchement lance un scénario lorsqu’une nouvelle carte est a
 
 ### Membres
 
-+++ **[!UICONTROL Add a Member to a Card]**
++++ **[!UICONTROL Ajouter une personne membre à une carte]**
 
 Ce module d’action ajoute la personne membre spécifiée à la carte spécifiée.
 
@@ -912,13 +912,13 @@ Ce module d’action ajoute la personne membre spécifiée à la carte spécifi�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter card ID and member ID]</p> </td> 
    <td> <p>Choisissez la manière dont vous souhaitez saisir l’ID de la carte et l’ID de la personne membre.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Card ID]</strong> et le <strong>[!UICONTROL Member ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l’<strong>[!UICONTROL Card ID]</strong> et l’<strong>[!UICONTROL Member ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous souhaitez ajouter une personne membre, puis la liste qui contient la carte, la carte elle-même et enfin, la personne membre que vous souhaitez ajouter à la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -927,15 +927,15 @@ Ce module d’action ajoute la personne membre spécifiée à la carte spécifi�
 
 +++
 
-+++ **[!UICONTROL Assign a Member to a Board]**
++++ **[!UICONTROL Affecter une personne membre à un panorama]**
 
-Voir « [!UICONTROL Assign a Member to a Board] » sous [Tableaux](#boards).
+Voir « [!UICONTROL Affecter une personne membre à un panorama] » dans [Panoramas](#boards).
 
 +++
 
-+++ **[!UICONTROL Search for Members]**
++++ **[!UICONTROL Rechercher des personnes membres]**
 
-Ce module d’action récupère des informations sur les membres du [!UICONTROL Trello].
+Ce module d’action permet de récupérer des informations sur les personnes membres de [!UICONTROL Trello].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -943,7 +943,7 @@ Ce module d’action récupère des informations sur les membres du [!UICONTROL 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
@@ -951,7 +951,7 @@ Ce module d’action récupère des informations sur les membres du [!UICONTROL 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
-   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si les [!UICONTROL Partial] sont activées, vous pouvez rechercher « dev » mais pas « development ».</p> </td> 
+   <td> <p>Par défaut, ce module recherche dans le contenu des personnes membres les correspondances exactes de chaque mot de votre requête. Lorsque [!UICONTROL Partial] est activé, le module recherche le contenu qui commence par n’importe quel mot de votre requête.</p> <p> Par exemple, si vous utilisez le mot « développement » pour rechercher un panorama intitulé « Rapport sur le statut de mon développement », vous devrez, par défaut, rechercher le mot dans son intégralité. Si vous avez activé [!UICONTROL Partial], vous pourrez rechercher « dév » mais pas « veloppement ».</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
@@ -962,15 +962,15 @@ Ce module d’action récupère des informations sur les membres du [!UICONTROL 
 
 +++
 
-+++ **[!UICONTROL Unassign a Member from a Board]**
++++ **[!UICONTROL Retirer l’affectation d’une personne membre à un panorama]**
 
-Voir « [!UICONTROL Unassign a Member from a Board] » sous [Tableaux](#boards).
+Voir « [!UICONTROL Retirer l’affectation d’une personne membre à un panorama] » dans [Panoramas](#boards).
 
 +++
 
 ### Listes de contrôle
 
-+++ **[!UICONTROL Create a Checklist]**
++++ **[!UICONTROL Créer une liste de contrôle]**
 
 Ce module d’action crée une liste de contrôle sur la carte sélectionnée.
 
@@ -980,13 +980,13 @@ Ce module d’action crée une liste de contrôle sur la carte sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a card ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la carte sur laquelle vous souhaitez ajouter une liste de contrôle.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une liste de contrôle.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’ID de la carte à laquelle vous souhaitez ajouter une liste de contrôle.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous voulez ajouter une liste de contrôle, puis la liste qui contient la carte, et enfin la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1007,7 +1007,7 @@ Ce module d’action crée une liste de contrôle sur la carte sélectionnée.
 
 +++
 
-+++ **[!UICONTROL Create a Checklist Item]**
++++ **[!UICONTROL Créer un élément de la liste de contrôle]**
 
 Ce module d’action ajoute un élément à une liste de contrôle spécifique.
 
@@ -1017,13 +1017,13 @@ Ce module d’action ajoute un élément à une liste de contrôle spécifique.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
    <td> <p> Si vous créez une liste de contrôle en copiant une liste existante, sélectionnez la manière dont vous souhaitez saisir l’identifiant de la liste de contrôle dans laquelle vous souhaitez ajouter un élément.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Checklist ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une liste de contrôle.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Checklist ID]</strong>, saisissez ou mappez l’ID de la carte à laquelle vous souhaitez ajouter une liste de contrôle.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous souhaitez ajouter une liste de contrôle, puis la liste qui contient la carte, puis la carte elle-même, et enfin la liste de contrôle.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1033,7 +1033,7 @@ Ce module d’action ajoute un élément à une liste de contrôle spécifique.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Position]</p> </td> 
-   <td> <p>Choisissez si vous souhaitez ajouter l’élément en haut ou [!UICONTROL append] en bas de la liste de contrôle.</p> </td> 
+   <td> <p>Sélectionnez si vous souhaitez ajouter l’élément en haut ou l’[!UICONTROL append] en bas de la liste de contrôle.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Checked]</p> </td> 
@@ -1044,7 +1044,7 @@ Ce module d’action ajoute un élément à une liste de contrôle spécifique.
 
 +++
 
-+++ **[!UICONTROL Edit a Checklist Item]**
++++ **[!UICONTROL Modifier un élément de la liste de contrôle]**
 
 Ce module d’action modifie une liste de contrôle existante.
 
@@ -1054,13 +1054,13 @@ Ce module d’action modifie une liste de contrôle existante.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a Card ID and Checklist Item ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la carte et la liste de contrôle où vous souhaitez modifier un élément.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Checklist ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une liste de contrôle.</p> <p>Dans le champ <strong>[!UICONTROL Checklist Item ID]</strong> , saisissez ou mappez l’identifiant de la liste de contrôle.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Checklist ID]</strong>, saisissez ou mappez l’ID de la carte à laquelle vous souhaitez ajouter une liste de contrôle.</p> <p>Dans le champ <strong>[!UICONTROL Checklist Item ID]</strong>, saisissez ou mappez l’ID de la liste de contrôle.</p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous souhaitez ajouter une liste de contrôle, puis la liste qui contient la carte, puis la carte elle-même, et enfin la liste de contrôle.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1087,7 +1087,7 @@ Ce module d’action modifie une liste de contrôle existante.
 
 ### Libellés
 
-+++ **[!UICONTROL Add a Label to a Card]**
++++ **[!UICONTROL Ajouter un libellé à une carte]**
 
 Ce module d’action ajoute un libellé à la carte sélectionnée.
 
@@ -1097,13 +1097,13 @@ Ce module d’action ajoute un libellé à la carte sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter card ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’ID de la carte sur laquelle vous souhaitez ajouter une liste de contrôle.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une liste de contrôle. Dans le champ <strong>[!UICONTROL Label ID]</strong>, saisissez ou mappez l’identifiant du libellé que vous souhaitez ajouter.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’identifiant de la carte sur laquelle vous souhaitez ajouter une liste de contrôle. Dans le champ <strong>[!UICONTROL Label ID]</strong>, saisissez ou mappez l’identifiant du libellé que vous souhaitez ajouter.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte à laquelle vous voulez ajouter une liste de contrôle, puis la liste qui contient la carte, et enfin la carte. </p> <p>Sélectionnez le libellé que vous souhaitez ajouter à la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1114,7 +1114,7 @@ Ce module d’action ajoute un libellé à la carte sélectionnée.
 
 ### Commentaires
 
-+++ **[!UICONTROL Create a Comment in a Card]**
++++ **[!UICONTROL Créer un commentaire dans une carte]**
 
 Ce module d’action ajoute un commentaire à une carte sélectionnée.
 
@@ -1124,13 +1124,13 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a card ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte sur laquelle vous souhaitez ajouter un commentaire, puis sélectionnez la liste qui contient la carte, puis sélectionnez la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1143,7 +1143,7 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
 
 +++
 
-+++ **[!UICONTROL List Comments in a Card]**
++++ **[!UICONTROL Répertorier les commentaires dans une carte]**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1151,13 +1151,13 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a card ID]</td> 
    <td> <p> Sélectionnez la manière dont vous souhaitez saisir l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong> , saisissez ou mappez l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Card ID]</strong>, saisissez ou mappez l’identifiant de la carte sur laquelle vous souhaitez ajouter un commentaire.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Sélectionnez le panorama qui contient la carte sur laquelle vous souhaitez ajouter un commentaire, puis sélectionnez la liste qui contient la carte, puis sélectionnez la carte.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -1178,7 +1178,7 @@ Ce module d’action ajoute un commentaire à une carte sélectionnée.
 
 +++
 
-+++ **[!UICONTROL Watch Comments]**
++++ **[!UICONTROL Surveiller les commentaires]**
 
 Ce module de déclenchement lance un scénario lorsqu’un commentaire est ajouté.
 
@@ -1188,7 +1188,7 @@ Ce module de déclenchement lance un scénario lorsqu’un commentaire est ajout
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watched object]</td> 
@@ -1210,14 +1210,14 @@ Ce module de déclenchement lance un scénario lorsqu’un commentaire est ajout
 
 +++
 
-## ID d’objet [!UICONTROL Trello]
+## ID d’objets [!UICONTROL Trello]
 
 * [Comment trouver l’ID ou le lien court d’une carte dans  [!DNL Trello]](#how-to-find-the-id-or-the-shortlink-of-a-card-in-trello)
 * [Comment trouver les ID d’autres objets dans  [!DNL Trello]](#how-to-find-ids-of-other-objects-in-trello)
 
 ### Comment trouver l’ID ou le lien court d’une carte dans [!DNL Trello]
 
-Si vous souhaitez modifier une carte ou créer un commentaire, vous devez connaître l’ID de la carte ou son lien court. Vous pouvez obtenir ces informations à partir de la sortie du déclencheur [!UICONTROL New Card]. Le lien court d’une carte peut également être obtenu en ouvrant la carte et en cliquant sur le bouton [!UICONTROL Share] . Le lien court se trouve dans la zone de [!UICONTROL Link to this card], à la fin de l’URL après `https://trello.com/c/`.
+Si vous souhaitez modifier une carte ou créer un commentaire, vous devez connaître l’ID de la carte ou son lien court. Vous pouvez obtenir cette information à partir de la sortie du déclencheur [!UICONTROL Nouvelle carte]. Vous pouvez également obtenir le lien court d’une carte en ouvrant la carte et en cliquant sur le bouton [!UICONTROL Partager]. Le lien court se trouve dans la zone [!UICONTROL Lien vers cette carte], à la fin de l’URL après `https://trello.com/c/`.
 
 ![Partager et plus](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 

@@ -4,16 +4,16 @@ description: L’application JSON d’Adobe Workfront Fusion fournit des modul
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 63%
+source-wordcount: '1236'
+ht-degree: 90%
 
 ---
 
 # Modules [!UICONTROL JSON]
 
-L’application [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] fournit des modules pour traiter les données au format JSON afin que [!DNL Adobe Workfront Fusion] puissiez continuer à utiliser le contenu des données ou créer du contenu JSON.
+L’application [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] fournit des modules pour traiter les données au format JSON afin qu’[!DNL Adobe Workfront Fusion] puisse continuer à travailler avec le contenu des données ou créer un nouveau contenu JSON.
 
 ## Conditions d’accès
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -67,13 +67,13 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 La structure des données décrit la manière dont les données JSON sont organisées et permet de mapper des éléments JSON individuels avec d’autres modules de votre scénario. Si vous ne fournissez pas la structure des données, vous pouvez exécuter manuellement le module et [!DNL Workfront Fusion] construira la structure à partir du JSON fourni :
 
-1. Ajoutez le module [!UICONTROL Parse JSON] à un scénario.
-1. Dans le champ **[!UICONTROL JSON String]** , saisissez le fichier JSON à partir duquel vous souhaitez créer une structure de données.
-1. Ne connectez pas encore d’autres modules au module [!UICONTROL Parse JSON]. Comme [!DNL Workfront Fusion] ne connaît pas encore la structure des données JSON, il n’est pas encore possible de mapper les données du module [!UICONTROL Parse JSON] à d’autres modules dans votre scénario.
-1. Exécutez manuellement le scénario. Cela permet au module [!UICONTROL Parse JSON] d’identifier la structure JSON à partir du fichier JSON que vous avez fourni.
+1. Ajoutez le module [!UICONTROL Analyse JSON] à un scénario.
+1. Dans le champ **[!UICONTROL Chaîne de caractères JSON]**, saisissez le JSON à partir duquel vous souhaitez créer une structure des données.
+1. Ne connectez pas encore d’autres modules au module [!UICONTROL Analyse JSON]. Comme [!DNL Workfront Fusion] ne connaît pas encore la structure des données JSON, il n’est pas encore possible de mapper les données du module [!UICONTROL Analyse JSON] à d’autres modules de votre scénario.
+1. Exécutez manuellement le scénario. Cela permet au module [!UICONTROL Analyse JSON] d’identifier la structure du JSON à partir du JSON que vous avez fourni.
 1. Vous pouvez maintenant connecter les modules suivants. Les éléments du module Analyse JSON sont maintenant disponibles pour le mappage.
 
-Pour plus d’informations, voir [Structures de données dans [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+Pour plus d’informations, voir [Structures des données dans [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 ### Collection ou tableau
 
@@ -121,7 +121,7 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 
 ## Modules [!UICONTROL JSON] et leurs champs
 
-Lorsque vous configurez les modules [!DNL JSON], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces champs, d’autres champs JSON peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL JSON], [!DNL Workfront Fusion] affiche les champs énumérés ci-dessous. En plus de ces champs, d’autres champs JSON peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -134,7 +134,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Agrégateurs
 
-#### [!UICONTROL Aggregate to JSON]
+#### [!UICONTROL Agréger en chaîne JSON]
 
 Ce module agrégateur regroupe les résultats d’un module précédent en chaîne JSON.
 
@@ -172,7 +172,7 @@ Ce module agrégateur regroupe les résultats d’un module précédent en chaî
 * [Analyser la chaîne JSON](#parse-json)
 * [Transformer la chaîne JSON](#transform-json)
 
-#### [!UICONTROL Convert JSON to XML]
+#### [!UICONTROL Convertir la chaîne JSON en XML]
 
 Ce module d’action convertit une chaîne JSON en XML.
 
@@ -187,7 +187,7 @@ Ce module d’action convertit une chaîne JSON en XML.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create JSON]
+#### [!UICONTROL Créer un code JSON]
 
 Ce module d’action crée du code JSON à partir d’une structure de données.
 
@@ -206,7 +206,7 @@ Ce module d’action crée du code JSON à partir d’une structure de données.
  </tbody> 
 </table>
 
-#### [!UICONTROL Parse JSON]
+#### [!UICONTROL Analyser le code JSON]
 
 Ce module d’action analyse une chaîne JSON dans une structure de données, ce qui vous permet d’accéder aux données contenues dans la chaîne JSON.
 
@@ -225,7 +225,7 @@ Ce module d’action analyse une chaîne JSON dans une structure de données, ce
  </tbody> 
 </table>
 
-#### [!UICONTROL Transform JSON]
+#### [!UICONTROL Transformer une chaîne JSON]
 
 Ce module d’action transforme un objet en une chaîne JSON.
 
@@ -250,11 +250,11 @@ Ce module d’action transforme un objet en une chaîne JSON.
 
 **Exemple :** l’exemple suivant montre comment transformer des enregistrements de données de [!DNL Google Sheets] au format JSON :
 
-1. Placez le module [!DNL Google Sheets] > [!UICONTROL Select rows] dans votre scénario pour récupérer les données. Configurez le module pour récupérer les lignes de votre feuille de calcul [!DNL Google]. Définissez la variable &#x200B;**[!UICONTROL Maximum number of returned rows]** sur un petit nombre, mais plus grand qu’un à des fins de test (par exemple, trois). Exécutez le module [!DNL Google Sheets] en cliquant dessus avec le bouton droit et en choisissant « **[!UICONTROL Run this module only]** ». Vérifiez la sortie du module.
+1. Placez le module [!DNL Google Sheets] > [!UICONTROL Sélectionner des lignes] dans votre scénario pour récupérer les données. Configurez le module pour récupérer les lignes de votre feuille de calcul [!DNL Google]. Définissez le **[!UICONTROL Nombre maximal de lignes renvoyées]** sur un petit nombre, mais plus grand que 1 à des fins de test (par exemple, trois). Exécutez le module [!DNL Google Sheets] en cliquant dessus avec le bouton droit et en choisissant « **[!UICONTROL Exécuter ce module uniquement]** ». Vérifiez la sortie du module.
 
-1. Connectez le module [!UICONTROL Array Aggregator] après le module [!DNL Google Sheets]. Dans la configuration du module, choisissez le module [!DNL Google Sheets] dans le champ **[!UICONTROL Source node]** . Laissez les autres champs tels quels pour le moment.
+1. Connectez-vous au module [!UICONTROL Agrégateur de tableau] après le module [!DNL Google Sheets]. Dans la configuration du module, choisissez le module [!DNL Google Sheets] dans le champ **[!UICONTROL Nœud source]**. Laissez les autres champs tels quels pour le moment.
 
-1. Connectez-vous [!UICONTROL JSON] > module [!UICONTROL Create JSON] après le module [!UICONTROL Array Aggregator]. La configuration du module nécessite une structure de données qui décrit le format JSON. Cliquez sur **[!UICONTROL Add]** pour ouvrir la configuration de la structure de données. La manière la plus simple de créer cette structure de données est de la générer automatiquement à partir d’un exemple JSON. Cliquez sur **[!UICONTROL Generator]** et collez votre exemple JSON dans le champ **[!UICONTROL Sample data]** :
+1. Connectez [!UICONTROL JSON] > module [!UICONTROL Créer JSON] après le module [!UICONTROL Agrégateur de tableaux]. La configuration du module nécessite une structure de données qui décrit le format JSON. Cliquez sur **[!UICONTROL Ajouter]** pour ouvrir la configuration de la structure de données. La manière la plus simple de créer cette structure de données est de la générer automatiquement à partir d’un exemple JSON. Cliquez sur **[!UICONTROL Générateur]** et collez votre exemple JSON dans le champ **[!UICONTROL Données d’exemple]** :
 
    **Exemple :**
 
@@ -270,30 +270,30 @@ Ce module d’action transforme un objet en une chaîne JSON.
    }
    ```
 
-1. Cliquez sur **[!UICONTROL Save]**. Le champ [!UICONTROL Specification] dans la structure de données contient désormais la structure générée.
-1. Remplacez le nom de votre structure de données par un nom plus spécifique, puis cliquez sur **[!UICONTROL Save]**. Un champ correspondant à l’attribut de tableau racine apparaît comme champ mappable dans la configuration du module JSON.
+1. Cliquer sur **[!UICONTROL Enregistrer]**. Le champ [!UICONTROL Spécification] de la structure de données contient maintenant la structure générée.
+1. Attribuez à votre structure de données un nom plus spécifique et cliquez sur **[!UICONTROL Enregistrer]**. Un champ correspondant à l’attribut de tableau racine apparaît comme champ mappable dans la configuration du module JSON.
 
-1. Cliquez sur le bouton **[!UICONTROL Map]** en regard du champ et mappez l’élément de `Array[]` de la sortie de l’agrégateur de tableau vers celui-ci.
+1. Cliquez sur le bouton **[!UICONTROL Mapper]** en regard du champ et mappez-y l’élément `Array[]` de la sortie de l’Agrégateur de tableaux.
 
-1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module de [!UICONTROL JSON].
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module [!UICONTROL JSON].
 
-1. Ouvrez la configuration du module [!UICONTROL Array Aggregator]. Remplacez **[!UICONTROL Target structure]** de [!UICONTROL Custom] par le champ du module [!UICONTROL JSON] correspondant à l’attribut du tableau racine. Mappez les éléments du module [!DNL Google Sheets] aux champs appropriés.
+1. Ouvrez la configuration du module [!UICONTROL Agrégateur de tableau]. Modifiez la **[!UICONTROL structure cible]** de [!UICONTROL Personnalisée] en champ du module [!UICONTROL JSON] correspondant à l’attribut tableau racine. Mappez les éléments du module [!DNL Google Sheets] aux champs appropriés.
 
-1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module de [!UICONTROL Array Aggregator].
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module [!UICONTROL Agrégateur de tableau].
 
 1. Exécutez le scénario.
 
-   Le module [!UICONTROL JSON] génère le format JSON correct.
+   Le module [!UICONTROL JSON] produit le bon format JSON.
 
-1. Ouvrez la configuration du module [!DNL Google Sheets] et augmentez le nombre de [!UICONTROL Maximum number of returned rows] pour qu’il soit supérieur au nombre de lignes de votre feuille de calcul afin de traiter toutes les données.
+1. Ouvrez la configuration du module [!DNL Google Sheets] et augmentez le [!UICONTROL nombre maximal de lignes renvoyées] pour que ce nombre soit supérieur au nombre de lignes de votre feuille de calcul afin de traiter toutes les données.
 
 >[!ENDSHADEBOX]
 
 ## Dépannage
 
-### Impossible de mapper les données du module [!UICONTROL Parse JSON]
+### Impossible de mapper les données du module [!UICONTROL Analyser JSON].
 
-Assurez-vous que le contenu JSON est correctement mappé dans le module [!UICONTROL Parse JSON] et que la structure des données est correctement définie. Pour plus d’informations, voir [Transformer des enregistrements de données en JSON](#transforming-data-records-to-json) dans cet article.
+Assurez-vous que le contenu JSON est correctement mappé dans le module [!UICONTROL Analyser JSON] et que la structure des données est correctement définie. Pour plus d’informations, voir [Transformer des enregistrements de données en JSON](#transforming-data-records-to-json) dans cet article.
 
 ### Le module échoue lors de l’utilisation d’instructions conditionnelles dans JSON.
 

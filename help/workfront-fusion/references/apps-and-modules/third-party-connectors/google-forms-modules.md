@@ -4,10 +4,10 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Forms]  vous perme
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 77%
+source-wordcount: '1383'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -88,11 +88,11 @@ Le connecteur Google Forms utilise les éléments suivants :
 Pour utiliser vos réponses de formulaire, vous devez d’abord créer la feuille de calcul de réponse.
 
 1. Ouvrez votre formulaire.
-1. Accédez à l’onglet **[!UICONTROL Responses]** .
-1. Cliquez sur l’icône **[!UICONTROL Create Spreadsheet]** ![icône de feuille de calcul](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Accédez à l’onglet **[!UICONTROL Réponses]**.
+1. Cliquez sur l’icône **[!UICONTROL Créer une feuille de calcul]** ![Icône de feuille de calcul](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Indiquez si vous souhaitez créer une feuille de calcul ou une feuille de calcul existante.
-1. Cliquez sur **[!UICONTROL Create]**.
+1. Cliquez sur **[!UICONTROL Créer]**.
 
 ## Modules [!DNL Google Forms] et leurs champs
 
@@ -108,7 +108,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-#### [!UICONTROL Watch Responses]
+#### [!UICONTROL Regarder des réponses]
 
 Contrôle le formulaire pour trouver de nouvelles réponses.
 
@@ -143,7 +143,7 @@ Contrôle le formulaire pour trouver de nouvelles réponses.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Date and time render option]</td> 
-   <td>Sélectionnez le format des dates, des heures et de la durée dans la sortie. Ce champ est ignoré si [!UICONTROL Value Render Option] est défini sur [!UICONTROL Formatted Value].</td> 
+   <td>Sélectionnez le format des dates, des heures et de la durée dans la sortie. Ce champ est ignoré si l’[!UICONTROL Value Render Option] est définie sur [!UICONTROL Formatted Value].</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -154,11 +154,11 @@ Contrôle le formulaire pour trouver de nouvelles réponses.
 
 ### Actions
 
-* [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Delete a Response]](#delete-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
+* [[!UICONTROL Ajouter une réponse]](#add-a-response)
+* [[!UICONTROL Supprimer une réponse]](#delete-a-response)
+* [[!UICONTROL Mettre à jour une réponse]](#update-a-response)
 
-#### [!UICONTROL Add a Response]
+#### [!UICONTROL Ajouter une réponse]
 
 Ce module ajoute une nouvelle réponse au bas de la feuille de calcul du formulaire.
 
@@ -182,7 +182,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Saisissez les valeurs souhaitées dans les colonnes de la feuille. Les colonnes sont disponibles en fonction de la feuille.</p> <p>Pour la colonne [!UICONTROL Timestamp], utilisez la valeur suivante :</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
+   <td> <p>Saisissez les valeurs souhaitées dans les colonnes de la feuille. Les colonnes sont disponibles en fonction de la feuille.</p> <p>Pour la colonne [!UICONTROL Timestamp] , utilisez la valeur suivante :</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -203,7 +203,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Response]
+#### [!UICONTROL Supprimer une réponse]
 
 Ce module supprime une réponse sélectionnée.
 
@@ -230,7 +230,7 @@ Ce module supprime une réponse sélectionnée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Response]
+#### [!UICONTROL Mettre à jour une réponse]
 
 Ce module met à jour la réponse sélectionnée.
 
@@ -273,10 +273,10 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Recherches
 
-* [[!UICONTROL Search Responses]](#search-responses)
-* [[!UICONTROL Search Responses (Advanced])](#search-responses-advanced)
+* [[!UICONTROL Rechercher des réponses]](#search-responses)
+* [[!UICONTROL Rechercher des réponses (avancée)]](#search-responses-advanced)
 
-#### [!UICONTROL Search Responses]
+#### [!UICONTROL Rechercher des réponses]
 
 Ce module renvoie les réponses correspondant aux critères définis.
 
@@ -322,16 +322,16 @@ Ce module renvoie les réponses correspondant aux critères définis.
   </tr> 
   <tr data-mc-conditions="">
     <td>[!UICONTROL Date and time render option]</td>
-    <td>Sélectionnez le format des dates, des heures et de la durée dans la sortie. Ce champ est ignoré si [!UICONTROL Value Render] option est définie sur Valeur formatée. </td>
+    <td>Sélectionnez le format des dates, des heures et de la durée dans la sortie. Ce champ est ignoré si l’option [!UICONTROL Value Render] est définie sur Valeur mise en forme. </td>
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
-   <td> <p> Définissez le nombre maximal de réponses que [!DNL Workfront Fusion] renvoie au cours d’un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de réponses que [!DNL Workfront Fusion] renvoie pendant un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Responses (Advanced)]
+#### [!UICONTROL Rechercher des réponses (avancée)]
 
 Ce module effectue une recherche à l’aide de [[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage?hl=fr). Ce module ne renvoie pas de numéro de ligne.
 

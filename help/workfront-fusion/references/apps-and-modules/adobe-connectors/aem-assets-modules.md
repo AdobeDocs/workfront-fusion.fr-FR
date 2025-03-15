@@ -4,10 +4,10 @@ description: Avec le connecteur  [!DNL Adobe Experience Manager Assets]  pour [!
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 64%
+source-wordcount: '1727'
+ht-degree: 75%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration </p>
    </td> 
@@ -65,9 +65,9 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 ## Conditions préalables
 
 * Vous devez avoir un compte [!DNL Adobe Experience Manager Assets] pour utiliser ces modules.
-* Vous devez configurer [!UICONTROL Server-to-server] flux dans le [!DNL Adobe Developer console].
+* Vous devez configurer le flux [!UICONTROL Serveur à serveur] dans l’[!DNL Adobe Developer console].
 
-  Pour obtenir des instructions sur la configuration du flux de [!UICONTROL Server-to-server] dans le [!DNL Adobe Developer console], voir [Génération de jetons d’accès pour les API côté serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
+  Pour obtenir des instructions sur la configuration du flux [!UICONTROL Serveur à serveur] dans l’[!DNL Adobe Developer console], voir [Générer des jetons d’accès pour les API côté serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
@@ -91,7 +91,7 @@ Le connecteur Adobe Experience Manager Assets utilise les éléments suivants :
 
 Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets], procédez comme suit :
 
-1. Cliquez sur [!UICONTROL Add] en regard de la zone de [!UICONTROL Connection].
+1. Cliquez sur [!UICONTROL Ajouter] à côté de la case [!UICONTROL Connexion].
 
 2. Sélectionnez le type de connexion que vous créez :
 
@@ -107,18 +107,18 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
 
    Pour [!DNL AEM Assets as a Cloud Service], voir [Configurer la connexion pour  [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   Pour [!UICONTROL AEM Assets Basic] d’informations ([!DNL Adobe Managed Services]), voir [Configuration de la connexion pour [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
+   Pour [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), voir [Configurer la connexion pour [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
-4. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+4. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
 ### Configurer la connexion pour [!DNL AEM Assets as a Cloud Service]
 
 >[!NOTE]
 >
->* Les informations relatives à ces champs sont générées dans le cadre de la configuration [!UICONTROL Server-to-server] flux sur le [!DNL Adobe Developer Console]. Vous trouverez ces valeurs dans le fichier JSON des identifiants de service généré dans le cadre de cette configuration.
+>* Les informations relatives à ces champs sont générées dans le cadre de la configuration du flux [!UICONTROL Serveur à serveur] sur l’[!DNL Adobe Developer Console]. Vous trouverez ces valeurs dans le fichier JSON des identifiants de service généré dans le cadre de cette configuration.
 >
->   Pour obtenir des instructions sur la configuration du flux de [!UICONTROL Server-to-server] sur le [!UICONTROL Adobe Developer Console], voir [Génération de jetons d’accès pour les API côté serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
+>   Pour obtenir des instructions sur la configuration du flux [!UICONTROL Serveur à serveur] sur l’[!UICONTROL Adobe Developer Console], voir [Générer des jetons d’accès pour les API côté serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 >
 >* Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 >
@@ -144,32 +144,32 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
                   <td>Choisissez si vous souhaitez fournir un fichier JSON décrivant les détails de votre compte ou si vous souhaitez saisir les détails manuellement.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account details in JSON format]</td>
+                  <td role="rowheader">[!UICONTROL Détails du compte technique au format JSON]</td>
                   <td>Si vous fournissez du code JSON, saisissez ou collez le code JSON décrivant les détails de votre compte.</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>Si vous saisissez les détails manuellement, saisissez l'identifiant du client généré lors de la configuration du [!UICONTROL Server-to-server].</td>
+                  <td>Si vous entrez les détails manuellement, saisissez l'identifiant du client généré dans la configuration [!UICONTROL Serveur à serveur].</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>Si vous saisissez les détails manuellement, saisissez le Secret client généré lors de la configuration du [!UICONTROL Server-to-server].</td>
+                  <td>Si vous entrez les détails manuellement, saisissez le secret client généré dans la configuration [!UICONTROL Serveur à serveur].</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Technical account ID]</td>
-                  <td>Si vous saisissez les détails manuellement, saisissez l'ID du compte technique. Il s’agit du champ « [!UICONTROL id] » dans le fichier JSON des informations d’identification du client.</td>
+                  <td>Si vous saisissez les détails manuellement, saisissez l'ID du compte technique. Il s’agit du champ « [!UICONTROL id] » du fichier JSON des informations d’identification client.</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Org ID]</td>
-                  <td class="">Si vous saisissez les détails manuellement, saisissez l’ID de votre organisation. Il s’agit du champ « [!UICONTROL org] » dans le fichier JSON des informations d’identification du client.</td>
+                  <td class="">Si vous saisissez les détails manuellement, saisissez l’ID de votre organisation. Il s’agit du champ « [!UICONTROL org] » du fichier JSON des informations d’identification client.</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Meta Scopes]</td>
-                  <td>Saisissez les portées de métadonnées générées lors de la configuration du [!UICONTROL Server-to-server].</td>
+                  <td>Saisissez les métasopes générés dans la configuration [!UICONTROL Server-to-server].</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Private key]</td>
-                  <td>Saisissez la clé privée générée lors de la configuration du [!UICONTROL Server-to-server]. Pour extraire la clé privée, cliquez sur [!UICONTROL Extract], puis saisissez le fichier à extraire et son mot de passe.</td>
+                  <td>Saisissez la clé privée générée lors de la configuration [!UICONTROL Server-to-server]. Pour extraire la clé privée, cliquez sur [!UICONTROL Extract], puis entrez le fichier à extraire et le mot de passe du fichier.</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -193,7 +193,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
             </tr>
             <tr>
                 <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
-                <td>Saisissez l’URL de votre instance [!DNL Adobe Experience Manager]. N’ajoutez pas une barre oblique <code>/</code> à la fin de l’URL.</td>
+                <td>Saisissez l’URL de votre instance [!DNL Adobe Experience Manager]. N’incluez pas de barre oblique <code>/</code> à la fin de l’URL.</td>
             </tr>
             <tr>
                 <td role="rowheader">[!UICONTROL Username]</td>
@@ -224,7 +224,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Mettre à jour un enregistrement](#update-a-record)
 * [Chargement d’un élément](#upload-an-asset)
 
-### [!UICONTROL Copy a folder or asset]
+### [!UICONTROL Copier un dossier ou une ressource]
 
 Ce module d’action copie un dossier ou une ressource vers un autre emplacement de votre compte Adobe Experience Manager Assets.
 
@@ -263,7 +263,7 @@ Ce module d’action copie un dossier ou une ressource vers un autre emplacement
  </tbody> 
 </table>
 
-### [!UICONTROL Create a record]
+### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée un dossier ou un commentaire de ressource.
 
@@ -273,7 +273,7 @@ Ce module d’action crée un dossier ou un commentaire de ressource.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion], voir <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion], voir <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Object type]</td> 
@@ -294,7 +294,7 @@ Ce module d’action crée un dossier ou un commentaire de ressource.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a folder, asset, or rendition]
+### [!UICONTROL Supprimer un dossier, une ressource ou un rendu]
 
 Ce module d’action supprime un dossier, une ressource ou un rendu.
 
@@ -318,7 +318,7 @@ Ce module d’action supprime un dossier, une ressource ou un rendu.
  </tbody> 
 </table>
 
-### [!UICONTROL Get a folder listing]
+### [!UICONTROL Obtenir une liste de dossiers]
 
 Ce module d’action permet de récupérer une représentation d’un dossier existant et de ses entités enfant (dossiers ou ressources).
 
@@ -337,7 +337,7 @@ Ce module d’action permet de récupérer une représentation d’un dossier ex
  </tbody> 
 </table>
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Effectuer un appel API personnalisé]
 
 Ce module d’action lance un appel personnalisé à l’API [!DNL Adobe Experience Manager Assets].
 
@@ -347,7 +347,7 @@ Ce module d’action lance un appel personnalisé à l’API [!DNL Adobe Experie
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion], voir <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion], consultez la section <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Adobe Experience Manager Assets] à [!DNL Workfront Fusion]</a> de cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -363,11 +363,11 @@ Ce module d’action lance un appel personnalisé à l’API [!DNL Adobe Experie
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>Saisissez la chaîne de requête. Pour chaque paire Clé/Valeur, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez le [!UICONTROL Key] et la [!UICONTROL Value].</p> </td> 
+   <td> <p>Saisissez la chaîne de requête. Pour chaque paire clé/valeur, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez la [!UICONTROL Key] et la [!UICONTROL Value].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -375,7 +375,7 @@ Ce module d’action lance un appel personnalisé à l’API [!DNL Adobe Experie
  </tbody> 
 </table>
 
-### [!UICONTROL Move a folder or asset]
+### [!UICONTROL Déplacer un dossier ou une ressource]
 
 Ce module d’action déplace la ressource ou le dossier au chemin d’accès donné vers un nouvel emplacement.
 
@@ -410,7 +410,7 @@ Ce module d’action déplace la ressource ou le dossier au chemin d’accès do
  </tbody> 
 </table>
 
-### [!UICONTROL Update a record]
+### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action met à jour un enregistrement existant.
 
@@ -441,7 +441,7 @@ Ce module d’action met à jour un enregistrement existant.
  </tbody> 
 </table>
 
-### [!UICONTROL Upload an asset]
+### [!UICONTROL Charger une ressource]
 
 Ce module d’action charge une ressource sur votre compte [!DNL Adobe Experience Manager Assets].
 

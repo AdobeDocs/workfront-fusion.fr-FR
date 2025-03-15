@@ -4,10 +4,10 @@ description: Lorsque des erreurs se produisent pendant l’exécution d’un sc�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 26%
+source-wordcount: '668'
+ht-degree: 30%
 
 ---
 
@@ -51,7 +51,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -77,10 +77,10 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 Pour ajouter un gestionnaire d’erreurs à un module :
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de gestion des erreurs.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Cliquez avec le bouton droit sur le module après lequel vous souhaitez ajouter un itinéraire de gestionnaire d’erreurs, puis sélectionnez **[!UICONTROL Add error handler]** :
+1. Cliquez avec le bouton droit sur le module après lequel vous souhaitez ajouter un itinéraire de gestionnaire d’erreurs, puis sélectionnez **[!UICONTROL Ajouter un gestionnaire d’erreurs]** :
 
    ![Itinéraire du gestionnaire d’erreurs](assets/error-handler-route.png)
 
@@ -114,16 +114,16 @@ Il existe cinq directives, qui peuvent être regroupées dans les catégories su
 
 Les directives suivantes garantissent la poursuite de l’exécution d’un scénario :
 
-* **[!UICONTROL Resume]** : permet de spécifier une sortie de substitution pour le module contenant l’erreur. Le statut d’exécution du scénario est marqué comme réussi.
-* **[!UICONTROL Ignore]** : ignore l’erreur. Le statut d’exécution du scénario est marqué comme réussi.
-* **[!UICONTROL Break]** : stocke l’entrée de la file d’attente des exécutions incomplètes. Le statut d’exécution du scénario est marqué comme avertissement.
+* **[!UICONTROL Reprendre]** : permet de spécifier une sortie de substitution pour le module avec l’erreur. Le statut d’exécution du scénario est marqué comme réussi.
+* **[!UICONTROL Ignorer]** : ignore l’erreur. Le statut d’exécution du scénario est marqué comme réussi.
+* **[!UICONTROL Interrompre]** : enregistre l’entrée dans la file d’attente des exécutions incomplètes. Le statut d’exécution du scénario est marqué comme avertissement.
 
   Pour plus d’informations, voir [Affichage et résolution des exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 Si l’exécution d’un scénario doit s’arrêter en cas d’erreur, utilisez l’une des directives suivantes :
 
-* **[!UICONTROL Rollback]** : arrête immédiatement l’exécution du scénario et marque son statut comme erreur.
-* **[!UICONTROL Commit]** : arrête immédiatement l’exécution du scénario et marque son statut comme réussi.
+* **[!UICONTROL Restaurer]** : arrête immédiatement l’exécution du scénario et marque son statut comme erreur.
+* **[!UICONTROL Validation]** : arrête immédiatement l’exécution du scénario et marque son statut comme réussi.
 
 ## Ressources
 

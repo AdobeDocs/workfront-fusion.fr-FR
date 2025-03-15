@@ -4,10 +4,10 @@ description: Un webhook est un appel HTTP déclenché par un événement. Vous p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 67%
+source-wordcount: '1445'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -70,12 +70,12 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 Pour utiliser un webhook pour connecter une application à [!DNL Workfront Fusion], procédez comme suit :
 
-1. Ajoutez le module **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** de déclenchement instantané à votre scénario.
+1. Ajoutez le module de déclenchement instantané **[!UICONTROL Webhooks]** >**[!UICONTROL Webhook personnalisé]** à votre scénario.
 
-1. Cliquez sur **[!UICONTROL Add]** en regard du champ Webhook et saisissez un nom pour le nouveau webhook.
-1. (Facultatif) Cliquez sur **[!UICONTROL Advanced Settings]**.
-1. Dans le champ **[!UICONTROL IP restrictions]** , saisissez une liste séparée par des virgules des adresses IP à partir desquelles le module peut accepter des données.
-1. Clic **[!UICONTROL Save]**
+1. Cliquez sur **[!UICONTROL Ajouter]** en regard du champ Webhook et donnez un nom au nouveau webhook.
+1. (Facultatif) Cliquez sur **[!UICONTROL Paramètres avancés]**.
+1. Dans le champ **[!UICONTROL Restrictions d’IP]**, saisissez une liste séparée par des virgules des adresses IP à partir desquelles le module peut accepter les données.
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 Une fois que vous avez créé un webhook, une URL unique s’affiche. Il s’agit de l’adresse à laquelle le webhook envoie des données. Workfront Fusion valide les données envoyées à cette adresse, puis les transmet pour traitement dans le scénario.
 
@@ -87,9 +87,9 @@ Une fois que vous avez créé un webhook, une URL unique s’affiche. Il s’agi
 
 Pour reconnaître la structure des données de la payload entrante, [!DNL Workfront Fusion] analyse les exemples de données que vous envoyez à l’adresse affichée. Vous pouvez fournir les données d’exemples en effectuant une modification dans le service ou l’application qui fera que ce service ou cette application appellera le webhook. Vous pouvez par exemple supprimer un fichier.
 
-Vous pouvez également envoyer les données d’exemple via le module [!UICONTROL HTTP] > [!UICONTROL Make a request] :
+Vous pouvez également envoyer les données d’exemple via le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête] :
 
-1. Créer un nouveau scénario avec le module **[!UICONTROL HTTP]** > **[!UICONTROL Make a request]**
+1. Créez un scénario à l’aide du module **[!UICONTROL HTTP]** > **[!UICONTROL Effectuer une requête]**.
 
 1. Configurez le module avec les valeurs suivantes :
 
@@ -99,7 +99,7 @@ Vous pouvez également envoyer les données d’exemple via le module [!UICONTRO
     <tbody> 
      <tr> 
       <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>Saisissez l’URL du webhook. Vous trouverez cette URL dans le module [!UICONTROL Webhooks] que vous avez utilisé pour configurer le webhook.</td> 
+      <td>Saisissez l’URL du webhook. Vous la trouverez dans le module [!UICONTROL Webhooks] que vous avez utilisé pour configurer le webhook.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Method] </td> 
@@ -122,15 +122,15 @@ Vous pouvez également envoyer les données d’exemple via le module [!UICONTRO
 
    ![Nouvelle configuration de scénario](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
-1. Ouvrez le scénario avec le module [!UICONTROL Webhooks] dans un onglet ou une fenêtre de navigateur distinct.
-1. Dans le module Webhooks, cliquez sur **[!UICONTROL Redetermine data structure]**.
+1. Ouvrez le scénario à l’aide du module [!UICONTROL Webhooks] dans un onglet ou une fenêtre de navigateur distinct.
+1. Dans le module Webhooks, cliquez sur **[!UICONTROL Redéfinir la structure de données]**.
 
    Il n’est pas nécessaire de dissocier d’autres modules du module Webhooks.
 
 1. Basculez vers le scénario avec le module [!UICONTROL HTTP] et exécutez-le.
 1. Revenez au scénario avec le module Webhooks.
 
-   Un message « [!UICONTROL Successfully determined] » signifie que le module a déterminé avec succès la structure de données.
+   Le message « [!UICONTROL Déterminée avec succès] » signifie que le module a déterminé la structure de données avec succès.
 
    ![Déterminé avec succès](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
@@ -148,23 +148,23 @@ Si un webhook reçoit des données et qu’aucun scénario actif n’attend ces 
 
 ## Formats de données entrantes pris en charge
 
-[!DNL Workfront Fusion] prend en charge 3 formats de données entrants : [!UICONTROL Query String], [!UICONTROL Form Data] et [!UICONTROL JSON].
+[!DNL Workfront Fusion] prend en charge 3 formats de données entrantes : [!UICONTROL Chaîne de requête], [!UICONTROL Données de formulaire] et [!UICONTROL JSON].
 
 [!DNL Workfront Fusion] valide toutes les données entrantes par rapport à la structure de données sélectionnée. Ensuite, en fonction des paramètres du scénario, les données sont soit stockées dans la file d’attente pour traitement, soit traitées immédiatement.
 
-Si une partie des données n’est pas validée, [!DNL Workfront Fusion] renvoie un code d’état HTTP 400 et spécifie, dans le corps de la réponse HTTP, la raison pour laquelle les données entrantes n’ont pas réussi les contrôles de validation. Si la validation des données entrantes réussit, Workfront Fusion renvoie un statut « [!UICONTROL 200 Accepted] ».
+Si une partie des données n’est pas validée, [!DNL Workfront Fusion] renvoie un code d’état HTTP 400 et spécifie, dans le corps de la réponse HTTP, la raison pour laquelle les données entrantes n’ont pas réussi les contrôles de validation. Si la validation des données entrantes réussit, Workfront Fusion renvoie un statut « [!UICONTROL 200 Accepté] ».
 
-* [[!UICONTROL Query String]](#query-string)
-* [[!UICONTROL Form Data]](#form-data)
+* [[!UICONTROL Chaîne de requête]](#query-string)
+* [[!UICONTROL Données de formulaire]](#form-data)
 * [[!UICONTROL JSON]](#json)
 
-### [!UICONTROL Query String]
+### [!UICONTROL Chaîne de requête]
 
 ```
 GET https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>?name=<yourname>&job=automate
 ```
 
-### [!UICONTROL Form Data]
+### [!UICONTROL Données de formulaire]
 
 ```
 POST https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>
@@ -220,18 +220,18 @@ Content-Type: application/json
 >
 >Si vous souhaitez accéder au JSON d’origine, activez la transmission JSON lors de la configuration du webhook.
 >
->1. Cliquez sur **[!UICONTROL Add]** pour ajouter un nouveau webhook.
->1. Cliquez sur **[!UICONTROL Show advanced settings]**.
->1. Cliquez sur **[!UICONTROL JSON pass-through]**.
+>1. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter un nouveau webhook.
+>1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
+>1. Cliquez sur **[!UICONTROL Transmission JSON]**.
 >
 
 ## En-têtes de webhook
 
 Pour accéder aux en-têtes du webhook, activez l’option Obtenir les en-têtes de requête lors de la configuration du webhook.
 
-1. Cliquez sur **[!UICONTROL Add]** pour ajouter un nouveau webhook.
-1. Cliquez sur **[!UICONTROL Show advanced settings]**.
-1. Cliquez sur **[!UICONTROL Get request headers]**.
+1. Cliquez sur **[!UICONTROL Ajouter]** pour ajouter un nouveau webhook.
+1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
+1. Cliquez sur **[!UICONTROL Obtenir les en-têtes de requête]**.
 
 Vous pouvez extraire une valeur d’en-tête spécifique avec la combinaison des fonctions `map()` et `get()`.
 
@@ -255,24 +255,24 @@ La réponse par défaut à un appel de webhook est le texte « Accepté ». La
 
 ### Tester la réponse à un webhook
 
-1. Incluez le module **[!UICONTROL Custom Webhook]** dans votre scénario.
+1. Incluez le module **[!UICONTROL Webhook personnalisé]** dans votre scénario.
 1. Ajoutez un nouveau webhook au module.
 1. Copiez l’URL du webhook dans le presse-papiers.
 1. Exécutez le scénario.
 
-   L’icône en forme d’éclair dans le module [!UICONTROL Custom Webhook] se transforme en points qui tournent. Cela indique que le module attend désormais l’appel de webhook.
+   L’icône d’éclair sur le module [!UICONTROL Webhook personnalisé] change en symbole de chargement. Cela indique que le module attend désormais l’appel de webhook.
 
-1. Ouvrez une nouvelle fenêtre de navigateur, collez l’URL copiée dans la barre d’adresse et appuyez sur **[!UICONTROL Enter]**.
+1. Ouvrez une nouvelle fenêtre de navigateur, collez l’URL copiée dans la barre d’adresse et appuyez sur **[!UICONTROL Entrée]**.
 
-   Le module [!UICONTROL Custom Webhook] est déclenché et le navigateur affiche une nouvelle page.
+   Le module [!UICONTROL Webhook personnalisé] est déclenché et le navigateur affiche une nouvelle page.
 
 Si vous souhaitez personnaliser la réponse du webhook, utilisez le module de réponse webhook.
 
-La configuration du module contient deux champs : [!UICONTROL Status] et [!UICONTROL Body].
+La configuration du module contient deux champs : [!UICONTROL Statut] et [!UICONTROL Corps].
 
-* Le champ [!UICONTROL Status] contient des codes de statut de réponse HTTP tels que 2xx pour la réussite (par exemple, `200` pour OK), 3xx pour la redirection (par exemple, `307` pour la redirection temporaire), 4xx pour les erreurs client (par exemple, `400` pour une requête incorrecte), etc.
+* Le champ [!UICONTROL Statut] contient des codes de statut de réponse HTTP tels que 2xx pour Succès (par exemple, `200` pour OK), 3xx pour Redirection (par exemple, `307` pour Redirection temporaire), 4xx pour les Erreurs client (par exemple, `400` pour Demande incorrecte), etc.
 
-* Le champ [!UICONTROL Body] contient tout ce qui sera accepté par l’appel du webhook. Il peut s’agir de texte simple, de code HTML, de code XML, de code JSON, etc.
+* Le champ [!UICONTROL Corps] contient tout ce qui sera accepté par l’appel du webhook. Il peut s’agir de texte simple, de code HTML, de code XML, de code JSON, etc.
 
   >[!TIP]
   >
@@ -286,7 +286,7 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >
 >**Exemple :**
 >
->Configurez le module [!UICONTROL Webhook Response] comme suit :
+>Configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
@@ -321,7 +321,7 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 
 >[!INFO]
 >
->**Exemple :** Configurez le module [!UICONTROL Webhook Response] comme suit :
+>**Exemple :** configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
@@ -335,8 +335,8 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 &gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
 &gt;   <td> 
 &gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong>: Emplacement</li> 
-&gt;     <li><strong>[!UICONTROL Value]</strong>: URL vers laquelle effectuer la redirection.</li> 
+&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
 &gt;    </ul> </td> 
 &gt;  </tr> 
 &gt; </tbody> 
@@ -358,7 +358,7 @@ Les webhooks désactivés sont supprimés et désinscrits automatiquement s’il
 
 ### Éléments manquants dans le panneau de mappage
 
-Si certains éléments sont manquants dans le panneau de mappage dans la configuration des modules suivant le module [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] , cliquez sur le module **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** pour ouvrir sa configuration et cliquez sur **[!UICONTROL Re-determine data structure]** :
+Si certains éléments sont manquants dans le panneau de mappage dans la configuration des modules suivant le module [!UICONTROL Webhooks] > [!UICONTROL Webhook personnalisé], cliquez sur le bouton **[!UICONTROL Webhooks] > [!UICONTROL Webhook personnalisé]** pour ouvrir sa configuration, puis cliquez sur **[!UICONTROL Rédéterminer la structure des données]** :
 
 ![Redéterminer la structure des données](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 

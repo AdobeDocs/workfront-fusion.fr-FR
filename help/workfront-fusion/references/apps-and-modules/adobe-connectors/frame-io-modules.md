@@ -4,10 +4,10 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 71%
+source-wordcount: '2510'
+ht-degree: 81%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -89,7 +89,7 @@ Le connecteur Frame.io utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Connecter [!DNL Frame.io] à [!UICONTROL Adobe Workfront Fusion]
+## Connecter [!DNL Frame.io] à [!UICONTROL Adobe Workfront Fusion]
 
 Vous pouvez vous connecter à [!DNL Frame.io] à l’aide d’un jeton API ou d’OAuth 2.0.
 
@@ -99,17 +99,17 @@ Vous pouvez vous connecter à [!DNL Frame.io] à l’aide d’un jeton API ou d
 
 ### Se connecter à [!DNL Frame.io] à l’aide d’un jeton API
 
-Pour connecter votre compte [!DNL Frame.io] à [!DNL Workfront Fusion] à l’aide d’un jeton API, vous devez créer le jeton API dans votre compte [!DNL Frame.io] et l’insérer dans la boîte de dialogue de [!UICONTROL Create a connection] de [!DNL Frame.io] [!DNL Workfront Fusion].
+Pour connecter votre compte [!DNL Frame.io] à [!DNL Workfront Fusion] à l’aide d’un jeton API, vous devez créer le jeton API dans votre compte [!DNL Frame.io] et l’insérer dans la boîte de dialogue [!UICONTROL Créer une connexion] de [!DNL Workfront Fusion] [!DNL Frame.io].
 
-1. Connectez-vous à votre compte [!DNL Frame.io].
-1. Accédez à la page **[!UICONTROL Tokens]** dans le développeur [!DNL Frame.io].
-1. Cliquez sur **[!UICONTROL New]**.
-1. Saisissez le nom du jeton, sélectionnez les portées à utiliser, puis cliquez sur **[!UICONTROL Create]**.
+1. Connectez-vous à votre compte [!DNL Frame.io].
+1. Accédez à la page **[!UICONTROL Jetons]** dans Développement [!DNL Frame.io].
+1. Cliquez sur **[!UICONTROL Nouveau]**.
+1. Saisissez le nom du jeton, sélectionnez les portées à utiliser, puis cliquez sur **[!UICONTROL Créer]**.
 1. Copiez le jeton fourni.
-1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Create a connection]** du module [!DNL Frame.io] .
-1. Dans le champ **[!UICONTROL Connection type]** , sélectionnez **[!DNL Frame.io]**.
-1. Saisissez le jeton que vous avez copié à l’étape 5 dans le champ **[!UICONTROL Your [!DNL Frame.io] API Key]** .
-1. Cliquez sur **[!UICONTROL Continue]** pour établir la connexion et revenir au module .
+1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module [!DNL Frame.io].
+1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!DNL Frame.io]**.
+1. Saisissez le jeton que vous avez copié à l’étape 5 dans le champ **[!UICONTROL Votre clé API [!DNL Frame.io]]**
+1. Cliquez sur **[!UICONTROL Continuer]** pour établir la connexion et revenir au module .
 
 ### Se connecter à [!DNL Frame.io] à l’aide d’OAuth 2.0 PKCE
 
@@ -120,14 +120,14 @@ Vous pouvez créer une connexion à [!DNL Frame.io] à l’aide d’OAuth 2.0 
 
 #### Se connecter à [!DNL Frame.io] à l’aide d’OAuth 2.0 PKCE (sans identifiant client)
 
-1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Create a connection]** du module [!DNL Frame.io] .
-1. Dans le champ **[!UICONTROL Connection type]** , sélectionnez **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**.
-1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Connection name]** .
-1. Cliquez sur **[!UICONTROL Continue]** pour établir la connexion et revenir au module .
+1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module [!DNL Frame.io].
+1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
+1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Nom de la connexion]**.
+1. Cliquez sur **[!UICONTROL Continuer]** pour établir la connexion et revenir au module .
 
 #### Se connecter à [!DNL Frame.io] en utilisant OAuth 2.0 PKCE (avec un identifiant client)
 
-1. Créez une application OAuth 2.0 dans [!DNL Frame.io]. Pour obtenir des instructions détaillées, consultez la documentation [!DNL Frame.io] sur [!UICONTROL OAuth 2.0 Code Authorization Flow].
+1. Créez une application OAuth 2.0 dans [!DNL Frame.io]. Pour obtenir des instructions, voir la documentation [!DNL Frame.io] sur [!UICONTROL Flux d’autorisation du code OAuth 2.0].
 
    >[!IMPORTANT]
    >
@@ -143,12 +143,12 @@ Vous pouvez créer une connexion à [!DNL Frame.io] à l’aide d’OAuth 2.0 
 
 
 1. Copiez la valeur `client_id` fournie.
-1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Create a connection]** du module [!DNL Frame.io] .
-1. Dans le champ **[!UICONTROL Connection type]** , sélectionnez **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**.
-1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Connection name]** .
-1. Cliquez sur **[!UICONTROL Show advanced settings]**.
-1. Saisissez le `client_id` que vous avez copié à l’étape 2 dans le champ **[!UICONTROL Client ID]** .
-1. Cliquez sur **[!UICONTROL Continue]** pour établir la connexion et revenir au module .
+1. Accédez à [!DNL Workfront Fusion] et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module [!DNL Frame.io].
+1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
+1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Nom de la connexion]**.
+1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
+1. Saisissez la valeur `client_id` que vous avez copiée à l’étape 2 dans le champ **[!UICONTROL ID client]**.
+1. Cliquez sur **[!UICONTROL Continuer]** pour établir la connexion et revenir au module .
 
 ## Modules [!DNL Frame.io] et leurs champs
 
@@ -165,16 +165,16 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Ressources
 
-* [[!UICONTROL Create an Asset]](#create-an-asset)
-* [[!UICONTROL Delete an Asset]](#delete-an-asset)
-* [[!UICONTROL Get an Asset]](#get-an-asset)
-* [[!UICONTROL List Assets]](#list-assets)
-* [[!UICONTROL Update an Asset]](#update-an-asset)
-* [[!UICONTROL Watch Asset Deleted]](#watch-asset-deleted)
-* [[!UICONTROL Watch Asset Label Updated]](#watch-asset-label-updated)
-* [[!UICONTROL Watch New Asset]](#watch-new-asset)
+* [[!UICONTROL Créer une ressource]](#create-an-asset)
+* [[!UICONTROL Supprimer une ressource]](#delete-an-asset)
+* [[!UICONTROL Obtenir une ressource]](#get-an-asset)
+* [[!UICONTROL Répertorier des ressources]](#list-assets)
+* [[!UICONTROL Mettre à jour une ressource]](#update-an-asset)
+* [[!UICONTROL Surveiller une ressource supprimée]](#watch-asset-deleted)
+* [[!UICONTROL Surveiller un libellé de ressource mis à jour]](#watch-asset-label-updated)
+* [[!UICONTROL Surveiller une nouvelle ressource]](#watch-new-asset)
 
-#### [!UICONTROL Create an Asset]
+#### [!UICONTROL Créer une ressource]
 
 Ce module d’action crée une ressource.
 
@@ -231,7 +231,7 @@ Ce module d’action crée une ressource.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Asset]
+#### [!UICONTROL Supprimer une ressource]
 
 Ce module d’action supprime une ressource spécifiée.
 
@@ -262,7 +262,7 @@ Ce module d’action supprime une ressource spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Asset]
+#### [!UICONTROL Obtenir une ressource]
 
 Ce module d’action récupère les détails d’une ressource.
 
@@ -293,7 +293,7 @@ Ce module d’action récupère les détails d’une ressource.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Assets]
+#### [!UICONTROL Répertorier des ressources]
 
 Ce module de recherche récupère toutes les ressources dans le dossier du projet spécifié.
 
@@ -326,7 +326,7 @@ Ce module de recherche récupère toutes les ressources dans le dossier du proje
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Asset]
+#### [!UICONTROL Mettre à jour une ressource]
 
 Ce module d’action vous permet de mettre à jour le nom, la description ou les champs personnalisés d’une ressource existante.
 
@@ -365,7 +365,7 @@ Ce module d’action vous permet de mettre à jour le nom, la description ou les
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Deleted]
+#### [!UICONTROL Surveiller une ressource supprimée]
 
 Ce module de déclenchement démarre un scénario lorsqu’une ressource appartenant à l’équipe spécifiée est supprimée.
 
@@ -392,7 +392,7 @@ Si vous ajoutez un webhook, saisissez les informations suivantes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Label Updated]
+#### [!UICONTROL Surveiller un libellé de ressource mis à jour]
 
 Ce module de déclenchement lance un scénario lorsqu’un libellé pour une ressource appartenant à l’équipe spécifiée est défini, modifié ou supprimé.
 
@@ -419,7 +419,7 @@ Si vous ajoutez un webhook, saisissez les informations suivantes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Asset]
+#### [!UICONTROL Surveiller une nouvelle ressource]
 
 Ce module de déclenchement démarre un scénario lorsqu’une nouvelle ressource est créée pour l’équipe spécifiée.
 
@@ -448,15 +448,15 @@ Si vous ajoutez un webhook, saisissez les informations suivantes.
 
 ### Commentaires
 
-* [[!UICONTROL Create a Comment]](#create-a-comment)
-* [[!UICONTROL Delete a Comment]](#delete-a-comment)
-* [[!UICONTROL Get a Comment]](#get-a-comment)
-* [[!UICONTROL List Comments]](#list-comments)
-* [[!UICONTROL Update a Comment]](#update-a-comment)
-* [[!UICONTROL Watch Comment Updated]](#watch-comment-updated)
-* [[!UICONTROL Watch New Comment]](#watch-new-comment)
+* [[!UICONTROL Créer un commentaire]](#create-a-comment)
+* [[!UICONTROL Supprimer un commentaire]](#delete-a-comment)
+* [[!UICONTROL Obtenir un commentaire]](#get-a-comment)
+* [[!UICONTROL Répertorier des commentaires]](#list-comments)
+* [[!UICONTROL Mettre à jour un commentaire]](#update-a-comment)
+* [[!UICONTROL Surveiller un commentaire mis à jour]](#watch-comment-updated)
+* [[!UICONTROL Surveiller un nouveau commentaire]](#watch-new-comment)
 
-#### [!UICONTROL Create a Comment]
+#### [!UICONTROL Créer un commentaire]
 
 Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à la ressource.
 
@@ -466,7 +466,7 @@ Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à l
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], consultez la section <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type] </td> 
@@ -503,7 +503,7 @@ Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à l
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Comment]
+#### [!UICONTROL Supprimer un commentaire]
 
 Ce module d’action supprime un commentaire existant.
 
@@ -538,7 +538,7 @@ Ce module d’action supprime un commentaire existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Comment]
+#### [!UICONTROL Obtenir un commentaire]
 
 Ce module d’action récupère les détails du commentaire spécifié.
 
@@ -573,7 +573,7 @@ Ce module d’action récupère les détails du commentaire spécifié.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Comments]
+#### [!UICONTROL Répertorier des commentaires]
 
 Ce module de recherche récupère tous les commentaires de la ressource spécifiée.
 
@@ -608,7 +608,7 @@ Ce module de recherche récupère tous les commentaires de la ressource spécifi
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Comment]
+#### [!UICONTROL Mettre à jour un commentaire]
 
 Ce module d’action modifie un commentaire existant.
 
@@ -651,7 +651,7 @@ Ce module d’action modifie un commentaire existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comment Updated]
+#### [!UICONTROL Surveiller les commentaires mis à jour]
 
 Ce module déclencheur lance un scénario lorsqu’un commentaire est modifié.
 
@@ -678,7 +678,7 @@ Si vous ajoutez un webhook, saisissez les informations suivantes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Comment]
+#### [!UICONTROL Surveiller le nouveau commentaire]
 
 Ce module déclencheur lance un scénario lors de la création d’un commentaire ou d’une réponse.
 
@@ -707,7 +707,7 @@ Si vous ajoutez un webhook, saisissez les informations suivantes.
 
 ### Projets
 
-#### [!UICONTROL List Projects]
+#### [!UICONTROL Répertorier des projets]
 
 Ce module de recherche récupère tous les projets pour l’équipe spécifiée.
 
@@ -732,7 +732,7 @@ Ce module de recherche récupère tous les projets pour l’équipe spécifiée.
 
 ### Autre
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Réaliser un appel API]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
 
@@ -758,7 +758,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>Saisissez la chaîne de requête. Pour chaque paramètre que vous souhaitez inclure dans la chaîne de requête, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez le nom du champ et la valeur souhaitée.</p> </td> 
+   <td> <p>Saisissez la chaîne de requête. Pour chaque paramètre à inclure dans la chaîne de requête, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez le nom du champ et la valeur souhaitée.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 

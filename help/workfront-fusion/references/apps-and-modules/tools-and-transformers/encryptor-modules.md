@@ -4,7 +4,7 @@ description: Les modules Adobe Workfront Fusion Encryptor vous permettent de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 29%
@@ -38,7 +38,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 

@@ -4,10 +4,10 @@ description: Dans un scénario [!DNL Adobe Workfront Fusion] , vous pouvez autom
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 81%
+source-wordcount: '1810'
+ht-degree: 86%
 
 ---
 
@@ -46,7 +46,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -82,7 +82,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Microsoft Dynamics 365] d
 >
 >Par exemple, si un utilisateur ou une utilisatrice dispose d’autorisations « Lire le tableau » accordées via le connecteur Excel, puis crée une connexion dans le connecteur Outlook pour lire les e-mails, l’écran de consentement aux autorisations affiche à la fois l’autorisation « Lire le tableau » déjà accordée et l’autorisation « Écrire des e-mails » nouvellement requise.
 
-1. Dans n’importe quel module de [!DNL Microsoft Dynamics 365], cliquez sur **[!UICONTROL Add]** en regard du champ [!UICONTROL Connection] .
+1. Dans n’importe quel module [!DNL Microsoft Dynamics 365], cliquez sur **[!UICONTROL Ajouter]** en regard du champ [!UICONTROL Connexion].
 
 
 1. Remplissez les champs suivants :
@@ -109,11 +109,11 @@ Vous pouvez créer une connexion à votre compte [!DNL Microsoft Dynamics 365] d
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client ID] de [!DNL Microsoft Dynamics].</td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Microsoft Dynamics].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Microsoft Dynamics].
+          <td>Saisissez votre [!DNL Microsoft Dynamics] [!UICONTROL Client Secret].
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -125,7 +125,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Microsoft Dynamics 365] d
         </tr>
       </tbody>
     </table>
-1. Cliquez sur **[!UICONTROL Continue]** pour créer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et revenir au module.
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-* [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [[!UICONTROL Surveiller des enregistrements (en temps réel)]](#watch-records-real-time)
+* [[!UICONTROL Surveiller des enregistrements (prévus)]](#watch-records-scheduled)
 
-#### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Surveiller des enregistrements (en temps réel)]
 
 Ce module de déclenchement instantané exécute un scénario lorsqu’un enregistrement (objet) que vous spécifiez est créé ou mis à jour dans [!DNL Dynamics 365].
 
@@ -165,16 +165,16 @@ Un webhook est nécessaire pour ce module.
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Sélectionnez le webhook que vous souhaitez utiliser pour ce module. </p> <p>Pour ajouter un nouveau webhook :</p> 
     <ol> 
-     <li value="1"> <p>Cliquez sur <strong>[!UICONTROL Add]</strong> à droite du champ Webhook</p> </li> 
-     <li value="2"> <p>Dans le champ Nom du <strong>[!UICONTROL Webhook]</strong> , saisissez un nom explicite pour le webhook.</p> </li> 
-     <li value="3"> <p>Dans le champ <strong>[!UICONTROL Connection]</strong> , sélectionnez la Connexion que vous souhaitez utiliser sélectionnée</p> <p>Pour savoir comment connecter votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], consultez l’article <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a>. </p> </li> 
-     <li value="4"> <p>Cliquez sur <strong>[!UICONTROL Save]</strong> pour enregistrer votre webhook et revenir au module .</p> </li> 
+     <li value="1"> <p>Cliquez sur <strong>[!UICONTROL Add]</strong> à droite du champ Webhook.</p> </li> 
+     <li value="2"> <p>Dans le champ Nom du <strong>[!UICONTROL Webhook]</strong>, saisissez un nom explicite pour le webhook.</p> </li> 
+     <li value="3"> <p>Dans le champ <strong>[!UICONTROL Connection]</strong>, sélectionnez la connexion que vous souhaitez utiliser.</p> <p>Pour savoir comment connecter votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a> dans cet article. </p> </li> 
+     <li value="4"> <p>Cliquez sur <strong>[!UICONTROL Save]</strong> pour enregistrer votre webhook et revenir au module.</p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records (Scheduled)]
+#### [!UICONTROL Surveiller des enregistrements (prévus)]
 
 Ce module de déclenchement planifié exécute un scénario lorsqu’un enregistrement dans l’objet que vous spécifiez est créé ou mis à jour après la dernière exécution planifiée de ce scénario.
 
@@ -190,15 +190,15 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> «
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a> dans cet article. </p> </td> 
+  <td> <p>Pour savoir comment connecter votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], consultez la section <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a> dans cet article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>Choisissez si vous souhaitez que le module regarde <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong> ou <strong>[!UICONTROL New and Updated Records]</strong>.</td> 
+   <td>Choisissez si vous souhaitez que le module regarde <strong>[!UICONTROL Nouveaux enregistrements uniquement]</strong>, <strong>[!UICONTROL Enregistrements mis à jour uniquement]</strong> ou <strong>[!UICONTROL Enregistrements nouveaux et mis à jour]</strong>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>Choisissez le type d’enregistrement [!UICONTROL Microsoft Dynamics 365] que le scénario doit observer.</td> 
+   <td>Sélectionnez le type d’enregistrement [!UICONTROL Microsoft Dynamics 365] que vous souhaitez que le scénario surveille.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
@@ -214,14 +214,14 @@ Les champs sont disponibles en fonction du type d’entité sélectionné.</p> <
 
 ### Actions
 
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
+* [[!UICONTROL Créer un enregistrement]](#create-record)
+* [[!UICONTROL Lancer un appel API]](#make-an-api-call)
+* [[!UICONTROL Supprimer un enregistrement]](#delete-record)
+* [[!UICONTROL Lire des enregistrements]](#read-records)
+* [[!UICONTROL Mettre à jour des enregistrements]](#update-record)
 
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée une entité, telle qu’un rendez-vous ou une tâche.
 
@@ -254,7 +254,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL Supprimer l’enregistrement]
 
 Ce module d’action supprime une entité.
 
@@ -283,9 +283,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Réaliser un appel API]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Microsoft Dynamics 365]. De cette façon, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Microsoft Dynamics 365].
+Ce module d’action permet d’effectuer un appel authentifié personnalisé vers l’API [!DNL Microsoft Dynamics 365]. De cette façon, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Microsoft Dynamics 365].
 
 Le module renvoie des informations sur le code d’état, les en-têtes et le corps. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -299,11 +299,11 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a> dans cet article. </p> </td> 
+  <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion], consultez la section <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Microsoft Dynamics 365] à [!DNL Workfront Fusion]</a> de cet article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>Saisir un chemin relatif à <code>&lt;Instance URL>/api/data/v9.1/</code>.</p> </td> 
+   <td> <p>Saisissez un chemin d’accès relatif à <code>&lt;Instance URL>/api/data/v9.1/</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -327,7 +327,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Records]
+#### [!UICONTROL Lire les enregistrements]
 
 Ce module d’action lit les données d’une seule entité dans [!DNL Microsoft Dynamics 365].
 
@@ -355,12 +355,12 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Saisissez ou mappez l’ID unique [!DNL Microsoft Dynamics 365] de l’enregistrement que vous souhaitez que le module lise.</td> 
+   <td>Saisissez ou mappez l’identifiant [!DNL Microsoft Dynamics 365] unique de l’enregistrement que vous souhaitez que le module lise.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action met à jour une entité.
 
@@ -399,9 +399,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Recherches
 
-#### [!UICONTROL Search Records]
+#### [!UICONTROL Rechercher des enregistrements]
 
-Ce module de recherche permet de rechercher les enregistrements d’un objet dans [!DNL Microsoft Dynamics 365] qui correspondent à la requête de recherche que vous avez spécifiée. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+Ce module de recherche trouve des enregistrements dans un objet de [!DNL Microsoft Dynamics 365] qui correspondent à la requête que vous spécifiez. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 

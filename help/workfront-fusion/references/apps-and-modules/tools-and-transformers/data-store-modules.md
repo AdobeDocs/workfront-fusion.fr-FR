@@ -4,14 +4,14 @@ description: Un magasin de données  [!DNL Adobe Workfront Fusion] , similaire �
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 87%
+source-wordcount: '1135'
+ht-degree: 88%
 
 ---
 
-# Modules [!UICONTROL Data store]
+# Modules de [!UICONTROL magasin de données]
 
 Un magasin de données [!DNL Adobe Workfront Fusion], similaire à une base de données ou à un tableau simple, peut stocker des données de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénarios. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -66,11 +66,11 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Conditions préalables
 
-Pour utiliser [!UICONTROL Data Store] modules, vous devez d’abord créer un magasin de données.
+Pour utiliser des modules de [!UICONTROL Magasin de données], vous devez d’abord créer un magasin de données.
 
 Pour plus d’informations sur la création de magasins de données, voir [Créer et gérer des magasins de données](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## Modules [!UICONTROL Data store] et leurs champs
+## Modules [!UICONTROL magasin de données] et leurs champs
 
 Lorsque vous configurez des modules de magasin de données, [!DNL Workfront Fusion] affiche les champs listés ci-dessous. En plus de ces derniers, d’autres champs du magasin de données peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
@@ -90,7 +90,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Rechercher des enregistrements](#search-records)
 * [Mettre à jour un enregistrement](#update-a-record)
 
-### [!UICONTROL Add/Replace a Record]
+### [!UICONTROL Ajouter/remplacer un enregistrement]
 
 Ce module d’action ajoute ou remplace un enregistrement.
 
@@ -100,7 +100,7 @@ Le module renvoie l’identifiant de l’enregistrement et de tous les champs as
 
 >[!NOTE]
 >
->Le module renvoie une erreur lorsque vous essayez d’ajouter un enregistrement qui se trouve déjà dans le magasin de données sous le même nom et que l’option [!UICONTROL Overwrite an existing record] est désactivée.
+>Le module renvoie une erreur lorsque vous essayez d’ajouter un enregistrement qui se trouve déjà dans le magasin de données sous le même nom et que l’option [!UICONTROL Remplacer un enregistrement existant] est désactivée.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -127,7 +127,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Check the Existence of a Record]
+### [!UICONTROL Vérifier l’existence d’un enregistrement]
 
 Ce module d’action indique si un enregistrement spécifique existe.
 
@@ -148,7 +148,7 @@ Vous spécifiez le magasin de données et la clé de l’enregistrement.
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Comptabiliser des enregistrements]
 
 Ce module d’action compte les enregistrements dans un magasin de données.
 
@@ -167,7 +167,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a Record]
+### [!UICONTROL Supprimer un enregistrement]
 
 Ce module d’action supprime un enregistrement.
 
@@ -190,7 +190,7 @@ Le module renvoie l’ID de l’enregistrement et tous les champs associés, ain
  </tbody> 
 </table>
 
-### [!UICONTROL Delete All Records]
+### [!UICONTROL Supprimer tous les enregistrements]
 
 Ce module d’action supprime tous les enregistrements d’un magasin de données spécifique.
 
@@ -207,7 +207,7 @@ Vous spécifiez le magasin de données.
  </tbody> 
 </table>
 
-### [!UICONTROL Get a Record]
+### [!UICONTROL Obtenir un enregistrement]
 
 Ce module d’action récupère un enregistrement.
 
@@ -230,7 +230,7 @@ Le module renvoie l’identifiant de l’enregistrement et de tous les champs as
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### [!UICONTROL Rechercher des enregistrements]
 
 Ce module de recherche recherche des enregistrements d’un objet dans un magasin de données qui correspondent à la requête de recherche que vous avez spécifiée.
 
@@ -265,7 +265,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
+### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action met à jour un enregistrement.
 

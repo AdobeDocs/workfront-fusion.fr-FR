@@ -4,16 +4,16 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2354'
-ht-degree: 44%
+source-wordcount: '2823'
+ht-degree: 51%
 
 ---
 
 # Modules [!DNL Microsoft Office 365 Email]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!UICONTROL Microsoft Office 365 Email] et le connecter à plusieurs applications et services tiers.
+Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent la [!UICONTROL messagerie e-mail Microsoft Office 365], ainsi que la connecter à plusieurs applications et services tiers.
 
 ## Conditions d’accès
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -87,7 +87,7 @@ Le connecteur de messagerie Microsoft Office 365 utilise les éléments suivants
 
 ## Connexion du service [!DNL Office 365 Email] à [!DNL Workfront Fusion].
 
-Pour savoir comment connecter votre compte [!DNL Office 365 Email] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365 Email] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -110,16 +110,16 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Message
 
-* [[!UICONTROL Create and Send a Message (legacy)]](#create-and-send-a-message)
-* [[!UICONTROL Delete a Message]](#delete-a-message)
-* [[!UICONTROL Get a message]](#get-a-message)
-* [[!UICONTROL Move a Message]](#move-a-message)
-* [[!UICONTROL Search messages]](#search-messages)
-* [[!UICONTROL Watch Messages]](#watch-messages)
+* [[!UICONTROL Création et envoi d’un message (hérité)]](#create-and-send-a-message)
+* [[!UICONTROL Supprimer un message]](#delete-a-message)
+* [[!UICONTROL Recevoir un message]](#get-a-message)
+* [[!UICONTROL Déplacer un message]](#move-a-message)
+* [[!UICONTROL Rechercher des messages]](#search-messages)
+* [[!UICONTROL Surveiller les messages]](#watch-messages)
 
 
 
-#### [!UICONTROL Create and Send a Message (legacy)]
+#### [!UICONTROL Création et envoi d’un message (hérité)]
 
 Ce module d’action crée et envoie un e-mail.
 
@@ -190,7 +190,7 @@ Ce module d’action crée et envoie un e-mail.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Message]
+#### [!UICONTROL Supprimer un message]
 
 Ce module d’action supprime un e-mail existant.
 
@@ -203,7 +203,7 @@ Ce module d’action supprime un e-mail existant.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
@@ -213,7 +213,7 @@ Ce module d’action supprime un e-mail existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a message]
+#### [!UICONTROL Recevoir un message]
 
 Ce module d’action récupère les métadonnées d’un message spécifique
 
@@ -226,7 +226,7 @@ Ce module d’action récupère les métadonnées d’un message spécifique
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
   <tr> 
@@ -235,12 +235,12 @@ Ce module d’action récupère les métadonnées d’un message spécifique
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get MIME contents]</td> 
-   <td>Activez cette option pour récupérer des données sur le contenu MIME du message. [!UICONTROL MIME] contenu peut inclure des images, des fichiers audio, vidéo ou d’autres types de fichiers.</td> 
+   <td>Activez cette option pour récupérer des données sur le contenu MIME du message. Le contenu [!UICONTROL MIME] peut comprendre des images, des fichiers audio et vidéo ou d’autres types de fichiers.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a Message]
+#### [!UICONTROL Déplacer un message]
 
 Ce module d&#39;action déplace un e-mail vers un dossier sélectionné dans la boîte aux lettres.
 
@@ -263,7 +263,7 @@ Ce module d&#39;action déplace un e-mail vers un dossier sélectionné dans la 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search messages]
+#### [!UICONTROL Rechercher des messages]
 
 Ce module de recherche recherche les messages en fonction de critères spécifiques.
 
@@ -276,7 +276,7 @@ Ce module de recherche recherche les messages en fonction de critères spécifiq
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
 <tr> 
@@ -304,7 +304,7 @@ Ce module de recherche recherche les messages en fonction de critères spécifiq
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Messages]
+#### [!UICONTROL Surveiller les messages]
 
 Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est envoyé ou reçu.
 
@@ -346,7 +346,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est env
 * [Envoyer un brouillon de message](#send-a-draft-message)
 * [Mettre à jour un message](#update-a-message)
 
-#### [!UICONTROL Create a Draft Message]
+#### [!UICONTROL Créer un brouillon de message]
 
 Ce module d’action crée un e-mail en tant que brouillon.
 
@@ -411,13 +411,13 @@ Ce module d’action crée un e-mail en tant que brouillon.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Send a Draft Message]
+#### [!UICONTROL Envoyer un brouillon de message]
 
 Ce module d’action envoie un e-mail qui est actuellement dans le brouillon.
 
@@ -430,7 +430,7 @@ Ce module d’action envoie un e-mail qui est actuellement dans le brouillon.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
   <tr> 
@@ -440,7 +440,7 @@ Ce module d’action envoie un e-mail qui est actuellement dans le brouillon.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Message]
+#### [!UICONTROL Mettre à jour un message]
 
 Ce module d&#39;action met à jour un message existant.
 
@@ -453,7 +453,7 @@ Ce module d&#39;action met à jour un message existant.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
   <tr> 
@@ -521,10 +521,10 @@ Ce module d&#39;action met à jour un message existant.
 
 ### Pièce jointe
 
-* [[!UICONTROL Download an Attachment]](#download-an-attachment)
-* [[!UICONTROL List Attachments]](#list-attachments)
+* [[!UICONTROL Télécharger une pièce jointe]](#download-an-attachment)
+* [[!UICONTROL Répertorier les pièces jointes]](#list-attachments)
 
-#### [!UICONTROL Download an Attachment]
+#### [!UICONTROL Télécharger une pièce jointe]
 
 Ce module télécharge la pièce jointe spécifiée.
 
@@ -538,7 +538,7 @@ Ce module télécharge la pièce jointe spécifiée.
   </tr> 
   <tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
@@ -551,7 +551,7 @@ Ce module télécharge la pièce jointe spécifiée.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Attachments]
+#### [!UICONTROL Répertorier les pièces jointes]
 
 Ce module permet de récupérer une liste de pièces jointes appartenant au message spécifié.
 
@@ -564,7 +564,7 @@ Ce module permet de récupérer une liste de pièces jointes appartenant au mess
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
   <tr> 
@@ -580,11 +580,11 @@ Ce module permet de récupérer une liste de pièces jointes appartenant au mess
 
 ### Autre
 
-* [[!UICONTROL Add an Attachment]](#add-an-attachment)
+* [[!UICONTROL Ajouter une pièce jointe]](#add-an-attachment)
 * [Créer et envoyer un message](#create-and-send-a-message)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Effectuer un appel API]](#make-an-api-call)
 
-#### [!UICONTROL Add an Attachment]
+#### [!UICONTROL Ajouter une pièce jointe]
 
 Ce module permet d’ajouter une pièce jointe volumineuse à un message.
 
@@ -597,7 +597,7 @@ Ce module permet d’ajouter une pièce jointe volumineuse à un message.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
   <tr> 
@@ -611,7 +611,7 @@ Ce module permet d’ajouter une pièce jointe volumineuse à un message.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create and Send a Message]
+#### [!UICONTROL Créer et envoyer un message]
 
 Ce module d’action crée et envoie un e-mail.
 
@@ -678,7 +678,7 @@ Ce module d’action crée et envoie un e-mail.
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Saisissez une valeur pour l’en-tête.</p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Adresse e-mail de l’expéditeur]</td> 
    <td> <p> Pour utiliser une adresse e-mail partagée, saisissez l’adresse ici. L’utilisateur dont les informations d’identification sont utilisées dans la connexion utilisée pour ce module doit avoir accès au dossier partagé.<p>Laissez ce champ vide pour utiliser l’adresse e-mail du propriétaire de la connexion.</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -687,7 +687,7 @@ Ce module d’action crée et envoie un e-mail.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
 

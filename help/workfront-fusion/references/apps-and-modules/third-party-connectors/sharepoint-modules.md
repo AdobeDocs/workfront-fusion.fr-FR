@@ -4,10 +4,10 @@ description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 52%
+source-wordcount: '3124'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -102,15 +102,15 @@ Vous pouvez utiliser votre compte [!DNL Microsoft] pour créer une connexion à 
 
 Pour connecter Microsoft SharePoint Online à [!DNL Workfront Fusion] sans compte [!DNL Microsoft], vous avez besoin d’un identifiant client, d’un secret client et d’un identifiant client.
 
-1. Cliquez sur **[!UICONTROL Add]** en haut de la zone **Microsoft SharePoint Online** pour ouvrir la zone **[!UICONTROL Create a connection]**.
+1. Cliquez sur **[!UICONTROL Ajouter]** en haut de la zone **Microsoft SharePoint Online** pour ouvrir la zone **[!UICONTROL Créer une connexion]**.
 
-1. (Facultatif) Modifiez le **[!UICONTROL Connection name]** par défaut.
-1. Cliquez sur **[!UICONTROL Show advanced settings]**.
-1. Saisissez les **[!UICONTROL Client ID]** et **[!UICONTROL Client Secret]** de Microsoft SharePoint Online.
+1. (Facultatif) Modifiez le **[!UICONTROL Nom de la connexion]** par défaut.
+1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
+1. Saisissez les valeurs Microsoft SharePoint Online **[!UICONTROL ID client]** et **[!UICONTROL Secret client]**.
 
-1. Cliquez sur **[!UICONTROL Continue]**.
+1. Cliquez sur **[!UICONTROL Continuer]**.
 1. Dans la fenêtre de connexion qui s’affiche, saisissez vos informations d’identification pour vous connecter à l’application si vous ne l’avez pas déjà fait.
-1. (Conditionnel) Si un bouton **[!UICONTROL Allow]** s’affiche, cliquez sur le bouton pour connecter l’application à [!DNL Workfront Fusion].
+1. (Le cas échéant) Si un bouton **[!UICONTROL Autoriser]** s’affiche, cliquez dessus pour connecter l’application à [!DNL Workfront Fusion].
 
 ## Modules SharePoint Online Microsoft et leurs champs
 
@@ -203,7 +203,7 @@ Ce module d’action récupère le fichier SharePoint spécifié.
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL File ID]</strong> du fichier que vous souhaitez récupérer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL File ID]</strong> pour le fichier que vous souhaitez récupérer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez l’emplacement du fichier. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -226,7 +226,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est mis à 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, les <strong>[!UICONTROL List ID]</strong> et les <strong>[!UICONTROL folder ID]</strong> dans les champs qui s’affichent.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l’<strong>[!UICONTROL Site ID]</strong>, l’<strong>[!UICONTROL List ID]</strong>, et l’<strong>[!UICONTROL Folder ID]</strong> dans les champs qui s’affichent.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez l’emplacement du dossier que vous souhaitez surveiller. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -239,17 +239,17 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est mis à 
 
 ### Élément
 
-* [[!UICONTROL Copy an item]](#copy-an-item)
-* [[!UICONTROL Create an item]](#create-an-item)
-* [[!UICONTROL Delete an item]](#delete-an-item)
-* [[!UICONTROL Get an Item]](#get-an-item)
-* [[!UICONTROL List Items]](#list-items)
-* [[!UICONTROL Move Item]](#move-an-item)
-* [[!UICONTROL Update an item]](#update-an-item)
-* [[!UICONTROL Watch Items] (Planifié)](#watch-items-scheduled)
+* [[!UICONTROL Copier un élément]](#copy-an-item)
+* [[!UICONTROL Créer un élément]](#create-an-item)
+* [[!UICONTROL Supprimer un élément]](#delete-an-item)
+* [[!UICONTROL Obtenir un élément]](#get-an-item)
+* [[!UICONTROL Répertorier des éléments]](#list-items)
+* [[!UICONTROL Déplacer l’élément]](#move-an-item)
+* [[!UICONTROL Mettre à jour un élément]](#update-an-item)
+* [[!UICONTROL Surveiller les éléments] (Planifié)](#watch-items-scheduled)
 
 
-#### [!UICONTROL Copy an Item]
+#### [!UICONTROL Copier un élément]
 
 Ce module d’action copie un élément existant dans une liste SharePoint.
 
@@ -280,7 +280,7 @@ Ce module d’action copie un élément existant dans une liste SharePoint.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an item]
+#### [!UICONTROL Créer un élément]
 
 Ce module d’action crée un élément dans une liste SharePoint.
 
@@ -307,7 +307,7 @@ Ce module d’action crée un élément dans une liste SharePoint.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an item]
+#### [!UICONTROL Supprimer un élément]
 
 Ce module d’action supprime un élément existant dans une liste SharePoint.
 
@@ -330,7 +330,7 @@ Ce module d’action supprime un élément existant dans une liste SharePoint.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Item]
+#### [!UICONTROL Obtenir un élément]
 
 Ce module d’action renvoie les données d’un élément spécifié.
 
@@ -353,7 +353,7 @@ Ce module d’action renvoie les données d’un élément spécifié.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Items]
+#### [!UICONTROL Éléments de liste]
 
 Ce module d’action récupère une liste de tous les éléments d’une liste spécifiée.
 
@@ -369,7 +369,7 @@ Ce module d’action récupère une liste de tous les éléments d’une liste s
    <td role="rowheader">[!UICONTROL List Items]</td> 
    <td> <p>Sélectionnez le mode d’identification de la liste à partir de laquelle vous souhaitez récupérer les éléments.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et les <strong>[!UICONTROL List ID]</strong> de la liste pour laquelle vous souhaitez répertorier les éléments.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>[!UICONTROL List ID]</strong> pour la liste pour laquelle vous souhaitez répertorier des éléments.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient la liste à partir de laquelle vous souhaitez récupérer les éléments, puis sélectionnez la liste. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -380,7 +380,7 @@ Ce module d’action récupère une liste de tous les éléments d’une liste s
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an Item]
+#### [!UICONTROL Déplacer un élément]
 
 Ce module d’action copie un élément existant dans une liste SharePoint.
 
@@ -396,7 +396,7 @@ Ce module d’action copie un élément existant dans une liste SharePoint.
    <td role="rowheader">Saisir des ID de site, de lecteur et de dossier</td> 
    <td> <p>Sélectionnez le mode d’identification du site et de la liste contenant l’élément à déplacer.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Item ID]</strong> de l’élément à déplacer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Item ID]</strong> pour l’élément que vous souhaitez déplacer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>Dans le champ Type d’élément, indiquez si vous déplacez un champ ou un dossier. Sélectionnez le site qui contient l’élément à copier, puis sélectionnez la liste et choisissez l’élément. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -411,7 +411,7 @@ Ce module d’action copie un élément existant dans une liste SharePoint.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an item]
+#### [!UICONTROL Mettre à jour un élément]
 
 Ce module d’action met à jour un élément existant dans une liste SharePoint.
 
@@ -427,7 +427,7 @@ Ce module d’action met à jour un élément existant dans une liste SharePoint
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
    <td> <p>Sélectionnez le mode d’identification du site et de la liste contenant l’élément que vous souhaitez mettre à jour.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Item ID]</strong> de l’élément à mettre à jour.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Item ID]</strong> de l’élément que vous souhaitez mettre à jour.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient l’élément que vous souhaitez mettre à jour, puis sélectionnez la liste et choisissez l’élément. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -438,7 +438,7 @@ Ce module d’action met à jour un élément existant dans une liste SharePoint
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Items] (Planifié)
+#### [!UICONTROL Éléments de contrôle] (Planifié)
 
 Ce module de déclenchement lance un scénario lorsqu’un élément est créé ou modifié.
 
@@ -458,7 +458,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est créé 
    <td role="rowheader">[!UICONTROL Enter Site and List ID]</td> 
    <td> <p>Sélectionnez le mode d’identification du site et de la liste à surveiller.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et les <strong>[!UICONTROL List ID]</strong> à observer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>[!UICONTROL List ID]</strong> que vous souhaitez regarder.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez le site que vous souhaitez surveiller, puis sélectionnez la liste. Ces listes déroulantes récupèrent uniquement les sites suivis.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -471,12 +471,12 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est créé 
 
 ### Liste
 
-* [[!UICONTROL Create a List]](#create-a-list)
-* [[!UICONTROL Get a List]](#get-a-list)
-* [[!UICONTROL List Lists]](#list-lists)
-* [[!UICONTROL Watch Lists]](#watch-lists)
+* [[!UICONTROL Créer une liste]](#create-a-list)
+* [[!UICONTROL Obtenir une liste]](#get-a-list)
+* [[!UICONTROL Répertorier des listes]](#list-lists)
+* [[!UICONTROL Surveiller des listes]](#watch-lists)
 
-#### [!UICONTROL Create a List]
+#### [!UICONTROL Créer une liste]
 
 Ce module d’action crée une liste dans SharePoint.
 
@@ -492,7 +492,7 @@ Ce module d’action crée une liste dans SharePoint.
    <td role="rowheader">[!UICONTROL Enter a Site ID]</td> 
    <td> <p>Sélectionnez la manière dont vous souhaitez identifier le site sur lequel vous souhaitez créer une liste.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong> dans lequel vous souhaitez créer une liste.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l’<strong>[!UICONTROL Site ID]</strong> où créer une liste.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site sur lequel vous souhaitez créer une liste. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -511,7 +511,7 @@ Ce module d’action crée une liste dans SharePoint.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a List]
+#### [!UICONTROL Obtenir une liste]
 
 Ce module d’action renvoie les données d’une liste spécifiée.
 
@@ -527,14 +527,14 @@ Ce module d’action renvoie les données d’une liste spécifiée.
    <td role="rowheader">[!UICONTROL Get a List]</td> 
    <td> <p>Sélectionnez le mode d’identification du site et de la liste contenant l’élément que vous souhaitez obtenir.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>ID de liste</strong> à renvoyer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>List ID</strong> que vous souhaitez renvoyer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient la liste que vous souhaitez récupérer, puis sélectionnez la liste. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Lists]
+#### [!UICONTROL Répertorier des listes]
 
 Ce module d&#39;action récupère une liste de tous les éléments d&#39;un site spécifié.
 
@@ -550,7 +550,7 @@ Ce module d&#39;action récupère une liste de tous les éléments d&#39;un site
    <td role="rowheader">[!UICONTROL List Lists]</td> 
    <td> <p>Sélectionnez le mode d’identification du site à partir duquel vous souhaitez récupérer les listes.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong> contenant les listes à renvoyer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong> qui contient les listes à renvoyer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient les listes que vous souhaitez récupérer. La liste déroulante récupère uniquement les sites que vous suivez.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -561,7 +561,7 @@ Ce module d&#39;action récupère une liste de tous les éléments d&#39;un site
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Lists]
+#### [!UICONTROL Surveiller des listes]
 
 Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou modifiée.
 
@@ -581,7 +581,7 @@ Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou
    <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
    <td> <p>Sélectionnez la manière dont vous souhaitez identifier le site que vous souhaitez surveiller pour les listes.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> où vous souhaitez placer les listes d’observation.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> où vous souhaitez regarder les listes.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez le site à surveiller. Le menu déroulant récupère uniquement les sites que vous suivez.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -598,7 +598,7 @@ Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou
 >
 >Les API en version `beta` dans [!DNL Microsoft Graph] sont susceptibles d’être modifiées. L’utilisation de ces API dans les applications de production n’est pas prise en charge.
 
-#### [!UICONTROL Get a Page]
+#### [!UICONTROL Obtenir une page]
 
 Ce module d’action renvoie les données d’une page spécifique.
 
@@ -614,7 +614,7 @@ Ce module d’action renvoie les données d’une page spécifique.
    <td role="rowheader">[!UICONTROL Get a Page]</td> 
    <td> <p>Sélectionnez le mode d’identification de la page que vous souhaitez récupérer.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Page ID]</strong> <strong>[!UICONTROL Site ID]</strong> et .</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient la page que vous souhaitez récupérer, puis sélectionnez la page.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -623,10 +623,10 @@ Ce module d’action renvoie les données d’une page spécifique.
 
 ### Site
 
-* [[!UICONTROL Get a Site]](#get-a-site)
-* [[!UICONTROL Search Sites]](#search-sites)
+* [[!UICONTROL Obtenir un site]](#get-a-site)
+* [[!UICONTROL Rechercher des sites]](#search-sites)
 
-#### [!UICONTROL Get a Site]
+#### [!UICONTROL Obtenir un site]
 
 Ce module d’action renvoie les données d’un site spécifié.
 
@@ -642,14 +642,14 @@ Ce module d’action renvoie les données d’un site spécifié.
    <td role="rowheader">[!UICONTROL Get a Site]</td> 
    <td> <p>Sélectionnez le mode d’identification de la page que vous souhaitez récupérer.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l’<strong>[!UICONTROL Site ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site que vous souhaitez récupérer.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Sites]
+#### [!UICONTROL Rechercher des sites]
 
 Ce module d’action recherche des sites en fonction d’un paramètre que vous spécifiez.
 
@@ -694,7 +694,7 @@ Ce module récupère les ajouts, les mises à jour et les suppressions effectué
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>Sélectionnez le mode d'identification du site et du lecteur contenant l'élément à mettre à jour.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, les <strong>[!UICONTROL Drive ID]</strong> et les <strong>[!UICONTROL Folder ID]</strong> dans les champs qui s’affichent.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong> et <strong>[!UICONTROL Folder ID]</strong> dans les champs qui s’affichent.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site contenant l’élément à mettre à jour, puis le lecteur et le dossier. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -705,7 +705,7 @@ Ce module récupère les ajouts, les mises à jour et les suppressions effectué
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
 

@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 73%
+source-wordcount: '1109'
+ht-degree: 77%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -68,7 +68,7 @@ Pour utiliser [!DNL Microsoft OneDrive for Business] avec [!DNL Adobe Workfront 
 
 ## Connexion du service [!DNL Microsoft OneDrive for Business] à [!DNL Workfront Fusion].
 
-Pour savoir comment connecter votre compte [!DNL Microsoft OneDrive for Business] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Microsoft OneDrive for Business] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -89,10 +89,10 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL Surveiller les fichiers]](#watch-files)
+* [[!UICONTROL Surveiller les dossiers]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL Surveiller des fichiers]
 
 Ce module déclencheur s’active lorsqu’un nouveau fichier est ajouté ou mis à jour dans un dossier surveillé.
 
@@ -123,7 +123,7 @@ Ce module déclencheur s’active lorsqu’un nouveau fichier est ajouté ou mis
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL Surveiller des dossiers]
 
 Ce module de déclenchement s’active lorsqu’un nouveau dossier est ajouté au dossier surveillé.
 
@@ -156,14 +156,14 @@ Ce module de déclenchement s’active lorsqu’un nouveau dossier est ajouté a
 
 ### Actions
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL Créer un dossier]](#create-a-folder)
+* [[!UICONTROL Supprimer un fichier]](#delete-a-file)
+* [[!UICONTROL Supprimer un dossier]](#delete-a-folder)
+* [[!UICONTROL Obtenir un fichier]](#get-a-file)
+* [[!UICONTROL Obtenir un lien de partage]](#get-a-sharing-link)
+* [[!UICONTROL Charger un fichier]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Créer un dossier]
 
 Crée un dossier à l’intérieur du dossier parent spécifié.
 
@@ -191,7 +191,7 @@ Crée un dossier à l’intérieur du dossier parent spécifié.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Supprimer un fichier]
 
 Ce module d’action déplace le fichier spécifié vers la corbeille.
 
@@ -215,7 +215,7 @@ Ce module d’action déplace le fichier spécifié vers la corbeille.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Supprimer un dossier]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -237,7 +237,7 @@ Ce module d’action déplace le fichier spécifié vers la corbeille.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obtenir un fichier]
 
 Ce module d’action récupère le fichier avec l’ID donné.
 
@@ -261,7 +261,7 @@ Ce module d’action récupère le fichier avec l’ID donné.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL Obtenir un lien de partage]
 
 Ce module récupère un lien que vous pouvez partager pour accorder l’accès au fichier spécifié.
 
@@ -293,7 +293,7 @@ Ce module récupère un lien que vous pouvez partager pour accorder l’accès a
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Charger un fichier]
 
 Ce module d’action charge un fichier binaire ou un fichier de texte dans un dossier spécifié.
 

@@ -4,10 +4,10 @@ description: Vous pouvez ajouter des techniques avancées de gestion des erreurs
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 12%
+source-wordcount: '905'
+ht-degree: 13%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -89,11 +89,11 @@ Cet exemple de scénario montre comment ces filtres fonctionnent pour la gestion
 
 Si vous utilisez le module Dropbox > Create a folder alors qu’un dossier portant le même nom existe déjà, le module renvoie une erreur DataError :
 
-![Erreur dans le Dropbox ](assets/dropbox.png)
+![Erreur dans Dropbox](assets/dropbox.png)
 
 Le scénario complet fonctionne comme suit :
 
-![scénario Dropbox ](assets/dropbox-scenario.png)
+![Scénario Dropbox](assets/dropbox-scenario.png)
 
 1. Le module Outils > Définir la variable contient le nom du dossier
 1. Le module HTTP > Get a file récupère le fichier qui doit être téléchargé dans le dossier
@@ -101,7 +101,7 @@ Le scénario complet fonctionne comme suit :
 1. L&#39;itinéraire du gestionnaire d&#39;erreurs (bulles transparentes) contient un routeur pour filtrer les erreurs
 La première route correspond à un type d’erreur spécifié appelé `DataError`.
 
-   1. Si une `DataError` a lieu et que les détails de l’erreur transitent par le filtre, le Dropbox >Répertorier tous les fichiers/sous-dossiers d’un module de dossier répertorie tous les dossiers du Dropbox.
+   1. Si une `DataError` a lieu et que les détails de l’erreur passent par le filtre, le module Dropbox > Lister tous les fichiers/sous-dossiers dans un dossier répertorie tous les dossiers dans Dropbox.
    1. Le filtre suivant correspond aux noms de dossier.
    1. La directive **Resume** spécifie l’ID de dossier et le chemin d’accès au dossier existant. L’exécution du scénario reprend à partir du module Dropbox > Création d’un dossier . Cependant, au lieu de créer un dossier, Fusion utilise les valeurs de la directive Resume pour passer au module suivant et charger le fichier dans le dossier existant.
 
@@ -141,8 +141,8 @@ Un itinéraire de gestionnaire d’erreurs imbriqué avec des filtres :
 
 Dans ce scénario, le deuxième itinéraire de gestionnaire d’erreurs est imbriqué sous le premier itinéraire de gestionnaire d’erreurs.
 
-Si le module Dropbox > Create a folder rencontre une erreur, l’exécution passe à la première route. Si le filtre `DataError Takes Place` est transmis, le module suivant s’exécute, suivi du module de directive Resume si aucune erreur ne se produit dans le Dropbox > Lister tous les fichiers/sous-dossiers d’un module de dossier.
+Si le module Dropbox > Create a folder rencontre une erreur, l’exécution passe à la première route. Si le filtre `DataError Takes Place` est transmis, le module suivant s’exécute, suivi du module de directive Resume si aucune erreur ne se produit dans Dropbox > Lister tous les fichiers/sous-dossiers d’un module de dossier.
 
-Cependant, si une erreur se produit dans le Dropbox > Répertorier tous les fichiers/sous-dossiers d’un module de dossier, l’exécution se déplace vers l’Itinéraire 2 du gestionnaire d’erreurs et se termine par la directive [!UICONTROL Ignore]. Le module [!UICONTROL Resume directive] n&#39;est pas exécuté dans ce cas.
+Cependant, si une erreur se produit dans Dropbox > Répertorier tous les fichiers/sous-dossiers dans un module de dossier, l’exécution se déplace vers l’Itinéraire 2 du gestionnaire d’erreurs et se termine par la directive [!UICONTROL Ignorer]. Le module [!UICONTROL Reprendre la directive] n’est pas exécuté dans ce cas.
 
 >[!ENDSHADEBOX]

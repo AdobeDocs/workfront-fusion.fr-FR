@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Workfront Fusion Adobe Creative Cloud
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 63%
+source-wordcount: '1393'
+ht-degree: 66%
 
 ---
 
@@ -45,7 +45,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -69,7 +69,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Conditions préalables
 
-Pour utiliser les modules [!DNL Adobe Creative Cloud Libraries], vous devez disposer d’un compte [!UICONTROL Adobe Creative Cloud].
+Pour utiliser les modules [!DNL Adobe Creative Cloud Libraries], vous devez disposer d’un compte [!UICONTROL Adobe Creative Cloud].
 
 ## Informations sur l’API des bibliothèques Adobe Creative Cloud
 
@@ -90,9 +90,9 @@ Le connecteur Bibliothèques Adobe Creative Cloud utilise les éléments suivant
  </tbody> 
  </table>
 
-## Modules [!UICONTROL Adobe Creative Cloud Libraries] et leurs champs
+## Modules [!UICONTROL Adobe Creative Cloud Libraries] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Adobe Creative Cloud Libraries], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Creative Cloud Libraries] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL Adobe Creative Cloud Libraries], [!DNL Workfront Fusion] affiche les champs indiqués ci-dessous. D’autres champs [!DNL Adobe Creative Cloud Libraries] peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -108,20 +108,20 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Éléments
 
-* [[!UICONTROL Archive an Element]](#archive-an-element)
+* [[!UICONTROL Archiver un élément]](#archive-an-element)
 
-* [[!UICONTROL Get an Element]](#get-an-element)
+* [[!UICONTROL Obtenir un élément]](#get-an-element)
 
-* [[!UICONTROL List Elements]](#list-elements)
+* [[!UICONTROL Répertorier des éléments]](#list-elements)
 
-* [[!UICONTROL Upload an Element]](#upload-an-element)
+* [[!UICONTROL Charger un élément]](#upload-an-element)
 
 * [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
-* [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
+* [[!UICONTROL Surveiller les éléments mis à jour]](#watch-updated-elements)
 
 
-#### [!UICONTROL Archive an Element]
+#### [!UICONTROL Archiver un élément]
 
 Ce module d’action archive un élément d’une bibliothèque.
 
@@ -144,7 +144,7 @@ Ce module d’action archive un élément d’une bibliothèque.
   </tbody>
 </table>
 
-#### [!UICONTROL Get an Element]
+#### [!UICONTROL Obtenir un élément]
 
 Ce module d’action renvoie un seul élément d’une bibliothèque.
 
@@ -190,7 +190,7 @@ Ce module d’action renvoie un seul élément d’une bibliothèque.
   </tbody>
 </table>
 
-#### [!UICONTROL List Elements]
+#### [!UICONTROL Répertorier des éléments]
 
 Ce module d’action permet de récupérer une liste d’éléments dans une bibliothèque.
 
@@ -212,7 +212,7 @@ Ce module d’action permet de récupérer une liste d’éléments dans une bib
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >Saisissez ou mappez un type MIME pour limiter les résultats aux éléments identifiés avec le type MIME spécifié. Exemple : <code>string</code>.</td>
+      <td >Saisissez ou mappez un type MIME pour limiter les résultats aux éléments identifiés avec le type MIME spécifié. Exemple : <code>string</code></td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -244,7 +244,7 @@ Ce module d’action permet de récupérer une liste d’éléments dans une bib
   </tbody>
 </table>
 
-#### [!UICONTROL Watch New Element in Library]
+#### [!UICONTROL Surveiller un nouvel élément dans la bibliothèque]
 
 Ce module de déclenchement lance un scénario lorsqu’un élément est ajouté à une bibliothèque.
 
@@ -268,7 +268,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est ajouté
 </table>
 
 
-#### [!UICONTROL Watch Updated Elements]
+#### [!UICONTROL Surveiller les éléments mis à jour]
 
 Ce module de déclenchement lance un scénario lorsqu’un élément d’une bibliothèque est mis à jour.
 
@@ -293,12 +293,12 @@ Ce module de déclenchement lance un scénario lorsqu’un élément d’une bib
 
 ### Bibliothèques
 
-* [[!UICONTROL Watch New Libraries]](#watch-new-libraries)
+* [[!UICONTROL Surveiller les nouvelles bibliothèques]](#watch-new-libraries)
 
-* [[!UICONTROL Watch Updated Libraries]](#watch-updated-libraries)
+* [[!UICONTROL Surveiller les bibliothèques mises à jour]](#watch-updated-libraries)
 
 
-#### [!UICONTROL Watch New Libraries]
+#### [!UICONTROL Surveiller les nouvelles bibliothèques]
 
 Ce module de déclenchement lance un scénario lorsqu’une nouvelle bibliothèque est créée.
 
@@ -317,7 +317,7 @@ Ce module de déclenchement lance un scénario lorsqu’une nouvelle bibliothèq
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Updated Libraries]
+#### [!UICONTROL Surveiller les bibliothèques mises à jour]
 
 Ce module de déclenchement lance un scénario lorsqu’une bibliothèque existante est mise à jour.
 
@@ -341,7 +341,7 @@ Ce module de déclenchement lance un scénario lorsqu’une bibliothèque exista
 * [Effectuer un appel API](#make-an-api-call)
 * [Chargement d’une ressource](#upload-an-asset)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Creative Cloud Libraries].
 
@@ -386,7 +386,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Creative Cl
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles comme <code>if</code> dans votre JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -401,7 +401,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Creative Cl
 </table>
 
 
-#### [!UICONTROL Upload an Asset]
+#### [!UICONTROL Charger une ressource]
 
 Ce module d’action charge un petit fichier de ressources dans une bibliothèque existante. Taille de fichier maximum : 1 Go.
 
@@ -433,7 +433,7 @@ Ce module d’action charge un petit fichier de ressources dans une bibliothèqu
             <p>La réponse du moniteur asynchrone est immédiatement renvoyée et le traitement de la demande se fait de manière asynchrone. L’appelant est responsable de l’interrogation du point d’entrée jusqu’à son achèvement.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL sync,async]</b> (Par Défaut)</p>
+            <p><b>[!UICONTROL sync,async]</b> (par défaut)</p>
             <p>Le traitement synchrone de la demande est tenté. Lorsque le traitement dépasse 5 000 ms, la réponse du moniteur asynchrone est renvoyée. L’URL du moniteur doit être interrogée jusqu’à ce que la demande soit terminée.</p>
           </li>
         </ul>

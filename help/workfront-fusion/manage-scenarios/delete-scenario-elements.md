@@ -4,10 +4,10 @@ description: Vous pouvez afficher et gérer les connexions de vos équipes dans 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 36%
+source-wordcount: '224'
+ht-degree: 54%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 36%
 
 Vous pouvez stocker et supprimer des éléments de scénario dans les zones suivantes de votre compte [!DNL Adobe Workfront Fusion] :
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
+* [!UICONTROL Scénario]
+* [!UICONTROL Connexions]
 * [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL Clés]
+* [!UICONTROL Appareils]
+* [!UICONTROL Magasins de données]
+* [!UICONTROL Profils d’utilisateur ou d’utilisatrice]
 
 
 ## Conditions d’accès
@@ -45,7 +45,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -82,7 +82,7 @@ Pour supprimer des éléments de scénario, procédez comme suit :
 
 1. Cliquez sur la zone dans le panneau de gauche.
 
-   Par exemple, si vous souhaitez supprimer un scénario, cliquez sur **[!UICONTROL Scenario]** dans le panneau de gauche.
+   Par exemple, si vous souhaitez supprimer un scénario, cliquez sur **[!UICONTROL Scénario]** dans le panneau de gauche.
 
-1. Cliquez sur la flèche vers le bas située à droite de l’élément à supprimer, puis cliquez sur **[!UICONTROL Delete]**.
-1. Cliquez sur **[!UICONTROL Really]** pour confirmer.
+1. Cliquez sur la flèche vers le bas à droite de l’élément que vous souhaitez supprimer, puis cliquez sur **[!UICONTROL Supprimer]**.
+1. Cliquez sur **[!UICONTROL Vraiment]** pour confirmer l’opération.

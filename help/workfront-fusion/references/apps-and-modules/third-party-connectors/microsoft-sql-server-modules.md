@@ -4,16 +4,16 @@ description: Vous pouvez utiliser  [!DNL Adobe Workfront Fusion]  pour vous conn
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 80%
+source-wordcount: '498'
+ht-degree: 83%
 
 ---
 
 # Modules [!DNL Microsoft SQL Server]
 
-Vous pouvez utiliser [!DNL Adobe Workfront Fusion] pour vous connecter à [!UICONTROL Microsoft SQL Server].
+Vous pouvez utiliser [!DNL Adobe Workfront Fusion] pour vous connecter à [!UICONTROL Microsoft SQL Server].
 
 ## Conditions d’accès
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -60,7 +60,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Connexion du service  à . [!DNL Microsoft SQL Server][!DNL Workfront Fusion]
 
-Pour savoir comment connecter votre compte [!DNL Microsoft SQL Server] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Microsoft SQL Server] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Pour en savoir plus sur la création d’une procédure stockée, consultez la d
 >
 >[!DNL Workfront Fusion] ne prend pas en charge les ensembles d’enregistrements multiples. Seul le premier est traité.
 
-## Résolution des [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction] d’erreur
+## Résoudre l’erreur [!UICONTROL ER_LOCK_WAIT_TIMEOUT : le délai d’attente du verrouillage a été dépassé ; essayez de redémarrer la transaction.]
 
 Cette erreur se produit lorsque vous modifiez les mêmes données à l’aide de plusieurs modules. Elle est causée par les transactions SQL.
 
@@ -94,6 +94,6 @@ Si un autre module tente d’accéder aux mêmes données, il doit attendre que 
 
 Activez la validation automatique. La validation automatique termine (valide) chaque transaction immédiatement après l’exécution du module.
 
-1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![icône des paramètres de scénario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) en bas de l’écran.
-1. Cochez la case **[!UICONTROL Auto commit]** .
-1. Cliquez sur **[!UICONTROL OK]** pour enregistrer les paramètres du scénario.
+1. Cliquez sur l’icône [!UICONTROL Paramètres du scénario] ![Icône Paramètres du scénario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) en bas de l’écran.
+1. Cliquez sur la case **[!UICONTROL Validation automatique]**.
+1. Cliquez sur **[!UICONTROL OK]** et enregistrez les paramètres du scénario.

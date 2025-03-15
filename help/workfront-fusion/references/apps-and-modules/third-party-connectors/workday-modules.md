@@ -5,10 +5,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 80%
+source-wordcount: '1027'
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -92,7 +92,7 @@ Le connecteur Workday utilise les éléments suivants :
 
 ## Connecter [!DNL Workday] à [!DNL Workfront Fusion]
 
-1. Dans un module de [!DNL Workfront Fusion], cliquez sur [!UICONTROL Add] en regard du champ [!UICONTROL Connection] .
+1. Dans n’importe quel module [!DNL Workfront Fusion], cliquez sur [!UICONTROL Ajouter] à côté du champ [!UICONTROL Connexion] 
 
 2. Remplissez les champs suivants :
 
@@ -134,9 +134,9 @@ Le connecteur Workday utilise les éléments suivants :
     </table>
 
 
-3. Cliquez sur [!UICONTROL Continue] pour enregistrer la connexion et revenir au module
+3. Cliquez sur [!UICONTROL Continuer] pour enregistrer la connexion et revenir au module.
 
-## Modules [!DNL Workday] et leurs champs
+## Les modules [!DNL Workday] et leurs champs
 
 Lorsque vous configurez les modules [!DNL Workday], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Workday] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
@@ -151,16 +151,16 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Action
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Créer un enregistrement]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Supprimer un enregistrement]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL Effectuer un appel d’API personnalisé]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Mettre à jour un enregistrement]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée un seul enregistrement dans [!DNL Workday].
 
@@ -187,7 +187,7 @@ Ce module d’action crée un seul enregistrement dans [!DNL Workday].
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Supprimer un enregistrement]
 
 Ce module d’action supprime un seul enregistrement dans [!DNL Workday].
 
@@ -221,9 +221,9 @@ Ce module d’action supprime un seul enregistrement dans [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Effectuer un appel d’API personnalisé]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Workday]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Workday].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Workday]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Workday].
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -239,7 +239,7 @@ Le module renvoie le code d’état, ainsi que les en-têtes et le corps de l’
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Saisir un chemin relatif à <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
+   <td>Saisissez un chemin d’accès relatif à <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -255,7 +255,7 @@ Le module renvoie le code d’état, ainsi que les en-têtes et le corps de l’
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre code JSON, saisissez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -263,7 +263,7 @@ Le module renvoie le code d’état, ainsi que les en-têtes et le corps de l’
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Mettre à jour un enregistrement]
 
 Ce module d’action met à jour un seul enregistrement dans [!DNL Workday].
 
@@ -273,7 +273,7 @@ Ce module d’action met à jour un seul enregistrement dans [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Pour plus d’informations sur la connexion de votre compte [!DNL Workday] à Workfront Fusion, voir <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] à Workfront Fusion]</a></td>
+            <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Workday] à Workfront Fusion, consultez <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion].</a></td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -292,12 +292,12 @@ Ce module d’action met à jour un seul enregistrement dans [!DNL Workday].
 
 ### Recherche
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Lire un enregistrement]](#read-a-record)
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL Répertorier des enregistrements]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action lit un seul enregistrement.
 
@@ -309,7 +309,7 @@ Ce module d’action lit un seul enregistrement.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Pour plus d’informations sur la connexion de votre compte [!DNL Workday] à Workfront Fusion, voir <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] à Workfront Fusion]</a></td>
+            <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Workday] à Workfront Fusion, consultez <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -326,7 +326,7 @@ Ce module d’action lit un seul enregistrement.
     </tbody>
 </table>
 
-#### [!UICONTROL List records]
+#### [!UICONTROL Répertorier des enregistrements]
 
 Ce module de recherche permet d’obtenir une liste des enregistrements du type spécifié.
 

@@ -1,13 +1,13 @@
 ---
 title: Modules JWT
-description: L’application  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
+description: L’application  [!DNL Adobe Workfront Fusion] [!UICONTROL  JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 8%
+source-wordcount: '525'
+ht-degree: 9%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 

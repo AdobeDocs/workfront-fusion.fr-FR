@@ -4,16 +4,16 @@ description: Vous pouvez utiliser le module SOAP pour vous connecter aux API SOA
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 45%
+source-wordcount: '669'
+ht-degree: 64%
 
 ---
 
-# Module [!UICONTROL SOAP]
+# Module [!UICONTROL SOAP]
 
-Vous pouvez utiliser le module [!UICONTROL SOAP] pour vous connecter aux API [!UICONTROL SOAP] dans [!UICONTROL Adobe Workfront Fusion].
+Vous pouvez utiliser le module [!UICONTROL SOAP] pour vous connecter aux API [!UICONTROL SOAP] dans [!UICONTROL Adobe Workfront Fusion].
 
 ## Module SOAP et ses champs
 
@@ -46,7 +46,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -105,13 +105,13 @@ Ce module d’action exécute une action SOAP, en fonction du WSDL que vous spé
   </tbody> 
 </table>
 
-## Limites du module [!UICONTROL SOAP]
+## Restrictions du module [!UICONTROL SOAP]
 
 >[!NOTE]
 >
 >Les redirections sont désactivées pendant le chargement du WDSL. Il s’agit d’une fonctionnalité de sécurité, mais cela peut signifier que les redirections non vérifiées sont bloquées lors de l’exécution du module.
 
-Le module [!UICONTROL SOAP] est actuellement en version bêta et ne prend pas en charge :
+Le module [!UICONTROL SOAP] est actuellement en version Beta et ne prend pas en charge :
 
 * les éléments de redéfinition ;
 * les restrictions relatives aux chiffres des fractions ;
@@ -124,7 +124,7 @@ Le module [!UICONTROL SOAP] est actuellement en version bêta et ne prend pas en
 
 **Exemple :**
 
-Les éléments suivants ne seraient pas correctement reconnus par [!UICONTROL Workfront Fusion] :
+Les éléments suivants ne sont pas correctement reconnus par [!UICONTROL Workfront Fusion] :
 
 ```
 <complexType name="ArrayOfFloat">
@@ -137,16 +137,16 @@ Les éléments suivants ne seraient pas correctement reconnus par [!UICONTROL Wo
 </complexType>
 ```
 
-Cet exemple inclut les références `soapenc:Array`, `soapenc:arrayType` et `wsdl:arrayType`, qui ne sont pas encore prises en charge dans [!UICONTROL Workfront Fusion].
+Cet exemple inclut les références `soapenc:Array`, `soapenc:arrayType` et `wsdl:arrayType` qui ne sont pas encore prises en charge dans [!UICONTROL Workfront Fusion].
 
 >[!ENDSHADEBOX]
 
 ## Solution de contournement
 
-Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie diverses erreurs dans la configuration du module, vous pouvez essayer d’utiliser le module **[!UICONTROL HTTP]universel >[!UICONTROL Make a request]** à la place :
+Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie diverses erreurs dans la configuration du module, vous pouvez essayer d’utiliser le module universel **[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]** à la place :
 
 1. Dans [!DNL Workfront Fusion], créez un scénario.
-1. Insérez le module **[!UICONTROL HTTP]>[!UICONTROL Make a request]** dans le scénario.
+1. Insérez le module **[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]** dans le scénario.
 1. Ouvrez la configuration du module et renseignez les champs suivants :
 
    <table style="table-layout:auto"> 
@@ -186,12 +186,12 @@ Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie dive
 
 1. Une fois localisée, copiez l’URL à partir de l’attribut `location`.
 1. Dans [!DNL Workfront Fusion], collez l’URL dans le champ URL du module HTTP.
-1. Ouvrez le [client de [!UICONTROL SOAP] en ligne](https://wsdlbrowser.com/) dans une nouvelle fenêtre/un nouvel onglet du navigateur web.
+1. Ouvrez le [Client [!UICONTROL SOAP] en ligne](https://wsdlbrowser.com/) dans une nouvelle fenêtre ou un nouvel onglet du navigateur web.
 1. Collez l’URL WSDL dans le champ URL WSDL.
-1. Cliquez sur **[!UICONTROL Browse]**.
+1. Cliquez sur **[!UICONTROL Parcourir]**.
 1. Faites votre choix dans la liste des fonctions située à gauche, par exemple `getLanguages`.
-1. Copiez le contenu de la zone de texte [!UICONTROL Request XML].
-1. Dans [!UICONTROL Workfront Fusion], collez le contenu copié dans le champ URL du module.
+1. Copiez le contenu de la zone de texte [!UICONTROL Requête XML].
+1. Dans [!UICONTROL Workfront Fusion], collez le contenu copié dans le champ URL du module.
 1. Indiquez des valeurs pour les paramètres sélectionnés en remplaçant les points d’interrogation par des valeurs réelles :
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->

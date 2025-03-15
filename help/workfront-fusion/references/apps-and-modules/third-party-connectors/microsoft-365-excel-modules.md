@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 71%
+source-wordcount: '2637'
+ht-degree: 78%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -93,7 +93,7 @@ Le connecteur Microsoft Office 365 Excel utilise les éléments suivants :
 
 ## Connexion du service [!DNL Office 365 Excel] à [!DNL Workfront Fusion].
 
-Pour savoir comment connecter votre compte [!DNL Office 365 Excel] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365 Excel] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Rechercher des classeurs](#search-workbooks)
 * [Surveiller des classeurs](#watch-workbooks)
 
-#### [!UICONTROL Download a Workbook]
+#### [!UICONTROL Télécharger un classeur]
 
 Ce module d’action télécharge le contenu du classeur Excel spécifié.
 
@@ -136,13 +136,13 @@ Ce module d’action télécharge le contenu du classeur Excel spécifié.
    <td role="rowheader">[!UICONTROL Download a workbook]</td> 
    <td> <p>Sélectionnez le mode d’identification du classeur à télécharger.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>Dans le champ [!UICONTROL Workbook ID] , saisissez ou mappez l’identifiant du classeur spécifique que le module doit télécharger.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>Dans le champ [!UICONTROL Workbook] , sélectionnez le classeur que le module doit télécharger, y compris son chemin d’accès s’il ne se trouve pas dans le dossier racine.</p> </li> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>Dans le champ [!UICONTROL Workbook ID], saisissez ou mappez l’identifiant du classeur spécifique que le module doit télécharger.</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>Dans le champ [!UICONTROL Workbook], sélectionnez le classeur que vous souhaitez que le module télécharge, y compris son chemin d’accès s’il ne se trouve pas dans le dossier racine.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody>
 
-#### [!UICONTROL Search Workbooks]
+#### [!UICONTROL Rechercher des classeurs]
 
 Ce module d’action recherche des classeurs [!DNL Excel].
 
@@ -170,7 +170,7 @@ Ce module d’action recherche des classeurs [!DNL Excel].
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL Surveiller des classeurs]
 
 Ce module de déclenchement démarre un scénario lorsqu’un classeur est créé.
 
@@ -199,15 +199,15 @@ Ce module de déclenchement démarre un scénario lorsqu’un classeur est cré�
 
 ### Feuille de travail
 
-* [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
-* [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
+* [[!UICONTROL Ajouter une feuille de travail]](#add-a-worksheet)
+* [[!UICONTROL Ajouter une ligne de feuille de travail]](#add-a-worksheet-row)
+* [[!UICONTROL Supprimer une ligne de feuille de travail]](#delete-a-worksheet-row)
+* [[!UICONTROL Répertorier des lignes de feuille de travail]](#list-worksheet-rows)
+* [[!UICONTROL Répertorier des feuilles de calcul]](#list-worksheets)
+* [[!UICONTROL Mettre à jour une ligne de feuille de travail]](#update-a-worksheet-row)
+* [[!UICONTROL Surveiller des lignes de feuille de travail]](#watch-worksheet-rows)
 
-#### [!UICONTROL Add a Worksheet]
+#### [!UICONTROL Ajouter une feuille de travail]
 
 Ce module d’action crée une feuille de travail dans le classeur sélectionné.
 
@@ -230,7 +230,7 @@ Ce module d’action crée une feuille de travail dans le classeur sélectionné
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Worksheet Row]
+#### [!UICONTROL Ajouter une ligne de feuille de travail]
 
 Ce module d’action ajoute une nouvelle ligne à la feuille de travail sélectionnée.
 
@@ -266,7 +266,7 @@ Ce module d’action ajoute une nouvelle ligne à la feuille de travail sélecti
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Supprimer une ligne de feuille de travail]
 
 Ce module d’action supprime une ligne d’une feuille de travail.
 
@@ -293,7 +293,7 @@ Ce module d’action supprime une ligne d’une feuille de travail.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheet Rows]
+#### [!UICONTROL Lister les lignes de feuille de travail]
 
 Ce module d’action récupère une liste de lignes d’une feuille de travail spécifiée.
 
@@ -320,7 +320,7 @@ Ce module d’action récupère une liste de lignes d’une feuille de travail s
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheets]
+#### [!UICONTROL Répertorier des feuilles de calcul]
 
 Ce module d’action récupère une liste de feuilles de calcul dans le classeur spécifié.
 
@@ -343,7 +343,7 @@ Ce module d’action récupère une liste de feuilles de calcul dans le classeur
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Worksheet Row]
+#### [!UICONTROL Mettre à jour une ligne de feuille de travail]
 
 Ce module d’action met à jour une ligne de feuille de travail existante.
 
@@ -383,7 +383,7 @@ Ce module d’action met à jour une ligne de feuille de travail existante.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Surveiller des lignes de feuille de travail]
 
 Ce module déclencheur lance un scénario lorsqu’une nouvelle ligne est ajoutée à la feuille.
 
@@ -404,7 +404,7 @@ Ce module déclencheur lance un scénario lorsqu’une nouvelle ligne est ajout�
    <td> <p>Sélectionnez la feuille Excel dans laquelle vous souhaitez surveiller les nouvelles lignes.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+    <td role="rowheader" >[!UICONTROL Ignorer les lignes vides] </td>
    <td> <p>Activez cette option pour ne pas renvoyer de lots pour les lignes vides dans la feuille de calcul.</p> </td> 
   </tr> 
   <tr> 
@@ -416,16 +416,16 @@ Ce module déclencheur lance un scénario lorsqu’une nouvelle ligne est ajout�
 
 ### Tableau
 
-* [[!UICONTROL Add a table]](#add-a-table)
-* [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Delete a table]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL Update a table]](#update-a-table)
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
+* [[!UICONTROL Ajouter un tableau]](#add-a-table)
+* [[!UICONTROL Ajouter une ligne de tableau]](#add-a-table-row)
+* [[!UICONTROL Supprimer un tableau]](#delete-a-table)
+* [[!UICONTROL Obtenir un tableau]](#get-a-table)
+* [[!UICONTROL Lister les lignes de tableau]](#list-table-rows)
+* [[!UICONTROL Lister les tableaux]](#list-tables)
+* [[!UICONTROL Mettre à jour un tableau]](#update-a-table)
+* [[!UICONTROL Surveiller les lignes de tableau]](#watch-table-rows)
 
-#### [!UICONTROL Add a table]
+#### [!UICONTROL Ajouter un tableau]
 
 Ce module d’action crée un élément de tableau dans la feuille de travail Excel.
 
@@ -456,7 +456,7 @@ Ce module d’action crée un élément de tableau dans la feuille de travail Ex
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a table row]
+#### [!UICONTROL Ajouter une ligne de tableau]
 
 Ce module d’action modifie un tableau existant.
 
@@ -491,7 +491,7 @@ Ce module d’action modifie un tableau existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Supprimer un tableau]
 
 Ce module d’action supprime le tableau spécifié d’une feuille de travail [!DNL Excel].
 
@@ -504,17 +504,17 @@ Ce module d’action supprime le tableau spécifié d’une feuille de travail [
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td role="rowheader">[!UICONTROL Supprimer une table]</td> 
    <td> <p>Sélectionnez le mode d’identification du tableau à supprimer.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l'ID du classeur contenant la table à supprimer, puis saisissez ou mappez l'ID de la feuille de calcul contenant la table.</p> <p>Dans le champ [!UICONTROL Table Name] , saisissez ou mappez le nom de la table à supprimer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l'ID du classeur contenant la table à supprimer, puis saisissez ou mappez l'ID de la feuille de calcul contenant la table.</p> <p>Dans le champ [!UICONTROL Table Name], saisissez ou mappez le nom du tableau à supprimer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le classeur et la feuille de travail qui contiennent le tableau à supprimer, puis sélectionnez-le.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Table]
+#### [!UICONTROL Obtenir un tableau]
 
 Ce module d’action récupère les métadonnées du tableau spécifié.
 
@@ -534,14 +534,14 @@ Ce module d’action récupère les métadonnées du tableau spécifié.
    <td role="rowheader">[!UICONTROL Get a table]</td> 
    <td> <p>Sélectionnez le mode d’identification du tableau que vous souhaitez récupérer.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l'ID du classeur contenant la table à récupérer, puis saisissez ou mappez l'ID de la feuille de calcul contenant la table.</p> <p>Dans le champ [!UICONTROL Table Name], saisissez ou mappez le nom de la table à récupérer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez l'ID du classeur contenant la table à récupérer, puis saisissez ou mappez l'ID de la feuille de calcul contenant la table.</p> <p>Dans le champ [!UICONTROL Table Name], saisissez ou mappez le nom du tableau à récupérer.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le classeur et la feuille de travail qui contiennent le tableau à récupérer, puis sélectionnez le tableau.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List table rows]
+#### [!UICONTROL Répertorier des lignes de tableau]
 
 Ce module de recherche récupère une liste de toutes les lignes d’un tableau dans un classeur.
 
@@ -572,7 +572,7 @@ Ce module de recherche récupère une liste de toutes les lignes d’un tableau 
  </tbody> 
 </table>
 
-#### [!UICONTROL List tables]
+#### [!UICONTROL Lister des tableaux]
 
 Ce module de recherche récupère une liste de tous les objets de tableau.
 
@@ -599,7 +599,7 @@ Ce module de recherche récupère une liste de tous les objets de tableau.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a table]
+#### [!UICONTROL Mettre à jour un tableau]
 
 Ce module d’action met à jour un tableau existant.
 
@@ -615,7 +615,7 @@ Ce module d’action met à jour un tableau existant.
    <td role="rowheader">[!UICONTROL Update a table]</td> 
    <td> <p>Sélectionnez le mode d’identification du tableau à mettre à jour.</p> 
     <ul> 
-     <li> <p><strong>Saisie manuelle</strong> </p> <p>Dans le champ [!UICONTROL Workbook ID] , saisissez ou mappez l’ID du classeur contenant la table à mettre à jour.</p> <p>Dans le champ [!UICONTROL Table Name] , saisissez ou mappez le nom de la table à mettre à jour.</p> </li> 
+     <li> <p><strong>Saisie manuelle</strong> </p> <p>Dans le champ [!UICONTROL Workbook ID], saisissez ou mappez l’identifiant du classeur qui contient le tableau à mettre à jour.</p> <p>Dans le champ [!UICONTROL Table Name], saisissez ou mappez le nom du tableau à mettre à jour.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le classeur et la feuille de travail qui contiennent le tableau à mettre à jour, puis sélectionnez le tableau.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -638,7 +638,7 @@ Ce module d’action met à jour un tableau existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch table rows]
+#### [!UICONTROL Surveiller les lignes de tableau]
 
 Ce déclencheur lance un scénario lorsqu’une nouvelle ligne est ajoutée à un tableau.
 
@@ -677,10 +677,10 @@ Ce déclencheur lance un scénario lorsqu’une nouvelle ligne est ajoutée à u
 
 ### Autre
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Retrieve data]](#retrieve-data)
+* [[!UICONTROL Effectuer un appel API]](#make-an-api-call)
+* [[!UICONTROL Récupérer les données]](#retrieve-data)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module d’action vous permet d’effectuer un appel API personnalisé.
 
@@ -718,7 +718,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  </tbody> 
 </table>
 
-#### [!UICONTROL Retrieve data]
+#### [!UICONTROL Récupérer les données]
 
 Cette action récupère les données de la plage de feuilles de travail définie et renvoie un lot pour chaque ligne.
 

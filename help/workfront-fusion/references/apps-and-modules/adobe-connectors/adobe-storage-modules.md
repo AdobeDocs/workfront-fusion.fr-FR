@@ -8,7 +8,7 @@ description: Dans un  [!DNL Adobe Workfront Fusion] , vous devez créer et gére
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 20%
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -264,7 +264,7 @@ Ce module d&#39;action envoie une invitation afin d&#39;accorder à un nouvel ut
    <td>Sélectionnez le rôle que vous souhaitez attribuer à l’utilisateur nouvellement invité pour la ressource.<ul><li>Propriétaire</li><li>Éditeur</li><li>Observateur</li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Peut réaliser des commentaires</td> 
+   <td role="rowheader">Peut laisser des commentaires</td> 
    <td>Activez cette option pour permettre à l’utilisateur de commenter la ressource.</td> 
   </tr> 
   <tr> 

@@ -4,10 +4,10 @@ description: Avec les modules Figma  [!DNL Adobe Workfront Fusion] , vous pouvez
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 59%
+source-wordcount: '2560'
+ht-degree: 78%
 
 ---
 
@@ -40,7 +40,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -93,7 +93,7 @@ Le connecteur Figma utilise les éléments suivants :
 
 Pour créer une connexion pour vos modules Figma :
 
-1. Dans un module Figma, cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans un module Figma, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -117,11 +117,11 @@ Pour créer une connexion pour vos modules Figma :
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] de [!UICONTROL Figme].</td>
+        <td>Saisissez votre [!UICONTROL Image] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Entrez votre [!UICONTROL Client Secret] Figma.</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] Figma.</td>
         </tr>
         <tr>
         <td role="rowheader">Portées personnalisées</td>
@@ -134,7 +134,7 @@ Pour créer une connexion pour vos modules Figma :
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
 
@@ -164,7 +164,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Publier un commentaire](#post-a-comment)
 
 
-#### [!UICONTROL Delete a comment]
+#### [!UICONTROL Supprimer un commentaire]
 
 Ce module d’action supprime un seul commentaire d’un fichier.
 
@@ -188,7 +188,7 @@ Ce module d’action supprime un seul commentaire d’un fichier.
   </tbody>
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL Répertorier les commentaires]
 
 Ce module de recherche répertorie tous les commentaires attachés à un seul fichier dans [!DNL Figma].
 
@@ -209,7 +209,7 @@ Ce module de recherche répertorie tous les commentaires attachés à un seul fi
             <p>Si vous ne connaissez pas l’ID, cliquez sur <b>[!UICONTROL Find Files]</b> et saisissez ou mappez l’ID du projet auquel le fichier est associé, puis sélectionnez le fichier.</p>
           </li>
           <li>
-            <p>Si vous ne connaissez pas l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe propriétaire du projet auquel le fichier est associé, puis sélectionnez le projet et sélectionnez le fichier.</p>
+            <p>Si vous ne connaissez pas l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe qui possède le projet auquel le fichier est associé, puis sélectionnez le projet et enfin le fichier.</p>
           </li>
         </ul>
       </td>
@@ -222,7 +222,7 @@ Ce module de recherche répertorie tous les commentaires attachés à un seul fi
 </table>
 
 
-#### [!UICONTROL Post a comment]
+#### [!UICONTROL Publier un commentaire]
 
 Ce module d’action publie un commentaire dans un fichier Figma.
 
@@ -243,7 +243,7 @@ Ce module d’action publie un commentaire dans un fichier Figma.
             <p>Si vous ne connaissez pas l’ID du fichier, cliquez sur <b>[!UICONTROL Find Files]</b> et saisissez ou mappez l’ID du projet auquel le fichier est associé, puis sélectionnez le fichier.</p>
           </li>
           <li>
-            <p>Si vous tentez de trouver l’ID du fichier sans connaître l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe propriétaire du projet auquel le fichier est associé. Sélectionnez le projet, puis le fichier.</p>
+            <p>Si vous essayez de trouver l’ID du fichier et que vous ne connaissez pas l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe qui possède le projet auquel le fichier est associé. Sélectionnez le projet, puis le fichier.</p>
           </li>
         </ul>
       </td>
@@ -267,7 +267,7 @@ Ce module d’action publie un commentaire dans un fichier Figma.
 * [Répertorier les projets](#list-projects)
 
 
-#### [!UICONTROL Get a file or image]
+#### [!UICONTROL Obtenir un fichier ou une image]
 
 Ce module d’action permet de récupérer un seul fichier ou une seule image dans une bibliothèque Figma.
 
@@ -287,26 +287,26 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
           <li>
             <p><b>[!UICONTROL File]</b>
             </p>
-            <p>Le module renvoie le document appelé objet JSON par [!UICONTROL Key]. La clé de fichier peut être analysée à partir de n’importe quelle URL de fichier Figma.</p>
-            <p>Pour les champs, voir <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
+            <p>Le module renvoie le document auquel se réfère la [!UICONTROL Key] sous la forme d’un objet JSON. La clé de fichier peut être analysée à partir de n’importe quelle URL de fichier Figma.</p>
+            <p>Pour les champs, consultez <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL File nodes]</b>
             </p>
-            <p>Renvoie les nœuds référencés par les ID sous la forme d’un objet JSON. Les nœuds sont récupérés à partir du fichier [!DNL Figma] auquel [!UICONTROL Key] fait référence.</p>
-            <p>Pour les champs, voir <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
+            <p>Renvoie les nœuds référencés par les ID sous la forme d’un objet JSON. Les nœuds sont extraits du fichier [!DNL Figma] auquel renvoie la [!UICONTROL Key].</p>
+            <p>Pour les champs, consultez <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image]</b>
             </p>
             <p>Le module rend les images à partir d’un fichier.</p>
-            <p>Pour les champs, voir <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
+            <p>Pour les champs, consultez <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image fills]</b>
             </p>
             <p>Le module renvoie les liens de téléchargement pour toutes les images présentes dans les champs d’images d’un document. Les remplissages d’images sont la façon dont [!DNL Figma] représente les images fournies par l’utilisateur ou l’utilisatrice. Lorsque vous faites glisser une image dans [!DNL Figma], [!DNL Figma] crée un rectangle avec un remplissage unique qui représente l’image, et l’utilisateur ou l’utilisatrice peut transformer le rectangle (et les propriétés du remplissage).</p>
-            <p>Pour les champs, voir <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
+            <p>Pour les champs, consultez <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
           </li>
         </ul>
       </td>
@@ -333,7 +333,7 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>Pour ne renvoyer qu’un sous-ensemble du document, saisissez les nœuds que vous souhaitez que le module renvoie. Le module renvoie les nœuds répertoriés, leurs tâches enfant et tout ce qui se trouve entre le nœud racine et les nœuds répertorés.</p>
-        <p>Pour chaque nœud à renvoyer, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte du nœud.</p>
+        <p>Pour chaque nœud que vous souhaitez renvoyer, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte du nœud.</p>
       </td>
     </tr>
     <tr>
@@ -359,7 +359,7 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Plugin data]</td>
-      <td>Liste d’ID de plug-in séparés par des virgules et/ou chaîne « [!UICONTROL shared] ». Toute donnée présente dans le document écrit par ces plug-ins sera incluse dans le résultat dans les propriétés <code>pluginData</code> et <code>sharedPluginData</code>.</td>
+      <td>Liste d’ID de plug-ins séparés par des virgules et/ou la chaîne de caractères « [!UICONTROL shared] ». Toute donnée présente dans le document écrit par ces plug-ins sera incluse dans le résultat dans les propriétés <code>pluginData</code> et <code>sharedPluginData</code>.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Branch data]</td>
@@ -382,7 +382,7 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>Saisir les nœuds que vous souhaitez que le module renvoie et convertisse.</p>
-        <p>Pour chaque nœud à renvoyer, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte du nœud.</p>
+        <p>Pour chaque nœud que vous souhaitez renvoyer, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte du nœud.</p>
       </td>
     </tr>
     <tr>
@@ -432,7 +432,7 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>Saisissez les nœuds que vous souhaitez que le module renvoie.</p>
-        <p>Pour chaque nœud dont vous souhaitez effectuer le rendu, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte correspondant.</p>
+        <p>Pour chaque nœud que vous souhaitez voir renvoyé, cliquez sur <b>[!UICONTROL Add]</b> et saisissez le texte du nœud.</p>
       </td>
     </tr>
     <tr>
@@ -461,15 +461,15 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL SVG - Include ID]</td>
-      <td>Activez cette option pour inclure des attributs d’identification pour tous les éléments SVG. Par défaut : [!UICONTROL false].</td>
+      <td>Activez cette option pour inclure des attributs d’identification pour tous les éléments SVG. Valeur par défaut : [!UICONTROL false].</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL SVG - Simplify Stroke]</td>
-      <td>Activez cette option pour simplifier les traits intérieurs/extérieurs et utilisez l’attribut stroke si possible au lieu de &lt;mask&gt;. Par défaut : [!UICONTROL true].</td>
+      <td>Activez cette option pour simplifier les traits intérieurs/extérieurs et utilisez l’attribut stroke si possible au lieu de &lt;mask&gt;. Valeur par défaut : [!UICONTROL true].</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Use absolute bounds]</td>
-      <td>Activez cette option pour utiliser les dimensions intégrales du nœud, qu’il soit ou non recadré ou que l’espace autour de lui soit vide. Cette option permet d’exporter des nœuds de texte sans recadrage. Par défaut : [!UICONTROL false].</td>
+      <td>Activez cette option pour utiliser les dimensions intégrales du nœud, qu’il soit ou non recadré ou que l’espace autour de lui soit vide. Cette option permet d’exporter des nœuds de texte sans recadrage. Valeur par défaut : [!UICONTROL false].</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Version]</td>
@@ -491,7 +491,7 @@ Ce module d’action permet de récupérer un seul fichier ou une seule image da
   </tbody>
 </table>
 
-### [!UICONTROL List file version history]
+### [!UICONTROL Répertorier l’historique des versions des fichiers]
 
 Ce module de recherche renvoie l’historique des versions d’un seul fichier dans [!UICONTROL Figma].
 <table style="table-layout:auto"> 
@@ -510,7 +510,7 @@ Ce module de recherche renvoie l’historique des versions d’un seul fichier d
             <p>Si vous ne connaissez pas l’ID du fichier, cliquez sur <b>[!UICONTROL Find Files]</b> et saisissez ou mappez l’ID du projet auquel le fichier est associé, puis sélectionnez le fichier.</p>
           </li>
           <li>
-            <p>Si vous tentez de trouver l’ID du fichier sans connaître l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe propriétaire du projet auquel le fichier est associé. Sélectionnez le projet, puis le fichier.</p>
+            <p>Si vous essayez de trouver l’ID du fichier et que vous ne connaissez pas l’ID du projet, cliquez sur <b>[!UICONTROL Find Projects]</b> et saisissez ou mappez l’ID de l’équipe qui possède le projet auquel le fichier est associé. Sélectionnez le projet, puis le fichier.</p>
           </li>
         </ul>
       </td>
@@ -522,7 +522,7 @@ Ce module de recherche renvoie l’historique des versions d’un seul fichier d
   </tbody>
 </table>
 
-#### [!UICONTROL List project files]
+#### [!UICONTROL Répertorier les fichiers du projet]
 
 Ce module de recherche renvoie une liste de tous les fichiers du projet spécifié.
 
@@ -552,7 +552,7 @@ Ce module de recherche renvoie une liste de tous les fichiers du projet spécifi
   </tbody>
 </table>
 
-#### [!UICONTROL List projects]
+#### [!UICONTROL Répertorier les projets]
 
 Ce module de recherche renvoie une liste de tous les projets de l’équipe spécifiée.
 
@@ -569,7 +569,7 @@ Ce module de recherche renvoie une liste de tous les projets de l’équipe spé
       <td>Saisissez ou mappez l’ID du projet pour lequel vous souhaitez récupérer les fichiers. L’identifiant de l’équipe se trouve dans l’URL de la page de l’équipe dans Figma.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL Nombre maximal de projets renvoyés]</td>
       <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td>
     </tr>
   </tbody>
@@ -578,7 +578,7 @@ Ce module de recherche renvoie une liste de tous les projets de l’équipe spé
 
 ### Composants et styles
 
-#### [!UICONTROL Get a style or component]
+#### [!UICONTROL Obtenir un style ou un composant]
 
 Ce module d’action permet de récupérer un style ou un composant unique, ou un ensemble de styles ou de composants.
 
@@ -595,7 +595,7 @@ Ce module d’action permet de récupérer un style ou un composant unique, ou u
       <td>Sélectionnez le type d'objet à récupérer.</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
+      <td role="rowheader">&lt;[!UICONTROL Object&gt; key]</td>
       <td>Saisissez la clé (identifiant unique) de l’objet que vous souhaitez récupérer.</td>
     </tr>
     <tr>
@@ -609,17 +609,17 @@ Ce module d’action permet de récupérer un style ou un composant unique, ou u
     <tr>
       <td role="rowheader">[!UICONTROL After]</td>
       <td>
-        <p>Si vous récupérez un composant d'équipe ou un ensemble de composants d'équipe, saisissez ou mappez le numéro du résultat après lequel commencer à récupérer les résultats. Elle peut être combinée avec le champ [!UICONTROL Page Size] pour paginer les résultats.</p>
+        <p>Si vous récupérez un composant d'équipe ou un ensemble de composants d'équipe, saisissez ou mappez le numéro du résultat après lequel commencer à récupérer les résultats. Ce champ peut être combiné avec le champ [!UICONTROL Page Size] pour paginer les résultats.</p>
         <p>Cette valeur ne correspond pas aux ID des objets.</p>
-        <p>Ce champ ne peut pas être utilisé conjointement avec le champ [!UICONTROL Before].</p>
+        <p>Ce champ ne peut pas être utilisé en combinaison avec le champ [!UICONTROL Before].</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Before]</td>
       <td>
-        <p>Si vous récupérez un composant d'équipe ou un ensemble de composants d'équipe, saisissez ou mappez le numéro du résultat avant lequel commencer à récupérer les résultats. Elle peut être combinée avec le champ [!UICONTROL Page Size] pour paginer les résultats.</p>
+        <p>Si vous récupérez un composant d'équipe ou un ensemble de composants d'équipe, saisissez ou mappez le numéro du résultat avant lequel commencer à récupérer les résultats. Ce champ peut être combiné avec le champ [!UICONTROL Page Size] pour paginer les résultats.</p>
         <p>Cette valeur ne correspond pas aux ID des objets.</p>
-        <p>Ce champ ne peut pas être utilisé conjointement avec le champ [!UICONTROL After].</p>
+        <p>Ce champ ne peut pas être utilisé en combinaison avec le champ [!UICONTROL After].</p>
       </td>
     </tr>
   </tbody>
@@ -633,7 +633,7 @@ Ce module d’action permet de récupérer un style ou un composant unique, ou u
 * [Surveiller les événements](#watch-events)
 
 
-#### [!UICONTROL Make an API call]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module d’action vous permet d’effectuer un appel authentifié personnalisé à l’API Figma sans avoir à réfléchir à l’authentification. De cette façon, vous pouvez créer une automatisation des flux de données qui ne peut pas être réalisée par les autres modules Figma.
 
@@ -673,14 +673,14 @@ Ce module d’action vous permet d’effectuer un appel authentifié personnalis
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Watch events]
+#### [!UICONTROL Surveiller les événements]
 
 Ce module de déclenchement démarre un scénario lorsque l’un des événements suivants se produit pour une équipe spécifique dans votre espace d’équipe [!DNL Figma] :
 
@@ -705,13 +705,13 @@ Ce module de déclenchement démarre un scénario lorsque l’un des événement
         <p>Pour ajouter un nouveau webhook :</p>
         <ol>
           <li>
-            <p>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL Webhook] .</p>
+            <p>Cliquez sur <b>[!UICONTROL Add]</b> à côté du champ [!UICONTROL Webhook].</p>
           </li>
           <li>
             <p>Saisissez un nom pour le webhook.</p>
           </li>
           <li>
-            <p>Sélectionnez la connexion que vous souhaitez utiliser pour ce webhook. Pour savoir comment connecter votre compte [!DNL Figma] à [!UICONTROL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Se connecter à [!UICONTROL Adobe Workfront Fusion] - Instructions de base.</a></p>
+            <p>Sélectionnez la connexion que vous souhaitez utiliser pour ce webhook. Pour obtenir des instructions sur la connexion de votre compte [!DNL Figma] à [!UICONTROL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Se connecter à [!UICONTROL Adobe Workfront Fusion] - Instructions de base.</a></p>
           </li>
           <li>
             <p>Sélectionnez le type d’événement que vous voulez que le module surveille.</p>
@@ -726,7 +726,7 @@ Ce module de déclenchement démarre un scénario lorsque l’un des événement
             <p>Saisissez une description pour le webhook.</p>
           </li>
           <li>
-            <p>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module .</p>
+            <p>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module.</p>
           </li>
         </ol>
       </td>

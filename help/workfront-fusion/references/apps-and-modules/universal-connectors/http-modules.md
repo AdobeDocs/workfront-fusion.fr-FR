@@ -4,16 +4,16 @@ description: L’application HTTP  [!DNL Adobe Workfront Fusion]  fournit divers
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 64%
+source-wordcount: '603'
+ht-degree: 69%
 
 ---
 
 # HTTP > Autres modules
 
-L’application [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] fournit divers modules de communication basés sur le protocole HTTP (Hypertext Transfer Protocol). HTTP est la base de la communication des données pour le World Wide Web. Vous pouvez utiliser les modules pour télécharger des pages et des fichiers web, appeler des webhooks et des points de terminaison d’API, etc.
+L’application HTTP[!DNL Adobe Workfront Fusion]  fournit divers modules pour la communication basés sur le protocole HTTP (Hypertext Transfer Protocol). HTTP est la base de la communication des données pour le World Wide Web. Vous pouvez utiliser les modules pour télécharger des pages et des fichiers web, appeler des webhooks et des points de terminaison d’API, etc.
 
 Le bon choix du module dépend du mécanisme d’authentification/d’autorisation de la ressource à laquelle vous souhaitez accéder. Vous trouverez ci-dessous des exemples de modules :
 
@@ -50,7 +50,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -76,18 +76,18 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 Consultez les articles suivants pour obtenir des instructions spécifiques aux modules de requête :
 
-* [[!UICONTROL HTTP] > module [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > module [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > module [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > module [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de base] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de clé API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## Autres modules d’action
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL Obtenir un fichier]](#get-a-file)
+* [[!UICONTROL Résoudre une URL cible]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL Obtenir un fichier]
 
 Ce module d’action télécharge un fichier à partir de l’URL spécifiée. Une fois le fichier téléchargé, vous pouvez continuer à traiter le fichier (mapper les données du fichier) à l’aide d’autres modules dans le scénario.
 
@@ -110,7 +110,7 @@ Ce module d’action télécharge un fichier à partir de l’URL spécifiée. U
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL Résoudre une URL cible]
 
 Ce module d’action résout une chaîne de redirections HTTP et renvoie une URL cible.
 
@@ -124,14 +124,14 @@ Ce module d’action résout une chaîne de redirections HTTP et renvoie une URL
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method] </td> 
-   <td> <p>Choisissez si vous souhaitez utiliser la méthode [!UICONTROL HEAD] ou la méthode [!UICONTROL GET].</p> </td> 
+   <td> <p>Indiquez si vous souhaitez utiliser la méthode [!UICONTROL HEAD] ou la méthode [!UICONTROL GET].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Modules itérateurs
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL Récupérer des en-têtes]
 
 Ce module renvoie chaque en-tête (nom et valeur) du module HTTP spécifié dans un lot distinct.
 

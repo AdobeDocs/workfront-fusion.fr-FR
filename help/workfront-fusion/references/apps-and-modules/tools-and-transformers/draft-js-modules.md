@@ -4,10 +4,10 @@ description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez util
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 54098f2da1db85d9a596f3fc4753aebb298d5b78
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 27%
+source-wordcount: '244'
+ht-degree: 21%
 
 ---
 
@@ -21,6 +21,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
 <table style="table-layout:auto">
@@ -28,27 +30,25 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,9 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL Draft.js to HTML]
++++
+
+## [!UICONTROL Draft.js vers HTML]
 
 Ce module convertit Draft.js en HTML.
 
@@ -70,12 +72,12 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Saisissez le texte Draft.js.</p> </td> 
+   <td> <p>Saisissez ou mappez le texte Draft.js que vous souhaitez convertir en HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
+## [!UICONTROL HTML vers Draft.js]
 
 Ce module convertit le code HTML en Draft.js.
 
@@ -85,7 +87,7 @@ Ce module convertit le code HTML en Draft.js.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Saisissez le code d’HTML à convertir en Draft.js.</p> </td> 
+   <td> <p>Saisissez ou mappez le code HTML à convertir en Draft.js.</p> </td> 
   </tr> 
  </tbody> 
 </table>

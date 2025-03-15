@@ -4,10 +4,10 @@ description: Les modules CRM HubSpot  [!DNL Adobe Workfront Fusion]  vous permet
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '5530'
-ht-degree: 33%
+source-wordcount: '6203'
+ht-degree: 39%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -121,7 +121,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 <!--* [Search for CRM objects](#search-for-crm-objects)
 * [Watch CRM objects](#watch-crm-objects)-->
 
-+++ **[!UICONTROL Search for CRM Objects]**
++++ **[!UICONTROL Rechercher des objets CRM]**
 
 Ce module de recherche recherche des objets CRM à partir de propriétés personnalisées ou de requêtes. Pour rechercher des produits ou des éléments de ligne, utilisez une connexion spéciale avec une portée personnalisée requise.
 
@@ -187,7 +187,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un objet CRM est cré
    <td>Saisissez ou mappez le nombre maximal d’éléments que le module renverra dans un cycle d’exécution.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object type to search]</td> 
+   <td role="rowheader">[!UICONTROL Type d'objet à rechercher]</td> 
    <td> <p>Sélectionnez le type d’objet que vous souhaitez rechercher.</p> </td> 
   </tr> 
   <tr> 
@@ -235,7 +235,7 @@ Ce module d’action crée un contact, une entreprise ou une affaire.
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez créer.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création de l’enregistrement, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner la valeur des propriétés. Les groupes de propriétés et les propriétés disponibles dépendent du type d’enregistrement que vous souhaitez créer.</td> 
   </tr> 
  </tbody> 
@@ -243,7 +243,7 @@ Ce module d’action crée un contact, une entreprise ou une affaire.
 
 +++
 
-+++ **[!UICONTROL Create a Record (Legacy)]**
++++ **[!UICONTROL Créer un enregistrement (hérité)]**
 
 Ce module d’action crée un contact, une entreprise ou une transaction.
 
@@ -268,7 +268,7 @@ Ce module d’action crée un contact, une entreprise ou une transaction.
 
 +++
 
-+++ **[!UICONTROL Delete a Record]**
++++ **[!UICONTROL Supprimer un enregistrement]**
 
 Ce module d’action supprime un contact, une société ou une transaction.
 
@@ -293,7 +293,7 @@ Ce module d’action supprime un contact, une société ou une transaction.
 
 +++
 
-+++ [!UICONTROL Get a Record]
++++ [!UICONTROL Obtenir un enregistrement]
 
 Ce module d’action récupère les détails d’un contact, d’une entreprise ou d’une transaction.
 
@@ -331,7 +331,7 @@ Ce module d’action récupère les détails d’un contact, d’une entreprise 
 
 +++
 
-+++ **[!UICONTROL Get a Record Property]**
++++ **[!UICONTROL Obtenir une propriété d’enregistrement]**
 
 Ce module d’action récupère les métadonnées d’une propriété d’enregistrement spécifique par son nom (interne).
 
@@ -389,7 +389,7 @@ Ce module de recherche renvoie une liste de contacts, d’entreprises ou d’off
 
 +++
 
-+++ **[!UICONTROL Update a Record]**
++++ **[!UICONTROL Mettre à jour un enregistrement]**
 
 Ce module d’action met à jour un contact, une entreprise ou une transaction.
 
@@ -430,7 +430,7 @@ Ce module d’action met à jour un contact, une entreprise ou une transaction.
 
 +++
 
-+++ **[!UICONTROL Watch Records]**
++++ **[!UICONTROL Surveiller les enregistrements]**
 
 Ce module déclencheur lance un scénario lorsqu’un contact, une entreprise ou une transaction a fait l’objet d’une modification ou d’une création au cours des 30 derniers jours. La sortie est limitée à 10 000 enregistrements.
 
@@ -476,7 +476,7 @@ Ce module déclencheur lance un scénario lorsqu’un contact, une entreprise ou
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
 * [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-+++ **[!UICONTROL Add Contacts to a List]**
++++ **[!UICONTROL Ajouter des contacts à une liste]**
 
 Ce module ajoute à une liste de contacts les enregistrements de contacts déjà créés dans le système.
 
@@ -518,7 +518,7 @@ Ce module d&#39;action crée un contact s&#39;il n&#39;existe pas dans un portai
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création du contact, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner les valeurs des propriétés.</td> 
   </tr> 
  </tbody> 
@@ -526,7 +526,7 @@ Ce module d&#39;action crée un contact s&#39;il n&#39;existe pas dans un portai
 
 +++
 
-+++ **[!UICONTROL Create/Update a Contact (Legacy)]**
++++ **[!UICONTROL Créer/mettre à jour un contact (hérité)]**
 
 Crée un contact s’il n’existe pas encore dans un portail ou le met à jour avec les dernières valeurs de propriété s’il existe dans un portail.
 
@@ -547,7 +547,7 @@ Crée un contact s’il n’existe pas encore dans un portail ou le met à jour 
 
 +++
 
-+++ **[!UICONTROL Create/Update a Group of Contacts]**
++++ **[!UICONTROL Créer/mettre à jour un groupe de contacts]**
 
 Crée un groupe de contacts ou les met à jour s’ils existent déjà. Les performances sont meilleures lorsque la taille du lot est limitée à 100 contacts ou moins. Les modifications effectuées via ce point d’entrée sont traitées de manière asynchrone. Plusieurs minutes peuvent donc être nécessaires pour que les modifications soient appliquées aux enregistrements de contacts.
 
@@ -576,9 +576,9 @@ Crée un groupe de contacts ou les met à jour s’ils existent déjà. Les perf
 
 +++
 
-+++ **[!UICONTROL List Contacts]**
++++ **[!UICONTROL Répertorier les contacts]**
 
-Renvoie tous les contacts qui ont été créés dans le portail. La sortie est limitée à 5 000 contacts. Pour répertorier les contacts précédents ou suivants, vous pouvez utiliser le paramètre [!UICONTROL advanced] pour décaler la liste.
+Renvoie tous les contacts qui ont été créés dans le portail. La sortie est limitée à 5 000 contacts. Pour répertorier les contacts précédents ou suivants, vous pouvez utiliser le paramètre [!UICONTROL avancé] pour décaler la liste.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -605,9 +605,9 @@ Renvoie tous les contacts qui ont été créés dans le portail. La sortie est l
 
 +++
 
-+++ **[!UICONTROL List Contacts of a Company]**
++++ **[!UICONTROL Liste des contacts d’une entreprise]**
 
-Récupère une liste de contacts de l’entreprise. La sortie est limitée à 5 000 contacts. Pour répertorier les contacts précédents ou suivants, vous pouvez utiliser le paramètre [!UICONTROL advanced] pour décaler la liste.
+Récupère une liste de contacts de l’entreprise. La sortie est limitée à 5 000 contacts. Pour répertorier les contacts précédents ou suivants, vous pouvez utiliser le paramètre [!UICONTROL avancé] pour décaler la liste.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -634,7 +634,7 @@ Récupère une liste de contacts de l’entreprise. La sortie est limitée à 5�
 
 +++
 
-+++ **[!UICONTROL Merge contacts]**
++++ **[!UICONTROL Fusionner les contacts]**
 
 Ce module d&#39;action fusionne les contacts
 
@@ -659,7 +659,7 @@ Ce module d&#39;action fusionne les contacts
 
 +++
 
-+++ **[!UICONTROL Remove a Contact from a List]**
++++ **[!UICONTROL Supprimer un contact d’une liste]**
 
 Supprime un contact d’une liste de contacts.
 
@@ -688,7 +688,7 @@ Supprime un contact d’une liste de contacts.
 
 +++
 
-+++ **[!UICONTROL Search for Contacts]**
++++ **[!UICONTROL Rechercher des contacts]**
 
 Récupère une liste de contacts à l’aide de la requête.
 
@@ -713,7 +713,7 @@ Récupère une liste de contacts à l’aide de la requête.
 
 +++
 
-+++ **[!UICONTROL Watch contacts added to a list]**
++++ **[!UICONTROL Surveiller les contacts ajoutés à la liste]**
 
 Ce module de déclenchement lance un scénario lorsqu’un nouveau contact est ajouté à une liste. Cette option est disponible uniquement pour les utilisateurs et utilisatrices disposant d’un compte Marketing payant.
 
@@ -747,7 +747,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouveau contact est a
 <!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
 * [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-+++ **[!UICONTROL Get a Deal's CRM Pipeline]**
++++ **[!UICONTROL Obtenir le pipeline CRM d’une transaction]**
 
 Renvoie le pipeline de la transaction.
 
@@ -772,7 +772,7 @@ Renvoie le pipeline de la transaction.
 
 +++
 
-+++ **[!UICONTROL List Deal/Ticket Pipelines]**
++++ **[!UICONTROL Répertorier des pipelines de transactions/tickets]**
 
 Renvoie tous les pipelines de transactions et de tickets pour un portail donné.
 
@@ -795,7 +795,7 @@ Renvoie tous les pipelines de transactions et de tickets pour un portail donné.
 
 ### Entreprises
 
-+++ **[!UICONTROL Search for Companies by domain]**
++++ **[!UICONTROL Rechercher des entreprises par domaine]**
 
 Récupère une liste d’entreprises à partir d’une correspondance exacte avec la propriété de domaine.
 
@@ -873,7 +873,7 @@ Ce module d’action crée un engagement (une note, une tâche ou une activité,
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Is Active?]</td> 
+   <td role="rowheader">[!UICONTROL Est Actif ?]</td> 
    <td>Activez cette option si le nouvel engagement sera actif lors de sa création. Un engagement doit être actif pour apparaître dans le journal.</td> 
   </tr> 
   <tr> 
@@ -934,7 +934,7 @@ Ce module d’action crée un engagement (une note, une tâche ou une activité,
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL From > Email]</p> </td> 
+   <td> <p>[!UICONTROL From &gt; Email]</p> </td> 
    <td> <p>Saisissez ou mappez l’adresse e-mail à partir de laquelle l’e-mail sera envoyé.</p> </td> 
   </tr> 
   <tr> 
@@ -1060,7 +1060,7 @@ Ce module d’action crée un engagement (une note, une tâche ou une activité,
    <td>Sélectionnez le statut de la tâche.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL For Object Type]</td> 
+   <td role="rowheader">[!UICONTROL Pour Le Type D’Objet]</td> 
   <td>Saisissez <code>CONTACT</code> ou <code>COMPANY</code>.
   </td> 
    </tr> 
@@ -1135,7 +1135,7 @@ Ce module d’action crée ou met à jour un événement de chronologie. Ce modu
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL ID d’application]</td> 
    <td>Saisissez ou mappez l’identifiant de l’application à laquelle cet événement appartient.</td> 
   </tr> 
   <tr> 
@@ -1180,7 +1180,7 @@ Ce module de recherche renvoie une liste de tous les événements de chronologie
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL ID d’application]</td> 
    <td>Saisissez ou mappez l’ID de l’application à laquelle ces événements appartiennent. </td> 
   </tr> 
  </tbody> 
@@ -1236,7 +1236,7 @@ Pour créer un webhook pour ce module, cliquez sur **Ajouter** en regard du cham
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL ID d’application]</td> 
    <td>Saisissez l’ID de l’application à utiliser pour ce webhook. Vous trouverez l’identifiant sur votre portail de développement HubSpot.</td> 
   </tr> 
   <tr> 
@@ -1262,7 +1262,7 @@ Pour créer un webhook pour ce module, cliquez sur **Ajouter** en regard du cham
 * [Upload a file](#upload-a-file)
 * [Watch files](#watch-files)-->
 
-+++ **[!UICONTROL Create a Folder]**
++++ **[!UICONTROL Créer un dossier]**
 
 Ce module crée un dossier.
 
@@ -1308,7 +1308,7 @@ Ce module d’action supprime définitivement un fichier et toutes les données 
 
 +++
 
-+++ **[!UICONTROL Delete a Folder]**
++++ **[!UICONTROL Supprimer un dossier]**
 
 Marque un dossier comme supprimé.
 
@@ -1358,7 +1358,7 @@ Ce module de recherche renvoie une liste des fichiers stockés dans le gestionna
 
 +++
 
-+++ **[!UICONTROL Move a File]**
++++ **[!UICONTROL Déplacer un fichier]**
 
 Déplace un fichier vers un autre dossier.
 
@@ -1492,7 +1492,7 @@ Ce module d&#39;action crée une nouvelle tâche pour un calendrier. La connexio
    <td>Indiquez si l’événement a le statut « À faire » ou « Terminé ».</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campaign GUID]</td> 
+   <td role="rowheader">[!UICONTROL GUID CAMPAIGN]</td> 
    <td>Saisissez ou mappez l’identifiant HubSpot interne de la campagne dont fait partie cet événement.</td> 
   </tr> 
  </tbody> 
@@ -1604,7 +1604,7 @@ Ce module de recherche renvoie une liste de tous les propriétaires d’un compt
 
 <!-- Create a Ticket Need to find a working connection-->
 
-+++ **[!UICONTROL Delete a Ticket]**
++++ **[!UICONTROL Supprimer un ticket]**
 
 Supprime un ticket existant par son ID.
 
@@ -1748,7 +1748,7 @@ Ce module d’action crée et publie immédiatement un message sur le canal de r
    <td>Saisissez ou mappez l’URL d’une miniature que vous souhaitez utiliser pour cette diffusion.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Trigger at]</td> 
+   <td role="rowheader">Déclencheur [!UICONTROL à]</td> 
    <td>Saisissez ou mappez la date et l’heure auxquelles vous souhaitez que la diffusion soit envoyée. Si ce champ est laissé vide, la diffusion est envoyée immédiatement.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p></td> 
   </tr> 
  </tbody> 
@@ -1773,11 +1773,11 @@ Ce module de déclenchement démarre un scénario lorsqu’un message est publi�
    <td>Saisissez ou mappez le nombre maximal d’éléments que le module renverra dans un cycle d’exécution.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Status]</td> 
+   <td role="rowheader">[!UICONTROL Filtrer par statut]</td> 
    <td>Pour démarrer le scénario uniquement lorsque le message se trouve dans un statut spécifique, sélectionnez le statut.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Channel]</td> 
+   <td role="rowheader">[!UICONTROL Filtrer par canal]</td> 
    <td>Pour démarrer le scénario uniquement lorsque le message se trouve sur un canal spécifique, sélectionnez le canal.</td> 
   </tr> 
   <tr> 
@@ -1897,7 +1897,7 @@ Ce module d’action met à jour un abonnement par e-mail dans HubSpot.
    <td>Pour enregistrer la base juridique de cet abonnement au RGPD, sélectionnez le statut juridique de cet abonnement.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Portal Subscription Legal Basis Explanation]</td> 
+   <td role="rowheader">[!UICONTROL Portal Subscription Legal Base Explication]</td> 
    <td>Pour ajouter une note concernant la base juridique de cet abonnement au RGPD, saisissez ou mappez le texte de la note.</td> 
   </tr> 
  </tbody> 
@@ -1960,7 +1960,7 @@ This action module associates two CRM objects.-->
 
 ### Autre
 
-+++ **[!UICONTROL Make an API Call]**
++++ **[!UICONTROL Effectuer un appel API]**
 
 Permet d’effectuer un appel API personnalisé.
 
@@ -2018,7 +2018,7 @@ Permet d’effectuer un appel API personnalisé.
 >
 >![Configuration de l’API Hubspot](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
->Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts].
+>Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Lot] > [!UICONTROL Corps] > [!UICONTROL Contacts].
 >
 >Dans notre exemple, 3 contacts ont été renvoyés :
 >
@@ -2029,14 +2029,14 @@ Permet d’effectuer un appel API personnalisé.
 ## Créer une nouvelle application
 
 1. Connectez-vous à votre compte de développement [!DNL HubSpot].
-1. Sélectionnez l’option **[!UICONTROL Create an App]** .
-1. Saisissez le Nom de l’application et [!UICONTROL Save] la boîte de dialogue.
+1. Sélectionnez l’option **[!UICONTROL Créer une application]**.
+1. Saisissez le nom de l’application, puis cliquez sur [!UICONTROL Enregistrer] dans la boîte de dialogue.
 1. Sélectionnez les portées dont vous aurez besoin pour votre webhook.
 
    Par exemple, ajoutez des portées de contacts pour déclencher le module lorsqu’un nouveau contact est créé ou supprimé.
 
-   Le [!UICONTROL contacts scope] est tout ce dont vous avez besoin pour recevoir des contacts, des offres et des webhooks d&#39;événement d&#39;entreprise.
+   La [!UICONTROL portée des contacts] est tout ce dont vous avez besoin pour recevoir des webhooks de contacts, de transactions et d’événements d’entreprise.
 
    >[!IMPORTANT]
    >
-   >Ne renseignez pas le champ [!UICONTROL Redirect URL] .
+   >Ne remplissez pas le champ [!UICONTROL URL de redirection].

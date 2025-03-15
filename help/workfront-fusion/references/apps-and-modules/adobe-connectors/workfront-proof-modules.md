@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 80%
+source-wordcount: '3050'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -89,7 +89,7 @@ Le connecteur Workfront Proof utilise les éléments suivants :
 
 Vous pouvez créer une connexion à votre compte [!DNL Workfront Proof] directement à partir d’un module [!DNL Workfront Fusion].
 
-1. Dans un module de [!DNL Workfront Fusion], cliquez sur [!UICONTROL **Ajouter**] en regard du champ [!UICONTROL Connection]
+1. Dans n’importe quel module [!DNL Workfront Fusion], cliquez sur [!UICONTROL **Ajouter**] à côté du champ [!UICONTROL Connexion] 
 
 2. Remplissez les champs suivants :
 
@@ -152,10 +152,10 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ### Déclencheurs
 
 * [Regarder les résumés PDF](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [[!UICONTROL Regarder l’activité d’une épreuve]](#watch-proof-activity)
 * [Regarder les épreuves](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL Regarder le résumé PDF]
 
 Ce module de déclenchement instantané exécute un scénario lorsque quelqu’un crée un résumé PDF pour une épreuve.
 
@@ -180,7 +180,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL Regarder l’activité d’une épreuve]
 
 Ce module de déclenchement exécute un scénario lorsqu’une activité spécifiée se produit sur une épreuve.
 
@@ -207,7 +207,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL Regarder les épreuves]
 
 Ce module de déclenchement planifié exécute un scénario lorsque quelqu’un crée ou prend une décision sur une épreuve.
 
@@ -244,15 +244,15 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Actions
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL Créer une épreuve]](#create-proof)
+* [[!UICONTROL Appel API personnalisé]](#custom-api-call)
+* [[!UICONTROL Télécharger l’épreuve]](#download-proof)
+* [[!UICONTROL Lire un enregistrement]](#read-a-record)
+* [[!UICONTROL Demander le résumé du PDF]](#request-pdf-summary)
+* [[!UICONTROL Mettre à jour l’épreuve]](#update-proof)
+* [[!UICONTROL Charger un fichier]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL Créer une épreuve]
 
 <!--Cannot test Jan 2025-->
 
@@ -290,7 +290,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Create a new proof version]</td> 
-   <td>Sélectionnez cette option si vous souhaitez que le module crée une nouvelle version d’une épreuve existante. Ensuite, dans le champ <strong>[!UICONTROL Existing Proof ID]</strong> qui s’affiche, mappez ou saisissez l’identifiant unique du BAT.</td> 
+   <td>Sélectionnez cette option si vous souhaitez que le module crée une nouvelle version d’une épreuve existante. Ensuite, dans le champ <strong>[!UICONTROL Existing Proof ID]</strong> qui s’affiche, mappez ou saisissez l’identifiant unique de l’épreuve.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Custom Link Label]</td> 
@@ -385,7 +385,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td>Saisissez le type d’épreuve SWF.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Show] [élément]</td> 
+   <td>[!UICONTROL Show] [item]</td> 
    <td>Indiquez si vous souhaitez afficher chaque élément dans l’épreuve.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -405,7 +405,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Appel API personnalisé]
 
 Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Workfront Proof]. Vous pouvez ainsi, automatiser le flux de données d’une façon que les autres modules [!DNL Workfront Proof] ne permettent pas.
 
@@ -441,7 +441,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 >
 >![Exemple de module d’API de BAT](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL Télécharger l’épreuve]
 
 Ce module d’action télécharge le fichier source d’une épreuve particulière que vous identifiez à l’aide de son ID.
 
@@ -463,12 +463,12 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details].  </td> 
+   <td> <p>Saisissez l’ID unique de l’épreuve, qui se trouve sur la page [!UICONTROL Proof Details].  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action lit les données d’une seule épreuve dans [!DNL Workfront Proof].
 
@@ -503,7 +503,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL Demander le résumé PDF]
 
 Ce module d’action demande le résumé PDF d’une épreuve particulière dans [!DNL Workfront Proof].
 
@@ -536,10 +536,10 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ##### Erreur possible
 
-* **Erreur** : « [!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.] »
+* **Erreur** : « [!UICONTROL Vous n’avez pas les privilèges nécessaires pour effectuer cette demande. L’étape doit contenir au moins une personne destinataire.] »
 * **Solution** : assurez-vous que vous n’êtes pas la seule personne affectée aux étapes du workflow. Une autre personne doit être affectée aux étapes du workflow.
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL Mettre à jour l’épreuve]
 
 Ce module d’action met à jour une épreuve existante dans [!DNL Workfront Proof].
 
@@ -561,7 +561,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Saisissez l’identifiant unique du BAT, qui se trouve sur la page [!UICONTROL Proof Details]. </td> 
+   <td> <p>Saisissez l’ID unique de l’épreuve, qui se trouve sur la page [!UICONTROL Proof Details]. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -589,7 +589,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Indiquez si les personnes qui ne sont pas inscrites sont autorisées à s’abonner à l’épreuve.<br>Si vous sélectionnez cette option, vous pouvez également sélectionner une option dans le champ [!UICONTROL Default Role] .</td> 
+   <td>Indiquez si les personnes qui ne sont pas inscrites sont autorisées à s’abonner à l’épreuve.<br>Si vous sélectionnez cette option, vous pouvez également sélectionner une option dans le champ [!UICONTROL Default Role].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -630,9 +630,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL Charger fichier]
 
-Ce module d’action charge un fichier à utiliser avec le module d’[!UICONTROL Create Proof] dans [!DNL Workfront Proof].
+Ce module d’action charge un fichier à utiliser avec le module [!UICONTROL Créer une épreuve] dans [!DNL Workfront Proof].
 
 Le module renvoie un identifiant de hachage pour le fichier chargé. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -655,10 +655,10 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 ### Recherches
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL Répertorier les modèles de workflows]](#list-workflow-templates)
+* [[!UICONTROL Rechercher]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL Répertorier les modèles de workflows]
 
 Ce module de recherche répertorie tous les modèles de workflow disponibles.
 
@@ -681,7 +681,7 @@ Ce module de recherche répertorie tous les modèles de workflow disponibles.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Rechercher]
 
 Ce module de recherche recherche les enregistrements dans un objet dans [!DNL Workfront Proof] qui correspondent à la requête que vous avez spécifiée.
 
@@ -700,7 +700,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Workfront Proof] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Search for]</td> 
+   <td>[!UICONTROL Rechercher]</td> 
    <td> <p>Sélectionnez le type d’enregistrement que le module doit rechercher.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Saisissez le nom de l’épreuve que vous souhaitez rechercher.</p> </li> 
@@ -709,7 +709,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Result Set]</td> 
-   <td>Indiquez si le module recherchera <strong>[!UICONTROL All Matching Records]</strong> ou uniquement le <strong>[!UICONTROL First Matching Record]</strong>.</td> 
+   <td>Indiquez si le module doit rechercher <strong>[!UICONTROL All Matching Records]</strong> ou seulement <strong>[!UICONTROL First Matching Record]</strong>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Sort By]</td> 

@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: ddebec2d03d9d843c46182d92df6c8a871799999
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 65%
+source-wordcount: '1962'
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -87,7 +87,7 @@ Le connecteur Calendrier Microsoft Office 365 utilise les éléments suivants :
 
 ## Connexion du service [!DNL Office 365 Calendar] à [!DNL Workfront Fusion].
 
-Pour savoir comment connecter votre compte [!DNL Office 365 Calendar] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365 Calendar] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -109,14 +109,14 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Événement
 
-* [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Delete an Event]](#delete-an-event)
-* [[!UICONTROL Get an Event]](#get-an-event)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Update an Event]](#update-an-event)
-* [[!UICONTROL Watch Events]](#watch-events)
+* [[!UICONTROL Créer un événement]](#create-an-event)
+* [[!UICONTROL Supprimer un événement]](#delete-an-event)
+* [[!UICONTROL Obtenir un événement]](#get-an-event)
+* [[!UICONTROL Rechercher des événements]](#search-events)
+* [[!UICONTROL Mettre à jour un événement]](#update-an-event)
+* [[!UICONTROL Surveiller les événements]](#watch-events)
 
-#### [!UICONTROL Create an Event]
+#### [!UICONTROL Créer un événement]
 
 Ce module d’action crée un nouvel événement.
 
@@ -134,7 +134,7 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Saisissez le moment où l’événement commence, en indiquant une date et une heure. Utilisez le format <code>{date}T{time}</code>; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</td> 
+   <td> Saisissez le moment où l’événement commence, en indiquant une date et une heure. Utilisez le format <code>{date}T{time}</code> ; par exemple, <code>2017-08-29T04:00:00.0000000</code>. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
@@ -162,9 +162,9 @@ Ce module d’action crée un nouvel événement.
    <td> <p>Sélectionnez la sensibilité de cet événement.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Personal] » apparaît.</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Private] » apparaît. Cet événement n'est pas transféré ou redirigé par les règles de la boîte de réception de la personne destinataire.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Confidential] » apparaît. </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Personal] ».</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Private] ». Cet événement n'est pas transféré ou redirigé par les règles de la boîte de réception de la personne destinataire.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Confidential] ». </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Saisissez ou mappez le corps du message associé à l’événement. Il peut s’agir d’un format HTML ou texte (comme spécifié dans le champ [!UICONTROL Body Content Type] ci-dessus).</td> 
+   <td>Saisissez ou mappez le corps du message associé à l’événement. Il peut être au format HTML ou texte (comme spécifié dans le champ [!UICONTROL Body Content Type] ci-dessus).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -181,7 +181,7 @@ Ce module d’action crée un nouvel événement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>Sélectionnez <strong>[!UICONTROL Yes]</strong> pour demander à l’invité d’envoyer une réponse à l’invitation à l’événement.</td> 
+   <td>Sélectionnez <strong>[!UICONTROL Yes]</strong> pour demander à la personne invitée d’envoyer une réponse à l’invitation de l’événement.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Show as]</td> 
@@ -210,7 +210,7 @@ Ce module d’action crée un nouvel événement.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Event]
+#### [!UICONTROL Supprimer un événement]
 
 Ce module d’action supprime un événement existant.
 
@@ -229,7 +229,7 @@ Ce module d’action supprime un événement existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Event]
+#### [!UICONTROL Obtenir un événement]
 
 Ce module d’action récupère les détails de l’événement spécifié.
 
@@ -248,7 +248,7 @@ Ce module d’action récupère les détails de l’événement spécifié.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Events]
+#### [!UICONTROL Rechercher des événements]
 
 Ce module de recherche récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
 
@@ -262,7 +262,7 @@ Ce module de recherche récupère les détails d’un événement lorsque celui-
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez surveiller les événements.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -295,7 +295,7 @@ Ce module de recherche récupère les détails d’un événement lorsque celui-
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Event]
+#### [!UICONTROL Mettre à jour un événement]
 
 Ce module d’action met à jour un événement existant.
 
@@ -345,9 +345,9 @@ Ce module d’action met à jour un événement existant.
    <td> <p>Sélectionnez la sensibilité de cet événement.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Personal] » apparaît.</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Private] » apparaît. Cet événement n'est pas transféré ou redirigé par les règles de la boîte de réception de la personne destinataire.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>Un message « [!UICONTROL Please treat this as Confidential] » apparaît. </p> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Personal] ».</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Private] ». Cet événement n'est pas transféré ou redirigé par les règles de la boîte de réception de la personne destinataire.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>La personne destinataire voit un message « [!UICONTROL Please treat this as Confidential] ». </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -356,7 +356,7 @@ Ce module d’action met à jour un événement existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Saisissez ou mappez le corps du message associé à l’événement. Il peut s’agir d’un format HTML ou texte (comme spécifié dans le champ [!UICONTROL Body Content Type] ci-dessus).</td> 
+   <td>Saisissez ou mappez le corps du message associé à l’événement. Il peut être au format HTML ou texte (comme spécifié dans le champ [!UICONTROL Body Content Type] ci-dessus).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -364,7 +364,7 @@ Ce module d’action met à jour un événement existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>Sélectionnez <strong>[!UICONTROL Yes]</strong> pour demander à l’invité d’envoyer une réponse à l’invitation à l’événement.</td> 
+   <td>Sélectionnez <strong>[!UICONTROL Yes]</strong> pour demander à la personne invitée d’envoyer une réponse à l’invitation de l’événement.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Show as]</td> 
@@ -393,13 +393,13 @@ Ce module d’action met à jour un événement existant.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Events]
+#### [!UICONTROL Surveiller des événements]
 
 Ce module de déclenchement récupère les détails d’un événement lorsque celui-ci est créé, mis à jour, supprimé, démarré ou se termine dans le calendrier sélectionné.
 
 >[!NOTE]
 >
->Pour rechercher les occurrences supprimées d’une série d’événements, sélectionnez [!UICONTROL By Updated Time] dans le champ [!UICONTROL Watch events] . Ce module ne recherche pas les événements uniques supprimés ni les séries d’événements supprimées.
+>Pour rechercher les occurrences supprimées d’une série d’événements, sélectionnez [!UICONTROL Par heure de mise à jour] dans le champ [!UICONTROL Surveiller les événements]. Ce module ne recherche pas les événements uniques supprimés ni les séries d’événements supprimées.
 
 
 <table style="table-layout:auto"> 
@@ -420,7 +420,7 @@ Ce module de déclenchement récupère les détails d’un événement lorsque c
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez regarder les événements.</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient le calendrier dans lequel vous souhaitez surveiller les événements.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -439,15 +439,15 @@ Ce module de déclenchement récupère les détails d’un événement lorsque c
 
 ### Calendrier
 
-* [[!UICONTROL Create a Calendar]](#create-a-calendar)
-* [[!UICONTROL Delete a Calendar]](#delete-a-calendar)
-* [[!UICONTROL Get a Calendar]](#get-a-calendar)
-* [[!UICONTROL List Calendars]](#list-calendars)
-* [[!UICONTROL Update a Calendar]](#update-a-calendar)
+* [[!UICONTROL Créer un calendrier]](#create-a-calendar)
+* [[!UICONTROL Supprimer un calendrier]](#delete-a-calendar)
+* [[!UICONTROL Obtenir un calendrier]](#get-a-calendar)
+* [[!UICONTROL Répertorier les calendriers]](#list-calendars)
+* [[!UICONTROL Mettre à jour un calendrier]](#update-a-calendar)
 
 
 
-#### [!UICONTROL Create a Calendar]
+#### [!UICONTROL Créer un calendrier]
 
 Ce module d&#39;action crée un calendrier dans votre compte Office 365.
 
@@ -466,7 +466,7 @@ Ce module d&#39;action crée un calendrier dans votre compte Office 365.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Calendar]
+#### [!UICONTROL Supprimer un calendrier]
 
 Ce module d&#39;action supprime un calendrier existant.
 
@@ -480,12 +480,12 @@ Ce module d&#39;action supprime un calendrier existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Saisissez l’ID [!UICONTROL Calendar] pour le calendrier à supprimer.</td> 
+   <td>Saisissez l’[!UICONTROL Calendar] du calendrier que vous souhaitez supprimer.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Calendar]
+#### [!UICONTROL Obtenir un calendrier]
 
 Ce module d’action récupère les détails d’un seul calendrier.
 
@@ -504,7 +504,7 @@ Ce module d’action récupère les détails d’un seul calendrier.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Calendars]
+#### [!UICONTROL Répertorier les calendriers]
 
 Ce module de recherche récupère une liste de tous les calendriers de la personne authentifiée.
 
@@ -518,7 +518,7 @@ Ce module de recherche récupère une liste de tous les calendriers de la person
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Sélectionnez le [!UICONTROL calendar group] qui contient les calendriers à répertorier.</td> 
+   <td>Sélectionnez le [!UICONTROL calendar group] qui contient les calendriers que vous souhaitez répertorier.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -527,7 +527,7 @@ Ce module de recherche récupère une liste de tous les calendriers de la person
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Calendar]
+#### [!UICONTROL Mettre à jour un calendrier]
 
 Ce module d’action modifie un calendrier existant.
 
@@ -541,7 +541,7 @@ Ce module d’action modifie un calendrier existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>Saisissez le [!UICONTROL Calendar ID] du calendrier à mettre à jour. </td> 
+   <td>Saisissez l’[!UICONTROL Calendar ID] pour le calendrier que vous souhaitez mettre à jour. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New Calendar name]</td> 
@@ -552,7 +552,7 @@ Ce module d’action modifie un calendrier existant.
 
 ### Autre
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Réaliser un appel API]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
 

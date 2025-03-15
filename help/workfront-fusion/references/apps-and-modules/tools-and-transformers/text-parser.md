@@ -4,16 +4,16 @@ description: Vous pouvez utiliser l’outil d’analyse de texte pour analyser l
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 78%
+source-wordcount: '1290'
+ht-degree: 86%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL Analyseur de texte]
 
-Vous pouvez utiliser le [!UICONTROL Text parser tool] pour analyser le texte à utiliser dans d’autres modules de scénario [!DNL Adobe Workfront Fusion]. Le [!UICONTROL Text parser] ne nécessite pas de connexion.
+Vous pouvez utiliser l’[!UICONTROL outil d’analyse de texte] pour analyser le texte en vue de l’utiliser dans d’autres modules de scénario [!DNL Adobe Workfront Fusion]. L’[!UICONTROL analyseur de texte] ne nécessite pas de connexion.
 
 ## Conditions d’accès
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Aucune exigence de licence Workfront Fusion.</p>
+   <p>Aucune exigence de licence Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ Le connecteur de l’analyseur de texte utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Modules [!UICONTROL Text parser] et leurs champs
+## Modules de l’[!UICONTROL analyseur de texte] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Text parser], [!DNL Adobe Workfront Fusion] affiche les champs répertoriés ci-dessous. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules de l’[!UICONTROL analyseur de texte], [!DNL Adobe Workfront Fusion] affiche les champs répertoriés ci-dessous. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -81,13 +81,13 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Transformateurs
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL Obtenir des éléments à partir de HTML]](#get-elements-from-html)
+* [[!UICONTROL Obtenir des éléments à partir de texte]](#get-elements-from-text)
+* [[!UICONTROL HTML vers texte]](#html-to-text)
+* [[!UICONTROL Motif correspondant]](#match-pattern)
+* [[!UICONTROL Remplacer]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL Obtenir des éléments à partir de HTML]
 
 Récupère les éléments souhaités à partir du code HTML.
 
@@ -115,7 +115,7 @@ Récupère les éléments souhaités à partir du code HTML.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL Obtenir des éléments à partir de texte]
 
 Analyse les éléments du texte en fonction du modèle donné.
 
@@ -138,7 +138,7 @@ Analyse les éléments du texte en fonction du modèle donné.
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML en texte]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -159,9 +159,9 @@ Analyse les éléments du texte en fonction du modèle donné.
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL Motif correspondant]
 
-Le module [!UICONTROL Match pattern] vous permet de rechercher et d’extraire des éléments de chaîne correspondant à un modèle de recherche à partir d’un texte donné. Ce module utilise des expressions régulières (également appelées regex ou regexp).
+Le module [!UICONTROL Motif correspondant] vous permet de rechercher et d’extraire des éléments de chaîne de caractères correspondant à un motif de recherche d’un texte donné. Ce module utilise des expressions régulières (également appelées regex ou regexp).
 
 Une expression régulière est une séquence de caractères dans laquelle chaque caractère est soit un métacaractère, ayant une signification spéciale, soit un caractère régulier ayant une signification littérale. Ces caractères et métacaractères identifient un motif qui peut être utilisé pour rechercher du texte. Par exemple, si vous souhaitez rechercher des noms, vous pouvez configurer une expression régulière pour rechercher un motif constitué de deux mots consécutifs commençant par des majuscules. Les expressions régulières sont un puissant outil de recherche et de manipulation de texte.
 
@@ -206,7 +206,7 @@ Le présent article ne vise pas à aborder la question des expressions réguliè
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL Remplacer]
 
 Recherche une valeur ou une expression régulière dans le texte saisi et remplace le résultat par la nouvelle valeur.
 
@@ -216,7 +216,7 @@ Recherche une valeur ou une expression régulière dans le texte saisi et rempla
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Saisissez le terme de recherche. Vous pouvez également utiliser une expression régulière. Pour plus d’informations sur l’expression régulière, consultez le module <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> .</p> </td> 
+   <td> <p>Saisissez le terme de recherche. Vous pouvez également utiliser une expression régulière. Pour plus d’informations sur l’expression régulière, voir le module <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL New value]</td> 
@@ -249,7 +249,7 @@ Recherche une valeur ou une expression régulière dans le texte saisi et rempla
 
 La récupération de données, parfois appelée web scraping, extraction des données ou web harvesting, est le processus de collecte de données à partir de sites web et de stockage de ces données dans votre base de données ou feuille de calcul locale. Si vous souhaitez récupérer les données d’un site web et que vous ne connaissez pas les expressions régulières, vous pouvez utiliser un outil de récupération de données.
 
-Si l’outil de nettoyage de données fournit une API REST, vous pouvez vous y connecter via nos modules de [[!UICONTROL HTTP] universels](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) et [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+Si l’outil de récupération de données fournit une API REST, vous pouvez vous y connecter via nos [[!UICONTROL modules HTTP]](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) et [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) universels.
 
 ## Dépannage de l’analyseur de texte
 

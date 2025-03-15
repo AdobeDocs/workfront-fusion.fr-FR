@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez dé
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 57%
+source-wordcount: '1532'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -89,7 +89,7 @@ Le connecteur Adobe Workfront Planning utilise les éléments suivants :
 
 Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] directement depuis l’intérieur d’un module [!DNL Workfront Fusion].
 
-1. Dans n’importe quel module de [!DNL Adobe Workfront Planning], cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans un module [!DNL Adobe Workfront Planning], cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -115,11 +115,11 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] direc
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client ID] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].</td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -132,7 +132,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] direc
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules [!DNL Adobe Workfront Planning] et leurs champs
 
@@ -184,7 +184,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Vous pouvez définir des filtres pour ne surveiller que les enregistrements qui répondent aux critères sélectionnés.</p> <p>Pour chaque filtre, saisissez le champ que le filtre doit évaluer, l’opérateur et la valeur que le filtre doit autoriser. Vous pouvez utiliser plusieurs filtres en ajoutant des règles ET.</p> <p>Note : vous ne pouvez pas modifier les filtres dans les webhooks [!DNL Workfront] existants. Pour configurer différents filtres pour les abonnements aux événements [!DNL Workfront], supprimez le webhook actuel et créez-en un nouveau.</p> <p>Pour plus d’informations sur les filtres d’événement, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtres d’abonnement aux événements dans les modules [!DNL Workfront] &gt; [!UICONTROL Watch Events]</a> de l’article Modules Workfront .</p> </td> 
+      <td> <p>Vous pouvez définir des filtres pour ne surveiller que les enregistrements qui répondent aux critères sélectionnés.</p> <p>Pour chaque filtre, saisissez le champ que le filtre doit évaluer, l’opérateur et la valeur que le filtre doit autoriser. Vous pouvez utiliser plusieurs filtres en ajoutant des règles ET.</p> <p>Note : vous ne pouvez pas modifier les filtres dans les webhooks [!DNL Workfront] existants. Pour configurer différents filtres pour les abonnements aux événements [!DNL Workfront], supprimez le webhook actuel et créez-en un nouveau.</p> <p>Pour plus d’informations sur les filtres d’événement, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref"> Filtres d’abonnement aux événements dans les modules [!DNL Workfront] &gt; [!UICONTROL Watch Events]</a> dans l’article Modules Workfront .</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -313,7 +313,7 @@ Ce module d’action récupère une liste d’enregistrements en fonction des cr
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Condition for filters]</p>
+        <p>[!UICONTROL Condition pour les filtres]</p>
       </td>
       <td>Sélectionnez la condition de vos filtres :<ul><li><b>ET</b><p>Le module renvoie les enregistrements qui respectent <b>toutes</b> les valeurs de champ que vous avez sélectionnées.</p></li><li><b>OU</b><p>Le module renvoie les enregistrements qui correspondent à l’<b>une </b> valeurs de champ que vous avez sélectionnées.</p></li></ul></td> 
       </tr>

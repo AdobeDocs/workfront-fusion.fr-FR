@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le connecteur de tableaux Adobe Workfront pour
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 11%
+source-wordcount: '2869'
+ht-degree: 18%
 
 ---
 
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
@@ -93,7 +93,7 @@ Le connecteur Adobe Workfront Boards utilise les éléments suivants :
 
 Pour créer une connexion aux tableaux Workfront :
 
-1. Dans n’importe quel module de [!DNL Adobe Workfront Boards], cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion .
+1. Dans un module [!DNL Adobe Workfront Boards], cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -119,11 +119,11 @@ Pour créer une connexion aux tableaux Workfront :
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client ID] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].</td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>(Facultatif)</p></td>
-          <td>Saisissez votre [!UICONTROL Client Secret] de [!DNL Adobe]. Pour plus d'informations, consultez la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]<p>(Facultatif)</p></td>
@@ -135,7 +135,7 @@ Pour créer une connexion aux tableaux Workfront :
         </tr>
       </tbody>
     </table>
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 ## Modules des tableaux Adobe Workfront et leurs champs
 
@@ -197,7 +197,7 @@ Ce module d’action ajoute une sous-tâche à une carte dans les tableaux. La c
       <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Parent card ID]</td> 
+   <td>[!UICONTROL ID de carte parent]</td> 
    <td>Saisissez ou mappez l’identifiant de la carte à laquelle vous souhaitez ajouter une sous-tâche.<p>L’ID de la carte se trouve dans l’URL lors de l’affichage de la carte dans Workfront.</p></td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ Ce module d’action déplace une carte vers une autre colonne du même panorama
    <td>Saisissez ou mappez l’ID du panorama contenant la carte à déplacer.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination column ID]</td> 
+   <td>[!UICONTROL ID de colonne de destination]</td> 
    <td>Saisissez ou mappez l’identifiant de la colonne vers laquelle vous souhaitez déplacer la carte.<p>L’ID de colonne se trouve dans les informations renvoyées par le module Lecture de tableau .</p></td> 
   </tr> 
   <tr> 
@@ -411,7 +411,7 @@ Ce module d’action crée une colonne sur le panorama spécifié.
    <td>Saisissez ou mappez l’identifiant de la colonne à mettre à jour.<p>L’ID de colonne se trouve dans les informations renvoyées par le module Lecture de tableau .</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column name]</td> 
+   <td>[!UICONTROL Nom de colonne]</td> 
    <td>Saisissez ou mappez un nouveau nom pour la colonne.</td> 
   </tr> 
  </tbody> 
@@ -434,7 +434,7 @@ Ce module de recherche renvoie des informations sur la colonne portant le nom sp
    <td>Saisissez ou mappez l’identifiant du panorama contenant la colonne à récupérer.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nom de colonne]</td> 
    <td>Saisissez ou mappez le nom de la colonne à récupérer.</td> 
   </tr> 
  </tbody> 
@@ -457,7 +457,7 @@ Ce module d&#39;action met à jour le nom ou la limite des travaux en cours de l
    <td>Saisissez ou mappez l’identifiant du panorama contenant la colonne à récupérer.<p>L’ID du panorama se trouve dans l’URL lors de l’affichage du panorama dans Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nom de colonne]</td> 
    <td>Saisissez ou mappez le nom de la colonne à récupérer.</td> 
   </tr> 
   <tr> 
@@ -639,11 +639,11 @@ Ce module d’action envoie une requête GraphQL personnalisée à l’API Workf
    <td> <p>Ajoutez la requête pour l’appel API sous la forme d’un objet JSON standard.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td role="rowheader">[!UICONTROL Nom de l’opération]</td> 
    <td> <p>Saisissez un nom pour cette opération. Cela peut faciliter le suivi et le débogage de l’appel .</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td role="rowheader">[!UICONTROL Source de données des variables]</td> 
    <td> <p>Indiquez si les variables proviennent d’un formulaire ou d’une collection.</p> </td> 
   </tr> 
   <tr> 

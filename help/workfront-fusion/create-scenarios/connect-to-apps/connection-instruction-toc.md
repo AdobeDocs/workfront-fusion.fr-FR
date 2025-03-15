@@ -4,7 +4,7 @@ description: Une connexion doit respecter les exigences définies par l’API de
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 60%
@@ -36,7 +36,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -64,9 +64,9 @@ Dans la plupart des cas, vous pouvez utiliser le module pour créer une connexio
 
 Pour obtenir des instructions sur la création d’une connexion sans considérations particulières, voir [Création d’une connexion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-## Se connecter à une application ou à un service Adobe
+## Connexion à une application ou à un service Adobe
 
-Pour vous connecter à un service ou à une application Adobe, vous aurez peut-être besoin d’informations provenant du Adobe Admin Console, telles que votre ID d’organisation ou votre ID de compte technique.
+Pour vous connecter à un service ou à une application Adobe, vous aurez peut-être besoin d’informations provenant de Adobe Admin Console, telles que votre ID d’organisation ou votre ID de compte technique.
 
 Vous pouvez également utiliser le module Adobe Authenticator pour vous connecter à n’importe quelle API Adobe à l’aide d’une seule connexion. Cela vous permet de vous connecter plus facilement à des produits Adobe qui n’ont pas encore de connecteur Fusion dédié.
 
