@@ -4,9 +4,9 @@ description: Avec les modules Adobe Photoshop, vous pouvez lancer un scénario A
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4352'
 ht-degree: 20%
 
 ---
@@ -68,6 +68,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 Avant d’utiliser le connecteur [!DNL Adobe Photoshop], vous devez vous assurer que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Photoshop].
+* Vous devez disposer d’un identifiant client et d’un secret client. Vous pouvez les acquérir à partir du Adobe Developer Console.
 
 ## Informations sur l’API Adobe Photoshop
 
