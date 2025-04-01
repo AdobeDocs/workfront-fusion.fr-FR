@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion Adobe 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
-ht-degree: 59%
+source-wordcount: '7796'
+ht-degree: 58%
 
 ---
 
@@ -375,7 +375,7 @@ Ce module d’action effectue l’une des conversions suivantes :
 
 +++
 
-+++ **[!UICONTROL Créer un enregistrement (joindre des formulaires personnalisés)]**
++++ **[!UICONTROL Créer un enregistrement]**
 
 Ce module d’action crée un objet, tel qu’un projet, une tâche ou un événement dans Workfront, et vous permet d’ajouter un formulaire personnalisé au nouvel objet. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -422,7 +422,12 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 
 +++
 
-+++ **[!UICONTROL Créer un enregistrement]**
++++ **[!UICONTROL Créer un enregistrement (hérité)]**
+
+>[!IMPORTANT]
+>
+>Ce module a été remplacé par le module Créer un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module d’action crée un objet, tel qu’un projet, une tâche ou un problème dans Workfront. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -820,8 +825,65 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
+    <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
 
-<td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+<td>Choisissez le type d’objet Workfront que le module doit lire.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+
+<td> <p>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Output Custom Form]</td>
+     <td> <p>Sélectionnez les formulaires personnalisés à inclure dans le lot de sortie pour ce module, puis sélectionnez les champs spécifiques à partir des formulaires personnalisés à inclure dans la sortie.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>Sélectionnez les champs de référence que vous souhaitez inclure dans la sortie.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>Sélectionnez les champs de référence que vous souhaitez inclure dans la sortie.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Saisissez l’ID Workfront unique de l’enregistrement que le module doit lire.</p> <p>Pour obtenir l’identifiant, ouvrez l’objet Workfront dans votre navigateur et copiez le texte à la fin de l’URL après « ID= ». Par exemple : https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Consultez une liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Lire un enregistrement (hérité)]**
+
+>[!IMPORTANT]
+>
+>Ce module a été remplacé par le module Lecture d’enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+
+Ce module d’action récupère les données d’un seul enregistrement.
+
+Vous indiquez l’ID de l’enregistrement. Vous pouvez également spécifier les enregistrements associés que le module doit lire.
+
+Par exemple, si l’enregistrement que le module est en train de lire est un projet, vous pouvez spécifier que vous souhaitez que les tâches du projet soient lues.
+
+Le module renvoie un tableau de données des champs de sortie que vous avez spécifiés.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -876,7 +938,12 @@ Pour plus d’informations sur la nouvelle version de l’abonnement aux événe
 
 +++
 
-+++ **Mettre à jour un enregistrement (avec des formulaires personnalisés joints)**
++++ **Mettre à jour un enregistrement**
+
+>[!IMPORTANT]
+>
+>Ce module a été remplacé par le module Mettre à jour un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
@@ -925,7 +992,7 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 
 +++
 
-+++ **[!UICONTROL Mettre à jour l’enregistrement]**
++++ **[!UICONTROL Mettre à jour l’enregistrement (hérité)]**
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -1095,9 +1162,69 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
++++ **[!UICONTROL Rechercher des enregistrements]**
+
+Ce module de recherche recherche les enregistrements dans un objet de Workfront qui correspondent à la requête que vous spécifiez.
+
+Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+Lorsque vous configurez ce module, les champs suivants s’affichent.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>Sélectionnez le type d’enregistrement Workfront que vous souhaitez que le module recherche.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Custom forms list]</td> 
+   <td> <p>Sélectionnez au moins un formulaire personnalisé. Les champs de ces formulaires personnalisés seront disponibles pour la requête.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Result Set]</td> 
+   <td>Sélectionnez une option pour indiquer si vous souhaitez que le module obtienne le premier résultat correspondant à vos critères de recherche ou tous les résultats correspondants.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria fields]</td> 
+   <td> <p>Sélectionnez les champs que vous souhaitez utiliser pour vos critères de recherche. Ces champs seront ensuite disponibles dans la liste déroulante Critères de recherche.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria]</td> 
+   <td> <p>Renseignez le champ avec lequel vous souhaitez effectuer une recherche, l’opérateur que vous souhaitez utiliser dans votre requête et la valeur que vous recherchez dans le champ.</p> <p>Note : n’utilisez pas <code>username </code> dans vos critères de recherche. L’inclusion de la mention <code>username </code> dans une requête d’API vers Workfront connecte l’utilisateur à Workfront et la recherche échoue.</p> <p>Note : <code>In</code> et <code>NotIn</code> fonctionnent avec des tableaux. Les entrées doivent être au format de tableau.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Outputs]</td> 
+   <td> <p>Sélectionnez les champs que vous souhaitez inclure dans la sortie de ce module.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL References]</td> 
+   <td>Sélectionnez les champs de référence à inclure dans la recherche.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>Sélectionnez les collections à ajouter à la recherche.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL Rechercher]**
++++ **[!UICONTROL Recherche (hérité)]**
+
+>[!IMPORTANT]
+>
+>Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module de recherche recherche les enregistrements dans un objet de Workfront qui correspondent à la requête que vous spécifiez.
 
