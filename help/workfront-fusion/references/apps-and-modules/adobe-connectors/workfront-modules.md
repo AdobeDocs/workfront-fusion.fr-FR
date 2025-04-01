@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion Adobe 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 58%
@@ -940,11 +940,6 @@ Pour plus d’informations sur la nouvelle version de l’abonnement aux événe
 
 +++ **Mettre à jour un enregistrement**
 
->[!IMPORTANT]
->
->Ce module a été remplacé par le module Mettre à jour un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
-
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -993,6 +988,11 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 +++
 
 +++ **[!UICONTROL Mettre à jour l’enregistrement (hérité)]**
+
+>[!IMPORTANT]
+>
+>Ce module a été remplacé par le module Mettre à jour un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
