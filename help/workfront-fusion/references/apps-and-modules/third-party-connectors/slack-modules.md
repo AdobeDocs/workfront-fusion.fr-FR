@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: e52af924094722b0d212098ae2af5eded12a5309
+source-git-commit: eb0518ba0d1a0c758cb547e362c722f4be3674c7
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 77%
+source-wordcount: '1954'
+ht-degree: 67%
 
 ---
 
@@ -186,8 +186,6 @@ Ce module d’action crée un message.
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
 
 #### [!UICONTROL Supprimer un message]
 
@@ -207,7 +205,11 @@ Ce module d’action supprime un message spécifié.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Saisissez ou mappez l’horodatage du message que vous souhaitez supprimer.</p> <p>Note : l’horodatage peut être récupéré à l’aide d’un autre module, tel que le module Surveiller les canaux privés.</p> </td> 
+   <td> <p> Saisissez ou mappez l’horodatage du message que vous souhaitez supprimer.</p> <p>Remarque : l’horodatage peut être récupéré à l’aide d’un autre module, tel que le module Observer les messages de canal privé .</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td> <p> Activez cette option pour supprimer le message en tant qu’utilisateur avec les informations d’identification utilisées dans la connexion.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -230,14 +232,14 @@ Ce module d’action récupère les détails d’un message à partir d’un can
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> Saisissez ou mappez l’horodatage du message pour lequel vous souhaitez récupérer des informations.</p> <p>Note : l’horodatage peut être récupéré à l’aide d’un autre module, tel que le module [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Saisissez ou mappez l’horodatage du message pour lequel vous souhaitez récupérer des informations.</p> <p>Remarque : l'horodatage peut être récupéré à l'aide d'un autre module, tel que le module [!UICONTROL Watch Private Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Obtenir un message de canal public]**
 
-Ce module d’action renvoie un message doté d’un identifiant donné provenant d’un canal public spécifié.
+Ce module d’action renvoie un message avec un identifiant donné à partir d’un canal public spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -253,7 +255,7 @@ Ce module d’action renvoie un message doté d’un identifiant donné provenan
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Saisissez ou mappez l’horodatage du message pour lequel vous souhaitez récupérer des informations.</p> <p>Note : l’horodatage peut être récupéré à l’aide d’un autre module, tel que le module [!UICONTROL Watch Public Channel].</p> </td> 
+   <td> <p> Saisissez ou mappez l’horodatage du message pour lequel vous souhaitez récupérer des informations.</p> <p>Remarque : l'horodatage peut être récupéré à l'aide d'un autre module, tel que le module [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -270,21 +272,33 @@ Ce module d’action permet de modifier un message existant.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
-  <tr> 
+<!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
-   <td> <p>Choisissez le mode de sélection du message que vous souhaitez modifier.</p> 
+   <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Channel ID or name]</strong>, saisissez ou mappez l’ID du canal qui contient le message, puis saisissez l’<strong>[!UICONTROL Time Stamp (Message ID)]</strong> du message.</p> <p>Note : l’identifiant du canal peut être récupéré à l’aide du module [!UICONTROL List Channels].</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le type de canal, sélectionnez le canal, puis le message.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
+  </tr> -->
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du canal contenant le message à mettre à jour.</p> <p>Note : l’identifiant du canal peut être récupéré à l’aide du module [!UICONTROL List Channels].</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
+   <td> <p> Saisissez ou mappez l’horodatage du message pour lequel vous souhaitez récupérer des informations.</p> <p>Remarque : l'horodatage peut être récupéré à l'aide d'un autre module, tel que le module [!UICONTROL Watch Public Channel Messages].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
    <td> <p>Saisissez le nouveau contenu texte du message que vous souhaitez mettre à jour.</p> <p>Pour plus d’informations, voir <a href="https://api.slack.com/docs/formatting">Formatage du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Blocks]</td> 
-   <td>Les blocs sont des composants réutilisables que vous pouvez utiliser pour personnaliser et organiser vos messages. Pour plus d’informations sur les blocs, voir <a href="https://api.slack.com/block-kit">Block Kit</a> dans la documentation [!DNL Slack].</td> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td>Activez cette option pour mettre à jour le message en tant qu’utilisateur propriétaire des informations d’identification utilisées par la connexion pour ce module.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachments]</td> 
+   <td>Pour chaque élément que vous souhaitez joindre au message, cliquez sur <b>Ajouter un élément</b> et renseignez les détails de l’élément.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
@@ -409,14 +423,14 @@ Ce module de recherche renvoie une liste d’utilisateurs et d’utilisatrices d
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>Sélectionnez le type de canal contenant la liste des personnes membres que vous souhaitez répertorier.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private Channel]</td> 
-   <td>Sélectionnez le canal dont vous souhaitez répertorier les personnes membres.</td> 
-  </tr> 
+<tr> 
+   <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
+   <td> <p>Choisissez le mode de sélection du message que vous souhaitez modifier.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Dans le champ <strong>[!UICONTROL Channel ID or name]</strong>, saisissez ou mappez l’identifiant du canal ou du canal dont vous souhaitez répertorier les utilisateurs.</p> <p>Note : l’identifiant du canal peut être récupéré à l’aide du module [!UICONTROL List Channels].</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le type de canal, puis sélectionnez le canal.</p> </li> 
+    </ul> </td> 
+  </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Définissez le nombre maximum de personnes membres que [!DNL Workfront Fusion] renverra lors d’un cycle d’exécution.</p> </td> 
@@ -465,6 +479,10 @@ Ce module d’action permet d’effectuer un appel authentifié personnalisé ve
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
    <td>Sélectionnez l’URL de base à utiliser pour l’appel API.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Envoi d’un jeton d’accès]</td> 
+   <td>Indiquez si vous souhaitez envoyer le jeton d’accès sous la forme d’un en-tête ou d’un paramètre de requête.</td> 
   </tr> 
  </tbody> 
 </table>
