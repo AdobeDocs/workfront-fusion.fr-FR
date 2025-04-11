@@ -5,16 +5,18 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Flux d’exécution du scénario
 
 Cet article explique comment un scénario s’exécute et comment les données y circulent, ainsi que la manière d’afficher les données traitées par chaque module.
+
+Pour afficher le flux de données dans un scénario actif, consultez [Affichage du flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Flux d’exécution du scénario
 
@@ -26,7 +28,7 @@ Si le module de déclenchement renvoie des lots de données, ces lots sont trans
 
 Si les lots sont traités correctement par tous les modules, le scénario est marqué comme réussi dans la page des détails du scénario.
 
-### Exemple : [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Exemple : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation du travail]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ Si le premier module renvoie un lot, le lot passe par le reste du scénario. Dan
 
 >[!ENDSHADEBOX]
 
-### Exemple : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Exemple : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail]
 
 >[!BEGINSHADEBOX]
 
