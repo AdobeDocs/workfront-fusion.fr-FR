@@ -4,14 +4,21 @@ description: Les fonctions générales suivantes sont disponibles dans le pannea
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 53%
+source-wordcount: '303'
+ht-degree: 52%
 
 ---
 
 # Fonctions générales
+
+## Variables
+
+Vous pouvez utiliser deux variables générales pour identifier des détails sur une exécution :
+
+* `executionID` : identifiant de l’exécution de ce scénario
+* `triggerTimestamp` : heure de déclenchement de cette exécution
 
 ## [!UICONTROL get (object or array; path)]
 
