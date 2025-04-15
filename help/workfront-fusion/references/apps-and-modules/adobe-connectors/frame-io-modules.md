@@ -4,16 +4,31 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 81%
+source-wordcount: '2586'
+ht-degree: 78%
 
 ---
 
-# Modules [!DNL Frame.io]
+# [!DNL Frame.io] modules hérités
+
+>[!IMPORTANT]
+>
+>Cet article décrit l’ancienne version du connecteur Frame.io. Ce connecteur est utilisé pour se connecter à Frame.io version 3.
+>
+>Pour obtenir des instructions sur la nouvelle version (bêta) du connecteur Frame.io, voir [Connecteur Beta Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Les modules [!DNL Adobe Workfront Fusion] [!DNL Frame.io] vous permettent de surveiller, créer, mettre à jour, récupérer ou supprimer des ressources et des commentaires dans votre compte [!DNL Frame.io].
+
+Workfront propose deux connecteurs Frame.io, en fonction de la version de Frame.io à laquelle vous vous connectez.
+
+| Connecteur | Version Frame.io |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io (hérité) | V3 |
+
+Pour obtenir des instructions sur la nouvelle version (bêta) du connecteur Frame.io, voir [Connecteur Beta Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Pour obtenir une vidéo d’introduction au connecteur Frame.io, consultez ce qui suit :
 
@@ -626,7 +641,7 @@ Ce module d’action modifie un commentaire existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Sélectionnez le projet qui contient la ressource dont vous souhaitez mettre à jour un commentaire.</p> </td> 
+   <td> <p>Sélectionnez le projet contenant la ressource sur laquelle vous souhaitez mettre à jour un commentaire.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID] </td> 
