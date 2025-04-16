@@ -4,14 +4,16 @@ description: Vous pouvez restaurer une version précédente d’un scénario. Ce
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 71%
+source-wordcount: '287'
+ht-degree: 47%
 
 ---
 
-# Restaurer une version de scénario
+# Affichage et gestion des versions de scénario
+
+Vous pouvez afficher, restaurer ou renommer les versions précédentes d’un scénario.
 
 ## Conditions d’accès
 
@@ -29,7 +31,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -42,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -61,20 +63,24 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Restaurer une version de scénario
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Ouvrez votre scénario.
-1. Cliquez sur l’icône [!UICONTROL More] ![icône Plus](assets/more-icon.png) en bas de l’écran, puis sur **[!UICONTROL Previous Versions]**.
+## Affichage et gestion de l’historique des versions d’un scénario
 
-1. Cliquez sur le **[!UICONTROL Pick the version]**, puis sur la version à restaurer.
-1. Cliquez sur **[!UICONTROL OK]**.
+1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche, puis cliquez sur le scénario pour l’ouvrir.
+1. Cliquez sur l’icône [!UICONTROL Plus] ![Plus](assets/more-icon.png) en bas de l’écran, puis sur **[!UICONTROL Versions précédentes]**.
 
-   La version du scénario sélectionné est restaurée.
+   Une liste des versions précédentes s’affiche.
+1. (Facultatif) Pour renommer la version, cliquez sur le menu Plus ![Plus](assets/more-icon-vertical.png) sur la ligne correspondant à cette version, sélectionnez **Modifier**, puis saisissez un nom dans le champ. Cliquez sur **Enregistrer** pour enregistrer le nouveau nom.
 
->[!NOTE]
->
->La version de scénario restaurée n’est pas enregistrée automatiquement. Si vous souhaitez l’enregister, vous devez procéder manuellement.
+   Nous vous recommandons de donner un nom qui décrit les modifications apportées à cette version.
+1. (Facultatif) Pour restaurer la version, cliquez sur Restaurer ![menu Plus](assets/more-icon-vertical.png) sur la ligne correspondant à cette version
+
+
+   >[!NOTE]
+   >
+   >La version de scénario restaurée n’est pas enregistrée automatiquement. Si vous souhaitez l’enregister, vous devez procéder manuellement.
