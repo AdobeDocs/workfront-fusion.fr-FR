@@ -4,16 +4,16 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez util
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 70%
+source-wordcount: '273'
+ht-degree: 69%
 
 ---
 
 # Modules [!UICONTROL Markdown]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez utiliser les modules [!UICONTROL Markdown] pour convertir Markdown en HTML et l’HTML en Markdown.
+Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez utiliser les modules [!UICONTROL Markdown] pour convertir le format Markdown en HTML et le format HTML en Markdown.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,44 +21,65 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td>
+   <p>Aucune exigence de licence Workfront Fusion</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produit</td> 
+   <td>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
+   <p>Ou</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## [!UICONTROL HTML en Markdown]
+
+Ce module convertit le code HTML au format Markdown.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
+   <td> <p>Saisissez le code HTML à convertir au format Markdown.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
-   <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
-   <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
-   </td> 
+   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
+   <td> <p>Activez cette option pour convertir le code HTML en [!DNL GitHub Flavored Markdown].</p> <p>Pour plus d’informations, reportez-vous à l’antisèche de Markdown dans la documentation [!DNL GitHub].</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Produit</td> 
-   <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
-   <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
-   </td> 
-  </tr>
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
-
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-## [!UICONTROL Markdown to HTML]
+## [!UICONTROL Markdown en HTML]
 
 Ce module convertit le format Markdown en HTML.
 
@@ -79,25 +100,6 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 
    <td>Sélectionnez une option pour indiquer si vous souhaitez supprimer les balises de HTML du texte ou utiliser l’échappement HTML.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## [!UICONTROL HTML to Markdown]
-
-Ce module convertit le code HTML au format Markdown.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Markdown]</td> 
-   <td> <p>Saisissez le code HTML à convertir au format Markdown.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Activez cette option pour convertir le code HTML en [!DNL GitHub Flavored Markdown].</p> <p>Pour plus d’informations, reportez-vous à l’antisèche de Markdown dans la documentation [!DNL GitHub].</p> </td> 
   </tr> 
  </tbody> 
 </table>
