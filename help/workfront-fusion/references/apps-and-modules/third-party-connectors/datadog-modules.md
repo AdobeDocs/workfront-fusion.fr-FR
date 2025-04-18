@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 80%
+source-wordcount: '920'
+ht-degree: 76%
 
 ---
 
@@ -108,24 +108,28 @@ Vous pouvez créer une connexion à votre compte [!DNL Datadog] directement à p
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Connection Type]</td> 
-      <td> <p> Sélectionnez l’option [!UICONTROL [!DNL Datadog] Application] pour obtenir un accès complet à l’API [!DNL Datadog].</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Connection Name]</td> 
       <td> <p> Saisissez un nom pour la connexion.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>Indiquez si cette connexion est destinée à un environnement de production ou hors production.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>Sélectionnez le domaine auquel vous souhaitez vous connecter (US ou UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
-      <td> <p> Saisissez votre clé d’API [!DNL Datadog]. </p> <p>Pour obtenir des instructions sur la récupération de la clé d’API, consultez <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Récupérer votre clé d’API et votre clé d’application</a> dans cet article.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key Location] </td> 
+      <td> <p>Indiquez si la clé API doit être incluse dans l’en-tête ou dans la chaîne de requête.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Application Key]</td> 
-      <td> <p> Saisissez votre clé d’application [!DNL Datadog]. </p> <p>Pour savoir comment récupérer la clé d’application, voir <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Récupérer votre clé d’API et votre clé d’application</a> dans cet article.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td> <p> Saisissez votre clé d’API [!DNL Datadog]. </p> <p>Pour obtenir des instructions sur la récupération de la clé d’API, consultez <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Récupérer votre clé d’API et votre clé d’application</a> dans cet article.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ La limite pour les payloads compressées est de 3,2 mégaoctets (3 200 000), 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td> Sélectionnez le type de mesure à utiliser. </td> 
+   <td> Sélectionnez le type de mesure à utiliser. 
+   <ul>
+   <li>Jauge</li>
+   <li>Taux</li>
+   <li>Nombre</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> Si le type de mesure est un taux ou un comptage, définissez l’intervalle correspondant.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>Ajoutez les séries temporelles que vous souhaitez soumettre à [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Entrez le nom de la série temporelle.</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Sélectionnez le type de mesure.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> Si le type de mesure est un taux ou un comptage, définissez l’intervalle correspondant.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Ajoutez des points relatifs à une mesure.</p> <p>Il s’agit d’un tableau de points JSON. Chaque point a le format suivant : <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note :  <p>L’horodatage doit être exprimé en secondes.</p> <p>L’horodatage doit être actuel. Le paramètre Actuel est défini sous forme de période n’allant pas au-delà de 10 minutes dans le futur ou d’une heure dans le passé.</p> <p> Le format de la valeur numérique doit être une valeur flottante.</p> </p> <p>Ce champ doit contenir au moins 1 élément.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Entrez le nom de l’hôte qui a produit la mesure.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>Ajoutez des points relatifs à une mesure.</p> <p>Il s’agit d’un tableau de points JSON. Chaque point a le format suivant : <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note :  <p>L’horodatage doit être exprimé en secondes.</p> <p>L’horodatage doit être actuel. Le paramètre Actuel est défini sous forme de période n’allant pas au-delà de 10 minutes dans le futur ou d’une heure dans le passé.</p> <p> Le format de la valeur numérique doit être une valeur flottante.</p> </p> <p>Ce champ doit contenir au moins 1 élément.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Entrez le nom de l’hôte qui a produit la mesure. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> Pour chaque balise à ajouter à la mesure, cliquez sur <b>Ajouter un élément</b> et saisissez la valeur de la balise.</td> 
   </tr> 
  </tbody> 
 </table>
