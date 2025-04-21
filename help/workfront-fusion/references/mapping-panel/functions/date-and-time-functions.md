@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 90%
+source-wordcount: '1876'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Obtient l&#39;heure actuelle en tant qu&#39;horodatage Unix.
 
 ## Fonctions
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds (date; nombre)]
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné de secondes à une date. Pour soustraire des secondes, saisissez un nombre négatif.
 
@@ -43,7 +43,7 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné de secondes à
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (date; nombre)] {#addminutes-date-number}
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné de minutes à une date. Pour soustraire les minutes, saisissez un nombre négatif.
 
@@ -61,7 +61,7 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné de minutes à 
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours (date; nombre)] {#addhours-date-number}
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné d’heures à une date. Pour soustraire les heures, saisissez un nombre négatif.
 
@@ -79,7 +79,7 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné d’heures à 
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays (date; nombre)] {#adddays-date-number}
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné de jours à une date. Pour soustraire des jours, saisissez un nombre négatif.
 
@@ -97,7 +97,7 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné de jours à un
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths (date; nombre)]
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné de mois à une date. Pour soustraire des mois, saisissez un nombre négatif.
 
@@ -115,7 +115,7 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné de mois à une
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears (date; nombre)]
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné d’années à une date. Pour soustraire des années, saisissez un nombre négatif.
 
@@ -133,13 +133,13 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné d’années à
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond (date; nombre)]
 
 Cette fonction renvoie une nouvelle date avec les secondes indiquées dans les paramètres.
 
 Indiquez un nombre compris entre 0 et 59. Si le nombre se trouve en dehors de cette plage, la fonction renvoie une seconde à partir de la minute précédente (pour un nombre négatif) ou de la minute suivante (pour un nombre positif).
 
-Si vous devez spécifier un nombre en dehors de la plage, nous vous recommandons d’utiliser [!UICONTROL  addSeconds], comme décrit ci-dessus dans la section [addSeconds (date ; nombre)](#addseconds-date-number).
+Si vous devez indiquer un nombre en dehors de la plage, nous vous recommandons d’utiliser [!UICONTROL addSeconds], comme décrit ci-dessus dans la section [addSeconds (date; nombre)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ Si vous devez spécifier un nombre en dehors de la plage, nous vous recommandons
 
   Renvoie 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Renvoie 2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute (date; nombre)]
 
 Cette fonction renvoie une nouvelle date avec les minutes indiquées dans les paramètres.
 
@@ -177,7 +177,7 @@ Si vous devez indiquer un nombre en dehors de la plage, nous vous recommandons d
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour (date; nombre)]
 
 Cette fonction renvoie une nouvelle date avec l’heure indiquée dans les paramètres.
 
@@ -199,7 +199,7 @@ Si vous devez spécifier un nombre en dehors de la plage, nous vous recommandons
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay (date; nombre/nom du jour en anglais)]
 
 Cette fonction renvoie une nouvelle date avec le jour spécifié dans les paramètres.
 
@@ -225,7 +225,7 @@ Si vous devez spécifier un nombre en dehors de la plage, nous vous recommandons
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDate (date; number)]
+### [!UICONTROL setDate (date; nombre)]
 
 Cette fonction renvoie une nouvelle date avec le jour du mois spécifié dans les paramètres.
 
@@ -245,7 +245,7 @@ Indiquez un nombre compris entre 1 et 31. Si le nombre se trouve en dehors de c
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth (date; nombre/nom du mois en anglais)]
 
 Cette fonction renvoie une nouvelle date avec le mois spécifié dans les paramètres.
 
@@ -269,7 +269,7 @@ Indiquez un nombre compris entre 1 et 12. Si le nombre ne figure pas dans cette
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear (date; nombre)]
 
 Renvoie une nouvelle date avec l’année spécifiée dans les paramètres.
 
@@ -283,7 +283,7 @@ Renvoie une nouvelle date avec l’année spécifiée dans les paramètres.
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate (date; format; [fuseau horaire])]
 
 Utilisez cette fonction lorsque vous disposez d’une valeur Date, telle que `12-10-2021 20:30`, que vous souhaitez formater en tant que valeur Texte, par exemple `Dec 10, 2021 8:30 PM`.
 
@@ -313,7 +313,7 @@ Pour plus d’informations, voir Date et texte dans l’article [Types de donné
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Texte </td> 
-   <td> <p>Permet de définir un format à l’aide de jetons de mise en forme de date/heure. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Jetons pour le formatage de la date et de l’heure</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Permet de définir un format à l’aide de jetons de mise en forme de date/heure. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Jetons pour le formatage de la date et de l’heure</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple :</b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -353,7 +353,7 @@ La fonction `formatDate` renvoie une représentation textuelle de la valeur Date
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate (texte; format; [fuseau horaire])]
 
 Utilisez cette fonction lorsque vous disposez d’une valeur Texte représentant une date (telle que `12-10-2019 20:30` ou `Aug 18, 2019 10:00 AM`) et que vous souhaitez convertir (parse) en une valeur Date (représentation binaire lisible par un ordinateur). Pour plus d’informations, voir Date et texte dans l’article [Types de données d’élément](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -381,7 +381,7 @@ La seconde colonne indique le type attendu. Si un autre type est fourni, la coer
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Texte </td> 
-   <td> <p>Permet de définir un format à l’aide de jetons de mise en forme de date/heure. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Jetons pour le formatage de la date et de l’heure</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Permet de définir un format à l’aide de jetons de mise en forme de date/heure. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Jetons pour le formatage de la date et de l’heure</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple :</b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -419,7 +419,7 @@ Cette fonction convertit une chaîne de texte en date, selon le format et le fus
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dateDifference (Date1; Date2; unité)]
 
 Renvoie un nombre représentant la différence entre deux dates, exprimée dans l’unité spécifiée.
 
