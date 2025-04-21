@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 95%
+source-wordcount: '608'
+ht-degree: 88%
 
 ---
 
@@ -45,7 +45,7 @@ Supprime les valeurs spécifiées dans les paramètres d’un tableau. Cette fon
 
 Ajoute les valeurs spécifiées dans les paramètres à un tableau et renvoie ce tableau.
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL map (complex array; key;[key for filtering];[valeurs possibles pour le filtrage])]
 
 Renvoie un tableau primitif contenant les valeurs d’un tableau complexe. Cette fonction permet de filtrer les valeurs. Utilisez des noms de variables bruts pour les clés.
 
@@ -127,7 +127,7 @@ Crée un nouveau tableau dans lequel sont concaténés tous les éléments des s
 
 ## [!UICONTROL distinct (array; [key])]
 
-Supprime les doublons dans un tableau. Utilisez l’argument « [!UICONTROL key] » pour accéder aux propriétés dans des objets complexes. Pour accéder aux propriétés imbriquées, utilisez la notation avec point. Le premier élément d’un tableau est l’index 1.
+Supprime les doublons dans un tableau. Utilisez l’argument « [!UICONTROL key] » pour accéder aux propriétés des objets complexes. Pour accéder aux propriétés imbriquées, utilisez la notation avec point. Le premier élément d’un tableau est l’index 1.
 
 >[!BEGINSHADEBOX]
 
@@ -138,6 +138,39 @@ Supprime les doublons dans un tableau de contacts en comparant la propriété «
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* Cette fonction prend un tableau contenant des paires clé-valeur et le convertit en une collection. La fonction comporte 3 arguments :
+
+* (tableau) contenant des paires clé-valeur
+* (chaîne) nom du champ à utiliser comme clé
+* (chaîne) nom du champ à utiliser comme valeur
+
+>[!BEGINSHADEBOX]
+
+Exemple :
+
+Dans un tableau :
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+et arguments
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+la fonction renvoie .
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 

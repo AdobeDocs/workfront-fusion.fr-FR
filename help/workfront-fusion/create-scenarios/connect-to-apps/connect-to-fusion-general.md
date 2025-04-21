@@ -4,10 +4,10 @@ description: De nombreux connecteurs  [!DNL Adobe Workfront Fusion]  ne nécessi
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 59%
+source-wordcount: '534'
+ht-degree: 45%
 
 ---
 
@@ -68,22 +68,25 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 ## Créer une connexion
 
-Pour créer une connexion dans un module [!DNL Workfront Fusion], procédez comme suit :
+Pour créer une connexion à une application donnée, vous devez être dans un module pour cette application. Par exemple, pour créer une connexion à Workfront, vous devez être dans un module Workfront.
 
-1. Cliquez sur **[!UICONTROL Ajouter]** en regard de la case [!UICONTROL Connexion] pour ouvrir le panneau **[!UICONTROL Créer une connexion]**.
-1. (Facultatif) Modifiez le **[!UICONTROL nom de la connexion]** par défaut.
-1. Dans le champ Environnement , indiquez s’il s’agit d’un environnement de production ou d’un environnement hors production. Ces informations s’affichent dans la zone Connexions de Fusion.
-1. Dans le champ Type , indiquez s’il s’agit d’un compte de service ou personnel. Ces informations s’affichent dans la zone Connexions de Fusion.
+Pour créer une connexion dans un module [!DNL Workfront Fusion] :
+
+1. Dans n’importe quel module de l’application donnée, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone [!UICONTROL Connexion] pour ouvrir le panneau **[!UICONTROL Créer une connexion]**.
+1. (Facultatif) Modifiez le **[!UICONTROL Nom de la connexion]** par défaut.
+1. Dans le champ Environnement , indiquez s’il s’agit d’un environnement de production ou d’un environnement hors production.
+1. Dans le champ Type , indiquez s’il s’agit d’un compte de service ou personnel.
 1. (Le cas échéant) Si l’application nécessite des paramètres de connexion avancés, tels qu’un identifiant, une clé ou [!UICONTROL secret], saisissez ces informations.
 
-   Il se peut que vous deviez cliquer sur **[!UICONTROL Afficher les paramètres avancés]** pour afficher les champs dans lesquels saisir ce type d’informations.
+   Vous devrez peut-être cliquer sur **[!UICONTROL Afficher les paramètres avancés]** pour afficher les champs dans lesquels vous pouvez saisir ce type d’informations.
 
-1. Cliquez sur **[!UICONTROL Continuer]**.
+1. Cliquez sur **[!UICONTROL Continuer]**.
 1. Dans la fenêtre de connexion qui s’affiche, saisissez vos informations d’identification pour vous connecter à l’application si vous ne l’avez pas déjà fait.
 1. (Le cas échéant) Si un bouton **[!UICONTROL Autoriser]** s’affiche, examinez les actions que le connecteur pourra effectuer, puis cliquez sur le bouton pour connecter l’application à [!DNL Workfront Fusion].
 
    >[!NOTE]
    >
-   >Certaines applications Microsoft utilisent la même connexion, qui est liée à des autorisations d’utilisateur ou d’utilisatrice. Ainsi, lors de la création d’une connexion, l’écran de consentement aux autorisations affiche les autorisations précédemment accordées à la connexion de cet utilisateur ou de cette utilisatrice, en plus des nouvelles autorisations nécessaires à l’application actuelle.
+   >* Les champs Environnement et Type sont fournis à titre d’information uniquement et ne modifient pas la fonctionnalité de la connexion. Ces informations s’affichent dans la zone Connexions de Fusion, ce qui vous permet de déterminer la connexion à utiliser pour un cas d’utilisation donné dans votre organisation.
+   >* Certaines applications Microsoft utilisent la même connexion, qui est liée à des autorisations d’utilisateur ou d’utilisatrice. Ainsi, lors de la création d’une connexion, l’écran de consentement aux autorisations affiche les autorisations précédemment accordées à la connexion de cet utilisateur ou de cette utilisatrice, en plus des nouvelles autorisations nécessaires à l’application actuelle.
    >
-   >Par exemple, si un utilisateur ou une utilisatrice dispose d’autorisations « Lire le tableau » accordées via le connecteur Excel, puis crée une connexion dans le connecteur Outlook pour lire les e-mails, l’écran de consentement aux autorisations affiche à la fois l’autorisation « Lire le tableau » déjà accordée et l’autorisation « Écrire des e-mails » nouvellement requise.
+   >   Par exemple, si un utilisateur ou une utilisatrice dispose d’autorisations « Lire le tableau » accordées via le connecteur Excel, puis crée une connexion dans le connecteur Outlook pour lire les e-mails, l’écran de consentement aux autorisations affiche à la fois l’autorisation « Lire le tableau » déjà accordée et l’autorisation « Écrire des e-mails » nouvellement requise.
