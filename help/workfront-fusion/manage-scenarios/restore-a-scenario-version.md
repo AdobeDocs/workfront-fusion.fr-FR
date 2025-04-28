@@ -1,19 +1,19 @@
 ---
-title: Restaurer une version de scénario
-description: Vous pouvez restaurer une version précédente d’un scénario. Cela vous permet d’apporter des modifications à un scénario, puis d’annuler facilement ces modifications si vous préférez la fonctionnalité précédente.
+title: Affichage et gestion des versions de scénario
+description: Vous pouvez afficher, restaurer, renommer ou télécharger des plans directeurs pour les versions précédentes d’un scénario.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 44%
+source-wordcount: '298'
+ht-degree: 34%
 
 ---
 
 # Affichage et gestion des versions de scénario
 
-Vous pouvez afficher, restaurer ou renommer les versions précédentes d’un scénario.
+Vous pouvez afficher, restaurer, renommer ou télécharger des plans directeurs pour les versions précédentes d’un scénario.
 
 ## Conditions d’accès
 
