@@ -4,10 +4,10 @@ description: Vous pouvez copier des modules, des groupes de modules ou des scén
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 53%
+source-wordcount: '908'
+ht-degree: 66%
 
 ---
 
@@ -31,7 +31,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -77,18 +77,18 @@ Tenez compte des points suivants lorsque vous collez des modules dans un autre s
 
 Copier un groupe de modules revient à copier un module.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez copier un module.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez avec le bouton droit sur le module à copier.
 
    >[!NOTE]
    >
-   >Vous pouvez sélectionner plusieurs modules en maintenant la touche [!UICONTROL shift] enfoncée et en cliquant sur les modules à copier. Copier un groupe de modules copie également toutes les lignes de connexion, tous les filtres ou toute logique de routage entre eux.
+   >Vous pouvez sélectionner plusieurs modules en maintenant la touche [!UICONTROL Maj] enfoncée et en cliquant sur les modules à copier. Copier un groupe de modules copie également toutes les lignes de connexion, tous les filtres ou toute logique de routage entre eux.
 
-1. Sélectionnez **[!UICONTROL Copy module]**.
+1. Sélectionnez **[!UICONTROL Copier le module]**.
 1. Déplacez le curseur vers la zone du scénario où vous souhaitez copier le scénario.
-1. Cliquez avec le bouton droit et sélectionnez **[!UICONTROL Paste]**.
+1. Cliquez avec le bouton droit de la souris, puis sélectionnez **[!UICONTROL Coller]**.
 1. Connectez les modules collés au scénario en les faisant glisser à l’emplacement souhaité dans le scénario.
 
    Vous pouvez également utiliser des raccourcis clavier pour copier et coller.
@@ -99,17 +99,17 @@ Le clonage d’un scénario crée une copie du scénario, que vous pouvez ensuit
 
 1. Ouvrez la page de détails du scénario :
 
-   1. Cliquez sur l’onglet **[!UICONTROL Scenario]** dans le panneau de gauche, puis cliquez sur un scénario dont vous souhaitez obtenir des détails.
+   1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis cliquez sur un scénario sur lequel vous souhaitez obtenir des détails.
 
       Ou
 
       Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
-1. Cliquez avec le bouton droit sur **[!UICONTROL Options]** dans le coin supérieur droit de la page.
-1. Sélectionnez **[!UICONTROL Clone]**.
+1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Options]** dans l’angle supérieur droit de la page.
+1. Sélectionnez **[!UICONTROL Cloner]**.
 1. (Facultatif) Saisissez un nom pour le nouveau scénario.
-1. (Facultatif) Activez **[!UICONTROL Keep the states of any new modules the same as those being duplicated]** pour vous assurer que le scénario copié inclut également des informations sur les enregistrements les plus récents traités par le scénario d’origine.
-1. Cliquez sur **[!UICONTROL Save]** pour créer le scénario.
+1. (Facultatif) Activez **[!UICONTROL Conserver les statuts des nouveaus modules identiques à ceux dupliqués]** pour vous assurer que le scénario copié inclut également des informations sur les enregistrements les plus récents traités par le scénario d’origine.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer le scénario.
 
 ## Copier un scénario à l’aide de plans directeurs
 
@@ -119,13 +119,17 @@ Un plan directeur de scénario représente l’ensemble du scénario. Si vous so
 
 ### Exporter un plan directeur de scénario
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez exporter un plan directeur.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Dans le scénario, cliquez sur le menu **[!UICONTROL More]** dans la zone des paramètres du scénario.
-1. Cliquez sur **[!UICONTROL Export Blueprint]**.
+1. Dans le scénario, cliquez sur le menu **[!UICONTROL Plus]** dans la zone des paramètres du scénario.
+1. Cliquez sur **[!UICONTROL Exporter le plan directeur]**.
 
    Un fichier JSON est créé et téléchargé sur votre ordinateur. Vous pouvez localiser ce fichier dans votre dossier [!DNL Downloads].
+
+>[!NOTE]
+>
+>Pour exporter le plan directeur d’une version précédente d’un scénario, consultez [Affichage et gestion des versions de scénario](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 
 ### Importer un plan directeur
 
@@ -134,13 +138,13 @@ Un plan directeur de scénario représente l’ensemble du scénario. Si vous so
 >Si vous importez un plan directeur dans un scénario existant, le plan directeur du scénario remplace le scénario existant. Vous ne pouvez pas ajouter un plan directeur à un scénario existant.
 
 1. Commencez par créer un scénario.
-1. Dans le scénario, cliquez sur le menu **[!UICONTROL More]** dans la zone des paramètres du scénario.
-1. Cliquez sur **[!UICONTROL Import Blueprint]**.
-1. Dans la boîte de dialogue qui s’affiche, cliquez sur **[!UICONTROL Browse]**
-1. Accédez au plan directeur à importer, puis cliquez sur **[!UICONTROL Open]**.
-1. Cliquez sur **[!UICONTROL Save]**.
+1. Dans le scénario, cliquez sur le menu **[!UICONTROL Plus]** dans la zone des paramètres du scénario.
+1. Cliquez sur **[!UICONTROL Importer le plan directeur]**.
+1. Dans la boîte de dialogue qui apparaît, cliquez sur **[!UICONTROL Parcourir]**.
+1. Accédez au plan directeur à importer, puis cliquez sur **[!UICONTROL Ouvrir]**.
+1. Cliquer sur **[!UICONTROL Enregistrer]**.
 
-   Un fichier JSON est créé et téléchargé sur votre ordinateur. Vous pouvez localiser ce fichier dans votre dossier [!UICONTROL Downloads].
+   Un fichier JSON est créé et téléchargé sur votre ordinateur. Vous pouvez localiser ce fichier dans votre dossier [!UICONTROL Téléchargements].
 
 ## Copier et réutiliser des scénarios à l’aide de modèles
 

@@ -4,10 +4,10 @@ description: Cet article décrit le processus de base d’ajout d’un module à
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '628'
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -46,7 +46,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -66,7 +66,7 @@ Le premier module d’un scénario est généralement un module de déclenchemen
 
 Pour plus d’informations sur les modules de déclenchement, consultez la section [Modules de déclenchement](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) dans la présentation des modules.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Commencez à créer un scénario en cliquant sur **Créer un nouveau scénario** dans le coin supérieur droit de l’écran.
 
    L’éditeur de scénario s’ouvre, avec un module d’espace réservé (point d’interrogation) et la liste des connecteurs disponibles.
@@ -84,8 +84,7 @@ Pour plus d’informations sur les modules de déclenchement, consultez la secti
 
 ## Ajouter un autre module à un scénario
 
-1. Si vous ne vous trouvez pas dans l’éditeur de scénarios du scénario dans lequel vous souhaitez ajouter un module, cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
-1. Sélectionnez le scénario dans lequel vous souhaitez exporter un plan directeur.
+1. Si vous ne vous trouvez pas dans l’éditeur de scénarios du scénario dans lequel vous souhaitez ajouter un module, cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Pour ajouter un module à un autre module, pointez sur la poignée droite du module après laquelle vous souhaitez ajouter un module, puis cliquez sur **Ajouter un autre module** lorsqu’il apparaît.
 
@@ -98,8 +97,7 @@ Pour plus d’informations sur les modules de déclenchement, consultez la secti
 
 ## Insertion d’un module entre les modules existants d’un scénario
 
-1. Si vous ne vous trouvez pas dans l’éditeur de scénarios du scénario dans lequel vous souhaitez ajouter un module, cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
-1. Sélectionnez le scénario dans lequel vous souhaitez exporter un plan directeur.
+1. Si vous ne vous trouvez pas dans l’éditeur de scénarios du scénario dans lequel vous souhaitez ajouter un module, cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur le chemin en pointillé entre les modules où vous souhaitez insérer un module.
 1. Dans le menu qui s’affiche, sélectionnez **Ajouter un module**.

@@ -4,10 +4,10 @@ description: Vous pouvez restaurer une version précédente d’un scénario. Ce
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 47%
+source-wordcount: '309'
+ht-degree: 44%
 
 ---
 
@@ -78,7 +78,8 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 1. (Facultatif) Pour renommer la version, cliquez sur le menu Plus ![Plus](assets/more-icon-vertical.png) sur la ligne correspondant à cette version, sélectionnez **Modifier**, puis saisissez un nom dans le champ. Cliquez sur **Enregistrer** pour enregistrer le nouveau nom.
 
    Nous vous recommandons de donner un nom qui décrit les modifications apportées à cette version.
-1. (Facultatif) Pour restaurer la version, cliquez sur Restaurer ![menu Plus](assets/more-icon-vertical.png) sur la ligne correspondant à cette version
+1. (Facultatif) Pour télécharger le plan directeur d’une version précédente, cliquez sur le menu Plus ![Plus](assets/more-icon-vertical.png) sur la ligne correspondant à cette version, puis sélectionnez **Télécharger**.
+1. (Facultatif) Pour restaurer la version, cliquez sur **Restaurer** sur la ligne correspondant à cette version
 
 
    >[!NOTE]
