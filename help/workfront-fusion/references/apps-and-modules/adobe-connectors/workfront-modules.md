@@ -4,9 +4,9 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion Adobe 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 58%
 
 ---
@@ -973,7 +973,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Sélectionnez les formulaires personnalisés que vous souhaitez joindre au nouvel enregistrement. Après avoir sélectionné le formulaire, saisissez les données des champs de ce formulaire.</td> 
+   <td>Sélectionnez les formulaires personnalisés pour lesquels vous souhaitez fournir des valeurs de champ dans le nouvel enregistrement. Après avoir sélectionné le formulaire, saisissez les données des champs de ce formulaire.<p> Pour fournir les valeurs de champ d’un formulaire que vous joignez dans ce module, incluez l’ID de formulaire personnalisé dans la section Champs à mapper .</td> 
   </tr> 
  </tbody> 
 </table>
