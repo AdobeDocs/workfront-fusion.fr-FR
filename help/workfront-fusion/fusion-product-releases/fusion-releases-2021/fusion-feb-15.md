@@ -20,9 +20,9 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fus
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
-Cette version comprenait également une ou plusieurs mises à jour de maintenance. Pour plus d’informations sur les mises à jour de maintenance de Workfront Fusion 2.0, voir [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
+Cette version comprenait également une ou plusieurs mises à jour de maintenance. Pour plus d’informations sur les mises à jour de maintenance de Workfront Fusion 2.0, voir [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr).
 
 ## Les équipes partagent désormais les paramètres des notifications par e-mail.
 

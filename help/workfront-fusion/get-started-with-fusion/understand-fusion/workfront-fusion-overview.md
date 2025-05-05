@@ -31,7 +31,7 @@ Workfront Fusion propose également des fonctionnalités qui prennent en charge 
 
 Lors de vos débuts avec Workfront Fusion, les ressources suivantes pourront vous être utiles :
 
-* Pour les ressources de formation Workfront Fusion, consultez [Présentation de la formation Workfront Fusion](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Pour les ressources de formation Workfront Fusion, consultez [Présentation de la formation Workfront Fusion](https://experienceleague.adobe.com/fr/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Pour plus d’informations sur les scénarios, voir [Présentation des scénarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
