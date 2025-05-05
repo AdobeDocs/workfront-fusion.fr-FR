@@ -172,7 +172,7 @@ Ce module d’action télécharge un fichier à partir d’un compartiment.
 
 Ce module d’action effectue un appel personnalisé à l’API AWS S3.
 
-Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL  REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL &#x200B; REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 

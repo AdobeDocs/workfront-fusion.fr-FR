@@ -357,13 +357,13 @@ Calcule le hachage sha512 d’une chaîne. Si l’argument clé est spécifié, 
 
 Codages pris en charge :
 
-*  »[!UICONTROL hex] » (par défaut)
-*  »[!UICONTROL base64] »
+* »[!UICONTROL hex] » (par défaut)
+* »[!UICONTROL base64] »
 * &quot;[!UICONTROL latin1]&quot;
 
 Codages de clé pris en charge :
 
-*  »[!UICONTROL text] » (par défaut)
+* »[!UICONTROL text] » (par défaut)
 * &quot;[!UICONTROL hex]&quot;
 * « [!UICONTROL base64] » ou « [!UICONTROL binary] »
 

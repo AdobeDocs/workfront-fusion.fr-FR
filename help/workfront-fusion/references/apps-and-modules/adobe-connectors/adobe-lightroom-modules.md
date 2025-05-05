@@ -56,7 +56,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 &#42;Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice de [!DNL Workfront].
 
-&#42;&#42;Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Conditions préalables
 

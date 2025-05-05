@@ -289,27 +289,27 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >Configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
-&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
-&gt;   <td> <p>Code HTML</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>Clé</strong> : type de contenu</li> 
-&gt;     <li><strong>Valeur</strong> : text/html</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+>&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+>&gt;   <td> <p>Code HTML</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>Clé</strong> : type de contenu</li> 
+>&gt;     <li><strong>Valeur</strong> : text/html</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![En-têtes personnalisés ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >**Exemple :** configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
-&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
-&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+>&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
+>&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![Réponse du Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

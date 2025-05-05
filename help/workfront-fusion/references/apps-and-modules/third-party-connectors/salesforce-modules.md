@@ -577,7 +577,7 @@ Ce module d’action charge un seul fichier dans Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL  Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL &#x200B; Adobe Workfront Fusion] - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -617,7 +617,7 @@ Ce module d’action permet de récupérer tous les enregistrements répondant �
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL  Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour savoir comment connecter votre compte [!DNL Salesforce] à [!DNL Workfront Fusion], consultez la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL &#x200B; Adobe Workfront Fusion] - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

@@ -71,7 +71,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 
 ## Exécutions incomplètes
 
-* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **** Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
+* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **&#x200B;**&#x200B;Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
 
 ## Reprises
 

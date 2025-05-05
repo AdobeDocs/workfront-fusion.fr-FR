@@ -330,7 +330,7 @@ Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à l
    <td> <p>Saisissez le numéro de l’image dans la vidéo à laquelle le commentaire doit être lié.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Page] </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
    <td> <p>S’il s’agit d’une ressource PDF, saisissez ou mappez la page à laquelle le commentaire doit être joint.</p> </td> 
   </tr> 
  </tbody> 
@@ -446,7 +446,7 @@ Ce module d’action modifie un commentaire existant.
    <td> <p>Saisissez le numéro de l’image dans la vidéo à laquelle le commentaire est lié.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Page] </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
    <td> <p>Si la ressource est un fichier PDF, saisissez ou mappez la page à laquelle le commentaire est attaché.</p> </td> 
   </tr> 
  </tbody> 
@@ -467,7 +467,7 @@ Ce module d’action crée un dossier dans Frame.io.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Account ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>Sélectionnez ou mappez le compte dans lequel vous souhaitez créer un dossier.</p> </td> 
   </tr> 
   <tr> 
@@ -567,11 +567,11 @@ Ce module d’action ajoute une ressource à un lien de partage dans Frame.io.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Account ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>Sélectionnez ou mappez le compte qui contient le lien de partage auquel vous souhaitez ajouter une ressource.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Partager l’ID de lien] </td> 
+   <td role="rowheader">[!UICONTROL Partager l’ID de lien] </td> 
    <td> <p>Sélectionnez ou mappez le lien de partage auquel vous souhaitez ajouter une ressource.</p> </td> 
   </tr> 
    <tr> 
