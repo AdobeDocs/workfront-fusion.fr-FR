@@ -4,10 +4,10 @@ description: Les modules  [!DNL Adobe Workfront Fusion SFTP]  vous permettent de
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 83%
+source-wordcount: '2121'
+ht-degree: 82%
 
 ---
 
@@ -449,6 +449,10 @@ Ce module permet de charger un fichier vers le serveur SFTP.
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Définissez les autorisations souhaitées pour le fichier ou le dossier. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Buffer size (B)]</p> </td> 
+   <td> <p>Définissez la taille (en octets) de chaque bloc lors du chargement du fichier. Cela s’avère utile pour les fichiers volumineux ou lorsque les limites de mémoire du serveur nécessitent des chargements plus petits. Si cette valeur n’est pas définie, le fichier est écrit en une seule opération.</p> </td> 
   </tr> 
  </tbody> 
 </table>
