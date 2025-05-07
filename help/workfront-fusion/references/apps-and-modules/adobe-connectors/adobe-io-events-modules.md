@@ -4,10 +4,10 @@ description: Avec les modules Adobe I/O Events, vous pouvez démarrer un scénar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 36%
+source-wordcount: '969'
+ht-degree: 35%
 
 ---
 
@@ -104,6 +104,12 @@ Pour créer une connexion pour vos modules Adobe I/O Events :
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Environnement</td>
+        <td>
+          <p>Choisissez si vous souhaitez vous connecter à un environnement de production ou hors production.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Type</td>
         <td>
           <p>Choisissez si vous souhaitez vous connecter à un compte de service ou à un compte personnel.</p>
@@ -160,6 +166,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Recherches](#searches)
 
 ### Déclencheurs
+
+<!--Becky start here-->
 
 #### Créer un enregistrement d’événement
 

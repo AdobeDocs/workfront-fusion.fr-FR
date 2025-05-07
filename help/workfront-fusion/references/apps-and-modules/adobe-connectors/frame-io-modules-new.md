@@ -1,17 +1,17 @@
 ---
-title: Frame.io modules (bêta)
+title: Modules Frame.io (Beta)
 description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: d81785ec60dfd74583a54a75ab1bfc1a253d8faf
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 46%
 
 ---
 
-# [!DNL Frame.io] Modules bêta (V4)
+# Modules [!DNL Frame.io] Beta (V4)
 
 >[!IMPORTANT]
 >
@@ -23,12 +23,12 @@ Les modules [!DNL Adobe Workfront Fusion] [!DNL Frame.io] vous permettent de sur
 
 Workfront propose deux connecteurs Frame.io, en fonction de la version de Frame.io à laquelle vous vous connectez.
 
-| Connecteur | version Frame.io |
+| Connecteur | Version Frame.io |
 |---|---|
-| Frame.io (Bêta) | V4 |
+| Frame.io (Beta) | V4 |
 | Frame.io (hérité) | V3 |
 
-Pour obtenir des instructions sur la version héritée du connecteur Frame.io, voir [Frame.io connecteur hérité](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
+Pour obtenir des instructions sur la version héritée du connecteur Frame.io, voir [Connecteur hérité Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
 
 Pour obtenir une vidéo d’introduction au connecteur Frame.io, consultez ce qui suit :
@@ -92,7 +92,7 @@ Le connecteur Frame.io utilise les éléments suivants :
  <tbody> 
   <tr> 
    <td role="rowheader">URL de base</td> 
-   <td> https://api.frame.io/v2</td> 
+   <td> https://api.frame.io/v4</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Version de l’API</td> 
@@ -147,15 +147,15 @@ Le processus de connexion diffère selon que vous utilisez le connecteur Frame.i
 
 Lorsque vous configurez les modules [!DNL Frame.io], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Frame.io] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper les informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Activation/désactivation de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Ressources](#assets)
 * [Commentaires](#comments)
 * [Dossiers](#folders)
 * [Projets](#projects)
-* [Actions](#shares)
+* [Partages](#shares)
 * [Espaces de travail](#workspaces)
 * [Autre](#other)
 
@@ -331,7 +331,7 @@ Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à l
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Page] </td> 
-   <td> <p>S’il s’agit d’une ressource PDF, saisissez ou mappez la page à laquelle le commentaire doit être joint.</p> </td> 
+   <td> <p>Si la ressource est un PDF, saisissez ou mappez la page à laquelle le commentaire doit être joint.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -447,7 +447,7 @@ Ce module d’action modifie un commentaire existant.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Page] </td> 
-   <td> <p>Si la ressource est un fichier PDF, saisissez ou mappez la page à laquelle le commentaire est attaché.</p> </td> 
+   <td> <p>Si la ressource est un PDF, saisissez ou mappez la page à laquelle le commentaire est joint.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -467,8 +467,8 @@ Ce module d’action crée un dossier dans Frame.io.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte dans lequel vous souhaitez créer un dossier.</p> </td> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte sur lequel vous souhaitez créer un dossier.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -480,7 +480,7 @@ Ce module d’action crée un dossier dans Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
-   <td> <p>Sélectionnez le chemin d’accès à l’emplacement où vous souhaitez créer un dossier.</p> </td> 
+   <td> <p>Sélectionnez le chemin d’accès où vous souhaitez créer un dossier.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Nom </td> 
@@ -567,11 +567,11 @@ Ce module d’action ajoute une ressource à un lien de partage dans Frame.io.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte qui contient le lien de partage auquel vous souhaitez ajouter une ressource.</p> </td> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant le lien de partage auquel vous souhaitez ajouter une ressource.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Partager l’ID de lien] </td> 
+   <td role="rowheader">[!UICONTROL Share link ID] </td> 
    <td> <p>Sélectionnez ou mappez le lien de partage auquel vous souhaitez ajouter une ressource.</p> </td> 
   </tr> 
    <tr> 
@@ -611,7 +611,7 @@ Ce module d&#39;action crée un lien de partage dans Frame.io.
   </tr> 
    <tr> 
    <td role="rowheader">Ressources </td> 
-   <td> <p>Pour chaque ressource que vous souhaitez ajouter au lien de partage, cliquez sur <b>Ajouter un élément</b> et entrez l’ID de la ressource.</p> </td> 
+   <td> <p>Pour chaque ressource à ajouter au lien de partage, cliquez sur <b>Ajouter un élément</b> et saisissez l’identifiant de la ressource.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Description </td> 
@@ -619,7 +619,7 @@ Ce module d&#39;action crée un lien de partage dans Frame.io.
   </tr> 
    <tr> 
    <td role="rowheader">Nom </td> 
-   <td> <p>Entrez ou mappez la date d’expiration du lien de partage.</p> </td> 
+   <td> <p>Saisissez ou mappez la date d’expiration du lien de partage.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Nom </td> 
@@ -627,7 +627,7 @@ Ce module d&#39;action crée un lien de partage dans Frame.io.
   </tr> 
    <tr> 
    <td role="rowheader">Nom </td> 
-   <td> <p>Saisissez ou mappez un mot de passe pour le lien de partage.</p> </td> 
+   <td> <p>Saisissez ou mappez une phrase secrète pour le lien de partage.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -636,7 +636,7 @@ Ce module d&#39;action crée un lien de partage dans Frame.io.
 
 #### Créer un espace de travail
 
-Ce module d’action crée un nouvel espace de travail dans Frame.io
+Ce module d’action crée un espace de travail dans Frame.io
 
 <table style="table-layout:auto"> 
  <col> 
