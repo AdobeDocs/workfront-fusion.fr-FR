@@ -4,10 +4,10 @@ description: Avec les modules Adobe I/O Events, vous pouvez démarrer un scénar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 35%
+source-wordcount: '1077'
+ht-degree: 36%
 
 ---
 
@@ -221,9 +221,12 @@ Pour créer un webhook :
 
 ### Actions
 
-#### Récupérer tous les événements d’un journal
+* [Obtention des identifiants de fournisseur et d’événement](#get-provider-and-event-ids)
+* [Effectuer un appel API personnalisé.](#make-a-custom-api-call)
 
-Ce module de recherche récupère tous les événements d’un enregistrement dans un journal.
+#### Obtention des identifiants de fournisseur et d’événement
+
+Ce module de recherche obtient les identifiants Adobe I/O Events pour le fournisseur et les événements spécifiés.
 
 <table>
      <col/>
@@ -235,44 +238,23 @@ Ce module de recherche récupère tous les événements d’un enregistrement da
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL Fournisseur d’événements]
          </td>
          <td>
-           Sélectionnez l’enregistrement pour lequel vous souhaitez récupérer les événements.
+           Sélectionnez le fournisseur pour lequel vous souhaitez récupérer l’identifiant.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Event type]
          </td>
          <td>
-              Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Renvoyer les événements qui se produisent après]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Seek]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Latest]
-         </td>
-         <td>
-         Activez cette option pour renvoyer l’événement le plus récent.
+              Sélectionnez les événements pour lesquels vous souhaitez fournir des identifiants. Les événements sont disponibles en fonction du fournisseur d’événement. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### Effectuer un appel API personnalisé.
 
@@ -327,9 +309,9 @@ Ce module d’action effectue un appel API personnalisé à l’API [!DNL Adobe 
 
 ### Recherches
 
-#### Obtention des identifiants de fournisseur et d’événement
+#### Récupérer tous les événements d’un journal
 
-Ce module de recherche obtient les identifiants Adobe I/O Events pour le fournisseur et les événements spécifiés.
+Ce module de recherche récupère tous les événements d’un enregistrement dans un journal.
 
 <table>
      <col/>
@@ -341,28 +323,49 @@ Ce module de recherche obtient les identifiants Adobe I/O Events pour le fournis
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Fournisseur d’événements]
+           [!UICONTROL Registration ID]
          </td>
          <td>
-           Sélectionnez le fournisseur pour lequel vous souhaitez récupérer l’identifiant.
+           Sélectionnez l’enregistrement pour lequel vous souhaitez récupérer les événements.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Maximum number of returned events]
          </td>
          <td>
-              Sélectionnez les événements pour lesquels vous souhaitez fournir des identifiants. Les événements sont disponibles en fonction du fournisseur d’événement. 
+              Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Renvoyer les événements qui se produisent après]
+         </td>
+         <td>Saisir ou mapper une date. Le module renvoie les événements qui se sont produits après cette date.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Latest]
+         </td>
+         <td>
+         Activez cette option pour renvoyer l’événement le plus récent.
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!--
 
-<!--
+Surveiller les événements
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+Ce module de déclenchement lance un scénario lorsqu’un événement se produit dans le produit ou service Adobe sélectionné.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -370,7 +373,7 @@ This trigger module starts a scenario when an event occurs in the chosen Adobe p
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>Ajouter</b> en regard du champ webhook.</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>La source des événements que vous souhaitez regarder</li></ul></li><li>Cliquez sur <b>Enregistrer</b> pour enregistrer le webhook et revenir au module . </td> 
    </tr> 
    </tbody> 
 </table>
