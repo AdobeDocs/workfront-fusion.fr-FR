@@ -5,10 +5,10 @@ description: Vous pouvez configurer des paramètres spécifiques pour les scéna
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 45%
+source-wordcount: '1288'
+ht-degree: 54%
 
 ---
 
@@ -32,7 +32,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -45,7 +45,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Forfait [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</li><li>Forfait [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -77,12 +77,12 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
    ![Paramètres du scénario](assets/scenario-settings-350x221.png)
 
-   Dans le panneau [!UICONTROL Scenario settings] qui s’affiche, vous pouvez configurer différents paramètres avancés pour le scénario.
+   Dans le panneau [!UICONTROL Paramètres du scénario] qui s’affiche, vous pouvez configurer différents paramètres avancés pour le scénario.
 1. Activez ou désactivez les paramètres du scénario, au besoin. Voir [Options des paramètres du scénario](#scenario-settings-options) ci-dessous.
 
 ## Options des paramètres de scénario
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL Traitement séquentiel]
 
 Cette option force toutes les exécutions à se produire dans l’ordre. Elle est principalement pertinente pour les Webhooks et les exécutions incomplètes.
 
@@ -111,13 +111,13 @@ Lorsque le traitement séquentiel est activé, les exécutions parallèles du sc
 
 ### Les données sont confidentielles.
 
-Une fois qu’un scénario a été exécuté, vous pouvez afficher par défaut des informations sur les données qui ont été traitées par les modules du scénario. Si vous ne souhaitez pas que ces informations soient stockées, activez l’option [!UICONTROL Data is confidential].
+Une fois qu’un scénario a été exécuté, vous pouvez afficher par défaut des informations sur les données qui ont été traitées par les modules du scénario. Si vous ne souhaitez pas que ces informations soient stockées, activez l’option [!UICONTROL Les données sont confidentielles].
 
 >[!IMPORTANT]
 >
 >Si vous activez cette option, il peut être difficile de résoudre les erreurs qui peuvent se produire lors de l’exécution d’un scénario.
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL Autoriser le stockage d’exécutions incomplètes]
 
 Cette option détermine comment [!DNL Adobe Workfront Fusion] s’exécute si une erreur se produit lors de l’exécution d’un scénario. Lorsque cette option est activée, le scénario est mis en pause et déplacé vers le dossier d’exécution incomplète. Cela vous permet de résoudre le problème et de reprendre l’exécution à l’endroit où le scénario s’est arrêté. Si cette option est désactivée, l’exécution du scénario s’arrête et une phase de restauration est lancée.
 
@@ -127,7 +127,7 @@ Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et r
 
 Cette option concerne l’activation de la perte de données si [!DNL Workfront Fusion] ne parvient pas à enregistrer un lot dans la file d’attente des exécutions incomplètes (par exemple, en raison d’un manque d’espace libre). Lorsque cette option est activée, les données sont perdues afin d’éviter des interruptions dans l’exécution globale du scénario. Cela s’avère utile dans les cas où la priorité la plus élevée est l’exécution continue et où les données erronées entrantes ne sont pas si importantes.
 
-Par ailleurs, lors de l’exécution d’un scénario, il peut arriver qu’un module rencontre un fichier plus volumineux que la taille maximale autorisée. Dans ce cas, [!DNL Workfront Fusion] procède selon le paramétrage de l&#39;option [!UICONTROL Enable data loss] et un message d&#39;avertissement s&#39;affiche.
+Par ailleurs, lors de l’exécution d’un scénario, il peut arriver qu’un module rencontre un fichier plus volumineux que la taille maximale autorisée. Dans ce cas, [!DNL Workfront Fusion] opère suivant le réglage de l’option [!UICONTROL Activer la perte de données] et un message d’avertissement s’affiche.
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -135,9 +135,9 @@ Pour plus d’informations sur la taille de fichier maximale, voir [Mécanismes 
 
 Pour plus d&#39;informations sur les avertissements, voir [Types d&#39;erreur](/help/workfront-fusion/references/errors/error-processing.md).
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL Validation automatique]
 
-Les paramètres [!UICONTROL Auto commit] s’appliquent aux transactions et définissent la manière de traiter un scénario. Si l’option Validation automatique est activée, la phase de validation de chaque module démarre immédiatement après avoir terminé la phase d’opération. Lorsque l’option Validation automatique est désactivée, aucune validation n’a lieu tant que les opérations ne sont pas exécutées pour tous les modules (il s’agit du mode par défaut).
+Le paramètre [!UICONTROL Validation automatique] s’applique aux transactions et définit la manière de traiter un scénario. Si l’option Validation automatique est activée, la phase de validation de chaque module démarre immédiatement après avoir terminé la phase d’opération. Lorsque l’option Validation automatique est désactivée, aucune validation n’a lieu tant que les opérations ne sont pas exécutées pour tous les modules (il s’agit du mode par défaut).
 
 ### Nombre maximal de cycles
 
@@ -160,11 +160,11 @@ La définition de davantage de cycles peut s’avérer utile lorsque vous souhai
 
 >[!BEGINSHADEBOX]
 
-**Exemples :** [!DNL Workfront] > [!UICONTROL Watch record] recherche les nouveaux événements qui se présentent et [!DNL Workfront] >[!UICONTROL Convert object] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
+**Exemples :** [!DNL Workfront] > [!UICONTROL Surveiller les enregistrements] recherche les nouveaux problèmes qui surviennent et [!DNL Workfront] > [!UICONTROL Convertir l’objet] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
 
 ![Paramètres du scénario](assets/scenario-settings-ex-1-350x157.png)
 
-Un paramètre [!UICONTROL more cycles] est appliqué uniquement lorsque vous planifiez l’exécution du scénario. Lorsque vous utilisez le bouton [!UICONTROL Run once], les paramètres du cycle sont pris en compte.
+Un paramètre [!UICONTROL cycles supplémentaires] est appliqué uniquement lorsque vous planifiez l’exécution de votre scénario. Lorsque vous utilisez le bouton [!UICONTROL Exécuter une seule fois], les paramètres du cycle sont pris en compte.
 
 #### Le nombre maximal de cycles est défini sur 1 (valeur par défaut).
 
@@ -177,7 +177,7 @@ Si 100 requêtes sont envoyées à [!DNL Workfront] et que le champ Nombre maxim
 
 Le nombre maximal de cycles dans le module Workfront > Enregistrements de contrôle est défini sur `10`.
 
-Si 100 fichiers sont ajoutés au dossier du Dropbox et que l’option Nombre maximal de cycles est définie sur 10, alors 10 fichiers sont traités au cours du premier cycle, les 10 fichiers suivants au cours du deuxième cycle, les 10 fichiers suivants au cours du troisième cycle, etc., jusqu’à ce que tous les fichiers soient traités.
+Si 100 fichiers sont ajoutés au dossier Dropbox et que l’option Nombre maximal de cycles est définie sur 10, alors 10 fichiers sont traités au cours du premier cycle, les 10 fichiers suivants au cours du deuxième cycle, les 10 fichiers suivants au cours du troisième cycle, etc., jusqu’à ce que tous les fichiers soient traités.
 
 Tous les fichiers sont traités dans un scénario d’exécution.
 
@@ -198,3 +198,14 @@ Pour plus d’informations sur les erreurs, voir [Types d’erreur](/help/workfr
 >[!NOTE]
 >
 >Si un scénario commence par un déclencheur instantané, le paramètre est ignoré et le scénario est désactivé immédiatement une fois la première erreur survenue.
+
+### Pool de salariés
+
+>[!NOTE]
+>
+>Ce paramètre n’est visible que si les deux conditions suivantes sont remplies :
+>
+>* Vous êtes un administrateur ou un propriétaire d’organisation
+>* Plusieurs pools de collaborateurs sont associés à votre organisation.
+
+Ce paramètre affecte le scénario à un pool de collaborateurs spécifique associé à votre organisation, ce qui vous permet de dédier des ressources aux scénarios à priorité élevée.
