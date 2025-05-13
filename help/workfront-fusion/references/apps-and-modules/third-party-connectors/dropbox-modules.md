@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: 2ed8e4e956bacc18a43947c4c55482cf32533054
 workflow-type: tm+mt
-source-wordcount: '3203'
-ht-degree: 83%
+source-wordcount: '3238'
+ht-degree: 82%
 
 ---
 
@@ -64,13 +64,15 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Conditions préalables
 
-* Pour utiliser des modules [!DNL Dropbox], vous devez disposer d’un compte [!DNL Dropbox].
+* Pour utiliser les modules [!DNL Dropbox], vous devez disposer d’un compte [!DNL Dropbox].
 
 >[!IMPORTANT]
 >
->Dropbox doit approuver les demandes comptant plus de 50 utilisateurs et utilisatrices.
->
->Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
+>* Pour utiliser le connecteur Dropbox, vous devez d’abord créer une application dans Dropbox.
+>   Pour plus d’informations, recherchez « Créer une application » dans le guide de développement de Dropbox.
+>* Lors de la création de l’application, utilisez l’URI de redirection suivant : `https://app.workfrontfusion.com/oauth/cb/dropbox`
+>* Dropbox doit approuver les demandes comptant plus de 50 utilisateurs et utilisatrices.
+>   Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
 
 ## Informations sur l’API Dropbox
 
