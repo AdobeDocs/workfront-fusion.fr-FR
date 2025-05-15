@@ -4,9 +4,9 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 18%
 
 ---
@@ -241,7 +241,7 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
 
 Ce module a été abandonné et sera supprimé prochainement. Utilisez plutôt le module Remplir une image .
 
-## Générer une image
+### Générer une image
 
 Ce module d’action génère une image et en fonction d’une invite que vous fournissez. Vous pouvez également fournir une image de référence facultative ; l’image générée correspondra au style de l’image de référence.
 
@@ -258,6 +258,10 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Saisissez ou mappez une invite pour l’image que vous souhaitez générer. Plus de détails dans l’invite vous permettront de mieux contrôler ce qui apparaît dans l’image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Sélectionnez la version du modèle Firefly que vous souhaitez utiliser pour générer l’image.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
@@ -388,6 +392,10 @@ Ce module d’action génère des images similaires à l’image source que vous
   <tr> 
    <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
    <td>Entrez un nombre compris entre 1 et 4. Le module génère ce nombre de variations d’image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Sélectionnez la version du modèle Firefly que vous souhaitez utiliser pour générer les images.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 

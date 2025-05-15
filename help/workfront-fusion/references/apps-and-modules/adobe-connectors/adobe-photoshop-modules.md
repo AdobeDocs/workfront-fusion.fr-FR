@@ -4,10 +4,10 @@ description: Avec les modules Adobe Photoshop, vous pouvez lancer un scénario A
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
+source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
 workflow-type: tm+mt
-source-wordcount: '4359'
-ht-degree: 20%
+source-wordcount: '4976'
+ht-degree: 19%
 
 ---
 
@@ -59,7 +59,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 &#42;Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice de [!DNL Workfront].
 
-&#42;&#42;Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,7 +68,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 Avant d’utiliser le connecteur [!DNL Adobe Photoshop], vous devez vous assurer que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Photoshop].
-* Vous devez disposer d’une licence Firefly Services.
+* Vous devez posséder une licence Firefly Services.
 * Vous devez disposer d’un identifiant client et d’un secret client. Vous pouvez les acquérir à partir du Adobe Developer Console.
 
 ## Informations sur l’API Adobe Photoshop
@@ -169,6 +169,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Création d’un masque](#create-a-mask)
 * [Création d’un nouveau PSD](#create-a-new-psd)
 * [Modifier des calques de texte](#edit-text-layers)
+* [Modifier les calques de texte (hérités)](#edit-text-layers-legacy)
 * [Flou relatif à la profondeur d’exécution](#execute-depth-blur)
 * [Exécution d’actions Photoshop](#execute-photoshop-actions)
 * [Exécution d’actions Photoshop (JSON)](#execute-photoshop-actions-json)
@@ -177,6 +178,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Effectuer un appel API personnalisé.](#make-a-custom-api-call)
 * [Supprimer l’arrière-plan](#remove-background)
 * [Remplacement d’un objet dynamique](#replace-a-smart-object)
+* [Remplacement d’un objet dynamique (hérité)](#replace-a-smart-object-legacy)
 * [Redimensionnement d’une image](#resize-an-image)
 * [Filigrane d’une image](#watermark-an-image)
 
@@ -523,7 +525,7 @@ Pour les champs liés à ce module, voir [Création d’un nouveau PSD](https://
 
 ### Modifier des calques de texte
 
-Ce module d’action modifie les calques de texte d’un fichier Photoshop.
+Ce module d’action modifie les calques de texte d’un fichier Photoshop. Vous pouvez saisir des détails de modification distincts pour plusieurs calques dans le même fichier.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -559,7 +561,7 @@ Ce module d’action modifie les calques de texte d’un fichier Photoshop.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/text">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Pour chaque calque de texte à modifier, cliquez sur <b>Ajouter un élément</b> et saisissez les options de calque.<p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifier le texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Stockage du fichier de sortie]</td>
       <td>
@@ -595,6 +597,81 @@ Ce module d’action modifie les calques de texte d’un fichier Photoshop.
 
 
 
+### Modifier les calques de texte (hérités)
+
+Ce module d’action modifie un calque de texte sur un fichier Photoshop.
+
+Pour modifier plusieurs calques, utilisez le module [Modifier les calques de texte](#edit-text-layers).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gérer les polices manquantes]</td>
+      <td>
+        <p>Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. Si la police n’est pas fournie, le module utilise la police par défaut.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Stockage du fichier de sortie]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL du fichier de sortie]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Type de fichier Output]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Compression]</p>
+      </td>
+   <td> Sélectionnez le niveau de compression du fichier de sortie. </td> 
+    </tr>
+  </tbody>
+</table>
+
+
 ### Exécution d’actions Photoshop (JSON)
 
 Ce module d’action exécute des actions Photoshop à l’aide de commandes JSON.
@@ -620,7 +697,7 @@ Ce module d’action exécute des actions Photoshop à l’aide de commandes JSO
    <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL , action JSON]</td>
+      <td role="rowheader">[!UICONTROL, action JSON]</td>
       <td>
         <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
       </td>
@@ -1098,6 +1175,8 @@ Ce module d’action identifie l’objet principal de votre image et supprime l�
 
 Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
 
+Ce module utilise l’API d’objet intelligent version 2.
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1122,7 +1201,80 @@ Ce module d’action remplace un objet dynamique dans un calque PSD et génère 
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés dans cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque nouveau rendu que vous souhaitez que le module produise, cliquez sur Ajouter un élément et renseignez les champs suivants. Vous pouvez avoir un maximum de 25 fichiers de sortie.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sortie) Largeur]</p>
+      </td>
+   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned results]</p>
+      </td>
+   <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+    </tr>
+    </tbody>
+</table>
+
+
+
+### Remplacement d’un objet intelligent (hérité)
+
+Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
+
+Ce module utilise l’ancienne version des objets dynamiques.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel l’objet dynamique est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’objet dynamique. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
