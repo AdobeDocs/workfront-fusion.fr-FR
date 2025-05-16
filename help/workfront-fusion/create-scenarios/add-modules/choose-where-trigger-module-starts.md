@@ -4,10 +4,10 @@ description: Certains modules déclencheur vous permettent de sélectionner le p
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 59%
+source-wordcount: '328'
+ht-degree: 58%
 
 ---
 
@@ -35,7 +35,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -48,7 +48,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -64,7 +64,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Choisir l’emplacement de démarrage d’un module déclencheur
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez choisir l’emplacement de départ du déclencheur.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Configurez et enregistrez un module de déclenchement.
@@ -75,7 +75,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
    ![Choisir par où commencer](assets/choose-where-to-start.png)
 
-1. Sélectionnez une option dans la zone de **[!UICONTROL Choose where to start]** qui s’affiche.
+1. Sélectionnez une option dans la zone **[!UICONTROL Choisir l’emplacement de démarrage]** qui s’affiche.
 
    Les options affichées dépendent des possibilités d’un service donné. Elles peuvent inclure les éléments suivants :
 
@@ -96,27 +96,8 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
     <td>Récupère tous les lots disponibles</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL Choisir manuellement]</td>
     <td>Permet de sélectionner le premier lot à partir duquel la récupération des lots doit démarrer.</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Saisir un nom pour la nouvelle connexion [!DNL DocuSign]</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Indiquez si le compte auquel vous souhaitez vous connecter est un compte de production ou de démonstration.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

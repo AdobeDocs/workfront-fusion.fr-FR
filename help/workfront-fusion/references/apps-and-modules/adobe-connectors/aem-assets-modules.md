@@ -4,7 +4,7 @@ description: Avec le connecteur  [!DNL Adobe Experience Manager Assets]  pour [!
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 75%
@@ -70,7 +70,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
   Pour obtenir des instructions sur la configuration du flux [!UICONTROL Serveur à serveur] dans l’[!DNL Adobe Developer console], voir [Générer des jetons d’accès pour les API côté serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
-  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 ## Informations sur l’API Adobe Experience Manager Assets
 
@@ -99,7 +99,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
 
      Cette configuration nécessite des informations de l’[!DNL Adobe Admin Console].
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
 
      Cette configuration nécessite un nom d’utilisateur ou d’utilisatrice et un mot de passe.
 
@@ -122,7 +122,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
 >
 >* Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 >
->   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+>   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -132,7 +132,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
               <tr>
                   <td role="rowheader">[!UICONTROL Connection name]</td>
                   <td>
-                      <p>Nommer cette connexion</p>
+                      <p>Saisissez un nom pour cette connexion.</p>
                   </td>
               </tr>
               <tr>
@@ -188,7 +188,7 @@ Pour créer une connexion pour vos modules [!DNL Adobe Experience Manager Assets
             <tr>
                 <td role="rowheader">[!UICONTROL Connection name]</td>
                 <td>
-                    <p>Nommer cette connexion</p>
+                    <p>Saisissez un nom pour cette connexion.</p>
                 </td>
             </tr>
             <tr>
