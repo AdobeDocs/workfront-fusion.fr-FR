@@ -4,10 +4,10 @@ description: Vous pouvez afficher des informations sur les événements ou les e
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 64%
 
 ---
 
@@ -105,6 +105,8 @@ L’onglet [!UICONTROL Historique] affiche plus de détails que la page [!UICONT
    >L’historique des scénarios affiche un badge de **traitement** en regard des scénarios récemment exécutés, tandis que les détails de l’exécution sont écrits dans le stockage. Le traitement se produit immédiatement après l’exécution du scénario et ne doit pas durer plus de quelques minutes. Les détails de l’exécution du scénario peuvent ne pas être visibles pendant le traitement de l’exécution.
 
 1. Pour afficher les détails d’exécution d’un scénario spécifique, cliquez sur **Détails** à l’extrême droite. Le lien [!UICONTROL Détails] n’est visible que si les détails de l’exécution sont disponibles.
+
+   Pour plus d’informations sur l’affichage des détails d’exécution du scénario, voir [Afficher une exécution de scénario spécifique](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Pour afficher les événements, activez le bouton (bascule) **Afficher les événements**.
 
 
