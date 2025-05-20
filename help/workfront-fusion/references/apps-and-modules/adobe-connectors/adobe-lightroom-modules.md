@@ -4,10 +4,10 @@ description: Avec les modules Adobe Lightroom, vous pouvez démarrer un scénari
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 24%
+source-wordcount: '2563'
+ht-degree: 21%
 
 ---
 
@@ -21,48 +21,53 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 ## Conditions d’accès
 
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-      <td>
-        <p>[!UICONTROL Pro] ou version supérieure</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td>
-      <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Produit</td>
-      <td>Votre organisation doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser les fonctionnalités décrites dans cet article.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tous</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td>
+   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
+   <p>Ou</p>
+   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produit</td> 
+   <td>
+   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
+   <p>Ou</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice de [!DNL Workfront].
+Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-&#42;&#42;Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
++++
 
 ## Conditions préalables
 
 Avant d’utiliser le connecteur [!DNL Adobe Lightroom], vous devez vous assurer que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Lightroom].
+* Une application web OAuth doit être configurée dans Adobe Admin Console. Pour plus d’informations, consultez [Configuration d’une application OAuth dans Adobe Admin Console](#configure-an-oauth-application-in-the-adobe-admin-console) dans cet article.
 
 ## Informations sur l’API Adobe Lightroom
 
@@ -87,9 +92,49 @@ Le connecteur Adobe Lightroom utilise les éléments suivants :
 
 ## Création d’une connexion à Adobe Lightroom
 
+Pour vous connecter à Adobe Lightroom, vous devez d’abord configurer une application OAuth dans Adobe Admin Console. Une fois cette application configurée, vous pouvez créer des connexions à partir de Workfront Fusion.
+
+### Configuration d’une application OAuth dans Adobe Admin Console
+
+1. Commencez la configuration d’une application web OAuth dans Adobe Admin Console.
+
+   Pour obtenir des instructions, consultez [Guide de mise en œuvre de l’authentification de l’utilisateur](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation) dans la documentation Adobe destinée aux développeurs.
+1. Lors de la configuration de l’application web OAuth, saisissez les valeurs suivantes :
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>
+          <ul>
+            <li>AdobeID</li>
+            <li>lr_partner_rendition_apis</li>
+            <li>openid</li>
+            <li>offline_access</li>
+            <li>lr_partner_apis</li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL REDIRECT URI]</td>
+        <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
+        <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+### Créer une connexion à Adobe Lightroom à partir de Workfront Fusion
+
 Pour créer une connexion pour vos modules [!DNL Adobe Lightroom], procédez comme suit :
 
-1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
+1. Dans n’importe quel module Adobe Lightroom, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
 1. Remplissez les champs suivants :
 
@@ -127,8 +172,6 @@ Pour créer une connexion pour vos modules [!DNL Adobe Lightroom], procédez com
 1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
-
-
 ## Modules Adobe Lightroom et leurs champs
 
 Lorsque vous configurez les modules [!DNL Adobe Lightroom], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Lightroom] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
@@ -161,13 +204,15 @@ Ce module d’action récupère un identifiant de version du serveur Lightroom, 
     <tr>
       <td role="rowheader">[!UICONTROL Credentials]</td>
       <td>
-        <p>Si vous souhaitez fournir des informations d’identification spécifiques pour vous assurer qu’un serveur spécifique est en cours d’exécution, cliquez sur Ajouter un élément et saisissez les informations d’identification.</p><p>Les en-têtes d’autorisation sont ajoutés automatiquement.</p>
+        <p>Si vous souhaitez fournir des informations d’identification spécifiques pour vous assurer qu’un serveur spécifique est en cours d’exécution, cliquez sur <b>Ajouter un élément</b> et saisissez les informations d’identification.</p><p>Les en-têtes d’autorisation sont ajoutés automatiquement.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
 #### Récupération des métadonnées du catalogue d’utilisateurs
+
+Ce module d’action récupère les métadonnées d’un catalogue dans Adobe Lightroom. Un catalogue contient des ressources, des albums ou d’autres ressources.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -188,7 +233,7 @@ Ce module d’action récupère un identifiant de version du serveur Lightroom, 
 
 ### Ressources
 
-* [Créer un fichier d’origine de ressource](#create-an-asset-external-xmp-develop-setting-file)
+* [Créer un fichier d’origine de ressource](#create-an-asset-original-file)
 * [Création d’une ressource](#create-an-asset)
 * [Créer un fichier de paramètres de développement XMP externe de ressource](#create-an-asset-external-xmp-develop-setting-file)
 * [Générer des rendus pour un fichier d’origine](#generate-renditions-for-an-original-file)
@@ -201,6 +246,7 @@ Ce module d’action récupère un identifiant de version du serveur Lightroom, 
 
 Ce module d’action crée et charge un fichier original pour une ressource.
 
+<!--BECKY START HERE-->
 
 <table style="table-layout:auto"> 
   <col/>
@@ -231,7 +277,7 @@ Ce module d’action crée et charge un fichier original pour une ressource.
     <tr>
       <td role="rowheader">[!UICONTROL Plage d’octets]</td>
       <td>
-        <p>Saisissez ou mappez la plage d’octets de la requête, y compris le premier et le dernier octets et la longueur de l’entité, comme défini dans le document RFC 2616. Ne doit être inclus que lorsque les données sont trop volumineuses pour être chargées dans un seul appel.</p>
+        <p>Saisissez ou mappez la plage d’octets de la requête, y compris le premier et le dernier octets et la longueur de l’entité, comme défini dans le document RFC 2616. Ces informations ne doivent être incluses que lorsque les données sont trop volumineuses pour être téléchargées dans un seul appel.</p>
       </td>
     </tr>
     <tr>
