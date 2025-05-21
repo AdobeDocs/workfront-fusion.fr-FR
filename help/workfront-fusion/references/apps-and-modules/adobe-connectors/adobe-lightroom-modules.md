@@ -4,10 +4,10 @@ description: Avec les modules Adobe Lightroom, vous pouvez démarrer un scénari
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 21%
+source-wordcount: '2770'
+ht-degree: 20%
 
 ---
 
@@ -246,8 +246,6 @@ Ce module d’action récupère les métadonnées d’un catalogue dans Adobe Li
 
 Ce module d’action crée et charge un fichier original pour une ressource.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Ce module d’action crée et charge un fichier original pour une ressource.
 
 Ce module d’action crée une ressource avec les métadonnées initiales et les informations d’importation.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Ce module d’action crée une ressource avec les métadonnées initiales et les
     <tr>
       <td role="rowheader">[!UICONTROL Date capturée]</td>
       <td>
+        <p>Saisissez ou mappez la date de capture de la ressource au format <code>YYYY-MM-DDT00:00:00-00:00</code>. Cette valeur sera définie par le serveur si la Date capturée est définie sur <code>0000-00-00T00:00:00</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File name]</td>
+      <td>
+        <p>Saisissez ou mappez le nom de fichier de la ressource que vous importez dans Lightroom.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name of Device Imported On]</td>
+      <td>
+        <p>Saisissez ou mappez le nom de l’appareil qui importe la ressource.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID de compte de l’utilisateur qui a importé]</td>
+      <td>
+        <p>Saisissez ou mappez l’ID de l’utilisateur qui importe la ressource.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Import Timestamp]</td>
+      <td>
         <p>Saisissez ou mappez une date au format <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Ce module d’action crée une ressource avec les métadonnées initiales et les
 
 #### Créer un fichier de paramètres de développement XMP externe de ressource
 
-Ce module d’action prend en charge deux workflows. Le premier workflow consiste à charger le fichier de paramètres de développement XMP externe pour la ressource. Le deuxième workflow consiste à créer un fichier de paramètres de développement XMP externe en copiant à partir du fichier de paramètres de développement xmp externe d’une autre ressource.
+Ce module d’action prend en charge deux workflows : le chargement du fichier de paramètres de développement XMP externe pour la ressource, ou la création d’un fichier de paramètres de développement XMP externe en copiant à partir du fichier de paramètres de développement XMP externe d’une autre ressource.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Ce module d’action prend en charge deux workflows. Le premier workflow consist
       <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Lightroom], voir <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Créer une connexion à [!DNL Adobe Lightroom]</a> dans cet article.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Longueur du contenu en octets]</td>
+      <td role="rowheader">[!UICONTROL Content Length in Bytes]</td>
       <td>
         <p>Saisissez ou mappez la longueur du contenu en octets.</p>
       </td>
@@ -368,7 +389,7 @@ Ce module d’action prend en charge deux workflows. Le premier workflow consist
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource.</p>
+        <p>Saisissez ou mappez l’identifiant du catalogue dans lequel vous souhaitez créer la ressource.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Ce module d’action génère de manière asynchrone des rendus pour un fichier 
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource.</p>
+        <p>Saisissez ou mappez l’identifiant du catalogue dans lequel vous souhaitez générer les rendus.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Ce module d’action récupère le fichier de paramètres XMP externes de ressou
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource.</p>
+        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource associée au fichier de paramètre de développement XMP.</p>
       </td>
     </tr>
     <tr>
@@ -495,13 +516,13 @@ Ce module d’action récupère le dernier rendu de ressource du type spécifié
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource.</p>
+        <p>Saisissez ou mappez l’identifiant du catalogue contenant la ressource pour laquelle vous souhaitez récupérer un rendu.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant de la ressource associée au fichier de paramètres de développement XMP.</p>
+        <p>Saisissez ou mappez l’identifiant de la ressource pour laquelle vous souhaitez récupérer un rendu.</p>
       </td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Renvoyer les ressources capturées avant]</td>
+      <td role="rowheader">[!UICONTROL Renvoyer les ressources capturées avant l’heure donnée]</td>
       <td>
-        <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured after</code>.</p>
+        <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Renvoyer les ressources capturées après un temps donné]</td>
+      <td>
+        <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Valeur de hachage du fichier original]</td>
       <td>
-        <p></p>
+        <p>Saisissez ou mappez la valeur de hachage du fichier d’origine. Assets avec un hachage correspondant est renvoyé.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ? »]</td>
       <td>
-        <p></p>
+        <p>Sélectionnez Oui pour masquer les ressources à l’intérieur des piles (les ressources à l’intérieur des piles ne sont pas renvoyées). Sélectionnez Non pour inclure des ressources dans les piles dans les résultats.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset subtype values]</td>
       <td>
-        <p></p>
+        <p>Saisissez ou mappez une liste de valeurs de sous-type séparées par des points-virgules à renvoyer.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
     <tr>
       <td role="rowheader">[!UICONTROL Group values]</td>
       <td>
-        <p></p>
+        <p>Saisissez ou mappez une liste de valeurs de groupe séparées par des points-virgules.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name values]</td>
       <td>
-        <p></p>
+        <p>Saisissez ou mappez une liste de valeurs de nom séparées par des points-virgules.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Favori status]</td>
       <td>
-        <p></p>
+        <p>Saisissez ou mappez le statut favori pour lequel vous souhaitez renvoyer des résultats.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Albums
 
