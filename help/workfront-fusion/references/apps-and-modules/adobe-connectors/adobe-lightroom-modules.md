@@ -4,10 +4,10 @@ description: Avec les modules Adobe Lightroom, vous pouvez démarrer un scénari
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
+source-git-commit: 420665071db63954bce14b2011c5ecdb97403fd1
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 20%
+source-wordcount: '3187'
+ht-degree: 18%
 
 ---
 
@@ -627,8 +627,6 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
   </tbody>
 </table>
 
-<!--BECKY START HERE-->
-
 ### Albums
 
 * [Ajout de ressources à un album](#add-assets-to-an-album)
@@ -681,10 +679,10 @@ Ce module d’action ajoute une ou plusieurs ressources à l’album spécifié.
     <tr>
       <td role="rowheader">[!UICONTROL Order]</td>
       <td>
-        <p></p>
+        <p>Spécifiez l’ordre de la ressource.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
       <td>
         <p>Saisissez ou mappez toutes les métadonnées que vous souhaitez inclure à la ressource. Il doit s’agir d’une seule chaîne de texte d’une longueur maximale de 1 à 24 caractères.</p>
       </td>
@@ -727,32 +725,46 @@ Ce module d’action permet de créer un album dans Lightroom.
         <p>Sélectionnez le sous-type de l’album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API key]</td>
+      <td role="rowheader">[!UICONTROL Service ID]</td>
       <td>
         <p>Saisissez la clé API du service qui crée l’album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL Date de création de l’utilisateur]</td>
       <td>
         <p>Saisissez ou mappez une date au format <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user updated]</td>
+      <td role="rowheader">[!UICONTROL Date User Updated]</td>
       <td>
         <p>Saisissez ou mappez une date au format <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Album Name]</td>
       <td>
         <p>Saisissez ou mappez un nom pour le nouvel album.</p>
       </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Cover ID]</td>
       <td>
         <p>Saisissez ou mappez l’ID d’une ressource à utiliser comme couverture de cet album.</p>
       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Parent ID]</td>
+      <td>
+        <p>Saisissez ou mappez l’ID du parent pour cet album.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
+      <td>
+        <p>Saisissez ou mappez les métadonnées de l’album sous la forme d’une chaîne.</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ID distant]</td>
       <td>
@@ -828,7 +840,7 @@ L’album supprimé doit avoir été créé par la même application cliente qui
 
 ### Obtenir un album
 
-Ce module d&#39;action récupère l&#39;album spécifié
+Ce module d&#39;action récupère l&#39;album spécifié.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -857,7 +869,100 @@ Ce module d&#39;action récupère l&#39;album spécifié
 
 Ce module d’action récupère une liste des ressources de l’album spécifié.
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Lightroom], voir <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Créer une connexion à [!DNL Adobe Lightroom]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td>
+        <p>Saisissez ou mappez l’identifiant du catalogue contenant l’album.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td>
+        <p>Saisissez ou mappez l’identifiant de l’album pour lequel vous souhaitez répertorier les ressources.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capturer Assets Avant L’Heure]</td>
+      <td>
+        <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets After Time]</td>
+      <td>
+        <p>Saisissez une date au format <code>YYYY-MM-DDT00:00:00</code>. Le module renvoie les résultats capturés avant cette date.</p><p> Ce champ ne peut pas être utilisé avec le champ <code>Return assets captured before given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ending Asset Order Value]</td>
+      <td>
+        <p>Saisissez ou mappez la valeur de commande de l’actif final.</p><p> Ce champ ne peut être utilisé qu’avec le champ <code>Capture Assets After Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Valeur de commande de ressource de démarrage]</td>
+      <td>
+        <p>Saisissez ou mappez la valeur de commande de l’actif de départ.</p><p> Ce champ ne peut être utilisé qu’avec le champ <code>Capture Assets BEfore Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nombre d’Assets à renvoyer (1-500)]</td>
+      <td>
+        <p>Saisissez le nombre maximal d'enregistrements que le module doit renvoyer au cours de chaque cycle d'exécution du scénario. Ce nombre doit être compris entre 1 et 500.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ? »]</td>
+      <td>
+        <p>Sélectionnez Oui pour masquer les ressources à l’intérieur des piles (les ressources à l’intérieur des piles ne sont pas renvoyées). Sélectionnez Non pour inclure des ressources dans les piles dans les résultats.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">Valeurs du sous-type [!UICONTROL (séparées par des points-virgules)]</td>
+      <td>
+        <p>Saisissez ou mappez une liste de valeurs de sous-type séparées par des points-virgules à renvoyer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Flag Values (separée par des points-virgules)]</td>
+      <td>
+        <p>Saisissez ou mappez une liste de valeurs d’indicateur séparées par des points-virgules à renvoyer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Additional Data Fields to Include (separé par des points-virgules)]</td>
+      <td>
+        <p>Si la ressource est incluse, tous les champs sont inclus. Dans le cas contraire, seuls l’id et le lien self href sont renvoyés.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Types de ressources à exclure]</td>
+      <td>
+        <p>Sélectionnez cette option pour exclure les ressources complètes ou incomplètes. Pour inclure toutes les ressources, laissez ce champ vide.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td>
+        <p>Saisissez ou mappez jusqu’à 100 identifiants de ressource, séparés par des virgules.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Filtrer les ressources de l’album en fonction des filtres de présentation]</td>
+      <td>
+        <p>Lorsque ce champ est défini sur « true », il filtre toutes les ressources de l’album en fonction des filtres de présentation définis sur l’album. Avec ce paramètre, les ressources rejetées sont toujours filtrées, quels que soient les paramètres des filtres de présentation. Les filtres de présentation ne sont pas appliqués lorsqu'une valeur autre que 'true' est définie pour album_filters. Le comportement par défaut consiste à afficher toutes les ressources. Ce paramètre ne peut pas être utilisé avec le paramètre flag. </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### Récupérer les albums
 
@@ -880,7 +985,7 @@ Ce module d&#39;action récupère une liste d&#39;albums dans le catalogue spéc
     <tr>
       <td role="rowheader">[!UICONTROL Subtypes]</td>
       <td>
-        <p>Saisissez ou mappez l’identifiant de l’album que vous souhaitez récupérer.</p>
+        <p>Saisissez ou mappez une liste de valeurs de sous-type séparées par des points-virgules à renvoyer.</p>
       </td>
     </tr>
     <tr>
@@ -890,7 +995,7 @@ Ce module d&#39;action récupère une liste d&#39;albums dans le catalogue spéc
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Nombre maximal d'albums renvoyés]</td>
+      <td role="rowheader">[!UICONTROL Nombre d'albums à retourner]</td>
       <td>
         <p>Définissez le nombre maximal de ressources que [!DNL Workfront Fusion] renverrez au cours d’un cycle d’exécution. La valeur par défaut de ce champ est 100. Ce module peut renvoyer plus d'albums que cette limite si plusieurs albums à la limite ont la même valeur de <code>name_after</code>.</p>
       </td>
