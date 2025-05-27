@@ -4,10 +4,10 @@ description: Le module routeur vous permet de diviser votre flux en plusieurs it
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 14%
+source-wordcount: '850'
+ht-degree: 15%
 
 ---
 
@@ -34,7 +34,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -47,7 +47,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -65,17 +65,17 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un routeur.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Dans l&#39;éditeur de scénarios, cliquez sur la poignée droite du module après lequel vous souhaitez ajouter le routeur.
-1. Sélectionnez **[!UICONTROL Flow Control]** > **Router** dans la liste des modules qui s’affiche.
+1. Sélectionnez **[!UICONTROL Contrôle de flux]** > **Routeur** dans la liste des modules qui s’affiche.
 
    ![Connecter l’itinéraire](assets/connect-the-router-350x108.png)
 
    Ou
 
-   Pour insérer le module Router entre deux modules, cliquez sur l&#39;icône de clé à molette sous l&#39;itinéraire reliant les deux modules et sélectionnez **[!UICONTROL Add a router]** dans le menu.
+   Pour insérer le module Router entre deux modules, cliquez sur l&#39;icône de clé à molette sous l&#39;itinéraire reliant les deux modules et sélectionnez **[!UICONTROL Ajouter un routeur]** dans le menu.
 
    ![Insérer un routeur](assets/insert-router-350x191.png)
 1. Ajoutez la première route au routeur en cliquant sur la poignée droite du routeur et ajoutez un module, comme pour ajouter un module.
@@ -87,7 +87,7 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 
    Les itinéraires sont organisés dans l’ordre dans lequel ils s’exécutent. L’itinéraire supérieur s’exécute en premier.
 
-1. (Facultatif) Pour modifier l&#39;ordre des itinéraires, annulez la liaison des itinéraires en cliquant avec le bouton droit sur le chemin du routeur et en sélectionnant Annuler la liaison, puis en les faisant glisser vers le module de routeur dans l&#39;ordre souhaité. La première route jointe sera la première route à exécuter (la route supérieure).
+1. (Facultatif) Pour modifier l’ordre des itinéraires, cliquez avec le bouton droit de la souris sur le module Router et sélectionnez **Ordre des itinéraires** Faites glisser les itinéraires dans l’ordre dans lequel vous souhaitez qu’ils s’exécutent. Les routes sont marquées par le premier module qui suit le routeur (le premier module de la route).
 
 1. Passez à [Ajouter un filtre à un itinéraire](#add-a-filter-to-a-route).
 
@@ -97,7 +97,7 @@ Vous pouvez placer un filtre sur un itinéraire après le module Routeur pour fi
 
 Si les données franchissent le filtre de plusieurs itinéraires, les données sont gérées par les deux itinéraires. L’itinéraire supérieur gère d’abord les données.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône clé à molette ![Clé à molette](assets/wrench-icon.png) sur le chemin d’accès où vous souhaitez définir un filtre. Il s&#39;agit du chemin entre le module de routage et le premier module de la route.
@@ -117,7 +117,7 @@ L’itinéraire de secours est l’itinéraire qui s’exécute sur les lots qui
 
 Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de secours.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône clé à molette ![Clé à molette](assets/wrench-icon.png) sur le chemin d’accès où vous souhaitez définir un filtre. Il s&#39;agit du chemin entre le module de routage et le premier module de la route.
