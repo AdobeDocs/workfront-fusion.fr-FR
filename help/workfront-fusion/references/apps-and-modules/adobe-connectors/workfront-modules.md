@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion Adobe 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 32de8028b8870c9a3b569b87032513318c255171
+source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
 workflow-type: tm+mt
-source-wordcount: '7942'
-ht-degree: 57%
+source-wordcount: '8061'
+ht-degree: 56%
 
 ---
 
@@ -206,7 +206,7 @@ Le module renvoie tous les champs standard associés à l’enregistrement, ains
 
 Une fois le webhook créé, vous pouvez afficher l’adresse du point d’entrée auquel les événements sont envoyés.
 
-Pour plus d’informations, consultez la section [Exemples de payloads d’événement](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) dans l’article API d’abonnement aux événements dans la documentation de Workfront.
+Pour plus d’informations, consultez la section [Exemples de payloads d’événement](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) dans l’article API d’abonnement aux événements dans la documentation de Workfront.
 
 Consultez une liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -419,6 +419,27 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 >* Lorsque vous saisissez l’ID d’un objet, vous pouvez commencer à saisir son nom, puis le sélectionner dans la liste. Le module saisit ensuite l’ID approprié dans le champ.
 >* Lors de la saisie du texte d’un champ personnalisé ou d’un objet [!UICONTROL Note] (commentaire ou réponse), vous pouvez utiliser des balises HTML dans le champ [!UICONTROL Texte de la note] pour créer du texte enrichi, comme du texte en gras ou en italique.
 >
+
+
+
+>[!NOTE]
+>
+>Les utilisateurs sont créés avec le statut Désactivé et Approbation en attente . Si votre organisation a été migrée vers Adobe Admin Console et que le badge Approbation en attente n’est pas supprimé dans les minutes qui suivent, vous pouvez approuver l’utilisateur.
+>
+>* **Résoudre le problème des utilisateurs individuels**
+>
+>      Vous pouvez résoudre des utilisateurs individuels dans la liste Utilisateurs .
+>
+>      1. Sélectionnez l’utilisateur ou les utilisateurs dans la liste Utilisateurs .
+>      1. Cliquez sur le menu à trois points dans l’en-tête de la liste.
+>      1. Sélectionnez **Approuver**.
+>      1. Au bout de quelques minutes, actualisez la page.
+>
+>* **Résoudre les utilisateurs ajoutés dans un grand lot**
+>
+>   Pour résoudre le problème des utilisateurs ajoutés dans un lot volumineux, vous pouvez ajouter directement le lot d’utilisateurs au Adobe Admin Console.
+>
+>   Pour obtenir des instructions, voir [Gérer plusieurs utilisateurs | Chargement CSV en masse](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) dans la documentation d’Adobe.
 
 +++
 
@@ -644,7 +665,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
       </ul> <p>Pour tous les autres types d’enregistrement, sélectionnez <b>[!UICONTROL Other objects and endpoints]</b> et recherchez le type d’enregistrement sur les pages triées par ordre alphabétique.</p> </li> 
      <li value="2"> <p>Sur la page du type d’enregistrement approprié, recherchez l’action (Ctrl+F ou Cmd+F).</p> </li> 
      <li value="3"> <p>Affichez les descriptions des champs disponibles sous l’action sélectionnée.</p> </li> 
-    </ol> <p>Note :  <p>Lors de la création d’une épreuve par le biais du module Workfront [!UICONTROL Misc Action] , il est recommandé de créer une épreuve sans option avancée, puis de la mettre à jour à l’aide de l’API SOAP [!DNL Workfront Proof].</p><p>Pour plus d'informations sur la création d'un BAT avec l'API Workfront (que ce module utilise), voir <a href="https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Ajouter des options de relecture avancée lors de la création d'un BAT via l'API Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Note :  <p>Lors de la création d’une épreuve par le biais du module Workfront [!UICONTROL Misc Action] , il est recommandé de créer une épreuve sans option avancée, puis de la mettre à jour à l’aide de l’API SOAP [!DNL Workfront Proof].</p><p>Pour plus d'informations sur la création d'un BAT avec l'API Workfront (que ce module utilise), voir <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Ajouter des options de relecture avancée lors de la création d'un BAT via l'API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -918,9 +939,9 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 
 Workfront a récemment publié une nouvelle version de son service d’abonnement aux événements. La nouvelle version ne constitue pas une modification de l’API Workfront, mais plutôt une modification de la fonctionnalité d’abonnement aux événements. Ce module d&#39;action met à jour la version de la payload de l&#39;événement utilisée pour ce scénario.
 
-Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
+Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
 
-Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement à l’événement, y compris un enregistrement de webinaire, consultez [ Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr).
+Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement à l’événement, y compris un enregistrement de webinaire, consultez [ Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2238,9 +2259,9 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 >
 >* Workfront a récemment publié une nouvelle version de son service d’abonnement aux événements. La nouvelle version ne constitue pas une modification de l’API Workfront, mais plutôt une modification de la fonctionnalité d’abonnement aux événements. Ce module d&#39;action met à jour la version de la payload de l&#39;événement utilisée pour ce scénario.
 >
->   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
+>   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
 >
->   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement à l’événement, y compris un enregistrement de webinaire, voir [ Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr)].
+>   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement à l’événement, y compris un enregistrement de webinaire, voir [ Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Le module Workfront [!UICONTROL Événements Espion] déclenche des scénarios basés sur un webhook qui crée un abonnement aux événements dans l’API Workfront. L’abonnement à un événement est un ensemble de données qui détermine les événements envoyés au webhook. Par exemple, si vous configurez un module [!UICONTROL Surveiller les événements] qui recherche les problèmes, alors l’abonnement à l’événement envoie uniquement les événements liés aux problèmes.
 
@@ -2290,7 +2311,7 @@ Les opérateurs suivants sont disponibles dans le filtre Workfront > Surveiller 
 >
 >Si 100 problèmes sont créés en une journée, mais que seuls deux d’entre eux sont affectés à Ana, le scénario s’exécutera 100 fois. Le filtre arrêtera 98 exécutions, mais le module déclencheur continuera à consommer des données et à effectuer des opérations dans toutes les exécutions.
 
-Pour plus d’informations sur les abonnements aux événements Workfront, voir [FAQ - Abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Pour plus d’informations sur les abonnements aux événements Workfront, voir [FAQ - Abonnements aux événements](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Pour plus d’informations sur les webhooks, voir [Déclencheurs instantanés (webhooks) dans Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
