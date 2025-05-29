@@ -5,7 +5,7 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
 workflow-type: tm+mt
 source-wordcount: '4125'
 ht-degree: 92%
@@ -125,19 +125,19 @@ Pour créer une connexion pour vos modules [!DNL Adobe PDF Services], procédez 
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, voir <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p></td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, voir <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de la [!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (JWT uniquement)</td>
-          <td>Saisissez votre [!UICONTROL Technical account ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
+          <td>Saisissez votre [!UICONTROL Technical account ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (JWT uniquement)</td>
-          <td>Saisissez votre [!UICONTROL Organization ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
+          <td>Saisissez votre [!UICONTROL Organization ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, consultez <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta scopes] (JWT uniquement)</td>
