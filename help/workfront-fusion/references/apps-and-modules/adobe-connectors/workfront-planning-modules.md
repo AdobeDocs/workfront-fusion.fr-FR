@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez dé
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 63%
+source-wordcount: '1591'
+ht-degree: 60%
 
 ---
 
@@ -472,3 +472,20 @@ Cette action met à jour un seul enregistrement dans Workfront Planning.
      <tr>
   </tbody>
 </table>
+
+
+## Utiliser JSONata pour la répartition lisible des `record-types`
+
+L’expression JSONata suivante crée une sortie lisible par l’utilisateur de la requête Planning qui vous donne la répartition des types d’enregistrements. Le nom du type d’enregistrement, les noms des champs et les noms des options de champ (le cas échéant) sont ainsi lisibles par un nom et le reste de la structure reste intact.
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+Pour plus d’informations sur l’utilisation des modules JSONata, voir [Modules JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
+
