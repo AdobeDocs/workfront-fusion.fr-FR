@@ -4,10 +4,10 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
+source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
 workflow-type: tm+mt
-source-wordcount: '2168'
-ht-degree: 46%
+source-wordcount: '2936'
+ht-degree: 36%
 
 ---
 
@@ -107,7 +107,155 @@ Le connecteur Frame.io utilise les éléments suivants :
 
 ## Connecter [!DNL Frame.io] à [!UICONTROL Adobe Workfront Fusion]
 
-Le processus de connexion diffère selon que vous utilisez le connecteur Frame.io hérité ou le connecteur Frame.io Beta.
+Vous pouvez vous connecter automatiquement à l’aide des informations d’identification d’utilisateur, créer manuellement une connexion d’informations d’identification d’utilisateur ou créer une connexion serveur à serveur.
+
+* [Se connecter automatiquement avec les informations d’identification de l’utilisateur](#connect-automatically-with-user-credentials#)
+* [Créer manuellement une connexion aux informations d’identification de l’utilisateur](#create-a-user-credentials-connection-manually)
+* [Créer une connexion serveur à serveur](#create-a-server-to-server-connection)
+
+### Se connecter automatiquement avec les informations d’identification de l’utilisateur
+
+Cette méthode crée automatiquement une connexion si vous êtes connecté à Frame.io, ou vous connecte à la page de connexion Frame.io afin que vous puissiez vous connecter.
+
+1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
+1. Saisissez un nom pour la connexion.
+1. Cliquez sur **Continuer**.
+1. Si vous êtes invité à vous connecter à votre compte Frame.io, faites-le.
+1. Si vous faites partie de plusieurs organisations Frame.io, sélectionnez l&#39;organisation que vous souhaitez utiliser pour cette connexion.
+
+La connexion est créée.
+
+### Créer manuellement une connexion aux informations d’identification de l’utilisateur
+
+Vous pouvez créer une connexion d’informations d’identification d’utilisateur en vous connectant à Frame.io ou en fournissant un identifiant client ou un secret client.
+
+Pour créer une connexion serveur à serveur, vous devez d’abord configurer une application dans le Adobe Developer Console.
+
+* [Création d’informations d’identification d’utilisateur dans Adobe Developer Console](#create-user-credentials-in-the-adobe-developer-console)
+* [Configurer une connexion d’authentification d’utilisateur](#configure-a-user-authentication-connection)
+
+#### Création d’informations d’identification d’utilisateur dans Adobe Developer Console
+
+Si vous ne disposez pas déjà d’informations d’identification de serveur à serveur sur un projet Adobe Developer Console, vous pouvez les créer.
+
+1. Ouvrez le [Adobe Developer Console](https://developer.adobe.com/).
+1. Sélectionnez un projet existant dans le Adobe Developer Console à utiliser pour cette connexion
+
+   Ou
+
+   Créez un projet dans le Adobe Developer Console. Pour obtenir des instructions, voir [Créer un projet vide](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Sur la page de présentation du projet ou sur la page Prise en main de votre nouveau projet, cliquez sur **Ajouter une API**.
+1. Sur la page qui s’ouvre, recherchez et cliquez sur **API Frame.io**.
+1. Sur la page Sélectionner le type d’authentification , sélectionnez **Authentification de l’utilisateur** et cliquez sur **Suivant**.
+1. Sur la page Ajouter des informations d’identification d’authentification d’utilisateur , sélectionnez **Application web OAuth** et cliquez sur **Suivant**.
+1. Sur la page Configurer les informations d’identification de l’application web OAuth , saisissez ce qui suit :   <table style="table-layout:auto">
+   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL URI de redirection par défaut]</td>
+          <td>
+            <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
+          <td>
+            <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+       </tbody>
+    </table>
+1. Cliquez sur **Suivant**.
+1. Cliquez sur **Enregistrer l’API configurée**.
+1. Sur la page du produit, cliquez sur la carte correspondant aux informations d’identification que vous venez de créer.
+
+   Vous trouverez ici votre identifiant client et votre secret client.
+
+>[!NOTE]
+>
+> Nous vous recommandons de laisser cette fenêtre ouverte lorsque vous commencez à configurer votre connexion dans Adobe Workfront Fusion. Vous pouvez copier l’ID client, ainsi que récupérer et copier le secret client de cette page pour le coller dans les champs de connexion.
+
+
+#### Configurer une connexion d’authentification d’utilisateur
+
+1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
+1. Dans la zone Créer une connexion , cliquez sur **Afficher les paramètres avancés**.
+
+1. Remplissez les champs suivants :
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td>
+            <p>Sélectionnez <b>Authentification de l’utilisateur IMS</b>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Saisissez un nom pour cette connexion.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]</td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, voir <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Création d’informations d’identification utilisateur dans Adobe Developer Console</a> dans cet article.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]</td>
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, voir <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Création d’informations d’identification utilisateur dans Adobe Developer Console</a> dans cet article.</p>
+        </tr>
+       </tbody>
+    </table>
+1. Si vous êtes invité à vous connecter à votre compte Frame.io, faites-le.
+1. Si vous faites partie de plusieurs organisations Frame.io, sélectionnez l&#39;organisation que vous souhaitez utiliser pour cette connexion.
+
+La connexion est créée.
+
+
+### Créer une connexion serveur à serveur
+
+Pour créer une connexion serveur à serveur, vous devez d’abord configurer une application dans le Adobe Developer Console.
+
+* [Création d’informations d’identification de serveur à serveur dans Adobe Developer Console](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [Configurer une connexion serveur à serveur](#configure-a-server-to-server-connection)
+
+#### Création d’informations d’identification de serveur à serveur dans Adobe Developer Console
+
+Si vous ne disposez pas déjà d’informations d’identification de serveur à serveur sur un projet Adobe Developer Console, vous pouvez les créer.
+
+1. Ouvrez le [Adobe Developer Console](https://developer.adobe.com/).
+1. Sélectionnez un projet existant dans le Adobe Developer Console à utiliser pour cette connexion
+
+   Ou
+
+   Créez un projet dans le Adobe Developer Console. Pour obtenir des instructions, voir [Créer un projet vide](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Sur la page de présentation du projet ou sur la page Prise en main de votre nouveau projet, cliquez sur **Ajouter une API**.
+1. Sur la page qui s’ouvre, recherchez et cliquez sur **API Frame.io**.
+1. Sur la page Sélectionner le type d’authentification, sélectionnez **Authentification de serveur à serveur** et cliquez sur **Suivant**.
+1. Saisissez un nom pour les informations d’identification. Vous pouvez ainsi identifier les informations d’identification ultérieurement dans la zone Informations d’identification de l’API du Adobe Admin Console.
+1. Cliquez sur **Suivant**.
+1. Sur la page Sélectionner les profils de produit, sélectionnez le profil de produit qui inclut le compte Frame.io auquel vous souhaitez vous connecter.
+1. Cliquez sur **Enregistrer l’API configurée**.
+1. Sur la page du produit, cliquez sur la carte correspondant aux informations d’identification que vous venez de créer.
+
+   Vous trouverez ici votre identifiant client et votre secret client.
+
+>[!NOTE]
+>
+> Nous vous recommandons de laisser cette fenêtre ouverte lorsque vous commencez à configurer votre connexion dans Adobe Workfront Fusion. Vous pouvez copier l’ID client, ainsi que récupérer et copier le secret client de cette page pour le coller dans les champs de connexion.
+
+
+#### Configurer une connexion serveur à serveur
 
 1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
@@ -122,7 +270,7 @@ Le processus de connexion diffère selon que vous utilisez le connecteur Frame.i
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p>Choisissez si vous souhaitez créer une connexion d’authentification des utilisateurs IMS ou une connexion de serveur IMS à serveur.</p>
+            <p>Sélectionnez <b>Serveur IMS à serveur</b>.</p>
           </td>
         </tr>
         <tr>
@@ -133,15 +281,18 @@ Le processus de connexion diffère selon que vous utilisez le connecteur Frame.i
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, voir <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p></td>
+          <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, voir <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Création d’informations d’identification de serveur à serveur dans le Adobe Developer Console</a> dans cet article.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la localisation des informations d’identification, voir <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Informations d’identification</a> dans la documentation Adobe Developer.</p>
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, voir <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Création d’informations d’identification de serveur à serveur dans le Adobe Developer Console</a> dans cet article.</p>
         </tr>
        </tbody>
     </table>
 1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
+
+
+
 
 ## Modules [!DNL Frame.io] et leurs champs
 
@@ -200,7 +351,7 @@ Ce module d’action crée une ressource.
    <td> <p>Saisissez le nom du fichier que vous souhaitez utiliser pour cette ressource.</p> </td> 
   </tr>
     <tr> 
-    <td role="rowheader">Taille du fichier </td> 
+    <td role="rowheader">Taille de fichier </td> 
     <td> <p>Saisissez ou mappez la taille du fichier en octets.</p> </td> 
    </tr>
   <tr> 
