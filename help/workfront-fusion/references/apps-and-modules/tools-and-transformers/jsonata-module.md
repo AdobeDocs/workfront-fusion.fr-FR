@@ -4,10 +4,10 @@ description: Le connecteur JSONata d’Adobe Workfront Fusion fournit un module 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 25%
+source-wordcount: '325'
+ht-degree: 20%
 
 ---
 
@@ -31,7 +31,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
@@ -44,7 +44,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
    <p>Ou</p>
    <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -58,7 +58,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 +++
 
-## Module JSONata et ses champs
+## Modules JSONata et leurs champs
 
 ### Evaluate
 
@@ -77,7 +77,7 @@ Ce module d’action interroge un objet JSON et renvoie un tableau.
    <td> Saisissez l’objet JSON à évaluer.  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify output] </td> 
+   <td role="rowheader">[!UICONTROL Sortie Stringify] </td> 
    <td> Activez cette option pour convertir la sortie en chaîne.  </td> 
   </tr> 
   </tbody>
@@ -105,3 +105,31 @@ L’objectif est de renvoyer un tableau de noms à partir de l’objet JSON suiv
 Le module renvoie un tableau de noms extraits de l’objet JSON.
 
 >[!ENDSHADEBOX]
+
+
+
+### MCP JSONata
+
+Ce module d’action génère des expressions JSONata en analysant les schémas d’entrée et de sortie spécifiés. Vous fournissez les schémas que le protocole MCP (Model Context Protocol) utilise pour générer l’expression qui transforme l’entrée en sortie.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Sélectionnez la connexion que vous utilisez pour vous connecter au grand modèle de langue (LLM) que vous souhaitez utiliser pour ce module.</p> <p>Actuellement, seule la clé API Anthropic est prise en charge.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Input schema]</td> 
+   <td> <p>Saisissez ou mappez le schéma d’entrée à utiliser pour cette expression.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Schéma de sortie]</td> 
+   <td> <p>Saisissez ou mappez le schéma de sortie à utiliser pour cette expression.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
