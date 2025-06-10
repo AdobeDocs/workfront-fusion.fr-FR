@@ -4,9 +4,9 @@ description: Le module routeur vous permet de diviser votre flux en plusieurs it
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 15%
 
 ---
@@ -88,6 +88,8 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
    Les itinéraires sont organisés dans l’ordre dans lequel ils s’exécutent. L’itinéraire supérieur s’exécute en premier.
 
 1. (Facultatif) Pour modifier l’ordre des itinéraires, cliquez avec le bouton droit de la souris sur le module Router et sélectionnez **Ordre des itinéraires** Faites glisser les itinéraires dans l’ordre dans lequel vous souhaitez qu’ils s’exécutent. Les routes sont marquées par le premier module qui suit le routeur (le premier module de la route).
+
+   ![Commande d&#39;itinéraire](assets/order-routes.png)
 
 1. Passez à [Ajouter un filtre à un itinéraire](#add-a-filter-to-a-route).
 
