@@ -4,10 +4,10 @@ description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessit
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
+source-git-commit: 784516c1282f318a46b32c803064d869cc116790
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 58%
+source-wordcount: '968'
+ht-degree: 55%
 
 ---
 
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 
 ## Exécutions incomplètes
 
-* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **&#x200B;**&#x200B;Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
+* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **** Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
 
 ## Reprises
 
@@ -95,4 +95,9 @@ Tenez compte des points suivants concernant la récursivité :
 ## TLS
 
 * Fusion prend actuellement en charge TLS version 1.2 par défaut.
+* Fusion peut utiliser TLS 1.3 pour les requêtes HTTPS sortantes si TLS 1.3 est activé pour le service de destination.
 * Les organisations peuvent demander que TLS version 1.3 soit activé pour leur instance de Fusion.
+
+>[!NOTE]
+>
+> Si vous vous connectez à Workfront, sachez que cette fonctionnalité TLS est activée dans Workfront pour les appels aux domaines au format `https://<domain>.my.workfront.com`.
