@@ -4,10 +4,10 @@ description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessit
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 59%
+source-wordcount: '926'
+ht-degree: 58%
 
 ---
 
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 
 ## Exécutions incomplètes
 
-* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **&#x200B;**&#x200B;Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
+* Les exécutions incomplètes sont limitées à une taille totale de 500 Mo. **** Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée.
 
 ## Reprises
 
@@ -92,3 +92,7 @@ Tenez compte des points suivants concernant la récursivité :
 * **Lorsqu’un scénario provoque une récursivité, il est désactivé par l’équipe d’ingénieurs de Fusion afin d’éviter d’autres problèmes de performances.**
 * La récursivité étant le résultat de la conception de scénario, vous devez concevoir vos scénarios de manière à ce que le scénario n’inclue pas d’actions qui déclenchent le scénario.
 
+## TLS
+
+* Fusion prend actuellement en charge TLS version 1.2 par défaut.
+* Les organisations peuvent demander que TLS version 1.3 soit activé pour leur instance de Fusion.
