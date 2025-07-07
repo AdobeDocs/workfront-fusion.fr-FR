@@ -4,9 +4,9 @@ description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
+source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3383'
 ht-degree: 57%
 
 ---
@@ -130,10 +130,6 @@ Pour inclure des informations d’identification dans la connexion, activez l’
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
       <td>Saisissez l’ID client de l’application SharePoint à laquelle vous vous connectez.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
-      <td> <p>Saisissez l’adresse de votre compte [!DNL ServiceNow] sans <code>https://</code> (généralement <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
    </table>
