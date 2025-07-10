@@ -4,7 +4,7 @@ description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessit
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
+source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 50%
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 
 ## Exécutions incomplètes
 
-* Les exécutions incomplètes sont limitées à une taille totale de *10 Mo** par scénario. Si la limite de 10 Mo est atteinte, aucune autre exécution incomplète ne sera stockée pour ce scénario.
+* Les exécutions incomplètes sont limitées à une taille totale de **10 Mo** par scénario. Si la limite de 10 Mo est atteinte, aucune autre exécution incomplète ne sera stockée pour ce scénario.
 * Les exécutions incomplètes sont limitées à une taille totale de **500 Mo** par équipe. Si la limite de 500 Mo est atteinte, aucune autre exécution incomplète ne sera stockée pour cette équipe.
 
 ## Reprises
