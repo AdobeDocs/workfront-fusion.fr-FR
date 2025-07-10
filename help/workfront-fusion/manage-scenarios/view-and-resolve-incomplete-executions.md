@@ -4,10 +4,10 @@ description: Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécut
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 72%
+source-wordcount: '662'
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ## Afficher les exécutions incomplètes
 
-Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les lots pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL &#x200B; Exécutions incomplètes &#x200B;] de la page des détails du scénario.
+Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les lots pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL  Exécutions incomplètes ] de la page des détails du scénario.
 
 <!--
 
@@ -87,9 +87,11 @@ Pour plus d’informations, voir [Erreurs entraînant des exécutions incomplèt
 
 >[!NOTE]
 >
->La taille limite actuelle du dossier d’exécutions incomplètes non résolues par organisation est de 500 Mo. Si votre entreprise dépasse cette limite, l’erreur suivante peut s’afficher :
+>La limite de taille actuelle du dossier des exécutions incomplètes non résolues par scénario est de 10 Mo. Si votre scénario dépasse cette limite, l’erreur suivante peut s’afficher :
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>Les équipes sont limitées à un total de 500 Mo pour toutes les exécutions incomplètes non résolues.
 >
 >Pour plus d’informations, voir [Activer la perte de données](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) dans l’article Configuration des paramètres de scénario.
 
