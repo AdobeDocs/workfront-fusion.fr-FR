@@ -1,19 +1,20 @@
 ---
-title: Modules Draft.js
-description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez utiliser les modules Draft.js pour convertir Draft.js en HTML et HTML en Draft.js.
+title: Modules lexicaux
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser les modules lexicaux pour convertir des données lexicales en HTML et des données HTML en données lexicales.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: 3c9392b35e5f68706d7e6837e330ee98796b8922
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 22%
+source-wordcount: '254'
+ht-degree: 18%
 
 ---
 
-# Modules [!UICONTROL Draft.js]
+# Modules lexicaux
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez utiliser les modules [!UICONTROL Draft.js] pour convertir Draft.js en HTML et HTML en Draft.js. Vous pouvez l’utiliser conjointement avec les modules Workfront pour ajouter du texte enrichi ou lire du texte enrichi à partir des champs Workfront.
+<!-- ADD REDIRECTS -->
+
+Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser les modules lexicaux pour convertir des données lexicales en HTML et des données HTML en données lexicales.  Vous pouvez l’utiliser conjointement avec les modules Workfront pour ajouter du texte enrichi ou lire du texte enrichi à partir des champs Workfront.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -56,13 +57,29 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## [!UICONTROL Draft.js vers HTML]
+## HTML vers Lexical
 
-Ce module convertit Draft.js en HTML.
+Ce module convertit le code HTML en Lexical.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">HTML</td> 
+   <td> <p>Saisissez ou mappez le code HTML que vous souhaitez convertir en Lexical.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+## Lexical pour HTML
+
+Ce module convertit Lexical en HTML.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -71,23 +88,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Saisissez ou mappez le texte Draft.js que vous souhaitez convertir en HTML.</p> </td> 
+   <td role="rowheader">Lexical</td> 
+   <td> <p>Saisissez ou mappez le texte lexical que vous souhaitez convertir en HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML vers Draft.js]
-
-Ce module convertit le code HTML en Draft.js.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL HTML]</td> 
-   <td> <p>Saisissez ou mappez le code HTML à convertir en Draft.js.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
