@@ -4,9 +4,9 @@ description: Les modules CRM HubSpot  [!DNL Adobe Workfront Fusion]  vous permet
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '7003'
+source-wordcount: '7000'
 ht-degree: 35%
 
 ---
@@ -223,7 +223,7 @@ Ce module d’action crée un contact, une entreprise ou une affaire.
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez créer.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création de l’enregistrement, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner la valeur des propriétés. Les groupes de propriétés et les propriétés disponibles dépendent du type d’enregistrement que vous souhaitez créer.</td> 
   </tr> 
  </tbody> 
@@ -495,7 +495,7 @@ Ce module d&#39;action crée un contact s&#39;il n&#39;existe pas dans un portai
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création du contact, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner les valeurs des propriétés.</td> 
   </tr> 
  </tbody> 
@@ -1010,7 +1010,7 @@ Ce module d’action crée un engagement (une note, une tâche ou une activité,
  </tbody> 
 </table>
 
-#### Champs de tâche
+#### Champs Tâche
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1433,7 +1433,7 @@ Ce module d&#39;action crée une nouvelle tâche pour un calendrier. La connexio
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event Date]</td> 
-   <td>Saisissez ou mappez la date de cette tâche.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Saisissez ou mappez la date de cette tâche.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1682,7 +1682,7 @@ Ce module d’action crée et publie immédiatement un message sur le canal de r
   </tr> 
   <tr> 
    <td role="rowheader">Déclencheur [!UICONTROL à]</td> 
-   <td>Saisissez ou mappez la date et l’heure auxquelles vous souhaitez que la diffusion soit envoyée. Si ce champ est laissé vide, la diffusion est envoyée immédiatement.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Saisissez ou mappez la date et l’heure auxquelles vous souhaitez que la diffusion soit envoyée. Si ce champ est laissé vide, la diffusion est envoyée immédiatement.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1782,7 +1782,7 @@ Ce module d’action crée un article de blog.
   </tr> 
   <tr> 
    <td role="rowheader">Date de publication</td> 
-   <td>Saisissez ou mappez la date de publication de l'article de blog. <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Saisissez ou mappez la date de publication de l'article de blog. <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nom</td> 

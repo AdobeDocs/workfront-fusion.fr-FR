@@ -4,9 +4,9 @@ description: Dans unscénario  [!DNL Adobe Workfront Fusion] , vous pouvez autom
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1850'
 ht-degree: 72%
 
 ---
@@ -421,7 +421,7 @@ Ce module répertorie tous les commentaires sur le problème indiqué.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since]</td> 
-   <td>Le module renvoie les commentaires créés après cette date. Pour obtenir la liste des formats de date pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td>Le module renvoie les commentaires créés après cette date. Pour obtenir la liste des formats de date pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td> 

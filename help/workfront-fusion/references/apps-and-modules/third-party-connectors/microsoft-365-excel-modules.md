@@ -4,7 +4,7 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 78%
@@ -140,7 +140,8 @@ Ce module d’action télécharge le contenu du classeur Excel spécifié.
      <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>Dans le champ [!UICONTROL Workbook], sélectionnez le classeur que vous souhaitez que le module télécharge, y compris son chemin d’accès s’il ne se trouve pas dans le dossier racine.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL Rechercher des classeurs]
 

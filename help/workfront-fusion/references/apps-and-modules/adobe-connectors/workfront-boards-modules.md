@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le connecteur de tableaux Adobe Workfront pour
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 18%
+source-wordcount: '2868'
+ht-degree: 17%
 
 ---
 
@@ -327,7 +327,7 @@ Ce module d’action met à jour les informations d’une carte que vous spécif
   <tr> 
    <td>[!UICONTROL Due date]</td> 
    <td>Saisissez ou mappez la date d'échéance de cette carte.</p>
-   <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p>
+   <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p>
    </td> 
   </tr> 
   <tr> 

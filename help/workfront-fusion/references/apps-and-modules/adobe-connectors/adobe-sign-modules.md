@@ -4,10 +4,10 @@ description: Les modules  [!DNL Adobe Acrobat Sign]  vous permettent de lancer u
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '6666'
-ht-degree: 97%
+source-wordcount: '6664'
+ht-degree: 96%
 
 ---
 
@@ -264,7 +264,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Indiquez qui doit avoir accès au document de bibliothèque.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Indiquez si le document est en cours de création ou s’il est actif.</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Pour chaque type de modèle de bibliothèque que vous souhaitez utiliser, cliquez sur <b>[!UICONTROL Add item]</b> et sélectionnez le type de modèle.</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Saisissez la dernière date à laquelle un événement s’est produit sur le document de bibliothèque.</p> <p>Pour une liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Saisissez la dernière date à laquelle un événement s’est produit sur le document de bibliothèque.</p> <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Sélectionnez le statut du document de bibliothèque.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -595,7 +595,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Saisissez l’adresse e-mail de la personne qui recevra le formulaire web nouvellement créé.</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Entrez un commentaire décrivant la façon dont l’entité appelant l’API a établi l’identité de la personne signataire. Cette information apparaît dans le journal d’audit d’[!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Entrez une date d’expiration pour la personnalisation de ce formulaire web. </p> <p>Pour consulter une liste des formats de date et d’heure pris en charge, voir la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Entrez une date d’expiration pour la personnalisation de ce formulaire web. </p> <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercition</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour que la personne signataire prévue puisse signer le formulaire plusieurs fois.</p> </li> 
         </ul> </li> 
       </ul> </li> 

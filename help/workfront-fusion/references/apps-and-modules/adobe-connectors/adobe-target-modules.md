@@ -4,10 +4,10 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2261'
-ht-degree: 96%
+source-wordcount: '2259'
+ht-degree: 95%
 
 ---
 
@@ -907,14 +907,14 @@ Ce module de recherche récupère une liste d’enregistrements du type sélecti
       <td role="rowheader">[!UICONTROL Starts At]</td>
       <td>
         <p>Saisissez la date la plus ancienne pour laquelle vous souhaitez récupérer les enregistrements. </p>
-        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ends At]</td>
       <td>
         <p>Saisissez la date la plus récente pour laquelle vous souhaitez récupérer les enregistrements. </p>
-        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type dans [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p>
       </td>
     </tr>
   </tbody>
