@@ -4,10 +4,10 @@ description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
+source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 57%
+source-wordcount: '3979'
+ht-degree: 51%
 
 ---
 
@@ -221,6 +221,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Créer un fichier](#create-a-file)
 * [Créer un dossier](#create-a-folder)
 * [Obtenir un fichier](#get-a-file)
+* [Obtenir un dossier](#get-a-folder)
+* [Mettre à jour un dossier ou un fichier](#update-a-folder-or-a-file)
 * [Éléments du dossier de contrôle](#watch-folder-items)
 
 #### Créer un fichier
@@ -299,6 +301,56 @@ Ce module d’action récupère le fichier SharePoint spécifié.
 </tbody> 
 </table>
 
+#### Obtenir un dossier
+
+Ce module a récupéré des détails sur le dossier spécifié
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
+   <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Folder path]</strong> pour le dossier que vous souhaitez récupérer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez l’emplacement du dossier. </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### Mettre à jour un dossier ou un fichier
+
+Ce module d’action met à jour les métadonnées d’un dossier ou d’un fichier
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
+   <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Folder ou item ID]</strong> pour le dossier ou le fichier que vous souhaitez récupérer.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez l’emplacement du dossier. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td>Pour chaque champ de métadonnées à mettre à jour, cliquez sur <b>Ajouter un élément</b> et saisissez le chemin d’accès et la valeur du champ.</td> 
+  <tr>
+</tbody> 
+</table>
+
 #### Éléments du dossier de contrôle
 
 Ce module de déclenchement lance un scénario lorsqu’un élément est mis à jour dans un dossier que vous sélectionnez.
@@ -332,10 +384,11 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est mis à 
 * [[!UICONTROL Créer un élément]](#create-an-item)
 * [[!UICONTROL Supprimer un élément]](#delete-an-item)
 * [[!UICONTROL Obtenir un élément]](#get-an-item)
-* [[!UICONTROL Répertorier des éléments]](#list-items)
-* [[!UICONTROL Déplacer l’élément]](#move-an-item)
+* [Obtenir des détails](#get-details)
+* [[!UICONTROL Éléments de liste]](#list-items)
+* [[!UICONTROL Déplacer un élément]](#move-an-item)
 * [[!UICONTROL Mettre à jour un élément]](#update-an-item)
-* [[!UICONTROL Surveiller les éléments] (Planifié)](#watch-items-scheduled)
+* [[!UICONTROL Éléments de contrôle] (Planifié)](#watch-items-scheduled)
 
 
 #### [!UICONTROL Copier un élément]
@@ -440,6 +493,25 @@ Ce module d’action renvoie les données d’un élément spécifié.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### Obtenir des détails
+
+Ce module obtient les détails de l&#39;élément à partir de l&#39;URL spécifiée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL Web</td> 
+   <td> Saisissez ou mappez l’URL de l’élément pour lequel vous souhaitez récupérer des détails. </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL Éléments de liste]
@@ -687,6 +759,11 @@ Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou
 >
 >Les API en version `beta` dans [!DNL Microsoft Graph] sont susceptibles d’être modifiées. L’utilisation de ces API dans les applications de production n’est pas prise en charge.
 
+* [Obtenir une page](#get-a-page)
+* [Pages de liste](#list-pages)
+* [Publier une page](#publish-a-page)
+* [Pages Espion](#watch-pages)
+
 #### [!UICONTROL Obtenir une page]
 
 Ce module d’action renvoie les données d’une page spécifique.
@@ -706,6 +783,83 @@ Ce module d’action renvoie les données d’une page spécifique.
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient la page que vous souhaitez récupérer, puis sélectionnez la page.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Pages de liste
+
+Ce module récupère une liste de toutes les pages.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List Pages]</td> 
+   <td> <p>Sélectionnez le mode d’identification des pages à répertorier.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong> du site qui contient les pages à répertorier.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient les pages à répertorier.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Saisissez ou mappez le nombre maximal de pages que le module doit renvoyer au cours de chaque cycle d’exécution du scénario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Publier une page
+
+Ce module d’action publie la dernière version de la page sélectionnée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Publier une page]</td> 
+   <td> <p>Sélectionnez le mode d’identification de la page à publier.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong> et <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Sélectionnez le site qui contient la page que vous souhaitez publier, puis sélectionnez la page.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Pages Espion
+
+Ce module de déclenchement lance un scénario lorsqu’une page est modifiée sur le site spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td> <p>Sélectionnez le mode d’identification des pages à répertorier.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez le <strong>[!UICONTROL Site ID]</strong> du site qui contient les pages que vous souhaitez regarder.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Sélectionnez le site qui contient les pages à regarder.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Saisissez ou mappez le nombre maximal de pages que le module doit renvoyer au cours de chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
