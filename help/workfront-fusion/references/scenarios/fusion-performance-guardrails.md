@@ -4,10 +4,10 @@ description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessit
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 50%
+source-wordcount: '1074'
+ht-degree: 48%
 
 ---
 
@@ -45,6 +45,8 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi [!DNL
 
 * La capacité totale de traitement des fichiers de Fusion est de **1 Go**. La limite est basée sur un coût total en mémoire. Chaque opération contribue à ce coût. Si un seul fichier de 400 Mo est téléchargé et chargé, le coût total de capacité du fichier sera de 800 Mo.
 * Les organisations qui souscrivent au plan Workfront Ultimate ont accès à un traitement des fichiers plus important, dépassant 1 Go. La plateforme Fusion peut prendre en charge des fichiers individuels allant jusqu’à 15 Go pour une seule action (par exemple, télécharger un fichier), mais d’autres facteurs affectent le transfert de données. La limite de taille de fichier d’une seule action dépend du service web auquel Fusion se connecte. Le transfert de données est le traitement total d’une seule exécution. Cela signifie que plusieurs actions en une seule exécution contribuent au transfert total de données. Fusion traitera les fichiers jusqu’à ce que la limite d’exécution de 40 minutes soit atteinte.
+* Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux, puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
+* Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille maximale de 200 **Mo**.
 
 Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 

@@ -4,9 +4,9 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,11 @@ Pour gérer des fichiers plus volumineux, vos scénarios doivent être mis à jo
 ## Connecteurs prenant en charge les fichiers volumineux
 
 Actuellement, les connecteurs suivants prennent en charge les fichiers volumineux.
+
+>[!NOTE]
+>
+>* Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux, puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
+>* Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille allant jusqu’à 200 Mo.
 
 * Workfront
    * Charger le document
