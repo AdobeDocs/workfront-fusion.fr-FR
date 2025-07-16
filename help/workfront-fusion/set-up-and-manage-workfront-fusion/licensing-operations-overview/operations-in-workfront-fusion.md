@@ -4,10 +4,10 @@ description: Dans Adobe Workfront Fusion, une opération est une tâche effect
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 78%
+source-wordcount: '352'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Dans Adobe Workfront Fusion, une opération est une tâche effectuée par un m
 * En général, toute exécution réussie d’une étape-action est considérée comme une opération.
 * Le premier module d’un scénario ne s’exécute qu’une seule fois et est toujours compté comme une opération, même s’il ne renvoie pas de lot.
 * Le nombre d’exécutions des autres modules dépend du nombre de lots qu’ils doivent traiter.  Une exécution d’un module pour un lot constitue une seule opération. Le module agrégateur fait exception à la règle, puisqu’il est compté comme une opération pour chaque ensemble de lots traités.
-* Les opérations sont comptabilisées à l’étape [!UICONTROL Finalization] de l’exécution d’un scénario.
+* Les opérations sont comptées lors de l’étape [!UICONTROL Finalisation] de l’exécution d’un scénario.
 * Les éléments suivants ne sont **pas** comptés comme des opérations :
    * Toutes les étapes de filtrage.
    * Toute action qui provoque une erreur ou qui est interrompue.
@@ -29,9 +29,16 @@ Dans Adobe Workfront Fusion, une opération est une tâche effectuée par un m
 
 ## Limites d’opérations
 
-Votre organisation peut avoir une limite mensuelle d’opérations. Celle-ci est basée sur la formule [!DNL Workfront] que votre organisation a acheté. Le plan de [!DNL Workfront] [!UICONTROL Ultimate] offre un nombre illimité d’opérations.
+Votre organisation peut avoir une limite mensuelle d’opérations. Celle-ci est basée sur la formule [!DNL Workfront] que votre organisation a acheté. La formule [!DNL Workfront] [!UICONTROL Ultimate] permet des opérations illimitées.
 
 Si votre organisation a une limite mensuelle, vous serez averti lorsque votre organisation approchera de la limite. Si votre entreprise dépasse la limite, [!DNL Workfront] contactera pour vous assurer que votre plan répond à vos besoins.
+
+Workfront Fusion envoie une notification lorsque votre organisation atteint les pourcentages suivants de la limite mensuelle de l’organisation :
+
+* 50 %
+* 75 %
+* 90 %
+* 100%
 
 ## Consulter le nombre d’opérations effectuées au cours des 30 derniers jours
 
