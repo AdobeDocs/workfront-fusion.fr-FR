@@ -4,18 +4,18 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
+source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
 workflow-type: tm+mt
-source-wordcount: '2936'
-ht-degree: 36%
+source-wordcount: '3471'
+ht-degree: 34%
 
 ---
 
-# Modules [!DNL Frame.io] Beta (V4)
+# Modules [!DNL Frame.io] V4
 
 >[!IMPORTANT]
 >
->Cet article décrit la nouvelle version (bêta) du connecteur Frame.io. Ce connecteur est utilisé pour se connecter à Frame.io version 4.
+>Cet article décrit la nouvelle version du connecteur Frame.io. Ce connecteur est utilisé pour se connecter à Frame.io version 4.
 >
 >Pour obtenir des instructions sur la version héritée du connecteur Frame.io, voir [Connecteur hérité Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
@@ -25,7 +25,7 @@ Workfront propose deux connecteurs Frame.io, en fonction de la version de Frame.
 
 | Connecteur | Version Frame.io |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (hérité) | V3 |
 
 Pour obtenir des instructions sur la version héritée du connecteur Frame.io, voir [Connecteur hérité Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
@@ -316,7 +316,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [[!UICONTROL Supprimer une ressource]](#delete-an-asset)
 * [[!UICONTROL Obtenir une ressource]](#get-an-asset)
 * [[!UICONTROL Liste des ressources]](#list-assets)
-* [[!UICONTROL Mettre à jour une ressource]](#update-an-asset)
+* [Observer la ressource supprimée](#watch-asset-deleted)
+* [Regarder la nouvelle ressource](#watch-new-asset)
 
 #### [!UICONTROL Créer une ressource] <!--different for v4-->
 
@@ -436,6 +437,60 @@ Ce module de recherche récupère toutes les ressources dans le dossier du proje
  </tbody> 
 </table>
 
+#### Observer la ressource supprimée
+
+Ce module de déclenchement démarre un scénario lorsqu’une ressource est supprimée.
+
+Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en regard du champ Webhook et saisissez les informations suivantes :
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Saisissez le nom du nouveau webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte que vous souhaitez surveiller pour les ressources supprimées.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Regarder la nouvelle ressource
+
+Ce module de déclenchement démarre un scénario lorsqu’une nouvelle ressource est créée.
+
+Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en regard du champ Webhook et saisissez les informations suivantes :
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Saisissez le nom du nouveau webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte que vous souhaitez observer pour les nouvelles ressources.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Commentaires
 
 * [[!UICONTROL Créer un commentaire]](#create-a-comment)
@@ -443,6 +498,8 @@ Ce module de recherche récupère toutes les ressources dans le dossier du proje
 * [[!UICONTROL Obtenir un commentaire]](#get-a-comment)
 * [[!UICONTROL Répertorier des commentaires]](#list-comments)
 * [[!UICONTROL Mettre à jour un commentaire]](#update-a-comment)
+* [Commentaire sur la surveillance mis à jour](#watch-comment-updated)
+* [Regarder le nouveau commentaire](#watch-new-comment)
 
 #### [!UICONTROL Créer un commentaire]
 
@@ -603,6 +660,60 @@ Ce module d’action modifie un commentaire existant.
  </tbody> 
 </table>
 
+#### Commentaire sur la surveillance mis à jour
+
+Ce module de déclenchement lance un scénario lorsqu’un commentaire est mis à jour.
+
+Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en regard du champ Webhook et saisissez les informations suivantes :
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Saisissez le nom du nouveau webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte que vous souhaitez observer pour obtenir des commentaires mis à jour.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Regarder le nouveau commentaire
+
+Ce module de déclenchement démarre un scénario lors de la création d’un commentaire.
+
+Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en regard du champ Webhook et saisissez les informations suivantes :
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Saisissez le nom du nouveau webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte que vous souhaitez observer pour obtenir de nouveaux commentaires.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Dossiers
 
 #### Créer un dossier
@@ -643,6 +754,7 @@ Ce module d’action crée un dossier dans Frame.io.
 ### Projets
 
 * [Créer un projet](#create-a-project)
+* [Inviter des utilisateurs à rejoindre le projet Frame.io](#invite-users-to-frameio-project)
 * [Répertorier les projets](#list-projects)
 
 #### Créer un projet
@@ -668,6 +780,38 @@ Ce module d’action crée un projet dans Frame.io.
    <tr> 
    <td role="rowheader">Nom </td> 
    <td> <p>Saisissez ou mappez un nom pour le nouveau projet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Inviter des utilisateurs à rejoindre le projet Frame.io
+
+Ce module d&#39;action invite les utilisateurs au projet Frame.io spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant le projet auquel vous souhaitez inviter un utilisateur.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Sélectionnez ou mappez l’espace de travail contenant le projet auquel vous souhaitez inviter un utilisateur.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de projet </td> 
+   <td> <p>Sélectionnez ou mappez le projet auquel vous souhaitez inviter un utilisateur ou une utilisatrice.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Identifiant utilisateur </td> 
+   <td> <p>Sélectionnez ou mappez l’utilisateur que vous souhaitez inviter au projet.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -834,6 +978,10 @@ Ce module répertorie tous les espaces de travail d’un compte.
 
 ### Autre
 
+* [Effectuer un appel API personnalisé.](#make-a-custom-api-call)
+* [Surveiller la mise à jour de la valeur des métadonnées](#watch-metadata-value-updated)
+
+
 #### [!UICONTROL Effectuer un appel API personnalisé]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
@@ -864,10 +1012,37 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Surveiller la mise à jour de la valeur des métadonnées
+
+Ce module de déclenchement lance un scénario lorsqu’un commentaire est mis à jour.
+
+Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en regard du champ Webhook et saisissez les informations suivantes :
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Saisissez le nom du nouveau webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte que vous souhaitez surveiller pour les valeurs de métadonnées mises à jour.</p> </td> 
   </tr> 
  </tbody> 
 </table>
