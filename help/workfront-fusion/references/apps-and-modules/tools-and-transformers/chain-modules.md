@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 7%
 
 ---
@@ -105,6 +106,7 @@ Pour configurer le module Appeler un scénario enfant
    Les champs configurés dans le module de déclenchement du scénario enfant apparaissent dans le module Appeler un scénario enfant .
 
 1. Saisissez ou mappez les informations à transmettre au scénario enfant dans le module Appeler un scénario enfant .
+1. (Conditionnel) Si vous souhaitez que le scénario parent poursuive son exécution sans attendre de réponse du scénario enfant, activez l’option **Déclencher et oublier**.
 1. Cliquez sur **OK** pour enregistrer le module.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ Pour configurer le module Ajouter un répondeur :
    Pour obtenir des instructions sur la création d’une structure de données, voir [Structures de données](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Cliquez sur **OK** pour enregistrer le module.
-
