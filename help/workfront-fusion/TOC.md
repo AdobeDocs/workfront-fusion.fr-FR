@@ -2,10 +2,10 @@
 user-guide-title: Documentation sur Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 63%
+source-wordcount: '1837'
+ht-degree: 64%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 63%
 * Activité de libération de Fusion {#fusion-release-activity}
    * [Activité Version d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versions de Fusion - 2025 {#fusion-releases-2025}
+      * [Activité Version de Workfront Fusion : semaine du mardi 18 août 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+      * [Activité Version de Workfront Fusion : semaine du vendredi 31 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 7 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
       * [Activité Version de Workfront Fusion : semaine du samedi 6 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 23 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
@@ -169,7 +171,7 @@ ht-degree: 63%
          * [Afficher ou modifier des rôles d’utilisateur ou d’utilisatrice](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
          * [Suppression d’utilisateurs dans le Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
    * Gérer les modèles {#manage-templates-admin}
-      * [Gestion des modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+      * [Gérer les modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
       * [Approuver ou désapprouver des modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [Modifier des modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * Créer des scénarios {#create-scenarios}
@@ -201,7 +203,7 @@ ht-degree: 63%
       * [Magasins de données](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
    * Connexion aux applications {#connect-to-applications}
       * [Connexion aux applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
-      * [Création de connexions](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
+      * [Créer des connexions](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
       * [Créer une connexion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
       * [Connecter Adobe Workfront Fusion à un service web qui utilise l’autorisation par jeton API](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
       * [Connecter Adobe Workfront Fusion à Google Services avec des mesures de sécurité mises à jour](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)

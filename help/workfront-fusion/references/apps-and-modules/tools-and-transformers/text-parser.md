@@ -4,10 +4,10 @@ description: Vous pouvez utiliser l’outil d’analyse de texte pour analyser l
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 86%
+source-wordcount: '1311'
+ht-degree: 85%
 
 ---
 
@@ -129,7 +129,7 @@ Analyse les éléments du texte en fonction du modèle donné.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>Sélectionnez le motif qui reflète les éléments que vous souhaitez analyser à partir du texte.</p> </td> 
+   <td> <p>Sélectionnez le motif qui reflète les éléments que vous souhaitez analyser à partir du texte.</p> <p>Pour saisir une expression régulière personnalisée, sélectionnez Personnalisée dans la liste, puis saisissez l’expression personnalisée dans le champ Expression régulière personnalisée .</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
