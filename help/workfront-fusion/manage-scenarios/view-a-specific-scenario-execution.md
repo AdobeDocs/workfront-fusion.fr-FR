@@ -3,10 +3,11 @@ title: Affichage de l’exécution d’un scénario spécifique
 description: Vous pouvez afficher les détails d’une exécution de scénario spécifique, y compris le filtrage et la recherche d’événements de scénario.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 17%
+source-wordcount: '430'
+ht-degree: 15%
 
 ---
 
@@ -85,3 +86,17 @@ Vous pouvez afficher une exécution à partir de l’historique des scénarios d
 1. Pour afficher les lots qui ont passé par un filtre, cliquez sur le filtre. Le nombre près du filtre représente le nombre de lots qui ont passé par le filtre.
 1. Pour rechercher un module ou un événement spécifique dans le panneau d’exécution, saisissez le terme de recherche dans la zone **Rechercher des événements d’exécution**. Les résultats s’affichent au fur et à mesure que vous tapez.
 1. Pour limiter les résultats de recherche du panneau d’exécution par statut, tel que Succès ou Avertissement, cliquez sur le menu déroulant **Filtre de statut** et sélectionnez le statut.
+
+
+
+
+>[!NOTE]
+>
+>Pour créer un lien vers un module spécifique, ajoutez des `?moduleId=<module-id>` à l’URL lors de l’affichage des pages suivantes :
+>
+>* Page de modification du scénario (l’URL se termine par `/edit`)
+>* Exécution d’un scénario spécifique (l’URL se termine par `/logs/<log-id>`)
+>
+>`<module-id>` fait référence au nombre en regard du libellé du module lors de l’affichage du scénario.
+>
+>Cela peut s’avérer utile lors du débogage de scénarios ou de la copie de la configuration du module.

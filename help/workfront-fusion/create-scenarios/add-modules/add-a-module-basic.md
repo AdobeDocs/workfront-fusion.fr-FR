@@ -4,10 +4,10 @@ description: Cet article décrit le processus de base d’ajout d’un module à
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 9%
+source-wordcount: '682'
+ht-degree: 8%
 
 ---
 
@@ -108,3 +108,14 @@ La liste des connecteurs s’ouvre. Elle affiche les connecteurs déjà utilisé
 1. Configurez le module .
 
    Pour obtenir des instructions sur la configuration de modules spécifiques, consultez l’article pour les applications sélectionnées, répertoriées dans [Références des applications Fusion et de leurs modules : index des articles](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Pour créer un lien vers un module spécifique, ajoutez des `?moduleId=<module-id>` à l’URL lors de l’affichage des pages suivantes :
+>
+>* Page de modification du scénario (l’URL se termine par `/edit`)
+>* Exécution d’un scénario spécifique (l’URL se termine par `/logs/<log-id>`)
+>
+>`<module-id>` fait référence au nombre en regard du libellé du module lors de l’affichage du scénario.
+>
+>Cela peut s’avérer utile lors du débogage de scénarios ou de la copie de la configuration du module.
