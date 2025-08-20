@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
+source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 46%
+source-wordcount: '465'
+ht-degree: 45%
 
 ---
 
@@ -91,7 +91,8 @@ Fusion propose des connecteurs pour de nombreuses applications tierces.
 * [Modules Google Slides](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Modules Google Team Drive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [Modules Hubspot CRM](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-* [Modules de Jira Software](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+* [Modules Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+* [Modules logiciels Jira (hérités)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [Modules MariaDB](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
 * [Modules du calendrier Microsoft 365](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
 * [Modules de messagerie Microsoft 356](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)

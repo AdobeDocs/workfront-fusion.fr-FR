@@ -4,14 +4,18 @@ description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 80%
+source-wordcount: '2238'
+ht-degree: 79%
 
 ---
 
 # Modules [!DNL Jira Software]
+
+>[!NOTE]
+>
+>Ces instructions s’appliquent aux anciens connecteurs Jira Cloud et Jira Server. Pour plus d’informations sur la nouvelle version du connecteur Jira, qui est simplement étiquetée Jira, voir [Modules Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
 
 Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Jira Software] et le connecter à plusieurs applications et services tiers.
 
@@ -88,8 +92,8 @@ Le connecteur Jira utilise les éléments suivants :
   </tr> 
   <tr> 
    <td role="rowheader">apiVersionAgile</td> 
-   <td> 1,0 </td> 
-   <td> 1,0</td> 
+   <td> 1.0 </td> 
+   <td> 1.0</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Balise API</td> 
