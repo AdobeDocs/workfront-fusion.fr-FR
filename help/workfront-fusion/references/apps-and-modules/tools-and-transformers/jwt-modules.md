@@ -1,19 +1,19 @@
 ---
 title: Modules JWT
-description: L’application  [!DNL Adobe Workfront Fusion] [!UICONTROL &#x200B; JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
+description: L’application Adobe Workfront Fusion [!UICONTROL JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 9%
+source-wordcount: '537'
+ht-degree: 8%
 
 ---
 
 # Module [!UICONTROL JWT]
 
-L’application [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
+L’application Adobe Workfront Fusion [!UICONTROL JWT] fournit un module qui crée des jetons JWT en fonction de l’algorithme fourni.
 
 ## Conditions d’accès
 
@@ -52,7 +52,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

@@ -1,19 +1,19 @@
 ---
 title: Modules Marketo
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez automatiser les workflows qui utilisent  [!DNL Marketo]et le connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent  [!DNL Marketo], et le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 76%
+source-wordcount: '2231'
+ht-degree: 65%
 
 ---
 
 # Modules [!DNL Marketo]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Marketo] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Marketo] et les connecter à plusieurs applications et services tiers.
 
 Pour une vidéo d’introduction au connecteur Marketo, voir :
 
@@ -62,7 +62,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -141,7 +141,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Marketo] directement depu
 
 ## Modules [!DNL Marketo] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Marketo], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Marketo] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Marketo], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Marketo] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -185,7 +185,7 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -230,7 +230,7 @@ Ce module d’action ajoute un ou plusieurs prospects à une liste à l’aide d
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List ID]</td> 
@@ -253,7 +253,7 @@ Ce module d’action effectue une copie d’un programme à l’aide de l’ID d
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Existing Program ID]</td> 
@@ -280,7 +280,7 @@ Ce module d’action crée un nouvel enregistrement dans [!DNL Marketo].
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -337,7 +337,7 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], consultez la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> de cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -372,7 +372,7 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -391,7 +391,7 @@ Ce module d’action lit des informations concernant un enregistrement à l’ai
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -426,7 +426,7 @@ Ce module d’action supprime un ou plusieurs prospects d’une liste à l’aid
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List ID]</td> 
@@ -449,7 +449,7 @@ Ce module d’action planifie une campagne existante pour une certaine date.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Campaign ID]</td> 
@@ -472,7 +472,7 @@ Ce module d’action met à jour un enregistrement existant à l’aide de son i
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -528,7 +528,7 @@ Ce module d’action charge un nouveau fichier vers [!UICONTROL Marketo].
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir la section <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -560,7 +560,7 @@ Ce module d’action récupère tous les enregistrements d’un type spécifique
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -597,7 +597,7 @@ Ce module de recherche récupère une liste d’enregistrements correspondant à
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à [!DNL Workfront Fusion], voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, voir <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 

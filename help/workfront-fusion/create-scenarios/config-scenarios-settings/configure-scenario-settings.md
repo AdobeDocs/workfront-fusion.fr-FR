@@ -5,10 +5,10 @@ description: Vous pouvez configurer des paramètres spécifiques pour les scéna
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 54%
+source-wordcount: '1326'
+ht-degree: 45%
 
 ---
 
@@ -27,17 +27,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+   <td role="rowheader">Formule Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -45,16 +45,16 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Forfait [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</li><li>Forfait [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations du niveau d’accès*</td> 
    <td> 
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre organisation.</p>
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre équipe.</p>
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -62,9 +62,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  </tbody> 
 </table>
 
-Pour plus d’informations sur ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus de détails sur les informations contenues dans ce tableau, consultez [Conditions d’accès préalables dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -119,15 +119,15 @@ Une fois qu’un scénario a été exécuté, vous pouvez afficher par défaut d
 
 ### [!UICONTROL Autoriser le stockage d’exécutions incomplètes]
 
-Cette option détermine comment [!DNL Adobe Workfront Fusion] s’exécute si une erreur se produit lors de l’exécution d’un scénario. Lorsque cette option est activée, le scénario est mis en pause et déplacé vers le dossier d’exécution incomplète. Cela vous permet de résoudre le problème et de reprendre l’exécution à l’endroit où le scénario s’est arrêté. Si cette option est désactivée, l’exécution du scénario s’arrête et une phase de restauration est lancée.
+Cette option détermine la manière dont Adobe Workfront Fusion procède si une erreur se produit lors de l’exécution d’un scénario. Lorsque cette option est activée, le scénario est mis en pause et déplacé vers le dossier d’exécution incomplète. Cela vous permet de résoudre le problème et de reprendre l’exécution à l’endroit où le scénario s’est arrêté. Si cette option est désactivée, l’exécution du scénario s’arrête et une phase de restauration est lancée.
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Activer la perte de données
 
-Cette option concerne l’activation de la perte de données si [!DNL Workfront Fusion] ne parvient pas à enregistrer un lot dans la file d’attente des exécutions incomplètes (par exemple, en raison d’un manque d’espace libre). Lorsque cette option est activée, les données sont perdues afin d’éviter des interruptions dans l’exécution globale du scénario. Cela s’avère utile dans les cas où la priorité la plus élevée est l’exécution continue et où les données erronées entrantes ne sont pas si importantes.
+Cette option concerne l’activation de la perte de données si Workfront Fusion ne parvient pas à enregistrer un lot dans la file d’attente des exécutions incomplètes (par exemple, en raison d’un manque d’espace libre). Lorsque cette option est activée, les données sont perdues afin d’éviter des interruptions dans l’exécution globale du scénario. Cela s’avère utile dans les cas où la priorité la plus élevée est l’exécution continue et où les données erronées entrantes ne sont pas si importantes.
 
-Par ailleurs, lors de l’exécution d’un scénario, il peut arriver qu’un module rencontre un fichier plus volumineux que la taille maximale autorisée. Dans ce cas, [!DNL Workfront Fusion] opère suivant le réglage de l’option [!UICONTROL Activer la perte de données] et un message d’avertissement s’affiche.
+Par ailleurs, lors de l’exécution d’un scénario, il peut arriver qu’un module rencontre un fichier plus volumineux que la taille maximale autorisée. Dans ce cas, Workfront Fusion se déroule conformément au paramétrage de l&#39;option [!UICONTROL Activer la perte de données] et un message d&#39;avertissement s&#39;affiche.
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -160,7 +160,7 @@ La définition de davantage de cycles peut s’avérer utile lorsque vous souhai
 
 >[!BEGINSHADEBOX]
 
-**Exemples :** [!DNL Workfront] > [!UICONTROL Surveiller les enregistrements] recherche les nouveaux problèmes qui surviennent et [!DNL Workfront] > [!UICONTROL Convertir l’objet] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
+**Exemples :** Workfront > [!UICONTROL Observer l’enregistrement] recherche les nouveaux problèmes et Workfront >[!UICONTROL Convertir l’objet] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
 
 ![Paramètres du scénario](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ Un paramètre [!UICONTROL cycles supplémentaires] est appliqué uniquement lors
 ![Nombre maximal de cycles](assets/max-number-cycles-1-350x201.png)
 
 Le nombre maximal de cycles dans le module Workfront > Enregistrements de contrôle est défini sur `10`.
-Si 100 requêtes sont envoyées à [!DNL Workfront] et que le champ Nombre maximal de cycles est défini sur 10, 90 fichiers ne sont pas traités après l’exécution d’un scénario. Les 10 fichiers suivants sont traités lors de la prochaine exécution planifiée du scénario.
+Si 100 requêtes sont envoyées à Workfront et que le champ Nombre maximal de cycles est défini sur 10, 90 fichiers ne sont pas traités après l’exécution d’un scénario. Les 10 fichiers suivants sont traités lors de la prochaine exécution planifiée du scénario.
 
 #### Le nombre maximal de cycles est défini sur 10.
 

@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Modules de stockage Adobe
-description: Dans un  [!DNL Adobe Workfront Fusion] , vous devez créer et gérer des projets dans le Adobe Admin Console.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez créer et gérer des projets dans Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 20%
+source-wordcount: '1400'
+ht-degree: 19%
 
 ---
 
 # Modules de stockage Adobe
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez créer et gérer des projets dans le Adobe Admin Console.
+Dans un scénario Adobe Workfront Fusion, vous pouvez créer et gérer des projets dans Adobe Admin Console.
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -62,7 +62,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -288,7 +288,7 @@ Ce module d&#39;action envoie une invitation afin d&#39;accorder à un nouvel ut
    <td>Saisissez ou mappez l’ID Adobe Post Office du modèle que vous souhaitez utiliser pour l’e-mail d’invitation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètre local</td> 
+   <td role="rowheader">Paramètres régionaux</td> 
    <td>Saisissez les paramètres régionaux de l’utilisateur sous la forme d’un code de langue et d’un code de pays. <p>Exemple : <code>en-us</code></p> </td> 
   </tr> 
   <tr> 
@@ -343,7 +343,7 @@ Ce module d’action effectue une requête HTTP personnalisée à l’API de sto
       <td>
         <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p>
         <p>Par exemple, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] ajoute automatiquement des en-têtes d’autorisation et des en-têtes x-api-key.</p>
+        <p>Workfront Fusion ajoute automatiquement des en-têtes d’autorisation et des en-têtes x-api-key.</p>
       </td>
     </tr>
     <tr>

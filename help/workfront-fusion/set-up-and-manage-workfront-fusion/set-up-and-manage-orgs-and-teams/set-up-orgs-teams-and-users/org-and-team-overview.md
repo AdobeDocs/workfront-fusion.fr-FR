@@ -4,16 +4,16 @@ description: Les fonctionnalités Organisation et Équipes Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 62%
+source-wordcount: '529'
+ht-degree: 58%
 
 ---
 
-# Présentation des organisations et des équipes [!DNL Adobe Workfront Fusion]
+# Présentation des organisations et des équipes Adobe Workfront Fusion
 
-Les fonctionnalités Organisation et Équipes [!DNL Adobe Workfront Fusion] permettent aux entreprises de contrôler l’accès aux scénarios et aux autres fonctionnalités dans Fusion.
+Les fonctionnalités Organisation et Équipes Adobe Workfront Fusion permettent aux entreprises de contrôler l’accès aux scénarios et aux autres fonctionnalités dans Fusion.
 
 Une organisation est la plus grande entité d’Adobe Workfront Fusion. Par exemple, votre organisation Fusion peut représenter le compte Fusion pour l’ensemble de votre société.
 
@@ -23,7 +23,7 @@ Pour obtenir des instructions sur la création d’une équipe, voir [Créer une
 
 ## Organisations
 
-Les utilisateurs et utilisatrices [!DNL Workfront Fusion] appartiennent à une organisation.
+Les utilisateurs de Workfront Fusion appartiennent à une organisation.
 
 Les utilisateurs doivent être ajoutés à une organisation avant d’être ajoutés à une équipe.
 
@@ -33,7 +33,7 @@ Un utilisateur ou une utilisatrice possède l’un des rôles suivants dans une 
 
 * **[!UICONTROL Personne propriétaire]** : la personne propriétaire dispose de toutes les autorisations disponibles dans l’organisation.
 * **[!UICONTROL Administrateur]** : les administrateurs peuvent créer et gérer des équipes et des utilisateurs pour l’organisation et approuver des modèles.
-* **[!UICONTROL Membre]** : les membres peuvent utiliser [!DNL Workfront Fusion], mais ne peuvent pas apporter de modifications organisationnelles.
+* **[!UICONTROL Membre]** : les membres peuvent utiliser Workfront Fusion, mais ne peuvent pas apporter de modifications organisationnelles.
 * **[!UICONTROL Comptable]** : les comptables peuvent afficher les informations de licence dans le tableau de bord de l&#39;organisation, mais ne peuvent effectuer aucune action.
 * **[!UICONTROL Développeur ou développeuse d’applications]** : les fonctionnalités de ce rôle ne sont actuellement pas disponibles. Elle seront disponibles ultérieurement. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
 
@@ -53,7 +53,7 @@ Les équipes sont des groupes d’utilisateurs et d’utilisatrices qui partagen
 
 >[!NOTE]
 >
->Comme les équipes partagent des ressources, il est parfois utile qu’une équipe ne compte qu’un seul membre. Par exemple, les utilisateurs et les utilisatrices en formation peuvent créer des connexions avec leur comptes [!DNL Workfront] individuels. Tous les membres de l’équipe peuvent également se connecter au compte [!DNL Workfront] individuel. Dans ce cas, nous recommandons que l’utilisateur soit le seul membre d’une équipe de formation.
+>Comme les équipes partagent des ressources, il est parfois utile qu’une équipe ne compte qu’un seul membre. Par exemple, les utilisateurs en formation peuvent créer des connexions avec leurs comptes Workfront individuels. Tous les membres de l’équipe peuvent également se connecter au compte Workfront individuel. Dans ce cas, nous recommandons que l’utilisateur soit le seul membre d’une équipe de formation.
 
 Les organisations peuvent disposer d’autant d’équipes que nécessaire et les utilisateurs et les utilisatrices peuvent appartenir à une ou plusieurs équipes.
 

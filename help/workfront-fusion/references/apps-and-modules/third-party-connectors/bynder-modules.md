@@ -1,19 +1,19 @@
 ---
 title: Modules Bynder
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez automatiser les workflows qui utilisent  [!DNL Bynder]et le connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent  [!DNL Bynder], et le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 85%
+source-wordcount: '1847'
+ht-degree: 71%
 
 ---
 
 # Modules [!DNL Bynder]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Bynder] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Bynder] et les connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -91,12 +91,12 @@ Le connecteur Bynder utilise les éléments suivants :
 >
 >Bynder utilise le code d’autorisation / type d’octroi du jeton d’actualisation. Il s’agit du seul type d’octroi utilisé par le connecteur Fusion Bunder.
 
-* [Créer une connexion à  [!DNL Bynder]  à partir de  [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
+* [Création d’une connexion  [!DNL Bynder]  Workfront Fusion](#create-a-connection-to-bynder-from-workfront-fusion)
 * [Générer un [!UICONTROL identifiant client] et une [!UICONTROL clé secrète client] dans  [!DNL Bynder]  (Facultatif)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
-### Créer une connexion à [!DNL Bynder] à partir de [!DNL Workfront Fusion]
+### Création d’une connexion à [!DNL Bynder] depuis Workfront Fusion
 
-Vous pouvez créer une connexion à votre compte [!DNL Bynder] directement à partir de [!DNL Workfront Fusion] depuis l’intérieur d’un module [!DNL Bynder].
+Vous pouvez créer une connexion de Workfront Fusion à votre compte [!DNL Bynder] directement depuis un module [!DNL Bynder].
 
 1. Dans n’importe quel module [!DNL Bynder], cliquez sur **[!UICONTROL Ajouter]** à côté du champ [!UICONTROL Connexion].
 1. Sélectionnez le domaine [!DNL Bynder] auquel vous souhaitez vous connecter.
@@ -124,7 +124,7 @@ Pour obtenir des instructions sur la création d’une application dans [!DNL By
 
 ## Modules [!DNL Bynder] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Bynder], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Bynder] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Bynder], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Bynder] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -156,7 +156,7 @@ Ce module d’action ajoute une balise à une ou plusieurs ressources
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -179,7 +179,7 @@ Ce module d’action ajoute une ou plusieurs ressources à une collection.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -206,7 +206,7 @@ Le module renvoie un code de statut, ainsi que les en-têtes et le corps de l’
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez dans cet article la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -244,7 +244,7 @@ Ce module d’action télécharge une seule ressource.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -267,7 +267,7 @@ Ce module d’action lit les métadonnées d’une ressource.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -290,7 +290,7 @@ Ce module d’action supprime une balise d’une ou de plusieurs ressources
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -313,7 +313,7 @@ Ce module d’action supprime une ou plusieurs ressources d’une collection.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -336,7 +336,7 @@ Ce module d’action met à jour les métadonnées d’une ressource existante.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion] </a>dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -363,7 +363,7 @@ Ce module d’action charge une seule ressource.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez dans cet article la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save as]</td> 
@@ -399,7 +399,7 @@ Ce module de recherche récupère tous les éléments d’un type spécifique.
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez dans cet article la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -431,7 +431,7 @@ Ce module de recherche permet de rechercher des ressources en fonction des crit�
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez dans cet article la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
@@ -477,7 +477,7 @@ Lorsqu’une ressource est créée ou mise à jour, ce module de déclenchement 
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Bynder] à [!DNL Workfront Fusion], consultez dans cet article la section <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Bynder] à [!DNL Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Bynder] à Workfront Fusion, voir <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Bynder] à Workfront Fusion </a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">Type d’événement</td>

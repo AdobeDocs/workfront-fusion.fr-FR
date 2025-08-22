@@ -1,13 +1,13 @@
 ---
 title: Présentation des détails du scénario
-description: Détails du scénario dans  [!DNL Adobe Workfront Fusion]
+description: Détails du scénario dans Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 57%
+source-wordcount: '620'
+ht-degree: 59%
 
 ---
 
@@ -30,17 +30,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,16 +48,16 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations du niveau d’accès*</td> 
    <td> 
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre organisation.</p>
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre équipe.</p>
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -67,13 +67,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Ouvrez la page [!UICONTROL Scenario detail] :
+## Ouvrez la page [!UICONTROL Détails du scénario] :
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenario]** dans le panneau de gauche, puis cliquez sur un scénario dont vous souhaitez obtenir des détails.
+1. Cliquez sur l’onglet **[!UICONTROL Scenario]** dans le panneau de gauche, puis sur un scénario dont vous souhaitez obtenir des détails.
 
    Ou
 
@@ -92,12 +92,12 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
       <td>Cet onglet affiche la représentation visuelle du scénario. Le diagramme est identique à celui de l’éditeur de scénarios.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Reports] onglet </td> 
+      <td role="rowheader">Onglet [!UICONTROL Reports] </td> 
       <td> <p>Ouvrez cet onglet pour afficher un graphique du nombre d’opérations effectuées par ce scénario au cours des 30 derniers jours.</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL History] onglet </td> 
-      <td> <p>Ouvrez cet onglet pour afficher l’historique du scénario, y compris les modifications apportées au scénario. </p> <p>L’onglet [!UICONTROL History] fournit également l’historique d’exécution du scénario de chaque exécution, qui comprend les éléments suivants :</p> 
+      <td role="rowheader">Onglet [!UICONTROL History] </td> 
+      <td> <p>Ouvrez cet onglet pour afficher l’historique du scénario, y compris les modifications apportées au scénario. </p> <p>L’onglet [!UICONTROL History] fournit également l’historique de l’exécution de chaque scénario, qui comprend les éléments suivants :</p> 
        <ul> 
         <li>Statut de chaque exécution (succès ou erreur)</li> 
         <li>Durée de l’exécution</li> 
@@ -118,7 +118,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Activate scenario] (Bouton Activer/Désactiver)</td> 
+      <td role="rowheader">[!UICONTROL Activate scenario] (bouton On/Off)</td> 
       <td>Une fois qu’un scénario est créé, il doit être activé pour qu’il s‘exécute conformément à son calendrier. En cliquant sur le bouton On/Off situé dans le coin supérieur droit, vous pouvez activer ou désactiver le scénario. Une fois activé, le scénario s’exécute selon son planning.</td> 
      </tr> 
      <tr> 
@@ -140,7 +140,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
       <td>Cette zone affiche des informations relatives à l’exécution en cours.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL History] panneau</p> <p> </p> </td> 
+      <td role="rowheader"> <p>Panneau [!UICONTROL History]</p> <p> </p> </td> 
       <td> <p>Cette zone affiche des informations relatives aux dernières exécutions du scénario. Pour chaque exécution, elle affiche les éléments suivants :</p> 
        <ul> 
         <li>Date d’exécution</li> 
@@ -151,7 +151,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Events] panneau</p>  </td> 
+      <td role="rowheader"> <p>Panneau [!UICONTROL Events]</p>  </td> 
       <td>Cette zone affiche des informations sur les événements liés au scénario.  </td> 
      </tr> 
      <tr> 

@@ -4,10 +4,10 @@ description: Un webhook est un appel HTTP déclenché par un événement. Vous p
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 89%
+source-wordcount: '1463'
+ht-degree: 83%
 
 ---
 
@@ -58,17 +58,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Utiliser un webhook dans [!DNL Workfront Fusion]
+## Utilisation d’un webhook dans Workfront Fusion
 
 >[!NOTE]
 >
 >Pour appeler un webhook tiers (un webhook sortant), vous pouvez utiliser un module HTTP. Pour plus d’informations, consultez la section [Modules HTTP](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Pour utiliser un webhook pour connecter une application à [!DNL Workfront Fusion], procédez comme suit :
+Pour utiliser un webhook afin de connecter une application à Workfront Fusion :
 
 1. Ajoutez le module de déclenchement instantané **[!UICONTROL Webhooks]** >**[!UICONTROL Webhook personnalisé]** à votre scénario.
 
@@ -85,7 +85,7 @@ Une fois que vous avez créé un webhook, une URL unique s’affiche. Il s’agi
 
 ### Configurer la structure de données du webhook {#configure-the-webhook-s-data-structure}
 
-Pour reconnaître la structure des données de la payload entrante, [!DNL Workfront Fusion] analyse les exemples de données que vous envoyez à l’adresse affichée. Vous pouvez fournir les données d’exemples en effectuant une modification dans le service ou l’application qui fera que ce service ou cette application appellera le webhook. Vous pouvez par exemple supprimer un fichier.
+Pour reconnaître la structure des données de la payload entrante, Workfront Fusion analyse les exemples de données que vous envoyez à l’adresse affichée. Vous pouvez fournir les données d’exemples en effectuant une modification dans le service ou l’application qui fera que ce service ou cette application appellera le webhook. Vous pouvez par exemple supprimer un fichier.
 
 Vous pouvez également envoyer les données d’exemple via le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête] :
 
@@ -148,11 +148,11 @@ Si un webhook reçoit des données et qu’aucun scénario actif n’attend ces 
 
 ## Formats de données entrantes pris en charge
 
-[!DNL Workfront Fusion] prend en charge 3 formats de données entrantes : [!UICONTROL Chaîne de requête], [!UICONTROL Données de formulaire] et [!UICONTROL JSON].
+Workfront Fusion prend en charge 3 formats de données entrants : [!UICONTROL chaîne de requête], [!UICONTROL données de formulaire] et [!UICONTROL JSON].
 
-[!DNL Workfront Fusion] valide toutes les données entrantes par rapport à la structure de données sélectionnée. Ensuite, en fonction des paramètres du scénario, les données sont soit stockées dans la file d’attente pour traitement, soit traitées immédiatement.
+Workfront Fusion valide toutes les données entrantes par rapport à la structure de données sélectionnée. Ensuite, en fonction des paramètres du scénario, les données sont soit stockées dans la file d’attente pour traitement, soit traitées immédiatement.
 
-Si une partie des données n’est pas validée, [!DNL Workfront Fusion] renvoie un code d’état HTTP 400 et spécifie, dans le corps de la réponse HTTP, la raison pour laquelle les données entrantes n’ont pas réussi les contrôles de validation. Si la validation des données entrantes réussit, Workfront Fusion renvoie un statut « [!UICONTROL 200 Accepté] ».
+Si une partie des données ne réussit pas la validation, Workfront Fusion renvoie un code d’état HTTP 400 et spécifie, dans le corps de la réponse HTTP, la raison pour laquelle les données entrantes n’ont pas réussi les contrôles de validation. Si la validation des données entrantes réussit, Workfront Fusion renvoie un statut « [!UICONTROL 200 Accepté] ».
 
 * [[!UICONTROL Chaîne de requête]](#query-string)
 * [[!UICONTROL Données de formulaire]](#form-data)
@@ -289,27 +289,27 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >Configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>Code HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Clé</strong> : type de contenu</li> 
->&gt;     <li><strong>Valeur</strong> : text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>Code HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Clé</strong> : type de contenu</li> 
+&gt;     <li><strong>Valeur</strong> : text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![En-têtes personnalisés ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >**Exemple :** configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Réponse du Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

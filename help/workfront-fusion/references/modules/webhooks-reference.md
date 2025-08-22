@@ -4,9 +4,9 @@ description: De nombreux services proposent des webhooks pour envoyer des notifi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 28%
 
 ---
@@ -41,7 +41,7 @@ Lorsque vous configurez un déclencheur instantané, vous êtes invité à chois
 
 ![Paramètre de planification](assets/schedule-setting.png)
 
-Sélectionnez `Immediately` pour exécuter immédiatement le scénario lorsque [!DNL Workfront Fusion] reçoit de nouveaux événements du service. Ces événements sont immédiatement envoyés dans une file d’attente, puis traités dans le scénario, un par un, dans l’ordre de réception des données.
+Sélectionnez `Immediately` pour exécuter le scénario immédiatement lorsque Workfront Fusion reçoit de nouveaux événements du service. Ces événements sont immédiatement envoyés dans une file d’attente, puis traités dans le scénario, un par un, dans l’ordre de réception des données.
 
 Lorsque le scénario s’exécute, la quantité totale d’événements en attente dans la file d’attente est comptabilisée et le scénario effectue autant de cycles que d’événements en attente, en traitant un événement par cycle.
 
@@ -60,10 +60,10 @@ Pour plus d’informations sur les cycles, voir [Exécution du scénario, cycles
 >
 
 
-Si vous utilisez un autre paramètre de planification que [!UICONTROL Immediately], le scénario s’exécute aux intervalles que vous spécifiez. Étant donné que plusieurs webhooks peuvent être regroupés dans la file d’attente pendant l’intervalle, nous vous recommandons de définir l’option [!UICONTROL Maximum number of cycles] sur une valeur supérieure à la valeur par défaut 1 afin de traiter d’autres webhooks dans une seule exécution de scénario :
+Si vous utilisez un paramètre de planification autre que [!UICONTROL Immédiatement], le scénario s’exécute aux intervalles spécifiés. Étant donné que plusieurs webhooks peuvent être regroupés dans la file d’attente pendant l’intervalle, nous vous recommandons de définir l’option [!UICONTROL Nombre maximal de cycles] sur une valeur plus élevée que la valeur par défaut de 1 afin de traiter davantage de webhooks dans une exécution de scénario :
 
-1. Cliquez sur l’icône [!UICONTROL Scenario settings] ![icône des paramètres du scénario](assets/scenario-settings-icon.png) au bas de votre scénario.
-1. Dans le panneau **[!UICONTROL Scenario settings]** qui s’affiche, saisissez un nombre dans le champ **[!UICONTROL Max number of cycles]** pour indiquer le nombre d’événements de la file d’attente que vous souhaitez exécuter chaque fois que vous exécutez le scénario.
+1. Cliquez sur l’icône [!UICONTROL Paramètres du scénario] ![Icône Paramètres du scénario](assets/scenario-settings-icon.png) au bas de votre scénario.
+1. Dans le panneau **[!UICONTROL Paramètres du scénario]** qui s’affiche, saisissez un nombre dans le champ **[!UICONTROL Nombre maximal de cycles]** pour indiquer le nombre d’événements de la file d’attente que vous souhaitez exécuter chaque fois que vous exécutez le scénario.
 
 Les événements restants dans la file d’attente seront traités la prochaine fois que le scénario sera exécuté, jusqu’au nombre défini dans le champ Nombre maximal de cycles .
 
@@ -81,20 +81,20 @@ Un webhook qui n’a pas été affecté à un scénario depuis plus de 120 heur
 
 ### Payloads des webhooks
 
-[!DNL Workfront Fusion] stocke les payloads des webhooks pendant 30 jours. L’accès à une payload webhook plus de 30 jours après sa création génère une [!UICONTROL `Failed to read file from storage.`] d’erreur
+Workfront Fusion stocke les payloads du webhook pendant 30 jours. L’accès à une payload webhook plus de 30 jours après sa création génère une [!UICONTROL `Failed to read file from storage.`] d’erreur
 
 ### Gestion des erreurs
 
 Lorsqu’il comporte une erreur avec un déclencheur instantané, le scénario :
 
-* S’arrête immédiatement lorsque le scénario est configuré pour s’exécuter [!UICONTROL Immediately].
+* S’arrête immédiatement lorsque le scénario est configuré pour s’exécuter [!UICONTROL Immédiatement].
 * S’arrête après 3 tentatives infructueuses (3 erreurs) lorsque le scénario est défini pour s’exécuter comme prévu.
 
 Si une erreur se produit lors de l’exécution du scénario, l’événement est replacé dans la file d’attente pendant la phase de restauration du déclencheur d’instant. Dans ce cas, vous pouvez corriger le scénario et l’exécuter à nouveau.
 
 Pour plus d’informations, consultez [Restauration](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) dans l’article Exécution du scénario, cycles et phases.
 
-Si votre scénario comporte un module de réponse webhook, l’erreur est envoyée à la réponse webhook. Le module de réponse Webhook est toujours exécuté en dernier (lorsque l’option [!UICONTROL Auto commit] des paramètres du scénario n’est pas activée).
+Si votre scénario comporte un module de réponse webhook, l’erreur est envoyée à la réponse webhook. Le module de réponse Webhook est toujours exécuté en dernier (lorsque l’option [!UICONTROL Validation automatique] dans les paramètres du scénario n’est pas activée).
 
 Pour plus d’informations, voir [Réponse aux Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) dans l’article Webhooks.
 

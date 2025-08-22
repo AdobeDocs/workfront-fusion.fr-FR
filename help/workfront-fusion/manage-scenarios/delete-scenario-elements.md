@@ -4,16 +4,16 @@ description: Vous pouvez afficher et gérer les connexions de vos équipes dans 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 54%
 
 ---
 
 # Suppression d’éléments de scénario
 
-Vous pouvez stocker et supprimer des éléments de scénario dans les zones suivantes de votre compte [!DNL Adobe Workfront Fusion] :
+Vous pouvez stocker et supprimer des éléments de scénario dans les zones suivantes de votre compte Adobe Workfront Fusion :
 
 * [!UICONTROL Scénario]
 * [!UICONTROL Connexions]

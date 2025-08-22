@@ -1,13 +1,13 @@
 ---
 title: Modules Adobe Workfront Planning
-description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez démarrer un [!DNL Adobe Workfront Fusion] scénario basé sur des événements dans votre compte  [!DNL Adobe] Workfront Planning, créer, lire ou mettre à jour des contrats et d'autres enregistrements, rechercher des enregistrements à l'aide de critères que vous avez définis et charger des documents.
+description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez lancer un scénario Adobe Workfront Fusion en fonction des événements de votre compte de planification  [!DNL Adobe] Workfront, créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et charger des documents.
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 60%
+source-wordcount: '1607'
+ht-degree: 57%
 
 ---
 
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,7 +87,7 @@ Le connecteur Adobe Workfront Planning utilise les éléments suivants :
 
 ## Créer une connexion à [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
 
-Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] directement depuis l’intérieur d’un module [!DNL Workfront Fusion].
+Vous pouvez créer une connexion à votre compte [!DNL Workfront Planning] directement depuis un module Workfront Fusion.
 
 1. Dans un module [!DNL Adobe Workfront Planning], cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
@@ -146,7 +146,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
 * [Recherches](#searches)
-* [Non catégorisé](#uncategorized)
+* [Non classée](#uncategorized)
 
 ### Déclencheurs
 
@@ -184,7 +184,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>Vous pouvez définir des filtres pour ne surveiller que les enregistrements qui répondent aux critères sélectionnés.</p> <p>Pour chaque filtre, saisissez le champ que le filtre doit évaluer, l’opérateur et la valeur que le filtre doit autoriser. Vous pouvez utiliser plusieurs filtres en ajoutant des règles ET.</p> <p>Note : vous ne pouvez pas modifier les filtres dans les webhooks [!DNL Workfront] existants. Pour configurer différents filtres pour les abonnements aux événements [!DNL Workfront], supprimez le webhook actuel et créez-en un nouveau.</p> <p>Pour plus d’informations sur les filtres d’événement, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref"> Filtres d’abonnement aux événements dans les modules [!DNL Workfront] &gt; [!UICONTROL Watch Events]</a> dans l’article Modules Workfront .</p> </td> 
+      <td> <p>Vous pouvez définir des filtres pour ne surveiller que les enregistrements qui répondent aux critères sélectionnés.</p> <p>Pour chaque filtre, saisissez le champ que le filtre doit évaluer, l’opérateur et la valeur que le filtre doit autoriser. Vous pouvez utiliser plusieurs filtres en ajoutant des règles ET.</p> <p>Remarque : vous ne pouvez pas modifier les filtres dans les Webhooks Workfront existants. Pour configurer différents filtres pour les abonnements aux événements Workfront, supprimez le webhook actif et créez-en un.</p> <p>Pour plus d’informations sur les filtres d’événement, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref"> Filtres d’abonnement aux événements dans les modules Workfront &gt; [!UICONTROL Watch Events]</a> dans l’article Modules Workfront .</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -260,7 +260,7 @@ Ce module lance un appel API personnalisé à l’API [!DNL Adobe Workfront Plan
       <td>
         <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p>
         <p>Par exemple, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Ajoute automatiquement des en-têtes d’autorisation.</p>
+        <p>Workfront Fusion ajoute automatiquement des en-têtes d’autorisation.</p>
       </td>
     </tr>
     <tr>
@@ -327,7 +327,7 @@ Ce module d’action récupère une liste d’enregistrements en fonction des cr
 </table>
 
 
-### Non catégorisé
+### Non classée
 
 
 #### Créer un enregistrement

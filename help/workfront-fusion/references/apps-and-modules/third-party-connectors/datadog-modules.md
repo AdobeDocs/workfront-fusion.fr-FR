@@ -1,19 +1,19 @@
 ---
 title: Modules Datadog
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez automatiser les workflows qui utilisent Datadog, ainsi que le connecter à de multiples applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Datadog et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 76%
+source-wordcount: '948'
+ht-degree: 64%
 
 ---
 
 # Modules [!DNL Datadog]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Datadog] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Datadog] et les connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,11 +81,11 @@ Le connecteur Datadog utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Connecter [!DNL Datadog] à [!DNL Workfront Fusion] {#connect-datadog-to-workfront-fusion}
+## Connecter [!DNL Datadog] à Workfront Fusion {#connect-datadog-to-workfront-fusion}
 
 ### Récupérer votre clé d’API et clé d’application {#retrieve-your-api-key-and-application-key}
 
-Pour connecter votre compte [!DNL Datadog] à [!DNL Workfront Fusion], vous devez récupérer une clé d’API et une clé d’application depuis votre compte [!DNL Datadog].
+Pour connecter votre compte [!DNL Datadog] à Workfront Fusion, vous devez récupérer une clé API et une clé d’application à partir de votre compte [!DNL Datadog].
 
 1. Connectez-vous à votre compte [!DNL Datadog].
 1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Intégrations]**, puis sur **[!UICONTROL API]**.
@@ -96,7 +96,7 @@ Pour connecter votre compte [!DNL Datadog] à [!DNL Workfront Fusion], vous deve
 1. Pointez sur la barre violette pour faire apparaître la clé d’application.
 1. Copiez la clé d’application dans un emplacement sécurisé.
 
-### Créer une connexion à [!DNL Datadog] dans [!DNL Workfront Fusion]
+### Création d’une connexion à [!DNL Datadog] dans Workfront Fusion
 
 Vous pouvez créer une connexion à votre compte [!DNL Datadog] directement à partir d’un module [!UICONTROL Datadog].
 
@@ -138,7 +138,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Datadog] directement à p
 
 ## Modules [!DNL Datadog] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Datadog], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Datadog] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Datadog], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Datadog] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -159,7 +159,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Datadog] à [!DNL Workfront Fusion], voir <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, voir <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Utiliser un domaine dédié]</td> 
@@ -217,7 +217,7 @@ La limite pour les payloads compressées est de 3,2 mégaoctets (3 200 000), 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Datadog] à [!DNL Workfront Fusion], voir <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, voir <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

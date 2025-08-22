@@ -1,13 +1,13 @@
 ---
 title: HTTP > Effectuer une requête d’autorisation de certificat client
-description: Ce module  [!DNL Adobe Workfront Fusion]  vous permet de configurer une requête HTTP avec une autorisation de certificat client HTTP et de la soumettre à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
+description: Ce module d’Adobe Workfront Fusion vous permet de configurer une requête HTTP avec l’autorisation de certificat client HTTP et de l’envoyer à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 80%
+source-wordcount: '1063'
+ht-degree: 73%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Adobe Workfront Fusion nécessite une licence [!DNL Adobe Workfront Fusion] en plus de la licence Adobe Workfront.
+>Adobe Workfront Fusion nécessite une licence Adobe Workfront Fusion en plus d’une licence Adobe Workfront.
 
-Ce module [!DNL Adobe Workfront Fusion] vous permet de configurer une requête HTTP avec une autorisation de certificat client HTTP et de la soumettre à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
+Ce module d’Adobe Workfront Fusion vous permet de configurer une requête HTTP avec l’autorisation de certificat client HTTP et de l’envoyer à un serveur. La réponse HTTP reçue est alors contenue dans le lot de sortie.
 
 >[!NOTE]
 >
@@ -64,15 +64,15 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client] configuration du module
 
-Lorsque vous configurez le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client], [!DNL Adobe Workfront Fusion] affiche les champs répertoriés ci-dessous. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client], Adobe Workfront Fusion affiche les champs répertoriés ci-dessous. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -103,7 +103,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
-   <td> <p>Utilisez cette option pour configurer la gestion des erreurs.</p> <p>Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Gestion des erreurs dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Utilisez cette option pour configurer la gestion des erreurs.</p> <p>Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Gestion des erreurs dans Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -187,7 +187,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>Par défaut, [!DNL Workfront Fusion] traite les valeurs multiples de la même clé de paramètre de chaîne de requête URL comme des tableaux. Par exemple, <code>www.test.com?foo=bar&amp;foo=baz</code> sera converti en <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Activez cette option pour désactiver cette fonction. </p> </td> 
+   <td> <p>Par défaut, Workfront Fusion gère plusieurs valeurs pour la même clé de paramètre de chaîne de requête d’URL que les tableaux. Par exemple, <code>www.test.com?foo=bar&amp;foo=baz</code> sera converti en <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Activez cette option pour désactiver cette fonction. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 

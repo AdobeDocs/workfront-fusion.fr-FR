@@ -4,16 +4,16 @@ description: Dans un scénario d’Adobe Workfront Fusion, vous pouvez automat
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 87%
+source-wordcount: '1353'
+ht-degree: 83%
 
 ---
 
 # Modules [!DNL Microsoft Word Template]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Microsoft Word Templates] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Microsoft Word Templates] et les connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,17 +58,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Conditions préalables
 
-Pour utiliser [!DNL Miscrosoft Word Templates] avec [!DNL Adobe Workfront Fusion], il est nécessaire d’avoir un compte [!DNL Office 365]. Vous pouvez en créer un au `www.office.com`.
+Pour utiliser [!DNL Miscrosoft Word Templates] avec Adobe Workfront Fusion, il est nécessaire d’avoir un compte [!DNL Office 365]. Vous pouvez en créer un au `www.office.com`.
 
 
 
-## Connexion du service [!DNL Office] à [!DNL Workfront Fusion].
+## Connexion du service [!DNL Office] à Workfront Fusion
 
 Pour obtenir des instructions sur la connexion de votre compte [!DNL Office] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 

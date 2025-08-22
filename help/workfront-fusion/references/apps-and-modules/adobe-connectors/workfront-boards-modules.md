@@ -4,14 +4,14 @@ description: Vous pouvez utiliser le connecteur de tableaux Adobe Workfront pour
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2929'
 ht-degree: 17%
 
 ---
 
-# Modules des tableaux [!DNL Adobe Workfront]
+# Modules des tableaux Adobe Workfront
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -139,7 +139,7 @@ Pour créer une connexion aux tableaux Workfront :
 
 ## Modules des tableaux Adobe Workfront et leurs champs
 
-Lorsque vous configurez les modules des tableaux Workfront, [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. D’autres champs de tableaux Workfront peuvent également s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules des tableaux Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. D’autres champs de tableaux Workfront peuvent également s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -171,7 +171,7 @@ Ce module d’action ajoute un élément de liste de contrôle à la vignette sp
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -194,7 +194,7 @@ Ce module d’action ajoute une sous-tâche à une carte dans les tableaux. La c
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID de carte parent]</td> 
@@ -221,7 +221,7 @@ Ce module d’action permet de créer une carte sur un panorama Workfront.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -248,7 +248,7 @@ Ce module d’action déplace une carte vers une autre colonne du même panorama
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -279,7 +279,7 @@ Ce module d’action récupère des informations sur une carte spécifique.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -302,7 +302,7 @@ Ce module d’action met à jour les informations d’une carte que vous spécif
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -352,7 +352,7 @@ Ce module d’action crée un panorama dans Workfront. Vous pouvez indiquer le t
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board name]</td> 
@@ -375,7 +375,7 @@ Ce module d’action renvoie des informations sur un tableau, telles que les car
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -400,7 +400,7 @@ Ce module d’action crée une colonne sur le panorama spécifié.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -427,7 +427,7 @@ Ce module de recherche renvoie des informations sur la colonne portant le nom sp
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -450,7 +450,7 @@ Ce module d&#39;action met à jour le nom ou la limite des travaux en cours de l
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -482,7 +482,7 @@ Ce module d’action ajoute une balise à une carte.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -509,7 +509,7 @@ Ce module d’action crée une balise et lui affecte une couleur.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
@@ -541,7 +541,7 @@ Ce module d’action a créé un commentaire sur la carte spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -564,7 +564,7 @@ Ce module d’action récupère les commentaires de la carte spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Card ID]</td> 
@@ -589,7 +589,7 @@ Ce module d’action effectue un appel personnalisé à l’API Workfront Boards
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -628,7 +628,7 @@ Ce module d’action envoie une requête GraphQL personnalisée à l’API Workf
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application [!DNL Workfront] aux [!DNL Workfront Fusion], voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
+      <td> <p>Vous pouvez utiliser une connexion Workfront existante pour vous connecter aux tableaux Workfront ou une connexion aux tableaux Workfront spécifique. </p><p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Création d’une connexion aux tableaux Workfront</a> dans cet article.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 

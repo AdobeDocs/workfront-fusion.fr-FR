@@ -1,19 +1,19 @@
 ---
 title: Modules Markdown
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez utiliser les modules Markdown pour convertir le format Markdown en HTML et le format HTML en Markdown.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser les modules Markdown pour convertir Markdown en HTML et HTML en Markdown.
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 69%
+source-wordcount: '285'
+ht-degree: 52%
 
 ---
 
 # Modules [!UICONTROL Markdown]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez utiliser les modules [!UICONTROL Markdown] pour convertir le format Markdown en HTML et le format HTML en Markdown.
+Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser les modules [!UICONTROL Markdown] pour convertir Markdown en HTML et HTML en Markdown.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -56,7 +56,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 92%
+source-wordcount: '1879'
+ht-degree: 90%
 
 ---
 
@@ -459,7 +459,7 @@ Si aucune unité n’est spécifiée, la fonction renvoie la différence en mill
 
 #### Comment calculer le n-ième jour de la semaine dans le mois
 
-Cette section est adaptée à [!DNL Workfront Fusion]. Elle est tirée de la page web [!DNL Exceljet] qui explique comment obtenir le n-ième jour de la semaine en un mois.
+Cette section est adaptée à Workfront Fusion à partir de la page web [!DNL Exceljet] qui explique comment obtenir le énième jour de la semaine dans un mois.
 
 Si vous devez calculer une date correspondant au n-ième jour de la semaine dans le mois (par exemple, premier mardi, troisième vendredi, etc.), vous pouvez utiliser la formule suivante :
 

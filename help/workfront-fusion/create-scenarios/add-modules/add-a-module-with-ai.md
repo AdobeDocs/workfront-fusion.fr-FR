@@ -4,10 +4,10 @@ description: Vous pouvez utiliser l’IA pour saisir une invite de texte décriv
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 10%
+source-wordcount: '635'
+ht-degree: 8%
 
 ---
 
@@ -36,17 +36,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -54,9 +54,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -64,7 +64,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,19 +73,19 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 Votre entreprise doit remplir les conditions préalables suivantes pour utiliser cette fonctionnalité :
 
 * Votre entreprise doit avoir participé au programme Beta de l’assistant d’IA pour Workfront.
-* L’Adobe doit avoir un accord IA généralisée d’Adobe signé dans un fichier pour votre organisation.
+* Adobe doit disposer d’un contrat Adobe Gen AI signé enregistré pour votre organisation.
 
-  Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/fr/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
+  Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
 
 ## Applications de module d’IA actuellement prises en charge
 
 L’IA dédiée à Fusion peut actuellement générer des modules qui se connectent aux applications suivantes :
 
-* Adobe Firefly
+* Adobe Firefly
 * Azure OpenAI
 * Graphique Microsoft
 * Planification d’Adobe Workfront
-* Adobe Analytics
+* Adobe Analytics
 * Services Adobe PDF
 * Adobe Marketo
 * Adobe Frame.io
@@ -101,7 +101,7 @@ L’IA dédiée à Fusion peut actuellement générer des modules qui se connect
 
 ## Génération de modules
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un module.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône **Assistant AI** ![icône de l’assistant AI](assets/ai-assistant-icon.png) près du coin supérieur droit de l’écran.
@@ -129,7 +129,7 @@ Les invites de texte doivent inclure au minimum les informations suivantes :
 
 >[!BEGINSHADEBOX]
 
-**Exemples** :
+**Exemples** :
 
 * `Delete the records 'xyz-123', 'xyz-456', 'xyz-789' from Adobe Workfront Planning`
 Cela inclut le `Workfront Planning` de l’application et le `delete records` d’action. Cette invite crée trois modules, un pour chaque enregistrement qui sera supprimé.

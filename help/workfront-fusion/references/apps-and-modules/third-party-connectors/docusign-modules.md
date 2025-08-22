@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 2b2030d062b5ec8c81476a8950fee3b15f96dcd2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2200'
-ht-degree: 72%
+source-wordcount: '2244'
+ht-degree: 65%
 
 ---
 
 # Modules DocuSign
 
-Les modules [!DNL Adobe Workfront Fusion] [!DNL DocuSign] vous permettent de surveiller et de récupérer le statut des enveloppes, de rechercher et de récupérer des enveloppes, ou de télécharger et d’envoyer un document pour vous connecte à votre compte [!DNL DocuSign].
+Les modules Adobe Workfront Fusion [!DNL DocuSign] vous permettent de surveiller et de récupérer le statut des enveloppes, de rechercher et de récupérer des enveloppes ou de télécharger et d’envoyer un document pour vous connecter à votre compte [!DNL DocuSign].
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -59,7 +59,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -82,7 +82,7 @@ Le connecteur DocuSign utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Connecter [!DNL DocuSign] à [!DNL Workfront Fusion] {#connect-docusign-to-workfront-fusion}
+## Connecter [!DNL DocuSign] à Workfront Fusion {#connect-docusign-to-workfront-fusion}
 
 Pour créer une connexion pour vos modules [!DNL DocuSign], procédez comme suit :
 
@@ -116,7 +116,7 @@ Pour créer une connexion pour vos modules [!DNL DocuSign], procédez comme suit
 
 ## Modules [!DNL DocuSign] et leurs champs
 
-Lorsque vous configurez les modules [!DNL DocuSign], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL DocuSign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL DocuSign], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL DocuSign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -137,7 +137,7 @@ Ce module de déclenchement lance un scénario lorsqu’une enveloppe est envoy�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de Docusign à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de Docusign à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -187,7 +187,7 @@ Ce module d’action ajoute un champ personnalisé au document.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -396,7 +396,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Account]</td> 
@@ -412,7 +412,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Cela détermine le type de contenu de la requête.</p> <p>Par exemple,<code> {"Content-type":"application/json"}</code></p> <p>Note : si vous obtenez des erreurs et qu’il est difficile de déterminer leur origine, envisagez de modifier les en-têtes en fonction de la documentation [!DNL Workfront]. Si votre appel API personnalisé renvoie une erreur de requête HTTP 422, essayez d’utiliser un en-tête « Content-Type:text/plain ».</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Cela détermine le type de contenu de la requête.</p> <p>Par exemple,<code> {"Content-type":"application/json"}</code></p> <p>Remarque : si vous obtenez des erreurs et qu’il est difficile de déterminer leur origine, pensez à modifier les en-têtes en vous basant sur la documentation de Workfront. Si votre appel API personnalisé renvoie une erreur de requête HTTP 422, essayez d’utiliser un en-tête « Content-Type:text/plain ».</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Query String]</td> 
@@ -470,7 +470,7 @@ Ce module d’action télécharge un seul document.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -521,7 +521,7 @@ Ce module d’action modifie un champ personnalisé à l’aide du nom du champ.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -564,7 +564,7 @@ Ce module d’action lit des informations sur une enveloppe dans [!DNL DocuSign]
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -591,7 +591,7 @@ Ce module d’action envoie un brouillon d’enveloppe à ses personnes destinat
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -614,7 +614,7 @@ Ce module charge un fichier spécifié dans une enveloppe existante dans DocuSig
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à [!DNL Workfront Fusion], voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td>
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, voir <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 

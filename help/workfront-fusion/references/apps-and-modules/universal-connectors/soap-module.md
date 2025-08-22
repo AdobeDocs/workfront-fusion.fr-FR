@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le module SOAP pour vous connecter aux API SOA
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 64%
+source-wordcount: '681'
+ht-degree: 60%
 
 ---
 
@@ -64,13 +64,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Module SOAP et ses champs
 
-Lorsque vous configurez des modules SOAP, [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous.  Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez des modules SOAP, Workfront Fusion affiche les champs répertoriés ci-dessous.  Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -145,7 +145,7 @@ Cet exemple inclut les références `soapenc:Array`, `soapenc:arrayType` et `wsd
 
 Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie diverses erreurs dans la configuration du module, vous pouvez essayer d’utiliser le module universel **[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]** à la place :
 
-1. Dans [!DNL Workfront Fusion], créez un scénario.
+1. Dans Workfront Fusion, créez un scénario.
 1. Insérez le module **[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]** dans le scénario.
 1. Ouvrez la configuration du module et renseignez les champs suivants :
 
@@ -185,7 +185,7 @@ Si le module [!UICONTROL SOAP] refuse de traiter le fichier WSDL ou renvoie di
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Une fois localisée, copiez l’URL à partir de l’attribut `location`.
-1. Dans [!DNL Workfront Fusion], collez l’URL dans le champ URL du module HTTP.
+1. Dans Workfront Fusion, collez l’URL dans le champ URL du module HTTP .
 1. Ouvrez le [Client [!UICONTROL SOAP] en ligne](https://wsdlbrowser.com/) dans une nouvelle fenêtre ou un nouvel onglet du navigateur web.
 1. Collez l’URL WSDL dans le champ URL WSDL.
 1. Cliquez sur **[!UICONTROL Parcourir]**.

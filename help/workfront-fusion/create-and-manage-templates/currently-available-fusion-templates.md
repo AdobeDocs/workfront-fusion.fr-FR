@@ -4,10 +4,10 @@ description: Les modèles publics suivants sont actuellement disponibles dans Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: d504b5ebd649953395f804d7349f3c5a281eef68
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 75%
+source-wordcount: '1526'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ Pour afficher les modèles disponibles, cliquez sur l’icône **Modèles** ![Ic
 
 Ces modèles permettent l’automatisation des processus et des workflows Workfront.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
+### [!BADGE Nouveau ! ]{type=Informative} Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Si votre équipe a du mal à maintenir l’élan parce que les chronologies de p
 
 Ce modèle Fusion automatise ce processus. Lorsqu’une tâche est terminée de manière anticipée, toutes les tâches dépendantes (du successeur) sont automatiquement replanifiées pour commencer plus tôt, ce qui permet à votre équipe d’avancer plus rapidement et de rester agile.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
+### [!BADGE Nouveau ! ]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
 
 Téléchargez les informations d’abonnement aux événements, créez un fichier CSV, puis chargez le fichier dans Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} les tableaux Workfront - Supprimez les cartes archivées de la colonne désignée (à la demande).
+### [!BADGE Nouveau ! ]{type=Informative} les tableaux Workfront - Supprimez les cartes archivées de la colonne désignée (à la demande).
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Une fois par mois, passez en revue vos modèles de projet en appliquant votre pr
 
 Ces modèles automatisent les workflows qui associent Workfront et Workfront Proof.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
+### [!BADGE Nouveau ! ]{type=Informative} Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ Ce modèle vous permet de voir s’il y a un changement dans un dossier SharePoi
 
 Ces modèles prennent en charge l’intégration Workfront-Anaplan et attendent une configuration spécifique à la fois dans Anaplan et Workfront. Pour plus d’informations sur ces modèles et leurs configurations requises, voir les articles relatifs aux différents modèles.
 
-Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Adobe Workfront avec Anaplan](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) dans la documentation de Workfront.
+Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Adobe Workfront avec Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) dans la documentation de Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +192,19 @@ Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Ad
 
 ### Workflows d’optimisation des dépenses
 
-* [Envoyer des mises à jour de projet  [!DNL Adobe Workfront]  à un élément de liste  [!DNL Anaplan] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Envoyer des dépenses  [!DNL Adobe Workfront]  à un élément de liste  [!DNL Anaplan] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Envoyer les mises à jour des heures effectives  [!DNL Adobe Workfront]  à un élément de liste  [!DNL Anaplan] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Envoyer des mises à jour de projet Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Envoyer les dépenses Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Envoyer des mises à jour des heures effectives Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Workflows de liaison de demandes de budget
 
-* [Créer un élément de liste  [!DNL Anaplan]  à partir d’une demande de budget  [!DNL Adobe Workfront] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Appliquer une allocation de budget  [!DNL Anaplan]  à un projet  [!DNL Adobe Workfront] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Créer un élément  [!DNL Anaplan]  liste à partir d’une demande de budget Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Appliquer une allocation  [!DNL Anaplan]  budget à un projet Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Workflows de liaison de demandes de campagne
 
-* [Créer un élément de liste  [!DNL Anaplan]  à partir d’une demande de campagne  [!DNL Adobe Workfront] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Appliquer une allocation de budget  [!DNL Anaplan]  à une demande ou un projet de campagne  [!DNL Adobe Workfront] ](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Création d’un élément  [!DNL Anaplan]  liste à partir d’une requête de campagne Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Appliquer une allocation  [!DNL Anaplan]  budget à une demande de campagne ou à un projet de campagne Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->

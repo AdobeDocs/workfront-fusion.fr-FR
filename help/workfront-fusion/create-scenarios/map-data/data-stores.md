@@ -1,13 +1,13 @@
 ---
-title: Entrepôts de données dans  [!DNL Adobe Workfront Fusion]
+title: Magasins de données dans Adobe Workfront Fusion
 description: Un entrepôt de données, comparable à une base de données ou à un simple tableau, peut conserver des informations de scénarios, facilitant ainsi le transfert de données entre divers scénarios ou exécutions de scénarios. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 71%
+source-wordcount: '1344'
+ht-degree: 77%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 71%
 
 Un entrepôt de données, comparable à une base de données ou à un simple tableau, peut conserver des informations de scénarios, facilitant ainsi le transfert de données entre divers scénarios ou exécutions de scénarios. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 
-Les modules d’entrepôt de données vous permettent d’effectuer les actions suivantes sur les enregistrements de votre entrepôt de données [!DNL Adobe Workfront Fusion] :
+Les modules d’entrepôt de données vous permettent d’effectuer les actions suivantes sur les enregistrements de votre entrepôt de données Adobe Workfront Fusion :
 
 * Ajouter
 * Remplacer
@@ -25,7 +25,7 @@ Les modules d’entrepôt de données vous permettent d’effectuer les actions 
 * Recherche
 * Nombre
 
-Pour plus d’informations sur l’utilisation des modules de magasin de données, voir [[!UICONTROL Data store] des modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
+Pour plus d’informations sur l’utilisation des modules de l’entrepôt de données, consultez les [[!UICONTROL modules Entrepôt de données]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 Pour une vidéo de présentation des entrepôts de données dans Workfront Fusion, voir :
 
@@ -42,17 +42,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -60,9 +60,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -70,7 +70,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez les [[!DNL Adobe Workfront Fusion] licences](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,7 +87,7 @@ Les instances de fusion avec le package Ultimate reçoivent ce qui suit :
 
 ### Formules Select et Prime
 
-Les instances de Fusion avec les packages Select ou Prime reçoivent ce qui suit :
+Les instances Fusion sur les packages Select ou Prime reçoivent :-->
 
 * 100 Mo pour les 500 000 premières opérations.
 
@@ -97,27 +97,27 @@ Les instances de Fusion avec les packages Select ou Prime reçoivent ce qui suit
 
 Votre organisation peut posséder jusqu’à 50 entrepôts de données. La taille combinée de ces entrepôts de données ne peut pas dépasser la taille totale des entrepôts de données de votre organisation.
 
-## Créer un entrepôt de données dans [!DNL Workfront Fusion]
+## Création d’un magasin de données dans Workfront Fusion
 
 * [Configurer l’entrepôt de données](#set-up-the-data-store)
 * [Configurer la structure de données](#set-up-the-data-structure)
 
 ### Configurer l’entrepôt de données
 
-Avant de pouvoir utiliser un entrepôt de données dans un module, vous devez créer l’entrepôt de données dans [!DNL Workfront Fusion].
+Avant de pouvoir utiliser un magasin de données dans un module, vous devez le créer dans Workfront Fusion.
 
 >[!NOTE]
 >
->Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de banques de données que vous n’en avez disponibles, [!DNL Workfront] renvoie une erreur [!UICONTROL Maximum stores reached].
+>Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL  Le nombre maximum de magasins a atteint ].
 >
 >Pour plus d’informations, consultez dans cet article la section [Erreur Maximum d’entrepôts atteint](#maximum-stores-reached-error).
 
-1. Connectez-vous à votre compte [!DNL Workfront Fusion].
-1. Cliquez sur **[!UICONTROL Data stores]** dans le panneau de navigation de gauche.
-1. Cliquez sur **[!UICONTROL Add data store]** dans le coin supérieur droit de l’écran.
+1. Connectez-vous à votre compte Workfront Fusion.
+1. Cliquez sur **[!UICONTROL Entrepôts de données]** dans le panneau de navigation de gauche.
+1. Cliquez sur **[!UICONTROL Ajouter un entrepôt de données]** dans le coin supérieur droit de l’écran.
 1. Saisissez les paramètres du nouvel entrepôt de données.
 
-   Un titre en gras dans un module [!DNL Workfront Fusion] indique un paramètre obligatoire.
+   Un titre en gras sur un champ d’un module Workfront Fusion indique un paramètre obligatoire.
 
    <table style="table-layout:auto">
     <col> 
@@ -145,8 +145,8 @@ Avant de pouvoir utiliser un entrepôt de données dans un module, vous devez cr
 
 ### Configurer la structure de données
 
-1. Lors de la création ou de la modification d’un magasin de données, cliquez sur **[!UICONTROL Add]**.
-1. Dans la zone de **[!UICONTROL Add data structure]** qui s’affiche, configurez les champs suivants :
+1. Lors de la création ou de la modificationd’ un entrepôt de données, cliquez sur **[!UICONTROL Ajouter]**.
+1. Dans la zone **[!UICONTROL Ajouter une structure de données]** qui s’affiche, configurez les champs suivants :
 
    <table style="table-layout:auto">
     <col> 
@@ -160,11 +160,11 @@ Avant de pouvoir utiliser un entrepôt de données dans un module, vous devez cr
       <td> <p>[!UICONTROL Specification]</p> </td> 
       <td> <p>Pour configurer les colonnes de votre entrepôt de données, effectuez l’une des opérations suivantes :</p> 
        <ul> 
-        <li> <p>Cliquez sur <strong>[!UICONTROL Add item]</strong> pour spécifier manuellement les propriétés d’une colonne.</p> <p>Saisissez les <strong>[!UICONTROL Name]</strong> et <strong>[!UICONTROL Type]</strong> de la colonne de magasin de données et définissez les propriétés correspondantes.</p> </li> 
-        <li> <p>Cliquez sur <strong>[!UICONTROL Generator]</strong> pour déterminer les colonnes à partir des exemples de données que vous fournissez.</p> 
+        <li> <p>Cliquez sur <strong>[!UICONTROL Add item]</strong> pour spécifier manuellement les propriétés d’une colonne.</p> <p>Saisissez le <strong>[!UICONTROL Name]</strong> et le <strong>[!UICONTROL Type]</strong> pour la colonne de l’entrepôt de données et définissez les propriétés correspondantes.</p> </li> 
+        <li> <p>Cliquez sur <strong>[!UICONTROL Generator]</strong> pour déterminer les colonnes depuis les données d’exemple que vous fournissez.</p> 
          <div class="example" data-mc-autonum="<b>Example: </b>">
           <span class="autonumber"><span><b>Exemple :</b></span></span> 
-          <p>Par exemple, les exemples de données JSON suivants créent trois colonnes : nom, âge et numéro de téléphone. Le numéro de téléphone est un ensemble de numéros de téléphone mobile et fixe.</p> 
+          <p>Par exemple, les données d’exemple JSON suivantes créent trois colonnes : nom, âge et numéro de téléphone. Le numéro de téléphone est un ensemble de numéros de téléphone mobile et fixe.</p> 
           <p><code>&lbrace;</code> </p> 
           <p><code>"name":"John",</code> </p> 
           <p><code>"age":30,</code> </p> 
@@ -175,7 +175,7 @@ Avant de pouvoir utiliser un entrepôt de données dans un module, vous devez cr
           <p><code>&rbrace;</code> </p> 
           <p>Colonnes vides dans la vue d’entrepôt de données :</p> 
           <p> <img src="assets/empty-columns-350x132.png" style="width: 350;height: 132;"> </p> 
-          <p>Vous pouvez ajouter des valeurs au magasin de données manuellement ou à l’aide des modules de magasin de données [!DNL Workfront Fusion].</p> 
+          <p>Vous pouvez ajouter des valeurs à l’entrepôt de données manuellement ou à l’aide des modules d’entrepôt de données Workfront Fusion.</p> 
          </div> </li> 
        </ul> </td> 
      </tr> 
@@ -188,7 +188,7 @@ Avant de pouvoir utiliser un entrepôt de données dans un module, vous devez cr
 
 ## Modifier un magasin de données existant
 
-Vous pouvez modifier les propriétés et le contenu d’un magasin de données existant dans la zone [!UICONTROL Data stores] de [!DNL Workfront Fusion].
+Vous pouvez modifier les propriétés et le contenu d’un magasin de données existant dans la zone [!UICONTROL Magasins de données] de Workfront Fusion.
 
 * [Modifier les propriétés d’un magasin de données](#edit-the-properties-of-a-data-store)
 * [Modifier le contenu d’un magasin de données](#edit-the-contents-of-a-data-store)
@@ -197,25 +197,25 @@ Vous pouvez modifier les propriétés et le contenu d’un magasin de données e
 
 Les propriétés d’un magasin de données incluent la structure de données utilisée par le magasin de données, ainsi que la taille du magasin de données.
 
-1. Cliquez sur **[!UICONTROL Data stores]** ![icône du magasin de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data stores].
-1. Cliquez sur **[!UICONTROL Edit]** ![Modifier le magasin de données](assets/data-store-edit.png) en regard du magasin de données à modifier.
-1. (Facultatif) Si vous souhaitez modifier la structure de données utilisée par ce magasin de données en une autre structure de données existante, sélectionnez-la dans la liste déroulante **[!UICONTROL Data structure]**.
+1. Cliquez sur **[!UICONTROL Entrepôts de données]** ![icône d’entrepôt de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone [!UICONTROL Entrepôts de données].
+1. Cliquez sur **[!UICONTROL Modifier]** ![Modifier le magasin de données](assets/data-store-edit.png) en regard du magasin de données à modifier.
+1. (Facultatif) Si vous souhaitez remplacer la structure de données utilisée par ce magasin de données par une autre structure de données existante, sélectionnez-la dans le menu déroulant **[!UICONTROL Structure des données]**.
 
    Ou
 
    (Facultatif) Si vous souhaitez modifier la structure de données utilisée par ce magasin de données en une structure de données entièrement nouvelle, consultez dans cet article la section [Configurer la structure des données](#set-up-the-data-structure).
 
-1. (Facultatif) Modifiez la taille de l’entrepôt de données en saisissant la nouvelle taille dans le champ **[!UICONTROL Data storage size in MB]**.
-1. Cliquez sur **[!UICONTROL Save]**.
+1. (Facultatif) Modifiez la taille du magasin de données en saisissant la nouvelle taille dans le champ **[!UICONTROL Taille de stockage des données en Mo]**.
+1. Cliquer sur **[!UICONTROL Enregistrer]**.
 
 ### Modifier le contenu d’un magasin de données
 
-1. Cliquez sur l’icône **[!UICONTROL Data Store]** ![icône du magasin de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Data Store].
-1. Cliquez sur **[!UICONTROL Browse]** en regard du magasin de données à modifier.
+1. Cliquez sur l’icône **[!UICONTROL Entrepôt de données]** ![icône d’entrepôt de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone [!UICONTROL Entrepôt de données].
+1. Cliquez sur **[!UICONTROL Parcourir]** à côté du magasin de données que vous souhaitez modifier.
 1. (Facultatif) Réorganisez les colonnes en les faisant glisser à l’emplacement souhaité.
-1. (Facultatif) [!UICONTROL Edit] une seule cellule en cliquant sur l’icône **[!UICONTROL Edit]** dans cette cellule, puis en saisissant la valeur souhaitée.
-1. (Facultatif) Ajoutez un nouvel élément au magasin de données en cliquant sur **[!UICONTROL Add]**, puis saisissez les informations pour le nouvel élément.
-1. Cliquez sur **[!UICONTROL Save]**.
+1. (Facultatif) [!UICONTROL Modifiez] une seule cellule en cliquant sur l’icône **[!UICONTROL Modifier]** dans cette cellule, puis saisissez la valeur souhaitée.
+1. (Facultatif) Ajoutez un nouvel élément au magasin de données en cliquant sur **[!UICONTROL Ajouter]**, puis saisissez les informations du nouvel élément.
+1. Cliquer sur **[!UICONTROL Enregistrer]**.
 
 ## Dépannage
 
@@ -238,9 +238,9 @@ Il n’existe actuellement aucun outil capable d’automatiser la restauration d
 
    Pour plus d’informations sur l’insertion de données dans un magasin de données, consultez dans cet article la section [Modifier le contenu d’un magasin de données](#edit-the-contents-of-a-data-store).
 
-### erreur [!UICONTROL Out of space]
+### Erreur [!UICONTROL Espace insuffisant]
 
-Une erreur [!UICONTROL Out of Space] se produit, car les magasins de données créés précédemment se sont déjà vus attribuer le stockage de magasin de données qui vous a été alloué.
+Une erreur [!UICONTROL Espace insuffisant] s’affiche, car les magasins de données que vous avez créés précédemment ont déjà été attribués à votre stockage de données alloué.
 
 #### Solution de contournement
 
@@ -252,9 +252,9 @@ Une erreur [!UICONTROL Out of Space] se produit, car les magasins de données cr
 >
 >Nous vous recommandons de ne pas affecter tout votre espace à un seul magasin de données, sauf si vous avez la certitude que vous n’aurez pas besoin d’autres magasins de données.
 
-### erreur [!UICONTROL Maximum stores reached]
+### Erreur [!UICONTROL Nombre maximum de magasins atteint]
 
-Une erreur [!UICONTROL Maximum stores reached] se produit, car votre organisation a utilisé tous ses magasins de données disponibles.
+Une erreur [!UICONTROL Nombre maximal de magasins atteint] se produit, car votre organisation a utilisé tous ses magasins de données disponibles.
 
 #### Solution de contournement
 

@@ -4,10 +4,10 @@ description: L’application XML vous permet d’analyser un texte au format XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 87%
+source-wordcount: '1448'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -107,7 +107,7 @@ Un cas d’utilisation type consiste à transformer des données d’une feuille
 
    La configuration du module nécessite une structure de données qui décrit la structure de la sortie XML. Cliquez sur le bouton **[!UICONTROL Ajouter]** pour ouvrir la configuration de la structure de données. La méthode la plus simple pour créer cette structure de données consiste à la générer automatiquement à partir d’un exemple XML.
 
-1. Cliquez sur le bouton **[!UICONTROL Générateur]** et collez votre exemple XML dans le champ [!UICONTROL Exemples de données] :
+1. Cliquez sur le bouton **[!UICONTROL Générateur]** et collez votre exemple XML dans le champ [!UICONTROL Données d’exemple] :
 
    ![Exemple de champ de données](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 

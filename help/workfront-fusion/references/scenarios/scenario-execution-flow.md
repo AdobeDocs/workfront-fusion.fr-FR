@@ -5,10 +5,10 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '769'
+ht-degree: 25%
 
 ---
 
@@ -28,11 +28,11 @@ Si le module de déclenchement renvoie des lots de données, ces lots sont trans
 
 Si les lots sont traités correctement par tous les modules, le scénario est marqué comme réussi dans la page des détails du scénario.
 
-### Exemple : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation du travail]
+### Exemple : [!UICONTROL Workfront Fusion for Work Automation]
 
 >[!BEGINSHADEBOX]
 
-**Exemple :** dans ce scénario, qui surveille les requêtes entrantes dans [!DNL Workfront], puis les convertit en projets [!DNL Workfront], les données sont transmises comme suit :
+**Exemple :** dans ce scénario, qui surveille les requêtes entrantes dans Workfront, puis les convertit en projets Workfront, les données sont transmises comme suit :
 
 La première étape du scénario, réalisée par le premier module, consiste à surveiller les demandes. Chaque requête qu’il détecte est considérée comme un lot. Si le module s’exécute sans trouver de lot, le scénario se termine après le premier module.
 
@@ -42,11 +42,11 @@ Si le premier module renvoie un lot, le lot passe par le reste du scénario. Dan
 
 >[!ENDSHADEBOX]
 
-### Exemple : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail]
+### Exemple : [!UICONTROL Workfront Fusion pour l&#39;automatisation et l&#39;intégration du travail]
 
 >[!BEGINSHADEBOX]
 
-**Exemple :** dans ce scénario, qui télécharge des documents depuis [!DNL Adobe Workfront] et les envoie vers un dossier dans [!DNL Dropbox], les données sont transmises comme suit :
+**Exemple :** dans ce scénario, qui télécharge des documents depuis Adobe Workfront et les envoie vers un dossier dans [!DNL Dropbox], les données sont transmises comme suit :
 
 La première étape du scénario, effectuée par le premier module, consiste à rechercher des documents dans Workfront. Chaque document trouvé est considéré comme un lot. Si le module s’exécute sans trouver de lot, le scénario se termine après le premier module.
 

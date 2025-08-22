@@ -7,10 +7,10 @@ description: Découvrez comment ajouter une fonction pour mettre à jour une tâ
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 11%
+source-wordcount: '609'
+ht-degree: 9%
 
 ---
 
@@ -33,17 +33,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -51,9 +51,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +61,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -74,8 +74,8 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 ### Ajoutez le module Mettre à jour l’enregistrement à votre scénario
 
 1. Ouvrez le scénario dans l’éditeur de scénarios.
-1. Pointez sur le cercle partiel à droite du du deuxième module, puis cliquez sur **[!UICONTROL Add another module]**.
-1. Sélectionnez [!DNL Adobe Workfront] dans la liste des applications, puis choisissez le module **[!UICONTROL Update Record]**.
+1. Pointez sur le cercle partiel à droite du du deuxième module, puis cliquez sur **[!UICONTROL Ajouter un autre module]**.
+1. Sélectionnez Adobe Workfront dans la liste des applications, puis choisissez le module **[!UICONTROL Mettre à jour l&#39;enregistrement]**.
 1. Dans le champ ID , sélectionnez le bloc d’ID situé sous le module Convertir l’objet . Il s’agit de l’identifiant du projet qui a été généré par ce module.
 
    ![ID de l’objet Convert](assets/id-convert-object.png)
@@ -117,7 +117,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
 1. Lorsque vous êtes convaincu que le scénario fonctionne comme prévu, cliquez sur le bouton (bascule) **Planification** dans le coin inférieur gauche de l’écran pour **Activé**.
 
    Le scénario est alors activé. Les scénarios actifs s’exécutent selon le planning défini dans le module de déclenchement.
-1. Dans [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Save]** près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
+1. Dans Workfront Fusion, cliquez sur **[!UICONTROL Enregistrer]** près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
 
    >[!IMPORTANT]
    >

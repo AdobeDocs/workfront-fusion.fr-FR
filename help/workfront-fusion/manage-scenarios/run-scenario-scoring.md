@@ -4,10 +4,10 @@ description: L’expert en notation de scénario peut vous aider à vous assurer
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 20%
+source-wordcount: '391'
+ht-degree: 14%
 
 ---
 
@@ -30,17 +30,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,16 +48,16 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations du niveau d’accès*</td> 
    <td> 
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre organisation.</p>
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre équipe.</p>
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -67,13 +67,13 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Exécuter l’expert en notation de scénario
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez exécuter l’expert en notation de scénario.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur l’icône d’expert en notation de scénario ![expert en notation de scénario](assets/scoring-expert-icon.png) en bas de l’écran.
@@ -99,4 +99,4 @@ L’expert en notation de scénario effectue les vérifications suivantes :
   Pour plus d’informations, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios).
 * Si un module de déclenchement instantané Workfront est utilisé, il doit être filtré.
 
-  Pour obtenir des instructions, voir [Filtres d’abonnement aux événements dans le module  [!DNL Workfront] > [!UICONTROL Watch Events]](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules).
+  Pour plus d’informations, consultez la section [Filtres d’abonnement aux événements du module Workfront > [!UICONTROL Événements Espion]](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules).

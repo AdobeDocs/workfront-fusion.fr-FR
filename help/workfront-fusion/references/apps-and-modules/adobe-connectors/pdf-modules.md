@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4128'
-ht-degree: 91%
+source-wordcount: '4145'
+ht-degree: 89%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Avec les [!DNL Adobe PDF Services] [!DNL Adobe Workfront Fusion], vous pouvez extraire des données d’un fichier PDF ou générer un nouveau fichier PDF à partir des données que vous fournissez. Vous pouvez également convertir divers types de fichiers en PDF ou des PDF en d’autres types de fichiers. Les services PDF vous permettent également de combiner, de compresser ou de lire les métadonnées d’un fichier PDF, ainsi que de contrôler la protection par mot de passe du fichier.
+Avec Adobe Workfront Fusion [!DNL Adobe PDF Services], vous pouvez extraire des données d’un fichier PDF ou générer un nouveau fichier PDF à partir des données que vous fournissez. Vous pouvez également convertir divers types de fichiers en PDF ou des PDF en d’autres types de fichiers. Les services PDF vous permettent également de combiner, de compresser ou de lire les métadonnées d’un fichier PDF, ainsi que de contrôler la protection par mot de passe du fichier.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -24,7 +24,7 @@ Pour plus d’informations sur l’API utilisée pour les services PDF, voir [AP
 
 ## Remarques de sécurité lors de l’utilisation des [!DNL Adobe PDF Services]
 
-Les [!DNL Adobe PDF Services] peuvent lire, convertir ou modifier vos fichiers, mais ni [!DNL Adobe] ni [!DNL Workfront Fusion] ne stocke vos fichiers ou données. Cela signifie que :
+Le [!DNL Adobe PDF Services] peut lire, convertir ou modifier vos fichiers, mais ni [!DNL Adobe] ni Workfront Fusion ne stockent vos fichiers ou données. Cela signifie que :
 
 * Vous conservez le contrôle de vos fichiers, y compris de leur sécurité.
 * Vous n’avez pas besoin d’avoir un compte de stockage ou de stockage dans le cloud [!UICONTROL Adobe] pour utiliser les PDF Services.
@@ -68,7 +68,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -174,9 +174,9 @@ Pour créer une connexion pour vos modules [!DNL Adobe PDF Services], procédez 
 1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
-## Modules et champs [!DNL Adobe PDF Services]
+## Modules [!DNL Adobe PDF Services] et leurs champs
 
-Lorsque vous configurez [!DNL PDF Services], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez [!DNL PDF Services], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -577,7 +577,7 @@ Renseignez les champs du module [!UICONTROL Générer un document] comme suit :
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> <p>Ce fichier source est le modèle de [!DNL Microsoft Word] utilisé par le module pour générer le nouveau PDF.</p> <p>Nous vous recommandons de créer un projet dans [!DNL Workfront] pour les modèles [!DNL Microsoft Word] que vous utilisez dans [!DNL Workfront Fusion]. Vous pouvez ensuite utiliser le module [!DNL Workfront] &gt; [!UICONTROL Download document] pour extraire le modèle approprié dans votre scénario.</p> </td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> <p>Ce fichier source est le modèle de [!DNL Microsoft Word] utilisé par le module pour générer le nouveau PDF.</p> <p>Nous vous recommandons de créer un projet dans Workfront pour les modèles de [!DNL Microsoft Word] que vous utilisez dans Workfront Fusion. Vous pouvez ensuite utiliser le module Workfront &gt; [!UICONTROL Download document] pour extraire le modèle approprié dans votre scénario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 

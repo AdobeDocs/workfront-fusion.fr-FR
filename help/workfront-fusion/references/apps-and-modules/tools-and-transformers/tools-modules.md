@@ -4,9 +4,9 @@ description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2292'
 ht-degree: 86%
 
 ---
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -254,7 +254,7 @@ Cette fonction peut s’avérer utile, par exemple, si vous souhaitez réduire l
 >
 >Le premier scénario consiste à stocker toutes les informations nécessaires dans un entrepôt de données, ainsi que la date et l’heure actuelles. Le deuxième scénario recherche périodiquement dans l’entrepôt de données des enregistrements dont la date et l’heure sont antérieures au retard prévu, récupère les enregistrements, finalise le traitement des données et supprime les enregistrements de l’entrepôt de données.
 >
-><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
+><!--For more information on data stores, see [Data Stores in Adobe Workfront Fusion]().-->
 >
 >Pour plus d’informations sur des modules d’entrepôt de données spécifiques, voir [[!UICONTROL modules d’entrepôt de données]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 

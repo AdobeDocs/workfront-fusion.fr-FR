@@ -4,10 +4,10 @@ description: Fusion utilise des adresses IP et des domaines spécifiques pour la
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 49%
+source-wordcount: '550'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,7 @@ Comme Adobe Workfront Fusion communique avec le réseau de votre entreprise, le 
 
 Pour ce faire, il vous faut une liste autorisée, qui est pour ainsi dire une « liste » des sites « autorisés » à envoyer ou recevoir des données par le biais du pare-feu. Les sites peuvent être identifiés de deux façons :
 
-* **Adresse IP** : une série de nombres comme 52.31.132.175.
+* **adresse IP** : une série de nombres tels que 52.31.132.175
 * **Domaine** : partie d’une URL, telle que `thisdomain` dans `www.thisdomain.com`
 
 Fusion utilise des adresses IP et des domaines spécifiques pour la communication web. Ces éléments doivent être ajoutés à la liste autorisée de votre entreprise pour que vous puissiez utiliser Workfront dans votre organisation.
@@ -82,7 +82,7 @@ Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centre de données de l’UE</td> 
+   <td role="rowheader">Centre de données de l’UE Adobe Workfront</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Centre de données des États-Unis</p> </td> 
+   <td role="rowheader"> <p>Centre de données des États-Unis Adobe Workfront</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] sur le cluster Microsoft Azure</td> 
+   <td role="rowheader">Adobe Workfront Fusion sur le cluster Microsoft Azure</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ De même, si votre entreprise utilise le filtrage de réseau sortant, ajoutez le
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centre de données de l’UE</td> 
+   <td role="rowheader">Centre de données de l’UE Adobe Workfront</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Centre de données des États-Unis</p> </td> 
+   <td role="rowheader"> <p>Centre de données des États-Unis Adobe Workfront</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] sur le cluster Microsoft Azure</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront Fusion sur le cluster Microsoft Azure</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

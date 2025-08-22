@@ -4,20 +4,20 @@ description: Cet article contient des informations sur l’accès et les autoris
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 94%
+source-wordcount: '396'
+ht-degree: 88%
 
 ---
 
 # Rôles de l’organisation et de l’équipe
 
-Cet article décrit l’accès et les fonctionnalités disponibles pour les différents rôles des équipes et des organisations dans [!DNL Workfront Fusion].
+Cet article décrit l’accès et les fonctionnalités disponibles pour les différents rôles d’équipe et d’organisation dans Workfront Fusion.
 
 >[!NOTE]
 >
->Dans [!DNL Workfront Fusion], les rôles des organisations et des équipes sont distincts. Pour plus d’informations sur les rôles des organisations et des équipes, voir [ Présentation des organisations et des équipes ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [ Présentation des organisations et des équipes ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Rôles d’organisation
 

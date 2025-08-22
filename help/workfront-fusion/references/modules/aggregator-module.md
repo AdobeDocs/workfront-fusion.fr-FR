@@ -4,14 +4,14 @@ description: Un module d’agrégation est un type de module conçu pour fusionn
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 14%
+source-wordcount: '833'
+ht-degree: 17%
 
 ---
 
-# Module [!UICONTROL Aggregator]
+# Module d’[!UICONTROL Agrégation]
 
 Un module agrégateur est un module qui fusionne plusieurs lots de données en un seul lot.
 
@@ -26,17 +26,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+    <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
    <td> Nouveau : Standard<p>Ou</p><p>Actuellement : Travail ou licence supérieure</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licence</td> 
+   <td role="rowheader">Licence [!UICONTROL Adobe Workfront Fusion]</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -44,29 +44,29 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [[!DNL Adobe Workfront Fusion] licences](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Présentation du module [!UICONTROL Aggregator]
+## Présentation du module [!UICONTROL Agrégateur]
 
-Lorsqu’un module [!UICONTROL Aggregator] s’exécute, il effectue les opérations suivantes :
+Lorsqu’un module d’[!UICONTROL Agrégation] s’exécute, il effectue les opérations suivantes :
 
 * Cumule tous les lots à partir de l’opération d’un seul module source.
-* Génère un lot unique avec un tableau contenant un élément par lot accumulé. Le contenu des éléments du tableau dépend du module de [!UICONTROL Aggregator] particulier et de sa configuration.
+* Génère un lot unique avec un tableau contenant un élément par lot accumulé. Le contenu des éléments du tableau dépend du module [!UICONTROL Agrégateur] particulier et de sa configuration.
 
-L’image suivante présente une configuration type du module [!UICONTROL Aggregator] :
+L’illustration suivante présente une configuration standard du module d’[!UICONTROL Agrégation] :
 
 ![Agrégateur de tableau](assets/array-aggregator.png)
 
@@ -77,12 +77,12 @@ L’image suivante présente une configuration type du module [!UICONTROL Aggreg
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
    <td> <p>Module où commence l’agrégation des lots. Le module source est généralement un itérateur ou un module de recherche qui génère une série de lots.</p><p>Lorsque vous configurez le module source de l’agrégateur (et fermez la configuration de l’agrégateur), l’itinéraire entre le module source et le module d’agrégateur est enveloppé dans une zone grise, de sorte que vous pouvez voir clairement le début et la fin de l’agrégation. 
-   </p> <p>Pour plus d’informations sur les itérateurs, consultez <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module </a>.</p> 
+   </p> <p>Pour plus d'informations sur les itérateurs, consultez <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref"> module [!UICONTROL Iterator]</a>.</p> 
    <p>Pour plus d’informations sur les modules de recherche, voir <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">Modules de recherche</a> dans la présentation des modules.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Applicable uniquement au module [!UICONTROL Array aggregator].)</p> </td> 
-   <td> <p> Structure cible dans laquelle les données sont agrégées. L’option par défaut, [!UICONTROL Custom], vous permet de choisir les éléments qui doivent être agrégés dans l’élément <code>Array </code> du lot de sortie du [!UICONTROL Array aggregator] :</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>Une fois que vous avez connecté d’autres modules après le module [!UICONTROL Array aggregator] et que vous êtes revenu à la configuration du module d’agrégation, le menu déroulant Type de structure de [!UICONTROL Target] contient tous les modules suivants et leurs champs qui sont de type « Tableau de collections ». <p>Dans cet exemple, le champ [!UICONTROL Attachments] du module [!DNL Slack] &gt; [!UICONTROL Create a Message] s’affiche dans le champ Agrégateur de tableaux &gt; Type de structure de la cible . </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
+   <td> <p> Structure cible dans laquelle les données sont agrégées. L'option par défaut, [!UICONTROL Custom], vous permet de choisir les éléments qui doivent être agrégés dans l'élément <code>Array </code> du lot de sortie de l'[!UICONTROL Array aggregator] :</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>Après avoir connecté d’autres modules après le module [!UICONTROL Array aggregator], et renvoyé à la configuration du module d’agrégation, le menu déroulant de type de structure [!UICONTROL Target] contient tous les modules suivants et leurs champs qui sont de type « Tableau de collections ». <p>Dans cet exemple, le champ [!UICONTROL Attachments] du module [!DNL Slack] &gt;[!UICONTROL Create a Message] s’affiche dans le champ Agrégateur de tableaux &gt; Type de structure cible . </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggregated fields]</td> 
@@ -99,34 +99,34 @@ L’image suivante présente une configuration type du module [!UICONTROL Aggreg
   </tr> 
   <tr> 
    <td> <p>Arrêter le traitement après une agrégation vide</p> </td> 
-   <td> <p>Par défaut, le module [!UICONTROL Aggregator] génère le résultat de l’agrégation même si aucun lot n’a atteint le module [!UICONTROL Aggregator] (par exemple, parce qu’ils ont tous été exclus du chemin qui inclut l’agrégateur). Si l’option [!UICONTROL Stop processing after an empty aggregation] est activée, le module [!UICONTROL Aggregator] ne génère aucun lot de sortie en l’absence de lots d’entrée. Au lieu de cela, le flux s'arrête.</p> </td> 
+   <td> <p>Par défaut, le module [!UICONTROL Aggregator] génère le résultat de l’agrégation même si aucun lot n’a atteint le module [!UICONTROL Aggregator] (par exemple, car ils ont tous été filtrés en dehors du chemin qui inclut l’agrégateur). Si l'option [!UICONTROL Arrêter le traitement après une agrégation vide] est activée, le module [!UICONTROL Aggregator] ne produit aucun lot de sortie lorsqu'il n'y a aucun lot d'entrée. Au lieu de cela, le flux s'arrête.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Les lots générés par les modules entre le module source et le module [!UICONTROL Aggregator] ne sont pas générés par le module [!UICONTROL Aggregator]. Ces lots ne sont pas accessibles par les modules dans le flux après la [!UICONTROL Aggregator]. Si vous avez besoin de données provenant d’un lot généré par un module entre le module source et le module [!UICONTROL Aggregator], veillez à inclure l’élément donné dans la configuration du module [!UICONTROL Aggregator] (par exemple dans le champ [!UICONTROL Aggregated fields] dans la configuration du module [!UICONTROL Array aggregator]).
+>Les lots générés par les modules entre le module source et le module [!UICONTROL Agrégateur] ne sont pas générés par le module [!UICONTROL Agrégateur]. Ces lots ne sont pas accessibles par les modules dans le flux après le [!UICONTROL Agrégateur]. Si vous avez besoin de données provenant d’un lot généré par un module entre le module source et le module [!UICONTROL Agrégateur], veillez à inclure l’élément donné dans la configuration du module [!UICONTROL Agrégateur] (par exemple dans le champ [!UICONTROL Champs agrégés] dans la configuration du module [!UICONTROL Agrégateur de tableaux]).
 
 
 ## Exemple de scénario de fonctionnement des agrégateurs
 
 Cet exemple de scénario montre comment compresser toutes les pièces jointes d’e-mail et charger le fichier ZIP vers [!DNL Dropbox].
 
-![Exemple d&#39;archive Dropbox ](assets/dropbox-archive.png)
+![Exemple d’archive Dropbox](assets/dropbox-archive.png)
 
 Le scénario ci-dessous montre comment :
 
-* Le premier module surveille une boîte aux lettres pour les e-mails entrants. Le déclencheur [!UICONTROL Email] >[!UICONTROL Watch emails] génère un lot avec l’élément `Attachments[]`, qui est un tableau contenant toutes les pièces jointes de l’e-mail.
+* Le premier module surveille une boîte aux lettres pour les e-mails entrants. Le déclencheur [!UICONTROL E-mail] >[!UICONTROL Surveiller des e-mails] génère un lot avec l’élément `Attachments[]`, qui est un tableau contenant toutes les pièces jointes de l’e-mail.
 
-* Le deuxième modèle itère les pièces jointes de l’e-mail : [!UICONTROL Email] >[!UICONTROL Iterate attachments] itérateur prend les éléments du tableau `Attachments[]` un par un et les envoie en tant que lots distincts.
+* Le deuxième modèle itère les pièces jointes de l’e-mail : [!UICONTROL E-mail] >[!UICONTROL Itérer les pièces jointes] l’itérateur prend les éléments du tableau `Attachments[]` un par un et les envoie en tant que lots distincts.
 
-* Le troisième module est l&#39;agrégateur. Il agrège les lots générés par le module [!UICONTROL Email] > [!UICONTROL Iterate attachments] . [!UICONTROL Archive] >[!UICONTROL Create an archive aggregator] accumule tous les lots qu’il reçoit et génère un seul lot contenant le fichier ZIP.
+* Le troisième module est l&#39;agrégateur. Il agrège les lots générés par le module [!UICONTROL E-mail] > [!UICONTROL Itérer les pièces jointes]. [!UICONTROL Archive] >[!UICONTROL Créer un agrégateur d’archives] accumule tous les lots qu’il reçoit et génère un seul lot contenant le fichier ZIP.
 
-* Le dernier module charge le fichier ZIP obtenu dans [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Upload a file] récupère le fichier ZIP à partir du module [!UICONTROL Archive] > [!UICONTROL Create an archive] et le charge dans [!DNL Dropbox].
+* Le dernier module charge le fichier ZIP obtenu dans [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Télécharger un fichier] récupère le fichier ZIP à partir du module [!UICONTROL Archive] > [!UICONTROL Créer une archive] et le charge dans [!DNL Dropbox].
 
 
 
-Vous trouverez ci-dessous un exemple de configuration de l’agrégateur [!UICONTROL Archive] > [!UICONTROL Create an archive] :
+Vous trouverez ci-dessous un exemple de configuration de l’agrégateur [!UICONTROL Archiver] > [!UICONTROL Créer une archive] :
 
 ![Créer une archive](assets/archive-create-an-archive.png)

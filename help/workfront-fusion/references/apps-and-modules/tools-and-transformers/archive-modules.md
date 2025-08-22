@@ -1,25 +1,25 @@
 ---
 title: Modules Archive
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez connecter une archive, comme un fichier compressé, à plusieurs applications et services tiers. Par exemple, vous pouvez configurer un scénario qui fait ce qui suit.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez connecter une archive, telle qu’un fichier compressé, à plusieurs applications et services tiers. Par exemple, vous pouvez configurer un scénario qui fait ce qui suit.
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 84%
+source-wordcount: '560'
+ht-degree: 73%
 
 ---
 
 # Modules d’[!UICONTROL archive]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez utiliser une archive, comme un fichier compressé, dans votre scénario, ce qui vous permet de l’utiliser dans vos automatismes ou vos intégrations.
+Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser une archive, telle qu’un fichier compressé, dans votre scénario, ce qui vous permet de l’utiliser dans vos automatisations ou intégrations.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Modules d’[!UICONTROL archive] et leurs champs
 
-Lorsque vous configurez des modules d’[!UICONTROL archive], [!DNL Workfront Fusion] affiche les champs énumérés ci-dessous. En plus de ces champs, d’autres champs d’[!UICONTROL archive] peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL Archive], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces champs, d’autres champs d’[!UICONTROL archive] peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

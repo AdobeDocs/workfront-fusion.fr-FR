@@ -8,10 +8,10 @@ description: Dans certains cas, vous pouvez arrêter de force l’exécution du 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 31%
+source-wordcount: '386'
+ht-degree: 28%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser la solution suivante pour imiter la fonctionnalité d’err
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre des exécutions incomplètes dans Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-Pour plus d’informations sur les directives de gestion des erreurs, voir [Directives de gestion des erreurs dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+Pour plus d’informations sur les directives de gestion des erreurs, voir [Directives relatives à la gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 ## Conditions d’accès
 

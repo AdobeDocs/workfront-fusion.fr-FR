@@ -5,10 +5,10 @@ description: Nous vous recommandons d’ajouter des notes sur chaque module, ce 
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: 167aae7d490a231a7b4e220d0aefb22bbf733f65
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 9%
+source-wordcount: '148'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 Nous vous recommandons la pratique facultative mais utile d’ajouter des notes à votre scénario. Les notes sont associées à des modules individuels et s’affichent dans l’éditeur de scénarios. Vous pouvez activer et désactiver les notes, et vous pouvez ajouter plusieurs notes à un module.
 
-1. Cliquez avec le bouton droit sur un module de [!DNL Workfront], puis cliquez sur **[!UICONTROL Add a note]**.
+1. Cliquez avec le bouton droit sur un module Workfront, puis cliquez sur **[!UICONTROL Ajouter une note]**.
 1. Dans la note qui s’affiche, cliquez sur l’icône Modifier ![icône Modifier](assets/edit-note.png).
 1. Saisissez le texte de votre note.
 1. Cliquez sur **Terminé** pour enregistrer la note.

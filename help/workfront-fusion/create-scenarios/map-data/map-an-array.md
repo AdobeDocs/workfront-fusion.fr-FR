@@ -4,10 +4,10 @@ description: Vous pouvez mapper un tableau ou des éléments de tableau individu
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 24%
+source-wordcount: '920'
+ht-degree: 28%
 
 ---
 
@@ -22,7 +22,7 @@ Un tableau est un élément de lot qui peut contenir les éléments suivants :
 
 **Exemple :**
 
-* **Tableau complexe** : le module [!UICONTROL Watch emails] renvoie un tableau de pièces jointes pour chaque e-mail. Chaque pièce jointe représente une collection pouvant contenir un nom, un contenu, une taille, etc.
+* **Tableau complexe** : le module [!UICONTROL Observer les e-mails] renvoie un tableau des pièces jointes pour chaque e-mail. Chaque pièce jointe représente une collection pouvant contenir un nom, un contenu, une taille, etc.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -55,9 +55,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Mapper un tableau entier
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez mapper un tableau.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Dans le module auquel vous souhaitez mapper le tableau, cliquez sur le champ dans lequel vous souhaitez mapper le tableau. Il s’agit du champ auquel le tableau est mappé.
 
 1. Dans la zone qui s’affiche, mappez l’élément.
 
-   Le panneau vous permet de mapper les champs de la même manière qu’avec tout autre type d’élément. Si vous ne souhaitez pas remplir chaque élément séparément, mais que vous souhaitez mapper un autre tableau dans le champ cible, utilisez le bouton [!UICONTROL Map] . Dans ce cas, assurez-vous que les deux tableaux (le tableau source et le tableau cible) ont la même structure.
+   Le panneau vous permet de mapper les champs de la même manière qu’avec tout autre type d’élément. Si vous ne souhaitez pas remplir chaque élément séparément, mais que vous souhaitez mapper un autre tableau dans le champ cible, utilisez le bouton [!UICONTROL Mapper]. Dans ce cas, assurez-vous que les deux tableaux (le tableau source et le tableau cible) ont la même structure.
 
    Vous pouvez ajouter n’importe quel nombre d’éléments à un tableau.
 
-Vous pouvez diviser un tableau en lots individuels à l’aide d’un itérateur. Pour plus d’informations, voir [[!UICONTROL Iterator] module dans [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
+Vous pouvez diviser un tableau en lots individuels à l’aide d’un itérateur. Pour plus d’informations, consultez la section [[!UICONTROL Module Itérateur] dans Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Mapper des éléments dans un nouveau tableau
 
@@ -151,7 +151,7 @@ La formule peut être expliquée comme suit :
 * `map`
 
    1. Le premier paramètre de la fonction `map()` est l’élément de tableau entier.
-   1. Le deuxième paramètre est le nom brut de l’élément de valeur. Pour obtenir le nom brut, passez la souris sur l’élément dans le panneau [!UICONTROL mapping] :
+   1. Le deuxième paramètre est le nom brut de l’élément de valeur. Pour obtenir le nom brut, pointez sur l’élément dans le panneau de [!UICONTROL mapping] :
 
       ![Obtenir le nom brut](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Pour plus d&#39;informations sur la fonction `get()`, voir [Fonctions générale
 
 ## Convertir des éléments de tableau en une série de lots
 
-Les tableaux peuvent être convertis en une série de lots à l’aide du module [!UICONTROL Iterator]. Pour plus d’informations, voir [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
+Les tableaux peuvent être convertis en une série de lots à l’aide du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [[!UICONTROL Module Itérateur]](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Série de lots](assets/series-of-bundles.png)

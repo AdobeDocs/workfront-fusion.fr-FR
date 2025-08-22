@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: 23e9f383b25c7b3789c413e557b94418e48a636b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 22%
+source-wordcount: '524'
+ht-degree: 44%
 
 ---
 
@@ -32,17 +32,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan</td>
+      <td role="rowheader">Formule Adobe Workfront</td>
       <td><p>Tous</p></td>
     </tr>
     <tr data-mc-conditions="">
-      <td role="rowheader">[!DNL Adobe Workfront] licence</td>
-      <td><p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p></td>
+      <td role="rowheader">Licence Adobe Workfront</td>
+      <td><p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p></td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td>
+      <td role="rowheader">Licence Adobe Workfront Fusion **</td>
       <td>
-        <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+        <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
         <p>Ou</p>
         <p>Héritée : n’importe laquelle.</p>
       </td>
@@ -52,11 +52,11 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
       <td>
         <p>Nouveau :</p>
         <ul>
-          <li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li>
-          <li>[!UICONTROL Ultimate] [!DNL Workfront] Plan : [!DNL Workfront Fusion] est inclus.</li>
+          <li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li>
+          <li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li>
         </ul>
         <p>Ou</p>
-        <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+        <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
       </td>
     </tr>
   </tbody>
@@ -65,20 +65,20 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
-## Approuver ou refuser des modèles [!DNL Workfront Fusion]
+## Approbation ou désapprobation de modèles Workfront Fusion
 
-La validation d’un modèle le rend visible dans l’onglet [!UICONTROL Public templates] et disponible pour tous les utilisateurs.
+La validation d’un modèle le rend visible dans l’onglet [!UICONTROL Modèles publics] et disponible pour tous les utilisateurs.
 
-La désapprobation d’un modèle le supprime de l’onglet [!UICONTROL Public templates] et le rend disponible uniquement pour l’équipe qui l’a créé.
+La désapprobation d’un modèle le supprime de l’onglet [!UICONTROL Modèles publics] et le rend disponible uniquement pour l’équipe qui l’a créé.
 
-1. Cliquez sur **[!UICONTROL Administration]** dans le panneau de navigation de gauche pour ouvrir la zone de [!UICONTROL Administration].
-1. Cliquez sur **[!UICONTROL Templates]** dans le panneau de navigation de gauche.
-1. Si vous souhaitez approuver un modèle, cliquez sur **[!UICONTROL Approve]** à droite du modèle.
-1. Si vous souhaitez en désapprouver un, cliquez sur **[!UICONTROL Disapprove]** à droite du modèle.
+1. Cliquez sur **[!UICONTROL Administration]** dans le panneau de navigation de gauche pour ouvrir la zone [!UICONTROL Administration].
+1. Cliquez sur **[!UICONTROL Modèles]** dans le panneau de navigation de gauche.
+1. Pour valider un modèle, cliquez sur **[!UICONTROL Approuver]** à droite du modèle.
+1. Pour rejeter un modèle, cliquez sur **[!UICONTROL Refuser]** à droite du modèle.
 
 >[!NOTE]
 >
@@ -91,17 +91,17 @@ Vous pouvez vérifier le statut sur la page du modèle sous le nom du modèle.
 
 Les statuts possibles sont les suivants :
 
-* **[!UICONTROL Private]** : ce modèle est visible uniquement pour l’auteur du modèle et son équipe.
-* **[!UICONTROL Published]** : ce modèle est visible uniquement pour l’auteur du modèle et son équipe. Une fois publié, vous pouvez envoyer le modèle pour approbation, si vous le souhaitez. Vous pouvez également copier un lien partageable.
-* **[!UICONTROL Approved]** : ce modèle est visible pour tous les utilisateurs de Workfront Fusion dans l’onglet [!UICONTROL Public templates] . Vous pouvez également copier un lien partageable en cliquant sur [!UICONTROL Options] dans le coin supérieur droit de l’écran.
+* **[!UICONTROL Privé]** : ce modèle est visible uniquement par l’auteur ou l’autrice du modèle et son équipe.
+* **[!UICONTROL Publié]** : ce modèle est visible uniquement par l’auteur ou l’autrice du modèle et son équipe. Une fois publié, vous pouvez envoyer le modèle pour approbation, si vous le souhaitez. Vous pouvez également copier un lien partageable.
+* **[!UICONTROL Approuvé]** : ce modèle est visible pour tous les utilisateurs et utilisatrices de Workfront Fusion dans l’onglet [!UICONTROL Modèles publics]. Vous pouvez également copier un lien partageable en cliquant sur [!UICONTROL Options] dans le coin supérieur droit de l’écran.
 
-Vous pouvez également vérifier le statut dans l’onglet [!UICONTROL Team templates] . Si un modèle est publié, une icône s’affiche à droite de son nom.
+Vous pouvez également vérifier le statut à partir de l’onglet [!UICONTROL Modèles d’équipe]. Si un modèle est publié, une icône s’affiche à droite de son nom.
 
 * **Icône représentant un œil** : le modèle est publié ; il est visible uniquement pour l’équipe ; et aucune demande d’approbation n’a été envoyée.
 * **Icône de coche jaune** : le modèle est publié ; il n’est visible que par l’équipe ; et il est en attente d’approbation pour être ajouté à l’onglet Modèles publics .
-* **Icône de coche verte** : le modèle est disponible dans l’onglet Modèles publics et est visible par tout utilisateur de Workfront Fusion. Il est également toujours visible dans l’onglet [!UICONTROL Team templates] . L’auteur du modèle ou le membre de son équipe peut toujours le modifier.
+* **Icône de coche verte** : le modèle est disponible dans l’onglet Modèles publics et est visible par tout utilisateur de Workfront Fusion. Il est également toujours visible dans l’onglet [!UICONTROL Modèles d’équipe]. L’auteur du modèle ou le membre de son équipe peut toujours le modifier.
 
-Les modèles sans icône ont le statut [!UICONTROL Private]. Ils ne sont pas publiés et ne sont visibles que par l’équipe.
+Les modèles sans icônes ont un statut [!UICONTROL Privé]. Ils ne sont pas publiés et ne sont visibles que par l’équipe.
 
 
 <!--

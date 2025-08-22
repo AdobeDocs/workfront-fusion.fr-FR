@@ -4,10 +4,10 @@ description: Cet article explique les raisons pour lesquelles les scénarios act
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 56%
+source-wordcount: '344'
+ht-degree: 45%
 
 ---
 
@@ -38,17 +38,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -56,16 +56,16 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations du niveau d’accès*</td> 
    <td> 
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre organisation.</p>
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre équipe.</p>
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -75,7 +75,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,13 +87,13 @@ Pour obtenir des instructions sur la création d’un scénario, voir [Processus
 
 ## Activez ou désactivez un scénario en procédant comme suit :
 
-1. Cliquez sur **[!UICONTROL Scenarios]**’icône ![Scénarios](assets/scenarios-icon.png) dans le panneau de gauche, puis cliquez sur le scénario pour l’ouvrir.
+1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche, puis cliquez sur le scénario pour l’ouvrir.
 1. Cliquez sur le bouton (bascule) Activer/Désactiver dans le coin supérieur droit de la page des détails du scénario.
 
    ![Bouton bascule d’activation des détails](assets/active-toggle-details-page.png)
 
    Ou
 
-   Cliquez sur le diagramme pour accéder à l’éditeur de scénarios, puis cliquez sur le bouton **[!UICONTROL On/Off]** dans le coin inférieur gauche de la fenêtre.
+   Cliquez sur le diagramme pour accéder à l’éditeur de scénarios, puis cliquez sur le bouton bascule **[!UICONTROL Activé/Désactivé]** dans le coin inférieur gauche de la fenêtre.
 
    ![interrupteur marche-arrêt](assets/on-off-switch.jpg)

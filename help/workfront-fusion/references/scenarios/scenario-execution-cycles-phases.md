@@ -1,13 +1,13 @@
 ---
 title: Exécution de scénario, cycles et phases
-description: Cet article décrit les événements qui se produisent pendant l’exécution d’un scénario  [!DNL Adobe Workfront Fusion] , tels que l’initialisation, les opérations, les engagements et les restaurations.
+description: Cet article décrit les événements qui se produisent pendant l’exécution d’un scénario Adobe Workfront Fusion, tels que l’initialisation, les opérations, les validations et les restaurations.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 31%
+source-wordcount: '481'
+ht-degree: 22%
 
 ---
 
@@ -42,7 +42,7 @@ Pendant la phase d&#39;initialisation, toutes les connexions nécessaires (conne
 
 Chaque cycle représente une unité de travail indivisible composée d’une série d’opérations, chacune avec une validation ou une restauration.
 
-Vous pouvez définir le nombre maximal de cycles dans le panneau [!UICONTROL scenario settings]. Le nombre par défaut est 1.
+Vous pouvez définir le nombre maximal de cycles dans le panneau [!UICONTROL paramètres du scénario]. Le nombre par défaut est 1.
 
 * [Opération](#operation)
 * [Valider](#commit)
@@ -52,12 +52,12 @@ Vous pouvez définir le nombre maximal de cycles dans le panneau [!UICONTROL sce
 
 Pendant la phase de fonctionnement, on effectue une opération de lecture ou d&#39;écriture:
 
-* Une opération de lecture consiste à obtenir des données d&#39;un service qui sont ensuite traitées par d&#39;autres modules selon un scénario prédéfini. Par exemple, le module [!UICONTROL Workfront] >[!UICONTROL Watch records] renvoie les nouveaux lots (enregistrements) créés depuis la dernière exécution du scénario.
-* Une opération d&#39;écriture consiste à envoyer des données à un service donné pour traitement ultérieur. Par exemple, le module [!DNL Workfront] >[!UICONTROL Upload Document] charge un fichier dans Workfront.
+* Une opération de lecture consiste à obtenir des données d&#39;un service qui sont ensuite traitées par d&#39;autres modules selon un scénario prédéfini. Par exemple, le module [!UICONTROL Workfront] >[!UICONTROL Observer les enregistrements] renvoie les nouveaux lots (enregistrements) créés depuis la dernière exécution du scénario.
+* Une opération d&#39;écriture consiste à envoyer des données à un service donné pour traitement ultérieur. Par exemple, le module Workfront >[!UICONTROL Télécharger le document] télécharge un fichier dans Workfront.
 
 #### Valider
 
-Si la phase d’opération est réussie, la phase de validation commence, au cours de laquelle toutes les opérations effectuées par les modules sont validées. Cela signifie que [!DNL Workfront Fusion] envoie des informations sur son succès à tous les services impliqués dans la phase de fonctionnement.
+Si la phase d’opération est réussie, la phase de validation commence, au cours de laquelle toutes les opérations effectuées par les modules sont validées. Cela signifie que Workfront Fusion envoie des informations à tous les services impliqués dans la phase d’exploitation sur son succès.
 
 ### Restaurer
 
@@ -65,11 +65,11 @@ Si une erreur se produit au cours de la phase d&#39;opération ou de validation 
 
 >[!IMPORTANT]
 >
->Tous les modules [!DNL Workfront Fusion] qui prennent en charge la restauration (également connue sous le nom de transactionnalité) comportent la balise ACID.
+>Tous les modules Workfront Fusion qui prennent en charge la restauration (également appelée transactionnalité) sont marqués avec la balise ACID.
 >
 >![Modules acides](assets/acid-modules.png)
 >
->Les modules qui ne portent pas cette balise ne peuvent pas être ramenés à leur état initial lorsque des erreurs se produisent dans d’autres modules. Un exemple typique de module non-ACID est l&#39;action [!UICONTROL Email] >[!UICONTROL Send an Email]. Une fois l’e-mail envoyé, vous ne pouvez pas annuler l’envoi.
+>Les modules qui ne portent pas cette balise ne peuvent pas être ramenés à leur état initial lorsque des erreurs se produisent dans d’autres modules. Un exemple typique de module non-ACID est l’action [!UICONTROL E-mail] > [!UICONTROL Envoyer un e-mail]. Une fois l’e-mail envoyé, vous ne pouvez pas annuler l’envoi.
 
 ### Finalisation
 

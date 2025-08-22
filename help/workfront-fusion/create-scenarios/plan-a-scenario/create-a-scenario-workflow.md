@@ -4,10 +4,10 @@ description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 20%
+source-wordcount: '808'
+ht-degree: 22%
 
 ---
 
@@ -18,7 +18,7 @@ Les scénarios sont conçus pour répondre aux besoins de votre entreprise, avec
 
 * [Créer et nommer le scénario](#create-and-name-the-scenario)
 * [Ajouter et configurer le premier module](#configure-the-first-module)
-* [Création de connexions](#create-connections)
+* [Créer des connexions](#create-connections)
 * [Ajout et configuration de modules supplémentaires](#add-and-configure-additional-modules)
 * [Mappage des données entre les modules](#map-data-between-modules)
 * [Configurer le routage](#configure-routing)
@@ -34,18 +34,18 @@ Raccourcis clavier
 
 ## Créer et nommer le scénario
 
-1. Connectez-vous à votre compte [!DNL Workfront Fusion].
-1. Cliquez sur **[!UICONTROL Scenarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche.
+1. Connectez-vous à votre compte Workfront Fusion.
+1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche.
 
    >[!NOTE]
    >
    >Si le panneau de navigation de gauche ou ses icônes ne s’affichent pas, cliquez sur l’icône menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Facultatif) Dans le panneau [!UICONTROL **Dossiers**], cliquez sur l’icône **[!UICONTROL Add folder]** ![icône Ajouter un dossier](assets/add-folder-icon.png), puis saisissez un nom tel que « Scénarios d’exercices pratiques » pour votre premier dossier.
+1. (Facultatif) Dans le panneau [!UICONTROL **Dossiers**], cliquez sur l’icône **[!UICONTROL Ajouter un dossier]** ![Icône Ajouter un dossier](assets/add-folder-icon.png), puis saisissez un nom tel que « Scénarios d’exercices pratiques » pour votre premier dossier.
 
-1. (Facultatif) Ouvrez le dossier, puis cliquez sur **[!UICONTROL Create a new scenario]** dans le coin supérieur droit de la page.
+1. (Facultatif) Ouvrez le dossier, puis cliquez sur **[!UICONTROL Créer un nouveau scénario]** dans le coin supérieur droit de la page.
 
-1. Sélectionnez le nom de l’espace réservé **[!UICONTROL New scenario]** dans le coin supérieur gauche, puis saisissez un nom tel que « Scénario d’exercices pratiques 1 ».
+1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom tel que « Scénario pratique 1 ».
 
    ![Nommez le scénario](assets/name-the-scenario.png)
 
@@ -59,7 +59,7 @@ Pour obtenir des instructions sur l’ajout du premier module à un scénario, v
 
 Pour obtenir des instructions sur la configuration d’un module, voir [Configuration d’un module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 
-## Création de connexions
+## Créer des connexions
 
 Lors de la configuration d’un module, vous devez entrer ou créer une connexion. Le module utilise cette connexion et les autorisations qu’elle contient pour accéder à la date dans l’application.
 
@@ -101,13 +101,13 @@ Pour obtenir des instructions, consultez les articles sous [Configurer les param
 
 Le test de votre scénario vous permet de déterminer si celui-ci fonctionne comme prévu. Vous pouvez ensuite réviser le scénario en fonction de vos résultats, puis effectuer un nouveau test.
 
-1. Cliquez sur **[!UICONTROL Run once]** dans le coin inférieur gauche de l’éditeur de scénarios.
+1. Cliquez sur **[!UICONTROL Exécuter une fois]** dans le coin inférieur gauche de l’éditeur de scénario.
 1. Une fois l’exécution du scénario terminée, cliquez sur la bulle de l’inspecteur d’exécution au-dessus de chaque module pour afficher l’entrée des informations et la sortie de ce module.
 
    * Pour obtenir des informations générales sur la lecture des informations d’exécution de scénario, voir [Flux d’exécution de scénario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Pour plus d’informations sur les lots traités, consultez la section [Exécution, cycles et phases d’un scénario [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Pour plus d’informations sur les lots traités, voir [Exécution de scénario, cycles et phases dans Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Dans [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Save]** ![icône Enregistrer](assets/save-icon.png) près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
+1. Dans Workfront Fusion, cliquez sur **[!UICONTROL Enregistrer]** ![Icône Enregistrer](assets/save-icon.png) près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
 
    >[!IMPORTANT]
    >
@@ -148,12 +148,12 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
    <td>Cmd+Maj+Entrée</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL Ouvrir l’outil de développement]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL Sélectionner plusieurs modules]</td> 
    <td>Maj+Glisser</td> 
    <td>Maj+Glisser</span> </td> 
   </tr> 

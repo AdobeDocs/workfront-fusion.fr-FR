@@ -1,19 +1,19 @@
 ---
 title: Modules Adobe Experience Manager Forms
-description: Avec le connecteur  [!DNL Adobe Experience Manager Forms]  pour compte  [!DNL Adobe Workfront Fusion], you can start a scenario based on events in your [!DNL Adobe Experience Manager Forms] , créez, chargez et mettez à jour des ressources, et copiez ou déplacez des dossiers et des ressources.
+description: Avec le connecteur  [!DNL Adobe Experience Manager Forms] ’Adobe Workfront Fusion, vous pouvez démarrer un scénario en fonction des événements se produisant dans votre compte, créer, charger et mettre à jour des ressources, ainsi que copier ou déplacer des dossiers et des ressources [!DNL Adobe Experience Manager Forms] s.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 68%
 
 ---
 
 # Modules [!DNL Adobe Experience Manager Forms]
 
-Avec le conecteur [!DNL Adobe Experience Manager Forms] pour [!DNL Adobe Workfront Fusion], vous pouvez démarrer un scénario en fonction des événements de votre compte [!DNL Adobe Experience Manager Forms] en créant un webhook.
+Avec le connecteur [!DNL Adobe Experience Manager Forms] pour Adobe Workfront Fusion, vous pouvez démarrer un scénario en fonction des événements de votre compte [!DNL Adobe Experience Manager Forms] en créant un webhook.
 
 Vous pouvez configurer un formulaire dans [!DNL Adobe Experience Manager Forms] pour envoyer des soumissions de formulaire à ce webhook.
 
@@ -26,35 +26,35 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
+   <td role="rowheader">Formule Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
+   <td role="rowheader">Licence Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Exigence de licence actuelle : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Exigences de licence héritées : [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Exigence de licence héritée : [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Conditions requises du produit actuel : si vous disposez de la formule [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi que [!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article. [!DNL Workfront Fusion] est inclus dans la formule [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Configuration requise actuelle du produit : si vous disposez du plan Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article. Workfront Fusion est inclus dans le plan Workfront [!UICONTROL Ultimate].</p>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Exigences de produit héritées : votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Conditions préalables
 
@@ -192,7 +192,7 @@ Ce déclencheur instantané (webhook) vous permet de lancer un scénario lorsqu�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour savoir comment connecter votre compte [!DNL Adobe Experience Manager] à [!DNL Workfront Fusion], consultez <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Créer une connexion à [!DNL Adobe Experience Manager Forms]</a>.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Adobe Experience Manager] à Workfront Fusion, voir <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Créer une connexion à [!DNL Adobe Experience Manager Forms]</a></p> </td> 
   </tr>
 
 Le module crée un webhook et vous donne l’adresse du webhook, que vous pouvez entrer dans la boîte de dialogue d’envoi du formulaire dans [!DNL Adobe Experience Manager Forms].

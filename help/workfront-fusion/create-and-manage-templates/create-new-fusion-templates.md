@@ -4,10 +4,10 @@ description: Vous pouvez créer des modèles de scénario dans  [!DNL Adobe]  W
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 39%
+source-wordcount: '831'
+ht-degree: 55%
 
 ---
 
@@ -17,7 +17,7 @@ Vous pouvez créer des modèles de scénario dans [!DNL Adobe] Workfront Fusio
 
 >[!TIP]
 >
->Avant de créer un modèle, vous pouvez vérifier l’onglet [!UICONTROL Public templates] pour vous assurer que le modèle que vous souhaitez créer n’est pas déjà disponible.
+>Avant de créer un modèle, vous pouvez vérifier l’onglet [!UICONTROL Modèles publics] pour vous assurer que le modèle que vous souhaitez créer n’est pas déjà disponible.
 
 ## Conditions d’accès
 
@@ -30,17 +30,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,9 +48,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -71,16 +71,16 @@ Vous pouvez créer un modèle via un processus similaire à la création d’un 
 
 ### Créer un modèle
 
-1. Cliquez sur **[!UICONTROL Templates]** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
-1. Cliquez sur **[!UICONTROL Create a new template]** dans le coin supérieur droit.
-1. (Facultatif) Renommez le modèle en remplaçant le **[!UICONTROL New template name]** par défaut dans le coin supérieur gauche.
-1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Set up a template]**’icône ![Paramètres du scénario](assets/scenario-settings-icon.png) et sélectionnez la langue dans la liste déroulante Langue.
+1. Cliquez sur **[!UICONTROL Modèles]** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
+1. Cliquez sur **[!UICONTROL Créer un modèle]** dans le coin supérieur droit.
+1. (Facultatif) Renommez le modèle en remplaçant le **[!UICONTROL Nom du nouveau modèle]** par défaut dans le coin supérieur gauche.
+1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Configurer un modèle]** ![icône des paramètres de scénario](assets/scenario-settings-icon.png) et sélectionnez la langue dans le menu déroulant Langue.
 
    >[!IMPORTANT]
    >
    >La sélection Langues correspond aux langues disponibles dans les paramètres du système et ne concerne que le nom du modèle public et sa description. Vous ne pouvez pas modifier la langue d’un modèle une fois le modèle enregistré.
 
-1. (Facultatif) Pour saisir une description du modèle, cliquez sur **[!UICONTROL Set up a template]**’icône ![Paramètres du scénario](assets/scenario-settings-icon.png) et saisissez la description.
+1. (Facultatif) Pour saisir une description du modèle, cliquez sur **[!UICONTROL Configurer un modèle]** ![Icône Paramètres de scénario](assets/scenario-settings-icon.png) et saisissez la description.
 1. Ajoutez des applications, des modules et des outils en suivant les mêmes processus que l’ajout de modules à un scénario.
 
    Pour obtenir des instructions, consultez les articles sous [Ajouter des modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -93,12 +93,12 @@ Vous pouvez créer un modèle via un processus similaire à la création d’un 
    >
    >Si votre modèle comprend des modules qui nécessitent l’ajout de la connexion, des informations d’identification ou d’autres informations sensibles à la confidentialité, ces informations ne sont pas partagées avec les utilisateurs et utillisatrices du modèle.
 
-1. (Facultatif) Cliquez sur **[!UICONTROL Run once]** pour tester votre modèle.
-1. Cliquez sur l’icône **[!UICONTROL Save]** ![Icône Enregistrer](assets/save-icon.png) pour enregistrer le modèle.
+1. (Facultatif) Cliquez sur **[!UICONTROL Exécuter une fois]** pour tester votre modèle.
+1. Cliquez sur l’icône **[!UICONTROL Enregistrer]** ![Icône Enregistrer](assets/save-icon.png) pour enregistrer le modèle.
 
 Lorsque vous enregistrez votre modèle, il devient visible pour les membres de votre équipe. Si vous souhaitez que votre modèle soit accessible en dehors de votre équipe, vous devez soumettre une demande pour qu’il soit approuvé et publié. La demande est envoyée à l’équipe Adobe Workfront Fusion pour approbation. Une fois approuvé, le modèle est accessible à d’autres personnes en dehors de votre équipe.
 
-Pour plus d’informations sur la publication de modèles, voir [Publier et partager des modèles  [!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md).
+Pour plus d’informations sur la publication de modèles, voir [ Publication et partage de modèles Adobe Workfront Fusion ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md).
 
 ### Créer un modèle à partir d’un scénario
 
@@ -106,40 +106,40 @@ Pour plus d’informations sur la publication de modèles, voir [Publier et part
 >
 >Pour créer un modèle à partir d’un scénario, vous devez être un administrateur ou une administratrice Fusion.
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario à partir duquel vous souhaitez créer un modèle.
 1. Cliquez sur le bouton **Administration** dans le coin supérieur droit de la page.
 1. Sélectionnez **Cloner comme modèle**.
 
    Le scénario est copié dans une page Nouveau modèle.
-1. (Facultatif) Renommez le modèle en remplaçant le **[!UICONTROL New template name]** par défaut dans le coin supérieur gauche.
-1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Set up a template]**’icône ![Paramètres du scénario](assets/scenario-settings-icon.png) et sélectionnez la langue dans la liste déroulante Langue.
+1. (Facultatif) Renommez le modèle en remplaçant le **[!UICONTROL Nom du nouveau modèle]** par défaut dans le coin supérieur gauche.
+1. (Facultatif) Pour modifier la langue de votre modèle, cliquez sur **[!UICONTROL Configurer un modèle]** ![icône des paramètres de scénario](assets/scenario-settings-icon.png) et sélectionnez la langue dans le menu déroulant Langue.
 
    >[!IMPORTANT]
    >
    >La sélection Langues correspond aux langues disponibles dans les paramètres du système et ne concerne que le nom du modèle public et sa description. Vous ne pouvez pas modifier la langue d’un modèle une fois le modèle enregistré.
 
-1. (Facultatif) Pour saisir une description du modèle, cliquez sur **[!UICONTROL Set up a template]**’icône ![Paramètres du scénario](assets/scenario-settings-icon.png) et saisissez la description.
+1. (Facultatif) Pour saisir une description du modèle, cliquez sur **[!UICONTROL Configurer un modèle]** ![Icône Paramètres de scénario](assets/scenario-settings-icon.png) et saisissez la description.
 1. Modifiez les applications, modules et outils selon vos besoins, en utilisant les mêmes processus que l’ajout de modules à un scénario.
 
    Pour obtenir des instructions, consultez les articles sous [Ajouter des modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
 
-   Pour ajouter une aide contextuelle aux modules, consultez [Configuration de [!UICONTROL Wizard] fonctionnalité](#set-up-wizard-functionality) dans cet article.
+   Pour ajouter une aide contextuelle aux modules, voir [Configurer une fonctionnalité [!UICONTROL Assistant]](#set-up-wizard-functionality) dans cet article.
 
    >[!NOTE]
    >
    >Si votre modèle comprend des modules qui nécessitent l’ajout de la connexion, des informations d’identification ou d’autres informations sensibles à la confidentialité, ces informations ne sont pas partagées avec les utilisateurs et utillisatrices du modèle.
 
-1. (Facultatif) Cliquez sur **[!UICONTROL Run once]** pour tester votre modèle.
-1. Cliquez sur l’icône **[!UICONTROL Save]** ![Icône Enregistrer](assets/save-icon.png).
+1. (Facultatif) Cliquez sur **[!UICONTROL Exécuter une fois]** pour tester votre modèle.
+1. Cliquez sur l’icône **[!UICONTROL Enregistrer]** ![Enregistrer](assets/save-icon.png).
 
-## Configurer la fonctionnalité de [!UICONTROL Wizard] {#set-up-wizard-functionality}
+## Configurer une fonctionnalité [!UICONTROL Assistant] {#set-up-wizard-functionality}
 
-Le [!UICONTROL Wizard] [!DNL Workfront Fusion template] vous permet de fournir aux futurs utilisateurs de votre modèle des instructions ou des informations relatives aux champs spécifiques utilisés dans les modules.
+L’[!UICONTROL assistant] de [!DNL Workfront Fusion template] vous permet de fournir aux futurs utilisateurs et utilisatrices de votre modèle des instructions ou des informations relatives aux champs spécifiques utilisés dans les modules.
 
 1. Lors de la création d’un modèle, cliquez sur un module ajouté au modèle pour afficher les champs du module.
-1. Localisez le champ dans lequel vous souhaitez ajouter des informations de [!UICONTROL Wizard] et activez les **[!UICONTROL Use in Wizard]** pour ce champ.
-1. Saisissez les informations que vous souhaitez rendre visibles pour les utilisateurs dans le champ [!UICONTROL Help] .
-1. (Facultatif) Pour permettre aux utilisateurs de voir ce texte lors de l’utilisation du modèle, activez **[!UICONTROL Use as default value]**.
+1. Localisez le champ où vous souhaitez ajouter les informations de l’[!UICONTROL assistant], puis activez **[!UICONTROL Utiliser dans l’assistant]** pour ce champ.
+1. Saisissez les informations que vous souhaitez rendre visibles aux utilisateurs et utilisatrices dans le champ [!UICONTROL Aide].
+1. (Facultatif) Pour permettre aux utilisateurs et utilisatrices de voir ce texte lorsqu’ils utilisent le modèle, activez **[!UICONTROL Utiliser comme valeur par défaut]**.
 1. Répétez les étapes 2 à 4 pour chaque champ auquel vous souhaitez fournir des informations.
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications et fermer le module.

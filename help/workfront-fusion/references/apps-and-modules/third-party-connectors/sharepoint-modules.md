@@ -1,19 +1,19 @@
 ---
 title: Modules SharePoint
-description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez automatiser les workflows qui utilisent Microsoft SharePoint Online et les connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Microsoft SharePoint Online et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3979'
-ht-degree: 51%
+source-wordcount: '4124'
+ht-degree: 49%
 
 ---
 
 # Modules Microsoft SharePoint Online
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent Microsoft SharePoint Online et les connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Microsoft SharePoint Online et les connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,17 +89,17 @@ Le connecteur SharePoint utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion] {#connect-microsoft-sharepoint-online-to-workfront-fusion}
+## Connexion de Microsoft SharePoint Online à Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connecter Microsoft SharePoint Online à  [!DNL Workfront Fusion] à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
-* [Connexion de Microsoft SharePoint Online à à l [!DNL Workfront Fusion] aide des paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
-* [Connexion de Microsoft SharePoint Online à à l [!DNL Workfront Fusion] aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
-### Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion] à l’aide d’un compte [!DNL Microsoft]
+### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte [!DNL Microsoft]
 
-Vous pouvez utiliser votre compte [!DNL Microsoft] pour créer une connexion à Microsoft SharePoint Online. Pour obtenir des instructions sur la connexion de votre compte [!DNL Sharepoint] à [!DNL Workfront Fusion], voir [Créer une connexion à  [!DNL Adobe Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Vous pouvez utiliser votre compte [!DNL Microsoft] pour créer une connexion à Microsoft SharePoint Online. Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Sharepoint] à Workfront Fusion, voir [Créer une connexion vers Adobe Workfront Fusion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
-### Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion] à l’aide des paramètres avancés
+### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés
 
 Pour inclure des informations d’identification dans la connexion, activez l’option Afficher les paramètres avancés . Pour ce type de connexion, vous avez besoin d’un identifiant client, d’un secret client et d’un identifiant client.
 
@@ -136,7 +136,7 @@ Pour inclure des informations d’identification dans la connexion, activez l’
 
 1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
 
-### Connecter Microsoft SharePoint Online à [!DNL Workfront Fusion] à l’aide de l’autorisation de certificat
+### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat
 
 Vous pouvez utiliser l’autorisation de certificat pour vous connecter à SharePoint.
 
@@ -203,7 +203,7 @@ Vous pouvez utiliser l’autorisation de certificat pour vous connecter à Share
 
 ## Modules SharePoint Microsoft et leurs champs
 
-Lorsque vous configurez les modules Microsoft SharePoint Online, [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. D’autres champs Microsoft SharePoint Online peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules Microsoft SharePoint Online, Workfront Fusion affiche les champs répertoriés ci-dessous. D’autres champs Microsoft SharePoint Online peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -212,7 +212,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Élément Drive](#drive-item)
 * [Élément](#item)
 * [Liste](#list)
-* [Page (version bêta)](#page-beta)
+* [Page (Beta)](#page-beta)
 * [Site](#site)
 * [Autre](#other)
 
@@ -235,7 +235,7 @@ Ce module renvoie les modifications apportées dans SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -261,7 +261,7 @@ Ce module d’action crée un dossier dans SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -288,7 +288,7 @@ Ce module d’action récupère le fichier SharePoint spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -311,7 +311,7 @@ Ce module a récupéré des détails sur le dossier spécifié
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
@@ -334,7 +334,7 @@ Ce module d’action met à jour les métadonnées d’un dossier ou d’un fich
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
@@ -361,7 +361,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est mis à 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -372,7 +372,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est mis à 
     </ul> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Entrer le nombre maximal d’éléments que [!DNL Workfront Fusion] doit renvoyer pendant un cycle d’exécution de scénario.</td> 
+   <td>Saisissez le nombre maximal d’éléments que Workfront Fusion doit renvoyer au cours d’un cycle d’exécution de scénario.</td> 
   <tr>
   </tr>
 </tbody> 
@@ -401,7 +401,7 @@ Ce module d’action copie un élément existant dans une liste SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Saisir des ID de site, de lecteur et de dossier</td> 
@@ -432,7 +432,7 @@ Ce module d’action crée un élément dans une liste SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Create an Item]</td> 
@@ -459,7 +459,7 @@ Ce module d’action supprime un élément existant dans une liste SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
@@ -482,7 +482,7 @@ Ce module d’action renvoie les données d’un élément spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get an Item]</td> 
@@ -505,7 +505,7 @@ Ce module obtient les détails de l&#39;élément à partir de l&#39;URL spécif
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL Web</td> 
@@ -524,7 +524,7 @@ Ce module d’action récupère une liste de tous les éléments d’une liste s
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List Items]</td> 
@@ -551,7 +551,7 @@ Ce module d’action copie un élément existant dans une liste SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Saisir des ID de site, de lecteur et de dossier</td> 
@@ -582,7 +582,7 @@ Ce module d’action met à jour un élément existant dans une liste SharePoint
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
@@ -609,7 +609,7 @@ Ce module de déclenchement lance un scénario lorsqu’un élément est créé 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Lists]</td> 
@@ -647,7 +647,7 @@ Ce module d’action crée une liste dans SharePoint.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a Site ID]</td> 
@@ -682,7 +682,7 @@ Ce module d’action renvoie les données d’une liste spécifiée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a List]</td> 
@@ -705,7 +705,7 @@ Ce module d&#39;action récupère une liste de tous les éléments d&#39;un site
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List Lists]</td> 
@@ -732,7 +732,7 @@ Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Lists]</td> 
@@ -753,7 +753,7 @@ Ce module de déclenchement lance un scénario lorsqu’une liste est créée ou
  </tbody> 
 </table>
 
-### Page (version bêta)
+### Page (Beta)
 
 >[!NOTE]
 >
@@ -774,7 +774,7 @@ Ce module d’action renvoie les données d’une page spécifique.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a Page]</td> 
@@ -797,7 +797,7 @@ Ce module récupère une liste de toutes les pages.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List Pages]</td> 
@@ -824,7 +824,7 @@ Ce module d’action publie la dernière version de la page sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Publier une page]</td> 
@@ -847,7 +847,7 @@ Ce module de déclenchement lance un scénario lorsqu’une page est modifiée s
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
@@ -879,7 +879,7 @@ Ce module d’action renvoie les données d’un site spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a Site]</td> 
@@ -902,7 +902,7 @@ Ce module d’action recherche des sites en fonction d’un paramètre que vous 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Keyword of Display Name]</td> 
@@ -931,7 +931,7 @@ Ce module récupère les ajouts, les mises à jour et les suppressions effectué
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -958,7 +958,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à [!DNL Workfront Fusion], voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -970,7 +970,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] ajoute les en-têtes d’autorisation.</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code>. Workfront Fusion ajoute les en-têtes d’autorisation pour vous.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -1001,7 +1001,7 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un élém
   <tr> 
   <!--
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   -->
   <tr> 

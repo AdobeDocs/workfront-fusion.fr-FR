@@ -4,17 +4,17 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 97%
+source-wordcount: '1890'
+ht-degree: 93%
 
 ---
 
 # Modules Airtable
 
 
-Avec le connecteur [!DNL Airtable] pour [!DNL Adobe Workfront Fusion], vous pouvez démarrer un scénario en fonction des événements de votre compte [!DNL Airtable], créer, charger et mettre à jour des enregistrements, rechercher des enregistrements et effectuer des appels API personnalisés vers l’API Airtable.
+Avec le connecteur [!DNL Airtable] pour Adobe Workfront Fusion, vous pouvez démarrer un scénario en fonction des événements de votre compte [!DNL Airtable], créer, charger et mettre à jour des enregistrements, rechercher des enregistrements et effectuer des appels d’API personnalisés vers l’API Airtable.
 
 ## Conditions d’accès
 
@@ -25,27 +25,27 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Formule Adobe Workfront*</td>
+  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
+   <td role="rowheader">Licence Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p> </td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td> <p>[!UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
-   <td>Votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser les fonctionnalités décrites dans cet article.</td> 
+   <td>Votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice [!DNL Workfront].
+Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Conditions préalables
 
@@ -452,7 +452,7 @@ L’URL du webhook doit être générée dans Workfront Fusion, puis ajoutée à
 1. Connectez-vous à votre compte Airtable.
 1. Ouvrez la Base et le tableau à utiliser pour le formulaire et créez une vue de formulaire.
 1. Définissez le formulaire selon vos besoins, faites défiler le formulaire vers le bas et activez l’option Rediriger vers l’URL après l’envoi du formulaire.
-1. Saisissez l’URL du webhook générée à l’étape 2 dans la boîte de dialogue affichée et ajoutez ?record_id={record_id} juste après l’URL du webhook pour inclure l’ID d’enregistrement dans la sortie du module, puis cliquez sur Enregistrer. L’URL qui en résulte, par exemple, se présente comme suit :
+1. Saisissez l’URL Webhook générée à l’étape 2 dans la boîte de dialogue affichée et ajoutez le ?record_id={record_id} juste après l’URL webhook pour inclure l’ID d’enregistrement dans la sortie du module, puis cliquez sur Enregistrer. L’URL qui en résulte, par exemple, se présente comme suit :
 1. Revenez à votre scénario Workfront Fusion et exécutez le module Regarder des réponses uniquement pour charger les champs d’Airtable et pour pouvoir mapper ces champs dans les autres modules.
 1. Envoyez le formulaire dans Airtable, où l’option Rediriger vers l’URL après l’envoi du formulaire est activée et où l’URL du webhook est ajoutée (étape 6 ci-dessus).
 
@@ -490,7 +490,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">En-têtes</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p> <p>Par exemple, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] ajoute les en-têtes d’autorisation pour vous.</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p> <p>Par exemple, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion ajoute les en-têtes d’autorisation pour vous.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Chaîne de requête</td> 

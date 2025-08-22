@@ -4,16 +4,16 @@ description: L’application JSON d’Adobe Workfront Fusion fournit des modul
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 90%
+source-wordcount: '1254'
+ht-degree: 83%
 
 ---
 
 # Modules [!UICONTROL JSON]
 
-L’application [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] fournit des modules pour traiter les données au format JSON afin qu’[!DNL Adobe Workfront Fusion] puisse continuer à travailler avec le contenu des données ou créer un nouveau contenu JSON.
+L’application Adobe Workfront Fusion [!UICONTROL JSON] fournit des modules pour traiter les données au format JSON afin qu’Adobe Workfront Fusion puisse travailler avec le contenu des données ou créer du contenu JSON.
 
 ## Conditions d’accès
 
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -65,11 +65,11 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 ### Structures des données
 
-La structure des données décrit la manière dont les données JSON sont organisées et permet de mapper des éléments JSON individuels avec d’autres modules de votre scénario. Si vous ne fournissez pas la structure des données, vous pouvez exécuter manuellement le module et [!DNL Workfront Fusion] construira la structure à partir du JSON fourni :
+La structure des données décrit la manière dont les données JSON sont organisées et permet de mapper des éléments JSON individuels avec d’autres modules de votre scénario. Si vous ne fournissez pas la structure de données, vous pouvez exécuter manuellement le module et Workfront Fusion créera la structure à partir du fichier JSON fourni :
 
 1. Ajoutez le module [!UICONTROL Analyse JSON] à un scénario.
 1. Dans le champ **[!UICONTROL Chaîne de caractères JSON]**, saisissez le JSON à partir duquel vous souhaitez créer une structure des données.
-1. Ne connectez pas encore d’autres modules au module [!UICONTROL Analyse JSON]. Comme [!DNL Workfront Fusion] ne connaît pas encore la structure des données JSON, il n’est pas encore possible de mapper les données du module [!UICONTROL Analyse JSON] à d’autres modules de votre scénario.
+1. Ne connectez pas encore d’autres modules au module [!UICONTROL Analyse JSON]. Comme Workfront Fusion ne connaît pas encore la structure des données JSON, il n’est pas encore possible de mapper les données du module [!UICONTROL Parse JSON] à d’autres modules de votre scénario.
 1. Exécutez manuellement le scénario. Cela permet au module [!UICONTROL Analyse JSON] d’identifier la structure du JSON à partir du JSON que vous avez fourni.
 1. Vous pouvez maintenant connecter les modules suivants. Les éléments du module Analyse JSON sont maintenant disponibles pour le mappage.
 
@@ -121,7 +121,7 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 
 ## Modules [!UICONTROL JSON] et leurs champs
 
-Lorsque vous configurez les modules [!DNL JSON], [!DNL Workfront Fusion] affiche les champs énumérés ci-dessous. En plus de ces champs, d’autres champs JSON peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL JSON], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces champs, d’autres champs JSON peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

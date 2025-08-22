@@ -4,10 +4,10 @@ description: Le mappage désigne le processus d’affectation des sorties d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 35%
+source-wordcount: '797'
+ht-degree: 40%
 
 ---
 
@@ -30,17 +30,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,9 +48,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,7 +68,7 @@ Après avoir créé une séquence de modules en les liant, chaque module peut tr
 
 Pour affecter des éléments de sortie aux champs d’entrée d’un module :
 
-1. Cliquez sur l’onglet **[!UICONTROL Scenarios]** dans le panneau de gauche.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez mapper les données.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Cliquez sur le module qui doit traiter la sortie du ou des modules précédents.
@@ -100,7 +100,7 @@ Le panneau de mappage affiche les éléments de sortie des modules précédents.
 
 #### Déclencheur instantané
 
-1. Cliquez avec le bouton droit sur le module , puis cliquez sur **[!UICONTROL Run this module only]** dans le menu qui s’affiche.
+1. Cliquez avec le bouton droit sur le module, puis cliquez sur **[!UICONTROL Exécuter ce module uniquement]** dans le menu qui s’affiche.
 
    Comme il s’agit d’un déclencheur instantané, il commence à surveiller les événements.
 
@@ -114,8 +114,8 @@ Le panneau de mappage affiche les éléments de sortie des modules précédents.
 
 #### Déclencheur d’attente active
 
-1. Cliquez avec le bouton droit sur le module , puis cliquez sur **[!UICONTROL Run this module only]** dans le menu qui s’affiche.
-1. S’il n’y a pas de sortie, cliquez sur **[!UICONTROL Choose where to start]** et ajustez les paramètres.
+1. Cliquez avec le bouton droit sur le module, puis cliquez sur **[!UICONTROL Exécuter ce module uniquement]** dans le menu qui s’affiche.
+1. Si aucune sortie n’est disponible, cliquez sur **[!UICONTROL Choisir l’emplacement de départ]** et ajustez les paramètres.
 1. (Conditionnel) S’il n’y a aucun événement à traiter, créez l’événement que le module surveille et répétez l’étape 2.
 
    Par exemple, si le module est un module Workfront > Observer les enregistrements qui surveille les affectations de tâche, connectez-vous à Workfront (en tant qu’utilisateur autre que celui utilisé par la connexion Fusion) et attribuez une tâche, puis réexécutez le module.
@@ -133,8 +133,8 @@ Vous pouvez choisir d’exécuter les éléments suivants :
 
 Pour exécuter le module unique :
 
-1. Cliquez avec le bouton droit sur le module, puis cliquez sur **[!UICONTROL Run this module only]** dans le menu qui s&#39;affiche.
-1. Fournissez des exemples de valeurs pour les éléments d’entrée, puis cliquez sur **[!UICONTROL OK]** .
+1. Cliquez avec le bouton droit sur le module, puis cliquez sur **[!UICONTROL Exécuter ce module uniquement]** dans le menu qui s’affiche.
+1. Indiquez des exemples de valeurs pour les éléments d’entrée, puis cliquez sur **[!UICONTROL OK]**.
 1. Lorsque l’exécution du module est terminée, cliquez sur la bulle au-dessus du module pour explorer sa sortie complète.
 
    Le panneau de mappage pour les modules ultérieurs contient désormais tous les éléments dans la sortie du module.

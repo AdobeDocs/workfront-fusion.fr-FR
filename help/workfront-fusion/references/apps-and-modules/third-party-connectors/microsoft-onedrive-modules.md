@@ -1,19 +1,19 @@
 ---
 title: Modules Microsoft OneDrive
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez automatiser les workflows qui utilisent OneDrive et les connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent OneDrive et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4088'
-ht-degree: 95%
+source-wordcount: '4159'
+ht-degree: 93%
 
 ---
 
 # Modules [!DNL Microsoft OneDrive]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL OneDrive] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL OneDrive] et les connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -92,7 +92,7 @@ Le connecteur OneDrive utilise les éléments suivants :
  </table>
 
 
-## Connexion du service [!DNL OneDrive] à [!DNL Workfront Fusion].
+## Connexion du service [!DNL OneDrive] à Workfront Fusion
 
 Pour obtenir des instructions sur la connexion de votre compte [!DNL OneDrive] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -104,7 +104,7 @@ Pour obtenir des instructions sur la connexion de votre compte [!DNL OneDrive] �
 
 ## Modules [!DNL Microsoft OneDrive] et leurs champs
 
-Lorsque vous configurez les modules [!DNL OneDrive], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL OneDrive] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL OneDrive], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL OneDrive] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -136,7 +136,7 @@ Ce module d’action copie un fichier dans un nouvel emplacement de dossier.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -217,7 +217,7 @@ Ce module d’action crée un dossier dans le lecteur spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
@@ -261,7 +261,7 @@ Ce module d&#39;action supprime le fichier ou le dossier sélectionné.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File/Folder ID &amp; Path)]</td> 
@@ -313,7 +313,7 @@ Ce module d’action télécharge le fichier spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -401,7 +401,7 @@ Ce module d’action récupère les métadonnées d’un fichier spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -449,7 +449,7 @@ Ce module d’action renvoie un lien de partage pour le fichier spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -505,7 +505,7 @@ Ce module d’action déplace un fichier ou un dossier vers un nouvel emplacemen
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter (File ID &amp; File Path)]</td> 
@@ -586,7 +586,7 @@ Ce module de recherche renvoie les fichiers et les dossiers en fonction de crit�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose your [!DNL OneDrive] location]</td> 
@@ -623,7 +623,7 @@ Ce module d’action charge un fichier dans le dossier spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Saisir (ID et chemin d’accès de l’emplacement du dossier)</td> 
@@ -671,7 +671,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier ou un doss
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir la section <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Files/Folders]</td> 
@@ -720,7 +720,7 @@ Ce module effectue un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour les instructions concernant la connexion de votre compte [!DNL OneDrive] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL OneDrive] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion vers Adobe Workfront Fusion - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 

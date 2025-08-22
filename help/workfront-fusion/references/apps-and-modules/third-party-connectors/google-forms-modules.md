@@ -4,18 +4,18 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Forms]  vous perme
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 81%
+source-wordcount: '1415'
+ht-degree: 75%
 
 ---
 
 # Modules [!DNL Google Forms]
 
-Les modules [!DNL Adobe Workfront Fusion] [!DNL Google Forms] vous permettent de surveiller, sélectionner, ajouter, mettre à jour ou supprimer des réponses sur [!DNL Google Forms].
+Les modules Adobe Workfront Fusion [!DNL Google Forms] vous permettent de surveiller, sélectionner, ajouter, mettre à jour ou supprimer des réponses sur votre [!DNL Google Forms].
 
-Pour utiliser [!DNL Google Docs] avec [!DNL Adobe Workfront Fusion], vous devez posséder un compte [!DNL Google]. Si vous n’avez pas encore de compte [!DNL Google], vous pouvez en créer un sur la page d’aide des comptes [!DNL Google].
+Pour utiliser [!DNL Google Docs] avec Adobe Workfront Fusion, il est nécessaire d’avoir un compte [!DNL Google]. Si vous n’avez pas encore de compte [!DNL Google], vous pouvez en créer un sur la page d’aide des comptes [!DNL Google].
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -60,7 +60,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -96,7 +96,7 @@ Pour utiliser vos réponses de formulaire, vous devez d’abord créer la feuill
 
 ## Modules [!DNL Google Forms] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Google Forms], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Forms] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Google Forms], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Forms] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -118,7 +118,7 @@ Contrôle le formulaire pour trouver de nouvelles réponses.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -147,7 +147,7 @@ Contrôle le formulaire pour trouver de nouvelles réponses.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p> Définissez le nombre maximal de réponses que [!DNL Workfront Fusion] traitera au cours d’un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de réponses avec lesquelles Workfront Fusion fonctionne au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -213,7 +213,7 @@ Ce module supprime une réponse sélectionnée.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -242,7 +242,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -285,7 +285,7 @@ Ce module renvoie les réponses correspondant aux critères définis.
  <col data-mc-conditions=""> 
  <tbody> 
     <td>Connexion</td>
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
     <td>[!UICONTROL Spreadsheet]</td>
@@ -326,7 +326,7 @@ Ce module renvoie les réponses correspondant aux critères définis.
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
-   <td> <p> Définissez le nombre maximal de réponses que [!DNL Workfront Fusion] renvoie pendant un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de réponses que Workfront Fusion renvoie au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -341,7 +341,7 @@ Ce module effectue une recherche à l’aide de [[!DNL Google Charts Query Langu
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Spreadsheet]</td>
@@ -357,7 +357,7 @@ Ce module effectue une recherche à l’aide de [[!DNL Google Charts Query Langu
   </tr> 
   <tr>
     <td>[!UICONTROL Maximum number of returned rows]</td>
-   <td> <p> Définissez le nombre maximal de réponses que [!DNL Workfront Fusion] renvoie au cours d’un cycle.</p> </td> 
+   <td> <p> Définissez le nombre maximal de réponses que Workfront Fusion renvoie au cours d’un cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -7,10 +7,10 @@ description: Les Webhooks, également appelés déclencheurs instantanés, sont 
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 11%
+source-wordcount: '496'
+ht-degree: 6%
 
 ---
 
@@ -26,34 +26,24 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
-   <td> <p>Tous</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>En cours : [!UICONTROL Work] ou supérieur</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package incluant l’automatisation et l’intégration de Workfront</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
+   <p>Aucune exigence de licence Workfront Fusion.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] plan de [!DNL Workfront] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan : [!DNL Workfront Fusion] est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Vous devez disposer d’un compte pour toute application ou service auquel vous vous connectez avec Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +51,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -99,7 +89,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
 ### Tester et activer
 
-1. Cliquez sur **[!UICONTROL Run once]** dans le coin inférieur gauche de l’éditeur de scénarios.
+1. Cliquez sur **[!UICONTROL Exécuter une fois]** dans le coin inférieur gauche de l’éditeur de scénario.
 
    Le scénario doit être en cours d’exécution pour surveiller la nouvelle demande.
 1. Accédez à l’environnement Workfront auquel Fusion se connecte et ajoutez un problème.
@@ -109,4 +99,4 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 1. Lorsque vous êtes convaincu que le scénario fonctionne comme prévu, cliquez sur le bouton (bascule) **Planification** dans le coin inférieur gauche de l’écran pour **Activé**.
 
    Le scénario est alors activé.
-1. Dans [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Save]** près du coin inférieur gauche pour enregistrer votre progression dans le scénario.
+1. Dans Workfront Fusion, cliquez sur **[!UICONTROL Enregistrer]** près du coin inférieur gauche pour enregistrer votre progression dans le scénario.

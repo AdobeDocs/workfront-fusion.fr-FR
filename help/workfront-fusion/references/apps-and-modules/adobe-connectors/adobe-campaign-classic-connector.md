@@ -1,19 +1,19 @@
 ---
 title: Modules Adobe Campaign v7/v8
-description: Avec les modules  [!DNL Adobe Campaign] , vous pouvez lancer un scènario  [!DNL Adobe Workfront Fusion]  selon les événements de votre compte  [!DNL Adobe Campaign] , créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide de critères que vous définissez et charger des documents.
+description: Avec les modules  [!DNL Adobe Campaign]   [!DNL Adobe Campaign] , vous pouvez lancer un scénario Adobe Workfront Fusion en fonction des événements de votre compte, créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et charger des documents.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 89%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
 # Modules [!DNL Adobe Campaign]
 
-Avec les modules [!DNL Adobe Campaign], vous pouvez démarrer un scénario [!DNL Adobe Workfront Fusion] selon les événements de votre compte [!DNL Adobe Campaign v7/v8], créer, lire ou mettre à jour des enregistrements, rechercher des enregistrements à l’aide des critères que vous définissez et effectuer des appels API personnalisés.
+Avec les modules [!DNL Adobe Campaign], vous pouvez démarrer un scénario Adobe Workfront Fusion en fonction des événements de votre compte [!DNL Adobe Campaign v7/v8], créer, lire ou mettre à jour des enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et effectuer des appels d’API personnalisés.
 
 ## Conditions d’accès
 
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -80,7 +80,7 @@ Le connecteur Adobe Campaign utilise les éléments suivants :
  </tbody> 
  </table>
 
-## Connecter [!DNL Adobe Campaign] à [!DNL Adobe Workfront Fusion]
+## Connexion de [!DNL Adobe Campaign] à Adobe Workfront Fusion
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ Le connecteur Adobe Campaign utilise les éléments suivants :
 
 ## Modules [!DNL Adobe Campaign] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Adobe Campaign], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Campaign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Adobe Campaign], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Campaign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -269,7 +269,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
       <td>
         <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p>
         <p>Par exemple, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] ajoute automatiquement l’en-tête du jeton [!UICONTROL x-security].</p>
+        <p>Workfront Fusion ajoute automatiquement l’en-tête du jeton [!UICONTROL x-security].</p>
       </td>
     </tr>
     <tr>

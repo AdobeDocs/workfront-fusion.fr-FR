@@ -4,10 +4,10 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3471'
-ht-degree: 34%
+source-wordcount: '3553'
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 34%
 >
 >Pour obtenir des instructions sur la version héritée du connecteur Frame.io, voir [Connecteur hérité Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
-Les modules [!DNL Adobe Workfront Fusion] [!DNL Frame.io] vous permettent de surveiller, créer, mettre à jour, récupérer ou supprimer des ressources et des commentaires dans votre compte [!DNL Frame.io].
+Les modules Adobe Workfront Fusion [!DNL Frame.io] vous permettent de surveiller, créer, mettre à jour, récupérer ou supprimer des ressources et des commentaires dans votre compte [!DNL Frame.io].
 
 Workfront propose deux connecteurs Frame.io, en fonction de la version de Frame.io à laquelle vous vous connectez.
 
@@ -74,7 +74,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -296,7 +296,7 @@ Si vous ne disposez pas déjà d’informations d’identification de serveur à
 
 ## Modules [!DNL Frame.io] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Frame.io], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Frame.io] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Frame.io], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Frame.io] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -329,7 +329,7 @@ Ce module d’action crée une ressource.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -376,7 +376,7 @@ Ce module d’action supprime une ressource spécifiée.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -399,7 +399,7 @@ Ce module d’action récupère les détails d’une ressource.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -424,7 +424,7 @@ Ce module de recherche récupère toutes les ressources dans le dossier du proje
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -455,7 +455,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -482,7 +482,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -511,7 +511,7 @@ Ce module d’action ajoute un nouveau commentaire ou une nouvelle réponse à l
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -554,7 +554,7 @@ Ce module d’action supprime un commentaire existant.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -577,7 +577,7 @@ Ce module d’action récupère les détails du commentaire spécifié.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -600,7 +600,7 @@ Ce module de recherche récupère tous les commentaires de la ressource spécifi
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -635,7 +635,7 @@ Ce module d’action modifie un commentaire existant.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -678,7 +678,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -705,7 +705,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -726,7 +726,7 @@ Ce module d’action crée un dossier dans Frame.io.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -767,7 +767,7 @@ Ce module d’action crée un projet dans Frame.io.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -794,7 +794,7 @@ Ce module d&#39;action invite les utilisateurs au projet Frame.io spécifié.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -826,7 +826,7 @@ Ce module de recherche récupère tous les projets pour l’équipe spécifiée.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -859,7 +859,7 @@ Ce module d’action ajoute une ressource à un lien de partage dans Frame.io.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -886,7 +886,7 @@ Ce module d&#39;action crée un lien de partage dans Frame.io.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -939,7 +939,7 @@ Ce module d’action crée un espace de travail dans Frame.io
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -962,7 +962,7 @@ Ce module répertorie tous les espaces de travail d’un compte.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 
@@ -992,7 +992,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -1004,7 +1004,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p> <p>Par exemple, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Ajoute automatiquement des en-têtes d’autorisation.</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p> <p>Par exemple, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion ajoute automatiquement des en-têtes d’autorisation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Chaîne de requête] </td> 
@@ -1038,7 +1038,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connecter [!DNL Frame.io] à [!DNL Adobe Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de compte] </td> 

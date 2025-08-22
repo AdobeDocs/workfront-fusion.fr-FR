@@ -4,18 +4,18 @@ description: Les modules  [!DNL Adobe Workfront Fusion Google Drive]  vous perme
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 76%
+source-wordcount: '2096'
+ht-degree: 58%
 
 ---
 
 # Modules [!DNL Google Drive]
 
-Les modules [!DNL Adobe Workfront Fusion] [!DNL Google Drive] vous permettent de surveiller, de rechercher, de créer, de mettre à jour, de supprimer et de gérer vos fichiers, dossiers ou lecteurs partagés dans votre [!DNL Google Drive].
+Les modules Adobe Workfront Fusion [!DNL Google Drive] vous permettent de surveiller, rechercher, créer, mettre à jour, supprimer et gérer vos fichiers, dossiers ou lecteurs partagés dans votre [!DNL Google Drive].
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez connecter votre compte [!DNL Google Drive] à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez connecter votre compte [!DNL Google Drive] à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -60,7 +60,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,17 +89,17 @@ Le connecteur du lecteur Google utilise les éléments suivants :
 
 
 
-## Connecter [!DNL Google Drive] à [!DNL Workfront Fusion]
+## Connexion de [!DNL Google Drive] à Workfront Fusion
 
 Si vous utilisez [!DNL @gmail.com] ou [!DNL @googlemail.com] utilisateur, vous devez créer un client OAuth sur le [!DNL Google Cloud Platform] pour obtenir vos [!UICONTROL ID client] et [!UICONTROL Secret client].
 
-Pour obtenir des instructions étape par étape sur la création du client OAuth (et obtenir l’[!UICONTROL ID client] et le [!UICONTROL secret client]), voir [Connexion d’ [!DNL Adobe Workfront Fusion]  à  [!DNL Google Services]  à l’aide d’un client OAuth personnalisé](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Pour obtenir des instructions détaillées sur la création du client OAuth (et l’obtention de l’[!UICONTROL ID client] et du [!UICONTROL Secret client]), voir [Connecter Adobe Workfront Fusion à [!DNL Google Services] à l’aide d’un client OAuth personnalisé](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Drive] à [!UICONTROL Workfront Fusion], voir [Créer une connexion à [!UICONTROL Adobe Workfront Fusion] : instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Modules [!DNL Google Drive] et leurs champs
 
-Lorsque vous configurez les modules [!DNL Google Drive], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Drive] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Google Drive], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Drive] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -127,7 +127,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier de votre [
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL What files to watch]</td> 
@@ -162,7 +162,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier de votre [
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Définissez le nombre maximal de résultats que [!DNL Workfront Fusion] téléchargera au cours d’un cycle (nombre de répétitions par exécution de scénario).</td> 
+   <td>Définissez le nombre maximal de résultats que Workfront Fusion téléchargera au cours d’un cycle (le nombre de répétitions par exécution de scénario).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un commentaire est aj
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File]</td> 
@@ -189,7 +189,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un commentaire est aj
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned comments]</td> 
-   <td>Définissez le nombre maximal de commentaires que [!DNL Workfront Fusion] renverra au cours d’un cycle (nombre de répétitions par exécution de scénario).</td> 
+   <td>Définissez le nombre maximal de commentaires que Workfront Fusion renverra au cours d’un cycle (le nombre de répétitions par exécution de scénario).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -204,7 +204,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier est ajout�
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection] </td>
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Select the folder to be watched]</td>
@@ -243,7 +243,7 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier est ajout�
   </tr> 
   <tr> 
     <td>[!UICONTROL Maximum number of downloaded files]</td>
-    <td>Définissez le nombre maximum de résultats que [!DNL Workfront Fusion] téléchargera au cours d’un cycle (le nombre de répétitions par exécution de scénario).</td>
+    <td>Définissez le nombre maximal de résultats que Workfront Fusion téléchargera au cours d’un cycle (le nombre de répétitions par exécution de scénario).</td>
   </tr> 
  </tbody> 
 </table>
@@ -258,7 +258,7 @@ Se déclenche lorsqu’un nouveau fichier est partagé avec vous ou qu’un fich
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select the folder to be watched]</td> 
@@ -297,7 +297,7 @@ Se déclenche lorsqu’un nouveau fichier est partagé avec vous ou qu’un fich
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Définissez le nombre maximum de résultats que [!DNL Workfront Fusion] téléchargera au cours d’un cycle (le nombre de répétitions par excécution de scénario).</td> 
+   <td>Définissez le nombre maximal de résultats que Workfront Fusion téléchargera au cours d’un cycle (le nombre de répétitions par exécution de scénario).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -324,7 +324,7 @@ Ce module d’action copie un fichier au nouvel emplacement.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -359,7 +359,7 @@ Ce module d’action crée un dossier à l’emplacement spécifié.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -394,7 +394,7 @@ Ce module d’action supprime définitivement un fichier ou un dossier.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion].</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -413,7 +413,7 @@ Ce module d&#39;action récupère le fichier avec l&#39;identifiant spécifié.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion].</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Documents] files to format]</td> 
@@ -448,7 +448,7 @@ Ce module d&#39;action récupère le lien de partage d&#39;un fichier dans Googl
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion].</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -467,7 +467,7 @@ Ce module d’action déplace un fichier ou un dossier vers la corbeille.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion].</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -486,7 +486,7 @@ Ce module de recherche recherche des fichiers ou des dossiers en fonction de cri
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -511,7 +511,7 @@ Ce module de recherche recherche des fichiers ou des dossiers en fonction de cri
      <li> <p><strong>[!UICONTROL Search within file/folder names]</strong> </p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Saisissez une partie du nom du fichier ou le nom du fichier complet (y compris le suffixe) que vous souhaitez rechercher.</p> </li> 
-       <li> <p><strong>[!UICONTROL Search Options]</strong> </p> <p>Sélectionnez si vous voulez rechercher le terme exact ou si vous voulez rechercher les mots qui contiennent le terme recherché.</p> </li> 
+       <li> <p><strong>[!UICONTROL Search Options]</strong> </p> <p>Sélectionnez si vous voulez rechercher le terme exact ou si vous voulez rechercher les mots qui contiennent le terme de recherche.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Fulltext] search</strong> </p> 
       <ul> 
@@ -526,7 +526,7 @@ Ce module de recherche recherche des fichiers ou des dossiers en fonction de cri
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned results]</td> 
-   <td>Définissez le nombre maximum de fichiers ou de dossiers que [!DNL Workfront Fusion] renverra au cours d’un cycle d’exécution.</td> 
+   <td>Définissez le nombre maximal de fichiers ou de dossiers que Workfront Fusion renverra au cours d’un cycle d’exécution.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -545,7 +545,7 @@ Ce module d’action met à jour les métadonnées ou le contenu d’un fichier.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -592,7 +592,7 @@ Charge un fichier sur votre [!DNL Google Drive].
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour en savoir plus sur la connexion de votre compte [!DNL Google Drive] à [!DNL Workfront Fusion], voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Google Drive] à Workfront Fusion, voir <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Google Drive] à [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Destination]</td> 

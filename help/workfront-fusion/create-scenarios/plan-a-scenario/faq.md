@@ -4,10 +4,10 @@ description: Les informations de cet article peuvent s’avérer utiles lorsque 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 32%
+source-wordcount: '552'
+ht-degree: 31%
 
 ---
 
@@ -33,7 +33,7 @@ Bien qu’il n’y ait pas de limite au nombre de modules dans un scénario, plu
 
 Pour plus d’informations sur les modules, voir [Présentation des modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
-## [!DNL Workfront Fusion] peut-il travailler avec des fichiers ?
+## Workfront Fusion peut-il fonctionner avec les fichiers ?
 
 ### Réponse
 
@@ -69,7 +69,7 @@ Le transfert de données correspond à la quantité de données transférées pa
 
 ### Réponse
 
-Une connexion est le lien entre votre compte [!DNL Workfront Fusion] et le service tiers que vous souhaitez utiliser. La connexion peut être créée lors de la modification d’un scénario.
+Une connexion est le lien entre votre compte Workfront Fusion et le service tiers que vous souhaitez utiliser. La connexion peut être créée lors de la modification d’un scénario.
 
 Pour plus d’informations, voir [Présentation de la connexion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
@@ -77,12 +77,12 @@ Pour plus d’informations, voir [Présentation de la connexion](/help/workfront
 
 ### Réponse
 
-Un [!UICONTROL Aggregator] fusionne les données en une seule collection. Il s’agit par exemple de fichiers compressés dans une archive zip et envoyés en pièce jointe à un e-mail.
+Un [!UICONTROL agrégateur] fusionne les données en une seule collection. Il s’agit par exemple de fichiers compressés dans une archive zip et envoyés en pièce jointe à un e-mail.
 
-Pour plus d’informations, voir [[!UICONTROL Aggregator] module](/help/workfront-fusion/references/modules/aggregator-module.md).
+Pour plus d’informations, voir [[!UICONTROL Module Agrégateur]](/help/workfront-fusion/references/modules/aggregator-module.md).
 
-## Que se passe-t-il si je laisse [!DNL Workfront Fusion] traiter un e-mail contenant plus d’une pièce jointe ?
+## Que se passe-t-il si je laisse Workfront Fusion traiter un email contenant plusieurs pièces jointes ?
 
 ### Réponse
 
-Si vous utilisez l’[!UICONTROL Retrieve attachments] du module [!UICONTROL Email], chaque pièce jointe est envoyée individuellement par le biais des autres modules du scénario. Des modules similaires sont également disponibles dans d’autres applications qui reçoivent plusieurs fichiers à la fois.
+Si vous utilisez le module d’[!UICONTROL e-mail] [!UICONTROL Récupérer les pièces jointes], chaque pièce jointe est envoyée individuellement via les autres modules du scénario. Des modules similaires sont également disponibles dans d’autres applications qui reçoivent plusieurs fichiers à la fois.

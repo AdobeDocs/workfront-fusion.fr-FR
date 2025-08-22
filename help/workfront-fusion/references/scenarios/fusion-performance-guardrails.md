@@ -1,19 +1,19 @@
 ---
 title: Mécanismes de sécurisation des performances de fusion
-description: L [!DNL Adobe Workfront Fusion] automatisation du travail nécessite un traitement rapide et est donc conçue pour offrir des performances élevées. Étant donné que les scénarios de longue durée peuvent ralentir le rythme de votre travail, nous avons conçu des mécanismes de sécurisation qui préservent les performances et limitent le temps d [!DNL Workfront Fusion] exécution, la taille des données et d’autres paramètres de scénario. [!DNL Workfront Fusion] les concepteurs doivent être conscients de ces mécanismes de sécurisation et les incorporer dans leurs pratiques de conception.
+description: L’automatisation du travail nécessite un traitement rapide. Adobe Workfront Fusion est donc conçu pour offrir des performances élevées. Comme les scénarios de longue durée peuvent ralentir le rythme de votre travail, nous avons conçu Workfront Fusion avec des mécanismes de sécurisation qui préservent les performances et limitent le temps d’exécution, la taille des données et d’autres paramètres de scénario. Les concepteurs de Workfront Fusion doivent être conscients de ces mécanismes de sécurisation et les incorporer dans leurs pratiques de conception.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 47%
+source-wordcount: '1104'
+ht-degree: 35%
 
 ---
 
 # Mécanismes de sécurisation des performances de fusion
 
-L’automatisation du travail exige un traitement rapide, c’est pourquoi [!DNL Adobe Workfront Fusion] est conçu pour des performances élevées. Comme les scénarios de longue durée peuvent ralentir le rythme de votre travail, [!DNL Workfront Fusion] a été conçu avec des mécanismes de sécurisation permettant de préserver les performances, pour limiter le temps d’exécution, la taille des données et d’autres paramètres du scénario. Les équipes de conception de [!DNL Workfront Fusion] doivent connaître ces mécanismes de sécurisation et les intégrer dans leurs pratiques de conception.
+L’automatisation du travail nécessite un traitement rapide. Adobe Workfront Fusion est donc conçu pour offrir des performances élevées. Comme les scénarios de longue durée peuvent ralentir le rythme de votre travail, nous avons conçu Workfront Fusion avec des mécanismes de sécurisation qui préservent les performances et limitent le temps d’exécution, la taille des données et d’autres paramètres de scénario. Les concepteurs de Workfront Fusion doivent être conscients de ces mécanismes de sécurisation et les incorporer dans leurs pratiques de conception.
 
 ## Navigateurs
 
@@ -21,17 +21,17 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi [!DNL
 
 ## Scénarios
 
-* Le délai d’expiration par défaut pour l’exécution d’un scénario est de **40 minutes**. Lorsque l’exécution atteint ce délai d’expiration, [!DNL Workfront Fusion] interrompt l’exécution du scénario après le cycle ou l’opération suivant, selon le scénario. Cela force l’arrêt du scénario peu après l’atteinte de la limite de 40 minutes.
+* Le délai d’expiration par défaut pour l’exécution d’un scénario est de **40 minutes**. Lorsque l’exécution atteint ce délai, Workfront Fusion interrompt l’exécution du scénario après le cycle ou l’opération suivant(e), selon le scénario. Cela force l’arrêt du scénario peu après l’atteinte de la limite de 40 minutes.
 
   Le chaînage de scénarios n’est pas comptabilisé dans le délai d’exécution du scénario. Un scénario parent ne s’accumule pas de temps pendant l’attente de l’exécution d’un scénario enfant.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.
 
-   * Lors de l’utilisation de l’application [!DNL Workfront], veillez à sélectionner uniquement les champs nécessaires à vos cas d’utilisation de création ou de mise à jour.
+   * Lors de l’utilisation de l’application Workfront, veillez à sélectionner uniquement les champs nécessaires aux cas d’utilisation de création ou de mise à jour.
    * Lors de l’utilisation d’autres applications, utilisez des modules API personnalisés pour interagir avec n’importe quel type d’enregistrement comportant un grand nombre de champs.
 
-* Bien qu’il n’y ait pas de limite pour le nombre de modules dans un scénario, les scénarios comportant plus de 150 modules ont une incidence négative sur les performances de votre système [!DNL Workfront Fusion]. Pour cette raison, il est déconseillé de créer des scénarios comportant plus de 150 modules.
+* Bien qu’il n’existe pas de limite au nombre de modules dans un scénario, les scénarios comportant plus de 150 modules ont une incidence négative sur les performances de votre système Workfront Fusion. Pour cette raison, il est déconseillé de créer des scénarios comportant plus de 150 modules.
 
 ## Opérations
 
@@ -60,7 +60,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 
 * La taille maximale par défaut d’un payload est de **5 Mo**.
 * Les webhooks sont limités à **100 demandes par seconde**. Lorsque cette limite est atteinte, Workfront Fusion envoie un statut 429 ([!UICONTROL Trop de demandes]).
-* [!DNL Workfront Fusion] stocke les payloads de webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa réception entraîne l’erreur « [!UICONTROL Échec de la lecture du fichier à partir de l’enregistrement.] »
+* Workfront Fusion stocke les payloads du webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa réception entraîne l’erreur « [!UICONTROL Échec de la lecture du fichier à partir de l’enregistrement.] »
 * Les webhooks sont désactivés automatiquement si l’une des conditions suivantes s’applique :
 
    * Le webhook n’a été connecté à aucun scénario depuis plus de 5 jours.

@@ -4,18 +4,18 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 90%
+source-wordcount: '4122'
+ht-degree: 94%
 
 ---
 
-# Modules [!UICONTROL GitLab]
+# Modules [!UICONTROL GitLab]
 
 Adobe Workfront Fusion nécessite une licence Adobe Workfront Fusion en plus d’une licence Adobe Workfront.
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!UICONTROL GitLab] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!UICONTROL GitLab] et les connecter à plusieurs applications et services tiers.
 
 >[!NOTE]
 >
@@ -34,39 +34,39 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] formule*</td>
-  <td> <p>[!UICONTROL Pro] ou une version ultérieure</p> </td>
+   <td role="rowheader">Formule Adobe Workfront*</td>
+  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence*</td>
+   <td role="rowheader">Licence Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Exigences de licence actuelles : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Exigence de licence actuelle : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Ancienne exigence de licence : [!UICONTROL [!DNL Workfront Fusion] pour l’automatisation et l’intégration du travail] </p>
+   <p>Exigence de licence héritée : [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Exigences actuelles du produit : si vous disposez du plan de [!DNL Adobe Workfront] [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter du [!DNL Adobe Workfront Fusion] et [!DNL Adobe Workfront] utiliser les fonctionnalités décrites dans cet article. [!DNL Workfront Fusion] est inclus dans le plan de [!DNL Workfront] [!UICONTROL Ultimate].</p>
+   <p>Configuration requise actuelle du produit : si vous disposez du plan Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article. Workfront Fusion est inclus dans le plan Workfront [!UICONTROL Ultimate].</p>
    <p>Ou</p>
-   <p>Exigences liées aux produits hérités : votre entreprise doit acheter [!DNL Adobe Workfront Fusion] ainsi qu’[!DNL Adobe Workfront] pour utiliser la fonctionnalité décrite dans cet article.</p>
+   <p>Exigences de produit héritées : votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour connaître la formule, le type de licence ou l’accès dont vous disposez, contactez votre équipe d’administration [!DNL Workfront].
+Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez la section Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Connecter [!DNL GitLab] à [!DNL Workfront Fusion] {#connect-gitlab-to-workfront-fusion}
+## Connecter [!DNL GitLab] à Workfront Fusion {#connect-gitlab-to-workfront-fusion}
 
-1. Dans n’importe quel module de [!DNL Gitlab] de [!DNL Workfront Fusion], cliquez sur **[!UICONTROL Add]** en regard du champ de connexion.
+1. Dans n’importe quel module de [!DNL Gitlab] Workfront Fusion, cliquez sur **[!UICONTROL Ajouter]** en regard du champ de connexion.
 1. Configurez les champs suivants :
 
    <table style="table-layout:auto"> 
@@ -83,18 +83,18 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Access Token]</td> 
-      <td><p>Saisissez votre [!UICONTROL Private Token] ou votre [!UICONTROL Personal Access Token].</p><p>Pour plus d’informations sur la localisation ou la création d’un jeton d’accès personnel [!DNL GitLab], voir « Créer un jeton d’accès personnel » dans <a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Jetons d’accès personnels</a> de la documentation [!DNL GitLab].</p></td> 
+      <td><p>Saisissez votre [!UICONTROL Private Token] ou [!UICONTROL Personal Access Token].</p><p>Pour plus d’informations sur la localisation ou la création d’un jeton d’accès personnel [!DNL GitLab], voir « Créer un jeton d’accès personnel » dans <a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Jetons d’accès personnels</a> de la documentation [!DNL GitLab].</p></td> 
      </tr> 
     </tbody> 
    </table>
 
 
-1. Cliquez sur **[!UICONTROL Continue]**.
-1. Cliquez sur **[!UICONTROL Authorize]** pour créer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]**.
+1. Cliquez sur **[!UICONTROL Autoriser]** pour créer la connexion et revenir au module.
 
 ## Modules [!DNL GitLab] et leurs champs
 
-Lorsque vous configurez les modules [!DNL GitLab], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL GitLab] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL GitLab], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL GitLab] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -102,7 +102,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-+++**[!UICONTROL Watch build status]**
++++**[!UICONTROL Contrôler les statuts de version]**
 
 Ce module déclencheur instantané démarre un scénario lorsque le statut d’une version est modifié.
 
@@ -112,14 +112,14 @@ Ce module déclencheur instantané démarre un scénario lorsque le statut d’u
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les modifications de statut de version.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les modifications de statut de version.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch commit/MR/issue/snippet comments]**
++++**[!UICONTROL Contrôler les commentaires d’engagement/de demande de fusion/de problème/d’extrait]**
 
 Ce module déclencheur instantané lance un scénario lorsqu’un commentaire est publié sur un engagement, une demande de fusion, un problème ou un extrait de code.
 
@@ -129,14 +129,14 @@ Ce module déclencheur instantané lance un scénario lorsqu’un commentaire es
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch commits (pushes)]**
++++**[!UICONTROL Contrôler les engagements (push)]**
 
 Ce module déclencheur instantané lance un scénario lorsqu’un engagement est envoyé à un référentiel. Ce module ne lance pas de scénario lorsqu’une balise est envoyée.
 
@@ -146,14 +146,14 @@ Ce module déclencheur instantané lance un scénario lorsqu’un engagement est
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les engagements.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les engagements.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch issue comment]**
++++**[!UICONTROL Contrôler les commentaires de problème]**
 
 Ce module déclencheur instantané lance un scénario lorsqu’un commentaire est publié sur un problème.
 
@@ -163,16 +163,16 @@ Ce module déclencheur instantané lance un scénario lorsqu’un commentaire es
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires de problème.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires de problème.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch issues]**
++++**[!UICONTROL Contrôler les problèmes]**
 
-Ce module [!UICONTROL instant trigger] démarre un scénario lorsqu’un problème est créé ou lorsqu’un problème existant est mis à jour, fermé ou rouvert.
+Ce module [!UICONTROL déclencheur instantané] lance un scénario lorsqu’un problème est créé ou lorsqu’un problème existant est mis à jour, fermé ou rouvert.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -180,14 +180,14 @@ Ce module [!UICONTROL instant trigger] démarre un scénario lorsqu’un problè
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les problèmes.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les problèmes.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch merge requests]**
++++**[!UICONTROL Contrôler les requêtes de fusion]**
 
 Ce module de déclenchement instantané démarre un scénario lorsque l’un des événements suivants se produit :
 
@@ -202,14 +202,14 @@ Ce module de déclenchement instantané démarre un scénario lorsque l’un des
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les requêtes de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les requêtes de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch merge request comments]**
++++**[!UICONTROL Contrôler les commentaires de requête de fusion]**
 
 Ce module de déclenchement instantané démarre un scénario lorsqu’un commentaire est fait sur une requête de fusion.
 
@@ -219,14 +219,14 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un commen
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les commentaires de demande de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les commentaires de demande de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch pipeline status]**
++++**[!UICONTROL Contrôler le statut du pipeline]**
 
 Ce module de déclenchement instantané démarre un scénario lorsque le statut d’un pipeline change.
 
@@ -236,14 +236,14 @@ Ce module de déclenchement instantané démarre un scénario lorsque le statut 
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les modifications de statut de pipeline.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les modifications de statut de pipeline.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch projects]**
++++**[!UICONTROL Contrôler les projets]**
 
 Ce module de déclenchement planifié lance un scénario lors de l’ajout d’un nouveau projet dont la personne authentifiée est membre.
 
@@ -253,7 +253,7 @@ Ce module de déclenchement planifié lance un scénario lors de l’ajout d’u
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL GitLab] à [!DNL Workfront] Fusion, consultez la section <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à [!DNL Workfront] Fusion</a> de cet article.</td> 
+   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 
@@ -264,7 +264,7 @@ Ce module de déclenchement planifié lance un scénario lors de l’ajout d’u
 
 +++
 
-+++**[!UICONTROL Watch repository branches]**
++++**[!UICONTROL Contrôler des branches de référentiel]**
 
 Ce module de déclenchement planifié lance un scénario lorsqu’une nouvelle branche est ajoutée à un référentiel.
 
@@ -274,7 +274,7 @@ Ce module de déclenchement planifié lance un scénario lorsqu’une nouvelle b
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL GitLab] à [!DNL Workfront] Fusion, consultez la section <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à [!DNL Workfront] Fusion</a> de cet article.</td> 
+   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 
@@ -285,7 +285,7 @@ Ce module de déclenchement planifié lance un scénario lorsqu’une nouvelle b
 
 +++
 
-+++**[!UICONTROL Watch repository tags]**
++++**[!UICONTROL Contrôler les balises de référentiel]**
 
 Ce module de déclenchement instantané lance un scénario lors de la création ou de la suppression d’une balise dans un référentiel.
 
@@ -295,14 +295,14 @@ Ce module de déclenchement instantané lance un scénario lors de la création 
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les balises.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel le webhook doit contrôler les balises.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch snippet comments]**
++++**[!UICONTROL Contrôler les commentaires d’extrait]**
 
 Ce module de déclenchement instantané lance un scénario lorsqu’un nouveau commentaire est effectué sur un extrait.
 
@@ -312,14 +312,14 @@ Ce module de déclenchement instantané lance un scénario lorsqu’un nouveau c
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les commentaires.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch todos]**
++++**[!UICONTROL Contrôler les choses à faire]**
 
 Ce module déclencheur planifié lance un scénario lorsqu’une chose à faire est ajoutée. Lorsqu’aucun filtre n’est appliqué, le déclencheur est exécuté si une chose à faire en attente est ajoutée.
 
@@ -327,7 +327,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une liste de choses à 
 
 +++
 
-+++**[!UICONTROL Watch wiki page]**
++++**[!UICONTROL Contrôler la page wiki]**
 
 Ce module déclencheur instantané lance un scénario lorsqu’une page wiki est créée ou modifiée.
 
@@ -337,7 +337,7 @@ Ce module déclencheur instantané lance un scénario lorsqu’une page wiki est
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>Cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook] .</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les pages wiki.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module . </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les pages wiki.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
@@ -346,7 +346,7 @@ Ce module déclencheur instantané lance un scénario lorsqu’une page wiki est
 
 ### Actions
 
-+++**[!UICONTROL Accept merge request]**
++++**[!UICONTROL Accepter la demande de fusion]**
 
 Ce module d’action fusionne les modifications soumises avec la demande de fusion donnée.
 
@@ -354,7 +354,7 @@ Pour plus d’informations sur les champs, voir [Accepter la demande de fusion](
 
 +++
 
-+++**[!UICONTROL Cancel a build]**
++++**[!UICONTROL Annuler une version]**
 
 Ce module d’action annule une seule version d’un projet.
 
@@ -364,7 +364,7 @@ Ce module d’action annule une seule version d’un projet.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour savoir comment connecter votre compte [!DNL GitLab] à [!DNL Workfront] Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à [!DNL Workfront] Fusion</a> dans cet article.</td> 
+   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -396,7 +396,7 @@ Ce module d’action annule une seule version d’un projet.
 
 +++
 
-+++**[!UICONTROL Cancel a pipeline's builds]**
++++**[!UICONTROL Annuler les versions d’un pipeline]**
 
 Ce module d’action annule les versions pour un seul pipeline.
 
@@ -404,7 +404,7 @@ Pour plus d’informations sur les champs, voir [Annuler des traitements d’un 
 
 +++
 
-+++**[!UICONTROL Cancel merge when pipeline succeeds]**
++++**[!UICONTROL Annuler la fusion en cas de réussite du pipeline]**
 
 Si une demande de fusion est définie pour s’enclencher lorsqu’un pipeline réussit, ce module d’action annule cette opération.
 
@@ -412,7 +412,7 @@ Pour plus d’informations sur les champs, voir [Annuler la fusion si le pipelin
 
 +++
 
-+++**[!UICONTROL Cherry pick a commit]**
++++**[!UICONTROL Sélectionner un engagement]**
 
 Ce module d’action sélectionne un engagement sur une branche donnée.
 
@@ -420,7 +420,7 @@ Pour plus d’informations sur les champs, voir [Sélectionner un engagement](ht
 
 +++
 
-+++**[!UICONTROL Create a new label]**
++++**[!UICONTROL Créer un libellé]**
 
 Ce module d’action crée un libellé pour le référentiel donné.
 
@@ -428,7 +428,7 @@ Pour plus d’informations sur les champs, voir [Créer un libellé](https://doc
 
 +++
 
-+++**[!UICONTROL Create a new pipeline]**
++++**[!UICONTROL Créer un pipeline]**
 
 Ce module d’action crée un pipeline pour le projet donné.
 
@@ -436,7 +436,7 @@ Pour plus d’informations sur les champs, voir [Créer un pipeline](https://doc
 
 +++
 
-+++**[!UICONTROL Create a new release]**
++++**[!UICONTROL Créer une version]**
 
 Ce module d’action ajoute des notes de mise à jour à la balise git existante.
 
@@ -444,7 +444,7 @@ Pour plus d’informations sur les champs, voir [Créer une version](https://doc
 
 +++
 
-+++**[!UICONTROL Create a new tag]**
++++**[!UICONTROL Créer une balise]**
 
 Ce module d’action crée une balise dans le référentiel qui renvoie à la référence fournie.
 
@@ -452,7 +452,7 @@ Pour plus d’informations sur les champs, voir [Créer une balise](https://docs
 
 +++
 
-+++**[!UICONTROL Create a todo]**
++++**[!UICONTROL Créer une chose à faire]**
 
 Ce module d’action crée une chose à faire pour la personne concernée sur le problème sélectionné. La personne concernée est la personne identifiée par les informations d’identification sur la connexion utilisée pour ce module.
 
@@ -460,7 +460,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une chose à 
 
 +++
 
-+++**[!UICONTROL Create a todo on a merge request]**
++++**[!UICONTROL Créer une chose à faire sur une demande de fusion]**
 
 Ce module d’action crée une chose à faire pour la personne concernée sur la demande de fusion sélectionnée. La personne concernée est la personne identifiée par les informations d’identification sur la connexion utilisée pour ce module.
 
@@ -468,7 +468,7 @@ Pour plus d’informations sur les champs, voir [Créer une chose à faire](http
 
 +++
 
-+++**[!UICONTROL Create merge request]**
++++**[!UICONTROL Créer une demande de fusion]**
 
 Ce module d’action crée une nouvelle demande de fusion sur un projet.
 
@@ -476,7 +476,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une demande d
 
 +++
 
-+++**[!UICONTROL Create new file in repository]**
++++**[!UICONTROL Créer un fichier dans le référentiel]**
 
 Ce module d’action crée un fichier dans le référentiel sélectionné.
 
@@ -484,7 +484,7 @@ Pour plus d’informations sur les champs, voir la section [Créer un fichier da
 
 +++
 
-+++**[!UICONTROL Create new issue note]**
++++**[!UICONTROL Créer une note de problème]**
 
 Ce module d’action crée une note de problème pour un problème de projet unique.
 
@@ -492,7 +492,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une note de p
 
 +++
 
-+++**[!UICONTROL Create new merge request note]**
++++**[!UICONTROL Créer une note de demande de fusion]**
 
 Ce module d’action crée une note pour une seule demande de fusion.
 
@@ -500,7 +500,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une note de d
 
 +++
 
-+++**[!UICONTROL Create a new milestone]**
++++**[!UICONTROL Créer un jalon]**
 
 Ce module d’action crée un jalon pour un projet.
 
@@ -508,7 +508,7 @@ Pour plus d’informations sur les champs, voir la section [Créer un jalon](htt
 
 +++
 
-+++**[!UICONTROL Create new snippet note]**
++++**[!UICONTROL Créer une note d’extrait de code]**
 
 Ce module d’action crée une note pour un seul extrait de code. Les notes des extraits de code sont des commentaires que les utilisateurs et utilisatrices peuvent publier sur un extrait de code.
 
@@ -516,7 +516,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une note d’
 
 +++
 
-+++**[!UICONTROL Create repository branch]**
++++**[!UICONTROL Créer une branche de référentiel]**
 
 Ce module d’action crée une seule branche de référentiel.
 
@@ -524,7 +524,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une branche d
 
 +++
 
-+++**[!UICONTROL Create build variable]**
++++**[!UICONTROL Créer une variable de version]**
 
 Ce module d’action crée une variable de version.
 
@@ -532,7 +532,7 @@ Pour plus d’informations sur les champs, voir la section [Créer une variable]
 
 +++
 
-+++**[!UICONTROL Delete a merge request]**
++++**[!UICONTROL Supprimer une demande de fusion]**
 
 Ce module d’action est réservé aux administrateurs et administratrices et aux personnes propriétaires de projets. Il supprime la demande de fusion en question.
 
@@ -540,7 +540,7 @@ Pour plus d’informations sur les champs, voir la section [Supprimer une demand
 
 +++
 
-+++**[!UICONTROL Delete existing file in repository]**
++++**[!UICONTROL Supprimer un fichier existant dans le référentiel]**
 
 Ce module d’action supprime un fichier existant du référentiel.
 
@@ -548,7 +548,7 @@ Pour plus d’informations sur les champs, voir la section [Supprimer un fichier
 
 +++
 
-+++**[!UICONTROL Delete repository branch]**
++++**[!UICONTROL Supprimer une branche du référentiel]**
 
 Ce module d’action supprime une branche du référentiel.
 
@@ -556,7 +556,7 @@ Pour plus d’informations sur les champs, voir la section [Supprimer une branch
 
 +++
 
-+++**[!UICONTROL Edit issue]**
++++**[!UICONTROL Modifier le problème]**
 
 Ce module d’action met à jour un problème de projet existant. Cet appel est également utilisé pour marquer la clôture d’un problème.
 
@@ -564,14 +564,14 @@ Pour plus d’informations sur les champs, voir la section [Modifier un problèm
 
 +++
 
-+++**[!UICONTROL Edit Milestone]**
++++**[!UICONTROL Modifier jalon]**
 Ce module d&#39;action met à jour un jalon de projet existant.
 
 Pour plus d’informations sur les champs, voir la section [Modifier un jalon](https://docs.gitlab.com/ee/api/milestones.html#edit-milestone) dans la documentation [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL Erase a build]**
++++**[!UICONTROL Effacer une version]**
 
 Ce module d’action efface une version d’un projet (supprime les artefacts et le log de traitement).
 
@@ -579,7 +579,7 @@ Pour plus d’informations sur les champs, voir [Effacer un traitement](https://
 
 +++
 
-+++**[!UICONTROL Get a list of todos]**
++++**[!UICONTROL Obtenir une liste de choses à faire]**
 
 Ce module de recherche permet de récupérer une liste des choses à faire.
 
@@ -587,7 +587,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une liste des choses à
 
 +++
 
-+++**[!UICONTROL Get a single build]**
++++**[!UICONTROL Obtenir une version unique]**
 
 Ce module d’action permet de récupérer un seul traitement d’un projet.
 
@@ -595,7 +595,7 @@ Pour plus d’informations sur les champs, voir [Obtenir un traitement unique](h
 
 +++
 
-+++**[!UICONTROL Get a single repository tag]**
++++**[!UICONTROL Obtenir une balise de référentiel unique]**
 
 Ce module d’action permet de récupérer une balise de référentiel spécifique déterminée par son nom.
 
@@ -603,7 +603,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une balise de référen
 
 +++
 
-+++**[!UICONTROL Get a specific deployment]**
++++**[!UICONTROL Obtenir un déploiement spécifique]**
 
 Ce module d’action permet de récupérer un déploiement spécifique.
 
@@ -611,7 +611,7 @@ Pour plus d’informations sur les champs, voir [Obtenir un déploiement spécif
 
 +++
 
-+++**[!UICONTROL Get all issues assigned to a single milestone]**
++++**[!UICONTROL Obtenir tous les problèmes affectés à un seul jalon]**
 
 Ce module de recherche permet de récupérer tous les problèmes affectés à un seul jalon du projet.
 
@@ -619,7 +619,7 @@ Pour plus d’informations sur les champs, voir [Obtenir tous les problèmes aff
 
 +++
 
-+++**[!UICONTROL Get file from repository]**
++++**[!UICONTROL Obtenir un fichier du référentiel]**
 
 Ce module d’action permet de récupérer des informations sur un fichier dans le référentiel, comme son nom, sa taille ou son contenu.
 
@@ -627,7 +627,7 @@ Pour plus d’informations sur les champs, voir [Obtenir un fichier du référen
 
 +++
 
-+++**[!UICONTROL Get project users]**
++++**[!UICONTROL Obtenir les utilisateurs et utilisatrices du projet]**
 
 Ce module de recherche permet de récupérer les utilisateurs et utilisatrices du projet.
 
@@ -635,7 +635,7 @@ Pour plus d’informations sur les champs, voir [Obtenir les utilisateurs et uti
 
 +++
 
-+++**[!UICONTROL Get a single issue]**
++++**[!UICONTROL Obtenir un problème unique]**
 
 Ce module d’action permet de récupérer les détails d’un problème.
 
@@ -645,7 +645,7 @@ Ce module d’action permet de récupérer les détails d’un problème.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] à Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -660,7 +660,7 @@ Ce module d’action permet de récupérer les détails d’un problème.
 
 +++
 
-+++**[!UICONTROL Get single issue note]**
++++**[!UICONTROL Obtenir une note de problème unique]**
 
 Ce module d’action permet de récupérer une seule note pour un problème de projet spécifique.
 
@@ -668,7 +668,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une note de problème u
 
 +++
 
-+++**[!UICONTROL Get single merge request]**
++++**[!UICONTROL Obtenir une requête de fusion unique]**
 
 Ce module d’action permet de récupérer des informations sur une requête de fusion unique.
 
@@ -676,7 +676,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une requête de fusion 
 
 +++
 
-+++**[!UICONTROL Get single merge request changes]**
++++**[!UICONTROL Obtenir les modifications d’une requête de fusion unique]**
 
 Ce module de recherche récupère des informations sur la requête de fusion, y compris ses fichiers et ses modifications.
 
@@ -684,7 +684,7 @@ Pour plus d’informations sur les champs, voir [Obtenir les modifications d’u
 
 +++
 
-+++**[!UICONTROL Get single merge request commits]**
++++**[!UICONTROL Obtenir les engagements d’une requête de fusion unique]**
 
 Ce module d’action permet de récupèrer une liste de engagements de requête de fusion.
 
@@ -692,7 +692,7 @@ Pour plus d’informations sur les champs, voir [Obtenir les engagements d’une
 
 +++
 
-+++**[!UICONTROL Get single merge request note]**
++++**[!UICONTROL Obtenir une note de requête de fusion unique]**
 
 Ce module d’action renvoie une note unique pour une demande de fusion donnée.
 
@@ -700,7 +700,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une note pour une deman
 
 +++
 
-+++**[!UICONTROL Get a Milestone]**
++++**[!UICONTROL Obtenir un jalon]**
 
 Ce module d’action récupère les détails d’un jalon.
 
@@ -708,7 +708,7 @@ Pour plus d’informations sur les champs, voir [Obtenir un jalon unique](https:
 
 +++
 
-+++**[!UICONTROL Get single project]**
++++**[!UICONTROL Obtenir un projet unique]**
 
 Ce module d’action récupère les détails d’un projet.
 
@@ -716,7 +716,7 @@ Pour plus d’informations sur les champs, voir [Obtenir un projet unique](https
 
 +++
 
-+++**[!UICONTROL Get single repository branch]**
++++**[!UICONTROL Obtenir une branche de référentiel unique]**
 
 Ce module d’action récupère les détails d’une branche de référentiel.
 
@@ -724,7 +724,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une branche de référe
 
 +++
 
-+++**[!UICONTROL Get snippet note]**
++++**[!UICONTROL Obtenir une note d’extrait de code]**
 
 Ce module récupère une note unique pour un extrait de code donné.
 
@@ -732,7 +732,7 @@ Pour plus d’informations sur les champs, voir [Obtenir une note d’un extrait
 
 +++
 
-+++**[!UICONTROL Get the comments of a commit]**
++++**[!UICONTROL Obtenir les commentaires d’un engagement]**
 
 Ce module de recherche récupère les commentaires d’un engagement dans un projet.
 
@@ -740,7 +740,7 @@ Pour plus d’informations sur les champs, voir [Obtenir les commentaires d’un
 
 +++
 
-+++**[!UICONTROL Get the diff of a commit]**
++++**[!UICONTROL Obtenir le diff d‘un engagement]**
 
 Ce module d’action récupère le diff d’un engagement dans un projet.
 
@@ -748,7 +748,7 @@ Pour plus d’informations sur les champs, voir [Obtenir le diff d’un engageme
 
 +++
 
-+++**[!UICONTROL Keep artifacts]**
++++**[!UICONTROL Conserver les artefacts]**
 
 Empêche la suppression des artefacts lorsque l’expiration est fixée.
 
@@ -756,7 +756,7 @@ Pour plus d’informations sur les champs, voir [Conserver les artefacts](https:
 
 +++
 
-+++**[!UICONTROL List all merge request notes]**
++++**[!UICONTROL Répertorier toutes les notes de demande de fusion]**
 
 Ce module de recherche permet d’obtenir une liste de toutes les notes relatives à une demande de fusion unique.
 
@@ -764,15 +764,15 @@ Pour plus d’informations sur les champs, voir [Répertorier toutes les notes d
 
 +++
 
-+++**[!UICONTROL List all snippet notes]**
++++**[!UICONTROL Répertorier toutes les notes d’extrait de code]**
 
 Ce module permet d’obtenir une liste de toutes les notes pour un extrait de code unique. Les notes des extraits de code sont des commentaires que les utilisateurs et utilisatrices peuvent publier sur un extrait de code.
 
-Pour plus d’informations sur les champs, voir [??](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) dans la documentation [!DNL GitLab].
+Pour plus d’informations sur les champs, voir [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) dans la documentation [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL List commit builds]**
++++**[!UICONTROL Répertorier les versions d’un engagement]**
 
 Ce module de recherche renvoie une liste de versions pour un engagement spécifique dans un projet.
 
@@ -782,7 +782,7 @@ Ce module de recherche renvoie une liste de versions pour un engagement spécifi
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] à Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour créer une connexion, voir la section <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -797,7 +797,7 @@ Ce module de recherche renvoie une liste de versions pour un engagement spécifi
 
 +++
 
-+++**[!UICONTROL List issues]**
++++**[!UICONTROL Répertorier les problèmes]**
 
 Ce module de recherche renvoie tous les problèmes en fonction des paramètres de filtrage spécifiés.
 
@@ -805,7 +805,7 @@ Pour plus d’informations sur les champs, voir [Répertorier les problèmes](ht
 
 +++
 
-+++**[!UICONTROL List Issues That Close on Merge]**
++++**[!UICONTROL Répertorier les problèmes qui se clôturent lors de la fusion.]**
 
 Ce module de recherche récupère tous les problèmes qui se clôtureraient par la fusion de la demande de fusion fournie.
 
@@ -813,7 +813,7 @@ Pour plus d’informations sur les champs, voir [Répertorier les problèmes qui
 
 +++
 
-+++**[!UICONTROL List Labels]**
++++**[!UICONTROL Répertorier les libellés]**
 
 Ce module de recherche permet de récuperer tous les libellés du projet.
 
@@ -821,7 +821,7 @@ Pour plus d’informations sur les champs, voir [Répertorier les libellés](htt
 
 +++
 
-+++**[!UICONTROL List merge requests]**
++++**[!UICONTROL Répertorier les demandes de fusion]**
 
 Ce module de recherche permet de récupérer toutes les demandes de fusion en fonction des paramètres de filtrage.
 
@@ -829,7 +829,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les dem
 
 +++
 
-+++**[!UICONTROL List Owned Projects]**
++++**[!UICONTROL Répertorier les projets détenus]**
 
 Ce module de recherche permet de retrouver les projets dont la personne authentifiée est propriétaire.
 
@@ -837,7 +837,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les pro
 
 +++
 
-+++**[!UICONTROL List project builds]**
++++**[!UICONTROL Répertorier les versions de projet]**
 
 Ce module de recherche permet d’obtenir la liste des versions d’un projet.
 
@@ -845,7 +845,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les tra
 
 +++
 
-+++**[!UICONTROL List project deployments]**
++++**[!UICONTROL Répertorier les déploiements de projet]**
 
 Ce module de recherche permet d’obtenir une liste des déploiements dans un projet.
 
@@ -853,7 +853,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les dé
 
 +++
 
-+++**[!UICONTROL List project issue notes]**
++++**[!UICONTROL Répertorier les notes sur les problèmes d’un projet]**
 
 Ce module de recherche permet d’obtenir une liste de toutes les notes relatives à un problème donné.
 
@@ -861,7 +861,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les not
 
 +++
 
-+++**[!UICONTROL List project issues]**
++++**[!UICONTROL Répertorier les problèmes d’un projet]**
 
 Ce module de recherche renvoie tous les problèmes relatifs à un projet donné.
 
@@ -869,7 +869,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les pro
 
 +++
 
-+++**[!UICONTROL List project milestones]**
++++**[!UICONTROL Répertorier les jalons d’un projet]**
 
 Ce module de recherche permet de retrouver tous les jalons du projet.
 
@@ -877,7 +877,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les jal
 
 +++
 
-+++**[!UICONTROL List project pipelines]**
++++**[!UICONTROL Répertorier les pipelines d’un projet]**
 
 Ce module de recherche permet de retrouver tous les pipelines du projet.
 
@@ -885,7 +885,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les pip
 
 +++
 
-+++**[!UICONTROL List project repository tags]**
++++**[!UICONTROL Répertorier les balises de référentiel du projet]**
 
 Ce module de recherche permet de récupérer une liste des balises de référentiel d’un projet, triées par nom dans l’ordre alphabétique inverse.
 
@@ -893,7 +893,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les bal
 
 +++
 
-+++**[!UICONTROL List project variables]**
++++**[!UICONTROL Répertorier les variables du projet]**
 
 Ce module de recherche permet d’obtenir la liste des variables d’un projet.
 
@@ -901,7 +901,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les var
 
 +++
 
-+++**[!UICONTROL List projects]**
++++**[!UICONTROL Répertorier les projets]**
 
 Ce module de recherche permet de retrouver tous les projets dont la personne authentifiée est membre.
 
@@ -909,7 +909,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier tous le
 
 +++
 
-+++**[!UICONTROL List repository branches]**
++++**[!UICONTROL Répertorier les branches du référentiel]**
 
 Ce module recherche les branches du référentiel en fonction du terme de recherche.
 
@@ -917,7 +917,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les bra
 
 +++
 
-+++**[!UICONTROL List repository commits]**
++++**[!UICONTROL Répertorier les engagements du référentiel]**
 
 Ce module de recherche permet d’obtenir une liste des engagements du référentiel dans un projet.
 
@@ -925,7 +925,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les eng
 
 +++
 
-+++**[!UICONTROL List repository contributors]**
++++**[!UICONTROL Répertorier les contributeurs et contributrices du référentiel]**
 
 Ce module de recherche permet d’obtenir la liste des contributeurs et contirbutrices d’un référentiel.
 
@@ -933,7 +933,7 @@ Pour plus d’informations sur les champs, voir la section [Contributeurs et con
 
 +++
 
-+++**[!UICONTROL List repository tree]**
++++**[!UICONTROL Répertorier l’arborescence du référentiel]**
 
 Ce module de recherche permet d’obtenir une liste des fichiers et des répertoires du référentiel dans un projet.
 
@@ -941,7 +941,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier l’arb
 
 +++
 
-+++**[!UICONTROL Mark a todo as done]**
++++**[!UICONTROL Marquer une chose à faire comme terminée]**
 
 Ce module d’action marque une chose à faire en attente donnée par son ID pour la personne concernée comme étant terminée.
 
@@ -949,7 +949,7 @@ Pour plus d’informations sur les champs, voir la section [Marquer une chose à
 
 +++
 
-+++**[!UICONTROL Modify existing issue note]**
++++**[!UICONTROL Modifier une note de problème existante]**
 
 Modifie une note existante d’un problème.
 
@@ -957,7 +957,7 @@ Pour plus d’informations sur les champs, voir la section [Modifier une note de
 
 +++
 
-+++**[!UICONTROL Modify existing merge request note]**
++++**[!UICONTROL Modifier une note de demande de fusion existante]**
 
 Modifie la note existante d’une demande de fusion.
 
@@ -965,7 +965,7 @@ Pour plus d’informations sur les champs, voir la section [Modifier une note de
 
 +++
 
-+++**[!UICONTROL Modify existing snippet note]**
++++**[!UICONTROL Modifier une note d’extrait de code existante]**
 
 Ce module d’action modifie une note existante d’un extrait de code.
 
@@ -973,7 +973,7 @@ Pour plus d’informations sur les champs, voir la section [Modifier une note d�
 
 +++
 
-+++**[!UICONTROL New issue]**
++++**[!UICONTROL Nouveau problème]**
 
 Ce module d’action crée un problème de projet.
 
@@ -981,7 +981,7 @@ Pour plus d’informations sur les champs, voir la section [Nouveau problème](h
 
 +++
 
-+++**[!UICONTROL Play a build]**
++++**[!UICONTROL Lire une version]**
 
 Ce module d’action déclenche une action manuelle pour démarrer un traitement.
 
@@ -989,7 +989,7 @@ Pour plus d’informations sur les champs, voir la section [Lire un traitement](
 
 +++
 
-+++**[!UICONTROL Post comment to commit]**
++++**[!UICONTROL Publier un commentaire sur l’engagement]**
 
 Ce module d’action ajoute un commentaire à un engagement.
 
@@ -997,7 +997,7 @@ Pour plus d’informations sur les champs, voir la section [Publier un commentai
 
 +++
 
-+++**[!UICONTROL Remove variable]**
++++**[!UICONTROL Supprimer la variable]**
 
 Ce module d’action supprime la variable d’un projet.
 
@@ -1005,7 +1005,7 @@ Pour plus d’informations sur les champs, voir la section [Supprimer la variabl
 
 +++
 
-+++**[!UICONTROL Retry a build]**
++++**[!UICONTROL Réessayer une version]**
 
 Ce module d’action réessaie une version unique dans un engagement.
 
@@ -1015,7 +1015,7 @@ Ce module d’action réessaie une version unique dans un engagement.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] à Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour créer une connexion, voir la section <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -1030,7 +1030,7 @@ Ce module d’action réessaie une version unique dans un engagement.
 
 +++
 
-+++**[!UICONTROL Retry Failed Jobs in a Pipeline]**
++++**[!UICONTROL Réessayer les traitements qui ont échoué dans un pipeline.]**
 
 Ce module d’action retente les versions qui ont échoué dans un pipeline.
 
@@ -1038,7 +1038,7 @@ Pour plus d’informations sur les champs, voir la section [Réessayer des trait
 
 +++
 
-+++**[!UICONTROL Get a Variable]**
++++**[!UICONTROL Obtenir une variable]**
 
 Ce module permet d’obtenir les détails d’une variable spécifique d’un projet.
 
@@ -1046,7 +1046,7 @@ Pour plus d’informations sur les champs, voir la section [Afficher les détail
 
 +++
 
-+++**[!UICONTROL Update a release]**
++++**[!UICONTROL Mettre à jour une version]**
 
 Ce module d’action met à jour une version.
 
@@ -1054,7 +1054,7 @@ Pour plus d’informations sur les champs, voir la section [Mettre à jour une v
 
 +++
 
-+++**[!UICONTROL Update merge request]**
++++**[!UICONTROL Mettre à jour une demande de fusion]**
 
 Ce module d’action met à jour une demande de fusion existante. Vous pouvez modifier la branche cible, le titre ou même fermer la demande de fusion.
 
@@ -1062,7 +1062,7 @@ Pour plus d’informations sur les champs, voir la section [Mettre à jour une d
 
 +++
 
-+++**[!UICONTROL Update a Variable]**
++++**[!UICONTROL Mettre à jour une variable]**
 
 Ce module d’action met à jour la variable d’un projet.
 

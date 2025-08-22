@@ -1,19 +1,19 @@
 ---
 title: Modules Finances et opérations de Microsoft Dynamics 365
-description: Dans un  [!DNL Adobe Workfront Fusion]  scénario, vous pouvez automatiser les workflows qui utilisent Microsoft Dynamics 365 Finance and Operations et les connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Microsoft Dynamics 365 Finance and Operations et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 26%
+source-wordcount: '1021'
+ht-degree: 24%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 Finance and Operations modules]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Microsoft Dynamics 365] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Microsoft Dynamics 365] et les connecter à plusieurs applications et services tiers.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 Pour créer une connexion pour vos modules Finances et opérations Microsoft Dynamics 365 :
 
-1. Dans un module Finances et opérations de Microsoft Dynamics 365, cliquez sur **[!UICONTROL Add]** en regard de la zone Connexion.
+1. Dans un module Finances et opérations de Microsoft Dynamics 365, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -55,11 +55,11 @@ Pour créer une connexion pour vos modules Finances et opérations Microsoft Dyn
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Client ID] Dynamics Finance and Operations.</td>
+        <td>Saisissez votre ID client Dynamics Finance and Operations [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] Dynamics Finance and Operations. </td>
+        <td>Saisissez votre clé secrète client Dynamics Finance and Operations [!UICONTROL]. </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Tenant ID]</td>
@@ -72,7 +72,7 @@ Pour créer une connexion pour vos modules Finances et opérations Microsoft Dyn
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continue]** pour enregistrer la connexion et revenir au module .
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.
 
 
 
@@ -98,7 +98,7 @@ Ce module d&#39;action crée un nouvel élément d&#39;entité dans Microsoft Dy
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à [!DNL Workfront Fusion], voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à Workfront Fusion, voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
@@ -123,14 +123,14 @@ Ce module d&#39;action supprime un élément d&#39;entité de Dynamics Finance a
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à [!DNL Workfront Fusion], voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à Workfront Fusion, voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
      <td>Saisissez ou mappez le type d'entité Dynamics Finance and Operations que vous souhaitez supprimer.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL Primary key fields]</td>
+    <td>[!UICONTROL Champs de clé de Principal]</td>
      <td> Les champs de clé de Principal identifient l’élément. Pour chaque champ de clé primaire que vous souhaitez fournir, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez la clé et la valeur uniques qui identifient cet élément. </td> 
   </tr> 
  </tbody> 
@@ -146,7 +146,7 @@ Ce module d&#39;action effectue un appel personnalisé à l&#39;API Dynamics Fin
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à [!DNL Workfront Fusion], voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à Workfront Fusion, voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -158,10 +158,10 @@ Ce module d&#39;action effectue un appel personnalisé à l&#39;API Dynamics Fin
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Cela détermine le type de contenu de la requête.</p> <p>Par exemple,<code> {"Content-type":"application/json"}</code></p> <p>Note : si vous obtenez des erreurs et qu’il est difficile de déterminer leur origine, envisagez de modifier les en-têtes en fonction de la documentation [!DNL Workfront]. Si votre appel API personnalisé renvoie une erreur de requête HTTP 422, essayez d’utiliser un en-tête <code>"Content-Type":"text/plain"</code>.</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Cela détermine le type de contenu de la requête.</p> <p>Par exemple,<code> {"Content-type":"application/json"}</code></p> <p>Remarque : si vous obtenez des erreurs et qu’il est difficile de déterminer leur origine, pensez à modifier les en-têtes en vous basant sur la documentation de Workfront. Si votre appel API personnalisé renvoie une erreur de requête HTTP 422, essayez d’utiliser un en-tête <code>"Content-Type":"text/plain"</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query string]</td> 
+   <td role="rowheader">[!UICONTROL Chaîne de requête]</td> 
    <td> <p>Ajoutez la requête pour l’appel API sous la forme d’un objet JSON standard.</p> <p>Par exemple : <code>{"name":"something-urgent"}</code></p> <p>Conseil : nous vous recommandons d’envoyer des informations via le corps JSON plutôt que sous forme de paramètres de requête.</p> </td> 
   </tr> 
   <tr> 
@@ -186,14 +186,14 @@ Ce module d&#39;action renvoie les données d&#39;un élément d&#39;entité. L�
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à [!DNL Workfront Fusion], voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à Workfront Fusion, voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
      <td>Saisissez ou mappez le type d'entité Dynamics Finance and Operations que vous souhaitez lire.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL Primary key fields]</td>
+    <td>[!UICONTROL Champs de clé de Principal]</td>
      <td> Les champs de clé de Principal identifient l’élément. Pour chaque champ de clé primaire que vous souhaitez fournir, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez la clé et la valeur uniques qui identifient cet élément. </td> 
   </tr> 
  </tbody> 
@@ -207,14 +207,14 @@ Ce module d&#39;action renvoie les données d&#39;un élément d&#39;entité. L�
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à [!DNL Workfront Fusion], voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de Microsoft Dynamics 365 Finance and Operations à Workfront Fusion, voir <a href="#create-a-connection" class="MCXref xref">Création d’une connexion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Entity]</td>
      <td>Saisissez ou mappez le type d'entité Dynamics Finance and Operations à mettre à jour.</td> 
   </tr>  
   <tr> 
-    <td>[!UICONTROL Primary key fields]</td>
+    <td>[!UICONTROL Champs de clé de Principal]</td>
      <td> Les champs de clé de Principal identifient l’élément. Pour chaque champ de clé primaire que vous souhaitez fournir, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez la clé et la valeur uniques qui identifient cet élément. </td> 
   </tr> 
   <tr> 
@@ -234,7 +234,7 @@ Ce module de recherche renvoie les résultats en fonction des critères que vous
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre application [!DNL Workfront] à [!DNL Workfront Fusion], voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Workfront] à [!DNL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Entity]</td> 
@@ -268,7 +268,7 @@ This module lists all records for a given entity.  The item is identified by its
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to [!DNL Workfront Fusion], see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to Workfront Fusion, see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -291,15 +291,15 @@ This trigger module starts a scenario when a record of the given type is created
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to [!DNL Workfront Fusion], see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting Microsoft Dynamics 365 Finance and Operations to Workfront Fusion, see <a href="#create-a-connection" class="MCXref xref">Create a connection</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to watch.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to watch.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to [!DNL Workfront] logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
+   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to Workfront logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 

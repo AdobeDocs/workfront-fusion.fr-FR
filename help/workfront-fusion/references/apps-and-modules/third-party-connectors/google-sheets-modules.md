@@ -1,21 +1,21 @@
 ---
 title: Modules Google Sheets
-description: Pour utiliser  [!DNL Google Sheets]  avec l’extension  [!DNL Adobe Workfront Fusion],you need the [!UICONTROL Workfront Fusion Google Sheets]  (facultative, mais requise pour les déclencheurs instantanés).
+description: Pour utiliser  [!DNL Google Sheets]  avec Adobe Workfront Fusion, vous avez besoin de l’extension [!UICONTROL Workfront Fusion Google Sheets] (facultative, mais requise pour les déclencheurs instantanés).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3957'
-ht-degree: 70%
+source-wordcount: '4040'
+ht-degree: 66%
 
 ---
 
 # Modules [!DNL Google Sheets]
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Google Sheets] et le connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Google Sheets] et les connecter à plusieurs applications et services tiers.
 
-Pour savoir comment connecter votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir la section [Créer une connexion à  [!DNL Adobe Workfront Fusion]  - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir [Créer une connexion vers Adobe Workfront Fusion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Conditions d’accès
 
@@ -56,7 +56,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,7 +89,7 @@ Le connecteur Google Sheets utilise les éléments suivants :
 
 ## Modules Google Sheets et leurs champs
 
-Lorsque vous configurez les modules [!DNL Google Forms], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Google Forms], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -113,7 +113,7 @@ Le module récupère uniquement les nouvelles lignes qui n’ont pas été rempl
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
@@ -149,7 +149,7 @@ Le module récupère uniquement les nouvelles lignes qui n’ont pas été rempl
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Définissez le nombre maximal de résultats avec lesquels [!DNL Workfront Fusion] fonctionnera pendant un cycle d’exécution.</p> </td> 
+   <td> <p>Définissez le nombre maximal de résultats avec lesquels Workfront Fusion travaillera au cours d’un cycle d’exécution.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +172,7 @@ Le module récupère uniquement les nouvelles lignes qui n’ont pas été rempl
 
 Ce module ajoute une ligne à une feuille.
 
-Lorsque vous configurez les modules [!DNL Google Sheets], [!DNL Workfront Fusion] affiche les champs énumérés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!DNL Google Sheets], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -184,11 +184,11 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
-   <td> <p>Indiquez si vous souhaitez sélectionner la feuille de calcul et la feuille manuellement ou par mappage.</p> <p>Remarque : le mappage manuel est utile, par exemple, lorsqu’une nouvelle feuille de calcul est créée dans un scénario [!DNL Workfront Fusion] et que vous souhaitez ajouter des données dans la feuille de calcul que vous venez de créer directement dans le scénario.</p> </td> 
+   <td> <p>Indiquez si vous souhaitez sélectionner la feuille de calcul et la feuille manuellement ou par mappage.</p> <p>Remarque : la mise en correspondance manuelle est utile, par exemple, lorsqu’une nouvelle feuille de calcul est créée dans un scénario Workfront Fusion et que vous souhaitez ajouter des données directement dans la nouvelle feuille de calcul du scénario.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -243,7 +243,7 @@ Crée une feuille dans une feuille de calcul sélectionnée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -270,7 +270,7 @@ Supprime une valeur d’une cellule spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -297,7 +297,7 @@ Supprime les valeurs d’une ligne spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -322,7 +322,7 @@ Supprime les valeurs d’une ligne spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title] </td> 
@@ -366,7 +366,7 @@ Supprime une ligne spécifiée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -393,7 +393,7 @@ Supprime une feuille spécifique.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -416,7 +416,7 @@ Récupère une valeur d’une cellule sélectionnée.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -451,7 +451,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -463,7 +463,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] ajoute les en-têtes d’autorisation.</p> </td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code>. Workfront Fusion ajoute les en-têtes d’autorisation pour vous.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -487,7 +487,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -526,7 +526,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
@@ -582,7 +582,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -602,7 +602,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
   </tr> 
   <tr> 
    <td>[!UICONTROL Row with headers]</td> 
-   <td>Saisissez la plage des en-têtes de tableau. Exemple : <code>A1:F1</code>. Si vous laissez le champ vide, [!DNL Workfront Fusion] traite la première ligne de la plage spécifiée comme l’en-tête.</td> 
+   <td>Saisissez la plage des en-têtes de tableau. Exemple : <code>A1:F1</code>. Si vous laissez le champ vide, Workfront Fusion traite la première ligne de la plage spécifiée comme l’en-tête.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Value render option]</td> 
@@ -625,7 +625,7 @@ Ce module renvoie une liste de toutes les feuilles d’une feuille de calcul.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -644,7 +644,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte Google Sheets à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -684,7 +684,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned rows]</td> 
-   <td>Définissez le nombre maximum de lignes que [!DNL Workfront Fusion] renverra pendant un cycle d’exécution.</td> 
+   <td>Définissez le nombre maximal de lignes que Workfront Fusion renverra au cours d’un cycle d’exécution.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -699,7 +699,7 @@ Renvoie des résultats correspondant aux critères donnés.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Créer une connexion - Instructions de base</a>.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -741,7 +741,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 
 ### Ajouter un bouton dans une feuille pour exécuter un scénario
 
-1. Dans [!DNL Workfront Fusion], insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [ Webhooks ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. Dans Workfront Fusion, insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [ Webhooks ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Copiez l’URL du webhook.
 1. Exécutez le scénario.
@@ -769,7 +769,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 
 1. Revenez à [!DNL Google Sheets] et cliquez sur votre nouveau bouton.
 1. Accorder l’autorisation obligatoire au script :
-1. Dans [!DNL Workfront Fusion], vérifiez que le scénario s’est bien exécuté.
+1. Dans Workfront Fusion, vérifiez que le scénario s’est exécuté correctement.
 
 ## Stocker des dates dans une feuille de calcul
 
@@ -777,7 +777,7 @@ Si vous stockez une valeur Date dans une feuille de calcul sans mise en forme, e
 
 ![Erreur](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
-Pour [!DNL Google Sheets] aider à comprendre la date, mettez-la en forme avec la fonction `formatDate` . Le format correct transmis à la fonction en tant que deuxième argument dépend des paramètres locaux de la feuille de calcul.
+Pour [!DNL Google Sheets] aider à comprendre la date, mettez-la en forme avec la fonction `formatDate` . Le format correct transmis à la fonction en tant que deuxième argument dépend des paramètres régionaux de la feuille de calcul.
 
 Pour plus d’informations sur cette fonction, voir [[!UICONTROL formatDate] (date ; format ; [fuseau horaire])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) dans l’article Fonctions de date et d’heure.
 
@@ -810,4 +810,4 @@ Si une chaîne de nombres que vous utilisez comme texte est interprétée comme 
 1. Dans [!DNL Google Sheets], mettez en évidence la colonne ou la cellule contenant le ou les nombres.
 1. Cliquez sur **[!UICONTROL Format]** > **[!UICONTROL Nombre]** > **[!UICONTROL Texte brut]**.
 
-Une autre solution dans [!DNL Workfront Fusion] consiste à saisir une apostrophe (&#39;) avant un nombre, par exemple &#39;1-2019&#39; ou &#39;1/47&#39;. L’apostrophe ne s’affiche pas dans la cellule après l’envoi des données depuis [!DNL Workfront Fusion].
+Une autre solution dans Workfront Fusion consiste à saisir une apostrophe (’) avant un nombre, par exemple « 1-2019 » ou « 1/47 ». L’apostrophe ne s’affiche pas dans la cellule une fois les données envoyées depuis Workfront Fusion.

@@ -1,23 +1,23 @@
 ---
 title: Modules de magasin de données
-description: Un magasin de données  [!DNL Adobe Workfront Fusion] , similaire à une base de données ou à un tableau simple, peut stocker des données de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénarios. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
+description: Un magasin de données Adobe Workfront Fusion, similaire à une base de données ou à une table simple, peut stocker des données issues de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénario. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 88%
+source-wordcount: '1154'
+ht-degree: 77%
 
 ---
 
 # Modules de [!UICONTROL magasin de données]
 
-Un magasin de données [!DNL Adobe Workfront Fusion], similaire à une base de données ou à un tableau simple, peut stocker des données de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénarios. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
+Un magasin de données Adobe Workfront Fusion, similaire à une base de données ou à une table simple, peut stocker des données issues de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénario. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 
-Les modules de magasin de données vous permettent d’ajouter, de remplacer, de mettre à jour, de récupérer, de supprimer, de rechercher ou de comptabiliser des enregistrements dans votre magasin de données [!DNL Adobe Workfront Fusion].
+Les modules d’entrepôt de données vous permettent d’ajouter, de remplacer, de mettre à jour, de récupérer, de supprimer, de rechercher ou de comptabiliser des enregistrements dans votre entrepôt de données Adobe Workfront Fusion.
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 Pour une vidéo de présentation des entrepôts de données dans Workfront Fusion, voir :
 
@@ -60,7 +60,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -72,7 +72,7 @@ Pour plus d’informations sur la création de magasins de données, voir [Crée
 
 ## Modules [!UICONTROL magasin de données] et leurs champs
 
-Lorsque vous configurez des modules de magasin de données, [!DNL Workfront Fusion] affiche les champs listés ci-dessous. En plus de ces derniers, d’autres champs du magasin de données peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez des modules de magasin de données, Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, d’autres champs du magasin de données peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Il n’est pas nécessaire de créer une connexion pour utiliser les entrepôts de données.
 
@@ -256,7 +256,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> Définissez le nombre maximal de résultats de recherche que [!DNL Workfront Fusion] renvoie pour un seul cycle d’exécution.</p> </td> 
+   <td> <p> Définissez le nombre maximal de résultats de recherche renvoyés par Workfront Fusion au cours d’un cycle d’exécution.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 

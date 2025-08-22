@@ -4,10 +4,10 @@ description: Vous pouvez afficher un journal des activités, telles que la créa
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 12%
+source-wordcount: '536'
+ht-degree: 11%
 
 ---
 
@@ -26,17 +26,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>
+   <td role="rowheader">Formule Adobe Workfront</td>
    <td> <p>Nouveau : Ultimate</p> <p>Ou</p> <p>Current: Not available</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouveau : [!UICONTROL Standard]</p><p>Ou</p><p>Current: Not available</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Current: Not available</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,15 +48,15 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Cette fonctionnalité est disponible uniquement pour les organisations qui disposent du plan Ultimate Workfront, qui inclut [!DNL Workfront Fusion]. Aucun achat de produit supplémentaire n’est nécessaire.</p>
+   <p>Cette fonctionnalité est disponible uniquement pour les organisations qui disposent du plan Ultimate Workfront, qui inclut Workfront Fusion. Aucun achat de produit supplémentaire n’est nécessaire.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus de détails sur les informations contenues dans ce tableau, consultez [Conditions d’accès préalables dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez les [[!DNL Adobe Workfront Fusion] licences](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,7 +66,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
 
 1. Dans le panneau de navigation de gauche, cliquez sur **Présentation de l’organisation** ![Icône de présentation de l’organisation](assets/org-overview-icon.png).
 1. Si vous ne vous trouvez pas actuellement dans l’organisation pour laquelle vous souhaitez afficher le journal des activités, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation dans la liste déroulante.
-1. Cliquez sur l’onglet **[!UICONTROL Activity Logs]** en haut de l’écran.
+1. Cliquez sur l’onglet **[!UICONTROL Journaux d’activité]** en haut de l’écran.
 
    La page Journal d’activité s’ouvre.
 1. (Facultatif) Filtrez le journal d’activité pour limiter les résultats en fonction des critères que vous spécifiez.
@@ -82,7 +82,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
 
 1. Dans le panneau de navigation de gauche, cliquez sur **Présentation de l’organisation** ![Icône de présentation de l’organisation](assets/org-overview-icon.png).
 1. Si vous ne vous trouvez pas actuellement dans l’organisation pour laquelle vous souhaitez afficher le journal des activités, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation dans la liste déroulante.
-1. Cliquez sur l’onglet **[!UICONTROL Activity Logs]** en haut de l’écran.
+1. Cliquez sur l’onglet **[!UICONTROL Journaux d’activité]** en haut de l’écran.
 
    La page Journal d’activité s’ouvre.
 1. Cliquez sur **Filtrer** ![Icône Filtrer](assets/filter-activity-log.png).
@@ -100,7 +100,7 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consu
 
 1. Dans le panneau de navigation de gauche, cliquez sur **Présentation de l’organisation** ![Icône de présentation de l’organisation](assets/org-overview-icon.png).
 1. Si vous ne vous trouvez pas actuellement dans l’organisation pour laquelle vous souhaitez afficher le journal des activités, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation dans la liste déroulante.
-1. Cliquez sur l’onglet **[!UICONTROL Activity Logs]** en haut de l’écran.
+1. Cliquez sur l’onglet **[!UICONTROL Journaux d’activité]** en haut de l’écran.
 
    La page Journal d’activité s’ouvre.
 1. Sélectionnez la période dans le calendrier et (facultatif) saisissez des heures.

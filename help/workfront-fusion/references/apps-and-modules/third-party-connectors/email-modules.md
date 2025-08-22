@@ -1,19 +1,19 @@
 ---
 title: Modules e-mail
-description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez connecter votre compte de messagerie à plusieurs applications et services tiers. Cela vous permet de télécharger des e-mails par IMAP, d’envoyer des e-mails par SMTP, de créer des brouillons, de déplacer et de copier des e-mails d’un dossier vers un autre, de marquer les e-mails comme lus ou non lus et de supprimer des e-mails.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez connecter votre compte de messagerie à plusieurs applications et services tiers. Vous pouvez ainsi télécharger des e-mails via IMAP, envoyer des e-mails via SMTP, créer de nouveaux brouillons, déplacer et copier des e-mails d'un dossier vers un autre, marquer les e-mails comme lus ou non lus et supprimer des e-mails.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 70%
+source-wordcount: '2485'
+ht-degree: 62%
 
 ---
 
 # Modules e-mail
 
-Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez connecter votre compte de messagerie à plusieurs applications et services tiers. Cela vous permet de télécharger des e-mails par IMAP, d’envoyer des e-mails par SMTP, de créer des brouillons, de déplacer et de copier des e-mails d’un dossier vers un autre, de marquer les e-mails comme lus ou non lus et de supprimer des e-mails.
+Dans un scénario Adobe Workfront Fusion, vous pouvez connecter votre compte de messagerie à plusieurs applications et services tiers. Vous pouvez ainsi télécharger des e-mails via IMAP, envoyer des e-mails via SMTP, créer de nouveaux brouillons, déplacer et copier des e-mails d&#39;un dossier vers un autre, marquer les e-mails comme lus ou non lus et supprimer des e-mails.
 
 ## Conditions d’accès
 
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], consultez Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -100,7 +100,7 @@ Pour ajouter un certificat auto-signé :
 
 ## Modules [!UICONTROL E-mail] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL E-mail], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL E-mail], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Certains champs de l’e-mail peuvent déjà contenir des données si vous les avez utilisées dans un autre module dans le scénario. Consultez la documentation d’aide à propos des e-mails si vous avez besoin d’informations à leur sujet.
 
@@ -161,7 +161,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est re�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Saisissez ou mappez le nombre maximal d’e-mails que [!DNL Workfront Fusion] devez renvoyer au cours d’un cycle d’exécution de scénario.</p> </td> 
+   <td> <p> Saisissez ou mappez le nombre maximal d’e-mails que Workfront Fusion doit renvoyer au cours d’un cycle d’exécution de scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +251,7 @@ Ce module d’action crée et ajoute un nouveau brouillon à un dossier sélecti
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -371,11 +371,11 @@ Ce module renvoie les e-mails qui correspondent aux critères spécifiés.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> Saisissez l’identifiant d’e-mail (UID) de l’adresse e-mail dont vous souhaitez récupérer les détails.</p> <p>Vous pouvez obtenir l’UID de l’e-mail en utilisant les modules de [!DNL Workfront Fusion] [!UICONTROL Watch Email] ou [!UICONTROL Search Email].</p> </td> 
+   <td> <p> Saisissez l’identifiant d’e-mail (UID) de l’adresse e-mail dont vous souhaitez récupérer les détails.</p> <p>Vous pouvez obtenir l’UID de l’e-mail à l’aide du module [!UICONTROL Watch Email] ou du module [!UICONTROL Search Email] de Workfront Fusion.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> Le nombre maximal d’e-mails [!DNL Workfront Fusion] doit être renvoyé pendant un cycle d’exécution de scénario.</p> </td> 
+   <td> <p> Le nombre maximal d’e-mails que Workfront Fusion doit renvoyer au cours d’un cycle d’exécution de scénario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -467,11 +467,11 @@ Envoie un nouvel e-mail.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la procédure de connexion de votre compte de messagerie à [!DNL Workfront Fusion], voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connecter votre e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte de messagerie à Workfront Fusion, voir <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Connexion de votre adresse e-mail à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>Une fois l’e-mail envoyé, il est enregistré dans votre messagerie. Activez cette option si vous souhaitez enregistrer les e-mails envoyés à l’aide de [!DNL Workfront Fusion] vers le dossier <i>[!UICONTROL Sent mail]</i> ou un autre dossier de votre messagerie. Certains services de messagerie, tels que [!DNL Gmail], enregistrent automatiquement les messages envoyés.</td> 
+   <td>Une fois l’e-mail envoyé, il est enregistré dans votre messagerie. Activez cette option si vous souhaitez enregistrer les e-mails envoyés à l’aide de Workfront Fusion dans le dossier <i>[!UICONTROL Sent mail]</i> ou dans un autre dossier de votre boîte aux lettres. Certains services de messagerie, tels que [!DNL Gmail], enregistrent automatiquement les messages envoyés.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -545,7 +545,7 @@ Envoie un nouvel e-mail.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Saisissez ou mappez l’adresse e-mail (et le nom, le cas échéant) qui apparaît dans le champ [!UICONTROL From] dans l’e-mail. </p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Note : normalement, [!DNL Workfront Fusion] utilise l’adresse e-mail que vous avez saisie lors de la création de la connexion en tant qu’adresse d’expédition. Si vous saisissez une autre adresse e-mail, une erreur peut se produire lors de l’envoi d’un message, car votre compte peut ne pas être autorisé à envoyer des e-mails depuis une autre adresse que la vôtre. Par exemple : <code>test@mail.com</code> ou <code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Saisissez ou mappez l’adresse e-mail (et le nom, le cas échéant) qui apparaît dans le champ [!UICONTROL From] dans l’e-mail. </p> <p>Important : utilisez la syntaxe correcte : <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Remarque : en règle générale, Workfront Fusion utilise l’adresse e-mail que vous avez saisie lors de la création de la connexion comme adresse d’expéditeur. Si vous saisissez une autre adresse e-mail, une erreur peut se produire lors de l’envoi d’un message, car votre compte peut ne pas être autorisé à envoyer des e-mails depuis une autre adresse que la vôtre. Par exemple : <code>test@mail.com</code> ou <code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

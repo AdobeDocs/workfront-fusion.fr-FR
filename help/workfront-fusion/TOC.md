@@ -2,9 +2,9 @@
 user-guide-title: Documentation sur Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1855'
 ht-degree: 63%
 
 ---
@@ -254,7 +254,7 @@ ht-degree: 63%
    * [Affichage, modification et suppression de modèles](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publication et partage de modèles](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modèles Adobe Workfront Fusion actuellement disponibles](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [Questions fréquentes sur les modèles [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
+   * [Questions fréquentes sur les modèles Adobe Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Références {#references}
    * [Références](/help/workfront-fusion/references/references-toc.md)
    * Licences et rôles {#licenses-and-roles}
@@ -311,7 +311,7 @@ ht-degree: 63%
          * [Modules FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
          * [Modules SFTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
-         * [Utiliser un TLS mutuel dans les modules HTTP dans  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+         * [Utiliser le protocole TLS mutuel dans les modules HTTP d’Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Connecteurs Adobe {#adobe-connectors}
          * [Modules Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Module Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)

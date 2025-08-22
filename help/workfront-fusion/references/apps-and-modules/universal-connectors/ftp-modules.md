@@ -4,10 +4,10 @@ description: Les modules FTP vous permettent de surveiller les modifications de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 81%
+source-wordcount: '1391'
+ht-degree: 78%
 
 ---
 
@@ -54,7 +54,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -115,7 +115,7 @@ Pour utiliser les modules FTP, vous devez disposer d’un compte avec un service
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-     <td> <p>Cliquez sur le bouton <b>[!UICONTROL Extract]</b> pour ouvrir la boîte de dialogue de chargement.</p> <p>Chargez le certificat pour utiliser le TLS avec votre certificat auto-signé. [!DNL Workfront Fusion] ne conserve ni ne stocke les données que vous fournissez, telles que les fichiers et les mots de passe. Le fichier et le mot de passe sont utilisés uniquement pour extraire le certificat.</p> </td> 
+     <td> <p>Cliquez sur le bouton <b>[!UICONTROL Extract]</b> pour ouvrir la boîte de dialogue de chargement.</p> <p>Chargez le certificat pour utiliser le TLS avec votre certificat auto-signé. Workfront Fusion ne conserve ni ne stocke les données que vous fournissez, telles que les fichiers et les mots de passe. Le fichier et le mot de passe sont utilisés uniquement pour extraire le certificat.</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -147,7 +147,7 @@ Pour utiliser les modules FTP, vous devez disposer d’un compte avec un service
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files] </td> 
-   <td> <p>Définissez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle. Si la valeur est trop élevée, la connexion peut être interrompue du côté du serveur FTP. [!DNL Workfront Fusion] n’a aucune influence sur cela. Nous vous recommandons de définir une valeur inférieure et de définir une valeur supérieure pour le nombre maximal de cycles ou d’exécuter le scénario plus fréquemment.</p> </td> 
+   <td> <p>Définissez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle. Si la valeur est trop élevée, la connexion peut être interrompue du côté du serveur FTP. Workfront Fusion n’a aucune influence sur ce point. Nous vous recommandons de définir une valeur inférieure et de définir une valeur supérieure pour le nombre maximal de cycles ou d’exécuter le scénario plus fréquemment.</p> </td> 
   </tr> 
  </tbody> 
 </table>

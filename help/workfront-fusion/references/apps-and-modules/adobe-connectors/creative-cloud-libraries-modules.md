@@ -4,17 +4,17 @@ description: Avec les modules  [!DNL Adobe Workfront Fusion Adobe Creative Cloud
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 66%
+source-wordcount: '1404'
+ht-degree: 64%
 
 ---
 
 # Modules des bibliothèques d’Adobe Creative Cloud
 
 
-Avec les modules [!DNL Adobe Workfront Fusion] [!DNL Adobe Creative Cloud Libraries], vous pouvez lancer un scénario lors de la création ou de la mise à jour d’un élément ou d’une bibliothèque. Vous pouvez également charger, récupérer, archiver ou répertorier des éléments, ou faire un appel à l’API [!DNL Adobe Creative Cloud Libraries].
+Avec les modules Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries], vous pouvez démarrer un scénario lors de la création ou de la mise à jour d’un élément ou d’une bibliothèque. Vous pouvez également charger, récupérer, archiver ou répertorier des éléments, ou faire un appel à l’API [!DNL Adobe Creative Cloud Libraries].
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -63,7 +63,7 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -92,7 +92,7 @@ Le connecteur Bibliothèques Adobe Creative Cloud utilise les éléments suivant
 
 ## Modules [!UICONTROL Adobe Creative Cloud Libraries] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Adobe Creative Cloud Libraries], [!DNL Workfront Fusion] affiche les champs indiqués ci-dessous. D’autres champs [!DNL Adobe Creative Cloud Libraries] peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL Bibliothèques Adobe Creative Cloud], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Creative Cloud Libraries] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -116,7 +116,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 * [[!UICONTROL Charger un élément]](#upload-an-element)
 
-* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
+* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
 * [[!UICONTROL Surveiller les éléments mis à jour]](#watch-updated-elements)
 

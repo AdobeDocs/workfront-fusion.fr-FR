@@ -1,13 +1,13 @@
 ---
 title: Types de données d’élément
-description: Vos scénarios  [!DNL Adobe Workfront Fusion]  peuvent contenir les types d’éléments répertoriés ci-dessous dans un lot.
+description: Vos scénarios Adobe Workfront Fusion peuvent contenir les types d’éléments répertoriés ci-dessous dans un lot.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 80%
+source-wordcount: '577'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 Vous pouvez contenir les types d’éléments répertoriés ci-dessous dans un lot.
 
-Pour plus d’informations sur les types d’éléments [!DNL Workfront Fusion] permettent la conversion entre eux, voir [Type coercition](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+Pour plus d’informations sur les types d’éléments que Workfront Fusion permet de convertir, voir [Type coercition](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -23,11 +23,11 @@ Pour plus d’informations sur les types d’éléments [!DNL Workfront Fusion] 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Texte</p> </td> 
-   <td> <p>Type d’élément le plus courant. Pour certains éléments de texte, [!DNL Adobe Workfront Fusion] vérifie si la longueur maximale ou minimale autorisée est respectée ou si l’élément effectue la validation du format (e-mail, URL ou nom de fichier).</p> </td> 
+   <td> <p>Type d’élément le plus courant. Pour certains éléments de texte, Adobe Workfront Fusion vérifie si la longueur maximale ou minimale autorisée est respectée ou si l’élément effectue une validation du format (e-mail, URL ou nom de fichier).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Nombre</p> </td> 
-   <td> <p>Pour certains éléments numériques, [!DNL Workfront Fusion] peut valider l’entrée pour une plage spécifiée (valeur minimale ou maximale autorisée).</p> </td> 
+   <td> <p>Pour certains éléments numériques, Workfront Fusion peut valider l’entrée pour une plage spécifiée (la valeur minimale ou maximale autorisée).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Booléen (oui/non)</p> </td> 
@@ -35,7 +35,7 @@ Pour plus d’informations sur les types d’éléments [!DNL Workfront Fusion] 
     <ul> 
      <li> <p>La case à cocher obligatoirement s’affiche si le champ est obligatoire et doit être renseigné.</p> <p> <img src="assets/boolean-checkbox-350x158.jpg" style="width: 350;height: 158;"> </p> </li> 
      <li> <p>Les champs facultatifs qui peuvent rester vides s’affichent sous forme de zone de sélection, ce qui permet d’effectuer une sélection parmi trois valeurs : <code>Yes</code>, <code>No</code>, et <code>Not defined</code> (par défaut).</p> <p> <img src="assets/boolean-convert-file-350x129.jpg" style="width: 350;height: 129;"> </p> </li> 
-    </ul> <p>Vous pouvez cliquer sur <strong>[!UICONTROL Map]</strong> si vous devez mapper la valeur à un élément d’un autre module.</p> </td> 
+    </ul> <p>Cliquez sur <strong>[!UICONTROL Map]</strong> si vous devez mapper la valeur à un élément à partir d’un autre module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Date</p> </td> 
@@ -43,7 +43,7 @@ Pour plus d’informations sur les types d’éléments [!DNL Workfront Fusion] 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (données binaires)</p> </td> 
-   <td> <p>Le contenu du fichier est généralement envoyé sous forme de contenu de type buffer (contenu de l’image, fichier vidéo, etc.). Dans certains cas, les données de texte sont incluses dans ce type (par exemple, un fichier texte). [!DNL Workfront Fusion] peut automatiquement convertir des données de texte en code binaire puis en texte et du texte en données de texte puis en code binaire. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Mappage de fichiers</a>.</p> </td> 
+   <td> <p>Le contenu du fichier est généralement envoyé sous forme de contenu de type buffer (contenu de l’image, fichier vidéo, etc.). Dans certains cas, les données de texte sont incluses dans ce type (par exemple, un fichier texte). Workfront Fusion peut convertir automatiquement des données textuelles dans du code binaire en texte et du texte en données textuelles dans du code binaire. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Mappage de fichiers</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Collection</p> </td> 
@@ -55,11 +55,11 @@ Pour plus d’informations sur les types d’éléments [!DNL Workfront Fusion] 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tableau</p> </td> 
-   <td> <p>Vous pouvez utiliser le type de tableau pour utiliser plusieurs valeurs du même type, y compris des collections. Prenons l’exemple des modules [!UICONTROL Email] : ils renvoient un tableau de pièces jointes dont chaque pièce jointe contient le nom, le contenu, la taille, etc. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">Mapper un tableau ou un élément de tableau</a>.</p> </td> 
+   <td> <p>Vous pouvez utiliser le type de tableau pour utiliser plusieurs valeurs du même type, y compris des collections. Par exemple, les modules [!UICONTROL Email] renvoient un tableau de pièces jointes et chaque pièce jointe contient le nom, le contenu, la taille, etc. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">Mapper un tableau ou un élément de tableau</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validation</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] peut effectuer la validation sur chaque type d’élément. Si un élément ne passe pas la validation, le module arrête le traitement en raison d’une erreur de données. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Types d’erreur </a>. </p> </td> 
+   <td> <p>Workfront Fusion peut effectuer une validation sur chaque type d’élément. Si un élément ne passe pas la validation, le module arrête le traitement en raison d’une erreur de données. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Types d’erreur </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

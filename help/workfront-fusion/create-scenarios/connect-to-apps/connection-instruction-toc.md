@@ -1,19 +1,19 @@
 ---
-title: Création de connexions
-description: Une connexion doit respecter les exigences définies par l’API de l’application ou du service web auquel elle se connecte. Pour cette raison, les instructions de configuration d’une connexion varient en fonction de l’application ou du service web. Cet article peut vous aider à identifier et à localiser les instructions pour connecter  [!DNL Adobe Workfront Fusion]  à l’application ou au service web de votre choix.
+title: Créer des connexions
+description: Une connexion doit respecter les exigences définies par l’API de l’application ou du service web auquel elle se connecte. Pour cette raison, les instructions de configuration d’une connexion varient en fonction de l’application ou du service web. Cet article peut vous aider à identifier et à localiser les instructions de connexion d’Adobe Workfront Fusion à l’application ou au service web de votre choix.
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 60%
+source-wordcount: '536'
+ht-degree: 46%
 
 ---
 
-# Création de connexions
+# Créer des connexions
 
-Une connexion doit respecter les exigences définies par l’API de l’application ou du service web auquel elle se connecte. Pour cette raison, les instructions de configuration d’une connexion varient en fonction de l’application ou du service web. Cet article peut vous aider à identifier et à localiser les instructions pour connecter [!DNL Adobe Workfront Fusion] à l’application ou au service web de votre choix.
+Une connexion doit respecter les exigences définies par l’API de l’application ou du service web auquel elle se connecte. Pour cette raison, les instructions de configuration d’une connexion varient en fonction de l’application ou du service web. Cet article peut vous aider à identifier et à localiser les instructions de connexion d’Adobe Workfront Fusion à l’application ou au service web de votre choix.
 
 ## Conditions d’accès
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 ## Se connecter à une application ou à un service web qui ne nécessite pas de configuration.
 
-Dans la plupart des cas, vous pouvez utiliser le module pour créer une connexion avec peu ou pas d’informations supplémentaires. [!DNL Workfront Fusion] gère automatiquement l’authentification.
+Dans la plupart des cas, vous pouvez utiliser le module pour créer une connexion avec peu ou pas d’informations supplémentaires. Workfront Fusion gère automatiquement l’authentification.
 
 Pour obtenir des instructions sur la création d’une connexion sans considérations particulières, voir [Création d’une connexion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
@@ -74,7 +74,7 @@ Pour obtenir des instructions spécifiques, consultez [l’article relatif au co
 
 ## Se connecter à une application ou service web [!DNL Microsoft]
 
-La plupart des applications [!DNL Microsoft] dans [!DNL Workfront Fusion] vous permettent de créer une connexion sans informations supplémentaires.
+La plupart des applications [!DNL Microsoft] de Workfront Fusion vous permettent de créer une connexion sans informations supplémentaires.
 
 Les circonstances suivantes nécessitent des étapes supplémentaires lors de la création d’une connexion :
 
@@ -88,7 +88,7 @@ Les circonstances suivantes nécessitent des étapes supplémentaires lors de la
 
 ## Se connecter à une application ou un service web [!DNL Google]
 
-Le processus pour se connecter à des applications [!DNL Google] peut varier en fonction du type compte [!DNL Google] que vous utilisez. En outre, les mesures de sécurité [!DNL Google] peuvent nécessiter une configuration supplémentaire lorsque vous vous connectez à [!DNL Workfront Fusion].
+Le processus pour se connecter à des applications [!DNL Google] peut varier en fonction du type compte [!DNL Google] que vous utilisez. En outre, [!DNL Google] mesures de sécurité peuvent nécessiter une configuration supplémentaire lorsque vous vous connectez à Workfront Fusion.
 
 Pour plus d’informations, voir ce qui suit :
 
@@ -97,6 +97,6 @@ Pour plus d’informations, voir ce qui suit :
 
 ## Autres applications nécessitant une configuration supplémentaire
 
-Certains services et applications ne respectent pas la configuration de base pour les connexions [!DNL Workfront Fusion]. Vous trouverez des instructions pour la connexion de ces applications dans l’article correspondant à cette application.
+Certains services et applications ne suivent pas la configuration de base pour les connexions Workfront Fusion. Vous trouverez des instructions pour la connexion de ces applications dans l’article correspondant à cette application.
 
 Pour obtenir des instructions spécifiques, consultez [l’article relatif au connecteur](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications).

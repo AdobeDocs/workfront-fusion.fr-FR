@@ -1,19 +1,19 @@
 ---
 title: Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
-description: Gérer les utilisateurs et utilisatrices  [!DNL Adobe Workfront Fusion]  de votre entreprise
+description: Gestion des utilisateurs d’Adobe Workfront Fusion dans votre entreprise
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 59%
+source-wordcount: '273'
+ht-degree: 38%
 
 ---
 
 # Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
 
-[!DNL Adobe Workfront Fusion] administrateurs peuvent gérer les détails des utilisateurs dans [!DNL Workfront Fusion].
+Les administrateurs d’Adobe Workfront Fusion peuvent gérer les détails des utilisateurs dans Workfront Fusion.
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] paquet</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Tous</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licence</td> 
-   <td> <p>Nouvelle : [!UICONTROL Standard]</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
+   <td role="rowheader">Licence Adobe Workfront</td> 
+   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licence**</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
    <td>
-   <p>Actuelle : aucune exigence de licence [!DNL Workfront Fusion] requise.</p>
+   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
    <p>Ou</p>
    <p>Héritée : n’importe laquelle. </p>
    </td> 
@@ -48,16 +48,16 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Plan de [!DNL Workfront] [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter des [!DNL Adobe Workfront Fusion].</li><li>Plan de [!DNL Workfront] [!UICONTROL Ultimate] : [!DNL Workfront Fusion] est inclus.</li></ul>
+   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
    <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter [!DNL Adobe Workfront Fusion].</p>
+   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations du niveau d’accès*</td> 
    <td> 
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre organisation.</p>
-     <p>Vous devez être un administrateur ou une administratrice [!DNL Workfront Fusion] de votre équipe.</p>
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -67,15 +67,15 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir Licences [[!DNL Adobe Workfront Fusion] ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
 
-Les administrateurs et administratrices [!DNL Adobe Workfront Fusion] peuvent afficher et mettre à jour les détails des utilisateurs et utilisatrices.
+Les administrateurs d’Adobe Workfront Fusion peuvent afficher et mettre à jour les détails des utilisateurs.
 
-1. Lorsque vous êtes connecté en tant qu’administrateur [!DNL Workfront Fusion], sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
+1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
 1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
 1. (Facultatif) Pour mettre à jour les détails de l’utilisateur ou de l’utilisatrice, cliquez sur **[!UICONTROL Options]** dans le coin supérieur droit de l’écran, puis sélectionnez **[!UICONTROL Modifier les détails]**.
 1. Modifiez les détails, puis cliquez sur **Enregistrer**.

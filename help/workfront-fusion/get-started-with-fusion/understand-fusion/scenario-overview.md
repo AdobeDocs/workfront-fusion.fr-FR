@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 27%
+source-wordcount: '703'
+ht-degree: 21%
 
 ---
 
@@ -38,7 +38,7 @@ Un **scénario** est une série d’étapes automatisées créées par l’utili
 
 Un scénario commence par un **déclencheur**. Le déclencheur recherche les données nouvelles et mises à jour et démarre le scénario lorsque certaines conditions configurées dans le module s’appliquent. Les Triggers peuvent être configurés pour démarrer un scénario selon un planning (interrogation) ou chaque fois que des modifications de données se produisent (instant).
 
-![ Déclencheur ](assets/scenario-trigger.png)
+![Déclencheur](assets/scenario-trigger.png)
 
 ### Module
 
@@ -72,7 +72,7 @@ Développez les sections suivantes pour afficher des exemples de scénarios et l
 
 Workfront Fusion vous permet d’automatiser des workflows simples ou complexes dans Workfront, ce qui vous permet de gagner du temps et de vous assurer que le processus est exécuté de manière cohérente.
 
-Dans cet exemple, le scénario se déclenche lorsqu’un champ spécifié est modifié dans une tâche ou un problème dans [!DNL Workfront]. Lorsqu’il est déclenché, le scénario récupère des informations dans le projet concerné et crée une mise à jour personnalisée pour une personne affectée à un rôle spécifique dans le projet.
+Dans cet exemple, le scénario se déclenche lorsqu’un champ spécifié est modifié dans une tâche ou un événement dans Workfront. Lorsqu’il est déclenché, le scénario récupère des informations dans le projet concerné et crée une mise à jour personnalisée pour une personne affectée à un rôle spécifique dans le projet.
 
 ![ Exemple de modèle ](assets/fusion-template-example.png)
 
@@ -86,9 +86,9 @@ Dans cet exemple, le scénario se déclenche lorsqu’un champ spécifié est mo
 
 Workfront Fusion peut se connecter à d’autres applications et services web. Vous pouvez accéder aux données d’autres applications, les importer, les manipuler ou les exporter, les intégrer à Workfront ou entre elles.
 
-De nombreuses applications disposent de connecteurs [!DNL Workfront Fusion] dédiés. S’il n’existe aucun connecteur dédié pour l’application à laquelle vous souhaitez accéder, vous pouvez utiliser les modules HTTP ou SOAP de Workfront Fusion pour vous connecter à l’application via son API.
+De nombreuses applications disposent de connecteurs Workfront Fusion dédiés. S’il n’existe aucun connecteur dédié pour l’application à laquelle vous souhaitez accéder, vous pouvez utiliser les modules HTTP ou SOAP de Workfront Fusion pour vous connecter à l’application via son API.
 
-Dans cet exemple, le scénario se déclenche lors de l’ajout d’un utilisateur ou d’une utilisatrice à une feuille de calcul [!DNL Excel]. Le scénario vérifie si l’utilisateur ou l’utilisatrice est dans [!DNL Workfront]. Si ce n’est pas le cas, le scénario crée l’utilisateur ou l’utilisatrice dans [!DNL Workfront] et ajoute son ID d’utilisateur ou d’utilisatrice Workfront à la feuille de calcul.
+Dans cet exemple, le scénario se déclenche lors de l’ajout d’un utilisateur ou d’une utilisatrice à une feuille de calcul [!DNL Excel]. Le scénario vérifie si l’utilisateur se trouve dans Workfront. Si ce n’est pas le cas, le scénario crée l’utilisateur dans Workfront et ajoute son identifiant utilisateur Workfront à la feuille de calcul.
 
 ![Exemple d’intégration](assets/fusion-integration-example.png)
 
@@ -97,7 +97,7 @@ Pour obtenir la liste des connecteurs dédiés, voir [Références des applicati
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] peut se connecter à pratiquement n’importe quel service web. Si l’application avec laquelle vous souhaitez travailler ne dispose pas d’un connecteur [!DNL Workfront Fusion] dédié, vous utilisez des connecteurs universels pour vous connecter à l’application ou au service.
+>Adobe Workfront Fusion peut se connecter à presque tous les services web. Si l’application avec laquelle vous souhaitez travailler ne dispose pas d’un connecteur Workfront Fusion dédié, vous utilisez des connecteurs universels pour vous connecter à l’application ou au service.
 >
 >Pour obtenir la liste des connecteurs universels, voir [Connecteurs universels](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

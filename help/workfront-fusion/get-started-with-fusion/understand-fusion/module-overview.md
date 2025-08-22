@@ -4,10 +4,10 @@ description: 'Adobe Workfront Fusion distingue cinq types de modules : modules d
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 22%
+source-wordcount: '917'
+ht-degree: 24%
 
 ---
 
@@ -35,8 +35,8 @@ Les scénarios peuvent contenir un nombre illimité de modules d’action, bien 
 
 **Exemples :**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]** envoie un fichier à [!DNL Workfront] et retourne son identifiant.
-* **[!UICONTROL Image]>[!UICONTROL Resize]** reçoit une image, la redimensionne à des dimensions spécifiées et la transmet à l’action suivante.
+* **Workfront > [!UICONTROL Télécharger un fichier]** envoie un fichier à Workfront et renvoie son identifiant.
+* **[!UICONTROL Image] > [!UICONTROL Redimensionner]** reçoit une image, la redimensionne selon les dimensions spécifiées et la transmet à l’action suivante.
 
 >[!ENDSHADEBOX]
 
@@ -80,7 +80,7 @@ Les scénarios peuvent contenir un nombre illimité de modules de recherche, bie
 
 **Exemple :**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]** lit les enregistrements correspondant à la requête de recherche que vous spécifiez, dans un objet parent particulier.
+**Workfront > [!UICONTROL Lire les enregistrements associés]** lit les enregistrements qui correspondent à la requête de recherche que vous spécifiez, dans un objet parent particulier.
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Les déclencheurs renvoient zéro, un ou plusieurs lots, qui sont ensuite transm
 
 Chaque scénario ne peut contenir qu’un seul déclencheur.
 
-[!DNL Workfront Fusion] utilise deux types de déclencheurs : les déclencheurs d’interrogation et les déclencheurs instantanés.
+Workfront Fusion utilise deux types de déclencheurs : les déclencheurs d’interrogation et les déclencheurs instantanés.
 
 ### Déclencheurs d’attente active
 
@@ -110,15 +110,15 @@ Pour plus d’informations, voir [Choisir l’emplacement de départ d’un modu
 
 **Exemples :**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]** renvoie les enregistrements qui ont été ajoutés après la dernière exécution du scénario.
+* **Workfront > [!UICONTROL Observer les enregistrements]** renvoie les enregistrements qui ont été ajoutés après la dernière exécution du scénario.
 
-* **[!DNL Google Sheets]>[!UICONTROL Watch Rows]** renvoie les nouvelles lignes ajoutées après la dernière exécution du scénario.
+* **[!DNL Google Sheets]> [!UICONTROL Lignes d’observation]** renvoie les nouvelles lignes ajoutées après la dernière exécution du scénario.
 
 >[!ENDSHADEBOX]
 
 ### Déclencheurs instantanés
 
-Les déclencheurs instantanés permettent à un service d’informer [!DNL Workfront Fusion] d’une modification immédiatement après qu’elle se soit produite. Nous vous recommandons de planifier l’exécution immédiate d’un scénario contenant un déclencheur instantané.
+Les déclencheurs instantanés permettent à un service d’informer Workfront Fusion d’une modification immédiatement après qu’elle s’est produite. Nous vous recommandons de planifier l’exécution immédiate d’un scénario contenant un déclencheur instantané.
 
 Pour obtenir des instructions, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -128,8 +128,8 @@ Pour plus d’informations sur la manière dont les données entrantes sont trai
 
 **Exemples :**
 
-* **[!DNL Workfront]>[!UICONTROL Watch Events]** renvoie des informations lorsqu’un certain type d’événement se produit dans Workfront, comme la création d’une tâche.
-* **[!DNL Google Sheets]>[!UICONTROL Watch Changes]** renvoie des informations lorsqu’une cellule est mise à jour.
+* **Workfront > [!UICONTROL Observer les événements]** renvoie des informations lorsqu’un certain type d’événement se produit dans Workfront, comme la création d’une tâche.
+* **[!DNL Google Sheets]> [!UICONTROL Surveiller les modifications]** renvoie des informations chaque fois qu’une cellule est mise à jour.
 
 >[!ENDSHADEBOX]
 
@@ -147,9 +147,9 @@ Les scénarios peuvent contenir un nombre illimité d’agrégateurs, bien qu’
 
 **Exemples :**
 
-* **[!UICONTROL Archive]>[!UICONTROL Create an archive]** compresse plusieurs fichiers dans une archive zip.
-* **[!UICONTROL CSV]>[!UICONTROL Aggregate to CSV]** fusionne plusieurs chaînes d’un fichier CSV en une seule ligne.
-* **[!UICONTROL Tools]>[!UICONTROL Text aggregator]** combine plusieurs chaînes en une seule.
+* **[!UICONTROL Archiver] > [!UICONTROL Créer une archive]** compresse plusieurs fichiers dans une archive zip.
+* **[!UICONTROL CSV] > [!UICONTROL Agréger au format CSV]** fusionne plusieurs chaînes d’un fichier CSV en une seule ligne.
+* **[!UICONTROL Outils] > [!UICONTROL Agrégateur de texte]** combine plusieurs chaînes en une seule.
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Les scénarios peuvent contenir un nombre illimité d’itérateurs, bien qu’u
 
 **Exemple :**
 
-**[!UICONTROL Email]>[!UICONTROL Retrieve attachments]** divise un tableau de pièces jointes en lots distincts.
+**[!UICONTROL E-mail] > [!UICONTROL Récupérer les pièces jointes]** divise un tableau de pièces jointes en lots distincts.
 
 >[!ENDSHADEBOX]
 
