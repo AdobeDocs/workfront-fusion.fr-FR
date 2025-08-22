@@ -285,7 +285,7 @@ Ce module de recherche recherche les messages en fonction de critères spécifiq
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Saisissez votre requête de recherche. Pour plus d’informations sur la manière d’écrire une requête de recherche, voir l’article de support [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Rechercher des courriers et des personnes dans [!DNL Outlook.com]</a>.</td> 
+   <td>Saisissez votre requête de recherche. Pour plus d’informations sur la manière d’écrire une requête de recherche, voir l’article de support [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Rechercher des courriers et des personnes dans [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -331,7 +331,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel e-mail est env
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Saisissez votre requête de recherche. Le module renvoie les messages qui correspondent à cette requête. Pour plus d’informations sur la manière d’écrire une requête de recherche, voir l’article de support [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Rechercher des courriers et des personnes dans [!DNL Outlook.com]</a>.</td> 
+   <td>Saisissez votre requête de recherche. Le module renvoie les messages qui correspondent à cette requête. Pour plus d’informations sur la manière d’écrire une requête de recherche, voir l’article de support [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Rechercher des courriers et des personnes dans [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 

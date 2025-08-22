@@ -448,7 +448,7 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 >[!IMPORTANT]
 >
 >Ce module a été remplacé par le module Créer un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>&#x200B;>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module d’action crée un objet, tel qu’un projet, une tâche ou un problème dans Workfront. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -886,7 +886,7 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 >[!IMPORTANT]
 >
 >Ce module a été remplacé par le module Lecture d’enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>&#x200B;>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module d’action récupère les données d’un seul enregistrement.
 
@@ -1015,7 +1015,7 @@ Consultez une liste des types d’objets Workfront pour lesquels vous pouvez uti
 >[!IMPORTANT]
 >
 >Ce module a été remplacé par le module Mettre à jour un enregistrement . Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>&#x200B;>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -1249,7 +1249,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 >[!IMPORTANT]
 >
 >Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>&#x200B;>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module de recherche recherche les enregistrements dans un objet de Workfront qui correspondent à la requête que vous spécifiez.
 

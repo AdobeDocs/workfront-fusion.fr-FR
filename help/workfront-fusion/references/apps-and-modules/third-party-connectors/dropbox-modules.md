@@ -69,10 +69,10 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 >[!IMPORTANT]
 >
 >* Pour utiliser le connecteur Dropbox, vous devez d’abord créer une application dans Dropbox.
->  >   Pour plus d’informations, recherchez « Créer une application » dans le guide de développement de Dropbox.
+>  &#x200B;>   Pour plus d’informations, recherchez « Créer une application » dans le guide de développement de Dropbox.
 >* Lors de la création de l’application, utilisez l’URI de redirection suivant : `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox doit approuver les demandes comptant plus de 50 utilisateurs et utilisatrices.
->  >   Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
+>  &#x200B;>   Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
 
 ## Informations sur l’API Dropbox
 

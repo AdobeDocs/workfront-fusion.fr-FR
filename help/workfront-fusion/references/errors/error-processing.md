@@ -165,7 +165,7 @@ Pour plus d’informations, voir [Nombre d’erreurs consécutives](/help/workfr
 >[!NOTE]
 >
 >Si un scénario commence par un déclencheur instantané et rencontre cette erreur, le paramètre [!UICONTROL Nombre maximal d’erreurs consécutives] est ignoré et le scénario est immédiatement désactivé.
->>Pour plus d’informations, voir [Déclencheurs instantanés](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) dans l’article Présentation des modules.
+>&#x200B;>Pour plus d’informations, voir [Déclencheurs instantanés](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) dans l’article Présentation des modules.
 
 ## Erreur d’incohérence
 

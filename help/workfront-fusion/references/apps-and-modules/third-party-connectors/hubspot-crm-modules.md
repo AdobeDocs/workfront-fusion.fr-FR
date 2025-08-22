@@ -223,7 +223,7 @@ Ce module d’action crée un contact, une entreprise ou une affaire.
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez créer.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création de l’enregistrement, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner la valeur des propriétés. Les groupes de propriétés et les propriétés disponibles dépendent du type d’enregistrement que vous souhaitez créer.</td> 
   </tr> 
  </tbody> 
@@ -495,7 +495,7 @@ Ce module d&#39;action crée un contact s&#39;il n&#39;existe pas dans un portai
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création du contact, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner les valeurs des propriétés.</td> 
   </tr> 
  </tbody> 

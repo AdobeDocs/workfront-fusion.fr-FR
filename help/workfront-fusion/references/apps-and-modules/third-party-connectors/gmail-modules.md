@@ -69,7 +69,7 @@ Pour utiliser les modules [!DNL Gmail], vous devez disposer d’un compte [!DNL 
 * [Connectez [!DNL Gmail] vous à Workfront Fusion à l’aide de  [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Connexion  [!DNL Gmail]  Workfront Fusion à l’aide  [!DNL gmail.com] ou [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Connectez [!DNL Gmail] à Workfront Fusion à l’aide de [!DNL  Google Workspace]
+### Connectez [!DNL Gmail] à Workfront Fusion à l’aide de [!DNL &#x200B; Google Workspace]
 
 Pour obtenir des instructions sur la connexion de votre compte [!DNL Google Workspace] à [!UICONTROL Workfront Fusion], voir [Créer une connexion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 

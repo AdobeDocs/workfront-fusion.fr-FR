@@ -23,7 +23,7 @@ Pour afficher les modèles disponibles, cliquez sur l’icône **Modèles** ![Ic
 
 Ces modèles permettent l’automatisation des processus et des workflows Workfront.
 
-### [!BADGE Nouveau ! ]{type=Informative} Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
+### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Si votre équipe a du mal à maintenir l’élan parce que les chronologies de p
 
 Ce modèle Fusion automatise ce processus. Lorsqu’une tâche est terminée de manière anticipée, toutes les tâches dépendantes (du successeur) sont automatiquement replanifiées pour commencer plus tôt, ce qui permet à votre équipe d’avancer plus rapidement et de rester agile.
 
-### [!BADGE Nouveau ! ]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
+### [!BADGE Nouveau ! &#x200B;]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
 
 Téléchargez les informations d’abonnement aux événements, créez un fichier CSV, puis chargez le fichier dans Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nouveau ! ]{type=Informative} les tableaux Workfront - Supprimez les cartes archivées de la colonne désignée (à la demande).
+### [!BADGE Nouveau ! &#x200B;]{type=Informative} les tableaux Workfront - Supprimez les cartes archivées de la colonne désignée (à la demande).
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Une fois par mois, passez en revue vos modèles de projet en appliquant votre pr
 
 Ces modèles automatisent les workflows qui associent Workfront et Workfront Proof.
 
-### [!BADGE Nouveau ! ]{type=Informative} Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
+### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
 
 <!--New March 12, 2025-->
 
