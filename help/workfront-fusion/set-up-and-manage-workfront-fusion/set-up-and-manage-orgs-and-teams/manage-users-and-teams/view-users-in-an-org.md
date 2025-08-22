@@ -1,23 +1,18 @@
 ---
-title: Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
-description: Gérer les utilisateurs et utilisatrices  [!DNL Adobe Workfront Fusion]  de votre entreprise
+title: Affichage des utilisateurs dans une organisation
+description: Vous pouvez afficher une liste des utilisateurs de votre organisation
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 59%
+source-wordcount: '233'
+ht-degree: 33%
 
 ---
 
-# Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
+# Affichage des utilisateurs dans une organisation
 
-[!DNL Adobe Workfront Fusion] administrateurs peuvent gérer les détails des utilisateurs dans [!DNL Workfront Fusion].
-
->[!NOTE]
->
->Si votre organisation est en train de passer au Adobe Admin Console, vous ne pouvez pas gérer les utilisateurs dans Workfront (ajout ou suppression d’utilisateurs). Vous pouvez effectuer ces actions dans le Adobe Admin Console une fois la migration terminée.
+Vous pouvez afficher, trier et filtrer une liste d’utilisateurs et d’utilisatrices de votre entreprise.
 
 ## Conditions d’accès
 
@@ -71,11 +66,15 @@ Pour plus d’informations sur les licences [!DNL Adobe Workfront Fusion], voir 
 
 +++
 
-## Afficher ou modifier des détails de l’utilisateur ou de l’utilisatrice
+## Affichage des utilisateurs dans la zone Utilisateurs
 
-Les administrateurs et administratrices [!DNL Adobe Workfront Fusion] peuvent afficher et mettre à jour les détails des utilisateurs et utilisatrices.
+1. Dans le volet de navigation de gauche, cliquez sur **Présentation de l’organisation** dans le coin supérieur gauche de l’écran.
+1. Sélectionnez l’onglet **Utilisateurs**.
 
-1. Lorsque vous êtes connecté en tant qu’administrateur [!DNL Workfront Fusion], sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
-1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
-1. (Facultatif) Pour mettre à jour les détails de l’utilisateur ou de l’utilisatrice, cliquez sur **[!UICONTROL Options]** dans le coin supérieur droit de l’écran, puis sélectionnez **[!UICONTROL Modifier les détails]**.
-1. Modifiez les détails, puis cliquez sur **Enregistrer**.
+   La liste Utilisateurs s’ouvre.
+
+1. (Facultatif) Pour trier la liste Utilisateurs en fonction d’une colonne, cliquez sur l’icône **Trier** ![Icône Trier](assets/sort-icon.png) de cette colonne.
+1. (Facultatif) Pour masquer ou afficher des colonnes, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/columns-icon.png) en haut à droite de la liste, puis activez ou désactivez les colonnes.
+1. (Facultatif) Pour filtrer la liste, commencez à saisir du texte dans la barre de recherche. La liste filtre pour inclure uniquement les équipes qui incluent votre terme de recherche.
+
+
