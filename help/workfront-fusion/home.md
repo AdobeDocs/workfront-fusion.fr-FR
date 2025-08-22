@@ -16,7 +16,7 @@ Bienvenue sur la page d’accueil du produit et de la documentation technique d�
 ## Nouveautés
 
 * [Activité de version](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [Problèmes connus](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [Problèmes connus](https://experienceleague.adobe.com/fr/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## Explorer la documentation
 
@@ -55,8 +55,8 @@ La recherche documentaire peut être plus efficace avec quelques approches strat
 ### Explorer les sections d’apprentissage et de formation
 
 * **Sessions de formation en direct dirigées par un instructeur** Adobe propose des sessions de formation en direct de trois jours pour Fusion. Voir [Gestion des connexions et des workflows dans Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) pour plus d’informations et connaître les sessions disponibles.
-* **Documents de formation** : accédez à la page de formation [Introduction et stratégie technologique](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion pour commencer une série de leçons et d’exercices conçus pour vous aider à mieux comprendre comment utiliser Fusion au mieux.
+* **Documents de formation** : accédez à la page de formation [Introduction et stratégie technologique](https://experienceleague.adobe.com/fr/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion pour commencer une série de leçons et d’exercices conçus pour vous aider à mieux comprendre comment utiliser Fusion au mieux.
 
 ### Trouver des réponses dans les forums de la Communauté
 
-* **Poser des questions** : si la documentation ne répond pas à votre question, essayez de publier sur les [forums de la communauté Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) où d’autres utilisateurs et utilisatrices, ainsi que des experts et expertes, peuvent vous aider.
+* **Poser des questions** : si la documentation ne répond pas à votre question, essayez de publier sur les [forums de la communauté Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=fr) où d’autres utilisateurs et utilisatrices, ainsi que des experts et expertes, peuvent vous aider.
