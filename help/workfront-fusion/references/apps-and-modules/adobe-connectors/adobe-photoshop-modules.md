@@ -4,7 +4,7 @@ description: Avec les modules Adobe Photoshop, vous pouvez lancer un scénario A
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
 source-wordcount: '5392'
 ht-degree: 12%
@@ -276,7 +276,7 @@ Ce module d’action applique diverses modifications au niveau du document et de
       <td role="rowheader">
         <p>[!UICONTROL (Options) Calques]</p>
       </td>
-   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Appliquer les modifications PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
+   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Appliquer les modifications PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
@@ -552,7 +552,7 @@ Ce module d’action crée un nouveau PSD avec des calques facultatifs et génè
       <td role="rowheader">
         <p>[!UICONTROL (Options) Calques]</p>
       </td>
-   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
+   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -599,7 +599,7 @@ Ce module d’action crée un nouveau PSD avec des calques facultatifs et génè
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Autres champs]</td>
       <td>
-        <p><p>Pour plus d’informations sur les options de sortie, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </p>
+        <p><p>Pour plus d’informations sur les options de sortie, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </p>
       </td>
     </tr>
     </tbody>
@@ -649,7 +649,7 @@ Ce module d’action modifie les calques de texte d’un fichier Photoshop. Vous
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Pour chaque calque de texte à modifier, cliquez sur <b>Ajouter un élément</b> et saisissez les options de calque.<p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifier le texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Pour chaque calque de texte à modifier, cliquez sur <b>Ajouter un élément</b> et saisissez les options de calque.<p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
@@ -723,7 +723,7 @@ Pour modifier plusieurs calques, utilisez le module [Modifier les calques de tex
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Stockage du fichier de sortie]</td>
       <td>
@@ -783,7 +783,7 @@ Ce module d’action exécute des actions Photoshop à l’aide de commandes JSO
    <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL , action JSON]</td>
+      <td role="rowheader">[!UICONTROL, action JSON]</td>
       <td>
         <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
       </td>
@@ -885,7 +885,7 @@ Ce module d’action exécute l’action Flou de profondeur sur le fichier séle
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -972,7 +972,7 @@ Ce module d’action exécute une action Photoshop sur l’image sélectionnée.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -1047,7 +1047,7 @@ Ce module d’action exécute le recadrage de produit sur l’image sélectionn�
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -1238,7 +1238,7 @@ Ce module utilise l’API d’objet intelligent version 2.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1303,7 +1303,7 @@ Ce module utilise l’ancienne version des objets dynamiques.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
