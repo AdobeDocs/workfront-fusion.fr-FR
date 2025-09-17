@@ -4,10 +4,10 @@ description: Le Devtool d’Adobe Workfront Fusion vous permet de comprendre d
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 73%
+source-wordcount: '1514'
+ht-degree: 71%
 
 ---
 
@@ -150,6 +150,12 @@ Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur
    </table>
 
 ### Débogueur de scénario
+
+>[!NOTE]
+>
+>Pour accéder rapidement au débogueur à partir d’un scénario qui s’est avéré erroné, vous pouvez cliquer sur **Obtenir les détails** dans le message d’erreur figurant dans la sortie du module.
+>
+>![Obtenir des détails dans la sortie du module](assets/go-to-debugger.png)
 
 Le débogueur de scénario est utile pour les scénarios plus complexes. Il affiche l’historique du scénario qui s’exécute et vous permet de rechercher les modules par leur nom ou ID.
 
