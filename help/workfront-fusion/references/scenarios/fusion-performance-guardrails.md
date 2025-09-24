@@ -4,10 +4,10 @@ description: L’automatisation du travail nécessite un traitement rapide. Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 35%
+source-wordcount: '1084'
+ht-degree: 36%
 
 ---
 
@@ -44,7 +44,7 @@ L’automatisation du travail nécessite un traitement rapide. Adobe Workfront F
 ## Fichiers
 
 * La capacité totale de traitement des fichiers de Fusion est de **1 Go**. La limite est basée sur un coût total en mémoire. Chaque opération contribue à ce coût. Si un seul fichier de 400 Mo est téléchargé et chargé, le coût total de capacité du fichier sera de 800 Mo.
-* Les organisations qui souscrivent au plan Workfront Ultimate ont accès à un traitement des fichiers plus important, dépassant 1 Go. La plateforme Fusion peut prendre en charge des fichiers individuels allant jusqu’à 15 Go pour une seule action (par exemple, télécharger un fichier), mais d’autres facteurs affectent le transfert de données. La limite de taille de fichier d’une seule action dépend du service web auquel Fusion se connecte. Le transfert de données est le traitement total d’une seule exécution. Cela signifie que plusieurs actions en une seule exécution contribuent au transfert total de données. Fusion traitera les fichiers jusqu’à ce que la limite d’exécution de 40 minutes soit atteinte.
+* Les organisations qui souscrivent au plan Workfront Ultimate ont accès à un traitement des fichiers plus important, dépassant 1 Go. Cependant, d’autres facteurs affectent le transfert de données. Le service auquel Fusion se connecte peut limiter la taille des fichiers, ce qui affecte tous les fichiers traités par ce service. De plus, les fichiers volumineux peuvent affecter le temps d’exécution du scénario. Fusion traite les fichiers jusqu’à ce que la limite d’exécution de 40 minutes soit atteinte, auquel cas l’exécution échoue.
 * Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux, puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
 * Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille maximale de 200 **Mo**.
 
@@ -71,7 +71,7 @@ Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/wo
 ## Historique de l’exécution
 
 * Les journaux d’historique d’exécution sont limités à une taille de **100 Mo**. Si l’historique d’exécution dépasse cette taille, seuls les 100 premiers Mo s’affichent.
-* Si un scénario comporte plusieurs exécutions simultanées. seules 5 exécutions s’affichent dans la zone Exécutions de la page des détails du scénario. Cela est vrai même lorsque plus de 5 exécutions sont en cours d’exécution.
+* Si un scénario comporte plusieurs exécutions simultanées, seules 5 exécutions s’affichent dans la zone Exécutions de la page des détails du scénario. Cela est vrai même lorsque plus de 5 exécutions sont en cours d’exécution.
 
 ## Exécutions incomplètes
 

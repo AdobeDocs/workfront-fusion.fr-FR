@@ -4,9 +4,9 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1043'
 ht-degree: 3%
 
 ---
@@ -64,9 +64,15 @@ Si vous envisagez d’utiliser des fichiers plus volumineux, nous vous recommand
 
 ### Quelle est la nouvelle limite de taille de fichier ?
 
-Les utilisateurs peuvent désormais traiter les fichiers dépassant la limite précédente de 1 Go, ce qui améliore l’efficacité et la productivité.  Bien que la plateforme puisse prendre en charge des fichiers individuels allant jusqu’à 15 Go pour une seule action (comme le chargement d’un fichier), d’autres facteurs affectent le transfert de données. La limite de taille de fichier d’une seule action dépend en fin de compte du service web auquel Fusion se connecte. Le transfert de données est le traitement total d’une seule exécution. Cela signifie que plusieurs actions en une seule exécution contribuent au transfert total de données.
+Les utilisateurs peuvent désormais traiter les fichiers dépassant la limite précédente de 1 Go, ce qui améliore l’efficacité et la productivité.  Bien qu’il n’existe pas de limite de taille de fichier définie pour la plateforme Workfront Fusion, d’autres facteurs peuvent affecter l’utilisation de fichiers volumineux :
 
-Fusion traite les fichiers jusqu’à ce que la limite d’exécution de 40 minutes soit atteinte. Dans votre scénario Fusion, le chargement, le téléchargement ou le traitement des fichiers volumineux peut prendre un certain temps. Bien qu’il n’existe aucune limite sur la taille des fichiers individuels, le temps d’exécution du scénario est limité à 40 minutes. Par conséquent, si des fichiers volumineux entraînent une exécution de plus de 40 minutes, le scénario échoue. Le temps d’exécution du scénario peut également être affecté par la taille du scénario, la complexité du module et la vitesse du réseau. Par conséquent, nous vous recommandons de tenir compte de ces aspects de vos scénarios lors de l’utilisation de fichiers volumineux.
+* **Limites de taille de fichier du service auquel Fusion se connecte** : si le service limite la taille du fichier, Workfront Fusion ne dépasse pas cette limite. Les limitations de taille de fichier dépendent en fin de compte du service web auquel Fusion se connecte.
+
+* **Délai d’exécution du scénario** : Fusion traite les fichiers de n’importe quelle taille jusqu’à ce que la limite d’exécution de 40 minutes soit atteinte. Dans votre scénario Fusion, le chargement, le téléchargement ou le traitement des fichiers volumineux peut prendre un certain temps. Si des fichiers volumineux entraînent une exécution de plus de 40 minutes, le scénario échoue. Le temps d’exécution du scénario peut également être affecté par la taille du scénario, la complexité du module et la vitesse du réseau. Par conséquent, nous vous recommandons de tenir compte de ces aspects de vos scénarios lors de l’utilisation de fichiers volumineux.
+
+>[!NOTE]
+>
+>Il est recommandé de limiter la taille du fichier à 15 Go.
 
 ### Comment fonctionne le nouveau transfert de fichiers de Fusion ?
 
