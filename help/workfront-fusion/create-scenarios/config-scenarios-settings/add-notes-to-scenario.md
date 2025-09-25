@@ -5,10 +5,10 @@ description: Nous vous recommandons d’ajouter des notes sur chaque module, ce 
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 8%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -25,3 +25,7 @@ Nous vous recommandons la pratique facultative mais utile d’ajouter des notes 
    Après avoir ajouté une note à un scénario, un point bleu s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) au bas de l’éditeur de scénarios.
 
 1. Pour afficher ou masquer toutes les notes, cliquez sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png).
+
+   Lorsque les notes sont ouvertes, un cercle s&#39;affiche autour de l&#39;icône Notes.
+
+   ![Icône Notes avec cercle](assets/notes-icon-with-circle.png)

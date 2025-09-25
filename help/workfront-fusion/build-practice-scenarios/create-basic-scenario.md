@@ -7,10 +7,10 @@ description: Découvrez comment créer un scénario d’automatisation simple av
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 25%
+source-wordcount: '1426'
+ht-degree: 24%
 
 ---
 
@@ -112,7 +112,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
       Cela permet au module de trouver des projets dont le nom contient les mots que vous avez choisis, même si vous ne saisissez pas le nom en entier ou si vous saisissez le nom avec une casse incorrecte (par exemple, tout en majuscules).
    1. Dans le dernier champ sous [!UICONTROL Critères de recherche], saisissez un mot ou une expression dont vous savez qu’il se trouve dans le nom de la tâche que vous recherchez.
 
-1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **&#x200B;**&#x200B;Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
+1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **** Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
 
    >[!TIP]
    >
@@ -191,9 +191,9 @@ Dans ce scénario, un test réussi permet de localiser la requête et de la conv
 >
 >1. Fermez la zone **[!UICONTROL Notes]**.
 >
->     Après avoir ajouté une note à un scénario, un point orange s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) au bas de l’éditeur de scénarios.
+>     Après avoir ajouté une note à un scénario, un point s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](assets/notes-icon-w-dot.png) au bas de l’éditeur de scénarios.
 >
->1. Cliquez sur l’icône **[!UICONTROL Notes]** ![Icône Notes avec un point](assets/notes-icon-w-dot.png) pour afficher vos notes.
+>1. Cliquez sur l’icône **[!UICONTROL Notes]** ![Icône Notes avec un point](assets/notes-icon-w-dot.png) pour afficher vos notes. Lorsque les notes sont ouvertes, un cercle s&#39;affiche autour de l&#39;icône Notes.
 >
 
 ## Activer le scénario
