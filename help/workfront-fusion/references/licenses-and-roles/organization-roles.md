@@ -4,10 +4,10 @@ description: Cet article contient des informations sur l’accès et les autoris
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 84%
 
 ---
 
@@ -54,7 +54,7 @@ Cet article décrit l’accès et les fonctionnalités disponibles pour les diff
   <tr> 
    <td> <p>Gérer les utilisateurs et les utilisatrices de l’organisation</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>Peut gérer des utilisateurs sur Adobe Admin Console si l’organisation utilise Adobe IMS. Invitation d’utilisateurs et d’utilisatrices à d’autres organisations uniquement.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 

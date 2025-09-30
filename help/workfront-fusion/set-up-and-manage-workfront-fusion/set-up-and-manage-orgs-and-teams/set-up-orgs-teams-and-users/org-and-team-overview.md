@@ -4,10 +4,10 @@ description: Les fonctionnalités Organisation et Équipes Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 58%
+source-wordcount: '549'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Les utilisateurs doivent être ajoutés à une organisation avant d’être ajou
 Un utilisateur ou une utilisatrice possède l’un des rôles suivants dans une organisation :
 
 * **[!UICONTROL Personne propriétaire]** : la personne propriétaire dispose de toutes les autorisations disponibles dans l’organisation.
-* **[!UICONTROL Administrateur]** : les administrateurs peuvent créer et gérer des équipes et des utilisateurs pour l’organisation et approuver des modèles.
+* **[!UICONTROL Administrateur]** : les administrateurs peuvent gérer les utilisateurs sur le Adobe Admin Console si l’organisation est activée pour le système Adobe Identity Management (IMS) ou peuvent inviter de nouveaux utilisateurs pour les organisations qui ne sont pas sur IMS. Il peut également approuver des modèles.
 * **[!UICONTROL Membre]** : les membres peuvent utiliser Workfront Fusion, mais ne peuvent pas apporter de modifications organisationnelles.
 * **[!UICONTROL Comptable]** : les comptables peuvent afficher les informations de licence dans le tableau de bord de l&#39;organisation, mais ne peuvent effectuer aucune action.
 * **[!UICONTROL Développeur ou développeuse d’applications]** : les fonctionnalités de ce rôle ne sont actuellement pas disponibles. Elle seront disponibles ultérieurement. Il est déconseillé d’affecter des utilisateurs et des utilisatrices à ce rôle pour l’instant.
