@@ -4,9 +4,9 @@ description: Vous pouvez afficher des informations sur les événements ou les e
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 59%
 
 ---
@@ -21,7 +21,7 @@ Un événement de scénario est une modification apportée au scénario, par exe
 
 >[!NOTE]
 >
->L’historique d’un scénario affiche tous les événements et exécutions d’un scénario au cours des 30 derniers jours.
+>L’historique d’un scénario affiche toutes les exécutions d’un scénario au cours des 30 derniers jours.
 
 ## Conditions d’accès
 
