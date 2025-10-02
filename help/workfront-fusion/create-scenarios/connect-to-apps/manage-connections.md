@@ -7,9 +7,9 @@ description: Pour la plupart des applications, il est nécessaire de créer une 
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 25%
 
 ---
@@ -20,7 +20,7 @@ Une connexion représente l’autorisation et les droits utilisés par Fusion po
 
 Vous pouvez gérer ces connexions dans la zone Connexions .
 
-Pour plus d’informations sur les connexions, voir [&#x200B; Présentation de la connexion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+Pour plus d’informations sur les connexions, voir [ Présentation de la connexion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
 ## Conditions d’accès
 
@@ -83,7 +83,7 @@ Vous pouvez gérer toutes les connexions à partir de la zone Connexions .
 1. (Facultatif) Pour réautoriser une connexion, cochez la case en regard de la connexion, puis cliquez sur **Réautoriser** en bas de l’écran.
 1. (Facultatif) Pour supprimer une connexion, cochez la case en regard de la connexion, cliquez sur **Supprimer** en bas de l’écran, puis sur **Vraiment ?**.
 1. (Facultatif) Pour vérifier que la connexion au service a été établie avec succès, cochez la case en regard de la connexion, puis cliquez sur **Vérifier** en bas de l’écran.
-1. Pour afficher les scénarios actifs qui utilisent cette connexion, cochez la case en regard de la connexion, puis cliquez sur **Récupérer les scénarios actifs**. Vous pouvez ensuite cliquer sur un scénario dans la liste Scénarios actifs pour y accéder.
+1. (Facultatif) Pour afficher les scénarios actifs qui utilisent cette connexion, cochez la case en regard de la connexion, puis cliquez sur **Récupérer les scénarios actifs**. Vous pouvez ensuite cliquer sur un scénario dans la liste Scénarios actifs pour y accéder.
 
 ## Renouveler une connexion
 
