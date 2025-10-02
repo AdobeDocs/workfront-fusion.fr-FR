@@ -7,10 +7,10 @@ description: Pour la plupart des applications, il est nécessaire de créer une 
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 30%
+source-wordcount: '561'
+ht-degree: 25%
 
 ---
 
@@ -80,9 +80,10 @@ Vous pouvez gérer toutes les connexions à partir de la zone Connexions .
 1. (Facultatif) Attribuez un environnement et un type de connexion en cliquant sur les listes déroulantes **Environnement** et **Type** et en sélectionnant une option.
 1. (Facultatif) Pour afficher les autorisations accordées à Workfront Fusion pour la connexion, cliquez sur l’icône Affichage ![Afficher les autorisations de connexion](assets/view-connection-permissions.png) pour cette connexion.
 1. (Facultatif) Pour renommer une connexion, mettez en surbrillance son nom et saisissez le nouveau nom.
-1. (Facultatif) Pour réautoriser une connexion, cliquez sur **Réautoriser**.
-1. (Facultatif) Pour supprimer une connexion, cliquez sur **Supprimer**, puis sur **Vraiment ?**.
-1. (Facultatif) Pour vérifier que la connexion au service a été établie avec succès, cliquez sur **Vérifier**.
+1. (Facultatif) Pour réautoriser une connexion, cochez la case en regard de la connexion, puis cliquez sur **Réautoriser** en bas de l’écran.
+1. (Facultatif) Pour supprimer une connexion, cochez la case en regard de la connexion, cliquez sur **Supprimer** en bas de l’écran, puis sur **Vraiment ?**.
+1. (Facultatif) Pour vérifier que la connexion au service a été établie avec succès, cochez la case en regard de la connexion, puis cliquez sur **Vérifier** en bas de l’écran.
+1. Pour afficher les scénarios actifs qui utilisent cette connexion, cochez la case en regard de la connexion, puis cliquez sur **Récupérer les scénarios actifs**. Vous pouvez ensuite cliquer sur un scénario dans la liste Scénarios actifs pour y accéder.
 
 ## Renouveler une connexion
 
@@ -92,7 +93,7 @@ Pour renouveler une connexion :
 
 1. Pour ouvrir la zone Connexions, cliquez sur **Connexions** ![Icône Connexions](assets/connections-icon.png) dans le volet de navigation de gauche.
 1. Recherchez la connexion à renouveler.
-1. Dans la ligne correspondant à cette connexion, cliquez sur le bouton **[!UICONTROL Réautoriser]** dans la zone **[!UICONTROL Connexions]**.
+1. Sur la ligne correspondant à cette connexion, cochez la case en regard de la connexion, puis cliquez sur **Réautoriser** en bas de l’écran.
 
 ## Ressources
 

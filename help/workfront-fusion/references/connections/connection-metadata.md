@@ -4,10 +4,10 @@ description: Fusion utilise des métadonnées pour identifier les attributs impo
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 62%
+source-wordcount: '282'
+ht-degree: 54%
 
 ---
 
@@ -19,9 +19,11 @@ Les métadonnées de connexion peuvent être définies lors de la création d’
 
 ![Métadonnées de connexion](assets/connection-metadata-setup.png)
 
-Les utilisateurs et utilisatrices de Fusion peuvent afficher et modifier les connexions à partir de la zone Connexions.
+Les utilisateurs de Fusion peuvent afficher et modifier des connexions à partir de la zone Connexions . Pour accéder à la zone Connexions , cliquez sur Connexions dans le volet de navigation de gauche.
 
-![Métadonnées de connexion dans la zone Connexions](assets/connections-area-metadata.png)
+![Zone Connexions dans le volet de navigation de gauche](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Type d’environnement
 
