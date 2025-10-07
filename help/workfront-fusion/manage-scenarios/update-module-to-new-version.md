@@ -4,20 +4,20 @@ description: Comme les applications auxquelles Workfront Fusion se connecte peuv
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 18%
+source-wordcount: '417'
+ht-degree: 16%
 
 ---
 
-# Mise à jour d’un module vers une nouvelle version
+# Mettre à niveau un module vers une nouvelle version
 
 Comme les applications auxquelles Workfront Fusion se connecte peuvent mettre à jour ou publier de nouvelles versions, il est parfois nécessaire que Fusion publie des modules mis à jour pour ces applications.
 
 Si l’icône verte du module de mise à niveau s’affiche sur un module dans un scénario, Workfront Fusion a publié une nouvelle version de ce module.
 
-![Icône Mettre à jour](assets/update-indicator.png)
+![Icône Mettre à jour](assets/update-indicator-workfront.png)
 
 Vous pouvez mettre à jour le module sans créer de scénario.
 
@@ -73,12 +73,29 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 +++
 
-## Mise à jour d’un module vers une nouvelle version
+## Mise à niveau d’un module Workfront vers une nouvelle version
+
+1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
+   ![Icône Mettre à jour](assets/update-indicator-workfront.png)
+1. Choisissez l’une des options suivantes :
+
+   * Pour sélectionner un nouveau module pour remplacer ce module (au lieu de mettre à niveau le module), cliquez sur **Choisir nouveau**, puis procédez comme décrit dans [Mettre à niveau un module non Workfront vers une nouvelle version](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Pour mettre à niveau uniquement ce module, en conservant la configuration du module, cliquez sur **Mettre à niveau**.
+   * Pour mettre à niveau tous les modules Workfront du scénario, cliquez sur **Tout mettre à niveau**.
+
+1. Enregistrez le scénario.
+
+>[!NOTE]
+>
+>Si vous avez mis à niveau les modules Workfront, nous vous recommandons de les ouvrir et de vérifier leur configuration.
+
+## Mettre à niveau un module non Workfront vers une nouvelle version
 
 1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
    ![Icône Mettre à jour](assets/update-indicator.png)
-1. Cliquez sur **Afficher les nouveaux modules**.
-1. Sélectionnez le nouveau module correspondant au module existant.
+1. Cliquez sur **Choisir nouveau**.
+1. Sélectionnez le module qui doit remplacer le module précédent.
 1. Configurez le module avec les mêmes paramètres que le module existant.
 1. Connectez le nouveau module au scénario au même endroit que le module existant.
 1. Supprimez l’ancien module.
+1. Enregistrez le scénario.
