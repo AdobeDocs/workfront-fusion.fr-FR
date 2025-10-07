@@ -3,9 +3,9 @@ title: Présentation de l’API
 description: Les interfaces de programmation d’applications (API) permettent aux applications et aux services de communiquer entre eux. Fusion utilise des API pour communiquer avec l’application à laquelle vous vous connectez. Chaque application dispose d’une API distincte.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ L’obsolescence est une cause courante de rupture des modifications lorsqu’un
 Comme vos scénarios Fusion sont configurés avec vos données spécifiques, vous devrez peut-être mettre à jour vos scénarios.
 
 * Si les modifications étaient liées à l’authentification ou à l’autorisation, vous devrez peut-être mettre à jour les connexions pour cette application.
-* Si les modifications étaient liées à une action spécifique (point d’entrée) dans l’API, vous devrez peut-être mettre à jour les modules liés à cette action vers une nouvelle version du module.
-* Si l’ensemble de la version d’API utilisée par Fusion est obsolète, vous devrez peut-être mettre à jour tous les modules de ce connecteur vers une nouvelle version d’un connecteur.
+* Si les modifications étaient liées à une action spécifique (point d’entrée) dans l’API, vous devrez peut-être mettre à jour tout module lié à cette action vers une nouvelle version du module.
+* Si l’ensemble de la version d’API utilisée par Fusion est obsolète, vous devrez peut-être mettre à jour tous les modules de ce connecteur vers une nouvelle version du connecteur.
 
 Dans de nombreux cas, vous pouvez effectuer une mise à niveau vers la nouvelle version d’un module sans avoir à le reconfigurer.
 
