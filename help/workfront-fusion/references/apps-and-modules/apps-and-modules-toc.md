@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f5d60e10dd500b97b0be8c54be1add495dc452fa
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 46%
+source-wordcount: '471'
+ht-degree: 45%
 
 ---
 
@@ -116,6 +116,7 @@ Fusion propose des connecteurs pour de nombreuses applications tierces.
 * [Modules Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Modules Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Modules Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
+* [Modules Veeva Vault](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
 * [Modules Widen](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
 * [Modules Workday](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 

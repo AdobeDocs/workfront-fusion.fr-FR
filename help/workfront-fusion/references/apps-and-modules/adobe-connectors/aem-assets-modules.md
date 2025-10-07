@@ -4,10 +4,10 @@ description: Avec le connecteur Adobe Experience Manager Assets pour Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
   Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [ Génération de jetons d’accès pour les API côté serveur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
-  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 ## Informations sur l’API Adobe Experience Manager Assets
 
@@ -122,7 +122,7 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets :
 >
 >* Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 >
->   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+>   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets :
                   <td class="">Si vous saisissez les détails manuellement, saisissez l’ID de votre organisation. Il s’agit du champ « org » dans le fichier JSON des informations d’identification du client.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Méta-Portées</td>
-                  <td>Saisissez les portées de métadonnées générées dans la configuration serveur à serveur.</td>
+                  <td role="rowheader">Portées de Meta</td>
+                  <td>Saisissez les étendues de Meta générées dans la configuration serveur à serveur.</td>
               </tr>
               <tr>
                   <td role="rowheader">Clé privée</td>
@@ -196,7 +196,7 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets :
                 <td>Saisissez l’URL de votre instance Adobe Experience Manager. N’ajoutez pas une barre oblique <code>/</code> à la fin de l’URL.</td>
             </tr>
             <tr>
-                <td role="rowheader">Nom d’utilisateur ou d’utilisatrice</td>
+                <td role="rowheader">Nom d’utilisateur</td>
                 <td>Saisissez le nom d’utilisateur du compte AEM Assets utilisé par cette connexion.</td>
             </tr>
             <tr>
@@ -773,7 +773,7 @@ Ce module d’action charge une nouvelle ressource en important les fichiers des
   </tr> 
   <tr> 
    <td role="rowheader">Date d'expiration</td> 
-   <td> <p>Saisissez ou mappez la date d’expérimentation de la ressource.</p><p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p> </td> 
+   <td> <p>Saisissez ou mappez la date d’expiration de la ressource.</p><p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Métadonnées personnalisées</td> 
