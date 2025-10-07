@@ -44,7 +44,7 @@ Un scénario commence par un **déclencheur**. Le déclencheur recherche les don
 
 Le déclencheur est suivi d’un certain nombre de **modules**. Un module représente une seule étape dans un scénario qui exécute une action spécifique. Les modules sont configurés et liés ensemble pour créer des scénarios.
 
-![Module ](assets/scenario-module.png)
+![Module &#x200B;](assets/scenario-module.png)
 
 ### Itinéraire
 
@@ -62,7 +62,7 @@ Un segment de scénario est une section d’un scénario qui se compose d’une 
 
 Un connecteur correspond à l’ensemble des modules d’une application donnée. Workfront Fusion offre des connecteurs à de nombreuses applications de travail courantes, telles que Workfront, Salesforce et Jira, ainsi que des connecteurs génériques qui peuvent être utilisés pour n’importe quel service web.
 
-![Connecteurs ](assets/scenario-connectors.png)
+![Connecteurs &#x200B;](assets/scenario-connectors.png)
 
 ## Exemples
 
@@ -74,7 +74,7 @@ Workfront Fusion vous permet d’automatiser des workflows simples ou complexes 
 
 Dans cet exemple, le scénario se déclenche lorsqu’un champ spécifié est modifié dans une tâche ou un événement dans Workfront. Lorsqu’il est déclenché, le scénario récupère des informations dans le projet concerné et crée une mise à jour personnalisée pour une personne affectée à un rôle spécifique dans le projet.
 
-![ Exemple de modèle ](assets/fusion-template-example.png)
+![&#x200B; Exemple de modèle &#x200B;](assets/fusion-template-example.png)
 
 +++
 
