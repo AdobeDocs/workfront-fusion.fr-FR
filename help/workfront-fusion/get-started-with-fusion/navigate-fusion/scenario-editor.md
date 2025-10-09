@@ -4,9 +4,9 @@ description: L’éditeur de scénario vous permet de créer et de modifier des 
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 30%
 
 ---
@@ -100,7 +100,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 | Paramètres du scénario | Le panneau des paramètres du scénario contient des paramètres avancés pour le scénario. Pour plus d’informations sur les paramètres disponibles, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notes | Prenez des notes sur le scénario. Les autres utilisateurs peuvent afficher ces notes lorsqu’ils se trouvent dans le scénario. |
 | Auto-align | Alignement automatique des modules dans votre scénario. |
-| Expliquer le flux | Visionnez une animation illustrant le flux de données dans le scénario. |
+| Expliquer le flux | Affichez une animation où des points mobiles montrent le flux des données dans le scénario. |
 | Outils de développement | À l’aide de l’outil Devtool, vous pouvez vérifier toutes les exécutions manuelles de votre scénario, passer en revue toutes les opérations effectuées et afficher les détails de chaque appel API effectué. Vous pouvez identifier le module, l’opération ou la réponse unique à l’origine de l’erreur et utiliser ces connaissances pour affiner votre scénario. Pour plus d’informations, voir [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Plus | Dans le menu Plus , vous pouvez importer ou exporter des plans directeurs et restaurer les versions précédentes du scénario. |
 

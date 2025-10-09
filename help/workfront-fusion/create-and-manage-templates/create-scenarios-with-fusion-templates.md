@@ -4,7 +4,7 @@ description: Les modèles Adobe Workfront Fusion vous permettent de créer et 
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 56%
@@ -76,6 +76,6 @@ Vous devez créer un modèle avant de pouvoir l’utiliser.
 
 1. Lorsque vous avez configuré tous les paramètres requis pour le modèle, vous recevez une notification indiquant que le modèle est prêt à être utilisé. Les options du scénario standard s’affichent en bas de l’écran. Vous pouvez maintenant continuer à créer votre scénario.
 
-   Pour plus d’informations sur la création d’un scénario, voir [Workflow de création d’un scénario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
+   Pour plus d’informations sur la création d’un scénario, voir [Processus de création d’un scénario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
 1. Cliquez sur l’icône **[!UICONTROL Enregistrer]** ![Icône Enregistrer](assets/save-icon.png) pour enregistrer votre scénario. Le scénario s’enregistre dans la zone Scénario de Workfront Fusion.
