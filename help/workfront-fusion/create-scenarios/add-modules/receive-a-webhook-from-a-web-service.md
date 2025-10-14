@@ -68,7 +68,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 1. Saisissez un **nom du Webhook** dans la zone qui s’affiche
 1. (Facultatif) configurez le webhook.
 
-   Pour obtenir des instructions, voir [ Webhooks ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+   Pour obtenir des instructions, voir [&#x200B; Webhooks &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Cliquer sur **Enregistrer**.
 

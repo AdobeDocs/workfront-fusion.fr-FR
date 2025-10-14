@@ -18,7 +18,7 @@ ht-degree: 45%
 
 La fonctionnalité de modèles de Workfront Fusion vous permet de créer et d’utiliser des modèles existants comme point de départ pour vos scénarios Workfront Fusion. Les modèles représentent des cas d’utilisation courants que vous pouvez configurer et modifier en fonction des besoins de votre organisation et des cas d’utilisation spécifiques.
 
-Pour obtenir la liste des modèles Fusion actuellement disponibles, voir [ Modèles Adobe Workfront Fusion actuellement disponibles ](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md).
+Pour obtenir la liste des modèles Fusion actuellement disponibles, voir [&#x200B; Modèles Adobe Workfront Fusion actuellement disponibles &#x200B;](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md).
 
 ## Conditions d’accès
 

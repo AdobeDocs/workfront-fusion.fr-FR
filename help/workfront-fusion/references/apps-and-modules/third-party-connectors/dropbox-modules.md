@@ -154,8 +154,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Modules déclencheurs](#trigger-modules)
-* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
-* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
+* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Autres modules](#other-modules)
 
 ### Modules déclencheurs

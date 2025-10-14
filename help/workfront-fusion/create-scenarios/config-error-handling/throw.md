@@ -74,7 +74,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
 Pour générer de manière conditionnelle une erreur, vous pouvez configurer un module pour qu’il échoue délibérément lors de son fonctionnement. Vous pouvez par exemple utiliser le module [!UICONTROL JSON] > [!UICONTROL Parse JSON], configuré pour générer éventuellement une erreur (`BundleValidationError` dans ce cas) :
 
-![ Erreur JSON ](assets/json-parse-json.png)
+![&#x200B; Erreur JSON &#x200B;](assets/json-parse-json.png)
 
 Vous pouvez ensuite joindre l’une des directives de gestion des erreurs à l’itinéraire de gestion des erreurs :
 

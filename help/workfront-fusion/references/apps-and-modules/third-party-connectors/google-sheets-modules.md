@@ -726,7 +726,7 @@ Pour plus de détails, voir [developers.google.com/sheets/api/limits](https://de
 
 ## Conseils et astuces
 
-* [Récupérer des cellules vides à partir d&#39;une feuille  [!DNL Google] ](#get-empty-cells-from-a-google-sheet)
+* [Récupérer des cellules vides à partir d&#39;une feuille  [!DNL Google] &#x200B;](#get-empty-cells-from-a-google-sheet)
 * [Ajouter un bouton dans une feuille pour exécuter un scénario](#add-a-button-in-a-sheet-to-run-a-scenario)
 
 ### Récupérer des cellules vides à partir d’un [!DNL Google Sheet]
@@ -741,7 +741,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 
 ### Ajouter un bouton dans une feuille pour exécuter un scénario
 
-1. Dans Workfront Fusion, insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [ Webhooks ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. Dans Workfront Fusion, insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [&#x200B; Webhooks &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Copiez l’URL du webhook.
 1. Exécutez le scénario.

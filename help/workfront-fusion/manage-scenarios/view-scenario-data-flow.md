@@ -21,7 +21,7 @@ Lorsqu’un scénario s’exécute, le module actif est marqué par un anneau cr
 
 Une fois le module exécuté, un indicateur de sortie s’affiche.
 
-![Indicateur de sortie ](assets/data-flow-output.png)
+![Indicateur de sortie &#x200B;](assets/data-flow-output.png)
 
 Si le module traite plusieurs lots, l&#39;anneau apparaît pour chaque lot traité, et l&#39;indicateur de sortie compte pour chaque lot qu&#39;il sort.
 
@@ -86,4 +86,4 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 1. Si le scénario n’est pas en cours d’exécution, activez-le ou cliquez sur **Exécuter une fois** pour lancer l’exécution du scénario.
 1. Sélectionnez l’exécution à afficher dans la section En cours d’exécution du panneau Historique d’exécution.
 
-![ En cours d’exécution ](assets/currently-running.png)
+![&#x200B; En cours d’exécution &#x200B;](assets/currently-running.png)

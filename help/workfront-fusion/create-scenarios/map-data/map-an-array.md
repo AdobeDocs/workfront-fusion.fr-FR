@@ -138,13 +138,13 @@ Certains tableaux contiennent des collections avec des éléments clé-valeur te
 
 L’exemple suivant illustre la sortie de l’application [!DNL Jira].
 
-![ Sortie du module Jira ](assets/output-of-jira-app-350x100.png)
+![&#x200B; Sortie du module Jira &#x200B;](assets/output-of-jira-app-350x100.png)
 
 Cet exemple obtient un nom de fichier à partir d’un tableau de pièces jointes, pour la pièce jointe spécifique avec l’ID 10108.
 
 Cet exemple génère la sortie suivante :
 
-![ Sortie du module Jira ](assets/output-from-jira-350x261.png)
+![&#x200B; Sortie du module Jira &#x200B;](assets/output-from-jira-350x261.png)
 
 La formule peut être expliquée comme suit :
 

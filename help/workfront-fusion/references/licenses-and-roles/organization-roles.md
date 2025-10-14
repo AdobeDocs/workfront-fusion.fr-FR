@@ -17,7 +17,7 @@ Cet article décrit l’accès et les fonctionnalités disponibles pour les diff
 
 >[!NOTE]
 >
->Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [ Présentation des organisations et des équipes ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [&#x200B; Présentation des organisations et des équipes &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Rôles d’organisation
 

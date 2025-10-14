@@ -76,7 +76,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
    L’éditeur de scénarios s’affiche, contenant un module vide au centre.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom.
-1. Continuez avec [ Ajouter et configurer le premier module ](#add-and-configure-the-first-module).
+1. Continuez avec [&#x200B; Ajouter et configurer le premier module &#x200B;](#add-and-configure-the-first-module).
 
 ### Ajouter et configurer le premier module
 
@@ -124,7 +124,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 
    Le nom apparaît juste en dessous du module. Ci-dessous, Workfront Fusion comprend une brève description du type d’action effectuée par le module.
 
-   ![ Module renommé ](assets/module-renamed-wf.png)
+   ![&#x200B; Module renommé &#x200B;](assets/module-renamed-wf.png)
 
 1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
 
@@ -202,7 +202,7 @@ La dernière étape de la création d’un scénario consiste à l’activer.
 
 Ce scénario recherchant un problème spécifique, il n’est pas nécessaire de l’activer. L’activation d’un scénario entraîne son exécution selon un planning ou lorsqu’une action spécifique se produit dans une application. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 

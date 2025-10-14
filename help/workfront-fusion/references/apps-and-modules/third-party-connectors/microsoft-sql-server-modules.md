@@ -74,7 +74,7 @@ Vous pouvez exécuter votre logique personnalisée directement sur votre serveur
 
 Lorsque [!DNL Fusion] établit la connexion avec la destination [!DNL SQL server], l’utilisateur ou utilisatrice [!DNL Fusion] identifie l’hôte (le nom de domaine ou l’adresse IP où le serveur est hébergé) et le port. [!DNL Fusion] peut se connecter à n’importe quel hôte/port disponible.
 
-Pour plus d’informations sur les adresses IP spécifiques utilisées par Workfront Fusion, voir [ Adresses IP pour accéder à Adobe Workfront Fusion ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+Pour plus d’informations sur les adresses IP spécifiques utilisées par Workfront Fusion, voir [&#x200B; Adresses IP pour accéder à Adobe Workfront Fusion &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 Pour en savoir plus sur la création d’une procédure stockée, consultez la documentation de [!DNL Microsoft SQL Server].
 

@@ -751,7 +751,7 @@ Les résultats de la recherche peuvent être trouvés dans la sortie du module s
 
 Dans notre exemple, 6 tâches ont été renvoyées :
 
-![ Exemple de sortie API ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![&#x200B; Exemple de sortie API &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Dépannage {#troubleshooting}
 

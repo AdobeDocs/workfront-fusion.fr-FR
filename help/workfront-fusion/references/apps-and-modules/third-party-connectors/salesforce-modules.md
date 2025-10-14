@@ -242,7 +242,7 @@ Ce module de déclenchement exécute un scénario lorsqu’une personne envoie u
 Ce module nécessite une configuration supplémentaire. Un flux doit être configuré pour les messages sortants.
 
 * Pour obtenir des instructions sur les flux dans Salesforce, voir [Automatiser les tâches avec des flux](https://help.salesforce.com/s/articleView?id=platform.flow.htm) dans la documentation de Salesforce.
-* Pour plus d’informations sur la configuration d’un message sortant dans Salesforce, voir [ Envoyer un message sortant à partir de votre flux déclenché par enregistrement ](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) dans la documentation de Salesforce
+* Pour plus d’informations sur la configuration d’un message sortant dans Salesforce, voir [&#x200B; Envoyer un message sortant à partir de votre flux déclenché par enregistrement &#x200B;](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) dans la documentation de Salesforce
 
 <!--
 

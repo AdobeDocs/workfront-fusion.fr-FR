@@ -96,6 +96,6 @@ Une erreur peut se produire pendant l’exécution du scénario. Par exemple, si
 
 * Pour plus d’informations sur la configuration d’un scénario, voir [Éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 * Pour plus d’informations sur la page des détails du scénario, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
-* Pour plus d’informations sur l’activation d’un scénario, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+* Pour plus d’informations sur l’activation d’un scénario, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * Pour plus d’informations sur la planification d’un scénario, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * Pour plus d’informations sur les modules, voir [Présentation des modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).

@@ -311,7 +311,7 @@ Le délai de temporisation pour l’envoi d’une réponse est de 40 secondes. 
 >&gt; </tbody> 
 >&gt;</table>
 >
->![En-têtes personnalisés ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![En-têtes personnalisés &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Cette opération génère une réponse HTML qui s’affiche dans un navigateur web :
 >
