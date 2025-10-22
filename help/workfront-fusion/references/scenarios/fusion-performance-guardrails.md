@@ -4,9 +4,9 @@ description: L’automatisation du travail nécessite un traitement rapide. Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1092'
 ht-degree: 36%
 
 ---
@@ -48,7 +48,7 @@ L’automatisation du travail nécessite un traitement rapide. Adobe Workfront F
 * Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux, puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
 * Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille maximale de 200 **Mo**.
 
-Pour plus d’informations, voir [&#x200B; Utilisation de fichiers volumineux &#x200B;](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+Pour plus d’informations, voir [ Utilisation de fichiers volumineux ](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 ## Utilisation de la mémoire du serveur
 
@@ -67,6 +67,7 @@ Pour plus d’informations, voir [&#x200B; Utilisation de fichiers volumineux &#
    * Le webhook est utilisé uniquement dans les scénarios inactifs, qui sont inactifs depuis plus de 30 jours.
 
 * Les webhooks désactivés sont supprimés et désinscrits automatiquement s’ils ne sont connectés à aucun scénario et s’ils sont restés désactivés pendant plus de 30 jours.
+* Le délai d’attente d’une réponse webhook est de 5 minutes.
 
 ## Historique de l’exécution
 
