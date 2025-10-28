@@ -3,9 +3,9 @@ title: Modules Veeva Vault
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Veeva Vault et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 6e7125bee77526caa93edc17f05b75bdfd7d7ac4
+source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1516'
 ht-degree: 16%
 
 ---
@@ -318,7 +318,7 @@ Ce module met à jour un seul document, classeur ou modèle.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Choisissez si vous souhaitez créer un document, un classeur ou un modèle.</p> </td> 
+   <td> <p>Choisissez si vous souhaitez créer un document, une version de document, un classeur ou un modèle.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID/Nom</p> </td> 
