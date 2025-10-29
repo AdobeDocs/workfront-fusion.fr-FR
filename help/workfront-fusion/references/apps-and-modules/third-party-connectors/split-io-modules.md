@@ -4,7 +4,7 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 28de0fbe4fd6dfbcdc8ea4032e1aa95ae3e7c556
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 75%
@@ -118,7 +118,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Split.io] directement à 
       </tr>
       <tr> 
        <td role="rowheader">[!UICONTROL API key]</td> 
-       <td>Saisissez votre clé API [!DNL Split.io].<p>Pour plus d’informations sur les clés d’API [!DNL Split.io], voir <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">Clés d’API</a> dans la documentation [!DNL Split.io].</p></td> 
+       <td>Saisissez votre clé d’API [!DNL Split.io].<p>Pour plus d’informations sur les clés d’API [!DNL Split.io], voir <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">Clés d’API</a> dans la documentation [!DNL Split.io].</p></td> 
       </tr> 
      </tbody> 
     </table>

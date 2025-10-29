@@ -3,10 +3,10 @@ title: Modules Veeva Vault
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Veeva Vault et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
+source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 16%
+source-wordcount: '1661'
+ht-degree: 18%
 
 ---
 
@@ -59,6 +59,56 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 ## Conditions préalables
 
 Pour utiliser les modules Veeva Vault, vous devez disposer d&#39;un compte Veeva Vault.
+
+## Connecter Veeva Vault à Workfront Fusion
+
+Vous pouvez créer une connexion à votre compte Veeva Vault directement depuis un module Veeva Vault.
+
+1. Dans un module Veeva Vault, cliquez sur **Ajouter** en regard du champ Connexion .
+1. Remplissez les champs suivants.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Nom de la connexion</td> 
+       <td> <p>Saisissez un nom pour la connexion.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Environnement</td>
+        <td>
+          <p>Indiquez si vous vous connectez à un environnement de production ou hors production.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Type</td>
+        <td>
+          <p>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Nom d’utilisateur</td>
+        <td>
+          <p>Saisissez le nom d'utilisateur du compte Veeva Vault.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Mot de passe</td>
+        <td>
+          <p>Saisissez le mot de passe du compte Veeva Vault.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">DNS Vault</td> 
+       <td>Saisissez votre DNS Veeva Vault (nom de domaine).</p><p>Pour localiser votre DNS Veeva Vault, examinez l'URL que vous utilisez pour accéder à Veeva Vault.</p>Par exemple, dans le <code>https://my-dns.veevavault.com</code> URL, le DNS est <code>my-dns</code>. Il n’est pas nécessaire de saisir l’URL complète.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
+
+
 
 ## Modules Veeva Vault et leurs champs
 
