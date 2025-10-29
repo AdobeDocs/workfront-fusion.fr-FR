@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 88%
+source-wordcount: '606'
+ht-degree: 86%
 
 ---
 
@@ -57,9 +57,9 @@ Renvoie un tableau primitif contenant les valeurs d’un tableau complexe. Cette
 
   Renvoie un tableau primitif contenant les e-mails.
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Renvoie un tableau primitif contenant les e-mails dont le libellé est « travail » ou « perso ».
+  Renvoie un tableau primitif avec les e-mails dont le libellé est égal à work
 
 >[!ENDSHADEBOX]
 
