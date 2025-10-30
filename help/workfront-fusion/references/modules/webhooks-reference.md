@@ -4,10 +4,10 @@ description: De nombreux services proposent des webhooks pour envoyer des notifi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 28%
+source-wordcount: '1064'
+ht-degree: 23%
 
 ---
 
@@ -28,12 +28,31 @@ Si un connecteur n’inclut pas de webhook, vous pouvez effectuer l’une des op
 * Créez un webhook personnalisé à l’aide du module Webhook.
 Pour plus d’informations, voir [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Utilisez des déclencheurs d’interrogation pour interroger régulièrement le service.
-Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
 * [Présentation des webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Webhooks intermédiaires](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## Afficher les détails du webhook
+
+Vous pouvez afficher une liste de Webhooks dans la zone Webhooks .
+
+1. Pour ouvrir la zone Webhooks, cliquez sur l’icône Webhooks ![Webhooks](assets/webhooks-icon.png) dans le volet de navigation de gauche.
+
+   Vous pouvez voir ici une liste de Webhooks.
+
+   ![Liste Webhook](assets/list-of-webhooks.png)
+
+1. Pour rechercher un webhook spécifique, saisissez votre terme de recherche dans la zone de recherche.
+1. Pour copier un webhook, cliquez sur l’icône Copier ![icône Copier le webhook](assets/copy-webhook-icon.png) près de l’URL dans la ligne correspondant à ce webhook.
+1. Pour désactiver ou activer un webhook, activez ou désactivez le bouton (bascule) dans la colonne Statut de la ligne correspondant à ce webhook.
+1. Pour vérifier si une file d’attente webhooks est pleine, cochez la colonne File d’attente complète . Le nombre dans cette colonne correspond au nombre d’éléments actuellement dans la file d’attente.
+1. Pour afficher les opérations gérées par un webhook, cliquez sur **Opérations** dans la colonne File d’attente complète de ce webhook.
+1. Pour afficher le scénario dans lequel un webhook est utilisé, cliquez sur le bouton **Scénario** dans la colonne Scénario de ce webhook.
+1. Pour afficher la connexion utilisée pour ce webhook, cliquez sur le bouton **Connection** dans la colonne Connection de ce webhook.
+1. Pour masquer des colonnes ou afficher des colonnes précédemment masquées, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/glist-column.png) et vérifiez ou décochez les noms de colonne.
 
 ## Planifier des déclencheurs instantanés
 
