@@ -48,7 +48,7 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 Adobe doit disposer d’un contrat Adobe Gen AI signé dans ce fichier.
 
-Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
+Pour plus d’informations sur la signature du contrat, consultez [Signature du contrat Adobe Gen AI](https://experienceleague.adobe.com/fr/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) dans l’article Présentation de l’assistant AI dans la documentation de Workfront.
 
 ## Obtenir des informations à partir de l’assistant AI
 
