@@ -60,7 +60,7 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 L’expert en notation de scénario renvoie une note sur 10 et indique les vérifications qui ont réussi ou échoué. Si une vérification a échoué, l’expert en notation de scénario fournit des recommandations sur la manière de s’assurer que le scénario répond à ces vérifications.
 
-![ Score du scénario ](assets/scenario-score.png)
+![&#x200B; Score du scénario &#x200B;](assets/scenario-score.png)
 
 ## Vérifications du score du scénario
 
@@ -73,7 +73,7 @@ L’expert en notation de scénario effectue les vérifications suivantes :
   Pour obtenir des instructions, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * La taille du plan directeur du scénario doit être inférieure à 5 Mo.
 
-  Pour plus d’informations, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios).
+  Pour plus d’informations, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios).
 * Si un module de déclenchement instantané Workfront est utilisé, il doit être filtré.
 
   Pour plus d’informations, consultez la section [Filtres d’abonnement aux événements du module Workfront > [!UICONTROL Événements Espion]](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules).

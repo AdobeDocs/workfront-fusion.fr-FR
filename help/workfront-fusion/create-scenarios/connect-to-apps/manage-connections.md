@@ -20,7 +20,7 @@ Une connexion représente l’autorisation et les droits utilisés par Fusion po
 
 Vous pouvez gérer ces connexions dans la zone Connexions .
 
-Pour plus d’informations sur les connexions, voir [ Présentation de la connexion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+Pour plus d’informations sur les connexions, voir [&#x200B; Présentation de la connexion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
 ## Conditions d’accès
 

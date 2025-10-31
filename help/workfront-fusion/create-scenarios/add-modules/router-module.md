@@ -97,7 +97,7 @@ Si les données franchissent le filtre de plusieurs itinéraires, les données s
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 
-1. Passez à [ Configurer un itinéraire de secours ](#configure-a-fallback-route).
+1. Passez à [&#x200B; Configurer un itinéraire de secours &#x200B;](#configure-a-fallback-route).
 
 ## Configuration d’un itinéraire de secours
 
@@ -113,7 +113,7 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
+   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 

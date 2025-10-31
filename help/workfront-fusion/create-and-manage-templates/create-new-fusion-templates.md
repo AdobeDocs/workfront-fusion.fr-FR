@@ -84,7 +84,7 @@ Vous pouvez créer un modèle via un processus similaire à la création d’un 
 
 Lorsque vous enregistrez votre modèle, il devient visible pour les membres de votre équipe. Si vous souhaitez que votre modèle soit accessible en dehors de votre équipe, vous devez soumettre une demande pour qu’il soit approuvé et publié. La demande est envoyée à l’équipe Adobe Workfront Fusion pour approbation. Une fois approuvé, le modèle est accessible à d’autres personnes en dehors de votre équipe.
 
-Pour plus d’informations sur la publication de modèles, voir [ Publication et partage de modèles Adobe Workfront Fusion ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md).
+Pour plus d’informations sur la publication de modèles, voir [&#x200B; Publication et partage de modèles Adobe Workfront Fusion &#x200B;](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md).
 
 ### Créer un modèle à partir d’un scénario
 
