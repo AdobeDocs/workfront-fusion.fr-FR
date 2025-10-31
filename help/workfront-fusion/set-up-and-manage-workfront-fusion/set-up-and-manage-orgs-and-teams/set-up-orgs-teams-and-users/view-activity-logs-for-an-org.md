@@ -4,10 +4,10 @@ description: Vous pouvez afficher un journal des activités, telles que la créa
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 11%
+source-wordcount: '485'
+ht-degree: 6%
 
 ---
 
@@ -19,48 +19,31 @@ Vous pouvez afficher un journal des activités de votre organisation, telles que
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Formule Adobe Workfront</td>
-   <td> <p>Nouveau : Ultimate</p> <p>Ou</p> <p>Current: Not available</p></td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Current: Not available</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p></td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
-   <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
-   </td> 
-  </tr> 
-   <tr> 
+  <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations des niveaux d’accès</td> 
-   <td> <p>Vous devez être administrateur de Fusion pour utiliser le journal d’activité.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Produit</td> 
-   <td>
-   <p>Cette fonctionnalité est disponible uniquement pour les organisations qui disposent du plan Ultimate Workfront, qui inclut Workfront Fusion. Aucun achat de produit supplémentaire n’est nécessaire.</p>
+   <td> 
+     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
+     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
    </td> 
-  </tr>
+  </tr> 
  </tbody> 
 </table>
 
-Pour plus de détails sur les informations contenues dans ce tableau, consultez [Conditions d’accès préalables dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
-
-
 
 ## Affichage des journaux d’activité
 

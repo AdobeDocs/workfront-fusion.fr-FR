@@ -4,10 +4,10 @@ description: Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécut
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 61%
+source-wordcount: '580'
+ht-degree: 65%
 
 ---
 
@@ -21,61 +21,11 @@ Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécutions de scén
 >
 >Pour plus d’informations sur les paramètres de scénario, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Conditions d’accès
+## Prévisualisation mise en surbrillance pour l’article complet {#highlighted-preview-article-level}
 
-+++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+<span class="preview">Les informations de cette page font référence à des fonctionnalités qui ne sont pas encore disponibles de façon générale. Il est disponible uniquement dans l’environnement de sandbox de prévisualisation.</span>## Afficher les exécutions incomplètes
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
-   <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Produit</td> 
-   <td>
-   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
-   </td> 
-  </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Configurations du niveau d’accès*</td> 
-   <td> 
-     <p>Vous devez être administrateur ou administratrice Workfront Fusion pour votre entreprise.</p>
-     <p>Vous devez être un administrateur Workfront Fusion pour votre équipe.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Afficher les exécutions incomplètes
-
-Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les lots pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL &#x200B; Exécutions incomplètes &#x200B;] de la page des détails du scénario.
+Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les lots pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL  Exécutions incomplètes ] de la page des détails du scénario.
 
 <!--
 

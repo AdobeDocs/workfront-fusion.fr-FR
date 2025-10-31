@@ -4,10 +4,10 @@ description: Google a introduit des restrictions sur la manière dont les utilis
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 16%
+source-wordcount: '789'
+ht-degree: 14%
 
 ---
 
@@ -19,34 +19,29 @@ Google a introduit des restrictions sur la manière dont les utilisateurs peuven
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront 
-   <td> <p>Tous</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuellement : Travail ou licence supérieure</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou Prime Workfront Plan : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -64,7 +59,7 @@ Google a introduit des restrictions sur la manière dont les utilisateurs peuven
 
 Ces restrictions sont liées aux applications Gmail et Google Drive.
 
-Pour plus d’informations sur ces restrictions, voir « Exigences supplémentaires pour les portées d’API spécifiques » dans la politique de données utilisateur des services d’API Google [&#128279;](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
+Pour plus d’informations sur ces restrictions, voir « Exigences supplémentaires pour les portées d’API spécifiques » dans la politique de données utilisateur des services d’API Google [](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
 
 Pour accéder aux portées restreintes, le service connecté (Adobe Workfront Fusion ou tout autre service qui accède aux données de l’utilisateur via l’API) doit être vérifié et doit disposer d’une lettre d’évaluation prouvant que le service est sécurisé et transparent sur la manière dont il utilise les données. Workfront Fusion se conforme à toutes les exigences de Google relatives à l’accès aux portées restreintes. Cependant, la plupart des services connectés tiers de Workfront Fusion ne disposent pas de la lettre d’évaluation et ne se conforment donc pas aux conditions générales de Google. Pour cette raison, Workfront Fusion n’est pas autorisé à envoyer des données à ces services.
 

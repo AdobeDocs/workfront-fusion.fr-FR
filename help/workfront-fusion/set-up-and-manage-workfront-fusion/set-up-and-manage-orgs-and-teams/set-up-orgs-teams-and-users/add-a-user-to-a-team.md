@@ -4,10 +4,10 @@ description: Vos utilisateurs sont affectés à des équipes lorsque vous les cr
 author: Becky
 feature: Workfront Fusion
 exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
@@ -16,6 +16,37 @@ ht-degree: 0%
 Vos utilisateurs sont affectés à des équipes lorsque vous les créez. Si un utilisateur existant doit être ajouté à une équipe, vous pouvez l’ajouter sur la page Utilisateurs de l’équipe.
 
 Pour ajouter un utilisateur à Fusion, consultez [Ajout d’utilisateurs à Adobe Workfront Fusion via Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md).
+
+## Conditions d’accès
+
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produit</td> 
+   <td>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Ajouter un utilisateur
 
 L’ajout d’un utilisateur à une équipe est géré à partir de la page relative à cette équipe.
 

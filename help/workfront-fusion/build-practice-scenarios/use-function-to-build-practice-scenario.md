@@ -7,10 +7,10 @@ description: Découvrez comment ajouter une fonction pour mettre à jour une tâ
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 9%
+source-wordcount: '586'
+ht-degree: 6%
 
 ---
 
@@ -26,42 +26,28 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
-   <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
-   </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -84,7 +70,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 1. Dans la zone Sélectionner les champs à mapper, sélectionnez Nom.
 
    Un champ Nom s’ouvre.
-1. Passez à [&#x200B; Mapper la fonction pour la mise à jour du nom &#x200B;](#map-the-function-for-the-name-update).
+1. Passez à [ Mapper la fonction pour la mise à jour du nom ](#map-the-function-for-the-name-update).
 
 ### Mappez la fonction pour la mise à jour du nom.
 
@@ -101,7 +87,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
    L’entrée de cet exemple est le nom de l’événement à partir duquel le projet a été converti.
 
 1. Déplacez le curseur entre les parenthèses, car c&#39;est là que va se trouver l&#39;entrée.
-1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![&#x200B; Icône de sortie du module &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png)
+1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![ Icône de sortie du module ](assets/toolbar-icon-functions-you-map-from-other-modules.png)
 1. Sélectionnez le bloc de nom qui a été généré par votre premier module.
 
    Le bloc de nom apparaît dans la fonction .
