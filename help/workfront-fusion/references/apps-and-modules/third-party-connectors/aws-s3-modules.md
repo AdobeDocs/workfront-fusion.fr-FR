@@ -4,10 +4,10 @@ description: Les modules S3 d’ [!DNL Adobe Workfront Fusion AWS]  permettent 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 68%
+source-wordcount: '1468'
+ht-degree: 67%
 
 ---
 
@@ -19,34 +19,29 @@ Les modules S3 d’[!DNL Adobe Workfront Fusion AWS] permettent d’effectuer d
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -172,7 +167,7 @@ Ce module d’action télécharge un fichier à partir d’un compartiment.
 
 Ce module d’action effectue un appel personnalisé à l’API AWS S3.
 
-Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL &#x200B; REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL  REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 
@@ -192,7 +187,7 @@ Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la s
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête [!UICONTROL HTTP] dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref"> méthodes de requête HTTP dans Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête [!UICONTROL HTTP] dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref"> méthodes de requête HTTP[!UICONTROL] dans Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 

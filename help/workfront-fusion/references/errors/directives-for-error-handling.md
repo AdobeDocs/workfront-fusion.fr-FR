@@ -5,10 +5,10 @@ description: Cet article décrit les directives que vous pouvez utiliser pour la
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 34%
+source-wordcount: '559'
+ht-degree: 29%
 
 ---
 
@@ -20,47 +20,30 @@ Les directives de gestion des erreurs vous permettent de choisir ce qui se produ
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> Nouveau : Standard<p>Ou</p><p>Actuellement : Travail ou licence supérieure</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence [!UICONTROL Adobe Workfront Fusion]</td> 
-   <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
-   </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
-
-Pour plus d’informations sur Adobe Workfront Fusion et les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Directives pour la gestion des erreurs
++++## Directives de gestion des erreurs
 
 Les directives de gestion des erreurs suivantes sont disponibles dans Workfront Fusion.
 
@@ -69,8 +52,8 @@ Les directives de gestion des erreurs suivantes sont disponibles dans Workfront 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>Restaurer</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>L’exécution du scénario est arrêtée immédiatement.</li><li>Une phase de restauration est lancée sur tous les modules, dans une tentative de les restaurer tous à leur état initial. </li><li>Les modules suivants ne sont pas traités.</p></li><li> <p>Dans la plupart des cas, le scénario est désactivé après le nombre d’erreurs consécutives spécifié dans les paramètres du scénario. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Nombre d’erreurs consécutives</a>.</p> </li><li><p>Le statut d’exécution du scénario est marqué comme « Erreur ».</p></li></ul> <p><b>Remarque </b> : il s’agit du comportement par défaut si aucun itinéraire de gestionnaire d’erreurs n’est associé au module et que le paramètre <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Autoriser le stockage des exécutions incomplètes</a>Autoriser le stockage des exécutions incomplètes sous les paramètres du scénario  n’est pas coché.</p> </td> 
+   <td role="rowheader"> <p>Restauration</p> <p> <img src="assets/rollback.png"> </p> </td> 
+   <td> <ul><li><p>L’exécution du scénario est arrêtée immédiatement.</li><li>Une phase de restauration est lancée sur tous les modules, dans une tentative de les restaurer tous à leur état initial. </li><li>Les modules suivants ne sont pas traités.</p></li><li> <p>Dans la plupart des cas, le scénario est désactivé après le nombre d’erreurs consécutives spécifié dans les paramètres du scénario. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Nombre d’erreurs consécutives</a>.</p> </li><li><p>Le statut d’exécution du scénario est marqué comme « Erreur ».</p></li></ul> <p><b>Remarque </b> : il s’agit du comportement par défaut si aucun itinéraire de gestionnaire d’erreurs n’est associé au module et que le paramètre <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Autoriser le stockage des exécutions incomplètes</a>Autoriser le stockage des exécutions incomplètes sous les paramètres du scénario [!UICONTROL] n’est pas coché.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Valider</p> <p> <img src="assets/commit.png"> </p> </td> 

@@ -3,10 +3,11 @@ title: Modules lexicaux
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez utiliser les modules lexicaux pour convertir des données lexicales en HTML et des données HTML en données lexicales.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 3c9392b35e5f68706d7e6837e330ee98796b8922
+exl-id: a8b8a1f3-d0f4-40bf-b5c1-dd0fb8100ec0
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 18%
+source-wordcount: '239'
+ht-degree: 13%
 
 ---
 
@@ -24,32 +25,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
-   <td>
-   <p>Aucune exigence de licence Workfront Fusion</p>
-   </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -57,9 +48,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## HTML vers Lexical
 
@@ -93,4 +84,3 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
  </tbody> 
 </table>
-

@@ -4,10 +4,10 @@ description: Modules CloudConvert
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '3146'
-ht-degree: 83%
+source-wordcount: '3161'
+ht-degree: 82%
 
 ---
 
@@ -15,36 +15,43 @@ ht-degree: 83%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent CloudConvert, et le connecter à plusieurs applications et services tiers. Les modules [!DNL CloudConvert] vous permettent de surveiller et de gérer des travaux et des tâches, ainsi que d’importer et d’exporter des fichiers dans votre compte [!DNL CloudConvert].
 
+## Conditions d’accès
+
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Formule Adobe Workfront*</td>
-  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Exigence de licence actuelle : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Exigence de licence héritée : [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Configuration requise actuelle du produit : si vous disposez du plan Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article. Workfront Fusion est inclus dans le plan Workfront [!UICONTROL Ultimate].</p>
-   <p>Ou</p>
-   <p>Exigences de produit héritées : votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
+
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Informations sur l’API CloudConvert
 
@@ -751,7 +758,7 @@ Les résultats de la recherche peuvent être trouvés dans la sortie du module s
 
 Dans notre exemple, 6 tâches ont été renvoyées :
 
-![&#x200B; Exemple de sortie API &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![ Exemple de sortie API ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Dépannage {#troubleshooting}
 

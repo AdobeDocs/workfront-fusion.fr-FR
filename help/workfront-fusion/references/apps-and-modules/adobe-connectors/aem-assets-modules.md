@@ -4,10 +4,10 @@ description: Avec le connecteur Adobe Experience Manager Assets pour Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '3727'
-ht-degree: 23%
+source-wordcount: '3734'
+ht-degree: 22%
 
 ---
 
@@ -23,34 +23,29 @@ Pour une présentation vidéo du connecteur Adobe Experience Manager Assets, voi
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -67,10 +62,10 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 * Vous devez disposer d’un compte Adobe Experience Manager Assets pour utiliser ces modules.
 * Vous devez configurer un flux serveur à serveur dans la console Adobe Developer.
 
-  Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [&#x200B; Génération de jetons d’accès pour les API côté serveur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
+  Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [ Génération de jetons d’accès pour les API côté serveur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
-  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 ## Informations sur l’API Adobe Experience Manager Assets
 
@@ -122,7 +117,7 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets :
 >
 >* Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 >
->   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+>   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 

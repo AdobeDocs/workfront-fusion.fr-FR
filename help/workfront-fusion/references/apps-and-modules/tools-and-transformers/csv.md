@@ -4,10 +4,10 @@ description: Les modules CSV d’Adobe Workfront Fusion vous permettent de crée
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 49%
+source-wordcount: '942'
+ht-degree: 48%
 
 ---
 
@@ -21,32 +21,22 @@ Comme il s&#39;agit d&#39;un transformateur, ces modules ne nécessitent pas de 
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
-   <td>
-   <p>Aucune exigence de licence Workfront Fusion</p>
-   </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +44,9 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
 
 Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## [!UICONTROL Créer un CSV]
 
@@ -125,7 +115,7 @@ Pour plus d’informations sur les agrégateurs, voir [Module Agrégateur](/help
 
 **Exemple** :
 
-Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts Google] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL &#x200B; E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
+Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts Google] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL  E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
 ![Transformation](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
 Le module [!DNL Create CSV] simple propose une liste de cases à cocher correspondant aux éléments de niveau supérieur d’un lot. Si vous tentez de sélectionner <code>Nom complet</code> et <code>E-mails</code> , le module [!UICONTROL Créer CSV] génère la sortie suivante, qui peut ne pas être celle que vous souhaitez :

@@ -4,10 +4,10 @@ description: Un module Itérateur est un type spécial de module qui convertit u
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 26%
+source-wordcount: '615'
+ht-degree: 20%
 
 ---
 
@@ -19,47 +19,30 @@ Un [!UICONTROL Itérateur] est un type de module qui convertit un tableau en une
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> Nouveau : Standard<p>Ou</p><p>Actuellement : Travail ou licence supérieure</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licence [!UICONTROL Adobe Workfront Fusion]</td> 
-   <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Héritée : n’importe laquelle. </p>
-   </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
-
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Configuration du module [!UICONTROL Itérateur]
++++## Configuration du module [!UICONTROL Iterator]
 
 Le module Itérateur général comporte un seul champ, le champ [!UICONTROL Tableau]. Ce champ contient le tableau à convertir ou à fractionner en lots distincts.
 
@@ -115,7 +98,7 @@ Démarrez manuellement le scénario dans l’éditeur de scénarios.
 >Pour empêcher l’exécution de l’ensemble du scénario, vous pouvez :
 >
 >* Annulez le lien entre les modules après le module [!UICONTROL JSON] > [!UICONTROL Parse JSON] pour empêcher le flux de continuer.
->  &#x200B;>   Ou
+>  >   Ou
 >* Cliquez avec le bouton droit sur le module [!UICONTROL JSON] > [!UICONTROL Parse JSON] et choisissez **[!UICONTROL Exécuter ce module uniquement]** dans le menu contextuel pour exécuter uniquement le module [!UICONTROL JSON] > [!UICONTROL Parse JSON].
 
 Une fois que le fichier [!UICONTROL JSON] > [!UICONTROL Parse JSON] s’exécute, il peut fournir des informations sur ses sorties à tous les modules suivants, y compris le module Itérateur . Le panneau de mappage dans la configuration du module Itérateur affiche alors les éléments :

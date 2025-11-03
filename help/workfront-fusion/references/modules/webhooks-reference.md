@@ -4,10 +4,10 @@ description: De nombreux services proposent des webhooks pour envoyer des notifi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 22%
+source-wordcount: '1182'
+ht-degree: 23%
 
 ---
 
@@ -28,12 +28,41 @@ Si un connecteur n’inclut pas de webhook, vous pouvez effectuer l’une des op
 * Créez un webhook personnalisé à l’aide du module Webhook.
 Pour plus d’informations, voir [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Utilisez des déclencheurs d’interrogation pour interroger régulièrement le service.
-Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
 * [Présentation des webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Webhooks intermédiaires](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## Conditions d’accès
+
++++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produit</td> 
+   <td>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
 
 ## Afficher les détails du webhook
 
@@ -54,6 +83,7 @@ Vous pouvez afficher une liste de Webhooks dans la zone Webhooks .
 1. Pour afficher le scénario dans lequel un webhook est utilisé, cliquez sur le bouton **Scénario** dans la colonne Scénario de ce webhook.
 1. Pour afficher la connexion utilisée pour ce webhook, cliquez sur le bouton **Connection** dans la colonne Connection de ce webhook.
 1. Pour masquer des colonnes ou afficher des colonnes précédemment masquées, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/glist-column.png) et vérifiez ou décochez les noms de colonne.
+
 
 ## Planifier des déclencheurs instantanés
 

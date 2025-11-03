@@ -8,10 +8,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 15%
+source-wordcount: '2373'
+ht-degree: 14%
 
 ---
 
@@ -27,40 +27,35 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Formule Adobe Workfront*</td>
-  <td> <p>[!UICONTROL Pro] ou version supérieure</p> </td>
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Exigence de licence actuelle : aucune exigence de licence Workfront Fusion.</p>
-   <p>Ou</p>
-   <p>Exigence de licence héritée : [!UICONTROL Workfront Fusion for Work Automation and Integration], [!UICONTROL Workfront Fusion for Work Automation]</p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Configuration requise actuelle du produit : si vous disposez du plan Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article. Workfront Fusion est inclus dans le plan Workfront [!UICONTROL Ultimate].</p>
-   <p>Ou</p>
-   <p>Exigences de produit héritées : votre entreprise doit acheter Adobe Workfront Fusion ainsi qu’Adobe Workfront pour utiliser les fonctionnalités décrites dans cet article.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Pour connaître le plan, le type de licence ou l’accès dont vous disposez, contactez votre administrateur ou administratrice Workfront.
+Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -417,7 +412,7 @@ Ce module d’action ajoute des utilisateurs et des profils de produit à un gro
    <td>Saisissez ou mappez le nom du groupe dont vous souhaitez supprimer les utilisateurs ou les profils.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Utilisateurs</td> 
+   <td role="rowheader">Utilisateurs et utilisatrices</td> 
    <td>Pour chaque utilisateur que vous souhaitez ajouter, cliquez sur <b>Ajouter un utilisateur</b> et saisissez son adresse e-mail.</td> 
   </tr> 
   <tr> 
@@ -490,7 +485,7 @@ Ce module d’action supprime des utilisateurs ou des profils d’un groupe d’
    <td>Saisissez ou mappez le nom du groupe dont vous souhaitez supprimer les utilisateurs ou les profils.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Utilisateurs</td> 
+   <td role="rowheader">Utilisateurs et utilisatrices</td> 
    <td>Pour chaque utilisateur que vous souhaitez supprimer, cliquez sur <b>Ajouter un utilisateur</b> et saisissez son adresse e-mail.</td> 
   </tr> 
   <tr> 

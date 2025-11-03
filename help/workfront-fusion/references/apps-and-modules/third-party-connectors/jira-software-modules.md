@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 61%
+source-wordcount: '2466'
+ht-degree: 65%
 
 ---
 
@@ -29,34 +29,29 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>En cours : Travail ou version ultérieure</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
+   <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Actuel : aucune exigence de licence Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Hérité : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Sélectionnez ou le package Prime Workfront : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Package Ultimate Workfront : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -146,7 +141,7 @@ Pour [!DNL Jira Software] connecter à Workfront Fusion, vous devez créer un je
 
 Pour autoriser une connexion entre Workfront Fusion et [!DNL Jira Server], vous avez besoin de votre clé de client, de votre clé privée et de l’URL du service. Vous devrez peut-être contacter votre administrateur [!DNL Jira] pour cette information.
 
-* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configurer l’application cliente en tant que consommatrice dans  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Création d’une connexion  [!DNL Jira] serveur ou au centre de données Jira dans Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -238,7 +233,7 @@ Pour acquérir une clé privée pour votre connexion [!DNL Workfront Fusion Jira
    </table>
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  &#x200B;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  ](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### Créer une connexion à [!DNL Jira Server] ou [!DNL Jira Data Center] dans Workfront Fusion
 
@@ -567,19 +562,19 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 >[!IMPORTANT]
 >
->Le module de recherche utilisé par le connecteur Jira hérité peut entraîner l’erreur suivante :
+>Le module de recherche utilisé par le connecteur Jira hérité peut entraîner l’erreur suivante :
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Cela est dû à une obsolescence du côté Jira.
+>Cela est dû à une obsolescence du côté de Jira.
 >
->Si vous rencontrez cette erreur, vous pouvez remplacer le module de recherche du connecteur Jira hérité par le module de recherche du nouveau connecteur. Notez que le nouveau connecteur permet de sélectionner la version d’API utilisée. Veillez à sélectionner V3 lors de la création de la connexion.
+>Si vous rencontrez cette erreur, vous pouvez remplacer le module de recherche du connecteur Jira hérité par celui du nouveau connecteur. Notez que le nouveau connecteur permet de sélectionner la version d’API utilisée. Veillez à sélectionner V3 lors de la création de la connexion.
 >
 > ![Option de version de l’API dans le nouveau connecteur Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->Notez que :
+>Notez que :
 >
->* Seul le module Recherche est affecté. Actuellement, les autres points d’entrée de l’API Jira utilisés par le connecteur Fusion ne sont pas affectés par cette obsolescence.
+>* Seul le module de recherche est affecté. Actuellement, les autres points d’entrée de l’API Jira utilisés par le connecteur Fusion ne sont pas affectés par cette obsolescence.
 >
 >* Le déploiement géographique peut entraîner des incohérences. Atlassian déploie cette modification à l’échelle régionale, ce qui signifie que certaines instances Jira Cloud peuvent toujours prendre temporairement en charge les points d’entrée plus anciens. Cela peut entraîner un comportement incohérent entre les environnements.
 
