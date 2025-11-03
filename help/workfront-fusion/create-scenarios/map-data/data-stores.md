@@ -94,7 +94,7 @@ Avant de pouvoir utiliser un magasin de données dans un module, vous devez le c
 
 >[!NOTE]
 >
->Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL  Le nombre maximum de magasins a atteint ].
+>Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL &#x200B; Le nombre maximum de magasins a atteint &#x200B;].
 >
 >Pour plus d’informations, consultez dans cet article la section [Erreur Maximum d’entrepôts atteint](#maximum-stores-reached-error).
 
