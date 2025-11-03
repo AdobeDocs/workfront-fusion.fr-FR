@@ -65,7 +65,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
   Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [&#x200B; Génération de jetons d’accès pour les API côté serveur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
-  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+  Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 ## Informations sur l’API Adobe Experience Manager Assets
 
@@ -117,7 +117,7 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets :
 >
 >* Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 >
->   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
+>   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
