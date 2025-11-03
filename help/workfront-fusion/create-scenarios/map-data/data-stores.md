@@ -4,10 +4,10 @@ description: Un entrepôt de données, comparable à une base de données ou à 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 77%
+source-wordcount: '1324'
+ht-degree: 76%
 
 ---
 
@@ -81,7 +81,7 @@ Les instances Fusion sur les packages Select ou Prime reçoivent :-->
 
   Par exemple, une organisation avec 600 000 opérations reçoit 110 Mo.
 
-Votre organisation peut posséder jusqu’à 50 entrepôts de données. La taille combinée de ces entrepôts de données ne peut pas dépasser la taille totale des entrepôts de données de votre organisation.
+Chaque équipe de votre entreprise peut avoir jusqu’à 50 entrepôts de données. La taille combinée de ces entrepôts de données ne peut pas dépasser la taille totale des entrepôts de données de votre organisation.
 
 ## Création d’un magasin de données dans Workfront Fusion
 
@@ -94,7 +94,7 @@ Avant de pouvoir utiliser un magasin de données dans un module, vous devez le c
 
 >[!NOTE]
 >
->Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL &#x200B; Le nombre maximum de magasins a atteint &#x200B;].
+>Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL  Le nombre maximum de magasins a atteint ].
 >
 >Pour plus d’informations, consultez dans cet article la section [Erreur Maximum d’entrepôts atteint](#maximum-stores-reached-error).
 
