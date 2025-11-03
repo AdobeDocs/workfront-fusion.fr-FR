@@ -511,7 +511,7 @@ Pour déclencher un scénario à un moment précis avant un événement, utilise
    1. Cliquez sur la bulle au-dessus du module pour inspecter la sortie du module.
    1. Développez l’élément `Text` et copiez le code de confirmation :
 
-      ![ Code de confirmation ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![&#x200B; Code de confirmation &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Dans Gmail, collez le code de confirmation dans la boîte de dialogue de modification et cliquez sur **[!UICONTROL Vérifier]** :
 

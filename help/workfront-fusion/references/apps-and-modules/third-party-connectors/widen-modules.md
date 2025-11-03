@@ -88,7 +88,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Widen] directement à par
 1. Dans n’importe quel module [!DNL Widen], cliquez sur **[!UICONTROL Ajouter]** à côté du champ [!UICONTROL Connexion].
 1. Sélectionnez l’environnement et le type de compte auxquels vous vous connectez. Elle est fournie à titre d’information uniquement et s’affiche dans la zone Connexions de Fusion.
 1. Sélectionnez le domaine [!DNL Widen] auquel vous souhaitez vous connecter.
-1. Saisissez le jeton de votre compte [!DNL Widen]. Pour savoir comment trouver ce jeton, voir [[!DNL Widen] Questions fréquentes sur l’API ](https://community.widen.com/collective/s/article/API-FAQs).
+1. Saisissez le jeton de votre compte [!DNL Widen]. Pour savoir comment trouver ce jeton, voir [[!DNL Widen] Questions fréquentes sur l’API &#x200B;](https://community.widen.com/collective/s/article/API-FAQs).
 1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
 
 ## Modules [!DNL Widen] et leurs champs

@@ -79,7 +79,7 @@ Si le champ Chaîne de caractères JSON contient une collection `{ ... }`, la so
 ```
 
 
-![ Collection JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![&#x200B; Collection JSON &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 ]
 ```
 
-![ Tableau JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![&#x200B; Tableau JSON &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 

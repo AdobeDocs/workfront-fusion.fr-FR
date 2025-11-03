@@ -95,11 +95,11 @@ Pour créer une connexion pour vos modules Finances et opérations Microsoft Dyn
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre ID client Dynamics Finance and Operations [!UICONTROL].</td>
+        <td>Saisissez votre ID client Dynamics Finance and Operations .</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre clé secrète client Dynamics Finance and Operations [!UICONTROL]. </td>
+        <td>Saisissez votre clé secrète client Dynamics Finance and Operations . </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Tenant ID]</td>

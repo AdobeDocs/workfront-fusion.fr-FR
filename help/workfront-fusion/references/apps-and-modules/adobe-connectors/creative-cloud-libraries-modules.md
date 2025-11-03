@@ -111,7 +111,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 * [[!UICONTROL Charger un élément]](#upload-an-element)
 
-* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
+* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Surveiller les éléments mis à jour]](#watch-updated-elements)
 

@@ -98,7 +98,7 @@ Démarrez manuellement le scénario dans l’éditeur de scénarios.
 >Pour empêcher l’exécution de l’ensemble du scénario, vous pouvez :
 >
 >* Annulez le lien entre les modules après le module [!UICONTROL JSON] > [!UICONTROL Parse JSON] pour empêcher le flux de continuer.
->  >   Ou
+>  &#x200B;>   Ou
 >* Cliquez avec le bouton droit sur le module [!UICONTROL JSON] > [!UICONTROL Parse JSON] et choisissez **[!UICONTROL Exécuter ce module uniquement]** dans le menu contextuel pour exécuter uniquement le module [!UICONTROL JSON] > [!UICONTROL Parse JSON].
 
 Une fois que le fichier [!UICONTROL JSON] > [!UICONTROL Parse JSON] s’exécute, il peut fournir des informations sur ses sorties à tous les modules suivants, y compris le module Itérateur . Le panneau de mappage dans la configuration du module Itérateur affiche alors les éléments :

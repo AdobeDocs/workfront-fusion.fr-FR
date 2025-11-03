@@ -64,10 +64,10 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 >[!IMPORTANT]
 >
 >* Pour utiliser le connecteur Dropbox, vous devez d’abord créer une application dans Dropbox.
->  >   Pour plus d’informations, recherchez « Créer une application » dans le guide de développement de Dropbox.
+>  &#x200B;>   Pour plus d’informations, recherchez « Créer une application » dans le guide de développement de Dropbox.
 >* Lors de la création de l’application, utilisez l’URI de redirection suivant : `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox doit approuver les demandes comptant plus de 50 utilisateurs et utilisatrices.
->  >   Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
+>  &#x200B;>   Pour plus d’informations, recherchez « Production approval » dans le guide de développement de Dropbox.
 
 ## Informations sur l’API Dropbox
 
@@ -149,8 +149,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Modules déclencheurs](#trigger-modules)
-* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
-* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
+* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Autres modules](#other-modules)
 
 ### Modules déclencheurs

@@ -278,7 +278,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
 
 Ce module d’action exécute une action sélectionnée sur un objet dans l’API [!DNL Adobe Campaign].
 
-Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
+Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
 
 <table style="table-layout:auto"> 
  <col> 

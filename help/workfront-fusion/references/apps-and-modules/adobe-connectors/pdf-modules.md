@@ -545,7 +545,7 @@ Le module [!UICONTROL Générer un document] est un moyen puissant de créer un 
 
 Pour plus d’informations sur la fonctionnalité [!UICONTROL [!DNL Adobe PDF Services] Générer un document], consultez [Vue d’ensemble de la génération de document](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) dans la documentation [!DNL Adobe Document Services].
 
-* [Utiliser le module [!UICONTROL Générer un document] avec un modèle  [!DNL Microsoft Word] ](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [Utiliser le module [!UICONTROL Générer un document] avec un modèle  [!DNL Microsoft Word] &#x200B;](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [Utiliser le module [!UICONTROL Générer un document] avec JSON](#use-the-generate-document-module-with-json)
 
 #### Utiliser le module [!UICONTROL Générer un document] avec un modèle [!DNL Microsoft Word]

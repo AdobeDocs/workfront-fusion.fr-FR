@@ -62,7 +62,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 * Vous devez disposer d’un compte Adobe Experience Manager Assets pour utiliser ces modules.
 * Vous devez configurer un flux serveur à serveur dans la console Adobe Developer.
 
-  Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [ Génération de jetons d’accès pour les API côté serveur ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
+  Pour obtenir des instructions sur la configuration du flux serveur à serveur dans la console Adobe Developer, voir [&#x200B; Génération de jetons d’accès pour les API côté serveur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr#the-server-to-server-flow).
 * Votre compte technique Adobe Experience Manager doit disposer d’autorisations en écriture.
 
   Pour obtenir des instructions sur l’ajout d’autorisations d’écriture à votre compte technique Adobe Experience Manager, voir [Informations d’identification du service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) dans la documentation de Adobe Experience Manager.
