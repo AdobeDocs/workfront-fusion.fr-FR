@@ -1,12 +1,12 @@
 ---
-title: Modules Frame.io (Beta)
+title: Modules Frame.io
 description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 24%
 
 ---
@@ -112,7 +112,7 @@ Vous pouvez vous connecter automatiquement à l’aide des informations d’iden
 
 Cette méthode crée automatiquement une connexion si vous êtes connecté à Frame.io, ou vous connecte à la page de connexion Frame.io afin que vous puissiez vous connecter.
 
-1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
+1. Dans un module Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 1. Saisissez un nom pour la connexion.
 1. Cliquez sur **Continuer**.
 1. Si vous êtes invité à vous connecter à votre compte Frame.io, faites-le.
@@ -177,7 +177,7 @@ Si vous ne disposez pas déjà d’informations d’identification de serveur à
 
 #### Configurer une connexion d’authentification d’utilisateur
 
-1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
+1. Dans un module Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 1. Dans la zone Créer une connexion , cliquez sur **Afficher les paramètres avancés**.
 
 1. Remplissez les champs suivants :
@@ -252,7 +252,7 @@ Si vous ne disposez pas déjà d’informations d’identification de serveur à
 
 #### Configurer une connexion serveur à serveur
 
-1. Dans un module Beta Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
+1. Dans un module Frame.io, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
