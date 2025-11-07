@@ -4,10 +4,10 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3555'
-ht-degree: 24%
+source-wordcount: '4399'
+ht-degree: 22%
 
 ---
 
@@ -303,6 +303,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Projets](#projects)
 * [Partages](#shares)
 * [Espaces de travail](#workspaces)
+* [Métadonnées](#metadata)
 * [Autre](#other)
 
 ### Ressources
@@ -315,6 +316,61 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Regarder la nouvelle ressource](#watch-new-asset)
 
 #### [!UICONTROL Créer une ressource] <!--different for v4-->
+
+Ce module d’action crée une ressource. Vous pouvez charger un fichier local ou fournir l’URL d’un fichier distant à partir duquel créer la ressource.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez le compte ou mappez l’identifiant du compte contenant le projet pour lequel vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Sélectionnez l’espace de travail ou mappez l’identifiant de l’espace de travail contenant le projet pour lequel vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Sélectionnez le projet ou mappez l’ID du projet pour lequel vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Sélectionnez le chemin d’accès où vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">Type de chargement </td> 
+    <td> <p>Choisissez si vous créez une ressource à partir d’un fichier local ou d’une vie distante.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">Taille de fichier </td> 
+    <td> <p>Si vous téléchargez un fichier local, saisissez ou mappez la taille du fichier en octets.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td> <p>Si vous créez la ressource à partir d’un fichier distant, saisissez l’URL du fichier à charger.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom du fichier source.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL Création d’une ressource (héritée)] <!--different for v4-->
 
 Ce module d’action crée une ressource.
 
@@ -967,6 +1023,183 @@ Ce module répertorie tous les espaces de travail d’un compte.
    <td role="rowheader">[!UICONTROL Nombre maximal d’espaces de travail renvoyés] </td> 
    <td> <p>Saisir ou mapper le nombre maximal d’espaces de travail
    vous souhaitez que le module réapparaisse lors de chaque cycle d’exécution du scénario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Métadonnées
+
+* [Création d’un champ de niveau compte](#create-an-account-level-field)
+* [Suppression d’un champ de niveau compte](#delete-an-account-level-field)
+* [Obtenir les métadonnées](#get-metadata)
+* [Répertorier les champs au niveau du compte](#list-account-level-fields)
+* [Mise à jour d’une définition de champ au niveau du compte](#update-an-account-level-field-definition)
+* [Mise à jour des métadonnées sur plusieurs fichiers](#update-metadata-across-multiple-files)
+
+#### Création d’un champ de niveau compte
+
+Ce module d’action crée et configure un champ de métadonnées au niveau du compte.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte sur lequel vous souhaitez créer les métadonnées.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Type de champ </td> 
+   <td> <p>Sélectionnez le type de champ de métadonnées que vous souhaitez créer, puis configurez les options de ce champ.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nom </td> 
+   <td> <p>Saisissez ou mappez un nom pour le nouveau champ.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Suppression d’un champ de niveau compte
+
+Ce module d’action supprime un seul champ de métadonnées au niveau du compte.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant le champ de métadonnées à supprimer.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de définition de champ </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du champ que vous souhaitez supprimer. Vous pouvez trouver des identifiants de champ avec le module Champs de niveau compte de liste .</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obtenir les métadonnées
+
+Ce module d&#39;action récupère les métadonnées d&#39;un fichier dans Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant le fichier pour lequel vous souhaitez récupérer les métadonnées.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Identifiant du fichier </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du fichier pour lequel vous souhaitez récupérer les métadonnées.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Afficher la valeur nulle </td> 
+   <td> <p>Activez cette option pour inclure les champs avec une valeur nulle dans la sortie.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Répertorier les champs au niveau du compte
+
+Ce module récupère une liste des champs de métadonnées de niveau compte pour le compte spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte à partir duquel vous souhaitez répertorier les champs.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
+   <td> <p>Saisissez ou mappez le nombre maximal de champs que le module doit renvoyer pour chaque cycle d’exécution de scénario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Mise à jour d’une définition de champ au niveau du compte
+
+Ce module met à jour la définition d’un champ de métadonnées existant unique.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte sur lequel vous souhaitez créer les métadonnées.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de définition de champ </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du champ que vous souhaitez mettre à jour. Vous pouvez trouver des identifiants de champ avec le module Champs de niveau compte de liste .</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Type de champ </td> 
+   <td> <p>Si vous souhaitez modifier le type de champ, sélectionnez le type de champ de métadonnées que vous souhaitez créer, puis configurez les options de ce champ.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nom </td> 
+   <td> <p>Saisissez ou mappez un nouveau nom pour le champ.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Mise à jour des métadonnées sur plusieurs fichiers
+
+Ce module met à jour les champs de métadonnées d’un ou de plusieurs fichiers avec les valeurs que vous spécifiez.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Frame.io], voir <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Frame.io] à Adobe Workfront Fusion</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de compte] </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant les fichiers pour lesquels vous souhaitez mettre à jour les métadonnées.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Sélectionnez l’espace de travail ou mappez l’identifiant de l’espace de travail contenant le projet pour lequel vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Sélectionnez le projet ou mappez l’ID du projet pour lequel vous souhaitez créer une ressource.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File IDs] </td> 
+   <td> <p>Pour chaque fichier pour lequel vous souhaitez mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’identifiant du fichier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>Pour chaque champ pour lequel vous souhaitez mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’identifiant de la définition de champ et la valeur que vous souhaitez placer dans ce champ. Tous les fichiers spécifiés dans le champ ID de fichier sont mis à jour avec cette valeur de champ.</p> </td> 
   </tr> 
  </tbody> 
 </table>
