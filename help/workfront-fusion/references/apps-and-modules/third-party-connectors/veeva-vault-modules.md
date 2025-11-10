@@ -3,10 +3,10 @@ title: Modules Veeva Vault
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Veeva Vault et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 18%
+source-wordcount: '2325'
+ht-degree: 14%
 
 ---
 
@@ -118,18 +118,23 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Document](#document)
+* [Objet](#object)
+* [Autre](#other)
+
 ### Document
 
 * [Créer un seul document](#create-a-single-document)
 * [Création de plusieurs documents](#create-multiple-documents)
 * [Supprimer un seul document](#delete-a-single-document)
+* [Télécharger un fichier](#download-file)
 * [Exporter des documents](#export-documents)
 * [Obtenir un seul document](#get-a-single-document)
 * [Lancement de l’action utilisateur](#initiate-user-action)
 * [Liste des documents](#list-documents)
 * [Récupérer les résultats d’exportation du document](#retrieve-document-export-results)
-* [Mettre à jour plusieurs documents](#update-multiple-documents)
 * [Mettre à jour un seul document](#update-a-single-document)
+* [Mettre à jour plusieurs documents](#update-multiple-documents)
 
 #### Créer un seul document
 
@@ -196,6 +201,41 @@ Ce module supprime un seul document, classeur ou modèle.
   <tr> 
    <td role="rowheader"><p>ID de document / ID de relieur / Nom du modèle</p> </td> 
    <td> <p>Sélectionnez les champs à supprimer.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Télécharger le fichier
+
+Ce module télécharge un document, une version de document ou un modèle de Veeva Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Choisissez si vous souhaitez télécharger un document ou un modèle.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type de téléchargement</p> </td> 
+   <td> <p>Choisissez si vous souhaitez télécharger un document ou une version de document.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ID du document / Nom du modèle</p> </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du document ou le nom du modèle que vous souhaitez télécharger.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Extraire le document</p> </td> 
+   <td> <p>Si vous téléchargez un document, activez cette option pour extraire le document avant de le télécharger.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Si vous téléchargez une version de document, sélectionnez la version à télécharger.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Ce module met à jour un seul document, classeur ou modèle.
 
 ### Objet
 
+* [Créer un enregistrement d’objet unique](#create-a-single-object-record)
+* [Supprimer un seul enregistrement d’objet](#delete-a-single-object-record)
+* [Obtenir un seul objet](#get-a-single-object)
+* [Répertorier les enregistrements d’objets](#list-objects-records)
+* [Mettre à jour un enregistrement d’objet unique](#update-a-single-object-record)
 
+#### Créer un enregistrement d’objet unique
 
-#### Liste des objets
+Ce module crée, copie ou copie en profondeur un enregistrement d’objet unique.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Choisissez de créer ou de copier un enregistrement, ou de copier en profondeur un enregistrement.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Mode de migration</td> 
+   <td>Si vous créez ou copiez un enregistrement, activez cette option pour créer ou mettre à jour des enregistrements d’objet dans un état non initial et avec une validation minimale, créer des enregistrements inactifs et définir des champs standard et gérés par le système tels que <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aucun déclencheur</td> 
+   <td>Si la valeur est définie sur true et que le mode de migration est activé, le module contourne tous les triggers SDK système, standard, personnalisés et d'action.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nom de l'objet</td> 
+   <td>Saisissez ou mappez la valeur du champ nom__v de l’objet, telle que <code>product__v</code>, <code>country__v</code> ou <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de l’enregistrement</td> 
+   <td>Si vous copiez en profondeur un enregistrement, sélectionnez l’enregistrement à copier.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Champs d’enregistrement</td> 
+   <td>Si vous copiez un enregistrement en profondeur, sélectionnez les champs pour lesquels vous souhaitez fournir des valeurs, puis fournissez ces valeurs.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Supprimer un seul enregistrement d’objet
+
+Ce module supprime ou supprime en cascade un seul enregistrement d&#39;objet. La suppression en cascade d&#39;un enregistrement supprime l&#39;enregistrement et tous ses objets enfants.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Choisissez de supprimer un enregistrement ou de supprimer un enregistrement en cascade.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nom de l'objet</td> 
+   <td>Sélectionnez l’objet à supprimer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de l’enregistrement</td> 
+   <td>Sélectionnez l’identifiant de l’enregistrement à supprimer.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID externe</td> 
+   <td>Au lieu de l’ID d’enregistrement, vous pouvez utiliser cet ID externe de document défini par l’utilisateur.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obtenir un seul objet
+
+Ce module récupère les métadonnées configurées sur un enregistrement d’objet spécifique dans votre coffre.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nom de l'objet</td> 
+   <td>Sélectionnez l’objet pour lequel vous souhaitez récupérer les métadonnées.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de l’enregistrement</td> 
+   <td>Sélectionnez l’identifiant de l’enregistrement pour lequel vous souhaitez récupérer les métadonnées.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Répertorier les enregistrements d’objets
 
 Ce module récupère tous les objets Vault dans le coffre authentifié.
 
@@ -408,6 +545,55 @@ Ce module récupère tous les objets Vault dans le coffre authentifié.
   <tr> 
    <td role="rowheader">Nombre maximal de résultats renvoyés</td> 
    <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+Ce module met à jour les champs d’un enregistrement d’objet existant.
+
+Ce module crée, copie ou copie en profondeur un enregistrement d’objet unique.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Choisissez de créer ou de copier un enregistrement, ou de copier en profondeur un enregistrement.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Mode de migration</td> 
+   <td>Activez cette option pour créer ou mettre à jour des enregistrements d’objet dans un état non initial et avec une validation minimale, créer des enregistrements inactifs et définir des champs standard et gérés par le système tels que <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aucun déclencheur</td> 
+   <td>Si le mode de migration est activé, vous pouvez activer cette option pour contourner tous les triggers SDK système, standard, personnalisés et d’action.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nom de l'objet</td> 
+   <td>Saisissez ou mappez la valeur du champ nom__v de l’objet, telle que <code>product__v</code>, <code>country__v</code> ou <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de l’enregistrement</td> 
+   <td>Sélectionnez l’identifiant de l’enregistrement à mettre à jour.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Département</td> 
+   <td>Spécifiez l’état du cycle de vie de l’enregistrement lorsque <code>X-VaultAPI-MigrationMode</code> est défini sur « true ».</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Libellé de l’état</td> 
+   <td>Spécifiez le type d'état du cycle de vie de l'enregistrement lorsque <code>X-VaultAPI-MigrationMode</code> est défini sur true. Utilisez le format <code>base:object_lifecycle:</code> suivi du type d’état de l’objet .</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Champs d’enregistrement</td> 
+   <td>Si vous copiez un enregistrement en profondeur, sélectionnez les champs pour lesquels vous souhaitez fournir des valeurs, puis fournissez ces valeurs.</td> 
   </tr> 
  </tbody> 
 </table>
