@@ -1,17 +1,27 @@
 ---
-title: Modules Slack
+title: Modules Slack (hérités)
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Slack et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: c5c1f632ce5cc3b4f357118e7bdb8ec852bd91fb
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2039'
 ht-degree: 59%
 
 ---
 
-# Modules [!DNL Slack]
+# Modules [!DNL Slack] (hérités)
+
+<!--
+
+>[!IMPORTANT]
+>
+>This article describes modules available in the legacy Slack connector, which is no longer available. This article will be removed in the near future. 
+>
+>For information on the new Slack connector, released on November 14, 2025, see [[!DNL Slack] modules (Legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md).
+
+-->
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Slack] et les connecter à plusieurs applications et services tiers.
 
