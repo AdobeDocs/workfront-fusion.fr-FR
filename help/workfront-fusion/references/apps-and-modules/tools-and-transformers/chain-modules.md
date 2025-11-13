@@ -3,17 +3,19 @@ title: Modules de chaîne
 description: Grâce à ces modules, vous pouvez enchaîner les scénarios, en passant un appel à l’autre.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '625'
 ht-degree: 4%
 
 ---
 
 # Modules de chaîne
+
+>[!NOTE]
+>
+>Cette fonctionnalité est actuellement disponible dans Beta.
 
 À l’aide des modules de chaîne, vous pouvez connecter un scénario à un autre.
 
