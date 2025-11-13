@@ -23,7 +23,7 @@ Vous pouvez appeler plusieurs scénarios enfants à partir d’un scénario pare
 
 Lorsqu’un scénario parent attend qu’un scénario enfant renvoie des données, ce temps n’est pas comptabilisé dans le délai d’expiration du scénario parent. Par exemple, un scénario parent appelle 5 scénarios enfants, dont l’exécution prend chacun 10 minutes, pour un total de 50 minutes. L’exécution des modules du scénario parent lui-même prend 15 minutes. Le scénario parent n’expire pas, même si un total de 65 minutes s’est écoulé, ce qui dépasse la limite de délai de 40 minutes.
 
-Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Pour obtenir des instructions sur la configuration des modules Chain, voir [Modules Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
