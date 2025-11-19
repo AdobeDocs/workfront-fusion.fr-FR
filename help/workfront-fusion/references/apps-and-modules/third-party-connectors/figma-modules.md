@@ -4,10 +4,10 @@ description: Grâce aux modules Figma d’Adobe Workfront Fusion, vous pouvez r�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2600'
-ht-degree: 75%
+source-wordcount: '2638'
+ht-degree: 79%
 
 ---
 
@@ -28,8 +28,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -38,22 +38,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
+   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,6 +86,11 @@ Le connecteur Figma utilise les éléments suivants :
 
 ## Créer une connexion vers Figma
 
+>[!IMPORTANT]
+>
+>* La Figma a modifié ses exigences d’authentification en janvier 2025. Le type de connexion `Figma` répond aux nouvelles exigences. Le type de connexion `Figma (Legacy)` a été abandonné et sera supprimé prochainement.
+>* Si vous utilisez une redirection, une URL, utilisez `https://oauth.app.workfrontfusion.com/oauth/cb/figma3`.
+
 Pour créer une connexion pour vos modules Figma :
 
 1. Dans un module Figma, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
@@ -101,7 +106,7 @@ Pour créer une connexion pour vos modules Figma :
         <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p> Pour les nouvelles connexions, sélectionnez <code>Figma</code> sans la balise héritée. </p><p>La Figma a modifié ses exigences d’authentification en janvier 2025. Le type de connexion <code>Figma</code> répond aux nouvelles exigences. Le type de connexion <code>Figma (Legacy)</code> sera supprimé ultérieurement.</p>
+          <p> Sélectionnez <code>Figma</code> sans la balise héritée. </p><p>La Figma a modifié ses exigences d’authentification en janvier 2025. Le type de connexion <code>Figma</code> répond aux nouvelles exigences. Le type de connexion <code>Figma (Legacy)</code> a été abandonné et sera supprimé ultérieurement.</p>
         </td>
         </tr>
         <tr>
@@ -112,7 +117,7 @@ Pour créer une connexion pour vos modules Figma :
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Image] [!UICONTROL Client ID].</td>
+        <td>Saisissez votre [!UICONTROL Figma] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
@@ -137,9 +142,9 @@ Pour créer une connexion pour vos modules Figma :
 
 Lorsque vous configurez les modules [!DNL Figma], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Figma] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Commentaires](#comments)
 
@@ -177,7 +182,7 @@ Ce module d’action supprime un seul commentaire d’un fichier.
       <td>Saisissez ou mappez l’ID du fichier auquel vous souhaitez ajouter ou supprimer un commentaire. </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment ID]</td>
+      <td role="rowheader">[!UICONTROL ID du commentaire]</td>
       <td>Saisissez le texte du commentaire que vous souhaitez supprimer.</td>
     </tr>
   </tbody>
@@ -210,7 +215,7 @@ Ce module de recherche répertorie tous les commentaires attachés à un seul fi
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td>
+      <td role="rowheader">[!UICONTROL Nombre maximum de commentaires renvoyés]</td>
       <td>Saisissez ou mappez le nombre maximum de commentaires que vous souhaitez que le module renvoie lors de chaque cycle d’exécution du scénario.</td>
     </tr>
   </tbody>
@@ -564,7 +569,7 @@ Ce module de recherche renvoie une liste de tous les projets de l’équipe spé
       <td>Saisissez ou mappez l’ID du projet pour lequel vous souhaitez récupérer les fichiers. L’identifiant de l’équipe se trouve dans l’URL de la page de l’équipe dans Figma.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Nombre maximal de projets renvoyés]</td>
+      <td role="rowheader">[!UICONTROL Nombre maximum de projets renvoyés]</td>
       <td>Saisissez ou mappez le nombre maximum d’enregistrements que le module doit renvoyer pour chaque cycle d’exécution du scénario.</td>
     </tr>
   </tbody>
