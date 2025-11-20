@@ -4,16 +4,18 @@ description: Vous pouvez afficher un journal des activités, telles que la créa
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 6%
+source-wordcount: '500'
+ht-degree: 10%
 
 ---
 
 # Affichage des journaux d’activité d’une organisation
 
 Vous pouvez afficher un journal des activités de votre organisation, telles que la création d’un scénario ou l’invitation d’un utilisateur.
+
+Les journaux d’activité affichent trois mois de données. Les données datant de plus de 3 mois peuvent être exportées.
 
 ## Conditions d’accès
 
@@ -24,7 +26,7 @@ Vous pouvez afficher un journal des activités de votre organisation, telles que
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
    <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -41,7 +43,7 @@ Vous pouvez afficher un journal des activités de votre organisation, telles que
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
