@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '534'
 ht-degree: 9%
 
 ---
@@ -46,6 +46,10 @@ Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’ac
 +++
 
 ## Composants du tableau de bord des performances
+
+>[!NOTE]
+>
+>Les mesures sont affichées par pool de traitement. Pour afficher un autre pool de traitement, cliquez sur le champ Pool près du coin supérieur gauche du tableau de bord, puis sélectionnez le pool pour lequel vous souhaitez afficher les mesures.
 
 Dans le tableau de bord des performances de Fusion , vous pouvez voir les mesures suivantes.
 
