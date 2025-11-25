@@ -1,12 +1,13 @@
 ---
+title: Modules Anaplan
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Anaplan et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 71%
+source-wordcount: '2031'
+ht-degree: 77%
 
 ---
 
@@ -27,8 +28,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,22 +38,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
+   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -156,9 +157,9 @@ Pour créer une connexion pour vos modules [!DNL Anaplan], procédez comme suit�
 
 Lorsque vous configurez les modules [!DNL Anaplan], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Anaplan] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -295,11 +296,11 @@ Ce module d’action récupère les données d’Anaplan à l’aide des Défini
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connexion]</td> 
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Anaplan] à Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de l’espace de travail]</td> 
    <td>Sélectionnez ou mappez l’identifiant du Workspace Anaplan contenant les données à exporter.</td> 
   </tr> 
   <tr> 
@@ -323,11 +324,11 @@ Ce module d’action importe des données dans Anaplan.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connexion]</td> 
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Anaplan] à Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL ID de l’espace de travail]</td> 
    <td>Sélectionnez ou mappez l’identifiant du Workspace Anaplan sur lequel vous souhaitez importer les données.</td> 
   </tr> 
   <tr> 
@@ -517,7 +518,7 @@ Ce module d’action charge un fichier existant dans Anaplan vers des emplacemen
 <col>
 <tbody>
 <tr>
-<td role="rowheader">[!UICONTROL Connection]</td>
+<td role="rowheader">[!UICONTROL Connexion]</td>
 <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Anaplan] à Workfront Fusion</a> dans cet article.</td>
 </tr>
 <tr>
