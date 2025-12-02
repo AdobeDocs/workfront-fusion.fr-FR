@@ -3,10 +3,10 @@ title: Modules Veeva Vault
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Veeva Vault et les connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 14%
+source-wordcount: '2485'
+ht-degree: 18%
 
 ---
 
@@ -27,8 +27,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,22 +37,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
+   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,7 +64,12 @@ Pour utiliser les modules Veeva Vault, vous devez disposer d&#39;un compte Veeva
 
 Vous pouvez créer une connexion à votre compte Veeva Vault directement depuis un module Veeva Vault.
 
+Lors de la création d’une connexion, vous pouvez choisir d’utiliser un mot de passe ou l’authentification OAuth2.
+
+### Se connecter à Veeva Vault à l&#39;aide d&#39;un nom d&#39;utilisateur et d&#39;un mot de passe
+
 1. Dans un module Veeva Vault, cliquez sur **Ajouter** en regard du champ Connexion .
+1. Dans le champ **Type de connexion**, sélectionnez `Veeva Username Password`.
 1. Remplissez les champs suivants.
 
    <table style="table-layout:auto"> 
@@ -75,18 +80,6 @@ Vous pouvez créer une connexion à votre compte Veeva Vault directement depuis 
        <td role="rowheader">Nom de la connexion</td> 
        <td> <p>Saisissez un nom pour la connexion.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Environnement</td>
-        <td>
-          <p>Indiquez si vous vous connectez à un environnement de production ou hors production.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Type</td>
-        <td>
-          <p>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Nom d’utilisateur</td>
         <td>
@@ -108,15 +101,67 @@ Vous pouvez créer une connexion à votre compte Veeva Vault directement depuis 
 
 1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
 
+### Se connecter à Veeva Vault à l’aide de l’authentification OAuth2
+
+1. Dans un module Veeva Vault, cliquez sur **Ajouter** en regard du champ Connexion .
+1. Dans le champ **Type de connexion**, sélectionnez `Veeva Oauth 2`.
+1. Remplissez les champs suivants.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Nom de la connexion</td> 
+       <td> <p>Saisissez un nom pour la connexion.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">ID client</td>
+        <td>
+          <p>Saisissez l’ID client pour l’application Veeva Vault que cette connexion utilisera.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Clé secrète client</td>
+        <td>
+          <p>Saisissez le secret client pour l’application Veeva Vault que cette connexion utilisera.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Étendue</td>
+        <td>
+          <p>Saisissez la portée de cette connexion.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID de client</td>
+        <td>
+          <p>Saisissez l’ID client pour cette connexion.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Identifiant du profil</td>
+        <td>
+          <p>Saisissez l’ID de votre profil OAuth2/Copen ID Connect.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">DNS Vault</td> 
+       <td>Saisissez votre DNS Veeva Vault (nom de domaine).</p><p>Pour localiser votre DNS Veeva Vault, examinez l'URL que vous utilisez pour accéder à Veeva Vault.</p>Par exemple, dans le <code>https://my-dns.veevavault.com</code> URL, le DNS est <code>my-dns</code>. Il n’est pas nécessaire de saisir l’URL complète.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
 
 
 ## Modules Veeva Vault et leurs champs
 
 Lorsque vous configurez les modules Veeva Vault, Workfront Fusion affiche les champs répertoriés ci-dessous. D&#39;autres champs Veeva Vault peuvent également s&#39;afficher, selon des facteurs tels que votre niveau d&#39;accès dans l&#39;application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Document](#document)
 * [Objet](#object)
