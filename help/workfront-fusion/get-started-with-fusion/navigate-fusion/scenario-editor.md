@@ -4,10 +4,10 @@ description: L’éditeur de scénario vous permet de créer et de modifier des 
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 26%
+source-wordcount: '623'
+ht-degree: 33%
 
 ---
 
@@ -26,8 +26,8 @@ L’éditeur de scénario vous permet de créer et de modifier des scénarios da
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,13 +36,13 @@ L’éditeur de scénario vous permet de créer et de modifier des scénarios da
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -65,21 +65,26 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 | Action | Détails |
 |----------|----------|
-| Planifier le scénario | Par défaut, un scénario s’exécute toutes les 15 minutes. Vous pouvez modifier ce paramètre en définissant le moment et la fréquence d’exécution d’un scénario activé. Les scénarios de fusion peuvent être planifiés pour s’exécuter aussi souvent que toutes les 5 minutes. Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
+| Planifier le scénario | Par défaut, un scénario s’exécute toutes les 15 minutes. Vous pouvez modifier ce paramètre en définissant le moment et la fréquence d’exécution d’un scénario activé. Les scénarios de fusion peuvent être planifiés pour s’exécuter aussi souvent que toutes les 5 minutes. Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
 
 ![panneau de planification](assets/scheduling-scenario-editor.png)
 
 ### Commandes
 
+Vous devrez peut-être cliquer sur l&#39;icône des trois points dans la zone Contrôles pour afficher certains de ces contrôles.
+
 | Action | Détails |
 |----------|----------|
-| Enregistrez. | Après avoir enregistré votre scénario, une nouvelle version est disponible dans le menu à trois points si vous avez besoin d’y accéder ultérieurement. Les versions de scénario précédemment enregistrées ne sont disponibles que pendant 60 jours. |
-| Paramètres du scénario | Le panneau des paramètres du scénario contient des paramètres avancés pour le scénario. Pour plus d’informations sur les paramètres disponibles, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
-| Notes | Prenez des notes sur le scénario. Les autres utilisateurs peuvent afficher ces notes lorsqu’ils se trouvent dans le scénario. |
-| Auto-align | Alignement automatique des modules dans votre scénario. |
-| Expliquer le flux | Affichez une animation où des points mobiles montrent le flux des données dans le scénario. |
-| Outils de développement | À l’aide de l’outil Devtool, vous pouvez vérifier toutes les exécutions manuelles de votre scénario, passer en revue toutes les opérations effectuées et afficher les détails de chaque appel API effectué. Vous pouvez identifier le module, l’opération ou la réponse unique à l’origine de l’erreur et utiliser ces connaissances pour affiner votre scénario. Pour plus d’informations, voir [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
-| Plus | Dans le menu Plus , vous pouvez importer ou exporter des plans directeurs et restaurer les versions précédentes du scénario. |
+| Enregistrez. <p>![ Icône Enregistrer ](assets/save-icon.png)</p> | Après avoir enregistré votre scénario, une nouvelle version est disponible dans le menu à trois points si vous avez besoin d’y accéder ultérieurement. Les versions de scénario précédemment enregistrées ne sont disponibles que pendant 60 jours. |
+| Paramètres du scénario <p>![Icône Paramètres du scénario](assets/scenario-settings-icon.png)</p> | Le panneau des paramètres du scénario contient des paramètres avancés pour le scénario. Pour plus d’informations sur les paramètres disponibles, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
+| Notes  <p>![icône Notes](assets/notes-icon.png)</p> | Prenez des notes sur le scénario. Les autres utilisateurs peuvent afficher ces notes lorsqu’ils se trouvent dans le scénario. |
+| Auto-align <p>![Icône d’alignement automatique](assets/auto-align-icon.png)</p> | Alignement automatique des modules dans votre scénario. |
+| Modules de recherche ![modules de recherche](assets/search-modules-icon.png)  </p> | Saisissez un terme de recherche pour localiser un module, puis cliquez sur les résultats de la recherche pour accéder à ce module. Vous pouvez effectuer une recherche par nom de module, ID, type ou application. |
+| Expliquer le flux  <p>![Icône Expliquer le flux ](assets/explain-flow-icon.png) </p> | Affichez une animation où des points mobiles montrent le flux des données dans le scénario. |
+| DevTool <p>![ Icône DevTool ](assets/devtool-icon.png)</p> | À l’aide de l’outil de développement, vous pouvez vérifier toutes les exécutions manuelles de votre scénario, passer en revue toutes les opérations effectuées et afficher les détails de chaque appel API effectué. Vous pouvez identifier le module, l’opération ou la réponse unique à l’origine de l’erreur et utiliser ces connaissances pour affiner votre scénario. Pour plus d’informations, voir [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
+| Exporter le plan directeur  <p>![Icône Exporter le plan directeur](assets/export-blueprint-icon.png) </p> | Exporte un plan directeur du scénario actuel. |
+| Importer le plan directeur  <p>![Icône Importer un plan directeur](assets/import-blueprint-icon.png) </p> | Importez un plan directeur de scénario précédemment exporté. |
+| Version précédente  <p>![Icône de la version précédente](assets//previous-version-icon.png) </p> | Affichez les versions précédentes de ce scénario. |
 
 ![Panneau Contrôles](assets/controls-editor-scenario.png)
 
