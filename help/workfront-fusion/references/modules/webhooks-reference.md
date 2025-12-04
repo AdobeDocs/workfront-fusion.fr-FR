@@ -28,7 +28,7 @@ Si un connecteur n’inclut pas de webhook, vous pouvez effectuer l’une des op
 * Créez un webhook personnalisé à l’aide du module Webhook.
 Pour plus d’informations, voir [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Utilisez des déclencheurs d’interrogation pour interroger régulièrement le service.
-Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
