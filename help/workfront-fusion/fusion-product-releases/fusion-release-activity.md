@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: ec4fec0fc66fd89afad4cfe85a0fb41fc1786925
+source-git-commit: 04fe3b413638119d06686b420deaeb4f7d37d81c
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1070'
 ht-degree: 100%
 
 ---
@@ -24,74 +24,75 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Décembre 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 1 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Activité de publication de Workfront Fusion : semaine du mardi 8 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Activité de publication de Workfront Fusion : semaine du mardi 1 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### Novembre 2025
 
-* [Activité de sortie Workfront Fusion : semaine du mardi 17 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Activité de sortie Workfront Fusion : semaine du mardi 10 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Activité de sortie Workfront Fusion : semaine du mardi 3 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Activité de publication de Workfront Fusion : semaine du mardi 17 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Activité de publication de Workfront Fusion : semaine du mardi 10 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Activité de publication de Workfront Fusion : semaine du mardi 3 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### Octobre 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 27 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 20 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 13 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 6 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
+* [Activité de publication de Workfront Fusion : semaine du 27 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
+* [Activité de publication de Workfront Fusion : semaine du 20 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
+* [Activité de publication de Workfront Fusion : semaine du 13 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
+* [Activité de publication de Workfront Fusion : semaine du 6 octobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
 
 ### Septembre 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 29 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 22 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 15 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
+* [Activité de publication de Workfront Fusion : semaine du 29 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
+* [Activité de publication de Workfront Fusion : semaine du 22 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
+* [Activité de publication de Workfront Fusion : semaine du 15 septembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
 
 ### Août 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 18 août 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+* [Activité de publication de Workfront Fusion : semaine du 18 août 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
 
 
 ### Juillet 2025
 
-* [Activité Version de Workfront Fusion : semaine du vendredi 31 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 7 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
+* [Activité de publication de Workfront Fusion : semaine du 31 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
+* [Activité de publication de Workfront Fusion : semaine du 7 juillet 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
 
 
 ### Juin 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 23 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
-* [Activité Version de Workfront Fusion : semaine du samedi 6 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
+* [Activité de publication de Workfront Fusion : semaine du 23 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
+* [Activité de publication de Workfront Fusion : semaine du 6 juin 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
 
 
-### Mai 2025
+### Mai 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 26 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-26.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 19 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-19.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 12 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-12.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 5 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
+* [Activité de publication de Workfront Fusion : semaine du 26 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-26.md)
+* [Activité de publication de Workfront Fusion : semaine du 19 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-19.md)
+* [Activité de publication de Workfront Fusion : semaine du 12 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-12.md)
+* [Activité de publication de Workfront Fusion : semaine du 5 mai 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
 
-### Avril 2025
+### Avril 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 28 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 21 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 14 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
+* [Activité de publication de Workfront Fusion : semaine du 28 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
+* [Activité de publication de Workfront Fusion : semaine du 21 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
+* [Activité de publication de Workfront Fusion : semaine du 14 avril 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
 
 ### Mars 2025
 
-* [Activité Version de Workfront Fusion : semainedu mardi 31 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
-* [Activité Version de Workfront Fusion : semainedu mardi 10 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
-* [Activité Version de Workfront Fusion : semainedu mardi 3 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
+* [Activité de publication de Workfront Fusion : semaine du 31 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
+* [Activité de publication de Workfront Fusion : semaine du 10 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
+* [Activité de publication de Workfront Fusion : semaine du 3 mars 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
 
 ### Février 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 24 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 17 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 10 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
+* [Activité de publication de Workfront Fusion : semaine du 24 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
+* [Activité de publication de Workfront Fusion : semaine du 17 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
+* [Activité de publication de Workfront Fusion : semaine du 10 février 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
 
 ### Janvier 2025
 
-* [Activité Version de Workfront Fusion : semaine du mardi 20 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 13 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 6 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
+* [Activité de publication de Workfront Fusion : semaine du 20 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
+* [Activité de publication de Workfront Fusion : semaine du 13 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
+* [Activité de publication de Workfront Fusion : semaine du 6 janvier 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
 
 ## Versions de Fusion en 2024
 
@@ -99,42 +100,42 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Décembre 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 16 décembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 2 décembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
+* [Activité de publication de Workfront Fusion : semaine du 16 décembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
+* [Activité de publication de Workfront Fusion : semaine du 2 décembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
 
 ### Novembre 2024
 
-* [Activité de sortie Workfront Fusion : semaine du mardi 25 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
-* [Activité de sortie Workfront Fusion : semaine du mardi 11 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-11.md)
-* [Activité de sortie Workfront Fusion : semaine du mardi 4 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-4.md)
+* [Activité de publication de Workfront Fusion : semaine du 25 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
+* [Activité de publication de Workfront Fusion : semaine du 11 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-11.md)
+* [Activité de publication de Workfront Fusion : semaine du 4 novembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-4.md)
 
 
 ### Octobre 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 21 octobre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-21.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 7 octobre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-7.md)
+* [Activité de publication de Workfront Fusion : semaine du 21 octobre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-21.md)
+* [Activité de publication de Workfront Fusion : semaine du 7 octobre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-7.md)
 
 ### Septembre 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 30 septembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-30.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 9 septembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-9.md)
+* [Activité de publication de Workfront Fusion : semaine du 30 septembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-30.md)
+* [Activité de publication de Workfront Fusion : semaine du 9 septembre 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-9.md)
 
 
 ### Août 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 19 août 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-19.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 5 août 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-5.md)
+* [Activité de publication de Workfront Fusion : semaine du 19 août 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-19.md)
+* [Activité de publication de Workfront Fusion : semaine du 5 août 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-5.md)
 
 ### Juillet 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 29 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-29.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 22 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-22.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 8 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-11.md)
+* [Activité de publication de Workfront Fusion : semaine du 29 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-29.md)
+* [Activité de publication de Workfront Fusion : semaine du 22 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-22.md)
+* [Activité de publication de Workfront Fusion : semaine du 8 juillet 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-11.md)
 
 
 ### Juin 2024
 
-* [Activité Version de Workfront Fusion : semaine du mardi 17 juin 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-6-17.md)
+* [Activité de publication de Workfront Fusion : semaine du 17 juin 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-6-17.md)
 * [Activité Version de Workfront Fusion : semaine du mardi 3 juin 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-6-3.md)
 
 
@@ -180,7 +181,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Septembre 2023
 
-* [Activité Version de Workfront Fusion : semaine du 4 septembre 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-9-1.md)
+* [Activité de publication de Workfront Fusion : semaine du 4 septembre 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-9-1.md)
 
 ### Août 2023
 
@@ -270,7 +271,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Janvier 2022
 
-* [Activité Version de Workfront Fusion : semaine du 3 janvier 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
+* [Activité de publication de Workfront Fusion : semaine du 3 janvier 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
 
 +++
 
@@ -326,7 +327,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 ### Février 2021
 
 * [Activité Version de Workfront Fusion : semaine du 15 février 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-15.md)
-* [Activité Version de Workfront Fusion : semaine du 7 février 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-7-21.md)
+* [Activité de publication de Workfront Fusion : semaine du 7 février 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-7-21.md)
 
 ### Janvier 2021
 
@@ -344,7 +345,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Décembre 2020
 
-* [Activité Version de Workfront Fusion : semaine du 7 décembre 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
+* [Activité de publication de Workfront Fusion : semaine du 7 décembre 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
 
 ### Novembre 2020
 
@@ -354,7 +355,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Septembre 2020
 
-* [Activité Version de Workfront Fusion : semaine du 21 septembre 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-sept-21.md)
+* [Activité de publication de Workfront Fusion : semaine du 21 septembre 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-sept-21.md)
 
 ### Août 2020
 
