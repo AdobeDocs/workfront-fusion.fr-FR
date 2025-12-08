@@ -6,25 +6,25 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
 source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4151'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Avec Adobe Workfront Fusion [!DNL Adobe PDF Services], vous pouvez extraire des données d’un fichier PDF ou générer un nouveau fichier PDF à partir des données que vous fournissez. Vous pouvez également convertir divers types de fichiers en PDF ou des PDF en d’autres types de fichiers. Les services PDF vous permettent également de combiner, de compresser ou de lire les métadonnées d’un fichier PDF, ainsi que de contrôler la protection par mot de passe du fichier.
+Avec Adobe Workfront Fusion [!DNL Adobe PDF Services], vous pouvez extraire des données d’un fichier PDF ou générer un nouveau fichier PDF à partir des données que vous fournissez. Vous pouvez également convertir divers types de fichiers en PDF ou des PDF en d’autres types de fichiers. Les services PDF vous permettent également de combiner, de compresser ou de lire les métadonnées d’un fichier PDF, ainsi que de contrôler la protection par mot de passe du fichier.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 Pour plus d’informations sur l’API utilisée pour les services PDF, voir [API de génération de document Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
 
 ## Remarques de sécurité lors de l’utilisation des [!DNL Adobe PDF Services]
 
-Le [!DNL Adobe PDF Services] peut lire, convertir ou modifier vos fichiers, mais ni [!DNL Adobe] ni Workfront Fusion ne stockent vos fichiers ou données. Cela signifie que :
+Les [!DNL Adobe PDF Services] peuvent lire, convertir ou modifier vos fichiers, mais ni [!DNL Adobe] ni Workfront Fusion ne stockent vos fichiers ou données. Cela signifie que :
 
 * Vous conservez le contrôle de vos fichiers, y compris de leur sécurité.
 * Vous n’avez pas besoin d’avoir un compte de stockage ou de stockage dans le cloud [!UICONTROL Adobe] pour utiliser les PDF Services.
@@ -38,8 +38,8 @@ Le [!DNL Adobe PDF Services] peut lire, convertir ou modifier vos fichiers, mais
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -48,34 +48,34 @@ Le [!DNL Adobe PDF Services] peut lire, convertir ou modifier vos fichiers, mais
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Conditions préalables
 
-Pour créer une connexion de serveur à serveur OAuth, vous devez ajouter l’API Adobe PDF Services à votre console Adobe Developers. Lors de l’ajout de l’API, sélectionnez l’option Serveur à serveur OAuth.
+Pour créer une connexion de serveur à serveur OAuth, vous devez ajouter l’API Adobe PDF Services à votre Adobe Developer Console. Lors de l’ajout de l’API, sélectionnez l’option de serveur à serveur OAuth.
 
-Pour obtenir des instructions, consultez [Ajouter une API au projet à l’aide des informations d’authentification des utilisateurs OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) dans la documentation destinée aux développeurs Adobe.
+Pour obtenir des instructions, consultez [Ajouter une API au projet à l’aide d’informations d’authentification d’utilisateur ou d’utilisatrice OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) dans la documentation Adobe Developer.
 
-## Informations sur l’API Adobe PDF Services
+## Informations sur l’API Adobe PDF Services
 
-Le connecteur Adobe PDF Services utilise les éléments suivants :
+Le connecteur Adobe PDF Services utilise les éléments suivants :
 
 <table style="table-layout:auto"> 
  <col> 
@@ -171,11 +171,11 @@ Pour créer une connexion pour vos modules [!DNL Adobe PDF Services], procédez 
 
 ## Modules [!DNL Adobe PDF Services] et leurs champs
 
-Lorsque vous configurez [!DNL PDF Services], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez [!DNL PDF Services], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de cela, des champs supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [[!UICONTROL Combiner des fichiers PDF]](#combine-pdf-files)
 * [[!UICONTROL Compresser des fichiers PDF]](#compress-pdf-files)
@@ -184,10 +184,10 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [[!UICONTROL Convertir l’image en fichier PDF]](#convert-image-to-pdf-file)
 * [[!UICONTROL Convertir le PDF en document]](#convert-pdf-to-document)
 * [[!UICONTROL Convertir le PDF en image]](#convert-pdf-to-image)
-* [[!UICONTROL Extraire le texte/tableau]](#extract-text--table)
+* [[!UICONTROL Extraire le texte / tableau]](#extract-text--table)
 * [[!UICONTROL Générer un document]](#generate-document)
 * [[!UICONTROL Linéariser un fichier PDF]](#linearize-a-pdf-file)
-* [Effectuer un appel API personnalisé.](#make-a-custom-api-call)
+* [Effectuer un appel API personnalisé](#make-a-custom-api-call)
 * [[!UICONTROL OCR pour le fichier PDF]](#ocr-for-pdf-file)
 * [[!UICONTROL Manipulation de page]](#page-manipulation)
 * [[!UICONTROL Balisage automatique de l’accessibilité des PDF]](#pdf-accessibility-auto-tag)
@@ -468,9 +468,9 @@ Cet outil permet de convertir un fichier PDF en document. Vous pouvez sélection
 
 ### [!UICONTROL Convertir le PDF en image]
 
-Cet outil convertit un PDF en image au format PNG ou JPEG, qui est ensuite générée sous forme de liste ou regroupée dans un fichier ZIP.
+Cet outil convertit un PDF en une image au format PNG ou JPEG, qui est ensuite exportée sous forme de liste ou combinée en ZIP.
 
-Si la sortie est au format ZIP, le PDF est converti en une image par page et chaque image se termine par le numéro de page. Les fichiers images sont ensuite regroupés dans un fichier ZIP.
+En cas d’exportation sous forme de ZIP, le PDF est converti en une image par page, et chaque image se termine par le numéro de la page. Les fichiers images sont ensuite regroupés dans un fichier ZIP.
 
 Par exemple, un fichier appelé « TestFile » comportant 8 pages produira 8 images, nommées « TestFile_1 » à « TestFile_8 ». La sortie du module est un fichier ZIP contenant les 8 images.
 
@@ -497,8 +497,8 @@ Par exemple, un fichier appelé « TestFile » comportant 8 pages produira 8�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type de sortie]</td> 
-   <td> <p>Choisissez si vous souhaitez que les fichiers soient générés sous la forme d’une liste de fichiers ou d’un fichier ZIP.</td> 
+   <td role="rowheader">[!UICONTROL Output type]</td> 
+   <td> <p>Indiquez si vous souhaitez que les fichiers soient exportés sous la forme d’une liste de fichiers ou d’un fichier ZIP.</td> 
   </tr> 
   <tr> 
  </tbody> 
@@ -545,7 +545,7 @@ Le module [!UICONTROL Générer un document] est un moyen puissant de créer un 
 
 Pour plus d’informations sur la fonctionnalité [!UICONTROL [!DNL Adobe PDF Services] Générer un document], consultez [Vue d’ensemble de la génération de document](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) dans la documentation [!DNL Adobe Document Services].
 
-* [Utiliser le module [!UICONTROL Générer un document] avec un modèle  [!DNL Microsoft Word] &#x200B;](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [Utiliser le module [!UICONTROL Générer un document] avec un modèle  [!DNL Microsoft Word] ](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [Utiliser le module [!UICONTROL Générer un document] avec JSON](#use-the-generate-document-module-with-json)
 
 #### Utiliser le module [!UICONTROL Générer un document] avec un modèle [!DNL Microsoft Word]
@@ -553,9 +553,9 @@ Pour plus d’informations sur la fonctionnalité [!UICONTROL [!DNL Adobe PDF Se
 
 >[!NOTE]
 >
->Pour en savoir plus sur les modèles Microsoft Word, consultez [Modules de modèles Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
+>Pour en savoir plus sur les modèles Microsoft Word, consultez [Modules de modèles Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md).
 >
->Vous n’avez pas besoin d’utiliser les modules de modèle Microsoft Word pour utiliser un modèle Microsoft Word avec le module de génération de document des services PDF.
+>Vous n’avez pas besoin d’utiliser les modules de modèle Microsoft Word pour utiliser un modèle Microsoft Word avec le module Générer un document de PDF Services.
 
 
 Pour utiliser le module [!UICONTROL Générer un document] avec un modèle [!UICONTROL Microsoft Word], vous devez d’abord créer le modèle. Pour obtenir des instructions, recherchez « Créer un modèle » dans la documentation [!DNL Microsoft Office].
@@ -572,7 +572,7 @@ Renseignez les champs du module [!UICONTROL Générer un document] comme suit :
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> <p>Ce fichier source est le modèle de [!DNL Microsoft Word] utilisé par le module pour générer le nouveau PDF.</p> <p>Nous vous recommandons de créer un projet dans Workfront pour les modèles de [!DNL Microsoft Word] que vous utilisez dans Workfront Fusion. Vous pouvez ensuite utiliser le module Workfront &gt; [!UICONTROL Download document] pour extraire le modèle approprié dans votre scénario.</p> </td> 
+   <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom et les données du fichier source.</p> <p>Ce fichier source est le modèle [!DNL Microsoft Word] utilisé par le module pour générer le nouveau PDF.</p> <p>Nous vous recommandons de créer un projet dans Workfront pour les modèles [!DNL Microsoft Word] que vous utilisez dans Workfront Fusion. Vous pouvez ensuite utiliser le module Workfront &gt; [!UICONTROL Download document] pour extraire le modèle approprié dans votre scénario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -664,7 +664,7 @@ Ce module d’action envoie une requête HTTP personnalisée à l’API Service
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -705,7 +705,7 @@ Cet outil effectue une reconnaissance optique de caractères (OCR) sur un fichie
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>Sélectionnez la langue de ce document.<p>Pour connaître les options linguistiques, voir <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir le document en fichier PDF</a> dans cet article. </td> 
+   <td>Sélectionnez la langue de ce document.<p>Pour connaître les options linguistiques, consultez <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convertir le document en fichier PDF</a> dans cet article. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
@@ -818,7 +818,7 @@ Cet outil permet d’extraire des informations de base sur le document, telles q
  </tbody> 
 </table>
 
-### [!UICONTROL Protection d’un fichier PDF]
+### [!UICONTROL Protéger un fichier PDF]
 
 Cet outil sécurise un document PDF à l’aide d’un mot de passe utilisateur ou propriétaire. Il définit également des restrictions sur certaines fonctions telles que l’impression, la modification et la copie dans le document PDF. Vous sélectionnez le type de contenu à chifrer et l’algorithme de chiffrement.
 
@@ -863,7 +863,7 @@ Cet outil sécurise un document PDF à l’aide d’un mot de passe utilisateur 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Sélectionnez les autorisations que vous souhaitez inclure pour permettre l’impression, la modification ou la copie de contenu.</p> <p>Les paramètres d'autorisations ne sont utilisés que si le mot de passe du propriétaire [!UICONTROL Owner Password] est défini dans le champ [!UICONTROL Password Protection Type].</p> </td> 
+   <td> <p>Sélectionnez les autorisations que vous souhaitez inclure pour permettre l’impression, la modification ou la copie de contenu.</p> <p>Les paramètres d’autorisation ne sont utilisés que si [!UICONTROL Owner Password] est défini dans le champ [!UICONTROL Password Protection Type].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -917,7 +917,7 @@ Ce module d’action permet de partager un document PDF en plusieurs documents p
    <ul>
    <li><p><b>Plages de pages</b></p><p>Pour chaque plage de pages que vous souhaitez partager en un document distinct, cliquez sur <b>Ajouter</b> et saisissez la page sur laquelle vous souhaitez commencer et la page sur laquelle vous souhaitez terminer.</p></li>
    <li><p><b>Nombre de pages</b></p><p>Saisissez le nombre de pages que vous souhaitez inclure dans les nouveaux documents.</p></li>
-   <li><p><b>Compte de fichier</b></p><p>Saisissez le nombre de fichiers de taille égale en lesquels vous souhaitez partager le document.</p></li>
+   <li><p><b>Nombre de fichiers</b></p><p>Saisissez le nombre de fichiers de taille égale pour le partage du document.</p></li>
    </ul>
    </td> 
   </tr> 
