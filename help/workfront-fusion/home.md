@@ -59,4 +59,4 @@ La recherche documentaire peut être plus efficace avec quelques approches strat
 
 ### Trouver des réponses dans les forums de la Communauté
 
-* **Poser des questions** : si la réponse à votre question ne se trouve pas dans la documentation, publiez-la dans les [forums de la communauté Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) où d’autres utilisateurs, utilisatrices, expertes et experts peuvent apporter leur aide.
+* **Poser des questions** : si la réponse à votre question ne se trouve pas dans la documentation, publiez-la dans les [forums de la communauté Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=fr) où d’autres utilisateurs, utilisatrices, expertes et experts peuvent apporter leur aide.
