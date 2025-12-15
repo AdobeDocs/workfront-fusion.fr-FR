@@ -4,9 +4,9 @@ description: De nombreux services proposent des webhooks pour envoyer des notifi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1272'
 ht-degree: 27%
 
 ---
@@ -28,7 +28,7 @@ Si un connecteur n’inclut pas de webhook, vous pouvez effectuer l’une des op
 * Créez un webhook personnalisé à l’aide du module Webhook.
 Pour plus d’informations, voir [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Utilisez des déclencheurs d’interrogation pour interroger régulièrement le service.
-Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
@@ -45,7 +45,7 @@ Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -54,13 +54,13 @@ Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -76,6 +76,9 @@ Vous pouvez afficher une liste de Webhooks dans la zone Webhooks .
 
 1. Pour rechercher un webhook spécifique, saisissez votre terme de recherche dans la zone de recherche.
 1. Pour copier un webhook, cliquez sur l’icône Copier ![icône Copier le webhook](assets/copy-webhook-icon.png) près de l’URL dans la ligne correspondant à ce webhook.
+1. Pour définir la priorité d’un webhook, cliquez sur la liste déroulante de la colonne Priorité et sélectionnez la nouvelle priorité.
+
+   Les Webhooks dotés d’une priorité supérieure sont gérés en premier, ce qui peut s’avérer bénéfique si un pool de salariés comporte de nombreuses automatisations en concurrence pour les ressources.
 1. Pour désactiver ou activer un webhook, activez ou désactivez le bouton (bascule) dans la colonne Statut de la ligne correspondant à ce webhook.
 1. Pour vérifier si une file d’attente webhooks est pleine, cochez la colonne File d’attente complète . Le nombre dans cette colonne correspond au nombre d’éléments actuellement dans la file d’attente.
 1. Pour afficher les opérations gérées par un webhook, cliquez sur **Opérations** dans la colonne File d’attente complète de ce webhook.
@@ -136,7 +139,7 @@ Un webhook qui n’a pas été affecté à un scénario depuis plus de 120 heur
 
 ### Payloads des webhooks
 
-Workfront Fusion stocke les payloads du webhook pendant 30 jours. L’accès à une payload webhook plus de 30 jours après sa création génère une [!UICONTROL `Failed to read file from storage.`] d’erreur
+Workfront Fusion stocke les payloads de webhook pendant 30 jours. L’accès à une payload webhook plus de 30 jours après sa création génère une [!UICONTROL `Failed to read file from storage.`] d’erreur
 
 ### Gestion des erreurs
 

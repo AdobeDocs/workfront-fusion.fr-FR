@@ -1,17 +1,17 @@
 ---
-title: Procédure de création d’un scénario
+title: Workflow de création d’un scénario
 description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 22%
+source-wordcount: '816'
+ht-degree: 25%
 
 ---
 
-# Procédure de création d’un scénario
+# Workflow de création d’un scénario
 
 Les scénarios sont conçus pour répondre aux besoins de votre entreprise, avec des applications et des modules qui répondent à vos cas d’utilisation. Cependant, la création d’un scénario suit le même workflow de base, quel que soit le cas d’utilisation. Cet article décrit le processus de base de création d’un scénario.
 
@@ -22,8 +22,8 @@ Les scénarios sont conçus pour répondre aux besoins de votre entreprise, avec
 * [Ajout et configuration de modules supplémentaires](#add-and-configure-additional-modules)
 * [Mappage des données entre les modules](#map-data-between-modules)
 * [Configurer le routage](#configure-routing)
-* [Configuration de la gestion des erreurs](#configure-error-handling)
-* [Configurer les paramètres du scénario](#onfigure-scenario-settings)
+* [Configurer la gestion des erreurs](#configure-error-handling)
+* [Configurer les paramètres de scénario](#onfigure-scenario-settings)
 * [Tester et réviser](#test-and-revise)
 * [Activer le scénario](#activate-the-scenario)
 * [Raccourcis clavier du scénario Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -85,13 +85,13 @@ Le routage permet au scénario d’effectuer différentes actions en fonction de
 
 Pour obtenir des instructions, voir [Ajouter un module Routeur et configurer des itinéraires](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
-## Configuration de la gestion des erreurs
+## Configurer la gestion des erreurs
 
 La gestion des erreurs permet au scénario de récupérer après une erreur. Vous pouvez choisir la manière dont vous souhaitez que le scénario réagisse dans différentes situations d’erreur.
 
 Pour obtenir des instructions, voir [Ajouter la gestion des erreurs](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
 
-## Configurer les paramètres du scénario
+## Configurer les paramètres de scénario
 
 Vous pouvez configurer des paramètres pour votre scénario dans son ensemble, par exemple pour planifier un scénario, prendre des notes ou déterminer comment les données sont stockées.
 
@@ -117,7 +117,7 @@ Le test de votre scénario vous permet de déterminer si celui-ci fonctionne com
 
 Cet exemple de scénario ne comporte pas de module de déclenchement. S’il s’agissait d’un scénario que vous utiliseriez pour des données réelles, il commencerait par un module de déclenchement, et la dernière chose que vous feriez serait de l’activer. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -166,6 +166,11 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
    <td role="rowheader">[!UICONTROL Paste]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Rechercher des modules]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Collez cURL dans le scénario pour créer le module HTTP .</td> 
