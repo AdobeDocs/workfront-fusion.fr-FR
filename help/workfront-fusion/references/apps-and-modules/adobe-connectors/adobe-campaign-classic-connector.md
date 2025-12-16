@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Campaign]   [!DNL Adobe Campaign] , v
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 81%
+source-wordcount: '1401'
+ht-degree: 82%
 
 ---
 
@@ -24,8 +24,8 @@ Avec les modules [!DNL Adobe Campaign], vous pouvez démarrer un scénario Adobe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,22 +34,22 @@ Avec les modules [!DNL Adobe Campaign], vous pouvez démarrer un scénario Adobe
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -131,9 +131,9 @@ Le connecteur Adobe Campaign utilise les éléments suivants :
 
 Lorsque vous configurez les modules [!DNL Adobe Campaign], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Campaign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <!--* [Triggers](#triggers)-->
 * [Actions](#actions)
@@ -201,7 +201,7 @@ Ce module d’action crée un enregistrement dans [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] à créer.</td> 
+   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] que vous souhaitez créer ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -228,7 +228,7 @@ Ce module d’action supprime un seul enregistrement d’[!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Sélectionnez le type de ressource à supprimer.</td> 
+   <td>Sélectionnez le type de ressource à supprimer ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -278,7 +278,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
 
 Ce module d’action exécute une action sélectionnée sur un objet dans l’API [!DNL Adobe Campaign].
 
-Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
+Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -287,6 +287,10 @@ Pour plus d’informations sur des actions et des champs spécifiques, voir Docu
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Campaign], voir <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Créer une connexion à [!DNL Adobe Campaign]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>Sélectionnez le type de ressource sur lequel vous souhaitez effectuer une action ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -317,7 +321,7 @@ Ce module d’action lit un enregistrement à partir d’[!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] que vous souhaitez lire.</td> 
+   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] que vous souhaitez lire ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -376,7 +380,7 @@ Ce module d’action met à jour un seul enregistrement dans [!DNL Adobe Campaig
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] à créer.</td> 
+   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] à mettre à jour ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -409,7 +413,7 @@ Ce module de recherche renvoie des enregistrements en fonction des critères sp�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] à créer.</td> 
+   <td>Sélectionnez le type d’enregistrement [!DNL Adobe Campaign] à renvoyer ou sélectionnez **Ressource personnalisée** et saisissez les détails de la ressource.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
