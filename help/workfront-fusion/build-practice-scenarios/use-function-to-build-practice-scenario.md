@@ -7,10 +7,10 @@ description: Découvrez comment ajouter une fonction pour mettre à jour une tâ
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 6%
+source-wordcount: '602'
+ht-degree: 20%
 
 ---
 
@@ -31,8 +31,8 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -41,13 +41,13 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -70,7 +70,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 1. Dans la zone Sélectionner les champs à mapper, sélectionnez Nom.
 
    Un champ Nom s’ouvre.
-1. Passez à [&#x200B; Mapper la fonction pour la mise à jour du nom &#x200B;](#map-the-function-for-the-name-update).
+1. Passez à [ Mapper la fonction pour la mise à jour du nom ](#map-the-function-for-the-name-update).
 
 ### Mappez la fonction pour la mise à jour du nom.
 
@@ -87,7 +87,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
    L’entrée de cet exemple est le nom de l’événement à partir duquel le projet a été converti.
 
 1. Déplacez le curseur entre les parenthèses, car c&#39;est là que va se trouver l&#39;entrée.
-1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![&#x200B; Icône de sortie du module &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png)
+1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![ Icône de sortie du module ](assets/toolbar-icon-functions-you-map-from-other-modules.png)
 1. Sélectionnez le bloc de nom qui a été généré par votre premier module.
 
    Le bloc de nom apparaît dans la fonction .
@@ -107,7 +107,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
 
    >[!IMPORTANT]
    >
-   >Sauvegardez souvent lorsque vous affinez et testez un scénario.
+   >Enregistrez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
 
 ## Ressources
 

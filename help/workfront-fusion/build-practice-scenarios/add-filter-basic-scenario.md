@@ -7,10 +7,10 @@ description: Les filtres vous permettent de vous assurer que votre scénario ne 
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 7%
+source-wordcount: '609'
+ht-degree: 19%
 
 ---
 
@@ -35,8 +35,8 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -45,13 +45,13 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -103,7 +103,7 @@ Vous devriez maintenant avoir `ID`, `Name` et `Project` sélectionnés.
 
    >[!IMPORTANT]
    >
-   >Sauvegardez souvent lorsque vous affinez et testez un scénario.
+   >Enregistrez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
 
 ## Ressources
 
