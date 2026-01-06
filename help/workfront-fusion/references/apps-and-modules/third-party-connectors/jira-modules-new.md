@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 37%
+source-wordcount: '2348'
+ht-degree: 36%
 
 ---
 
@@ -21,9 +21,9 @@ Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows 
 
 Le connecteur Jira peut être utilisé pour Jira Cloud et le serveur de données Jira.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -34,8 +34,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -44,75 +44,139 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Conditions préalables
 
-Pour utiliser les modules Jira, vous devez disposer d’un compte Jira.
+* Pour utiliser les modules Jira, vous devez disposer d’un compte Jira.
+* Vous devez avoir accès au Developer Console Jira pour créer une application OAuth2 dans Jira.
 
 ## Connecter Jira à Workfront Fusion
 
-### Créer les informations d’identification nécessaires
+La procédure de création d’une connexion à Jira diffère selon que vous créez une connexion de base ou une connexion OAuth2.
 
-Pour créer des connexions à Jira, vous aurez besoin des éléments suivants :
+* [Créer une connexion OAuth2 à Jira](#create-an-oauth2-connection-to-jira)
+* [Créer une connexion de base à Jira](#create-a-basic-connection-to-jira)
 
-| Type de connexion | Type de compte | Informations d’identification nécessaires |
-|---|---|---|
-| OAuth 2 | Tous | ID client et secret client |
-| De base | Jira Cloud | Jeton API Jira |
-| De base | Centre de données Jira | Jeton d’accès personnel Jira (PAT) |
+### Créer une connexion OAuth2 à Jira
 
-Pour obtenir des instructions sur la création de l’un de ces éléments, consultez la documentation Jira.
+Pour créer une connexion OAuth2 à Jira, vous devez créer une application dans Jira avant de pouvoir configurer la connexion dans Fusion.
 
-Lors de la création de ces informations d’identification, vous aurez besoin des informations suivantes :
+* [Créer une application OAuth2 dans Jira](#create-an-oauth2-application-in-jira)
+* [Configuration de la connexion OAutt2 dans Fusion](#configure-the-oauth2-connection-in-fusion)
 
-* Pour OAuth 2 :
+#### Créer une application OAuth2 dans Jira
 
-  | Centre de données Fusion | URL de redirection |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+>[!IMPORTANT]
+>
+>Vous devez avoir accès au Developer Console Jira pour créer et configurer une application OAuth2 pour votre connexion Jira.
 
+1. Accédez au [Jira Developer Console](https://developer.atlassian.com/console.myapps/).
+1. Dans la zone Mes applications , cliquez sur **Créer**, puis sélectionnez **Intégration OAuth 2.0**.
+1. Saisissez le nom de l’intégration, acceptez les conditions générales du développeur, puis cliquez sur **Créer**.
 
+   L’application est créée et vous accédez à la zone de configuration de l’application.
+1. Cliquez sur **Autorisations** dans le panneau de navigation de gauche.
+1. Dans la zone Autorisations , recherchez la ligne **API Jira**.
+1. Cliquez sur **Ajouter** sur la ligne API Jira, puis sur **Continuer** sur la même ligne.
+1. Activez les portées suivantes :
 
-* Pour les jetons d’accès personnel (PAT) :
+   * Afficher les données de problème Jira (`read:jira-work`)
+   * Affichage des profils utilisateur (`read:jira-user`)
+   * Créer et gérer des événements (`write:jira-work`)
 
-  | Centre de données Fusion | URL de redirection |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+1. Dans le volet de navigation de gauche, cliquez sur **Autorisation**.
+1. Cliquez sur **Ajouter** dans la ligne pour l’autorisation OAuth 2.0.
+1. Dans le champ **URL de rappel**, saisissez l’une des URL suivantes, en fonction de votre centre de données Workfront Fusion :
 
-  >[!IMPORTANT]
-  >
-  >Pour utiliser un PAT, vous devez activer les éléments suivants dans le `jira/bin/WEB-INF/classes` Fichiers, dans le `jira-config.properties` de fichiers :
-  >
-  >* `jira.rest.auth.allow.basic = true`
-  >* `jira.rest.csrf.disabled = true`
-  >
-  >Si ce fichier n’existe pas, vous devez le créer.
+   | Centre de données Fusion | URL de rappel |
+   |---|---|
+   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
-### Création d’une connexion à Jira dans Workfront Fusion
+1. Dans le volet de navigation de gauche, cliquez sur **Paramètres**.
+1. (Facultatif) Saisissez une description dans le champ Description, puis cliquez sur **Enregistrer les modifications** sous ce champ.
+1. Copiez l’ID client et le secret client de la zone Paramètres vers un emplacement sécurisé, ou laissez cette page ouverte lorsque vous configurez la connexion dans Fusion.
+1. Passez à [Configuration de la connexion OAutt2 dans Fusion](#configure-the-oauth2-connection-in-fusion)
 
-Pour créer la connexion dans Workfront Fusion :
+#### Configuration de la connexion OAuth2 dans Fusion
+
+1. Dans n’importe quel module Jira, cliquez sur **Ajouter** en regard du champ Connexion .
+1. Configurez les champs suivants :
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Type de connexion</p> </td> 
+      <td> <p>Sélectionnez <b>OAuth 2</b>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Nom de la connexion</p> </td> 
+      <td> <p>Saisissez un nom pour la nouvelle connexion.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">URL du service</td>
+      <td>Saisissez l’URL de votre instance Jira. Il s’agit de l’URL d’accès à Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Type de compte Jira</td>
+       <td>Indiquez si vous vous connectez à Jira Cloud ou à Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">ID client</td> 
+      <td> <p>Saisissez l’ID client de l’application Jira que vous avez créée dans <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Créer une application OAuth2 dans Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Clé secrète client</td> 
+      <td> <p>Saisissez le secret client de l’application Jira que vous avez créée dans <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Créer une application OAuth2 dans Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Portées supplémentaires</td> 
+      <td>Saisissez toutes les portées supplémentaires que vous souhaitez ajouter à cette connexion.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Version de l’API</td> 
+      <td>Sélectionnez la version de l’API Jira à laquelle vous souhaitez que cette connexion se connecte.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
+
+### Créer une connexion de base à Jira
+
+La création d’une connexion de base à Jira diffère selon que vous créez une connexion à Jira Cloud ou à Jira Data Center.
+
+* [Créer une connexion de base à Jira Cloud](#create-a-basic-connection-to-jira-cloud)
+* [Créer une connexion de base au centre de données Jira](#create-a-basic-connection-to-jira-data-center)
+
+#### Créer une connexion de base à Jira Cloud
+
+>[!IMPORTANT]
+>
+> Pour créer une connexion de base à Jira Cloud, vous devez disposer d’un jeton API Jira.
+>Pour obtenir des instructions sur l’acquisition d’un jeton API Jira, voir [Gérer les jetons API pour votre compte Atlassian](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account) dans la documentation d’Atlassian.
+
 
 1. Dans n’importe quel module Jira, cliquez sur **Ajouter** en regard du champ Connexion .
 1. Configurez les champs suivants :
@@ -138,24 +202,12 @@ Pour créer la connexion dans Workfront Fusion :
        <td>Indiquez si vous vous connectez à Jira Cloud ou à Jira Data Center.</td>
      </tr>
      <tr> 
-      <td role="rowheader">ID client</td> 
-      <td> <p>Si vous créez une connexion OAuth 2, saisissez votre identifiant client Jira</p> </td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Clé secrète client</td> 
-      <td> <p>Si vous créez une connexion OAuth 2, saisissez votre secret client Jira</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">E-mail</td> 
-      <td>Si vous créez une connexion de base à Jira Cloud, saisissez votre adresse e-mail.</td> 
+      <td>Saisissez votre adresse e-mail.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">Jeton API</td> 
-      <td>Si vous créez une connexion de base à Jira Cloud, saisissez votre jeton API.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Jeton d’accès personnel</td> 
-      <td>Si vous créez une connexion de base au centre de données Jira, saisissez votre jeton d’accès personnel.</td> 
+      <td>Saisissez votre jeton API.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">Version de l’API</td> 
@@ -166,14 +218,82 @@ Pour créer la connexion dans Workfront Fusion :
 
 1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
 
+#### Créer une connexion de base au centre de données Jira
+
+>[!IMPORTANT]
+>
+> Pour créer une connexion de base au centre de données Jira, vous devez disposer d’un jeton d’accès personnel (PAT) Jira.
+>Pour obtenir des instructions sur l’acquisition d’un jeton d’accès personnel Jira, voir [Gérer les jetons API pour votre compte Atlassian](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) dans la documentation d’Atlassian.
+>Pour plus d’informations sur la création du PAT, voir [Configuration de votre PAT](#configure-your-pat) dans cet article.
+
+1. Dans n’importe quel module Jira, cliquez sur **Ajouter** en regard du champ Connexion .
+1. Configurez les champs suivants :
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Type de connexion</p> </td> 
+      <td> <p>Choisissez si vous créez une connexion de base ou une connexion OAuth 2.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Nom de la connexion</p> </td> 
+      <td> <p>Saisissez un nom pour la nouvelle connexion.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">URL du service</td>
+      <td>Saisissez l’URL de votre instance Jira. Il s’agit de l’URL d’accès à Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Type de compte Jira</td>
+       <td>Indiquez si vous vous connectez à Jira Cloud ou à Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">PAT (Personal access token)</td> 
+      <td>Saisissez votre jeton d’accès personnel Jira.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Version de l’API</td> 
+      <td>Sélectionnez la version de l’API Jira à laquelle vous souhaitez que cette connexion se connecte.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Cliquez sur **[!UICONTROL Continuer]** pour créer la connexion et retourner au module.
+
+##### Configurer votre chemin d’accès
+
+Pour créer une connexion de base au centre de données Jira, vous devez disposer d’un jeton d’accès personnel (PAT) Jira.
+
+Pour obtenir des instructions sur l’acquisition d’un jeton d’accès personnel Jira, voir [Gérer les jetons API pour votre compte Atlassian](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) dans la documentation d’Atlassian.
+
+Vous aurez peut-être besoin des informations suivantes lors de la configuration de votre PAT
+
+* URL de redirection
+
+  | Centre de données Fusion | URL de redirection |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+* Configurations de fichier
+
+Pour utiliser un PAT, vous devez activer les éléments suivants dans le `jira/bin/WEB-INF/classes` Fichiers, dans le `jira-config.properties` de fichiers :
+
+* `jira.rest.auth.allow.basic = true`
+* `jira.rest.csrf.disabled = true`
+
+Si ce fichier n’existe pas, vous devez le créer.
 
 ## Modules Jira et leurs champs
 
 Lorsque vous configurez des modules Jira, Workfront Fusion affiche les champs répertoriés ci-dessous. Selon des facteurs tels que votre niveau d’accès dans l’application ou le service, d’autres champs Jira peuvent s’afficher en plus de ceux-ci. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -191,7 +311,7 @@ Ce module déclencheur lance un scénario lorsqu’un enregistrement est ajouté
  <tbody> 
   <tr> 
    <td role="rowheader">Webhook</td> 
-   <td> <p>Sélectionnez le webhook que vous souhaitez utiliser pour surveiller les enregistrements ou créez un webhook. </p> <p>Pour créer un webhook :</p> 
+   <td> <p>Sélectionnez le webhook que vous souhaitez utiliser pour surveiller les enregistrements ou créez un webhook. </p> <p>Pour créer un webhook :</p> 
     <ol> 
      <li>Cliquez sur <strong> Ajouter </strong></li> 
      <li>Saisissez un nom pour le webhook.</li> 
@@ -299,7 +419,7 @@ Ce module d’action vous permet d’effectuer un appel authentifié personnalis
   </tr> 
   <tr> 
    <td role="rowheader">Méthode</td> 
-   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">En-têtes</td> 
@@ -330,7 +450,7 @@ Ce module d&#39;action supprime l&#39;enregistrement spécifié.
    <td> <p>Pour plus d’informations sur la connexion de votre compte Jira à Workfront Fusion, voir <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Jira à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Type d'enregistrement</td> 
+   <td role="rowheader">Type d’enregistrement</td> 
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez que le module supprime. </p> 
     <ul> 
      <li>Commentaire</li> 
