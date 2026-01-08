@@ -4,10 +4,10 @@ description: Cet article répond aux questions les plus courantes sur les modèl
 author: Becky
 feature: Workfront Fusion
 exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d372a4c9c852c81b81b5dde4ca919a6fe7fd2bc5
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 53%
+source-wordcount: '277'
+ht-degree: 75%
 
 ---
 
@@ -19,19 +19,17 @@ Cet article répond aux questions courantes sur les modèles de scénario Adobe 
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
-Vous devez disposer des accès suivants pour utiliser les fonctionnalités de cet article :
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tous</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licence Adobe Workfront</td> 
-   <td> <p>Nouveau : Standard</p><p>Ou</p><p>Actuelle : [!UICONTROL Work] ou niveau supérieur</p> </td> 
+   <td role="rowheader">Licences Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Travail ou supérieur</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion **</td> 
@@ -44,17 +42,15 @@ Vous devez disposer des accès suivants pour utiliser les fonctionnalités de ce
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Nouveau :</p> <ul><li>Plan Workfront [!UICONTROL Select] ou [!UICONTROL Prime] : votre entreprise doit acheter Adobe Workfront Fusion.</li><li>Plan Workfront [!UICONTROL Ultimate] : Workfront Fusion est inclus.</li></ul>
-   <p>Ou</p>
-   <p>Actuel : votre entreprise doit acheter Adobe Workfront Fusion.</p>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
