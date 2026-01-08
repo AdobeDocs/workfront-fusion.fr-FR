@@ -260,7 +260,7 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Dans **chaque** module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
 1. Dans **each** Module Jira, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
-1. Passez à [ Mettre à jour le module Paramètres généraux ](#update-the-general-parameters-module).
+1. Passez à [&#x200B; Mettre à jour le module Paramètres généraux &#x200B;](#update-the-general-parameters-module).
 
 #### Mise à jour du module Paramètres généraux
 
