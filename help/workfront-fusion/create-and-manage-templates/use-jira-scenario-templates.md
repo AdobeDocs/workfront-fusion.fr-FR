@@ -8,10 +8,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
+source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
 workflow-type: tm+mt
-source-wordcount: '4075'
-ht-degree: 4%
+source-wordcount: '4171'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
   Pour plus d’informations et d’instructions, voir [Configuration du compte technique](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) dans la documentation d’Adobe.
 * Vous devez appliquer les autorisations d’administrateur système au compte technique dans la zone Profils de produit Adobe Admin Console .
 
-  Pour plus d’informations et d’instructions, voir [Création d’administrateurs système dans Workfront avec Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Pour plus d’informations et d’instructions, voir [Création d’administrateurs système dans Workfront avec Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +156,13 @@ Pour utiliser ces modules, les éléments suivants doivent être créés dans Wo
 
 1. Dans Workfront, créez un utilisateur d’intégration système. Cet utilisateur est uniquement utilisé par Workfront Fusion et ne représente pas un utilisateur humain. Les tâches affectées à cet utilisateur déclencheront le scénario qui synchronise Workfront avec Jira.
 
-   Pour obtenir des instructions, voir [Ajouter des utilisateurs](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) dans la documentation de Workfront.
+   Pour obtenir des instructions, voir [Ajouter des utilisateurs](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) dans la documentation de Workfront.
 
 #### Création d’un formulaire personnalisé dans Workfront
 
 1. Dans Workfront, commencez à créer un formulaire personnalisé.
 
-   Pour obtenir des instructions détaillées, voir [Création d’un formulaire personnalisé](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) dans la documentation de Workfront.
+   Pour obtenir des instructions détaillées, voir [Création d’un formulaire personnalisé](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) dans la documentation de Workfront.
 1. Nommez le formulaire « **Champs JIRA** ».
 1. Insérez les champs suivants dans le formulaire personnalisé :
 
@@ -179,7 +179,7 @@ Pour utiliser ces modules, les éléments suivants doivent être créés dans Wo
 >
 >Nous vous recommandons de restreindre ce formulaire aux modifications effectuées par d&#39;autres utilisateurs. Pour ce faire, assurez-vous que tous les utilisateurs ajoutés au formulaire personnalisé disposent uniquement d’un accès en lecture seule.
 >
->Pour obtenir des instructions détaillées, voir [Partager un formulaire personnalisé](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) dans la documentation de Workfront.
+>Pour obtenir des instructions détaillées, voir [Partager un formulaire personnalisé](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) dans la documentation de Workfront.
 
 ### Configuration des connexions dans Workfront Fusion
 
@@ -204,11 +204,11 @@ Toute utilisation de ces modèles ou extensions de ces modèles est considérée
 * **[Workfront vers Jira : créer un événement JIRA à partir de l&#39;affectation de tâche ou d&#39;événement Workfront](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)**
 * [JIRA vers Workfront : JIRA vers Workfront : envoyez des mises à jour sur les problèmes et des commentaires à Workfront à partir de Jira.](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfront vers Jira : modifications apportées à la tâche Workfront en problème JIRA](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfront vers Jira : modifications apportées au problème Workfront en problème JIRA
-* Workfront vers Jira : créez un commentaire dans JIRA lorsqu’une nouvelle note est ajoutée sur une tâche ou un problème Workfront
-* Workfront vers Jira : création d’un commentaire dans JIRA sur la note supprimée sur la tâche ou l’événement Workfront
-* Workfront vers Jira : permet de créer un commentaire dans JIRA en cas de création d’un document sur une tâche ou un problème Workfront.
-* Workfront vers Jira : permet de créer un commentaire dans JIRA sur le document supprimé concernant une tâche ou un problème Workfront.
+* [Workfront vers Jira : modifications apportées au problème Workfront en problème JIRA](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront vers Jira : créez un commentaire dans JIRA lorsqu’une nouvelle note est ajoutée sur une tâche ou un problème Workfront](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront vers Jira : création d’un commentaire dans JIRA sur la note supprimée sur la tâche ou l’événement Workfront](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront vers Jira : permet de créer un commentaire dans JIRA en cas de création d’un document sur une tâche ou un problème Workfront.](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront vers Jira : permet de créer un commentaire dans JIRA sur le document supprimé concernant une tâche ou un problème Workfront.](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### Paramètres généraux
 
@@ -260,7 +260,7 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Dans **chaque** module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
 1. Dans **each** Module Jira, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
-1. Passez à [&#x200B; Mettre à jour le module Paramètres généraux &#x200B;](#update-the-general-parameters-module).
+1. Passez à [ Mettre à jour le module Paramètres généraux ](#update-the-general-parameters-module).
 
 #### Mise à jour du module Paramètres généraux
 
@@ -274,9 +274,9 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Passez à [Mappage des champs personnalisés dans Jira](#map-custom-fields-in-jira)
 
-#### Mappez les champs personnalisés dans Jira.
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -355,7 +355,7 @@ Ce scénario crée une tâche ou un problème Workfront lorsqu’un problème es
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
 1. Dans le champ **Origine de l’enregistrement**, sélectionnez `Updated record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
-1. Dans le deuxième module, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
+1. Dans le module **Définir les variables JIRA**, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
 
    | Nom de la variable | Valeur de variable |
    |---|---|
@@ -366,16 +366,13 @@ Ce scénario crée une tâche ou un problème Workfront lorsqu’un problème es
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
 
-
 +++
-
-
 
 ### Scénario 4 : Workfront vers Jira : modifications du problème Workfront vers le problème JIRA
 
 Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des problèmes JIRA précédemment connectés.
 
-+++**Développez pour afficher les instructions de configuration du scénario 4 : modifications WF en Jira (problèmes)**
++++**Développez pour afficher les instructions de configuration du Scénario 4 : Workfront vers Jira : modifications du problème Workfront vers le problème JIRA**
 
 1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Recherchez le modèle à l’aide de la barre de recherche située en haut à gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
@@ -387,20 +384,20 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
 1. Sélectionnez l’organisation et l’équipe qui seront propriétaires de ce scénario.
 1. Dans le premier module, commencez à ajouter un webhook.
 1. Dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d’identification de l’intégration système.
-1. Dans le champ **Type d’enregistrement**, sélectionnez `??`.
+1. Dans le champ **Type d’enregistrement**, sélectionnez `Issues`.
 1. Dans le champ **État**, sélectionnez `New state`.
 1. Configurez le filtre avec les opérations suivantes, à l&#39;aide de l&#39;option **Et** :
 
    | champ | Opérateur | Valeur |
    |---|---|---|
-   | (Mises à jour sur les événements) |  |  |
    | assignedToID | Est égal à | Saisissez l’ID Workfront de l’utilisateur de l’intégration système |
    | projectID | Est égal à | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
-   | ID WF | Existe |  |
+   | DE : clé Jira | Existe |  |
 
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
+1. Dans le champ **Origine de l’enregistrement**, sélectionnez `Updated record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
-1. Dans le deuxième module, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
+1. Dans le module **Définir les variables JIRA**, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
 
    | Nom de la variable | Valeur de variable |
    |---|---|
@@ -411,14 +408,11 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
 
-
 +++
 
+### Scénario 5 : Workfront vers Jira : création d’un commentaire dans JIRA en cas de nouvelle note sur une tâche ou un problème Workfront
 
-
-### Scénario 5 : Nouvelles notes WF-to-Jira (tâches et problèmes)
-
-+++**Développez pour afficher les instructions de configuration du scénario 5 : nouvelles notes WF-to-Jira (tâches et événements)**
++++**Développez pour afficher les instructions de configuration du scénario 5 : Workfront vers Jira : créez un commentaire dans JIRA lorsqu’une nouvelle note est ajoutée sur une tâche ou un problème Workfront**
 
 1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Recherchez le modèle à l’aide de la barre de recherche située en haut à gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
@@ -427,19 +421,20 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    Une vue du modèle s’ouvre, affichant des informations et une animation du flux de données.
 1. Dans le premier module, commencez à ajouter un webhook.
 1. Dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d’identification de l’intégration système.
-1. Dans le champ **Type d’enregistrement**, sélectionnez `??`.
+1. Dans le champ **Type d’enregistrement**, sélectionnez `Note`.
 1. Dans le champ **État**, sélectionnez `New state`.
-1. Configurez le filtre avec les opérations suivantes, à l&#39;aide de l&#39;option **Et** :
+1. Configurez le filtre avec les opérations suivantes :
 
    | champ | Opérateur | Valeur |
    |---|---|---|
-   | (Création et mises à jour sur les notes.) |  |  |
-   | assignedToID | Est égal à | Saisissez l’ID Workfront de l’utilisateur de l’intégration système |
-   | projectID | Est égal à | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
+   | OU |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
 
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
+1. Dans le champ **Origine de l’enregistrement**, sélectionnez `New record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
-1. Dans le deuxième module, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
+1. Dans le module **Définir les variables**, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
 
    | Nom de la variable | Valeur de variable |
    |---|---|
@@ -447,20 +442,14 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    | JiraBaseURL | URL de base du compte Jira auquel vous vous connectez. |
    | wfBaseURL | URL de base du compte Workfront auquel vous vous connectez. |
 
-1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
-1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
 
-
 +++
 
+### Scénario 6 : Workfront vers Jira : création d’un commentaire dans JIRA sur la note supprimée de la tâche ou du problème Workfront.
 
-
-
-### Scénario 6 : suppression de notes WF-à-Jira (tâches et problèmes)
-
-+++**Développez pour afficher les instructions de configuration du scénario 6:WF-to-Jira supprimez des notes (tâches et événements)**
++++**Développez pour afficher les instructions de configuration du scénario 6 : Workfront vers Jira : créez un commentaire dans JIRA sur la note supprimée de la tâche ou du problème Workfront**
 
 1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Recherchez le modèle à l’aide de la barre de recherche située en haut à gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
@@ -469,18 +458,18 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    Une vue du modèle s’ouvre, affichant des informations et une animation du flux de données.
 1. Dans le premier module, commencez à ajouter un webhook.
 1. Dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d’identification de l’intégration système.
-1. Dans le champ **Type d’enregistrement**, sélectionnez `??`.
+1. Dans le champ **Type d’enregistrement**, sélectionnez `Note`.
 1. Dans le champ **État**, sélectionnez `New state`.
-1. Configurez le filtre avec les opérations suivantes, à l&#39;aide de l&#39;option **Et** :
+1. Configurez le filtre avec les opérations suivantes :
 
    | champ | Opérateur | Valeur |
    |---|---|---|
-   | (Supprimer sur les notes.) |  |  |
-   | assignedToID | Est égal à | Saisissez l’ID Workfront de l’utilisateur de l’intégration système |
-   | projectID | Est égal à | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
-   | ID WF | Existe |  |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
+   | OU |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
 
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
+1. Dans le champ **Origine de l’enregistrement**, sélectionnez `Deleted record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
 1. Dans le deuxième module, définissez les variables suivantes, puis cliquez sur **OK** pour enregistrer le module.
 
@@ -493,14 +482,11 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
 
-
 +++
 
+### Scénario 7 : Workfront vers Jira : création d’un commentaire dans JIRA lorsqu’un nouveau document est créé sur une tâche ou un problème Workfront
 
-
-### Scénario 7 : nouvelles pièces jointes WF-à-Jira (tâches et événements)
-
-+++**Développez pour afficher les instructions de configuration du scénario 7 : nouvelles pièces jointes WF-to-Jira (tâches et événements)**
++++**Développez pour afficher les instructions de configuration du Scénario 7 : de Workfront à Jira : créez un commentaire dans JIRA lorsqu’un nouveau document traitant d’une tâche ou d’un problème Workfront est créé**
 
 1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Recherchez le modèle à l’aide de la barre de recherche située en haut à gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
@@ -509,13 +495,12 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    Une vue du modèle s’ouvre, affichant des informations et une animation du flux de données.
 1. Dans le premier module, commencez à ajouter un webhook.
 1. Dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d’identification de l’intégration système.
-1. Dans le champ **Type d’enregistrement**, sélectionnez `??`.
+1. Dans le champ **Type d’enregistrement**, sélectionnez `Document`.
 1. Dans le champ **État**, sélectionnez `New state`.
 1. Configurez le filtre avec les opérations suivantes, à l&#39;aide de l&#39;option **Et** :
 
    | champ | Opérateur | Valeur |
    |---|---|---|
-   | (Créer sur le document). |  |  |
    | assignedToID | Est égal à | Saisissez l’ID Workfront de l’utilisateur de l’intégration système |
    | projectID | Est égal à | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
 
@@ -528,18 +513,16 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    | wfBaseURL | URL de base du compte Workfront auquel vous vous connectez. |
 
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
+1. Dans le champ **Origine de l’enregistrement**, sélectionnez `New record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
 
-
 +++
 
+### Scénario 8 : Workfront vers Jira : création d’un commentaire dans JIRA sur le document supprimé dans la tâche ou le problème Workfront.
 
-
-### Scénario 8 : suppression des pièces jointes WF-à-Jira (tâches et événements)
-
-+++**Développez pour afficher les instructions de configuration du scénario 8 : suppression des pièces jointes WF-à-Jira (tâches et événements)**
++++**Développez pour afficher les instructions de configuration du scénario 8 : Workfront vers Jira : créez un commentaire dans JIRA sur le document supprimé concernant la tâche ou le problème Workfront**
 
 1. Cliquez sur l’onglet **Modèles** ![icône Modèles](assets/templates-icon.png) dans le panneau de navigation de gauche.
 1. Recherchez le modèle à l’aide de la barre de recherche située en haut à gauche de l’écran. Vous pouvez effectuer une recherche par nom de modèle ou applications incluses.
@@ -548,17 +531,17 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    Une vue du modèle s’ouvre, affichant des informations et une animation du flux de données.
 1. Dans le premier module, commencez à ajouter un webhook.
 1. Dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d’identification de l’intégration système.
-1. Dans le champ **Type d’enregistrement**, sélectionnez `??`.
+1. Dans le champ **Type d’enregistrement**, sélectionnez `Document`.
 1. Dans le champ **État**, sélectionnez `New state`.
-1. Configurez le filtre avec les opérations suivantes, à l&#39;aide de l&#39;option **Et** :
+1. Configurez le filtre avec les opérations suivantes :
 
    | champ | Opérateur | Valeur |
    |---|---|---|
-   | (Supprimer sur le document) |  |  |
-   | assignedToID | Est égal à | Saisissez l’ID Workfront de l’utilisateur de l’intégration système |
-   | projectID | Est égal à | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
+   | OU |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Saisissez l’identifiant du ou des projets que le webhook doit surveiller. |
 
-1. Dans le deuxième module, définissez les variables suivantes.
+1. Dans le module **Définir les variables**, définissez les variables suivantes.
 
    | Nom de la variable | Valeur de variable |
    |---|---|
@@ -567,6 +550,7 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
    | wfBaseURL | URL de base du compte Workfront auquel vous vous connectez. |
 
 1. Activez l’option **Exclure les mises à jour effectuées par cette connexion**.
+1. Dans le champ **Origine de l’enregistrement**, sélectionnez `Deleted record only`.
 1. Cliquez sur **Enregistrer** pour enregistrer le webhook, puis sur **OK** pour enregistrer le module de déclenchement.
 1. Dans **each** le module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront qui utilise les informations d&#39;identification de l&#39;intégration système, puis cliquez sur **OK** pour enregistrer le module.
 1. Dans le module Jira **each**, dans le champ Connexion , sélectionnez la connexion Jira qui utilise les informations d’identification de l’intégration système, puis cliquez sur **OK** pour enregistrer le module.
