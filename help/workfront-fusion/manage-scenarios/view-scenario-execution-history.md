@@ -1,17 +1,17 @@
 ---
-title: Affichage de l’historique d’exécution d’un scénario
+title: Afficher l’historique de l’exécution d’un scénario
 description: Vous pouvez afficher des informations sur les événements ou les exécutions d’un scénario, ou vous pouvez rechercher des données spécifiques dans toutes les exécutions du scénario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 58%
+source-wordcount: '911'
+ht-degree: 65%
 
 ---
 
-# Affichage de l’historique d’exécution d’un scénario
+# Afficher l’historique de l’exécution d’un scénario
 
 Vous pouvez afficher des informations sur les événements ou les exécutions d’un scénario, ou vous pouvez rechercher des données spécifiques dans toutes les exécutions du scénario.
 
@@ -32,8 +32,8 @@ Un événement de scénario est une modification apportée au scénario, par exe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -42,13 +42,13 @@ Un événement de scénario est une modification apportée au scénario, par exe
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -59,7 +59,11 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 
 L’onglet [!UICONTROL Historique] affiche plus de détails que la page [!UICONTROL Détails du scénario]. Vous pouvez également filtrer et trier les exécutions dans l’onglet [!UICONTROL Historique].
 
-1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis cliquez sur le scénario.
+>[!NOTE]
+>
+>Si vous affichez l’historique d’un scénario pendant son exécution, Fusion affiche une note vous informant que les données sont toujours en cours de traitement et seul l’historique partiel du scénario s’affiche jusqu’à ce que le traitement soit terminé.
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis sur le scénario.
 
    Ou
 
@@ -154,7 +158,7 @@ La fenêtre [!UICONTROL Rechercher l’historique] s’ouvre.
    >
    >* Les exécutions ne sont disponibles que pendant les 30 jours précédents.
    >
-   >* Workfront Fusion stocke les payloads du webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa création génère l’erreur « [!UICONTROL Échec de la lecture du fichier à partir du stockage.] »
+   >* Workfront Fusion stocke les payloads de webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa création génère l’erreur « [!UICONTROL Échec de la lecture du fichier à partir du stockage.] »
 
 
 1. (Facultatif) Pour limiter votre recherche par statut, sélectionnez le statut de votre choix dans le menu déroulant **[!UICONTROL Par statut]**.
