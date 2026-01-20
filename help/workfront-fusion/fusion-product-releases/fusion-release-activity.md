@@ -22,7 +22,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ## Versions de Fusion en 2026
 
-* [Activité de publication de Workfront Fusion : semaine du mardi 12 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+* [Activité Version de Workfront Fusion : semaine du mardi 12 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
 
 ## Versions de Fusion en 2025
@@ -31,15 +31,15 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Décembre 2025
 
-* [Activité de publication de Workfront Fusion : semaine du mardi 15 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-* [Activité de publication de Workfront Fusion : semaine du mardi 8 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-* [Activité de publication de Workfront Fusion : semaine du mardi 1 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Activité de publication de Workfront Fusion : semaine du 15 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Activité de publication de Workfront Fusion : semaine du 8 décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Activité de publication de Workfront Fusion : semaine du 1er décembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### Novembre 2025
 
-* [Activité de publication de Workfront Fusion : semaine du mardi 17 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Activité de publication de Workfront Fusion : semaine du mardi 10 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Activité de publication de Workfront Fusion : semaine du mardi 3 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Activité de publication de Workfront Fusion : semaine du 17 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Activité de publication de Workfront Fusion : semaine du 10 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Activité de publication de Workfront Fusion : semaine du 3 novembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### Octobre 2025
 
