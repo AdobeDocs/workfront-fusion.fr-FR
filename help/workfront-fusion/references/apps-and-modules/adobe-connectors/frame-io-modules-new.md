@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -349,11 +349,11 @@ Ce module d’action crée une ressource. Vous pouvez charger un fichier local o
   </tr> -->
     <tr> 
     <td role="rowheader">Type de chargement </td> 
-    <td> <p>Choisissez si vous créez une ressource à partir d’un fichier local ou d’une vie distante.</p> </td> 
+    <td> <p>Choisissez si vous créez une ressource à partir d’un fichier local ou distant.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">Taille de fichier </td> 
-    <td> <p>Si vous téléchargez un fichier local, saisissez ou mappez la taille du fichier en octets.</p> </td> 
+    <td> <p>Si vous chargez un fichier local, saisissez ou mappez la taille du fichier en octets.</p> </td> 
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
@@ -370,7 +370,7 @@ Ce module d’action crée une ressource. Vous pouvez charger un fichier local o
   </tbody> 
 </table>
 
-#### [!UICONTROL Création d’une ressource (héritée)] <!--different for v4-->
+#### [!UICONTROL Créer une ressource (héritée)] <!--different for v4-->
 
 Ce module d’action crée une ressource.
 
@@ -1027,14 +1027,14 @@ Ce module répertorie tous les espaces de travail d’un compte.
 
 ### Métadonnées
 
-* [Création d’un champ de niveau compte](#create-an-account-level-field)
-* [Suppression d’un champ de niveau compte](#delete-an-account-level-field)
+* [Créer un champ au niveau du compte](#create-an-account-level-field)
+* [Supprimer un champ au niveau du compte](#delete-an-account-level-field)
 * [Obtenir les métadonnées](#get-metadata)
 * [Répertorier les champs au niveau du compte](#list-account-level-fields)
-* [Mise à jour d’une définition de champ au niveau du compte](#update-an-account-level-field-definition)
-* [Mise à jour des métadonnées sur plusieurs fichiers](#update-metadata-across-multiple-files)
+* [Mettre à jour une définition de champ au niveau du compte](#update-an-account-level-field-definition)
+* [Mettre à jour des métadonnées dans plusieurs fichiers](#update-metadata-across-multiple-files)
 
-#### Création d’un champ de niveau compte
+#### Créer un champ au niveau du compte
 
 Ce module d’action crée et configure un champ de métadonnées au niveau du compte.
 
@@ -1048,11 +1048,11 @@ Ce module d’action crée et configure un champ de métadonnées au niveau du c
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte sur lequel vous souhaitez créer les métadonnées.</p> </td> 
+   <td> <p>Sélectionnez ou mappez le compte dans lequel vous souhaitez créer les métadonnées.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Type de champ </td> 
-   <td> <p>Sélectionnez le type de champ de métadonnées que vous souhaitez créer, puis configurez les options de ce champ.</p> </td> 
+   <td> <p>Sélectionnez le type de champ de métadonnées à créer, puis configurez les options de ce champ.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1062,7 +1062,7 @@ Ce module d’action crée et configure un champ de métadonnées au niveau du c
  </tbody> 
 </table>
 
-#### Suppression d’un champ de niveau compte
+#### Supprimer un champ au niveau du compte
 
 Ce module d’action supprime un seul champ de métadonnées au niveau du compte.
 
@@ -1076,18 +1076,18 @@ Ce module d’action supprime un seul champ de métadonnées au niveau du compte
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte contenant le champ de métadonnées à supprimer.</p> </td> 
+   <td> <p>Saisissez ou mappez le compte contenant le champ de métadonnées à supprimer.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID de définition de champ </td> 
-   <td> <p>Saisissez ou mappez l’identifiant du champ que vous souhaitez supprimer. Vous pouvez trouver des identifiants de champ avec le module Champs de niveau compte de liste .</p> </td> 
+   <td> <p>Saisissez ou mappez l’ID du champ à supprimer. Les identifiants de champ se trouvent dans le module Répertorier les champs au niveau du compte.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Obtenir les métadonnées
 
-Ce module d&#39;action récupère les métadonnées d&#39;un fichier dans Frame.io.
+Ce module d’action récupère les métadonnées d’un fichier dans Frame.io.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1099,11 +1099,11 @@ Ce module d&#39;action récupère les métadonnées d&#39;un fichier dans Frame.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte contenant le fichier pour lequel vous souhaitez récupérer les métadonnées.</p> </td> 
+   <td> <p>Sélectionnez ou mappez le compte contenant le fichier pour lequel récupérer les métadonnées.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Identifiant du fichier </td> 
-   <td> <p>Saisissez ou mappez l’identifiant du fichier pour lequel vous souhaitez récupérer les métadonnées.</p> </td> 
+   <td> <p>Saisissez ou mappez l’identifiant du fichier pour lequel récupérer des métadonnées.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Afficher la valeur nulle </td> 
@@ -1114,7 +1114,7 @@ Ce module d&#39;action récupère les métadonnées d&#39;un fichier dans Frame.
 
 #### Répertorier les champs au niveau du compte
 
-Ce module récupère une liste des champs de métadonnées de niveau compte pour le compte spécifié.
+Ce module récupère une liste des champs de métadonnées au niveau du compte pour le compte spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1126,7 +1126,7 @@ Ce module récupère une liste des champs de métadonnées de niveau compte pour
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte à partir duquel vous souhaitez répertorier les champs.</p> </td> 
+   <td> <p>Sélectionnez ou mappez le compte à partir duquel répertorier les champs.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -1135,7 +1135,7 @@ Ce module récupère une liste des champs de métadonnées de niveau compte pour
  </tbody> 
 </table>
 
-#### Mise à jour d’une définition de champ au niveau du compte
+#### Mettre à jour une définition de champ au niveau du compte
 
 Ce module met à jour la définition d’un champ de métadonnées existant unique.
 
@@ -1149,15 +1149,15 @@ Ce module met à jour la définition d’un champ de métadonnées existant uniq
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte sur lequel vous souhaitez créer les métadonnées.</p> </td> 
+   <td> <p>Sélectionnez ou mappez le compte dans lequel vous souhaitez créer les métadonnées.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID de définition de champ </td> 
-   <td> <p>Saisissez ou mappez l’identifiant du champ que vous souhaitez mettre à jour. Vous pouvez trouver des identifiants de champ avec le module Champs de niveau compte de liste .</p> </td> 
+   <td> <p>Saisissez ou mappez l’ID du champ à mettre à jour. Les identifiants de champ se trouvent dans le module Répertorier les champs au niveau du compte.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Type de champ </td> 
-   <td> <p>Si vous souhaitez modifier le type de champ, sélectionnez le type de champ de métadonnées que vous souhaitez créer, puis configurez les options de ce champ.</p> </td> 
+   <td> <p>Si vous souhaitez modifier le type de champ, sélectionnez le type de champ de métadonnées à créer, puis configurez les options de ce champ.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1167,7 +1167,7 @@ Ce module met à jour la définition d’un champ de métadonnées existant uniq
  </tbody> 
 </table>
 
-#### Mise à jour des métadonnées sur plusieurs fichiers
+#### Mettre à jour des métadonnées dans plusieurs fichiers
 
 Ce module met à jour les champs de métadonnées d’un ou de plusieurs fichiers avec les valeurs que vous spécifiez.
 
@@ -1181,7 +1181,7 @@ Ce module met à jour les champs de métadonnées d’un ou de plusieurs fichier
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Sélectionnez ou mappez le compte contenant les fichiers pour lesquels vous souhaitez mettre à jour les métadonnées.</p> </td> 
+   <td> <p>Saisissez ou mappez le compte contenant les fichiers pour lesquels mettre à jour les métadonnées.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -1193,11 +1193,11 @@ Ce module met à jour les champs de métadonnées d’un ou de plusieurs fichier
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File IDs] </td> 
-   <td> <p>Pour chaque fichier pour lequel vous souhaitez mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’identifiant du fichier.</p> </td> 
+   <td> <p>Pour chaque fichier pour lequel mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’ID du fichier.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
-   <td> <p>Pour chaque champ pour lequel vous souhaitez mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’identifiant de la définition de champ et la valeur que vous souhaitez placer dans ce champ. Tous les fichiers spécifiés dans le champ ID de fichier sont mis à jour avec cette valeur de champ.</p> </td> 
+   <td> <p>Pour chaque champ pour lequel mettre à jour les métadonnées, cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez l’identifiant de la définition de champ et la valeur à placer dans ce champ. Tous les fichiers spécifiés dans le champ ID de fichiers sont mis à jour avec cette valeur de champ.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1249,21 +1249,21 @@ Ce module vous permet d’effectuer un appel API personnalisé.
 
 #### Surveiller les événements
 
-Ce module de déclenchement instantané démarre un scénario lorsque l’événement sélectionné se produit dans Frame.io.
+Ce module de déclenchement instantané lance un scénario lorsque l’événement sélectionné se produit dans Frame.io.
 
 Vous pouvez utiliser un webhook existant ou en créer un nouveau.
 
 Pour créer un webhook :
 
 1. Cliquez sur **Ajouter** à côté du champ Webhook.
-1. Renseignez les informations suivantes :
+1. Indiquez les informations suivantes :
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-     <td role="rowheader">Nom du Webhook </td> 
+     <td role="rowheader">Nom du webhook </td> 
       <td> <p>Saisissez un nom pour le nouveau webhook.</p> </td> 
      </tr> 
      <tr> 
@@ -1272,21 +1272,21 @@ Pour créer un webhook :
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL Account ID] </td> 
-      <td> <p>Sélectionnez ou mappez le compte contenant l’espace de travail dans lequel vous souhaitez regarder les événements.</p> </td> 
+      <td> <p>Sélectionnez ou mappez le compte qui contient l’espace de travail dans lequel surveiller les événements.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-      <td> <p>Saisissez l’identifiant de l’espace de travail dans lequel vous souhaitez regarder les événements.</p> </td> 
+      <td> <p>Saisissez l’identifiant de l’espace de travail dans lequel surveiller les événements.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Events]</td> 
-      <td> <p>Sélectionnez les événements qui doivent déclencher ce module</p> </td> 
+      <td> <p>Sélectionnez les événements qui doivent déclencher ce module.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Cliquez sur **Enregistrer** pour enregistrer le webhook et revenir au module .
-1. Cliquez sur **OK** dans le module Événements Espion pour enregistrer la configuration.
+1. Cliquez sur **Enregistrer** pour enregistrer le webhook et revenir au module.
+1. Cliquez sur **OK** dans le module Surveiller les événements pour enregistrer la configuration.
 
 
 #### Surveiller la mise à jour de la valeur des métadonnées
