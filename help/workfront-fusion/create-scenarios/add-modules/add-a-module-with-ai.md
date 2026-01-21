@@ -90,7 +90,7 @@ Fusion AI peut actuellement générer des modules qui se connectent aux applicat
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un module.
 1. Cliquez n’importe où dans le scénario pour accéder à l’éditeur de scénarios.
-1. Cliquez sur l’icône ****![ AI Assistant](assets/ai-assistant-icon.png) AI près du coin supérieur droit de l’écran.
+1. Cliquez sur l’icône **&#x200B;**![&#x200B; AI Assistant](assets/ai-assistant-icon.png) AI près du coin supérieur droit de l’écran.
 1. Saisissez une invite de texte dans le panneau AI Assistant.
 
    Pour obtenir des conseils sur les invites, voir [Conseils pour la création d’invites pour les segments](#tips-for-creating-prompts-for-scenario-segments) de scénario dans cet article.
