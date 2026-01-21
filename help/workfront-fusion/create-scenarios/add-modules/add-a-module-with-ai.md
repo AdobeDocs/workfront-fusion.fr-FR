@@ -61,7 +61,7 @@ Pour utiliser cette fonctionnalité, votre organisation doit remplir les conditi
 * Votre organisation doit avoir participé au programme bêta Workfront AI Assistant.
 * Adobe devez avoir signé un accord d’IA Adobe Gen dans vos dossiers pour votre organisation.
 
-  Pour plus d’informations sur la signature de l’accord, voir [Signer le contrat](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) d’IA de Adobe génération dans l’article Présentation de AI Assistant dans la documentation Workfront.
+  Pour plus d’informations sur la signature de l’accord, voir [Signer le contrat](https://experienceleague.adobe.com/fr/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) d’IA de Adobe génération dans l’article Présentation de AI Assistant dans la documentation Workfront.
 
 ## Applications de module d’IA actuellement prises en charge
 
