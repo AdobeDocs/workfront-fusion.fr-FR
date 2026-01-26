@@ -33,7 +33,7 @@ Si votre équipe a du mal à maintenir l’élan parce que les chronologies de p
 
 Ce modèle Fusion automatise ce processus. Lorsqu’une tâche est terminée de manière anticipée, toutes les tâches dépendantes (du successeur) sont automatiquement replanifiées pour commencer plus tôt, ce qui permet à votre équipe d’avancer plus rapidement et de rester agile.
 
-### [!BADGE Nouveau ! ]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
+### [!BADGE Nouveau ! &#x200B;]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
 
 Téléchargez les informations d’abonnement aux événements, créez un fichier CSV, puis chargez le fichier dans Workfront.
 
