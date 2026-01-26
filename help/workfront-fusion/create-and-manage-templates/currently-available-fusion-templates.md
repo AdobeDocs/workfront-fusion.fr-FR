@@ -4,10 +4,10 @@ description: Les modèles publics suivants sont actuellement disponibles dans Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 71%
+source-wordcount: '1660'
+ht-degree: 65%
 
 ---
 
@@ -23,7 +23,7 @@ Pour afficher les modèles disponibles, cliquez sur l’icône **Modèles** ![Ic
 
 Ces modèles permettent l’automatisation des processus et des workflows Workfront.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
+### Workfront - Ajuster Automatiquement La Chronologie Du Projet Lorsque Les Tâches Sont Terminées De Manière Anticipée
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Si votre équipe a du mal à maintenir l’élan parce que les chronologies de p
 
 Ce modèle Fusion automatise ce processus. Lorsqu’une tâche est terminée de manière anticipée, toutes les tâches dépendantes (du successeur) sont automatiquement replanifiées pour commencer plus tôt, ce qui permet à votre équipe d’avancer plus rapidement et de rester agile.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
+### [!BADGE Nouveau ! ]{type=Informative} HTTP > CSV > WF - Création d’une liste de sous-domaines d’événement par domaine et niveau et exportation au format CSV.
 
 Téléchargez les informations d’abonnement aux événements, créez un fichier CSV, puis chargez le fichier dans Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} les tableaux Workfront - Supprimez les cartes archivées de la colonne désignée (à la demande).
+### Tableaux Workfront - Supprimer les cartes archivées de la colonne désignée (à la demande)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Une fois par mois, passez en revue vos modèles de projet en appliquant votre pr
 
 Ces modèles automatisent les workflows qui associent Workfront et Workfront Proof.
 
-### [!BADGE Nouveau ! &#x200B;]{type=Informative} Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
+### Workfront > Workfront Proof - Modifiez le rôle d’utilisateur de l’épreuve en Lecture seule et verrouillez l’épreuve à la fermeture du projet
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ Ce modèle vous permet de voir s’il y a un changement dans un dossier SharePoi
 
 Ces modèles prennent en charge l’intégration Workfront-Anaplan et attendent une configuration spécifique à la fois dans Anaplan et Workfront. Pour plus d’informations sur ces modèles et leurs configurations requises, voir les articles relatifs aux différents modèles.
 
-Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Adobe Workfront avec Anaplan](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) dans la documentation de Workfront.
+Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Adobe Workfront avec Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) dans la documentation de Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Pour plus d’informations sur l’intégration Workfront-Anaplan, consultez [Ad
 
 ### Workflows d’optimisation des dépenses
 
-* [Envoyer des mises à jour de projet Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Envoyer les dépenses Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Envoyer des mises à jour des heures effectives Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Envoyer des mises à jour de projet Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Envoyer les dépenses Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Envoyer des mises à jour des heures effectives Adobe Workfront à un élément  [!DNL Anaplan]  liste](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Workflows de liaison de demandes de budget
 
-* [Créer un élément  [!DNL Anaplan]  liste à partir d’une demande de budget Adobe Workfront](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Appliquer une allocation  [!DNL Anaplan]  budget à un projet Adobe Workfront](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Créer un élément  [!DNL Anaplan]  liste à partir d’une demande de budget Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Appliquer une allocation  [!DNL Anaplan]  budget à un projet Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Workflows de liaison de demandes de campagne
 
-* [Création d’un élément  [!DNL Anaplan]  liste à partir d’une requête de campagne Adobe Workfront](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Appliquer une allocation  [!DNL Anaplan]  budget à une demande de campagne ou à un projet de campagne Adobe Workfront](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Création d’un élément  [!DNL Anaplan]  liste à partir d’une requête de campagne Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Appliquer une allocation  [!DNL Anaplan]  budget à une demande de campagne ou à un projet de campagne Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Modèles Jira
+
+Ces modèles représentent des workflows courants entre Workfront et Jira.
+
+Pour plus d’informations sur ces modèles, voir [Utiliser des modèles pour connecter Adobe Workfront Fusion et Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md).
+
+* [Workfront vers Jira : créer un événement JIRA à partir de l&#39;affectation de tâche ou d&#39;événement Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA vers Workfront : JIRA vers Workfront : envoyez des mises à jour sur les problèmes et des commentaires à Workfront à partir de Jira.](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront vers Jira : modifications apportées à la tâche Workfront en problème JIRA](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront vers Jira : modifications apportées au problème Workfront en problème JIRA](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront vers Jira : créez un commentaire dans JIRA lorsqu’une nouvelle note est ajoutée sur une tâche ou un problème Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront vers Jira : création d’un commentaire dans JIRA sur la note supprimée sur la tâche ou l’événement Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront vers Jira : permet de créer un commentaire dans JIRA en cas de création d’un document sur une tâche ou un problème Workfront.](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront vers Jira : permet de créer un commentaire dans JIRA sur le document supprimé concernant une tâche ou un problème Workfront.](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->
