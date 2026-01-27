@@ -23,7 +23,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 ## Versions de Fusion en 2026
 
 * [Activité Version de Workfront Fusion : semaine du mardi 19 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
-* [Activité Version de Workfront Fusion : semaine du mardi 12 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+* [Activité Version de Workfront Fusion : semaine du 12 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
 
 ## Versions de Fusion en 2025
