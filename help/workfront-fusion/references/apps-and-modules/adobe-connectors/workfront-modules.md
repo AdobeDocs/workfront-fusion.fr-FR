@@ -501,7 +501,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 >   Pour valider les utilisateurs et utilisatrices ajoutés dans un lot volumineux, vous pouvez ajouter ce lot de personnes directement dans Adobe Admin Console.
 >
->   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
+>   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
 
 +++
 
@@ -2362,7 +2362,7 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 >
 >   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, voir [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
 >
->   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr)].
 
 Le module [!UICONTROL Surveiller les événements] de Workfront déclenche des scénarios basés sur un webhook qui crée un abonnement à un événement dans l’API Workfront. L’abonnement à un événement est un ensemble de données qui détermine les événements envoyés au webhook. Par exemple, si vous configurez un module [!UICONTROL Surveiller les événements] qui recherche les problèmes, alors l’abonnement à l’événement envoie uniquement les événements liés aux problèmes.
 
