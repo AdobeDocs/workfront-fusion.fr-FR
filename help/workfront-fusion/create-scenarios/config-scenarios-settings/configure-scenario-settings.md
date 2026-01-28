@@ -1,18 +1,18 @@
 ---
 content-type: reference
-title: Configurer les paramètres du scénario
+title: Configurer les paramètres de scénario
 description: Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le panneau Paramètres du scénario .
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 42%
+source-wordcount: '1293'
+ht-degree: 48%
 
 ---
 
-# Configurer les paramètres du scénario
+# Configurer les paramètres de scénario
 
 Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le panneau Paramètres du scénario .
 
@@ -25,8 +25,8 @@ Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -35,13 +35,13 @@ Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -186,3 +186,7 @@ Pour plus d’informations sur les erreurs, voir [Types d’erreur](/help/workfr
 >* Plusieurs pools de collaborateurs sont associés à votre organisation.
 
 Ce paramètre affecte le scénario à un pool de collaborateurs spécifique associé à votre organisation, ce qui vous permet de dédier des ressources aux scénarios à priorité élevée.
+
+>[!NOTE]
+>
+>Les organisations peuvent demander la configuration d&#39;un pool de salariés supplémentaire (pour un total de 2).

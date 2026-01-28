@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 9%
+source-wordcount: '548'
+ht-degree: 11%
 
 ---
 
@@ -26,7 +26,7 @@ Le tableau de bord des performances de Fusion vous permet de voir rapidement que
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
+   <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -41,7 +41,7 @@ Le tableau de bord des performances de Fusion vous permet de voir rapidement que
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,6 +50,10 @@ Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’ac
 >[!NOTE]
 >
 >Les mesures sont affichées par pool de traitement. Pour afficher un autre pool de traitement, cliquez sur le champ Pool près du coin supérieur gauche du tableau de bord, puis sélectionnez le pool pour lequel vous souhaitez afficher les mesures.
+
+>[!NOTE]
+>
+>Les organisations peuvent demander la mise en service d&#39;un pool de salariés supplémentaire (pour un total de 2).
 
 Dans le tableau de bord des performances de Fusion , vous pouvez voir les mesures suivantes.
 
