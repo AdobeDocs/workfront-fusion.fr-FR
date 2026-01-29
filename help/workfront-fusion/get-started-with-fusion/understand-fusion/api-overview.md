@@ -3,10 +3,10 @@ title: Vue d’ensemble de l’API
 description: Les interfaces de programmation d’applications (API) permettent aux applications et aux services de communiquer entre eux. Fusion utilise des API pour communiquer avec l’application à laquelle vous vous connectez. Chaque application dispose d’une API distincte.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
-workflow-type: ht
-source-wordcount: '431'
-ht-degree: 100%
+source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 91%
 
 ---
 
@@ -17,6 +17,11 @@ ht-degree: 100%
 Les interfaces de programmation d’applications (API) permettent aux applications et aux services de communiquer entre eux. Fusion utilise des API pour communiquer avec les applications auxquelles vous vous connectez.
 
 Les API sont créées et contrôlées par les propriétaires de l’application. Par exemple, l’API Workfront appartient à l’équipe Workfront d’Adobe et l’API Microsoft Graph appartient à Microsoft. Le propriétaire de l’API définit les actions disponibles via l’API.
+
+>[!NOTE]
+>
+>Workfront Fusion possède sa propre API que vous pouvez utiliser pour automatiser les actions dans Fusion, telles que la gestion des connexions, des hooks, des scénarios, des exécutions, des journaux et d’autres ressources d’automatisation de base.
+>Pour obtenir de la documentation sur l’API Workfront Fusion, voir [API Workfront Fusion](https://developer.adobe.com/workfront-fusion-apis/).
 
 ## Considérations
 
