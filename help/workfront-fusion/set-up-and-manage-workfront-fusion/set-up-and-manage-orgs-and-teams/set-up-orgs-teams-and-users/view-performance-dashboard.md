@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '534'
 ht-degree: 11%
 
 ---
@@ -51,9 +51,13 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 >
 >Les mesures sont affichées par pool de traitement. Pour afficher un autre pool de traitement, cliquez sur le champ Pool près du coin supérieur gauche du tableau de bord, puis sélectionnez le pool pour lequel vous souhaitez afficher les mesures.
 
+<!--
+
 >[!NOTE]
 >
->Les organisations peuvent demander la mise en service d&#39;un pool de salariés supplémentaire (pour un total de 2).
+>Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 Dans le tableau de bord des performances de Fusion , vous pouvez voir les mesures suivantes.
 
