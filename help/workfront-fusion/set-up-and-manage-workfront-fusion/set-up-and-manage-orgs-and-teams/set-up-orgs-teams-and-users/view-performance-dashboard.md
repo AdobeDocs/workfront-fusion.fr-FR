@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 11%
+source-wordcount: '686'
+ht-degree: 9%
 
 ---
 
@@ -61,14 +61,22 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Dans le tableau de bord des performances de Fusion , vous pouvez voir les mesures suivantes.
 
-* Exécutions en attente de traitement
-Ce graphique montre le nombre d’exécutions en attente de traitement à un moment donné.
-* Utilisation du pool
+* **Exécutions en attente de traitement**
+Ce graphique montre le nombre d’exécutions en attente de traitement (également appelées liste d’attente d’exécution) à un moment donné.
+
+  Un nombre élevé d’exécutions en attente de traitement peut affecter les performances de votre instance Fusion. Vous recevrez une notification si votre liste d’attente d’exécution atteint 5 000 exécutions. Nous vous recommandons d’identifier les scénarios responsables et de les modifier ou de les désactiver. Si le retard d’exécution élevé persiste, l’équipe de Fusion protège les performances de votre instance Fusion en désactivant les scénarios responsables.
+* **Utilisation du pool**
 Ce graphique montre l&#39;utilisation du pool de collaborateurs au fil du temps. Si ce graphique montre régulièrement l&#39;utilisation du pool de travail, vous pouvez affecter certains scénarios à un autre pool.
-* Exécutions par scénario
+
+  Si un pool est proche de 100 % d’utilisation, les autres ressources qui utilisent le même pool peuvent être retardées ou interrompues. Si cela se produit, nous vous recommandons de réaffecter un scénario à forte utilisation à un autre pool de traitement ou de modifier les scénarios existants pour qu’ils consomment moins de ressources.
+* **Exécutions par scénario**
 Ce graphique affiche les exécutions par scénario. Différentes couleurs représentent différents scénarios. Lorsque vous pointez sur le graphique, une fenêtre s’affiche, indiquant la couleur du scénario.
-* Durée des exécutions
+
+  Vous pouvez utiliser ce graphique pour identifier les scénarios susceptibles de provoquer une liste d&#39;attente d&#39;exécution ou une utilisation élevée du pool de travail.
+* **Durée des exécutions**
 Ce graphique affiche les exécutions par scénario. Différentes couleurs représentent différents scénarios. Lorsque vous pointez sur le graphique, une fenêtre s’affiche, indiquant la couleur du scénario.
+
+  Vous pouvez utiliser ce graphique pour identifier les scénarios qui prennent plus de temps que d’habitude, y compris ceux affectés par des problèmes liés à une application ou un service connecté.
 
 ## Affichage du tableau de bord des performances de Fusion
 
