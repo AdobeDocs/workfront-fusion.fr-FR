@@ -4,8 +4,8 @@ description: Lorsque vous ouvrez Fusion, de nombreuses actions s’offrent à vo
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Vous pouvez naviguer dans les différentes zones d’Adobe Workfront Fusion à
 Cet article présente les différentes zones et fournit des liens vers des informations supplémentaires.
 
 | Zone | Description | Pour plus d’informations, consultez les ressources suivantes : |
-|---|---|---|
+| --- | --- | --- |
 | Vue d’ensemble de l’organisation <br> ![Icône Organisation](assets/org-icon.png) | Vous trouverez ici des informations sur votre organisation Fusion. Vous pouvez afficher le nombre d’opérations effectuées par les scénarios dans cette organisation, ainsi qu’une liste des scénarios actifs. Vous pouvez également afficher des listes de l’équipe, des utilisateurs et utilisatrices et des environnements de cette organisation.<br>L’organisation sélectionnée s’affiche au-dessus de cette icône. | [Organisations et équipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Vue d’ensemble de l’équipe <br> ![Icône Équipe](assets/team-icon.png) | Vous y trouverez des informations sur les équipes Fusion, telles que le nombre d’opérations effectuées par les scénarios de cette équipe et une liste des scénarios actifs. Vous pouvez également afficher et gérer les utilisateurs et utilisatrices de cette équipe. Lorsque vous affichez une équipe, vous pouvez en sélectionner une autre dans la liste déroulante en haut de cette page.<br>L’équipe sélectionnée s’affiche au-dessus de cette icône.<br>Vous devrez peut-être créer une équipe pour pouvoir voir la vue d’ensemble de l’équipe ou toute autre section relative aux équipes mentionnée dans cet article. | [Organisations et équipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Scénarios <br> ![Icône Scénarios](assets/scenarios-icon.png) | Dans Fusion, un scénario est un workflow automatisé. Par exemple, un scénario peut surveiller les demandes Workfront entrantes et les convertir en projets, tandis qu’un autre scénario peut générer des images, les charger vers un fournisseur de documents et ajouter des tâches d’approbation dans Workfront. Dans Fusion, la plus grande partie de votre travail consiste à configurer et gérer des scénarios. Dans la zone Scénarios, vous pouvez afficher et organiser la liste des scénarios de votre équipe, sélectionner des scénarios individuels à afficher ou à modifier, ou créer un scénario. | [Vue d’ensemble des scénarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |

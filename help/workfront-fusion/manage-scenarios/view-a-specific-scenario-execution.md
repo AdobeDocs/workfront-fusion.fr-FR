@@ -1,17 +1,17 @@
 ---
-title: Affichage de l’exécution d’un scénario spécifique
+title: Afficher l’exécution d’un scénario spécifique
 description: Vous pouvez afficher les détails d’une exécution de scénario spécifique, y compris le filtrage et la recherche d’événements de scénario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 10%
+ht-degree: 26%
 
 ---
 
-# Affichage de l’exécution d’un scénario spécifique
+# Afficher l’exécution d’un scénario spécifique
 
 Vous pouvez afficher les détails d’une exécution de scénario spécifique, y compris le filtrage et la recherche d’événements de scénario.
 
@@ -24,8 +24,8 @@ Vous pouvez afficher les détails d’une exécution de scénario spécifique, y
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +34,13 @@ Vous pouvez afficher les détails d’une exécution de scénario spécifique, y
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 Vous pouvez afficher une exécution à partir de l’historique des scénarios du scénario.
 
 
-1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis sur le scénario.
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche, puis cliquez sur le scénario.
 
    Ou
 

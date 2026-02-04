@@ -2,10 +2,10 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 99%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 * Activité de publication de Fusion {#fusion-release-activity}
    * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versions de Fusion - 2025 {#fusion-releases-2025}
+      * [Activité Version de Workfront Fusion : semaine du mardi 2 février 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 26 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 19 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Activité Version de Workfront Fusion : semaine du 12 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
@@ -258,6 +259,7 @@ ht-degree: 100%
    * [Assistant IA dans Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Exécuter l’expert en notation de scénario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Supprimer les éléments de scénario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+   * [Gestion des scénarios dans la zone des Scénarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * Créer des scénarios de test {#build-practice-scenarios}
    * [Créer des scénarios de test](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Créer un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
