@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le protocole TLS mutuel dans vos modules HTTP 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
+source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 68%
@@ -96,7 +96,6 @@ Vous pouvez utiliser les liens suivants pour télécharger les certificats publi
 | Cluster Azure aux États-Unis | [Télécharger le certificat Azure américain Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Du 21 septembre 2025 au 23 octobre 2026 |
 | Centre de données EU AWS | [Télécharger le certificat de l’UE Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Du 29 janvier 2026 au 2 mars 2027 |
 | Cluster Azure de l’UE | [Télécharger le certificat Azure de l’UE de Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Du 4 février 2026 au 8 mars 2027 |
-
 
 ### Certificats pour 2025
 
