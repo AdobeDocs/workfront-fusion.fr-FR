@@ -3,9 +3,8 @@ title: Afficher le tableau de bord des performances d’une organisation
 description: Les administrateurs et administratrices de Fusion peuvent afficher un tableau de bord qui affiche les mesures d’exécution pour une organisation.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 9%
@@ -93,6 +92,3 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 1. Pour modifier la période du tableau de bord, sélectionnez le champ Période dans le coin supérieur droit du tableau de bord, puis sélectionnez une nouvelle période. La période disponible la plus longue est de 24 heures et la plus courte est de 15 minutes.
 1. Pour actualiser les graphiques, cliquez sur l’icône Actualiser située en haut à droite du tableau de bord.
 1. Pour afficher un autre pool de traitement, cliquez sur le champ Pool près du coin supérieur gauche du tableau de bord, puis sélectionnez le pool à afficher.
-
-
-
