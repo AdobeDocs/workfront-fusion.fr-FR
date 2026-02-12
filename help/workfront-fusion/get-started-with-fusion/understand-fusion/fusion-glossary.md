@@ -4,10 +4,10 @@ description: Le glossaire suivant explique certains termes courants d’Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
-workflow-type: ht
+source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
+workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Le glossaire suivant explique certains termes courants d’Adobe Workfront Fus
   </tr> 
   <tr>
    <td role="rowheader"> <p>Connexion</p> </td> 
-   <td> <p>Une connexion représente un ensemble d’informations d’identification permettant de se connecter à un service donné. Vous pouvez configurer des connexions à l’intérieur de n’importe quel module, puis utiliser cette connexion dans tout autre module. Une connexion doit être sélectionnée pour chaque module, de sorte que Fusion puisse utiliser ces informations d’identification pour accéder aux informations dont le module a besoin. </p><p>Pour plus d’informations, consultez la section <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Vue d’ensemble des connexions</a>.</p> </td> 
+   <td> <p>Une connexion représente un ensemble d’informations d’identification pour se connecter à un service donné. Vous pouvez configurer des connexions à l’intérieur de n’importe quel module, puis utiliser cette connexion dans tout autre module. Une connexion doit être sélectionnée pour chaque module, de sorte que Fusion puisse utiliser ces informations d’identification pour accéder aux informations dont le module a besoin. </p><p>Pour plus d’informations, consultez la section <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Vue d’ensemble des connexions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Connecteur</td> 
