@@ -5,10 +5,10 @@ description: Il arrive qu’une erreur se produise pendant l’exécution d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 29%
+ht-degree: 35%
 
 ---
 
@@ -27,8 +27,8 @@ Adobe Workfront Fusion fait la distinction entre plusieurs types d’erreur de b
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,15 +37,17 @@ Adobe Workfront Fusion fait la distinction entre plusieurs types d’erreur de b
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Erreur de connexion 
++++
+
+## Erreur de connexion
 
 `ConnectionError`
 
@@ -148,7 +150,7 @@ Pour plus d’informations, voir [Nombre d’erreurs consécutives](/help/workfr
 >[!NOTE]
 >
 >Si un scénario commence par un déclencheur instantané et rencontre cette erreur, le paramètre [!UICONTROL Nombre maximal d’erreurs consécutives] est ignoré et le scénario est immédiatement désactivé.
->&#x200B;>Pour plus d’informations, voir [Déclencheurs instantanés](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) dans l’article Présentation des modules.
+>Pour plus d’informations, voir [Déclencheurs instantanés](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) dans l’article Présentation des modules.
 
 ## Erreur d’incohérence
 
