@@ -65,7 +65,7 @@ Les autres onglets comprennent des fonctions, des opérateurs et des mots-clés 
 
 Pour plus d’informations sur les onglets de fonctions, consultez [Vue d’ensemble des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [ Mappage d’éléments à l’aide de fonctions intégrées ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [&#x200B; Mappage d’éléments à l’aide de fonctions intégrées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Collections
 

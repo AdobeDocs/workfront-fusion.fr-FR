@@ -65,7 +65,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 1. Cliquez sur le champ dans lequel vous souhaitez insérer une fonction.
 1. Sélectionnez l’onglet dans le panneau de mappage qui contient la fonction que vous souhaitez insérer.
 
-   Pour plus d’informations sur les onglets du panneau de mappage, voir [ Présentation des fonctions ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   Pour plus d’informations sur les onglets du panneau de mappage, voir [&#x200B; Présentation des fonctions &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
    1. Cliquez sur le nom de la fonction.
 
       Ou
