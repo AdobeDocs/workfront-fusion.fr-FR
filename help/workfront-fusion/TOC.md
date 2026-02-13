@@ -2,10 +2,10 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
+source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 99%
+source-wordcount: '2032'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 99%
 * Activité de publication de Fusion {#fusion-release-activity}
    * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versions de Fusion - 2025 {#fusion-releases-2025}
+      * [Activité Version de Workfront Fusion : semaine du mardi 9 février 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 2 février 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 26 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Activité Version de Workfront Fusion : semaine du mardi 19 janvier 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
@@ -219,7 +220,8 @@ ht-degree: 99%
    * Mapper les données {#map-data}
       * [Mapper les données](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [Mapper des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [Mapper des éléments à l’aide de fonctions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [Mappage d’éléments à l’aide de fonctions intégrées](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [Mappage de données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [Mapper des tableaux et des éléments de tableau](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Mapper un fichier entre des modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Entrepôts de données](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -335,6 +337,7 @@ ht-degree: 99%
          * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Utiliser le protocole TLS mutuel dans les modules HTTP d’Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Connecteurs Adobe {#adobe-connectors}
+         * [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Modules Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Module Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Modules Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)

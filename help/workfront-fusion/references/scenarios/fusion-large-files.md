@@ -4,10 +4,10 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 3%
+source-wordcount: '1052'
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,7 @@ Actuellement, les connecteurs suivants prennent en charge les fichiers volumineu
 
 >[!NOTE]
 >
->* Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux, puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
+>* Si un fichier est téléchargé à l’aide d’un module qui prend en charge les fichiers volumineux puis transmis à un module qui ne prend pas en charge les fichiers volumineux, ce module ne traite pas le fichier avec succès. Les fichiers volumineux doivent être gérés exclusivement avec des modules pris en charge dans l’ensemble du workflow.
 >* Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille allant jusqu’à 200 Mo.
 
 * Workfront
@@ -44,6 +44,7 @@ Actuellement, les connecteurs suivants prennent en charge les fichiers volumineu
    * Application des modifications PSD
 * SharePoint
    * Créer un fichier
+   * Créer un fichier (hérité)
    * Obtenir un fichier
 * Salesforce
    * Charger fichier
@@ -78,7 +79,7 @@ Les utilisateurs peuvent désormais traiter les fichiers dépassant la limite pr
 
 ### Comment fonctionne le nouveau transfert de fichiers de Fusion ?
 
-Lorsque Fusion traite des fichiers, des fichiers plus volumineux sont ajoutés au stockage persistant (stockage de compartiment S3 ou Azure Blob). Lorsqu’un module Fusion exécute une action de fichier, telle que le chargement ou le téléchargement, Fusion utilise le fichier dans le stockage persistant en tant que source plutôt qu’en tant que mémoire active.
+Lorsque Fusion traite des fichiers, des fichiers plus volumineux sont ajoutés au stockage persistant (compartiment S3 ou stockage Blob Azure). Lorsqu’un module Fusion exécute une action de fichier, telle que le chargement ou le téléchargement, Fusion utilise le fichier dans le stockage persistant en tant que source plutôt qu’en tant que mémoire active.
 
 ### Puis-je travailler avec des fichiers plus volumineux en utilisant des exécutions incomplètes ?
 
