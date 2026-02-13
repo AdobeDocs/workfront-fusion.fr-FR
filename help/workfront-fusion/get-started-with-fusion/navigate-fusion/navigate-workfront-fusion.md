@@ -4,10 +4,10 @@ description: Lorsque vous ouvrez Fusion, de nombreuses actions s’offrent à vo
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ Cet article présente les différentes zones et fournit des liens vers des infor
 | Clés <br> ![Icône Clés](assets/keys-icon.png) | Les clés publiques et privées sont utilisées pour chiffrer et déchiffrer les données. La clé publique peut être distribuée, et toute personne la possédant peut chiffrer des données, mais seule la clé privée peut les déchiffrer. De même, un utilisateur ou une utilisatrice disposant d’une clé privée peut chiffrer des données que toute personne disposant de la clé publique peut déchiffrer. Dans la zone Clés, vous pouvez afficher et gérer les clés détenues par votre équipe. | [Clés](/help/workfront-fusion/references/modules/keys.md) |
 | Entrepôts de données <br> ![Icône Entrepôts de données](assets/data-store-icon.png) | Les entrepôts de données sont de petites bases de données qui existent en dehors des scénarios. Les entrepôts de données vous permettent de transférer des données entre les scénarios ou entre des exécutions distinctes d’un scénario. Dans la zone Entrepôts de données, vous pouvez afficher et gérer les entrepôts de données détenus par votre équipe. | [Entrepôts de données](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Structures de données <br> ![Icône Structures de données](assets/data-structure-icon.png) | Les structures de données décrivent le format des données transférées vers Fusion. Elles sont généralement utilisées pour sérialiser ou analyser des formats tels que JSON, XML et CSV. Dans les structures de données, vous pouvez afficher et gérer les structures de données détenues par votre équipe. | [Structures de données](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| Fonctions <br> ![ Icône Fonctions ](assets/functions-icon.png) | Les fonctions personnalisées sont des fonctions JavaScript qui peuvent être ajoutées aux scénarios pour manipuler et transformer les données. <br>Votre entreprise doit disposer d’une licence Adobe App Builder pour créer et utiliser des fonctions personnalisées. | [Mapper des données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >

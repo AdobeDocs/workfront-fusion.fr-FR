@@ -7,10 +7,10 @@ description: Découvrez comment ajouter une fonction pour mettre à jour une tâ
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 20%
+source-wordcount: '603'
+ht-degree: 19%
 
 ---
 
@@ -70,7 +70,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 1. Dans la zone Sélectionner les champs à mapper, sélectionnez Nom.
 
    Un champ Nom s’ouvre.
-1. Passez à [&#x200B; Mapper la fonction pour la mise à jour du nom &#x200B;](#map-the-function-for-the-name-update).
+1. Passez à [ Mapper la fonction pour la mise à jour du nom ](#map-the-function-for-the-name-update).
 
 ### Mappez la fonction pour la mise à jour du nom.
 
@@ -87,7 +87,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
    L’entrée de cet exemple est le nom de l’événement à partir duquel le projet a été converti.
 
 1. Déplacez le curseur entre les parenthèses, car c&#39;est là que va se trouver l&#39;entrée.
-1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![&#x200B; Icône de sortie du module &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png)
+1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![ Icône de sortie du module ](assets/toolbar-icon-functions-you-map-from-other-modules.png)
 1. Sélectionnez le bloc de nom qui a été généré par votre premier module.
 
    Le bloc de nom apparaît dans la fonction .
@@ -111,4 +111,4 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
 
 ## Ressources
 
-* [Mapper des éléments à l’aide de fonctions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Mappage d’éléments à l’aide de fonctions intégrées](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

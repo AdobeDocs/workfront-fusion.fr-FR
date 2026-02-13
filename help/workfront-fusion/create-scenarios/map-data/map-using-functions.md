@@ -1,22 +1,23 @@
 ---
-title: Mapper des éléments à l’aide de fonctions
+title: Mappage d’éléments à l’aide de fonctions intégrées
 description: Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour créer des formules simples ou complexes.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 29%
+source-wordcount: '711'
+ht-degree: 45%
 
 ---
 
-# Mapper un élément à l’aide de fonctions
+# Mappage d’un élément à l’aide de fonctions intégrées
 
-Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour créer des formules simples ou complexes. Les fonctions disponibles sont similaires à celles d’Excel et de certains langages de programmation :
+Workfront Fusion inclut des fonctions intégrées qui vous permettent de créer des formules simples ou complexes. Ces fonctions couvrent un large éventail de cas d’utilisation, y compris les fonctions pour les tableaux, les chaînes, les nombres et les données des modules précédents.
 
-* Ils évaluent la logique générale, les mathématiques, le texte, les dates et les tableaux.
-* Ils vous permettent d’effectuer une logique conditionnelle et des transformations de valeurs d’élément, telles que la conversion d’un texte en majuscules, le rognage de texte, la conversion d’une date dans un autre format, etc.
+En outre, vous pouvez créer des fonctions personnalisées que vos scénarios peuvent ensuite utiliser pour transformer et manipuler les données.
+
+Pour plus d’informations et d’instructions sur les fonctions personnalisées, voir [Mappage de données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Conditions d’accès
 
@@ -27,8 +28,8 @@ Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour cré
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,17 +38,24 @@ Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour cré
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p><ul><li>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li><li>Vous devez disposer d’une licence Adobe App Builder pour utiliser des fonctions personnalisées.</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Insérer des fonctions dans les champs
+## Mappage de données à l’aide de fonctions intégrées
+
+Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour créer des formules simples ou complexes. Les fonctions disponibles sont similaires aux fonctions d’Excel et de certains langages de programmation :
+
+* Elles évaluent la logique générale, les maths, le texte, les dates et les tableaux.
+* Elles vous permettent d’effectuer une logique conditionnelle et des transformations des valeurs d’élément, comme convertir du texte en majuscules, rogner du texte, convertir une date dans un format différent, etc.
+
+### Insérer des fonctions dans les champs
 
 Pour insérer une fonction dans un champ, procédez comme suit :
 
@@ -57,7 +65,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 1. Cliquez sur le champ dans lequel vous souhaitez insérer une fonction.
 1. Sélectionnez l’onglet dans le panneau de mappage qui contient la fonction que vous souhaitez insérer.
 
-   Pour plus d’informations sur les onglets du panneau de mappage, voir [&#x200B; Présentation des fonctions &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   Pour plus d’informations sur les onglets du panneau de mappage, voir [ Présentation des fonctions ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
    1. Cliquez sur le nom de la fonction.
 
       Ou
@@ -86,7 +94,7 @@ Dans cet exemple, la fonction substring limite le nom du projet à 50 caractèr
 
 >[!ENDSHADEBOX]
 
-## Imbriquer des fonctions
+### Imbriquer des fonctions
 
 Vous pouvez imbriquer des fonctions entre elles.
 
@@ -112,7 +120,7 @@ Pour imbriquer une fonction :
 1. Continuez à configurer la fonction selon vos besoins.
 1. Continuez à configurer le module ou cliquez sur **OK**.
 
-## Utiliser des fonctions [!DNL Google Sheets]
+### Utiliser des fonctions [!DNL Google Sheets]
 
 Si Workfront Fusion ne comporte pas de fonction que vous souhaitez utiliser, mais qu’elle est présentée par [!DNL Google Sheets], vous pouvez l’utiliser en procédant comme suit :
 

@@ -4,10 +4,10 @@ description: Le mappage désigne le processus d’affectation des sorties d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Fonction avec plusieurs éléments et du texte
 >[!ENDSHADEBOX]
 
 
-Pour plus d’informations sur le mappage, consultez les articles sous [Mapper des données : index des articles](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
+Pour plus d’informations sur le mappage, consultez les articles dans [Mapper des données : index des articles](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Les autres onglets comprennent des fonctions, des opérateurs et des mots-clés 
 
 Pour plus d’informations sur les onglets de fonctions, consultez [Vue d’ensemble des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Pour plus d’informations sur le mappage des éléments à l’aide de fonctions, consultez [Mapper des éléments à l’aide de fonctions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [ Mappage d’éléments à l’aide de fonctions intégrées ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Collections
 

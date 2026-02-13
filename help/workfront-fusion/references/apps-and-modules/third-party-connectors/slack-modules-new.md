@@ -3,10 +3,11 @@ title: Modules Slack
 description: Dans un scénario  [!DNL Adobe Workfront Fusion] , vous pouvez automatiser les workflows qui utilisent Slack, ainsi que le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
+exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '4580'
-ht-degree: 37%
+source-wordcount: '4581'
+ht-degree: 38%
 
 ---
 
@@ -20,9 +21,9 @@ ht-degree: 37%
 
 Dans un scénario [!DNL Adobe Workfront Fusion], vous pouvez automatiser les workflows qui utilisent [!DNL Slack] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -34,7 +35,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -43,22 +44,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
-   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -92,9 +93,9 @@ Le connecteur Slack utilise les éléments suivants :
 
 Lorsque vous configurez les modules [!DNL Slack], [!DNL Workfront Fusion] affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Slack] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Messages](#messages)
 * [Fichiers](#files)
@@ -103,7 +104,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Favoris](#stars)
 * [Éléments enregistrés](#saved-items)
 * [Épingles](#pins)
-* [Utilisateurs](#users)
+* [Utilisateurs et utilisatrices](#users)
 * [Rappels](#reminders)
 * [Événements](#events)
 * [Profil](#profile)
@@ -260,7 +261,7 @@ Ce module d’action récupère un thread de messages publiés dans une conversa
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -289,12 +290,12 @@ Ce module de recherche renvoie les messages correspondant à une requête de rec
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>Saisissez la requête par laquelle vous souhaitez effectuer la recherche. </p> <p>Pour plus d’informations sur la création de formules à partir du panneau de mappage, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Mappage d’éléments à l’aide de fonctions dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Saisissez la requête par laquelle vous souhaitez effectuer la recherche. </p> <p>Pour plus d’informations sur la création de formules à partir du panneau de mappage, voir <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref"> Mappage d’éléments à l’aide de fonctions intégrées dans [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -363,7 +364,7 @@ Ce module de déclenchement démarre le scénario lorsqu’un nouveau message es
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +389,7 @@ Ce module de déclenchement démarre le scénario lorsqu’un nouveau message es
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -465,7 +466,7 @@ Ce module d&#39;action renvoie et supprime le fichier spécifié.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -486,7 +487,7 @@ Ce module d’action renvoie des détails sur le fichier spécifié.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -507,7 +508,7 @@ Ce module d’action renvoie une liste de fichiers en fonction du filtre spécif
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -573,7 +574,7 @@ Ce module d’action crée ou charge un fichier dans [!DNL Slack]
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -610,7 +611,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouveau fichier est a
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -645,7 +646,7 @@ Ce module d’action archive un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -666,11 +667,11 @@ Ce module d’action crée un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Nom]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Name]</p> </td> 
    <td> <p>Saisissez ou mappez un nom pour le nouveau canal.</p> </td> 
   </tr> 
   <tr> 
@@ -712,7 +713,7 @@ Ce module d’action associe l’utilisateur à un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -733,7 +734,7 @@ Ce module d’action supprime l’utilisateur d’un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -812,7 +813,7 @@ Ce module d’action modifie l’objectif d’un canal
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -841,7 +842,7 @@ Ce module d’action modifie la rubrique d’un canal
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -870,7 +871,7 @@ Ce module d’action désarchive un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -893,7 +894,7 @@ Ce module d&#39;action ajoute une réaction à un élément.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -926,7 +927,7 @@ Ce module d’action renvoie les réactions qu’un utilisateur a effectuées.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -951,7 +952,7 @@ Ce module d&#39;action supprime une réaction d&#39;un élément.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -986,7 +987,7 @@ Ce module d’action fait d’un canal un canal étoilé.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1011,7 +1012,7 @@ Ce module d’action supprime l’étoile d’un canal étoilé.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1038,7 +1039,7 @@ Ce module d&#39;action supprime un élément des éléments enregistrés.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1063,7 +1064,7 @@ Ce module d’action ajoute un élément aux éléments enregistrés.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1090,7 +1091,7 @@ Ce module d’action épingle un élément à un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1119,7 +1120,7 @@ Ce module d’action détache un élément d’un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1150,7 +1151,7 @@ Ce module d’action récupère les détails d’un membre d’un espace de trav
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1171,7 +1172,7 @@ Ce module d’action invite de 1 à 30 utilisateurs à accéder à un canal publ
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1200,7 +1201,7 @@ Ce module d’action supprime un utilisateur d’un canal.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1229,7 +1230,7 @@ Ce module d’action renvoie une liste de tous les utilisateurs d’un espace de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1250,7 +1251,7 @@ Ce module d’action récupère les détails d’un utilisateur unique en utilis
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1271,7 +1272,7 @@ Ce module de déclenchement démarre le scénario lorsqu’un nouvel utilisateur
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1340,7 +1341,7 @@ Ce module d’action crée un rappel.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1448,7 +1449,7 @@ Ce module d’action met à jour le statut actuel d’un utilisateur.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Slack] à [!DNL Workfront Fusion], voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Créer une connexion à [!DNL Adobe Workfront Fusion] - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1466,7 +1467,7 @@ Ce module d’action met à jour le statut actuel d’un utilisateur.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Status expiration]</td> 
-   <td>Saisissez ou mappez la date et l’heure d’expiration du statut. Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercition</a>.</td> 
+   <td>Saisissez ou mappez la date et l’heure d’expiration du statut. Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type</a>.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1489,11 +1490,11 @@ Ce module d’action permet d’effectuer un appel authentifié personnalisé ve
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Saisissez un chemin relatif vers <code>https://slack.com/api/</code>. Exemple : <code>/users/identity</code>.</td> 
+   <td>Saisissez un chemin relatif à <code>https://slack.com/api/</code>. Exemple : <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   td&gt; <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -1505,7 +1506,7 @@ Ce module d’action permet d’effectuer un appel authentifié personnalisé ve
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1528,4 +1529,3 @@ La terminologie suivante peut être utile lors de la configuration des modules [
 * **Canal privé** : anciennement [!UICONTROL Groupe]
 * **Message direct** : anciennement [!UICONTROL IM]
 * **Canal** : [!UICONTROL conversation] dans la documentation de l’API, [!UICONTROL canal] dans l’application [!DNL Slack].
-
