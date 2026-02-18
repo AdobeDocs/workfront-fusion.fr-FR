@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# Module MCP (Model Context Protocol)
+# Module de l’agent MCP
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ Le protocole MCP (Model Context Protocol) permet de connecter en toute sécurit�
 Par exemple, vous pouvez configurer un serveur MCP pour connecter un modèle d’IA à Gmail. Lorsque vous envoyez l’invite « Donnez-moi mes 5 derniers e-mails de Gmail », elle peut accéder à votre Gmail et renvoyer les e-mails.
 
 Le module Model Context Protocol (MCP) permet de traiter une invite utilisateur à l’aide d’un modèle de langue et de serveurs MCP.
+
+Pour plus d’informations sur MCP dans les scénarios Fusion, voir [Ajouter une invite d’IA à votre scénario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Conditions d’accès
 
@@ -48,21 +50,24 @@ Le module Model Context Protocol (MCP) permet de traiter une invite utilisateur 
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
+## Conditions préalables
 
-
-
+* Vous devez avoir configuré les serveurs MCP auxquels vous avez l’intention de vous connecter.
+* Vous devez disposer d&#39;une clé LLM pour le modèle LLM (Large Language Model) sélectionné.
 
 ## Module Model Context Protocol et ses champs
-
-Lorsque vous configurez le module MCP, Adobe Workfront Fusion affiche les champs répertoriés ci-dessous. Un titre en gras dans un module indique un champ obligatoire.
 
 ### Traiter l&#39;invite utilisateur
 
 Ce module d’action traite une invite à l’aide du modèle de langue et des serveurs MCP que vous spécifiez.
+
+>[!NOTE]
+>
+>Ce module doit renvoyer un objet . Elle ne renvoie pas de sortie telle que des chaînes ou des nombres.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -94,7 +99,7 @@ Ce module d’action traite une invite à l’aide du modèle de langue et des s
   </tr> 
   <tr> 
    <td>Entrez votre invite </td> 
-   <td> <p>Saisissez ou mappez l'invite à traiter.</p> </td> 
+   <td> <p>Saisissez ou mappez l’invite à traiter.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -2,9 +2,9 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 98%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 98%
       * [Ajouter des modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [Ajouter un module dans un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [Configurer un module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [Ajouter une invite d’IA à votre scénario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [Générer un segment de scénario à l’aide de l’IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [Copier des modules ou des scénarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Créer des scénarios avec des modèles Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
