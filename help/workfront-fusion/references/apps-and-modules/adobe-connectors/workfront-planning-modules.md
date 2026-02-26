@@ -4,9 +4,9 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez lan
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 69%
 
 ---
@@ -44,7 +44,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 +++
 
-s## Prérequis
+## Conditions préalables
 
 Pour accéder à Workfront Planning, vous devez disposer des éléments suivants :
 
@@ -290,7 +290,7 @@ Ce module d&#39;action supprime un seul type d&#39;enregistrement dans Workfront
   </tbody>
 </table>
 
-#### Effectuer un appel API personnalisé.
+#### Effectuer un appel API personnalisé
 
 Ce module lance un appel API personnalisé à l’API [!DNL Adobe Workfront Planning].
 
@@ -332,7 +332,7 @@ Ce module lance un appel API personnalisé à l’API [!DNL Adobe Workfront Plan
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets autour de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
