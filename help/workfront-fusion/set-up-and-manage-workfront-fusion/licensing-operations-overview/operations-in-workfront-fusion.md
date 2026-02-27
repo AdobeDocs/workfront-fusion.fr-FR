@@ -34,7 +34,7 @@ Dans Adobe Workfront Fusion, une opération est une tâche effectuée par un m
 
 ## Limites d’opérations
 
-Votre organisation peut avoir une limite mensuelle d’opérations. Ce montant est basé sur le forfait Workfront acheté par votre entreprise. Le plan Ultimate[!UICONTROL  Workfront ] offre un nombre illimité d’opérations.
+Votre organisation peut avoir une limite mensuelle d’opérations. Ce montant est basé sur le forfait Workfront acheté par votre entreprise. Le plan Ultimate[!UICONTROL &#x200B; Workfront &#x200B;] offre un nombre illimité d’opérations.
 
 Si votre organisation a une limite mensuelle, vous serez averti lorsque votre organisation approchera de la limite. Si votre entreprise dépasse la limite, Workfront contactera votre entreprise pour s’assurer que votre plan répond à vos besoins.
 
