@@ -4,10 +4,10 @@ description: Les fonctionnalités Organisation et Équipes Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 56%
+source-wordcount: '612'
+ht-degree: 51%
 
 ---
 
@@ -26,6 +26,18 @@ Pour obtenir des instructions sur la création d’une équipe, voir [Créer une
 Les utilisateurs de Workfront Fusion appartiennent à une organisation.
 
 Les utilisateurs doivent être ajoutés à une organisation avant d’être ajoutés à une équipe.
+
+### Ressources de l’organisation
+
+Les ressources suivantes affectent l’ensemble de l’organisation de Fusion et sont donc détenues et gérées au niveau de l’organisation :
+
+* **Pools de programmes de travail :** : un pool de programmes de travail est une quantité de ressources de traitement Workfront Fusion dédiées à une organisation spécifique.
+
+  Pour plus d’informations, voir [Pools de salariés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Opérations** : une opération dans Adobe Workfront Fusion est une tâche effectuée par un module.
+
+  Pour plus d’informations, consultez [Opérations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ### Rôles d’organisation
 
@@ -47,7 +59,7 @@ Les équipes sont des groupes d’utilisateurs et d’utilisatrices qui partagen
 * Connexions
 * Webhooks
 * Clés
-* Magasins de données
+* Entrepôts de données
 * Structures de données
 * Paramètres de notification par e-mail
 
