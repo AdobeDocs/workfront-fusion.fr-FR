@@ -4,10 +4,10 @@ description: Gestion des utilisateurs d’Adobe Workfront Fusion dans votre entr
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 17%
+ht-degree: 35%
 
 ---
 
@@ -29,8 +29,8 @@ Les administrateurs d’Adobe Workfront Fusion peuvent gérer les rôles utilisa
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -39,7 +39,7 @@ Les administrateurs d’Adobe Workfront Fusion peuvent gérer les rôles utilisa
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -52,7 +52,7 @@ Les administrateurs d’Adobe Workfront Fusion peuvent gérer les rôles utilisa
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -63,6 +63,24 @@ Les administrateurs d’Adobe Workfront Fusion peuvent afficher et mettre à jou
 1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
 1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou de l’utilisatrice que vous souhaitez afficher.
 1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une organisation, cliquez sur la liste déroulante de la colonne **[!DNL Role]** de la ligne de l’organisation dans laquelle vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
+
+<!--
+
+### Considerations when adding or changing organization Owners
+
+Your organization can have more than one Owner. 
+
+When assigning a user to or from an Owner role, consider the following. 
+
+* Only an Owner can assign the Owner role, or assign another role to a current Owner.
+* Only Admins can be upgraded to Owner.
+* If there is only one Owner, that Owner role cannot be changed or removed.
+* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
+* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
+* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
+* When a new team is created, all Owners are automatically assigned as Team Admins.
+
+-->
 
 ## Afficher ou modifier les rôles utilisateur d&#39;une équipe
 

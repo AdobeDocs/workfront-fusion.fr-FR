@@ -5,7 +5,7 @@ description: Vous pouvez configurer des paramètres spécifiques pour les scéna
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 48%
@@ -183,7 +183,7 @@ Pour plus d’informations sur les erreurs, voir [Types d’erreur](/help/workfr
 >Ce paramètre n’est visible que si les deux conditions suivantes sont remplies :
 >
 >* Vous êtes un administrateur ou un propriétaire d’organisation
->* Plusieurs pools de collaborateurs sont associés à votre organisation.
+>* Plusieurs pools de collaborateurs sont associés à votre organisation
 
 Ce paramètre affecte le scénario à un pool de collaborateurs spécifique associé à votre organisation, ce qui vous permet de dédier des ressources aux scénarios à priorité élevée.
 
