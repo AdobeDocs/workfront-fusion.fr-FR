@@ -4,10 +4,10 @@ description: Le module routeur vous permet de diviser votre flux en plusieurs it
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 10%
+source-wordcount: '891'
+ht-degree: 20%
 
 ---
 
@@ -27,8 +27,8 @@ Les itinéraires sont traités de manière séquentielle, et non en parallèle. 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,13 +37,13 @@ Les itinéraires sont traités de manière séquentielle, et non en parallèle. 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,8 +54,7 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un routeur.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Dans l&#39;éditeur de scénarios, cliquez sur la poignée droite du module après lequel vous souhaitez ajouter le routeur.
-1. Sélectionnez **[!UICONTROL Contrôle de flux]** > **Routeur** dans la liste des modules qui s’affiche.
+1. Dans l&#39;éditeur de scénarios, cliquez sur la poignée droite du module après lequel vous souhaitez ajouter le routeur, puis sélectionnez **[!UICONTROL Flow Control]** > **Router** dans la liste des modules qui s&#39;affiche.
 
    ![Connecter l’itinéraire](assets/connect-the-router-350x108.png)
 
@@ -69,7 +68,11 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 
    Vous pouvez ajouter autant d’itinéraires que vous le souhaitez.
 
-1. Pour vérifier l’ordre des itinéraires, cliquez sur l’icône Alignement automatique ![icône Alignement automatique](assets/auto-align.png).
+1. Pour vérifier l’ordre des itinéraires, vérifiez le libellé de chaque itinéraire. La route 1 s’exécute en premier, puis la route 2, et ainsi de suite.
+
+   Ou
+
+   Cliquez sur l’icône Alignement automatique ![icône Alignement automatique](assets/auto-align.png).
 
    Les itinéraires sont organisés dans l’ordre dans lequel ils s’exécutent. L’itinéraire supérieur s’exécute en premier.
 
@@ -85,6 +88,8 @@ Vous pouvez placer un filtre sur un itinéraire après le module Routeur pour fi
 
 Si les données franchissent le filtre de plusieurs itinéraires, les données sont gérées par les deux itinéraires. L’itinéraire supérieur gère d’abord les données.
 
+Les routeurs avec filtres affichent l’icône de filtre ![icône de filtre](assets/fusion-scenario-filter-icon.png) sur le libellé de l’itinéraire.
+
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
@@ -93,15 +98,17 @@ Si les données franchissent le filtre de plusieurs itinéraires, les données s
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Configurez les conditions de filtrage.
 
-   Pour plus d’informations, voir [Ajouter un filtre à un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+   Pour plus d’informations, consultez [Ajouter un filtre à un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 
-1. Passez à [&#x200B; Configurer un itinéraire de secours &#x200B;](#configure-a-fallback-route).
+1. Passez à [ Configurer un itinéraire de secours ](#configure-a-fallback-route).
 
 ## Configuration d’un itinéraire de secours
 
 L’itinéraire de secours est l’itinéraire qui s’exécute sur les lots qui ne transmettent aucun filtre à un autre itinéraire.
+
+Les itinéraires de secours affichent « Secours » sur l’étiquette.
 
 Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 
@@ -113,7 +120,7 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-350x260.png)
+   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 

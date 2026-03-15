@@ -4,10 +4,10 @@ description: Dans certains scénarios, vous devez travailler uniquement avec des
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 45%
+source-wordcount: '525'
+ht-degree: 46%
 
 ---
 
@@ -79,28 +79,46 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
 
 ## Copier un filtre
 
-Actuellement, l’éditeur de scénarios inclut une fonctionnalité permettant de copier un filtre.
-
->[!NOTE]
->
->Si vous copiez les modules de chaque côté du filtre, le filtre est également copié.
->
->Pour plus d’informations sur la copie de modules, voir [Copie de modules ou de scénarios dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
-
-Pour copier un filtre sans copier de modules, vous pouvez utiliser l’outil de développement Fusion
+Vous pouvez copier un filtre existant et le coller ailleurs dans le scénario.
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Ouvrez Fusion DevTool en cliquant sur l’icône DevTool ![icône DevTool](assets/debugger-icon.png) près du bas de l’écran.
+1. Cliquez avec le bouton droit sur les points de connexion entre les modules où se trouve le filtre.
+1. Sélectionnez **Copier le filtre**.
+1. Cliquez avec le bouton droit sur les points de connexion entre les modules où vous souhaitez coller le filtre.
+1. Sélectionner **Coller le filtre
+1. (Facultatif) Pour ajuster le filtre, cliquez sur l’icône ou le libellé du filtre et saisissez les valeurs comme décrit dans [Ajouter un filtre entre deux modules](#add-a-filter-between-two-modules) dans cet article.
 
-   Si l’icône DevTool ne s’affiche pas, consultez [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) pour obtenir des instructions sur l’ouverture de l’outil de développement.
 
-1. Cliquez sur l’icône **[!UICONTROL Outils]** ![Outils DevTool](assets/devtools-tools-icon.png) dans la barre latérale gauche.
 
-1. Cliquez sur **[!UICONTROL Copier le filtre]**, puis configurez l’outil **[!UICONTROL Copier le filtre]** dans le panneau latéral droit :
 
-   1. Définissez le module **[!UICONTROL Source]** comme module juste après le filtre que vous souhaitez copier.
-   1. Définissez le **[!UICONTROL module cible]** comme le module juste après lequel vous souhaitez placer le filtre.
+<!--
 
-1. Cliquez sur **[!UICONTROL Exécuter]**.
+Currently, the scenario editor does include a feature for copying a filter.
+
+>[!NOTE]
+>
+>If you copy the modules on either side of the filter, the filter is also copied.
+>
+>For more information on copying modules, see [Copy modules or scenarios in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
+
+To copy a filter without copying modules, you can use the Fusion DevTool
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.
+   
+   If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.
+   
+1. Click the **[!UICONTROL Tools]** icon ![DevTool tools](assets/devtools-tools-icon.png) in the left side bar.
+
+1. Click **[!UICONTROL Copy Filter]**, then configure the **[!UICONTROL Copy Filter]** tool in the right side panel:
+
+   1. Set the **[!UICONTROL Source Module]** as the module directly after the filter you want to copy.
+   1. Set the **[!UICONTROL Target Module]** as the module that you want to place the filter directly after.
+
+1. Click **[!UICONTROL Run]**.
+
+-->
