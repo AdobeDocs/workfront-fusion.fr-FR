@@ -4,10 +4,10 @@ description: Gestion des utilisateurs d’Adobe Workfront Fusion dans votre entr
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
+source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 35%
+source-wordcount: '516'
+ht-degree: 25%
 
 ---
 
@@ -64,23 +64,19 @@ Les administrateurs d’Adobe Workfront Fusion peuvent afficher et mettre à jou
 1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou de l’utilisatrice que vous souhaitez afficher.
 1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une organisation, cliquez sur la liste déroulante de la colonne **[!DNL Role]** de la ligne de l’organisation dans laquelle vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
 
-<!--
+### Remarques concernant l’ajout ou la modification des propriétaires d’organisation
 
-### Considerations when adding or changing organization Owners
+Votre organisation peut avoir plusieurs propriétaires.
 
-Your organization can have more than one Owner. 
+Lors de l’affectation d’un utilisateur à un rôle de propriétaire ou à partir de ce rôle, tenez compte des points suivants.
 
-When assigning a user to or from an Owner role, consider the following. 
-
-* Only an Owner can assign the Owner role, or assign another role to a current Owner.
-* Only Admins can be upgraded to Owner.
-* If there is only one Owner, that Owner role cannot be changed or removed.
-* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
-* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
-* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
-* When a new team is created, all Owners are automatically assigned as Team Admins.
-
--->
+* Seul un propriétaire peut affecter le rôle de propriétaire ou affecter un autre rôle à un propriétaire actuel.
+* Seuls les administrateurs peuvent être mis à niveau vers le statut de propriétaire.
+* S’il n’existe qu’un seul propriétaire, ce rôle de propriétaire ne peut pas être modifié ni supprimé.
+* S’il n’existe qu’un seul propriétaire, celui-ci ne peut pas être supprimé s’il existe d’autres utilisateurs dans l’organisation.
+* Lorsqu’un rôle de propriétaire est affecté à un administrateur, celui-ci devient automatiquement administrateur dans toutes les équipes de l’organisation.
+* Lorsqu’un propriétaire est affecté à un autre rôle, il devient automatiquement membre de l’équipe dans toutes les équipes.
+* Lorsqu&#39;une nouvelle équipe est créée, tous les propriétaires sont automatiquement affectés en tant qu&#39;administrateurs d&#39;équipe.
 
 ## Afficher ou modifier les rôles utilisateur d&#39;une équipe
 
