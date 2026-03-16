@@ -4,10 +4,10 @@ description: Le module routeur vous permet de diviser votre flux en plusieurs it
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 20%
+source-wordcount: '984'
+ht-degree: 19%
 
 ---
 
@@ -80,6 +80,11 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
 
    ![Commande d&#39;itinéraire](assets/order-routes.png)
 
+1. (Facultatif) Pour désactiver une route, cliquez avec le bouton droit sur les points qui mènent du routeur à cette route, et sélectionnez **Désactiver la route**.
+
+   Les itinéraires désactivés affichent des points gris menant du routeur au premier module de l&#39;itinéraire, et affichent une icône d&#39;itinéraire désactivé ![icône d&#39;itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé.
+
+1. (Facultatif et conditionnel) Pour activer un itinéraire désactivé, cliquez sur l’icône d’itinéraire désactivé ![icône d’itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé de l’itinéraire.
 1. Passez à [Ajouter un filtre à un itinéraire](#add-a-filter-to-a-route).
 
 ## Ajouter un filtre à un itinéraire
@@ -101,8 +106,9 @@ Les routeurs avec filtres affichent l’icône de filtre ![icône de filtre](ass
    Pour plus d’informations, consultez [Ajouter un filtre à un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
+1. (Conditionnel) Si le nom du filtre est trop long pour tenir dans le libellé, pointez sur le libellé pour afficher le nom entier.
 
-1. Passez à [&#x200B; Configurer un itinéraire de secours &#x200B;](#configure-a-fallback-route).
+1. Passez à [ Configurer un itinéraire de secours ](#configure-a-fallback-route).
 
 ## Configuration d’un itinéraire de secours
 
@@ -120,7 +126,7 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-350x260.png)
+   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 
