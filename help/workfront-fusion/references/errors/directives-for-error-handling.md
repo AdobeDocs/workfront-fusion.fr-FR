@@ -5,10 +5,10 @@ description: Cet article décrit les directives que vous pouvez utiliser pour la
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 42%
+source-wordcount: '583'
+ht-degree: 40%
 
 ---
 
@@ -55,7 +55,7 @@ Les directives de gestion des erreurs suivantes sont disponibles dans Workfront 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Restauration</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>L’exécution du scénario est arrêtée immédiatement.</li><li>Une phase de restauration est lancée sur tous les modules, dans une tentative de les restaurer tous à leur état initial. </li><li>Les modules suivants ne sont pas traités.</p></li><li> <p>Dans la plupart des cas, le scénario est désactivé après le nombre d’erreurs consécutives spécifié dans les paramètres du scénario. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Nombre d’erreurs consécutives</a>.</p> </li><li><p>Le statut d’exécution du scénario est marqué comme « Erreur ».</p></li></ul> <p><b>Remarque </b> : il s’agit du comportement par défaut si aucun itinéraire de gestionnaire d’erreurs n’est associé au module et que le paramètre <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Autoriser le stockage des exécutions incomplètes</a>Autoriser le stockage des exécutions incomplètes sous les paramètres du scénario  n’est pas coché.</p> </td> 
+   <td> <ul><li><p>L’exécution du scénario est arrêtée immédiatement.</li><li>Une phase de restauration est lancée sur tous les modules, dans une tentative de les restaurer tous à leur état initial. </li><li>Les modules suivants ne sont pas traités.</p></li><li> <p>Dans la plupart des cas, le scénario est désactivé après le nombre d’erreurs consécutives spécifié dans les paramètres du scénario. Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Nombre d’erreurs consécutives</a>.</p> </li><li><p>Le statut d’exécution du scénario est marqué comme « Erreur ».</p></li></ul> <p><b>Remarque </b> : il s’agit du comportement par défaut si aucun itinéraire de gestionnaire d’erreurs n’est associé au module et que le paramètre de scénario <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Autoriser le stockage des exécutions incomplètes</a> n’est pas coché.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Valider</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,11 +63,11 @@ Les directives de gestion des erreurs suivantes sont disponibles dans Workfront 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Reprendre</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Une sortie de substitution est spécifiée et fournie au module qui rencontre une erreur.</p> </li><li><p>Les modules suivants sont traités.</p></li><li> <p>Le statut d’exécution du scénario est marqué comme « succès ».</p></li></ul> </td> 
+   <td> <ul><li><p>Une sortie de substitution est spécifiée et fournie au module qui rencontre une erreur.</p> </li><li><p>Les modules suivants sont traités.</p></li>Si le gestionnaire d'erreurs se trouve sur un routeur, le scénario se poursuit par les itinéraires prévus.<li></li><li> <p>Le statut d’exécution du scénario est marqué comme « succès ».</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorer</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>L’erreur est ignorée.</li><li> Les modules suivants ne sont pas traités.</p> </li><li><p>S’il existe des bundles non traités, l’exécution du scénario se poursuit normalement.</p> </li><li><p>Le statut d’exécution du scénario est marqué comme « succès ».</p> </li></ul></td> 
+   <td><ul><li> <p>L’erreur est ignorée.</li><li> Les modules suivants ne sont pas traités.</p> </li><li><p>S’il existe des bundles non traités, l’exécution du scénario se poursuit normalement.</p> </li><li>Si le gestionnaire d'erreurs se trouve sur un routeur, les itinéraires suivants de ce routeur sont ignorés.</li><li><p>Le statut d’exécution du scénario est marqué comme « succès ».</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Interrompre</p> <p> <img src="assets/break.png"> </p> </td> 
