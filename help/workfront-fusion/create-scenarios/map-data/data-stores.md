@@ -4,9 +4,9 @@ description: Un entrepôt de données, comparable à une base de données ou à 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1356'
 ht-degree: 76%
 
 ---
@@ -40,8 +40,8 @@ Pour une vidéo de présentation des entrepôts de données dans Workfront Fusio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -50,13 +50,13 @@ Pour une vidéo de présentation des entrepôts de données dans Workfront Fusio
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -94,7 +94,7 @@ Avant de pouvoir utiliser un magasin de données dans un module, vous devez le c
 
 >[!NOTE]
 >
->Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL &#x200B; Le nombre maximum de magasins a atteint &#x200B;].
+>Votre entreprise dispose d’un nombre limité d’entrepôts de données disponibles. Si vous tentez de créer plus de magasins de données que vous n’en avez disponibles, Workfront renvoie une erreur [!UICONTROL  Le nombre maximum de magasins a atteint ].
 >
 >Pour plus d’informations, consultez dans cet article la section [Erreur Maximum d’entrepôts atteint](#maximum-stores-reached-error).
 
@@ -131,7 +131,7 @@ Avant de pouvoir utiliser un magasin de données dans un module, vous devez le c
 
 ### Configurer la structure de données
 
-1. Lors de la création ou de la modificationd’ un entrepôt de données, cliquez sur **[!UICONTROL Ajouter]**.
+1. Lors de la création ou de la modification d’un magasin de données, cliquez sur **[!UICONTROL Ajouter]** en regard du champ Structure de données .
 1. Dans la zone **[!UICONTROL Ajouter une structure de données]** qui s’affiche, configurez les champs suivants :
 
    <table style="table-layout:auto">
@@ -184,7 +184,7 @@ Vous pouvez modifier les propriétés et le contenu d’un magasin de données e
 Les propriétés d’un magasin de données incluent la structure de données utilisée par le magasin de données, ainsi que la taille du magasin de données.
 
 1. Cliquez sur **[!UICONTROL Entrepôts de données]** ![icône d’entrepôt de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone [!UICONTROL Entrepôts de données].
-1. Cliquez sur **[!UICONTROL Modifier]** ![Modifier le magasin de données](assets/data-store-edit.png) en regard du magasin de données à modifier.
+1. Cochez la case en regard de la banque de données à modifier, puis cliquez sur **Modifier** dans la bannière en bas de l’écran.
 1. (Facultatif) Si vous souhaitez remplacer la structure de données utilisée par ce magasin de données par une autre structure de données existante, sélectionnez-la dans le menu déroulant **[!UICONTROL Structure des données]**.
 
    Ou
@@ -197,10 +197,9 @@ Les propriétés d’un magasin de données incluent la structure de données ut
 ### Modifier le contenu d’un magasin de données
 
 1. Cliquez sur l’icône **[!UICONTROL Entrepôt de données]** ![icône d’entrepôt de données](assets/data-store-icon.png) dans le panneau de navigation de gauche pour ouvrir la zone [!UICONTROL Entrepôt de données].
-1. Cliquez sur **[!UICONTROL Parcourir]** à côté du magasin de données que vous souhaitez modifier.
-1. (Facultatif) Réorganisez les colonnes en les faisant glisser à l’emplacement souhaité.
-1. (Facultatif) [!UICONTROL Modifiez] une seule cellule en cliquant sur l’icône **[!UICONTROL Modifier]** dans cette cellule, puis saisissez la valeur souhaitée.
+1. Cochez la case en regard de la banque de données à modifier, puis cliquez sur **Parcourir** dans la bannière située en bas de l’écran.
 1. (Facultatif) Ajoutez un nouvel élément au magasin de données en cliquant sur **[!UICONTROL Ajouter]**, puis saisissez les informations du nouvel élément.
+1. (Facultatif) Supprimez un ou plusieurs éléments du magasin de données en cochant la case correspondant à cet élément, puis en cliquant sur **Supprimer la sélection** ou **Supprimer tout** dans le coin supérieur droit de l’écran.
 1. Cliquer sur **[!UICONTROL Enregistrer]**.
 
 ## Dépannage
