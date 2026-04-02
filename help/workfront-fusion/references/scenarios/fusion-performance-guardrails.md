@@ -4,10 +4,10 @@ description: L’automatisation du travail exige un traitement rapide, c’est p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 96%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -72,6 +72,7 @@ Pour plus d’informations, consultez [Utiliser des fichiers volumineux](/help/w
 ## Historique de l’exécution
 
 * Les journaux d’historique d’exécution sont limités à une taille de **100 Mo**. Si l’historique d’exécution dépasse cette taille, seuls les 100 premiers Mo s’affichent.
+* Si l’entrée ou la sortie d’une seule opération est supérieure à 15 Mo, elle n’apparaît pas dans l’historique d’exécution.
 * Si un scénario comporte plusieurs exécutions simultanées, seules 5 exécutions s’affichent dans la zone Exécutions de la page des détails du scénario. Cela est vrai même lorsque plus de 5 exécutions sont en cours d’exécution.
 
 ## Exécutions incomplètes
