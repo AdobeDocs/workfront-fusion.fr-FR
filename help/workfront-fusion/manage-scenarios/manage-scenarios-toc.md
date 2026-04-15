@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 70%
+source-wordcount: '93'
+ht-degree: 67%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 70%
 * [Afficher l’exécution d’un scénario spécifique](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [Afficher la file d’attente d’un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [Afficher le flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
+* [Afficher les relations de scénario chaîné](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
 * [Assistant IA dans Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Exécuter l’expert en notation de scénario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Supprimer les éléments de scénario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

@@ -4,14 +4,14 @@ description: Vous pouvez enchaîner des scénarios, ce qui permet à un scénari
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
+source-wordcount: '1267'
+ht-degree: 12%
 
 ---
 
-# Enchaînement de plusieurs scénarios
+# Enchaîner plusieurs scénarios
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Vous pouvez appeler plusieurs scénarios enfants à partir d’un scénario pare
 
 Lorsqu’un scénario parent attend qu’un scénario enfant renvoie des données, ce temps n’est pas comptabilisé dans le délai d’expiration du scénario parent. Par exemple, un scénario parent appelle 5 scénarios enfants, dont l’exécution prend chacun 10 minutes, pour un total de 50 minutes. L’exécution des modules du scénario parent lui-même prend 15 minutes. Le scénario parent n’expire pas, même si un total de 65 minutes s’est écoulé, ce qui dépasse la limite de délai de 40 minutes.
 
-Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Pour obtenir des instructions sur la configuration des modules Chain, voir [Modules Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
@@ -88,20 +88,22 @@ Tenez compte des bonnes pratiques suivantes lors du chaînage d’un scénario.
 
 ### Éviter la récursivité lors du chaînage de scénarios
 
-La récursivité se produit lorsqu’un scénario déclenche une nouvelle exécution de lui-même, ce qui déclenche une nouvelle exécution, et ainsi de suite dans une boucle infinie.
+La récursion se produit lorsqu’un scénario déclenche une nouvelle exécution de lui-même, ce qui déclenche une nouvelle exécution, et ainsi de suite dans une boucle infinie.
 
-La récursivité peut entraîner des problèmes de performances à la fois pour l’organisation propriétaire du scénario récursif et pour d’autres organisations.
+La récursion peut entraîner des problèmes de performances à la fois pour l’organisation propriétaire du scénario récursif et pour d’autres organisations.
 
 Lors du chaînage de scénarios, suivez ces pratiques pour éviter la récursivité :
 
 * Assurez-vous que **les scénarios enfants ne peuvent pas déclencher le scénario parent**. Par exemple, si un scénario parent est déclenché lors de la création d’une requête, assurez-vous que les scénarios enfants ne créent pas de requêtes.
 * Assurez-vous que **les scénarios enfants ne s’appellent pas**. Par exemple, si le scénario enfant A appelle le scénario enfant B, assurez-vous que le scénario enfant B n’appelle pas le scénario enfant A.
-* Assurez-vous qu’**un scénario ne peut pas s’appeler**. Par exemple, un scénario est déclenché lorsqu’une tâche est créée, et ce scénario crée deux tâches. Les deux nouvelles tâches déclenchent à nouveau le scénario, ce qui crée quatre nouvelles tâches. Chaque fois qu’une tâche est créée, le scénario est déclenché, et chaque fois qu’il s’exécute, le nombre de tâches double. Le nombre de tâches augmente de manière exponentielle.
+* Assurez-vous qu’**un scénario ne peut pas s’appeler**. Par exemple, un scénario est déclenché lorsqu’une tâche est créée et que ce scénario crée deux tâches. Les deux nouvelles tâches déclenchent à nouveau le scénario, ce qui crée quatre nouvelles tâches. Chaque fois qu’une tâche est créée, le scénario est déclenché, et chaque fois qu’il s’exécute, le nombre de tâches double. Le nombre de tâches augmente de manière exponentielle.
 
 >[!IMPORTANT]
 >
->* **Lorsqu’un scénario provoque une récursivité, il est désactivé par l’équipe d’ingénieurs de Fusion afin d’éviter d’autres problèmes de performances.**
->* La récursivité étant le résultat de la conception de scénario, vous devez concevoir vos scénarios de manière à ce que le scénario n’inclue pas d’actions qui déclenchent le scénario.
+>* **Lorsqu’un scénario entraîne une récursion, il est désactivé par l’équipe d’ingénierie de Fusion afin d’éviter d’autres problèmes de performances.**
+>* La récursion étant le résultat de la conception des scénarios, vous devez concevoir les vôtres de manière à ce qu’ils n’incluent pas d’actions qui déclenchent le scénario.
+>* Vous pouvez afficher un diagramme des relations entre les scénarios parents et enfants.
+>   Pour obtenir des instructions, voir [Afficher les relations de scénario chaîné](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Utilisation de la gestion des erreurs pour garantir une réponse
 
