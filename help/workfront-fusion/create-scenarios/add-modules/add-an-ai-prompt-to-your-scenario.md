@@ -3,9 +3,10 @@ title: Ajouter une invite d’IA à votre scénario
 description: Vous pouvez inclure dans votre scénario une invite d’IA qui se connecte à votre
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Ajouter une invite d’IA à votre scénario
 
 Vous pouvez inclure une invite d’IA dans votre scénario à l’aide du protocole MCP (Model Context Protocol) associé à des modèles de langage (LLM) volumineux. En les configurant dans le module Agent MCP, vous pouvez utiliser l’intelligence artificielle pour configurer des workflows efficaces, sécurisés et flexibles.
-
->[!NOTE]
->
->Cette fonctionnalité est distincte de la possibilité d’ajouter des modules à un scénario à l’aide de l’IA.
->
->Pour plus d’informations sur l’ajout de modules avec l’IA, voir [Générer un segment de scénario à l’aide de l’IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Présentation de Model Context Protocol
 
