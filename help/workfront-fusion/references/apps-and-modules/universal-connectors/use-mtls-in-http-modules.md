@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le protocole TLS mutuel dans vos modules HTTP 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 68%
@@ -67,11 +67,11 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez 
 
 +++
 
-## Fourniture de votre certificat public Workfront Fusion
+## Providing your Workfront Fusion public certificate
 
-Lorsque vous vous connectez à un service web avec une requête HTTP, le service web nécessite généralement un certificat public Workfront Fusion pour vérification. Cela permet au service web de comparer le certificat présenté dans la requête HTTP à celui du fichier, afin de s’assurer que le certificat se trouve sur la liste autorisée du service web.
+When you connect to a web service with an HTTP request, the web service usually requires a Workfront Fusion public certificate for verification. Cela permet au service web de comparer le certificat présenté dans la requête HTTP à celui du fichier, afin de s’assurer que le certificat se trouve sur la liste autorisée du service web.
 
-Pour obtenir des instructions sur le téléchargement du certificat public Adobe Workfront Fusion vers un service web, consultez la documentation du service web.
+For instructions on uploading the Adobe Workfront Fusion public certificate to a web service, see the web service&#39;s documentation.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Vous pouvez utiliser les liens suivants pour télécharger les certificats publi
 
 >[!IMPORTANT]
 >
->* Ces certificats publics Workfront Fusion expirent différents jours en fonction de votre cluster. Consultez le graphique ci-dessous pour savoir quand le vôtre expire. Après son expiration, vous devrez charger un nouveau certificat dans le service web. Nous vous recommandons ce qui suit :
+>* These Workfront Fusion public certificates expire on different days, depending on your cluster. Check the chart below to see when yours expires. After it expires you will need to upload a new certificate to the web service. Nous vous recommandons ce qui suit :
 >
 >   * Notez la date d’expiration et définissez un rappel pour penser à charger le certificat vers votre service web.
 >   * Mettez cette page en signet pour trouver facilement les nouveaux certificats.
@@ -92,28 +92,28 @@ Vous pouvez utiliser les liens suivants pour télécharger les certificats publi
 
 | Datacenter | Lien de téléchargement | Dates valides |
 | --- | --- | --- |
-| Centre de données US AWS | [Télécharger le certificat américain Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Du 29 janvier 2026 au 2 mars 2027 |
-| Cluster Azure aux États-Unis | [Télécharger le certificat Azure américain Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Du 21 septembre 2025 au 23 octobre 2026 |
-| Centre de données EU AWS | [Télécharger le certificat de l’UE Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Du 29 janvier 2026 au 2 mars 2027 |
-| Cluster Azure de l’UE | [Télécharger le certificat Azure de l’UE de Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Du 4 février 2026 au 8 mars 2027 |
+| Centre de données US AWS | [Télécharger le certificat américain Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| US Azure Cluster | [Télécharger le certificat Workfront Fusion US Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Du 21 septembre 2025 au 23 octobre 2026 |
+| Centre de données EU AWS | [Télécharger le certificat de l’UE Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
 
-### Certificats pour 2025
+### Certificates for 2025
 
 >[!IMPORTANT]
 >
->* Nous vous recommandons d’installer les certificats pour 2026, disponibles ci-dessus.
->* Ces certificats publics Workfront Fusion expirent le **4 avril 2026** (États-Unis et UE) ou le **25 novembre 2025** (Azure). Une fois le vôtre arrivé à expiration, vous devrez charger un nouveau certificat vers le service web. Nous vous recommandons ce qui suit :
+>* We recommend installing the certificates for 2026, available above.
+>* These Workfront Fusion public certificates expire on **April 4, 2026** (US and EU) or **November 25, 2025** (Azure). Une fois le vôtre arrivé à expiration, vous devrez charger un nouveau certificat vers le service web. Nous vous recommandons ce qui suit :
 >
 >   * Notez la date d’expiration et définissez un rappel pour penser à charger le certificat vers votre service web.
 >   * Mettez cette page en signet pour trouver facilement les nouveaux certificats.
 >
 >* Il s’agit de certificats mTLS non génériques.
 
-| Datacenter | Lien de téléchargement | Dates valides |
+| Datacenter | Download link | Dates valid |
 | --- | --- | --- |
-| Centre de données des États-Unis | [Télécharger le certificat américain Workfront Fusion 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Du 3 mars 2025 au 4 avril 2026 |
+| Centre de données des États-Unis | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
 | Centre de données de l’UE | [Télécharger le certificat de l’UE Workfront Fusion 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Du 3 mars 2025 au 4 avril 2026 |
-| Cluster Azure | [Télécharger le certificat Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | Du 24 octobre 2024 au 25 novembre 2025 |
+| Cluster Azure | [Télécharger le certificat Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
 
 <!--
 
@@ -136,16 +136,16 @@ Vous pouvez utiliser les liens suivants pour télécharger les certificats publi
 
 -->
 
-## Activation du TLS mutuel dans les modules HTTP Workfront Fusion
+## Enabling Mutual TLS in Workfront Fusion HTTP modules
 
-Tous les modules de requête Workfront Fusion [!UICONTROL HTTP] ont la possibilité d’activer le protocole TLS mutuel.
+All Workfront Fusion [!UICONTROL HTTP] request modules have the option to enable Mutual TLS.
 
 Pour activer le protocole TLS mutuel dans un module de requête [!UICONTROL HTTP], procédez comme suit :
 
 1. Ajoutez un module de requête [!UICONTROL HTTP] à votre scénario.
 1. Commencez à configurer le module.
 
-   Pour obtenir des instructions sur la configuration d’un module de requête [!UICONTROL HTTP], consultez l’article approprié sous [Connecteurs universels](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
+   For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
 1. Activez **[!UICONTROL Afficher les paramètres avancés]** près du bas du module.
 1. Activez **[!UICONTROL Utiliser TLS mutuel]**.

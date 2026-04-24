@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 94%
+source-wordcount: '4099'
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows 
 >
 >Avant de lire cet article, consultez la documentation de l’API et familiarisez-vous avec les fonctionnalités de [!DNL GitLab].
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -34,8 +34,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -44,22 +44,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -88,16 +88,16 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
    </table>
 
 
-1. Cliquez sur **[!UICONTROL Continuer]**.
+1. Cliquez sur **[!UICONTROL Continuer]**.
 1. Cliquez sur **[!UICONTROL Autoriser]** pour créer la connexion et revenir au module.
 
 ## Modules [!DNL GitLab] et leurs champs
 
 Lorsque vous configurez les modules [!DNL GitLab], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL GitLab] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Déclencheurs
 
@@ -186,12 +186,12 @@ Ce module [!UICONTROL déclencheur instantané] lance un scénario lorsqu’un p
 
 +++
 
-+++**[!UICONTROL Contrôler les requêtes de fusion]**
++++**[!UICONTROL Contrôler les demandes de fusion]**
 
 Ce module de déclenchement instantané démarre un scénario lorsque l’un des événements suivants se produit :
 
-* Une nouvelle requête de fusion est créée.
-* Une requête de fusion existante est mise à jour, fusionnée ou fermée.
+* Une nouvelle demande de fusion est créée.
+* Une demande de fusion existante est mise à jour, fusionnée ou fermée.
 * Une validation est ajoutée dans la branche source.
 
 
@@ -201,16 +201,16 @@ Ce module de déclenchement instantané démarre un scénario lorsque l’un des
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les requêtes de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
+   <td><p>Sélectionnez le webhook que vous souhaitez utiliser pour ce déclencheur ou ajoutez un nouveau webhook. </p><p>Pour ajouter un webhook, <ol><li>cliquez sur <b>[!UICONTROL Add]</b> en regard du champ [!UICONTROL webhook].</li><li>Saisissez les informations suivantes : <ul><li>Un nom pour le webhook.</li><li>La connexion que vous souhaitez utiliser pour ce webhook.</li><li>Le projet pour lequel vous souhaitez que le webhook contrôle les demandes de fusion.</li></ul></li><li>Cliquez sur <b>[!UICONTROL Save]</b> pour enregistrer le webhook et revenir au module. </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Contrôler les commentaires de requête de fusion]**
++++**[!UICONTROL Contrôler les commentaires de demande de fusion]**
 
-Ce module de déclenchement instantané démarre un scénario lorsqu’un commentaire est fait sur une requête de fusion.
+Ce module de déclenchement instantané démarre un scénario lorsqu’un commentaire est fait sur une demande de fusion.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -252,7 +252,7 @@ Ce module de déclenchement planifié lance un scénario lors de l’ajout d’u
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 
@@ -273,7 +273,7 @@ Ce module de déclenchement planifié lance un scénario lorsqu’une nouvelle b
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 
@@ -363,7 +363,7 @@ Ce module d’action annule une seule version d’un projet.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour plus d’informations sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, voir <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -652,7 +652,7 @@ Ce module d’action permet de récupérer les détails d’un problème.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID]</td> 
-   <td> <p>Saisissez ou mappez le nom du problème pour lequel vous souhaitez obtenir des détails.</p> </td> 
+   <td> <p>Saisissez ou mappez le nom du problème pour lequel vous souhaitez récupérer des détails.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -667,31 +667,31 @@ Pour plus d’informations sur les champs, voir [Obtenir une note de problème u
 
 +++
 
-+++**[!UICONTROL Obtenir une requête de fusion unique]**
++++**[!UICONTROL Obtenir une demande de fusion unique]**
 
-Ce module d’action permet de récupérer des informations sur une requête de fusion unique.
+Ce module d’action permet de récupérer des informations sur une demande de fusion unique.
 
-Pour plus d’informations sur les champs, voir [Obtenir une requête de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr) dans la documentation [!DNL GitLab].
-
-+++
-
-+++**[!UICONTROL Obtenir les modifications d’une requête de fusion unique]**
-
-Ce module de recherche récupère des informations sur la requête de fusion, y compris ses fichiers et ses modifications.
-
-Pour plus d’informations sur les champs, voir [Obtenir les modifications d’un requête de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-changes) dans la documentation [!DNL GitLab].
+Pour plus d’informations sur les champs, voir [Obtenir une demande de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr) dans la documentation [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL Obtenir les engagements d’une requête de fusion unique]**
++++**[!UICONTROL Obtenir les modifications d’une demande de fusion unique]**
 
-Ce module d’action permet de récupèrer une liste de engagements de requête de fusion.
+Ce module de recherche récupère des informations sur la demande de fusion, y compris ses fichiers et ses modifications.
 
-Pour plus d’informations sur les champs, voir [Obtenir les engagements d’une requête de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-commits) dans la documentation [!DNL GitLab].
+Pour plus d’informations sur les champs, voir [Obtenir les modifications d’un demande de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-changes) dans la documentation [!DNL GitLab].
 
 +++
 
-+++**[!UICONTROL Obtenir une note de requête de fusion unique]**
++++**[!UICONTROL Obtenir les engagements d’une demande de fusion unique]**
+
+Ce module d’action permet de récupérer une liste de engagements de demande de fusion.
+
+Pour plus d’informations sur les champs, voir [Obtenir les engagements d’une demande de fusion unique](https://docs.gitlab.com/ee/api/merge_requests.html#get-single-mr-commits) dans la documentation [!DNL GitLab].
+
++++
+
++++**[!UICONTROL Obtenir une note de demande de fusion unique]**
 
 Ce module d’action renvoie une note unique pour une demande de fusion donnée.
 
@@ -767,7 +767,7 @@ Pour plus d’informations sur les champs, voir [Répertorier toutes les notes d
 
 Ce module permet d’obtenir une liste de toutes les notes pour un extrait de code unique. Les notes des extraits de code sont des commentaires que les utilisateurs et utilisatrices peuvent publier sur un extrait de code.
 
-Pour plus d’informations sur les champs, voir [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) dans la documentation [!DNL GitLab].
+Pour plus d’informations sur les champs, voir [Liste de tous les fragments de code](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) dans la documentation [!DNL GitLab].
 
 +++
 
@@ -830,7 +830,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les dem
 
 +++**[!UICONTROL Répertorier les projets détenus]**
 
-Ce module de recherche permet de retrouver les projets dont la personne authentifiée est propriétaire.
+Ce module de recherche permet de récupérer les projets dont la personne authentifiée est propriétaire.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les projets des utilisateurs et utilisatrices](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) dans la documentation [!DNL GitLab].
 
@@ -838,7 +838,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les pro
 
 +++**[!UICONTROL Répertorier les versions de projet]**
 
-Ce module de recherche permet d’obtenir la liste des versions d’un projet.
+Ce module de recherche permet de récupérer la liste des versions d’un projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les traitements de projet](https://docs.gitlab.com/ee/api/jobs.html#list-project-jobs) dans la documentation [!DNL GitLab].
 
@@ -846,7 +846,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les tra
 
 +++**[!UICONTROL Répertorier les déploiements de projet]**
 
-Ce module de recherche permet d’obtenir une liste des déploiements dans un projet.
+Ce module de recherche permet de récupérer une liste des déploiements dans un projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les déploiements de projet](https://docs.gitlab.com/ee/api/deployments.html#list-project-deployments) dans la documentation [!DNL GitLab].
 
@@ -854,7 +854,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les dé
 
 +++**[!UICONTROL Répertorier les notes sur les problèmes d’un projet]**
 
-Ce module de recherche permet d’obtenir une liste de toutes les notes relatives à un problème donné.
+Ce module de recherche permet de récupérer une liste de toutes les notes relatives à un problème donné.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les notes sur les problèmes d’un projet](https://docs.gitlab.com/ee/api/notes.html#list-project-issue-notes) dans la documentation [!DNL GitLab].
 
@@ -870,7 +870,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les pro
 
 +++**[!UICONTROL Répertorier les jalons d’un projet]**
 
-Ce module de recherche permet de retrouver tous les jalons du projet.
+Ce module de recherche permet de récupérer tous les jalons du projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les jalons d’un projet](https://docs.gitlab.com/ee/api/milestones.html#list-project-milestones) dans la documentation [!DNL GitLab].
 
@@ -878,7 +878,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les jal
 
 +++**[!UICONTROL Répertorier les pipelines d’un projet]**
 
-Ce module de recherche permet de retrouver tous les pipelines du projet.
+Ce module de recherche permet de récupérer tous les pipelines du projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les pipelines d’un projet](https://docs.gitlab.com/ee/api/pipelines.html#list-project-pipelines) dans la documentation [!DNL GitLab].
 
@@ -894,7 +894,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les bal
 
 +++**[!UICONTROL Répertorier les variables du projet]**
 
-Ce module de recherche permet d’obtenir la liste des variables d’un projet.
+Ce module de recherche permet de récupérer la liste des variables d’un projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les variables du projet](https://docs.gitlab.com/ee/api/project_level_variables.html#list-project-variables) dans la documentation [!DNL GitLab].
 
@@ -902,7 +902,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les var
 
 +++**[!UICONTROL Répertorier les projets]**
 
-Ce module de recherche permet de retrouver tous les projets dont la personne authentifiée est membre.
+Ce module de recherche permet de récupérer tous les projets dont la personne authentifiée est membre.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier tous les projets](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) dans la documentation [!DNL GitLab].
 
@@ -918,7 +918,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les bra
 
 +++**[!UICONTROL Répertorier les engagements du référentiel]**
 
-Ce module de recherche permet d’obtenir une liste des engagements du référentiel dans un projet.
+Ce module de recherche permet de récupérer une liste des engagements du référentiel dans un projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier les engagements du référentiel](https://docs.gitlab.com/ee/api/commits.html#list-repository-commits) dans la documentation [!DNL GitLab].
 
@@ -926,7 +926,7 @@ Pour plus d’informations sur les champs, voir la section [Répertorier les eng
 
 +++**[!UICONTROL Répertorier les contributeurs et contributrices du référentiel]**
 
-Ce module de recherche permet d’obtenir la liste des contributeurs et contirbutrices d’un référentiel.
+Ce module de recherche permet de récupérer la liste des contributeurs et contributrices d’un référentiel.
 
 Pour plus d’informations sur les champs, voir la section [Contributeurs et contributrices](https://docs.gitlab.com/ee/api/repositories.html#contributors) dans la documentation [!DNL GitLab].
 
@@ -934,7 +934,7 @@ Pour plus d’informations sur les champs, voir la section [Contributeurs et con
 
 +++**[!UICONTROL Répertorier l’arborescence du référentiel]**
 
-Ce module de recherche permet d’obtenir une liste des fichiers et des répertoires du référentiel dans un projet.
+Ce module de recherche permet de récupérer une liste des fichiers et des répertoires du référentiel dans un projet.
 
 Pour plus d’informations sur les champs, voir la section [Répertorier l’arborescence du référentiel](https://docs.gitlab.com/ee/api/repositories.html#list-repository-tree) dans la documentation [!DNL GitLab].
 
@@ -1039,7 +1039,7 @@ Pour plus d’informations sur les champs, voir la section [Réessayer des trait
 
 +++**[!UICONTROL Obtenir une variable]**
 
-Ce module permet d’obtenir les détails d’une variable spécifique d’un projet.
+Ce module permet de récupérer les détails d’une variable spécifique d’un projet.
 
 Pour plus d’informations sur les champs, voir la section [Afficher les détails de la variable](https://docs.gitlab.com/ee/api/project_level_variables.html#show-variable-details) dans la documentation [!DNL GitLab].
 

@@ -6,9 +6,9 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 61307bb2-ff4e-461f-b3ce-a3e26b39e95e
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '155'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Nouvelle option de connexion Fusion pour les organisations utilisant Adobe Identity Management
 

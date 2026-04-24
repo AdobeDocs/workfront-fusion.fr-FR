@@ -4,7 +4,7 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion d’Ado
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 100%
@@ -501,7 +501,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 >   Pour valider les utilisateurs et utilisatrices ajoutés dans un lot volumineux, vous pouvez ajouter ce lot de personnes directement dans Adobe Admin Console.
 >
->   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
+>   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
 
 +++
 
@@ -695,7 +695,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 
 +++
 
-### **Obtenir une URL de fichier présignée**
++++ **Obtenir une URL de fichier présignée**
 
 Ce module d’action reçoit des URL de fichier prédéfinies qui peuvent être utilisées ultérieurement par d’autres API.
 
@@ -717,6 +717,8 @@ Ce module d’action reçoit des URL de fichier prédéfinies qui peuvent être 
   </tr> 
  </tbody> 
 </table>
+
++++
 
 +++ **[!UICONTROL Actions diverses]**
 
@@ -2366,7 +2368,7 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 >
 >   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, voir [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
 >
->   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr)].
+>   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Le module [!UICONTROL Surveiller les événements] de Workfront déclenche des scénarios basés sur un webhook qui crée un abonnement à un événement dans l’API Workfront. L’abonnement à un événement est un ensemble de données qui détermine les événements envoyés au webhook. Par exemple, si vous configurez un module [!UICONTROL Surveiller les événements] qui recherche les problèmes, alors l’abonnement à l’événement envoie uniquement les événements liés aux problèmes.
 

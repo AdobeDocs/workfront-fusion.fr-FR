@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -133,7 +133,7 @@ Pour [!DNL Jira Software] connecter à Workfront Fusion, vous devez créer un je
    * **Type**
    * **[!UICONTROL URL du service] :** il s’agit de l’URL de base que vous utilisez pour accéder à votre compte Jira. Exemple : `yourorganization.atlassian.net`
    * **[!UICONTROL Le nom d’utilisateur ou d’utilisatrice]**
-   * **[!UICONTROL Le jeton d’API] :** il s’agit du jeton d’API que vous avez créé dans la section [Créer un jeton d’API dans [!DNL Jira]](#create-an-api-token-in-jira) de cet article.
+   * **[!UICONTROL Jeton API] :** il s’agit du jeton API que vous avez créé dans la section [Créer un jeton API dans [!DNL Jira]](#create-an-api-token-in-jira) de cet article.
 
 1. Cliquez sur [!UICONTROL Continuer] pour créer la connexion et revenir au module.
 
@@ -141,7 +141,7 @@ Pour [!DNL Jira Software] connecter à Workfront Fusion, vous devez créer un je
 
 Pour autoriser une connexion entre Workfront Fusion et [!DNL Jira Server], vous avez besoin de votre clé de client, de votre clé privée et de l’URL du service. Vous devrez peut-être contacter votre administrateur [!DNL Jira] pour cette information.
 
-* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configurer l’application cliente en tant que consommatrice dans  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Création d’une connexion  [!DNL Jira] serveur ou au centre de données Jira dans Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -233,7 +233,7 @@ Pour acquérir une clé privée pour votre connexion [!DNL Workfront Fusion Jira
    </table>
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  &#x200B;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  ](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### Créer une connexion à [!DNL Jira Server] ou [!DNL Jira Data Center] dans Workfront Fusion
 

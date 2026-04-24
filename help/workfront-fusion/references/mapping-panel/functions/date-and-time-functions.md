@@ -4,7 +4,7 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
 ht-degree: 90%
@@ -333,7 +333,7 @@ La fonction `formatDate` renvoie une représentation textuelle de la valeur Date
 
 **Exemples :** le scénario et le fuseau horaire web ont tous deux été définis sur `Europe/Prague` dans ces exemples.
 
-![Exemple de fonction Date/Heure](assets/date&time-functions-examples-350x61.png)
+![Exemple de fonction Date/Heure](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Cette section est adaptée à Workfront Fusion à partir de la page web [!DNL Ex
 
 Si vous devez calculer une date correspondant au n-ième jour de la semaine dans le mois (par exemple, premier mardi, troisième vendredi, etc.), vous pouvez utiliser la formule suivante :
 
-![Calculer le énième jour](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calculer le énième jour](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -561,7 +561,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

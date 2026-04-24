@@ -4,10 +4,10 @@ description: L’application JSON d’Adobe Workfront Fusion fournit des modul
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -24,8 +24,8 @@ L’application Adobe Workfront Fusion [!UICONTROL JSON] fournit des modules pou
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +34,13 @@ L’application Adobe Workfront Fusion [!UICONTROL JSON] fournit des modules pou
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -79,7 +79,7 @@ Si le champ Chaîne de caractères JSON contient une collection `{ ... }`, la so
 ```
 
 
-![&#x200B; Collection JSON &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![ Collection JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 ]
 ```
 
-![&#x200B; Tableau JSON &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![ Tableau JSON ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -111,9 +111,9 @@ Si le champ Chaîne de caractères JSON contient un tableau `[ ... ]`, la sortie
 
 Lorsque vous configurez les modules [!DNL JSON], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces champs, d’autres champs JSON peuvent s’afficher, en fonction de facteurs tels que votre niveau d’accès à l’application ou au service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Convertir JSON en XML](#convert-json-to-xml)
 * [Analyser la chaîne JSON](#parse-json)
@@ -238,7 +238,7 @@ Ce module d’action transforme un objet en une chaîne JSON.
 
 **Exemple :** l’exemple suivant montre comment transformer des enregistrements de données de [!DNL Google Sheets] au format JSON :
 
-1. Placez le module [!DNL Google Sheets] > [!UICONTROL Sélectionner des lignes] dans votre scénario pour récupérer les données. Configurez le module pour récupérer les lignes de votre feuille de calcul [!DNL Google]. Définissez le **[!UICONTROL Nombre maximal de lignes renvoyées]** sur un petit nombre, mais plus grand que 1 à des fins de test (par exemple, trois). Exécutez le module [!DNL Google Sheets] en cliquant dessus avec le bouton droit et en choisissant « **[!UICONTROL Exécuter ce module uniquement]** ». Vérifiez la sortie du module.
+1. Placez le module [!DNL Google Sheets] > [!UICONTROL Sélectionner des lignes] dans votre scénario pour récupérer les données. Configurez le module pour récupérer les lignes de votre feuille de calcul [!DNL Google]. Définissez la variable **[!UICONTROL Nombre maximal de lignes renvoyées]** sur un petit nombre, mais supérieur à un à des fins de test (exemple, trois). Exécutez le module [!DNL Google Sheets] en cliquant dessus avec le bouton droit et en choisissant « **[!UICONTROL Exécuter ce module uniquement]** ». Vérifiez la sortie du module.
 
 1. Connectez-vous au module [!UICONTROL Agrégateur de tableau] après le module [!DNL Google Sheets]. Dans la configuration du module, choisissez le module [!DNL Google Sheets] dans le champ **[!UICONTROL Nœud source]**. Laissez les autres champs tels quels pour le moment.
 
@@ -285,7 +285,7 @@ Assurez-vous que le contenu JSON est correctement mappé dans le module [!UICONT
 
 ### Le module échoue lors de l’utilisation d’instructions conditionnelles dans JSON.
 
-Lorsque vous utilisez des instructions conditionnelles telles que `if` dans JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.
+Lorsque vous utilisez des instructions conditionnelles telles que `if` dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.
 
 >[!BEGINSHADEBOX]
 

@@ -4,7 +4,7 @@ description: Vous pouvez afficher un journal des activités, telles que la créa
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Les journaux d’activité affichent trois mois de données. Les données datant
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
+   <td> <p>Workflow Adobe Workfront Automatisation et intégration d’Ultimate et d’Adobe Workfront Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -43,7 +43,7 @@ Les journaux d’activité affichent trois mois de données. Les données datant
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
