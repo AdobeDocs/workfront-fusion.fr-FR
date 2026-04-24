@@ -4,7 +4,7 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4276'
 ht-degree: 52%
@@ -86,7 +86,7 @@ Le connecteur SharePoint utilise les éléments suivants :
 
 ## Connexion de Microsoft SharePoint Online à Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -1028,7 +1028,7 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un élém
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Sélectionnez un webhook existant ou cliquez sur Ajouter et saisissez la connexion pour créer un webhook.</p> 

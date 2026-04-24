@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Activité de sortie Workfront Fusion : semaine du 14 novembre 2022'
-description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du 14 novembre 2022.
+description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 14 novembre 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: c9a345cb-cf08-4948-b618-1b26e195169f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%

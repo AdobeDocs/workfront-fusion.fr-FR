@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: bc72bb8b-25d9-488f-a1f0-89d4f41a7e76
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
@@ -16,11 +15,11 @@ ht-degree: 100%
 
 # Activité Version Workfront Fusion : semaine du 13 septembre 2021
 
-Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du 23 septembre 2021.
+Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du vendredi 23 septembre 2021.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Filtrer et trier l’historique d’exécution d’un scénario Workfront Fusion
 
@@ -59,6 +58,6 @@ Auparavant, toutes les exécutions comportaient un bouton Détails. Or, il arriv
 
 ## Délai d’expiration du connecteur de traduction gérée par SDL augmenté à 120 secondes
 
-Pour réduire les expirations du connecteur de traduction gérée par SDL, nous avons augmenté le délai d’attente à 120 secondes.
+Pour réduire les expirations du connecteur de traduction gérée par SDL, nous avons augmenté le délai d’expiration à 120 secondes.
 
 Auparavant, la traduction gérée par SDL suivait le mécanisme de sécurisation de l’expiration de Workfront Fusion de 40 secondes.

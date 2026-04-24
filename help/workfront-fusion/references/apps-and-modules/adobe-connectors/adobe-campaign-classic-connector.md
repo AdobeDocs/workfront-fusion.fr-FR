@@ -4,7 +4,7 @@ description: Avec les modules  [!DNL Adobe Campaign]   [!DNL Adobe Campaign] , v
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 82%
@@ -121,7 +121,7 @@ Le connecteur Adobe Campaign utilise les éléments suivants :
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Si vous créez une connexion serveur à serveur, saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
+          <td>Si vous créez une connexion serveur à serveur, saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
         </tr>
      </tbody>
     </table>
@@ -139,7 +139,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Actions](#actions)
 * [Recherches](#searches)
 
-<!--### Triggers
+<!--
+### Triggers
 
 #### [!UICONTROL Watch records]
 
@@ -174,14 +175,15 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>-->
+</table>
+-->
 
 
 ### Actions
 
 * [[!UICONTROL Créer un enregistrement]](#create-a-record)
 * [[!UICONTROL Supprimer un enregistrement]](#delete-record)
-* [[!UICONTROL Effectuer un appel d’API personnalisé]](#make-a-custom-api-call)
+* [[!UICONTROL Effectuer un appel API personnalisé]](#make-a-custom-api-call)
 * [[!UICONTROL Exécuter une action]](#perform-an-action)
 * [[!UICONTROL Lire un enregistrement]](#read-a-record)
 * [[!UICONTROL S’abonner ou se désabonner]](#subscribe-or-unsubscribe)
@@ -278,7 +280,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
 
 Ce module d’action exécute une action sélectionnée sur un objet dans l’API [!DNL Adobe Campaign].
 
-Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
+Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
 
 <table style="table-layout:auto"> 
  <col> 

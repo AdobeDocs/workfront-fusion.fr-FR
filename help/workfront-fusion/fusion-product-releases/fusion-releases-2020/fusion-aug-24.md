@@ -3,14 +3,13 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Activité Version de Workfront Fusion : semaine du 24 août 2020'
-description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du 17 août 2020.
+title: 'Activité Version de Workfront Fusion : semaine du mardi 24 août 2020'
+description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 17 août 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: f142193b-d0c2-479f-a23b-f9d263b10433
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 95%
@@ -19,11 +18,11 @@ ht-degree: 95%
 
 # Activité Version de Workfront Fusion : semaine du 24 août 2020
 
-Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du 17 août 2020.
+Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 17 août 2020.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Conversion plus facile d’objets avec des données personnalisées dans le module « Action diverse » de Workfront
 

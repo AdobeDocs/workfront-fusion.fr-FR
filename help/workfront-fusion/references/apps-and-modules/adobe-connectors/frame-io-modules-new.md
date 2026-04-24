@@ -4,8 +4,8 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: ht
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+workflow-type: tm+mt
 source-wordcount: '4539'
 ht-degree: 100%
 
@@ -343,10 +343,12 @@ Ce module d’action crée une ressource. Vous pouvez charger un fichier local o
    <td role="rowheader">[!UICONTROL Path] </td> 
    <td> <p>Sélectionnez le chemin où vous souhaitez créer une ressource.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">Type de chargement </td> 
     <td> <p>Choisissez si vous créez une ressource à partir d’un fichier local ou distant.</p> </td> 
@@ -363,10 +365,12 @@ Ce module d’action crée une ressource. Vous pouvez charger un fichier local o
    <td>[!UICONTROL Source file]</td> 
    <td> <p>Sélectionnez un fichier source à partir d’un module précédent ou mappez le nom du fichier source.</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -1317,7 +1321,7 @@ Sélectionnez le webhook à utiliser pour ce module ou cliquez sur Ajouter en re
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

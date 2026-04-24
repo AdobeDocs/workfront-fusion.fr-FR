@@ -4,7 +4,7 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 79%
@@ -141,7 +141,7 @@ Pour [!DNL Jira Software] connecter à Workfront Fusion, vous devez créer un je
 
 Pour autoriser une connexion entre Workfront Fusion et [!DNL Jira Server], vous avez besoin de votre clé de client, de votre clé privée et de l’URL du service. Vous devrez peut-être contacter votre administrateur [!DNL Jira] pour cette information.
 
-* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Générer des clés publiques et privées pour votre connexion  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configurer l’application cliente en tant que consommatrice dans  [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Création d’une connexion  [!DNL Jira] serveur ou au centre de données Jira dans Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -233,7 +233,7 @@ Pour acquérir une clé privée pour votre connexion [!DNL Workfront Fusion Jira
    </table>
 
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  &#x200B;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+1. Passez à [Créer une connexion à ou [!DNL Jira Server] dans Workfront Fusion [!DNL Jira Data Center]  ](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### Créer une connexion à [!DNL Jira Server] ou [!DNL Jira Data Center] dans Workfront Fusion
 
@@ -416,7 +416,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -580,7 +580,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Liste des enregistrements]
 
-Ce module de recherche permet de retrouver tous les éléments d’un type spécifique qui correspondent à votre requête de recherche.
+Ce module de recherche permet de récupérer tous les éléments d’un type spécifique qui correspondent à votre requête de recherche.
 
 Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -608,7 +608,8 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Saisissez ou mappez le nombre maximum d’enregistrements que vous souhaitez que le module récupère au cours de chaque cycle d’exécution du scénario.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 

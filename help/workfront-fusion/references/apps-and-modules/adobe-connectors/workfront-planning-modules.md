@@ -4,7 +4,7 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez lan
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 69%
@@ -479,11 +479,14 @@ Ce module d’action récupère tous les enregistrements du type spécifié.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Sélectionnez le type d’enregistrement que vous souhaitez récupérer.</td>
     </tr>
-     <!--<tr>
+    <!--
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
+    </tr>
+    -->
   </tbody>
 </table>
 

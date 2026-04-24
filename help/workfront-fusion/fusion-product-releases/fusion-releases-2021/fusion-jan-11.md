@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Activité Version de Workfront Fusion : semaine du 11 janvier 2021'
-description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion durant la semaine du 11 janvier 2021.
+description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 11 janvier 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: d5732b6c-b039-4bf7-a7e6-e59b6e8f1a63
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
@@ -19,11 +18,11 @@ ht-degree: 100%
 
 # Activité Version de Workfront Fusion : semaine du 11 janvier 2021
 
-Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion durant la semaine du 11 janvier 2021.
+Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 11 janvier 2021.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Connecteur et modules Widen désormais disponibles
 
@@ -56,7 +55,7 @@ Avec les modules Cvent, vous pouvez effectuer les opérations suivantes :
 * Répertorier les enregistrements en fonction des critères spécifiés
 * Enregistrer ou ajouter des personnes invitées à des événements spécifiques
 * Mettre à jour ou supprimer des contacts
-* Effectuer un appel API personnalisé.
+* Effectuer un appel API personnalisé
 
 
 ## Connecteur et modules Microsoft Dynamic 365 désormais disponibles

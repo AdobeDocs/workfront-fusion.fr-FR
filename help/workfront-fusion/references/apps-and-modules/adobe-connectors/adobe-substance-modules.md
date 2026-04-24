@@ -1,22 +1,23 @@
 ---
-title: Modules Adobe Substance
+title: Modules Adobe Substance
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent  [!DNL Adobe Substance], et le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 31%
+ht-degree: 36%
 
 ---
 
 # Modules [!DNL Adobe Substance]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Substance] et les connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Substance] et le connecter à plusieurs applications et services tiers.
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -28,7 +29,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -37,22 +38,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
-   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,9 +69,9 @@ Avant d’utiliser le connecteur [!DNL Adobe Substance], vous devez vous assurer
 
 Lorsque vous configurez les modules [!DNL Adobe Substance], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Substance] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un astérisque en regard du nom du champ dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Composites](#composites)
 * [Scènes](#scenes)
@@ -94,7 +95,8 @@ Ce module d’action génère du contenu pour un composite 3D qui inclut la ress
    <td role="rowheader">Autres champs</td> 
    <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">documentation de l’API Substance Adobe</a>.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ Ce module d’action génère du contenu pour un composite 3D qui inclut la ress
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

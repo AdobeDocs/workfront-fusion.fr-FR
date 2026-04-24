@@ -4,14 +4,13 @@ content-type: release-notes
 product-area: workfront-integrations
 keywords: Fusion
 navigation-topic: fusion-release-activity
-title: 'Activité Version de Workfront Fusion : semaine du 30 novembre 2020'
-description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion la semaine du 30 novembre 2020.
+title: 'Activité Version de Workfront Fusion : semaine du mardi 30 novembre 2020'
+description: Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 30 novembre 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 76cc14b3-ffec-4d49-b471-f3eb9dd89658
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
@@ -20,11 +19,11 @@ ht-degree: 100%
 
 # Activité Version de Workfront Fusion : semaine du 30 novembre 2020
 
-Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion la semaine du 30 novembre 2020.
+Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 30 novembre 2020.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Limite de taux pour les webhooks Workfront Fusion 2.0.
 

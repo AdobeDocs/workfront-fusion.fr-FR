@@ -4,10 +4,10 @@ description: Les modules Adobe Workfront Fusion HubSpot CRM vous permettent de s
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
-source-wordcount: '7323'
-ht-degree: 31%
+source-wordcount: '7314'
+ht-degree: 34%
 
 ---
 
@@ -24,8 +24,8 @@ Les modules Adobe Workfront Fusion [!DNL HubSpot CRM] vous permettent de surveil
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,22 +34,22 @@ Les modules Adobe Workfront Fusion [!DNL HubSpot CRM] vous permettent de surveil
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -88,9 +88,9 @@ Pour obtenir des instructions sur la procédure de connexion de votre compte [!D
 
 Lorsque vous configurez les modules [!DNL Hubspot CRM], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Hubspot CRM] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Objets CRM](#crm-objects)
 * [Enregistrements (transactions, contacts et entreprises)](#records-deals-contacts-and-companies)
@@ -218,7 +218,7 @@ Ce module d’action crée un contact, une entreprise ou une affaire.
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez créer.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création de l’enregistrement, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner la valeur des propriétés. Les groupes de propriétés et les propriétés disponibles dépendent du type d’enregistrement que vous souhaitez créer.</td> 
   </tr> 
  </tbody> 
@@ -490,7 +490,7 @@ Ce module d&#39;action crée un contact s&#39;il n&#39;existe pas dans un portai
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL HubSpot CRM] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , groupes de propriétés]</td> 
+   <td role="rowheader">[!UICONTROL, groupes de propriétés]</td> 
    <td>Pour chaque propriété que vous souhaitez ajouter lors de la création du contact, sélectionnez le groupe dans lequel se trouve la propriété. Le groupe de propriétés s’ouvre, puis vous pouvez renseigner les valeurs des propriétés.</td> 
   </tr> 
  </tbody> 
@@ -845,7 +845,7 @@ Ce module d’action crée un engagement (une note, une tâche ou une activité,
   <td>Sélectionnez le type d’engagement à créer.
   <ul>
   <li><b>E-mail</b><p></p>Passez à <a href="#email-metadata" class="MCXref xref" >Métadonnées d’e-mail</a>.</p></li>
-  <li><b>Appel</b><p>Passez à <a href="#call-metadata" class="MCXref xref" >Métadonnées d’appel</a>.</p></li>
+  <li><b>L’appel</b><p>Passez à <a href="#call-metadata" class="MCXref xref" >Métadonnées d’appel</a>.</p></li>
   <li><b>Réunion</b><p>Passez à <a href="#meeting-fields" class="MCXref xref" >Champs de réunion</a>.</p></li>
   <li><b>Tâche</b><p>Passez à <a href="#task-fields" class="MCXref xref" >Champs de la tâche</a>.</p></li>
   <li><b>Note</b><p>Dans le champ Corps , saisissez le texte de la note.</p></li>
@@ -1273,7 +1273,7 @@ Marque un dossier comme supprimé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Saisissez ou mappez l’identifiant du dossier que vous souhaitez supprimer.</td> 
+   <td>Saisissez ou mappez l’ID du dossier à supprimer.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1428,7 +1428,7 @@ Ce module d&#39;action crée une nouvelle tâche pour un calendrier. La connexio
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event Date]</td> 
-   <td>Saisissez ou mappez la date de cette tâche.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
+   <td>Saisissez ou mappez la date de cette tâche.<p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1566,7 +1566,7 @@ Supprime un ticket existant par son ID.
 
 <!-- List Tickets  Need to find a working connection-->
 
-&lt;!— Mettre à jour un ticket Besoin de trouver une connexion active—>
+<!-- Update a Ticket Need to find a working connection-->
 
 <!-- Watch Tickets Need to find a working connection-->
 
@@ -1677,7 +1677,7 @@ Ce module d’action crée et publie immédiatement un message sur le canal de r
   </tr> 
   <tr> 
    <td role="rowheader">Déclencheur [!UICONTROL à]</td> 
-   <td>Saisissez ou mappez la date et l’heure auxquelles vous souhaitez que la diffusion soit envoyée. Si ce champ est laissé vide, la diffusion est envoyée immédiatement.<p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
+   <td>Saisissez ou mappez la date et l’heure auxquelles vous souhaitez que la diffusion soit envoyée. Si ce champ est laissé vide, la diffusion est envoyée immédiatement.<p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1777,7 +1777,7 @@ Ce module d’action crée un article de blog.
   </tr> 
   <tr> 
    <td role="rowheader">Date de publication</td> 
-   <td>Saisissez ou mappez la date de publication de l'article de blog. <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p></td> 
+   <td>Saisissez ou mappez la date de publication de l'article de blog. <p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nom</td> 
@@ -1980,18 +1980,17 @@ Ce module de recherche récupère les publications d&#39;un blog HubSpot.
 
 +++
 
-<!--+++**Workflows**>
+<!--
++++**Workflows**>
 
-<!--### Workflows May need connection
+### Workflows May need connection
 
 #### Add a Contact to a Workflow
 
 
 #### Remove a Contact from a Workflow
-
++++
 -->
-
-<!--+++-->
 
 ### Abonnements
 
@@ -2061,9 +2060,11 @@ Ce module de déclenchement lance un scénario lorsqu’un nouvel abonnement à 
 
 <!--### Associations-->
 
-<!--#### Associate CRM Objects  May need connection
+<!--
+#### Associate CRM Objects  May need connection
 
-This action module associates two CRM objects.-->
+This action module associates two CRM objects.
+-->
 
 <!--#### Associate Multiple CRM Objects  May need connection-->
 
@@ -2079,7 +2080,9 @@ This action module associates two CRM objects.-->
 
 <!--#### List Associations for a CRM Object May need connection-->
 
-<!--+++-->
+<!--
++++
+-->
 
 ### Autre
 

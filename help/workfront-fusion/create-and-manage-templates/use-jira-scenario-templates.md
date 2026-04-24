@@ -6,7 +6,8 @@ title: Utiliser des modèles pour connecter Adobe Workfront Fusion et Jira
 description: Utilisez ces modèles pour automatiser les workflows entre Adobe Workfront Fusion et Jira.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 4%
@@ -59,7 +60,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
   Pour plus d’informations et d’instructions, voir [Configuration du compte technique](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) dans la documentation d’Adobe.
 * Vous devez appliquer les autorisations d’administrateur système au compte technique dans la zone Profils de produit Adobe Admin Console .
 
-  Pour plus d’informations et d’instructions, voir [Création d’administrateurs système dans Workfront avec Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Pour plus d’informations et d’instructions, voir [Création d’administrateurs système dans Workfront avec Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -154,13 +155,13 @@ Pour utiliser ces modules, les éléments suivants doivent être créés dans Wo
 
 1. Dans Workfront, créez un utilisateur d’intégration système. Cet utilisateur est uniquement utilisé par Workfront Fusion et ne représente pas un utilisateur humain. Les tâches affectées à cet utilisateur déclencheront le scénario qui synchronise Workfront avec Jira.
 
-   Pour obtenir des instructions, voir [Ajouter des utilisateurs](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) dans la documentation de Workfront.
+   Pour obtenir des instructions, voir [Ajouter des utilisateurs](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) dans la documentation de Workfront.
 
 #### Création d’un formulaire personnalisé dans Workfront
 
 1. Dans Workfront, commencez à créer un formulaire personnalisé.
 
-   Pour obtenir des instructions détaillées, voir [Création d’un formulaire personnalisé](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) dans la documentation de Workfront.
+   Pour obtenir des instructions détaillées, voir [Création d’un formulaire personnalisé](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) dans la documentation de Workfront.
 1. Nommez le formulaire « **Champs JIRA** ».
 1. Insérez les champs suivants dans le formulaire personnalisé :
 
@@ -177,7 +178,7 @@ Pour utiliser ces modules, les éléments suivants doivent être créés dans Wo
 >
 >Nous vous recommandons de restreindre ce formulaire aux modifications effectuées par d&#39;autres utilisateurs. Pour ce faire, assurez-vous que tous les utilisateurs ajoutés au formulaire personnalisé disposent uniquement d’un accès en lecture seule.
 >
->Pour obtenir des instructions détaillées, voir [Partager un formulaire personnalisé](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) dans la documentation de Workfront.
+>Pour obtenir des instructions détaillées, voir [Partager un formulaire personnalisé](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) dans la documentation de Workfront.
 
 ### Configuration des connexions dans Workfront Fusion
 
@@ -258,7 +259,7 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Dans **chaque** module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
 1. Dans **each** Module Jira, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
-1. Passez à [&#x200B; Mettre à jour le module Paramètres généraux &#x200B;](#update-the-general-parameters-module).
+1. Passez à [ Mettre à jour le module Paramètres généraux ](#update-the-general-parameters-module).
 
 #### Mise à jour du module Paramètres généraux
 
@@ -272,9 +273,11 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Passez à [Mappage des champs personnalisés dans Jira](#map-custom-fields-in-jira)
 
-<!--#### Map custom fields in Jira. 
+<!--
+#### Map custom fields in Jira.
 
-Awaiting feedback-->
+Awaiting feedback
+-->
 
 +++
 
@@ -555,4 +558,3 @@ Ce scénario envoie des mises à jour à partir de problèmes Workfront vers des
 
 
 +++
-

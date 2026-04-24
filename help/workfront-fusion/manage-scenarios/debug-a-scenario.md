@@ -4,10 +4,10 @@ description: Le Devtool d’Adobe Workfront Fusion vous permet de comprendre d
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 71%
+ht-degree: 76%
 
 ---
 
@@ -33,8 +33,8 @@ Pour une vidéo d’introduction et une présentation de l’outil Fusion Devtoo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -43,13 +43,13 @@ Pour une vidéo d’introduction et une présentation de l’outil Fusion Devtoo
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,10 +111,12 @@ Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur
       <td role="rowheader"> <p>Effacer la liste des requêtes </p> </td> 
       <td> <p>Cliquez sur l’icône de corbeille dans le coin supérieur droit du panneau de gauche du Devtool pour effacer la liste des requêtes enregistrées par le Devtool de Workfront Fusion. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Récupérer la requête au format JSON brut ou cURL</p> </td> 
       <td> 

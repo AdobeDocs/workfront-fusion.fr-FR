@@ -4,10 +4,10 @@ description: L’application HTTP Adobe Workfront Fusion fournit divers modules 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 59%
+ht-degree: 78%
 
 ---
 
@@ -38,8 +38,8 @@ Le bon choix du module dépend du mécanisme d’authentification/d’autorisati
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -48,22 +48,22 @@ Le bon choix du module dépend du mécanisme d’authentification/d’autorisati
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -72,10 +72,10 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licenc
 Consultez les articles suivants pour obtenir des instructions spécifiques aux modules de requête :
 
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de base] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de base]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de clé API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de clé API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## Autres modules d’action
 
@@ -167,7 +167,7 @@ Code à copier-coller :
 
 Jeton :
 
-![&#x200B; Jeton JWT &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![ Jeton JWT ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Code à copier-coller :
 
