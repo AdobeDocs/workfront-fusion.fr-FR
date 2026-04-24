@@ -561,7 +561,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
+![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
