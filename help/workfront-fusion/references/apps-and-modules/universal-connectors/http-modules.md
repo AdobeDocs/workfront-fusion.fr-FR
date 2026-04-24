@@ -167,7 +167,7 @@ Code à copier-coller :
 
 Jeton :
 
-![ Jeton JWT ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![&#x200B; Jeton JWT &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Code à copier-coller :
 
