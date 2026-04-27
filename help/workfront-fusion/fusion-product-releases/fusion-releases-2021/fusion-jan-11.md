@@ -8,10 +8,11 @@ description: Cette page décrit toutes les améliorations apportées à Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: d5732b6c-b039-4bf7-a7e6-e59b6e8f1a63
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -22,7 +23,7 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Connecteur et modules Widen désormais disponibles
 
@@ -77,7 +78,6 @@ Vous pouvez désormais utiliser Workfront Fusion 2.0 pour vous connecter à vo
 * Télécharger un document sous la forme d’un champ.
 * Charger un fichier vers une enveloppe.
 * Effectuer un appel API personnalisé.
-
 
 ## Rechercher l’historique d’exécution de votre scénario
 

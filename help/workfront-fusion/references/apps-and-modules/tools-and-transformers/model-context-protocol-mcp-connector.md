@@ -4,8 +4,9 @@ description: Le module Model Context Protocol (MCP) permet de traiter une invite
 author: Becky
 feature: Workfront Fusion
 hide: true
+hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 18%
@@ -49,7 +50,7 @@ Pour plus d’informations sur MCP dans les scénarios Fusion, voir [Ajouter une
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

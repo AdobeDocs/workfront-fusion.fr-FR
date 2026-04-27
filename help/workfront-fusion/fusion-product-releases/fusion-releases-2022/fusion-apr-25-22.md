@@ -1,25 +1,26 @@
 ---
-title: 'Activité de publication de Workfront Fusion : semaine du mardi 25 avril 2022'
-description: 'Activité de publication de Workfront Fusion : semaine du mardi 25 avril 2022'
+title: 'Activité Version Workfront Fusion : semaine du 25 avril 2022'
+description: 'Activité Version Workfront Fusion : semaine du 25 avril 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c1d5645f-9bca-4f04-b2e4-526530d9ecbd
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
 
-# Activité de publication de Workfront Fusion : semaine du mardi 25 avril 2022
+# Activité Version Workfront Fusion : semaine du 25 avril 2022
 
 Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 25 avril 2022.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Connecteur Adobe Workfront Proof désormais disponible pour les utilisateurs et les utilisatrices disposant d’une licence Workfront Fusion pour l’automatisation
 

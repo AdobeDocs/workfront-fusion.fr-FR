@@ -8,11 +8,12 @@ description: Cette page décrit toutes les améliorations apportées à Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 69e4a458-fd32-4dcd-be43-19a9467cf678
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 94%
+source-wordcount: '440'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +23,7 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Mises à jour du connecteur Jira Cloud
 
@@ -62,6 +63,6 @@ Les modules précédemment disponibles sont toujours présents dans l’applicat
 
 ## Utiliser OAuth 2.0 dans les connexions de votre application Workfront
 
-Nous avons mis à jour le connecteur Workfront afin qu’il utilise OAuth 2.0. Cette mise à jour facilite les modifications dans les connexions de votre application Workfront. Par exemple, si un élément relatif à votre connexion change (un mot de passe, par exemple), vous n’avez plus besoin de mettre à jour chacune des connexions de vos scénarios. En outre, OAuth2 offre d’autres avantages, tels que l’amélioration de la sécurité et la possibilité d’utiliser l’authentification unique (SSO).
+Nous avons mis à jour le connecteur Workfront pour utiliser OAuth 2.0. Cette mise à jour signifie qu’il est plus facile d’apporter des modifications à vos connexions à l’application Workfront. Par exemple, si un élément relatif à votre connexion change (un mot de passe, par exemple), vous n’avez plus besoin de mettre à jour chacune des connexions de vos scénarios. En outre, OAuth2 offre d’autres avantages, tels que l’amélioration de la sécurité et la possibilité d’utiliser l’authentification unique (SSO).
 
 Les connexions existantes ne nécessitent aucune modification pour le moment. Vous pouvez toutefois autoriser de nouveau les connexions existantes si vous souhaitez bénéficier des avantages d’OAuth 2.0.
