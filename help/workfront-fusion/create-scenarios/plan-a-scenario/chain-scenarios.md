@@ -1,12 +1,12 @@
 ---
-title: Association De Plusieurs Scénarios
-description: Vous pouvez enchaîner des scénarios, ce qui permet à un scénario de déclencher un autre et de renvoyer la sortie de données du deuxième scénario au premier.
+title: Chain Multiple Scenarios Together
+description: You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first.
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 12%
 
 ---
@@ -15,28 +15,28 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement disponible dans Beta.
+>This feature is currently in Beta.
 
-Vous pouvez enchaîner des scénarios, ce qui permet à un scénario de déclencher un autre et de renvoyer la sortie de données du deuxième scénario au premier. Cela permet de créer des scénarios plus modulaires, où vous n’avez pas à dupliquer des sections de scénario dans plusieurs scénarios.
+You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first. This allows more modular scenario creation, where you do not have to duplicate scenario sections in multiple scenarios.
 
 Vous pouvez appeler plusieurs scénarios enfants à partir d’un scénario parent, et appeler un scénario enfant à partir de plusieurs scénarios parents. Vous pouvez également imbriquer des scénarios enfants, en les appelant les uns des autres.
 
-Lorsqu’un scénario parent attend qu’un scénario enfant renvoie des données, ce temps n’est pas comptabilisé dans le délai d’expiration du scénario parent. Par exemple, un scénario parent appelle 5 scénarios enfants, dont l’exécution prend chacun 10 minutes, pour un total de 50 minutes. L’exécution des modules du scénario parent lui-même prend 15 minutes. Le scénario parent n’expire pas, même si un total de 65 minutes s’est écoulé, ce qui dépasse la limite de délai de 40 minutes.
+When a parent scenario is waiting for a child scenario to return data, that time does not count against the parent scenario&#39;s timeout. For example, a parent scenario calls 5 child scenarios, each of which takes 10 minutes to run, for a total of 50 minutes. The modules in the parent scenario itself take 15 minutes to run. The parent scenario does not time out, even though a total of 65 minutes has passed, which is over the timeout limit of 40 minutes.
 
-Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+For more information on Fusion&#39;s performance guardrails, including timeouts, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Pour obtenir des instructions sur la configuration des modules Chain, voir [Modules Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
-## Scénarios parents et enfants
+## Parent and child scenarios
 
-* Le scénario **parent** appelle un autre scénario, à l’aide du module **Chaîne** > **Appeler un scénario enfant**. Il reçoit la sortie du scénario enfant, qu’il peut traiter dans les modules de scénario ultérieurs.
-* Le scénario **enfant** est appelé par le scénario parent. Son module de déclenchement reçoit les données du scénario parent et renvoie la sortie au scénario parent.
+* The **parent** scenario calls another scenario, using the **Chain** > **Call a child scenario** module. It receives the output of the child scenario, which it can process in later scenario modules.
+* The **child** scenario is called by the parent scenario. Its trigger module receives data from the parent scenario, and returns output to the parent scenario.
 
-Le scénario parent nécessite une réponse du scénario enfant. Les scénarios enfants qui ne renvoient pas de données ne sont actuellement pas pris en charge.
+The parent scenario requires a response from the child scenario. Child scenarios that do not return data are currently not supported.
 
-## Structures de données dans les scénarios en chaîne
+## Data structures in chained scenarios
 
-Workfront Fusion utilise des structures de données pour transférer des informations du scénario parent vers le scénario enfant. La structure des données est configurée dans le scénario enfant. Lorsque le scénario enfant est sélectionné à partir du scénario parent, les champs de la structure de données utilisée comme entrée du scénario enfant apparaissent dans le scénario parent. Vous pouvez mapper des valeurs à ces champs, qui sont transmises au scénario enfant lorsqu’il est déclenché.
+Workfront Fusion uses data structures to transfer information from the parent scenario to the child scenario. The data structure is configured in the child scenario. When the child scenario is selected from the parent scenario, the fields for the data structure used as the child scenario&#39;s input appear in the parent scenario. You can map values to these fields, which are passed to the child scenario when it is triggered.
 
 Pour plus d’informations sur les modules à configurer dans les scénarios parent et enfant, voir [Chaîne de modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
@@ -60,7 +60,7 @@ Tenez compte des cas d’utilisation suivants pour le chaînage de scénarios :
 
 * **Gestion des erreurs** : il est courant pour les organisations de disposer des mêmes actions de gestion des erreurs dans plusieurs scénarios, par exemple une itinéraire de gestion des erreurs qui envoie un journal des erreurs à un magasin de données et crée une notification Slack. Vous pouvez créer un scénario enfant avec ces actions et enchaîner ce scénario dans des itinéraires de gestion des erreurs dans plusieurs scénarios.
 
-* **Prolonger le temps** : vous pouvez utiliser le chaînage pour les opérations par lots volumineuses avec des actions à long terme, par exemple lorsque vous devez exporter et importer des fichiers. Cette opération prend un certain temps s’il y a de nombreux fichiers. Comme les scénarios enfants ne sont pas comptabilisés dans le délai d’expiration du scénario parent, vous pouvez dépasser le temps d’exécution en utilisant plusieurs scénarios enfants pour exporter ou importer les fichiers.
+* **Prolonger le temps** : vous pouvez utiliser le chaînage pour les opérations par lots volumineuses avec des actions à long terme, par exemple lorsque vous exportez et importez des fichiers. Cette opération prend un certain temps s’il y a de nombreux fichiers. Comme les scénarios enfants ne sont pas comptabilisés dans le délai d’expiration du scénario parent, vous pouvez dépasser le temps d’exécution en utilisant plusieurs scénarios enfants pour exporter ou importer les fichiers.
 
 * **Remplacement des itérateurs** Le remplacement des itérateurs par des scénarios enfants peut réduire l’utilisation de la mémoire, par exemple dans des opérations complexes dans une itération qui provoque une erreur de mémoire insuffisante. Vous pouvez créer un scénario distinct pour l’opération complexe et remplacer l’itérateur par Appeler un module de scénario enfant
 

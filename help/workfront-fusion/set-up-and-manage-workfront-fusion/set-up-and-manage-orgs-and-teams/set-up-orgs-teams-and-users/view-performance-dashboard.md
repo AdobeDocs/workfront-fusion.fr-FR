@@ -4,9 +4,9 @@ description: Les administrateurs et administratrices de Fusion peuvent afficher 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 9%
 
 ---
@@ -79,7 +79,7 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 
 ## Affichage du tableau de bord des performances de Fusion
 
-1. Dans Fusion, cliquez sur Performances dans le volet de navigation de gauche.
+1. Dans Fusion, cliquez sur **Performances** dans le volet de navigation de gauche.
 
    Le tableau de bord s’ouvre.
 

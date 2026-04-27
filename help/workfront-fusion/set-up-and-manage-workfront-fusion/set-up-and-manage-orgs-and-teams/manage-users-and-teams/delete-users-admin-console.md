@@ -1,21 +1,21 @@
 ---
 content-type: reference
-title: 'Configuration et gestion des organisations et des équipes : index des articles'
-description: Cette section contient des articles relatifs à la configuration et à la gestion des organisations et des équipes dans Adobe Workfront Fusion.
+title: 'Set up and managing organizations and teams: article index'
+description: This section contains articles related to setting up and managing organizations and teams in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 50%
+source-wordcount: '483'
+ht-degree: 67%
 
 ---
 
 # Supprimer des utilisateurs et utilisatrices via [!DNL Adobe Admin Console]
 
-Vous pouvez supprimer un utilisateur d’Adobe Workfront Fusion uniquement, en laissant l’accès à tout autre profil de produit [!DNL Adobe], ou vous pouvez supprimer l’utilisateur de l’[!DNL Adobe Admin Console] entièrement.
+You can remove a user from Adobe Workfront Fusion only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
 
 ## Conditions d’accès
 
@@ -26,8 +26,8 @@ Vous pouvez supprimer un utilisateur d’Adobe Workfront Fusion uniquement, en l
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,31 +36,31 @@ Vous pouvez supprimer un utilisateur d’Adobe Workfront Fusion uniquement, en l
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations des niveaux d’accès</td> 
    <td> 
-     <p>Vous devez être un administrateur Adobe Admin Console pour votre organisation.</p>
+     <p>You must be an Adobe Admin Console administrator for your organization.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Supprimer un utilisateur d’Adobe Workfront Fusion uniquement
+## Remove a user from Adobe Workfront Fusion only
 
-Vous pouvez supprimer un utilisateur de Workfront Fusion tout en conservant intactes ses autres autorisations de produit Adobe.
+You can remove a user from Workfront Fusion while leaving their other Adobe product permissions intact.
 
-Pour obtenir des instructions, reportez-vous à « Supprimer des utilisateurs et des groupes d’utilisateurs d’un produit » dans l’article [Gestion des produits sur Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html).
+For instructions, see &quot;Remove users and user groups from a product&quot; in the article [Manage products on Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html).
 
-## Désactiver un utilisateur dans tous les produits du [!DNL Adobe Admin Console]
+## Deactivate a user in all products in the [!DNL Adobe Admin Console]
 
-Pour supprimer un utilisateur, vous devez le désactiver à l’aide du [!DNL Adobe Admin Console].
+To delete a user, you must deactivate the user through the [!DNL Adobe Admin Console].
 
 Une personne est désactivée d’[!DNL Adobe Admin Console] lorsque l’une des conditions suivantes s’applique :
 
@@ -71,16 +71,15 @@ Une personne est désactivée d’[!DNL Adobe Admin Console] lorsque l’une des
 
   Pour obtenir des instructions, consultez la section « Supprimer des utilisateurs et des utilisatrices » dans [Gérer les utilisateurs et les utilisatrices individuellement](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html).
 
-Dans Workfront Fusion, la désactivation affecte l’utilisateur de l’une des manières suivantes :
+In Workfront Fusion, the deactivation affects the user in one of the following ways:
 
 * Si la personne se trouve dans une seule organisation, elle est désactivée.
 * Si la personne se trouve dans plusieurs organisations, elle est supprimée de l’organisation dans laquelle elle a été modifiée dans [!DNL Adobe Admin Console].
-* Tenez compte des points suivants lors de la suppression d’un utilisateur.
 
 ### Considérations relatives à la suppression d’un utilisateur ou d’une utilisatrice dans Workfront Fusion
 
-Tenez compte des points suivants lors de la suppression d’un utilisateur.
+Consider the following when deleting a user.
 
-* Lorsqu’un utilisateur est supprimé, ses connexions, clés et Webhooks sont supprimés.
+* When a user is deleted, the user&#39;s connections, keys, and webhooks are removed.
 * Tous les scénarios appartenant à l’utilisateur ou à l’utilisatrice sont transférés à la personne propriétaire de l’organisation. Les connexions dans ces scénarios doivent être mises à jour, car les connexions appartenant à l’utilisateur ou à l’utilisatrice ne sont plus valides.
 * Si le profil utilisateur supprimé possède des applications ou des modèles publics, les applications ou les modèles publics sont transférés à la personne propriétaire de l’organisation. S’il n’existe pas de personne propriétaire de l’organisation, les applications ou les modèles publics sont transférés à une autre personne.

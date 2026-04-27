@@ -4,10 +4,10 @@ description: Dans certains scénarios, vous devez travailler uniquement avec des
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 46%
+source-wordcount: '528'
+ht-degree: 45%
 
 ---
 
@@ -47,7 +47,7 @@ Vous pouvez ajouter un filtre entre deux modules et vérifier si les lots reçus
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -71,7 +71,7 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
    >Vous pouvez saisir des valeurs dans les champs de filtre à partir du panneau de mappage
    >Pour plus d’informations sur le mappage, voir [Mapper des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-   Par exemple, si vous souhaitez que le filtre transmette les fichiers dans Adobe Workfront se terminant par XML, vous devez saisir **[!UICONTROL Nom du fichier]** dans la première zone et ..**[!UICONTROL xml]** dans le second champ. Dans le menu déroulant qui sépare les champs, vous pouvez sélectionner **[!UICONTROL Se termine par (non sensible à la casse)]**. Ce filtre s’applique aux lots entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
+   Par exemple, si vous souhaitez que le filtre transmette les fichiers dans Adobe Workfront se terminant par XML, entrez **[!UICONTROL Nom du fichier]** dans la première zone et .**[!UICONTROL xml]** dans la seconde zone. Dans le menu déroulant qui sépare les champs, vous pouvez sélectionner **[!UICONTROL Se termine par (non sensible à la casse)]**. Ce filtre s’applique aux lots entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
 
    ![Configurer un filtre](assets/set-up-filter-box.png)
 
@@ -87,7 +87,7 @@ Vous pouvez copier un filtre existant et le coller ailleurs dans le scénario.
 1. Cliquez avec le bouton droit sur les points de connexion entre les modules où se trouve le filtre.
 1. Sélectionnez **Copier le filtre**.
 1. Cliquez avec le bouton droit sur les points de connexion entre les modules où vous souhaitez coller le filtre.
-1. Sélectionner **Coller le filtre
+1. Sélectionnez **Coller** filtrer
 1. (Facultatif) Pour ajuster le filtre, cliquez sur l’icône ou le libellé du filtre et saisissez les valeurs comme décrit dans [Ajouter un filtre entre deux modules](#add-a-filter-between-two-modules) dans cet article.
 
 

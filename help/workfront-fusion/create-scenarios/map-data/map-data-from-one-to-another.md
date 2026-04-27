@@ -1,19 +1,19 @@
 ---
-title: Mappage des informations d’un module à un autre
+title: Mapper des informations d’un module à un autre
 description: Le mappage désigne le processus d’affectation des sorties d’un module, structurées en éléments, aux champs d’entrée d’un autre.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 38%
+source-wordcount: '777'
+ht-degree: 51%
 
 ---
 
-# Mappage des informations d’un module à un autre
+# Mapper des informations d’un module à un autre
 
-Le mappage est le processus d’affectation des sorties d’un module aux champs d’entrée d’un autre module.
+Le mappage désigne le processus d’affectation des sorties d’un module aux champs d’entrée d’un autre.
 
 Le panneau de mappage s’affiche lorsque vous cliquez sur un champ dans lequel vous pouvez insérer une valeur générée par un module précédent dans un scénario.
 
@@ -28,8 +28,8 @@ Vous pouvez également créer une formule à l’aide de n’importe quelle comb
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -38,13 +38,13 @@ Vous pouvez également créer une formule à l’aide de n’importe quelle comb
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -78,7 +78,7 @@ Pour plus d’informations, voir [Configuration d’un module](/help/workfront-f
 
 ### Problème : éléments manquants dans le panneau de mappage
 
-Le panneau de mappage affiche les éléments de sortie des modules précédents. Il peut arriver que certains éléments soient absents de ce panneau. Vous pouvez exécuter le module dont la sortie est manquante dans l’éditeur de scénarios, puis le panneau de mappage peut inclure ces éléments dans les modules ultérieurs. La procédure exacte varie en fonction du type de module
+Le panneau de mappage affiche les éléments de sortie des modules précédents. Il peut arriver que certains éléments soient absents de ce panneau. Vous pouvez exécuter le module dont la sortie est manquante dans l’éditeur de scénarios, puis le panneau de mappage peut inclure ces éléments dans les modules ultérieurs. La procédure exacte varie en fonction du type de module.
 
 * [Déclencheur instantané](#instant-trigger)
 * [Déclencheur d’attente active](#polling-trigger)

@@ -4,10 +4,10 @@ description: Les équipes sont des groupes plus petits au sein de l’organisati
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 21%
+ht-degree: 41%
 
 ---
 
@@ -30,8 +30,8 @@ Les organisations peuvent disposer d’autant d’équipes que nécessaire et le
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -40,7 +40,7 @@ Les organisations peuvent disposer d’autant d’équipes que nécessaire et le
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -53,7 +53,7 @@ Les organisations peuvent disposer d’autant d’équipes que nécessaire et le
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -63,7 +63,7 @@ Les propriétaires et les administrateurs de l’organisation peuvent créer des
 
 Pour créer une équipe :
 
-1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Présentation de l’organisation]**
+1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Présentation de l’organisation]**.
 1. Sélectionnez l’onglet **[!UICONTROL Équipes]**.
 1. Cliquez sur **[!UICONTROL Ajouter une nouvelle équipe]**.
    ![Créer une équipe](assets/create-new-team-button.png)
@@ -73,7 +73,7 @@ Pour créer une équipe :
 
 Vous pouvez modifier le nom d’une équipe.
 
-1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Présentation de l’organisation]**
+1. Dans le panneau de navigation de gauche, cliquez sur **[!UICONTROL Présentation de l’organisation]**.
 1. Sélectionnez l’onglet **[!UICONTROL Équipes]**.
 1. Localisez l’équipe dont vous souhaitez modifier le nom, puis cliquez sur **Modifier** sur la ligne correspondant à cette équipe.
 1. Saisissez un nouveau nom pour l&#39;équipe, puis cliquez sur **Enregistrer**.

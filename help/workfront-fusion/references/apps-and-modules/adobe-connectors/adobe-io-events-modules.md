@@ -4,9 +4,9 @@ description: Avec les modules Adobe I/O Events, vous pouvez démarrer un scénar
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1099'
 ht-degree: 50%
 
 ---
@@ -161,8 +161,6 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Recherches](#searches)
 
 ### Déclencheurs
-
-<!--Becky start here-->
 
 #### Créer un enregistrement d’événement
 
@@ -358,7 +356,6 @@ Ce module de recherche récupère tous les événements d’un enregistrement da
        </tr>
      </tbody>
    </table>
-&lt;!--
 
 Surveiller les événements
 

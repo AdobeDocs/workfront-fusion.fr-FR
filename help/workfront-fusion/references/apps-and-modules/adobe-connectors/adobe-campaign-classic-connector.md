@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Campaign]   [!DNL Adobe Campaign] , v
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 82%
+source-wordcount: '1450'
+ht-degree: 83%
 
 ---
 
@@ -254,11 +254,13 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>Sélectionnez l’action que vous souhaitez que l’appel API effectue.</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <ul>
+      <li><p>[!UICONTROL Execute query]</p></li>
+      <li><p>[!UICONTROL Write]</p></li>
+      <li><p>[!UICONTROL Get entity if more recent]</p></li>
+      <li><p>[!UICONTROL Select all]</p></li>
+      <li><p>[!UICONTROL Push event]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Campaign].
 
 Ce module d’action exécute une action sélectionnée sur un objet dans l’API [!DNL Adobe Campaign].
 
-Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] &#x200B;](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
+Pour plus d’informations sur des actions et des champs spécifiques, voir Documentation de l’API [[!DNL Adobe Campaign] ](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=fr).
 
 <table style="table-layout:auto"> 
  <col> 
