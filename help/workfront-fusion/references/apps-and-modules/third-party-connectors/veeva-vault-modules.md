@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3683'
-ht-degree: 15%
+source-wordcount: '4125'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Veeva Vault et les connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -182,6 +182,9 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 * [Document](#document)
 * [Objet](#object)
+* [Extraction multi-fichiers](#multi-file-extract)
+* [Chargement multi-fichiers](#multi-file-load)
+* [Évaluation des fichiers](#file-staging)
 * [Autre](#other)
 
 ### Document
@@ -995,6 +998,148 @@ Ce module crée, copie ou copie en profondeur un enregistrement d’objet unique
  </tbody> 
 </table>
 
+### Extraction multi-fichiers
+
+* [Extraire plusieurs fichiers](#extract-multiple-files)
+* [Récupérer les résultats de l’extraction](#retrieve-extract-results)
+
+#### Extraire plusieurs fichiers
+
+Ce module d’action crée une tâche de chargement pour extraire un ou plusieurs fichiers de données.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fichiers de données</td> 
+   <td>Pour chaque fichier à extraire, cliquez sur <b>Ajouter un élément</b> et saisissez les informations suivantes :
+   <ul>
+   <li>Type d’objet</li>
+   <li>Critères VQL (facultatif) : pour filtrer le jeu de données afin d’inclure uniquement les fichiers répondant à des critères spécifiques, saisissez les critères dans Vault Query Language (VQL).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Récupérer les résultats de l’extraction
+
+Ce module d’action récupère les résultats d’une requête d’extraction spécifiée.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID du traitement</p> </td> 
+   <td> <p>Saisissez ou mappez la tâche pour laquelle vous souhaitez récupérer les résultats. Vous pouvez le mapper à partir du module Extraction de fichiers de données .</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de tâche</td> 
+   <td> <p>Saisissez ou mappez la tâche pour laquelle vous souhaitez récupérer des résultats. Vous pouvez le mapper à partir du module Extraction de fichiers de données .</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Chargement multi-fichiers
+
+* [Chargement de plusieurs fichiers](#load-multiple-files)
+* [Récupération des résultats du journal](#retrieve-log-results)
+
+#### Chargement de plusieurs fichiers
+
+Ce module crée une tâche de chargement et charge un ensemble de fichiers de données.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fichier</td> 
+   <td>Saisissez ou mappez le chemin d’accès au fichier CSV que cette tâche utilisera.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Commande</td> 
+   <td>Saisissez ou mappez l’ordre de la liste de fichiers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aucun déclencheur</td> 
+   <td>Sélectionnez Oui pour ignorer les déclencheurs d’enregistrement ou de document.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Récupération des résultats du journal
+
+Ce module d’action récupère un journal des résultats des tâches de chargement.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID du traitement</p> </td> 
+   <td> <p>Saisissez ou mappez la tâche pour laquelle vous souhaitez récupérer les résultats. Vous pouvez le mapper à partir du module Charger les fichiers de données .</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID de tâche</td> 
+   <td> <p>Saisissez ou mappez la tâche pour laquelle vous souhaitez récupérer des résultats. Vous pouvez le mapper à partir du module Charger les fichiers de données .</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type</td> 
+   <td> <p>Choisissez si vous souhaitez récupérer les tâches réussies ou les tâches ayant échoué.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Évaluation des fichiers
+
+#### Liste des éléments à l’emplacement
+
+Ce module renvoie une liste de fichiers et de dossiers pour le chemin d’accès spécifié.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Choisir votre répertoire personnel</td> 
+   <td>Sélectionnez le répertoire racine à partir duquel vous souhaitez répertorier les éléments.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Commande</td> 
+   <td>Saisissez ou mappez l’ordre de la liste de fichiers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aucun déclencheur</td> 
+   <td>Sélectionnez Oui pour ignorer les déclencheurs d’enregistrement ou de document.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Autre
 
 * [Effectuer un appel API personnalisé](#make-a-custom-api-call)
@@ -1015,7 +1160,7 @@ Ce module d&#39;action effectue un appel personnalisé à l&#39;API Veeva Vault.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Saisissez un chemin d’accès relatif à <code>baseurl/api/v</code>.  Par exemple :<code>/objects/documents</code> N’incluez pas le <code>baseurl/api/v/</code>, car il est déjà inclus.</td> 
+   <td>Saisissez un chemin relatif à <code>baseurl/api/v</code>.  Par exemple, <code>/objects/documents</code>. N’incluez pas le <code>baseurl/api/v/</code>, car il est déjà inclus.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Méthode</td> 
