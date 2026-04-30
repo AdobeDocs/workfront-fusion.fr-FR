@@ -5,10 +5,10 @@ description: Vous pouvez configurer des paramètres spécifiques pour les scéna
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 48%
+source-wordcount: '1306'
+ht-degree: 47%
 
 ---
 
@@ -41,7 +41,7 @@ Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le 
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -58,6 +58,10 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 1. Activez ou désactivez les paramètres du scénario, au besoin. Voir [Options des paramètres du scénario](#scenario-settings-options) ci-dessous.
 
 ## Options des paramètres de scénario
+
+### Description
+
+Vous pouvez saisir ici une description du scénario, qui s’affichera dans la liste des scénarios. Les descriptions sont limitées à 240 caractères.
 
 ### [!UICONTROL Traitement séquentiel]
 

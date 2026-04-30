@@ -4,10 +4,11 @@ title: Gestion des scénarios dans la zone des Scénarios
 description: Cette section contient des articles relatifs à la gestion des scénarios dans Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 1. Pour rechercher un scénario spécifique, commencez à saisir du texte dans la barre de recherche. Les scénarios sont filtrés au fur et à mesure que vous saisissez.
 1. Pour activer ou désactiver un scénario, localisez-le dans la liste, puis activez le bouton dans la colonne **Statut** de ce scénario.
 1. Pour accéder directement à la page Détails d’un scénario, localisez le scénario dans la liste, puis cliquez sur **Ouvrir** dans la ligne correspondant à ce scénario.
+1. Pour ajouter une description à un scénario, cliquez dans la colonne Description de ce scénario et saisissez une description.
+
+   Les descriptions peuvent contenir jusqu’à 240 caractères.
 1. Pour cloner un scénario, cochez la case située dans la ligne correspondant à ce scénario, puis sélectionnez **Cloner** dans la barre située en bas de l’écran.
 
    Pour plus d’informations sur le clonage de scénarios, consultez la section [Copier un scénario par clonage](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) dans l’article Copie de modules ou de scénarios.
@@ -61,4 +65,3 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 1. Pour affecter un ou plusieurs scénarios à un pool de programmes de travail, cochez la case en regard de chaque scénario que vous souhaitez affecter à un pool, puis cliquez sur **Affecter au pool de programmes de travail** dans la barre située en bas de l’écran. Sélectionnez le pool de programmes de travail auquel vous souhaitez affecter les scénarios.
 1. Pour supprimer un scénario, cochez la case en regard du scénario à supprimer, puis cliquez sur **Supprimer** dans la barre située au bas de la page.
 1. Pour masquer les colonnes de la liste, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/glist-column.png) et cochez ou décochez les cases en regard des noms des colonnes.
-
