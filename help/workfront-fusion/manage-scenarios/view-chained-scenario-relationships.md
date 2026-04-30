@@ -3,10 +3,11 @@ title: Afficher les relations de scénario chaîné
 description: Vous pouvez mapper les relations entre les scénarios parents et enfants.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 22%
+source-wordcount: '485'
+ht-degree: 21%
 
 ---
 
@@ -88,5 +89,6 @@ Pour afficher la carte des relations pour un scénario chaîné :
 
    * Si vous ne visualisez qu&#39;une partie de la carte, cette partie est plus sombre sur la carte simplifiée.
    * Le scénario actuel est marqué en bleu sur la carte simplifiée.
+1. Pour afficher l&#39;historique de l&#39;exécution de la chaîne, cliquez sur l&#39;onglet Historique situé en haut de la vue.
 
-
+   Vous pouvez cliquer sur un historique pour afficher les données spécifiques transmises entre les scénarios chaînés.
