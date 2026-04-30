@@ -4,10 +4,10 @@ description: Vous pouvez utiliser le connecteur Adobe Workfront Fusion d’Ado
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '7366'
-ht-degree: 100%
+source-wordcount: '7298'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ Pour obtenir des instructions sur la création d’un scénario, consultez les a
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -219,6 +219,17 @@ Ce module de déclenchement exécute un scénario en temps réel lorsque des obj
 Le module affiche tous les abonnements aux événements liés au webhook. Cela inclut les abonnements aux événements créés via Fusion ainsi que les abonnements aux événements créés directement via l’API. Cette vue d’abonnement aux événements n’est pas disponible dans la version héritée du module Surveiller les événements.
 
 Le module renvoie tous les champs standard associés à l’enregistrement, ainsi que tous les champs et valeurs personnalisés auxquels la connexion accède. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+>[!IMPORTANT]
+>
+>Vous pouvez modifier ce module ultérieurement. Le webhook sera modifié.
+>
+>Tenez compte des points suivants lors de la mise à jour d’un webhook :
+>
+>* Le webhook modifié est traité par les abonnements aux événements de Workfront comme un nouvel abonnement. L’historique des abonnements aux événements n’est pas conservé pour la configuration webhook précédente, car il est considéré comme un abonnement aux événements distinct.
+>* Le passage de l’ancien au nouvel abonnement à un événement peut ne pas être parfaitement synchronisé. Il est donc possible de recevoir un événement deux fois (si le nouvel abonnement commence à s&#39;exécuter avant l&#39;arrêt de l&#39;ancien) ou de manquer un événement (si l&#39;ancien abonnement s&#39;arrête avant que le nouveau ne commence à s&#39;exécuter).
+>
+>Pour plus d’informations sur la modification des Webhooks, voir [Modifier les Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 1. Cliquez sur **[!UICONTROL Ajouter]** à droite de la zone **Webhook**.
 
@@ -501,7 +512,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 >   Pour valider les utilisateurs et utilisatrices ajoutés dans un lot volumineux, vous pouvez ajouter ce lot de personnes directement dans Adobe Admin Console.
 >
->   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
+>   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
 
 +++
 
@@ -1096,7 +1107,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -1652,7 +1663,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Approbation d'épreuve</td> 
+   <td>Approbation d’épreuve</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -2366,9 +2377,9 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 >
 >* Workfront a récemment publié une nouvelle version de son service d’abonnement aux événements. La nouvelle version ne constitue pas une modification de l’API Workfront, mais plutôt une modification de la fonctionnalité d’abonnement aux événements. Ce module d’action met à jour la version de la payload de l’événement utilisée pour ce scénario.
 >
->   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, voir [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront
+>   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront.
 >
->   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr)].
+>   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Le module [!UICONTROL Surveiller les événements] de Workfront déclenche des scénarios basés sur un webhook qui crée un abonnement à un événement dans l’API Workfront. L’abonnement à un événement est un ensemble de données qui détermine les événements envoyés au webhook. Par exemple, si vous configurez un module [!UICONTROL Surveiller les événements] qui recherche les problèmes, alors l’abonnement à l’événement envoie uniquement les événements liés aux problèmes.
 

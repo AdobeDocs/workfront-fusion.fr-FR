@@ -4,10 +4,10 @@ description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez lan
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 69%
+source-wordcount: '2106'
+ht-degree: 65%
 
 ---
 
@@ -40,7 +40,7 @@ Avec les modules [!DNL Adobe Workfront Planning], vous pouvez déclencher un sc�
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -215,6 +215,17 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un type d’enregistrement ou un espace de travail est créé, mis à jour ou supprimé dans Workfront Planning.
 
+>[!IMPORTANT]
+>
+>Vous pouvez modifier ce module ultérieurement. Le webhook sera modifié.
+>
+>Tenez compte des points suivants lors de la mise à jour d’un webhook :
+>
+>* Le webhook modifié est traité par les abonnements aux événements de Workfront comme un nouvel abonnement. L’historique des abonnements aux événements n’est pas conservé pour la configuration webhook précédente, car il est considéré comme un abonnement aux événements distinct.
+>* Le passage de l’ancien au nouvel abonnement à un événement peut ne pas être parfaitement synchronisé. Il est donc possible de recevoir un événement deux fois (si le nouvel abonnement commence à s&#39;exécuter avant l&#39;arrêt de l&#39;ancien) ou de manquer un événement (si l&#39;ancien abonnement s&#39;arrête avant que le nouveau ne commence à s&#39;exécuter).
+>
+>Pour plus d’informations sur la modification des Webhooks, voir [Modifier les Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -292,7 +303,7 @@ Ce module d&#39;action supprime un seul type d&#39;enregistrement dans Workfront
 
 #### Effectuer un appel API personnalisé
 
-Ce module lance un appel API personnalisé à l’API [!DNL Adobe Workfront Planning].
+Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Workfront Planning].
 
 <table style="table-layout:auto"> 
   <col/>
