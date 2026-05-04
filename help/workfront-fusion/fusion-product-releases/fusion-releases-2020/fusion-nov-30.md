@@ -9,9 +9,8 @@ description: Cette page décrit toutes les améliorations apportées à Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 76cc14b3-ffec-4d49-b471-f3eb9dd89658
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 89%
@@ -24,11 +23,11 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Limite de taux pour les webhooks Workfront Fusion 2.0.
 
-We&#39;ve introduced a new performance guardrail for Workfront Fusion 2.0. Now, webhooks have a rate limit of 100 requests per second. Lorsque cette limite est atteinte, Workfront Fusion 2.0 envoie un statut 429 (Too many requests).
+Nous avons introduit un nouveau mécanisme de sécurisation des performances pour Workfront Fusion 2.0. Désormais, les webhooks sont limités à 100 requêtes par seconde. Lorsque cette limite est atteinte, Workfront Fusion 2.0 envoie un statut 429 (Too many requests).
 
 Auparavant, les demandes webhook n’étaient pas limitées.
 
