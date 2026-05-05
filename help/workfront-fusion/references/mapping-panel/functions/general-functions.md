@@ -4,10 +4,10 @@ description: Les fonctions générales suivantes sont disponibles dans le pannea
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 50%
+source-wordcount: '471'
+ht-degree: 39%
 
 ---
 
@@ -19,8 +19,8 @@ Vous pouvez utiliser ces variables générales pour identifier les détails d’
 
 * `executionID` : identifiant de l’exécution de ce scénario
 * `triggerTimestamp` : heure de déclenchement de cette exécution
-* `scenarioID` : ID du scénario actuellement ouvert.
-* `operationsConsumed` : nombre d’opérations utilisées à ce stade du scénario.
+* `scenarioID` : ID du scénario en cours d’exécution
+* `operationsConsumed` : nombre d’opérations utilisées à ce stade du scénario.
 
 ## [!UICONTROL get (object or array; path)]
 
@@ -142,3 +142,102 @@ Renvoie une collection contenant uniquement le mot de passe et l’adresse e-mai
 ## mergeCollections(collection1 ; collection2)
 
 Fusionne deux collections en combinant leurs paires clé-valeur. Si les deux collections contiennent la même clé, la valeur de la deuxième collection remplace celle de la première collection.
+
+### [!UICONTROL isBlank(value)]
+
+Renvoie `true` si la valeur est `null` ou une chaîne vide, sinon renvoie `false`. Contrairement à `ifEmpty`, cette fonction ne traite pas les `0` numériques ou les chaînes contenant uniquement des espaces comme vides.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `isBlank("")     `
+
+  Renvoie vrai
+* `isBlank(null)   `
+
+  Renvoie vrai
+* `isBlank("Hello")`
+
+  Renvoie false
+* `isBlank(0)      `
+
+  Renvoie false
+* `isBlank(" ")    `
+
+  Renvoie false
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(value; value1; value2; ...)]
+
+Renvoie `true` si la valeur est égale à l’une des valeurs fournies (égalité stricte, aucune coercition de type).
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `in("B"; "A"; "B"; "C")`
+
+  Renvoie vrai
+* `in("D"; "A"; "B"; "C")`
+
+  Renvoie false
+* `in(2; 1; 2; 3)        `
+
+  Renvoie vrai
+* `in("2"; 1; 2; 3)      `
+
+  Renvoie false
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(value; value1; value2; ...; trueExpression; falseExpression)]
+
+Renvoie `trueExpression` si la valeur correspond à l’une des valeurs de correspondance fournies, sinon renvoie `falseExpression`. Requiert au moins 3 arguments (valeur, une valeur de correspondance et trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  Renvoie oui
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  Renvoie no
+* `ifin("X"; "X"; "found"; "not found")`
+
+  Renvoie trouvée
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber; value1; value2; ...)]
+
+Renvoie la valeur à la position spécifiée par le numéro d&#39;index (basé sur 1). Renvoie `null` si l’index est hors limites ou est égal à 0.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  Renvoie Sun
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  Renvoie Lun
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  Renvoie True
+* `case(5; "a"; "b")           `
+
+  Renvoie null
+
+>[!NOTE]
+>
+>Nous vous recommandons d’utiliser cette option pour obtenir le nom du jour à partir d’une date :
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+

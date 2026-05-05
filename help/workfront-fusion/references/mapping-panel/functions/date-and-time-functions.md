@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 90%
+source-wordcount: '2253'
+ht-degree: 77%
 
 ---
 
@@ -97,6 +97,25 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné de jours à un
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(date; number)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Ajoute le nombre de jours de la semaine à la date. Seules les valeurs entières sont ajoutées (les valeurs fractionnelles sont arrondies à l’unité inférieure).
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+Renvoie 2016-12-:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+Renvoie 2016-12-:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths (date; nombre)]
 
 Renvoie une nouvelle date suite à l’ajout d’un nombre donné de mois à une date. Pour soustraire des mois, saisissez un nombre négatif.
@@ -130,6 +149,287 @@ Renvoie une nouvelle date suite à l’ajout d’un nombre donné d’années à
 * `addYears(2016-12-08T15:55:57.536Z; -2)`
 
   Renvoie 2014-08-08T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL dayOfMonth(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le jour du mois pour la date sous la forme d’un nombre compris entre 1 et 31.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  Renvoie 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  Renvoie 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le jour de la semaine pour la date sous la forme d’un nombre compris entre 1 (dimanche) et 7 (samedi).
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  Renvoie 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  Renvoie 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre total de jours dans le mois de la date donnée.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  Renvoie 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  Renvoie 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre total de jours de la semaine entre la date et la fin de la semaine ou la fin du mois, à la première échéance.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  Renvoie 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  Renvoie 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre total de jours de l’année de la date donnée (365 pour une année régulière et 366 pour une année bissextile).
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  Renvoie 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  Renvoie 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1 ; date2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la dernière date (la plus récente) de la liste.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  Renvoie 2016-12-:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  Renvoie 2016-06-:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(date1 ; date2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la date la plus ancienne de la liste.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  Renvoie 2016-06-:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  Renvoie 2014-03-:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL hour(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Retourne l’heure de la date sous la forme d’un nombre entre 0 et 23.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  Renvoie 15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  Renvoie 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL minute(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la minute de la date sous la forme d’un nombre compris entre 0 et 59.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  Renvoie 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  Renvoie 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL month(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le mois de la date sous la forme d&#39;un nombre compris entre 1 et 12.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  Renvoie 12.
+* `month("2016-01-08T15:55:57.536Z")`
+
+  Renvoie 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL second(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la seconde de la date sous la forme d&#39;un nombre compris entre 0 et 59.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  Renvoie 57
+* `second("2016-12-08T15:55:00.000Z")`
+
+  Renvoie 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2 ; date1)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre de jours de la semaine entre deux dates, en tenant compte des horodatages de ces jours. Par exemple, si l’heure de début est 15h00, la journée de début ne sera pas comptabilisée comme une journée complète.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  Renvoie 2,5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  Renvoie 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1 ; date2)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre de minutes de travail planifiées entre deux dates, selon une planification standard du lundi au vendredi, de 9 h à 17 h.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  Renvoie 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  Renvoie 960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL year(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie l’année de la date sous la forme d’un nombre à 4 chiffres.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  Renvoie 2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+  Renvoie 2000
 
 >[!ENDSHADEBOX]
 
@@ -465,6 +765,7 @@ Si vous devez calculer une date correspondant au n-ième jour de la semaine dans
 
 ![Calculer le énième jour](assets/date-time-functions-calc-nth-day-350x31.png)
 
+
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
 ```
@@ -523,6 +824,7 @@ Une possibilité consiste à utiliser l’expression suivante :
 
 ![Calculer les jours entre les dates](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
 ```
@@ -543,6 +845,7 @@ La formule ci-dessous présente une méthode de calcul du dernier jour du mois p
 
 ![Dernier jour du mois précédent](assets/last-day-prev-month.png)
 
+
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
@@ -555,13 +858,14 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 ![Dernière milliseconde du mois précédent](assets/last-millisecond-prev-month-350x45.png)
 
+
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
 ```
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
