@@ -1,24 +1,24 @@
 ---
-title: Modules Adobe Journey Optimizer
+title: Modules Adobe Journey Optimizer
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent  [!DNL Adobe Journey Optimizer], et le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 957fd49572a59c655b9dc1fda2d55bcbaf48e1cc
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 26%
+source-wordcount: '3721'
+ht-degree: 30%
 
 ---
 
 # Modules [!DNL Adobe Journey Optimizer]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Journey Optimizer] et les connecter à plusieurs applications et services tiers. Les modules [!DNL Adobe Journey Optimizer] vous permettent de créer, lire, mettre à jour ou supprimer des enregistrements, ou d’effectuer un appel API personnalisé à l’API [!DNL Adobe Journey Optimizer].
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Journey Optimizer] et le connecter à plusieurs applications et services tiers. Les modules [!DNL Adobe Journey Optimizer] vous permettent de créer, lire, mettre à jour ou supprimer des enregistrements, ou d’effectuer un appel API personnalisé à l’API [!DNL Adobe Journey Optimizer].
 
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -29,8 +29,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -39,28 +39,28 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Conditions préalables
 
-Avant d’utiliser le connecteur [!DNL Adobe Journey Optimizer], vous devez vous assurer que les conditions préalables suivantes sont remplies :
+Avant d’utiliser le connecteur [!DNL Adobe Journey Optimizer], assurez-vous que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Journey Optimizer].
 
@@ -74,7 +74,7 @@ Le connecteur Adobe Journey Optimizer utilise les éléments suivants :
  <tbody> 
   <tr> 
    <td role="rowheader">URL de base</td> 
-   <td>{{connection.url}}</td> 
+   <td><pre><code>&#123;&#123;connection.url&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Balise API</td> 
@@ -139,9 +139,9 @@ Vous pouvez créer une connexion dans n’importe quel module Adobe Journey Opti
 
 Lorsque vous configurez les modules [!DNL Adobe Journey Optimizer], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Journey Optimizer] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Gestion de la configuration](#configuration-management)
 * [Gestion des packages](#package-management)
@@ -1026,7 +1026,7 @@ Ce module d&#39;action déclenche un message unitaire aux destinataires que vous
    <td>Pour chaque destinataire à qui vous souhaitez envoyer ce message, cliquez sur <b>Ajouter un destinataire</b> et saisissez les informations suivantes :
    <ul>
    <li><p><b>Type</b></p>Sélectionnez <code>aep</code>.</li>
-   <li><p><b>Identifiant utilisateur</b></p>Saisissez ou mappez l’identifiant de profil Adobe Experience Platform du destinataire.</li>
+   <li><p><b>Identifiant d’utilisateur ou d’utilisatrice</b></p>Saisissez ou mappez l’identifiant de profil Adobe Experience Platform du destinataire.</li>
    <li><p><b>Espace de noms</b></p>Saisissez ou mappez l’espace de noms du profil Adobe Experience Platform du destinataire.</li>
    <li><p><b>Adresse e-mail</b></p></li>
    <li><p><b>Numéro de téléphone mobile</b></p></li>
@@ -1308,7 +1308,7 @@ Ce module de recherche répertorie toutes les configurations de plafonnement ou 
 ### Autre
 
 
-#### Effectuer un appel API personnalisé.
+#### Effectuer un appel API personnalisé
 
 Ce module d’action effectue un appel API personnalisé à l’API Adobe Journey Optimizer.
 
@@ -1330,7 +1330,7 @@ Ce module d’action effectue un appel API personnalisé à l’API Adobe Journe
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
@@ -1348,7 +1348,7 @@ Ce module d’action effectue un appel API personnalisé à l’API Adobe Journe
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
