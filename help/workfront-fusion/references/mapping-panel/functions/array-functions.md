@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
+source-git-commit: 869927a3bc9849fa136078c8acb195f56aee0320
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 86%
+source-wordcount: '648'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ Renvoie un tableau des propriétés d’un objet ou d’un tableau donné.
 
 Renvoie un nouveau tableau contenant uniquement les éléments sélectionnés.
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL merge (array1; array2; …)]
 
 Fusionne un ou plusieurs tableaux en un seul.
 
@@ -77,7 +77,7 @@ Trie les valeurs d’un tableau. Les valeurs valides du paramètre `order` sont 
 
 * `desc`
 
-  ordre décroissant : ..., 3, 2, 1 pour le type Nombre. ..., c, b, a, C, B, A pour le type Texte.
+  ordre décroissant : ..., 3, 2, 1 pour le type Nombre. ..., c, b, a, C, B, A pour le type Texte.
 
 * `asc ci`
 
@@ -222,7 +222,7 @@ yourArray = [3,4,5,6,7]
 
 * `arrayDifference [myArray, yourArray, classic]`
 
-  Retourne `[1,2]`
+  Renvoie `[1,2]`
 
 * `arrayDifference [yourArray, myArray, classic]`
 
@@ -231,6 +231,30 @@ yourArray = [3,4,5,6,7]
 * `arrayDifference [myArray, yourArray, symmetric]`
 
   Renvoie `[1,2,6,7]`
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL arrayElement(array; index)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+
+Renvoie l’élément à l’index de base 1 spécifié dans le tableau . Renvoie `null` si l’index est hors limites ou inférieur à 1.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `arrayElement(\[10; 20; 30]; 2)`
+
+  Renvoie 20
+* `arrayElement(\[10; 20; 30]; 1)`
+
+  Renvoie 10
+* `arrayElement(\[10; 20; 30]; 5)`
+
+  Renvoie null
 
 >[!ENDSHADEBOX]
 

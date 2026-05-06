@@ -4,20 +4,20 @@ description: Les fonctions mathématiques suivantes sont disponibles dans le pan
 author: Becky
 feature: Workfront Fusion
 exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 97%
+source-wordcount: '404'
+ht-degree: 62%
 
 ---
 
 # Fonctions mathématiques
 
-## [!UICONTROL average ([array of values]) average(value1; [value2], ...)]
+## [!UICONTROL average ([tableau de valeurs]) average(value1; [value2], ...)]
 
 Renvoie la valeur moyenne des valeurs numériques d’un tableau spécifique ou la valeur moyenne des valeurs numériques saisies unitairement.
 
-## [!UICONTROL ceil (number)]
+## [!UICONTROL ceil (nombre)]
 
 Renvoie le plus petit entier supérieur ou égal à un nombre spécifié.
 
@@ -35,7 +35,7 @@ Renvoie le plus petit entier supérieur ou égal à un nombre spécifié.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL floor (number)]
+## [!UICONTROL floor (nombre)]
 
 Renvoie le plus grand entier inférieur ou égal à un nombre spécifié.
 
@@ -57,15 +57,15 @@ Renvoie le plus grand entier inférieur ou égal à un nombre spécifié.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL max ([array of values]), max(value1;value2; ...)]
+## [!UICONTROL max ([tableau de valeurs]), max(valeur1;valeur2; ...)]
 
 Renvoie le plus grand nombre d’un tableau spécifié ou le plus grand nombre parmi les nombres renseignés individuellement.
 
-## [!UICONTROL min ([array of values]), min(value1; value2; ...)]
+## [!UICONTROL min ([tableau de valeurs]), min(valeur1; valeur2; ...)]
 
 Renvoie le plus petit nombre dans un tableau spécifié ou le plus petit nombre parmi les nombres saisis individuellement.
 
-## [!UICONTROL round (number)]
+## [!UICONTROL round (nombre)]
 
 Arrondit le nombre au nombre entier immédiatement inférieur.
 
@@ -91,15 +91,15 @@ Arrondit le nombre au nombre entier immédiatement inférieur.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sum ([array of values]), sum(value1; value2; ...)]
+## [!UICONTROL sum ([tableau de valeurs]), sum(valeur1; valeur2; ...)]
 
 Renvoie la somme des valeurs d’un tableau spécifié ou la somme des nombres saisis individuellement.
 
-## [!UICONTROL parseNumber (number; decimal separator)]
+## [!UICONTROL parseNumber (nombre ; séparateur décimal)]
 
 Analyse une chaîne avec un nombre et renvoie le nombre. Par exemple, parseNumber(1 756,456;,)
 
-## [!UICONTROL formatNumber (number; decimalPOINTS; [decimalSeparator]; [thousandsSeparator])]
+## [!UICONTROL formatNumber (nombre ; decimalPOINTS; [decimalSeparator]; [thousandsSeparator])]
 
 Renvoie un nombre au format demandé. Par défaut, le point décimal est une virgule (,) et le séparateur des milliers est un point (.).
 
@@ -112,3 +112,201 @@ Renvoie un nombre au format demandé. Par défaut, le point décimal est une vir
 Renvoie 123.456.789,000
 
 >[!ENDSHADEBOX]
+
+### [!UICONTROL abs(number)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la valeur absolue d’un nombre.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `abs(-3.14)`
+
+  Renvoie 3,14.
+* `abs(3.14)`
+
+  Renvoie 3,14.
+
+
+### [!UICONTROL div(number1; number2; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Divise tous les nombres dans l’ordre indiqué.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `div(10; 2)`
+
+  Renvoie 5
+* `div(100; 5; 4)`
+
+  Renvoie 5
+
+
+### [!UICONTROL ln(number)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le logarithme naturel du nombre.
+
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `ln(1)`
+
+  Renvoie 0
+* `ln(2.718281828)`
+
+  Renvoie 1
+
+
+### [!UICONTROL log(number1 ; number2)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le logarithme de `number2` au `number1` de base.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `log(10; 100)`
+
+  Renvoie 2
+* `log(2; 8)`
+
+  Renvoie 3
+
+
+### [!UICONTROL number(string)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Convertit une chaîne en nombre.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `number("3.14")`
+
+  Renvoie 3,14.
+* `number("42")`
+
+  Renvoie 42
+
+
+### [!UICONTROL power(number; power)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie un nombre élevé à la puissance spécifiée.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `power(2; 3)`
+
+  Renvoie 8
+* `power(4; 0.5)`
+
+  Renvoie 2
+
+
+### [!UICONTROL prod(number1 ; number2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Multiplie tous les nombres fournis ensemble.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `prod(2; 3; 4)`
+
+  Renvoie 24
+* `prod(5; 5)`
+
+  Renvoie 25
+
+
+### [!UICONTROL sortAscNum(number1 ; number2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie les nombres fournis triés par ordre croissant.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sortAscNum(3; 1; 2)`
+
+  Renvoie \[1, 2, 3]
+* `sortAscNum(5; 3; 4)`
+
+  Renvoie \[3, 4, 5]
+
+
+### [!UICONTROL sortDescNum(number1 ; number2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie les nombres fournis triés par ordre décroissant.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sortDescNum(3; 1; 2)`
+
+  Renvoie \[3, 2, 1]
+* `sortDescNum(5; 3; 4)`
+
+  Renvoie \[5, 4, 3]
+
+
+### [!UICONTROL sqrt(number)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie la racine carrée d’un nombre.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sqrt(9)`
+
+  Renvoie 3
+* `sqrt(4)`
+
+  Renvoie 2
+
+
+### [!UICONTROL sub(number1 ; number2 ; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Soustrait tous les nombres dans l&#39;ordre fourni.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sub(10; 3; 2)`
+
+  Renvoie 5
+* `sub(20; 5)`
+
+  Renvoie 15

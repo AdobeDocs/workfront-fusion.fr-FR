@@ -4,10 +4,10 @@ description: Les fonctions de chaîne suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 98%
+source-wordcount: '778'
+ht-degree: 78%
 
 ---
 
@@ -61,7 +61,7 @@ Met en majuscule la première lettre de chaque mot et toutes les autres lettres 
 
 >[!BEGINSHADEBOX]
 
-**Exemple:**
+**Exemple :**
 `startcase( hello WORLD )`
 
 Renvoie : [!UICONTROL Hello World].
@@ -230,7 +230,7 @@ Décode les caractères spéciaux d’une URL en texte.
 
 >[!BEGINSHADEBOX]
 
-**Exemple:**
+**Exemple :**
 `decodeURL( Automate%20your%20workflow )`
 
 Renvoie : [!UICONTROL Automate your workflow] (automatiser votre workflow).
@@ -339,7 +339,7 @@ Renvoie : b2b30b8ae1f9e5b40fbb0696eaabdbfd8d0c087f
 
 ## [!UICONTROL sha256 (text; [encoding]; [key])]
 
-Calcule le hachage sha256 d’une chaîne. Si l’argument key est spécifié, le hachage HMAC sha256 est renvoyé à la place. Codages pris en charge : « hex » (par défaut), « base64 » ou « latin1 ».>
+Calcule le hachage sha256 d’une chaîne. Si l’argument key est spécifié, le hachage HMAC sha256 est renvoyé à la place. Encodages pris en charge : « hex » (par défaut), « base64 » ou « latin1 ».>
 
 >[!BEGINSHADEBOX]
 
@@ -392,3 +392,144 @@ Transforme le texte en base64.
 Renvoie : d29ya2Zyb250==
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL concat(string1; separator; string2; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Concatène les chaînes avec un séparateur entre chacune.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `concat("Hello"; " "; "World")`
+
+  Renvoie Hello World
+* `concat("a"; "-"; "b"; "c")`
+
+  Renvoie a-b-c
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL left(string; length)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre de caractères spécifié à partir de la gauche d’une chaîne.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `left("Hello"; 3)`
+
+  Retourne l’aide
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL right(string; length)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le nombre de caractères spécifié à partir de la droite d’une chaîne.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `right("Hello"; 3)`
+
+  Renvoie le logo
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Supprime les signes diacritiques (accents) des caractères accentués.
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `removeAccents("Héllo wörld")`
+
+  Renvoie Hello world
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string; pattern; replace)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Remplace toutes les correspondances d’un modèle d’expression régulière par un
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+  Renvoie foo\_bar
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1; string2; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie les chaînes fournies triées par ordre croissant (alphabétique).
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+  Renvoie \[« apple », « banana », « cherry »]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1; string2; ...)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie les chaînes fournies triées par ordre décroissant (alphabétique inverse).
+
+**Syntaxe :** `sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+  Renvoie \[« cerise », « banane », « pomme »]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL pascal(string)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Convertit une chaîne en PascalCase en majuscule la première lettre de chaque mot et en supprimant les espaces.
+
+**Syntaxe :** `pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**Exemple :**
+
+* `pascal("hello world")`
+
+  Renvoie HelloWorld
+* `pascal("foo bar baz")`
+
+  Renvoie FooBarBaz
+
+>[!ENDSHADEBOX]
+
+

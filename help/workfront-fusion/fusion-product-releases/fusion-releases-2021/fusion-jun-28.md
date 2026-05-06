@@ -9,9 +9,8 @@ description: Cette page décrit toutes les améliorations apportées à Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: cbb15db2-b605-4025-9c8b-abee5b40ddaa
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
