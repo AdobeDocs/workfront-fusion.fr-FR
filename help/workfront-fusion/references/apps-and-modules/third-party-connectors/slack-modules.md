@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 585574f60758a27eb695f31c1193ed86ab700d38
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 67%
+source-wordcount: '2071'
+ht-degree: 68%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 67%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Slack] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -81,7 +81,7 @@ Le connecteur Slack utilise les éléments suivants :
  <tbody> 
   <tr> 
    <td role="rowheader">URL de base</td> 
-   <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Balise API</td> 
@@ -166,7 +166,7 @@ Ce module d’action crée un message.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Activez cette option pour permettre aux noms et aux canaux d’utiliser le format <code>@username</code> ou <code>#channel</code>. </p> <p>Pour plus d’informations, voir <a href="https://api.slack.com/docs/formatting">Formatage du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
+   <td> <p>Activez cette option pour permettre aux noms et aux canaux d’utiliser le format <code>@username</code> ou <code>#channel</code>. </p> <p>Pour plus d’informations, voir la section <a href="https://api.slack.com/docs/formatting">Mettre en forme du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
@@ -297,7 +297,7 @@ Ce module d’action permet de modifier un message existant.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
-   <td> <p>Saisissez le nouveau contenu texte du message que vous souhaitez mettre à jour.</p> <p>Pour plus d’informations, voir <a href="https://api.slack.com/docs/formatting">Formatage du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
+   <td> <p>Saisissez le nouveau contenu texte du message que vous souhaitez mettre à jour.</p> <p>Pour plus d’informations, voir la section <a href="https://api.slack.com/docs/formatting">Mettre en forme du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL As user]</td> 
@@ -309,7 +309,7 @@ Ce module d’action permet de modifier un message existant.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
-   <td> <p>Activez cette option pour permettre aux noms et aux canaux d’utiliser le format <code>@username</code> ou <code>#channel</code>. </p> <p>Pour plus d’informations, voir <a href="https://api.slack.com/docs/formatting">Formatage du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
+   <td> <p>Activez cette option pour permettre aux noms et aux canaux d’utiliser le format <code>@username</code> ou <code>#channel</code>. </p> <p>Pour plus d’informations, voir la section <a href="https://api.slack.com/docs/formatting">Mettre en forme du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
@@ -448,9 +448,9 @@ Ce module de recherche renvoie une liste d’utilisateurs et d’utilisatrices d
 
 ### Autre
 
-#### [!UICONTROL Réaliser un appel API]
+#### [!UICONTROL Effectuer un appel API]
 
-Ce module d’action permet d’effectuer un appel authentifié personnalisé vers l’API [!DNL Slack]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Slack].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Slack]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Slack].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -462,7 +462,7 @@ Ce module d’action permet d’effectuer un appel authentifié personnalisé ve
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Saisissez un chemin relatif à <code>https://slack.com/api/</code>. Exemple : <code>/users/identity</code>.</td> 
+   <td>Saisissez un chemin d’accès relatif à <code>https://slack.com/api/</code>. Exemple : <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
