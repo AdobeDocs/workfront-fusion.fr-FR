@@ -2,9 +2,9 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 532c5003b1f2e5e333eb59824743f88ed54449ef
+source-git-commit: e6c0e85d110bef2c09bcbdf0e9a291b607afa6d1
 workflow-type: tm+mt
-source-wordcount: '2403'
+source-wordcount: '2407'
 ht-degree: 55%
 
 ---
@@ -360,6 +360,7 @@ ht-degree: 55%
          * [Modules Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Modules audio et vidéo Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
          * [Modules Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+         * [Modules Adobe Firefly Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
          * [Modules Adobe Frame.io Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
          * [Modules Adobe Frame.io Legacy (V3)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Modèles Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
