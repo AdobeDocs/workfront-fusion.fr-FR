@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 6e483986a4297a18e34f8481aa2105f9474fb290
+source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 98%
+source-wordcount: '498'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 Ces connecteurs vous permettent de vous connecter à toute application ou à tout service web disposant d’une API publique.
 
 * [Module http > [!UICONTROL Effectuer une requête]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête d’autorisation de base]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de base]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de clé API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
@@ -45,6 +45,7 @@ Fusion propose des connecteurs pour de nombreux produits et services Adobe.
 * [Modules des bibliothèques d’Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Modules Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Modules Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+* [Modules audio et vidéo Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Modules Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Modules Adobe Frame.io Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Modules Adobe Frame.io Legacy (V3)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
