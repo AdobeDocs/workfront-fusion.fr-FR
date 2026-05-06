@@ -424,7 +424,7 @@ Ce module d’action génère des images similaires à l’image source que vous
 
 Ce module d’action effectue un appel personnalisé à l’API Firefly.
 
-Pour connaître les API spécifiques disponibles, consultez [API ](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
+Pour connaître les API spécifiques disponibles, consultez [API &#x200B;](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
 
 <table style="table-layout:auto"> 
   <col/>
