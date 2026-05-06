@@ -4,10 +4,10 @@ description: Les fonctions de tableau suivantes sont disponibles dans le panneau
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 77%
+source-wordcount: '2375'
+ht-degree: 73%
 
 ---
 
@@ -294,6 +294,31 @@ Renvoie la date la plus ancienne de la liste.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le dernier moment du mois de la date donnée — dernière milliseconde du dernier jour (23:59:59.999). Comptabilise automatiquement le nombre de jours dans le mois, années bissextiles comprises.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Renvoie 2016-06-:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  Renvoie 2016-01-:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  Renvoie 2016-02-:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL hour(date)]
 
 [!BADGE Nouveau !]{type=Informative}
@@ -310,6 +335,35 @@ Retourne l’heure de la date sous la forme d’un nombre entre 0 et 23.
 * `hour("2016-12-08T00:00:00.000Z")`
 
   Renvoie 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie `true` si la date tombe un samedi ou un dimanche et `false` un autre jour. Le résultat est déterminé dans le fuseau horaire configuré du scénario.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  Renvoie true (samedi)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  Renvoie true (dimanche)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  Renvoie false (lundi)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  Renvoie false (vendredi)
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ Renvoie la seconde de la date sous la forme d&#39;un nombre compris entre 0 et 5
 * `second("2016-12-08T15:55:00.000Z")`
 
   Renvoie 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(date)]
+
+[!BADGE Nouveau !]{type=Informative}
+
+Renvoie le premier moment du mois de la date donnée — minuit le 1er jour (00:00:00.000). Le résultat prend en compte le fuseau horaire.
+
+>[!BEGINSHADEBOX]
+
+**Exemples :**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Renvoie 2016-06-:00:00.000Z
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  Renvoie 2024-02-:00:00.000Z
 
 >[!ENDSHADEBOX]
 
@@ -865,7 +940,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
