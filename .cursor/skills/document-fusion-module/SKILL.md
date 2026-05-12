@@ -100,6 +100,7 @@ Demander : *« Veuillez partager une capture d’écran du panneau de configurat
    ```
    [!UICONTROL Background > Image > Source]
    ```
+
 2. Lisez le texte d’aide sous le champ de la capture d’écran (la légende grise/jaune). Utilisez-la comme base de la description.
 3. Effectuez une référence croisée au contexte de l’API à l’étape 3a pour identifier ce que le champ représente (par exemple, `background.fillAreaMask` est « la zone de l’arrière-plan où l’objet sera placé »).
 4. Écrivez la description en combinant **ce qu’est le champ** (à partir de l’API) avec **comment le fournir** (à partir du texte d’aide de l’interface utilisateur et du type de champ).
@@ -123,6 +124,7 @@ Utilisation à partir de la capture d’écran de la vue avancée :
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
+
 4. Après la `</table>` de clôture, ajoutez cette note de bas de page sur sa propre ligne :
 
    ```markdown
