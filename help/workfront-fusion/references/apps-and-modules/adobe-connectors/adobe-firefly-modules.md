@@ -4,10 +4,10 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
+source-git-commit: 4e432e277c84f95b3792cb7c295cba41a5563244
 workflow-type: tm+mt
-source-wordcount: '2519'
-ht-degree: 23%
+source-wordcount: '3886'
+ht-degree: 16%
 
 ---
 
@@ -236,6 +236,63 @@ Ce module fonctionne avec l’API Firefly V3 Async. La version précédente de c
 
 Ce module a été abandonné et sera supprimé prochainement. Utilisez plutôt le module Remplir une image .
 
+### Générer un composite adaptatif
+
+Ce module d&#39;action compose de manière transparente une image du sujet en une image d&#39;arrière-plan à un emplacement masqué. Vous pouvez contrôler l&#39;intensité d&#39;application des ombres, la façon dont l&#39;éclairage et la couleur de l&#39;objet sont harmonisés avec l&#39;arrière-plan et si les détails d&#39;arrière-plan d&#39;origine sont conservés dans la zone masquée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Firefly], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Image &gt; Source]</td> 
+   <td>Sélectionnez le mode d’affichage de l’image d’arrière-plan. L’image d’arrière-plan est la scène de destination où l’objet sera composé.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image d’arrière-plan ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image d’arrière-plan.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Remplir le masque de zone &gt; Source]</td> 
+   <td>Sélectionnez la manière dont vous fournissez le masque de zone de remplissage. Le masque de zone de remplissage indique la zone de l'arrière-plan où l'objet sera placé.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image du masque de zone de remplissage ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image du masque de zone de remplissage.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Object &gt; Image &gt; Source]</td> 
+   <td>Sélectionnez la manière dont vous fournissez l’image de l’objet. L’image de l’objet est l’image source de l’objet à composer en arrière-plan.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image de l’objet ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de l’objet.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL , Objet &gt; Masque &gt; Source]</td> 
+   <td>Sélectionnez la manière dont vous fournissez le masque d’objet. Le masque d’objet est le masque de segmentation de l’objet .<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image du masque de saisie ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de masque d’objet.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
+   <td>Entrez un nombre compris entre 1 et 3. Le module génère ce nombre de variations composites.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>Cliquez sur <b>Ajouter un élément</b> pour ajouter une valeur de départ, puis saisissez ou mappez un entier. Utilisez une adresse de contrôle par variation. Le nombre de valeurs de départ doit correspondre à la valeur [!UICONTROL Number of Variations] si les deux sont fournis.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Harmonization]*</td> 
+   <td>Saisissez un nombre compris entre 0 et 1 pour contrôler dans quelle mesure les couleurs et l'éclairage de l'objet sont ajustés en fonction de l'arrière-plan. <code>0.0</code> applique une harmonisation minimale et <code>1.0</code> une harmonisation maximale.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shadow Intensité]*</td> 
+   <td>Entrez un nombre compris entre 0 et 1 pour contrôler l'intensité de l'ombre dans le résultat composite. Des valeurs plus faibles réduisent l’ombre.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Preserve Background]*</td> 
+   <td>Choisissez s’il faut conserver les détails d’arrière-plan d’origine dans la zone masquée pendant la composition. <ul><li><b>Oui</b><p>Les détails d’arrière-plan d’origine de la zone masquée sont conservés pendant la composition.</p></li><li><b>Non</b><p>Les détails d’arrière-plan d’origine de la zone masquée ne sont pas conservés pendant la composition.</p></li><li><b>Non défini</b><p>Utilisez le comportement par défaut pour cette option.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>Sélectionnez le format de fichier sous lequel le composite généré sera enregistré.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Ces champs sont des champs avancés et ne s’affichent que si vous sélectionnez **[!UICONTROL Afficher les paramètres avancés]**.
+
 ### Générer une image
 
 Ce module d’action génère une image et en fonction d’une invite que vous fournissez. Vous pouvez également fournir une image de référence facultative ; l’image générée correspondra au style de l’image de référence.
@@ -372,6 +429,108 @@ Ce module d’action combine des images générées par Firefly pour créer un c
  </tbody> 
 </table>
 
+### Générer des images avec Image5
+
+Ce module d’action génère une image à l’aide du modèle Image5 [!DNL Adobe Firefly]. Vous fournissez une invite de texte et, éventuellement, une image de référence pour guider la génération.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Firefly], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Saisissez ou mappez une description de l’image que vous souhaitez générer. L’invite doit comporter entre 1 et 1 500 caractères. Plus de détails dans l’invite vous permettent de contrôler davantage ce qui apparaît dans l’image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Format]</td> 
+   <td>Sélectionnez la forme de l’image générée. Si une image de référence est fournie, sélectionnez <b>Auto</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resolution]</td> 
+   <td>Sélectionnez la résolution de l’image générée. La génération de résolutions plus élevées prend plus de temps.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reference Image]</td> 
+   <td>Vous pouvez éventuellement fournir une image de référence pour guider la génération. Cliquez sur <b>Ajouter un élément</b> et fournissez l’image. Lorsque vous utilisez une image de référence, définissez le format de  sur <b>Auto</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seed]*</td> 
+   <td>Cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez un entier pour reproduire un résultat de génération spécifique. Laissez le champ vide pour générer un résultat aléatoire.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt REASONING]*</td> 
+   <td>Sélectionnez la stratégie de raisonnement rapide utilisée lors de la génération.<ul><li><p><b>Qualité - Génère la description de l’image</b></p><p>Génère une description de l’image dans la sortie du module.</p></li><li><p><b>Vitesse - Génération plus rapide, aucune description</b></p><p>Génère l’image plus rapidement, mais laisse la description de l’image vide.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Locale]*</td> 
+   <td>Saisissez ou mappez une langue et un code de région pour adapter le contenu généré à un pays et une langue spécifiques. <p>Les paramètres régionaux doivent être fournis dans le code de langue ISO 639-1 et la région ISO 3166-1.</p><p>Exemple : <code>en-US</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]*</td> 
+   <td>Saisissez le nombre d’images à générer par demande. Actuellement, seul 1 est pris en charge. Pour générer plusieurs images, envoyez des requêtes distinctes.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model]*</td> 
+   <td>Sélectionnez le modèle de [!DNL Firefly] que vous souhaitez utiliser pour générer l’image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Saisissez ou mappez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle d’exécution.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+*Ces champs sont avancés et ne s’affichent que si vous sélectionnez **[!UICONTROL Afficher les paramètres avancés]**.
+
+### Générer un composite précis
+
+Ce module d&#39;action place un sujet dans la région masquée d&#39;une image de fond et applique une harmonisation générative afin que le sujet se fond naturellement avec le fond.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Firefly], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Image &gt; Source]</td> 
+   <td>Sélectionnez le mode d’affichage de l’image d’arrière-plan. L’image d’arrière-plan est la scène de destination où l’objet sera composé.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image d’arrière-plan ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image d’arrière-plan.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Remplir le masque de zone &gt; Source]</td> 
+   <td>Sélectionnez la manière dont vous fournissez le masque de zone de remplissage. Le masque de zone de remplissage indique la zone de l'arrière-plan où l'objet sera placé.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image du masque de zone de remplissage ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image du masque de zone de remplissage.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Object &gt; Image &gt; Source]</td> 
+   <td>Sélectionnez la manière dont vous fournissez l’image de l’objet. L’image de l’objet est l’image source de l’objet à composer en arrière-plan.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image de l’objet ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de l’objet.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nombre de variations]</td> 
+   <td>Entrez un nombre compris entre 1 et 3. Le module génère ce nombre de variations composites.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>Cliquez sur <b>Ajouter un élément</b> pour ajouter une valeur de départ, puis saisissez ou mappez un entier. Utilisez une adresse de contrôle par variation. Le nombre de valeurs de départ doit correspondre à la valeur [!UICONTROL Number of Variations] si les deux sont fournis.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Blend]*</td> 
+   <td>Entrez un nombre compris entre 0 et 1 pour contrôler le mélange entre l'apparence harmonisée et originale de l'objet. <code>0.0</code> applique une harmonisation complète et conserve <code>1.0</code> l’aspect de l’objet d’origine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>Sélectionnez le format de fichier sous lequel le composite généré sera enregistré.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Ces champs sont des champs avancés et ne s’affichent que si vous sélectionnez **[!UICONTROL Afficher les paramètres avancés]**.
+
 ### Générer des images similaires
 
 Ce module d’action génère des images similaires à l’image source que vous spécifiez.
@@ -419,6 +578,59 @@ Ce module d’action génère des images similaires à l’image source que vous
  </tbody> 
 </table>
 
+
+### Générer une vidéo
+
+Ce module d’action génère une vidéo à partir d’une invite de texte. Vous pouvez également fournir une ou plusieurs images de référence pour guider la génération vidéo.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Firefly], voir <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Créer une connexion à [!DNL Adobe Firefly]</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Saisissez ou mappez une description de la vidéo que vous souhaitez générer. Plus de détails dans l’invite vous permettent de mieux contrôler ce qui apparaît dans la vidéo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image &gt; Conditions]</td> 
+   <td>Fournissez éventuellement une ou plusieurs images de référence pour guider la génération vidéo. Cliquez sur <b>Ajouter un élément</b> pour chaque image de référence.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tailles]</td> 
+   <td>Cliquez sur <b>Ajouter un élément</b> et saisissez ou mappez les dimensions de la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bit Rate Factor]*</td> 
+   <td>Entrez un nombre compris entre 0 et 63 pour spécifier le facteur de débit de la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Camera Motion]*</td> 
+   <td>Sélectionnez le mouvement de caméra à utiliser dans la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Style d'invite]*</td> 
+   <td>Sélectionnez le style d’invite à utiliser pour la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paramètres Vidéo &gt; Angle De Prise De Vue]*</td> 
+   <td>Sélectionnez l’angle de prise de vue à utiliser dans la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Taille de la prise de vue]*</td> 
+   <td>Sélectionnez la taille de prise de vue à utiliser dans la vidéo générée.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Saisissez ou mappez le nombre maximal de résultats avec lesquels vous souhaitez que le module fonctionne au cours d’un cycle d’exécution.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Ces champs sont des champs avancés et ne s’affichent que si vous sélectionnez **[!UICONTROL Afficher les paramètres avancés]**.
 
 ### Effectuer un appel API personnalisé
 
