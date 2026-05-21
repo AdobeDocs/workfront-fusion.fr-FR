@@ -8,10 +8,16 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
 TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2: id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2:
+  - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4277
@@ -69,7 +75,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ### Jira
 
-Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
+Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
 
 <!--
 
@@ -264,7 +270,7 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Dans **chaque** module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
 1. Dans **each** Module Jira, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
-1. Passez à [ Mettre à jour le module Paramètres généraux ](#update-the-general-parameters-module).
+1. Passez à [&#x200B; Mettre à jour le module Paramètres généraux &#x200B;](#update-the-general-parameters-module).
 
 #### Mise à jour du module Paramètres généraux
 
@@ -293,7 +299,7 @@ Ce scénario crée une tâche ou un problème Workfront lorsqu’un problème es
 >[!NOTE]
 >
 >Ce scénario nécessite une connexion OAuth2 pour Jira.
->Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
+>Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
 
 +++**Développez pour afficher les instructions de configuration du Scénario 2 : JIRA vers Workfront : envoyez des mises à jour sur les problèmes et des commentaires à Workfront à partir de Jira**
 

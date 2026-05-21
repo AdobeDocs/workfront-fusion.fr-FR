@@ -8,8 +8,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
 TQID: https://experienceleague.adobe.com/xepLecibr9U6FpQM0neDy15DbFGF55rR6gVYvo644H4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 600
@@ -69,7 +71,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
    Le module est supprimé, laissant un espace réservé vide.
 
-1. Cliquez sur le module vierge, puis sélectionnez **** dans la liste des applications.
+1. Cliquez sur le module vierge, puis sélectionnez **&#x200B;**&#x200B;dans la liste des applications.
 1. Sélectionnez **Enregistrement de contrôle**.
 1. Assurez-vous que le module utilise la même connexion que le reste des modules du scénario.
 1. Dans le champ Type d’enregistrement , sélectionnez **Événement**.

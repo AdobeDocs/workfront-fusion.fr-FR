@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 TQID: https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 441
@@ -67,7 +68,7 @@ Les autres onglets comprennent des fonctions, des opérateurs et des mots-clés 
 
 Pour plus d’informations sur les onglets de fonctions, consultez [Vue d’ensemble des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [ Mappage d’éléments à l’aide de fonctions intégrées ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [&#x200B; Mappage d’éléments à l’aide de fonctions intégrées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Collections
 

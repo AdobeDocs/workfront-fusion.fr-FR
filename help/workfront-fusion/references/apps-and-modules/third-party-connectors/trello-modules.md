@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
 TQID: https://experienceleague.adobe.com/OIQOEivCkKstdfGnDsqlkNLHqU0nk81BaWTL1wJu-GI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 5401
@@ -253,7 +255,7 @@ Ce module d’action crée un nouveau panorama avec les paramètres sélectionn�
    <td> <p>Choisissez entre deux modes d’expiration des cartes. </p> 
     <ul> 
      <li><strong>[!UICONTROL Mode Pirate]</strong> : Les cartes se déchirent, jaunissent et se fissurent comme une vieille carte pirate en vieillissant.</li> 
-     <li><strong>[!UICONTROL Mode normal ]</strong> : Les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
+     <li><strong>[!UICONTROL Mode normal &#x200B;]</strong> : Les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -268,95 +270,95 @@ Ce module d’action permet de modifier les paramètres d’un panorama existant
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-<col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à Workfront Fusion, consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>Saisissez ou mappez l’ID unique [!UICONTROL Trello] du panorama que vous voulez que le module crée. Vous pouvez récupérer l’ID du panorama à l’aide d’un autre module, tel que le module Surveiller les panoramas.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New name]</td> 
-   <td> <p> Saisissez ou mappez un nouveau nom pour le panorama.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> Saisissez ou mappez une nouvelle description de panorama.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Saisissez ou mappez l’identifiant [!UICONTROL Trello] unique du panorama que vous souhaitez que le module modifie.  </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>Sélectionnez une option pour spécifier si l’utilisateur propriétaire de la connexion utilisée par ce module est abonné au panorama.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple : si votre panorama est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaire sur [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Private]</strong> : 
-      Membres, membres et observateurs</li> 
-     <li><strong>[!UICONTROL Pour l’organisation]</strong> : 
-      Membres, membres et observateurs, membres de l'organisation</li> 
-     <li><strong>[!UICONTROL Public]</strong> : 
-      Membres, Membres et observateurs, Membres de l'organisation, Tous</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de vote en fonction des niveaux d’autorisation.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
-   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de commentaires en fonction des niveaux d’autorisation.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Invitations] </td> 
-   <td> <p>Indiquez qui peut inviter des personnes sur ce panorama.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Self-join]</td> 
-   <td> <p> Indiquez si les personnes membres de l’équipe peuvent rejoindre le panorama elles-mêmes ou si elles doivent être invitées.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Card covers]</td> 
-   <td> <p> Indiquez si les couvertures de cartes doivent être affichées sur ce panorama.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Background] </td> 
-   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Note : les arrière-plans personnalisés sont disponibles uniquement pour les personnes abonnées à [!UICONTROL Trello Gold and Business Class].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> Si vous avez choisi d'utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background], saisissez ou mappez l'identifiant de l'arrière-plan que vous souhaitez utiliser.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
-   <td> <p>Choisissez entre deux modes d’expiration des cartes. </p> 
-    <ul> 
-     <li><strong>[!UICONTROL Mode Pirate]</strong> : Les cartes se déchirent, jaunissent et se fissurent comme une vieille carte pirate en vieillissant.</li> 
-     <li><strong>[!UICONTROL Mode normal]</strong> : les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
-   <td> <p> Indiquez si le flux de calendrier est activé ou pas.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
-   <td> <p> Affectez un nom au libellé de couleur souhaité.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive] </td> 
-   <td> <p>Sélectionnez une option pour indiquer si vous souhaitez archiver (fermer) le panorama. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+><col> 
+> <col> 
+> <tbody> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Connection] </td> 
+>   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!UICONTROL Trello] à Workfront Fusion, consultez <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+>   <td> <p>Saisissez ou mappez l’ID unique [!UICONTROL Trello] du panorama que vous voulez que le module crée. Vous pouvez récupérer l’ID du panorama à l’aide d’un autre module, tel que le module Surveiller les panoramas.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL New name]</td> 
+>   <td> <p> Saisissez ou mappez un nouveau nom pour le panorama.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL New description]</td> 
+>   <td> <p> Saisissez ou mappez une nouvelle description de panorama.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
+>   <td> <p>Saisissez ou mappez l’identifiant [!UICONTROL Trello] unique du panorama que vous souhaitez que le module modifie.  </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+>   <td> <p>Sélectionnez une option pour spécifier si l’utilisateur propriétaire de la connexion utilisée par ce module est abonné au panorama.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
+>   <td> <p>Les panoramas possèdent des règles de vote et de commentaire différentes pour chaque niveau d’autorisation. Par exemple : si votre panorama est [!UICONTROL Private] et que vous définissez les règles de vote et de commentaire sur [!UICONTROL All], vous recevez une erreur. </p> <p>Le vote et les commentaires sont limités aux groupes suivants pour chaque niveau d’autorisation :</p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Private]</strong> : 
+>      Membres, membres et observateurs</li> 
+>     <li><strong>[!UICONTROL Pour l’organisation]</strong> : 
+>      Membres, membres et observateurs, membres de l'organisation</li> 
+>     <li><strong>[!UICONTROL Public]</strong> : 
+>      Membres, Membres et observateurs, Membres de l'organisation, Tous</li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+>   <td> <p>Sélectionnez une option pour spécifier qui peut voter sur ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de vote en fonction des niveaux d’autorisation.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+>   <td> <p>Sélectionnez une option pour spécifier qui peut commenter les cartes de ce panorama. Reportez-vous au champ [!UICONTROL Permission level] pour en savoir plus sur les limitations de commentaires en fonction des niveaux d’autorisation.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Invitations] </td> 
+>   <td> <p>Indiquez qui peut inviter des personnes sur ce panorama.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Self-join]</td> 
+>   <td> <p> Indiquez si les personnes membres de l’équipe peuvent rejoindre le panorama elles-mêmes ou si elles doivent être invitées.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Card covers]</td> 
+>   <td> <p> Indiquez si les couvertures de cartes doivent être affichées sur ce panorama.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Background] </td> 
+>   <td> <p>Sélectionnez la couleur de l’arrière-plan ou de l’arrière-plan personnalisé.</p> <p>Note : les arrière-plans personnalisés sont disponibles uniquement pour les personnes abonnées à [!UICONTROL Trello Gold and Business Class].</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Background ID]</td> 
+>   <td> <p> Si vous avez choisi d'utiliser un arrière-plan personnalisé dans le champ [!UICONTROL Background], saisissez ou mappez l'identifiant de l'arrière-plan que vous souhaitez utiliser.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+>   <td> <p>Choisissez entre deux modes d’expiration des cartes. </p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Mode Pirate]</strong> : Les cartes se déchirent, jaunissent et se fissurent comme une vieille carte pirate en vieillissant.</li> 
+>     <li><strong>[!UICONTROL Mode normal]</strong> : les cartes deviennent progressivement plus transparentes à mesure qu’elles vieillissent. </li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+>   <td> <p> Indiquez si le flux de calendrier est activé ou pas.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
+>   <td> <p> Affectez un nom au libellé de couleur souhaité.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Archive] </td> 
+>   <td> <p>Sélectionnez une option pour indiquer si vous souhaitez archiver (fermer) le panorama. </p> </td> 
+>  </tr> 
+> </tbody> 
+></table>
 
 
 +++

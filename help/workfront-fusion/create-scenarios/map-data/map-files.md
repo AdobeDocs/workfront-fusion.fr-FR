@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
 TQID: https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 412
@@ -71,7 +72,7 @@ Pour mapper un fichier :
 1. Dans le module cible, qui est la cible que vous mappez, recherchez la zone **Fichier**.
 1. Pour mapper un fichier généré par un module précédent, sélectionnez le module qui génère le fichier.
 
-   ![Document de téléchargement ](assets/wf-download-document.png)
+   ![Document de téléchargement &#x200B;](assets/wf-download-document.png)
 
 1. Pour mapper manuellement le nom et les données, sélectionnez Mapper, puis saisissez ou mappez le nom et les données du fichier.
 

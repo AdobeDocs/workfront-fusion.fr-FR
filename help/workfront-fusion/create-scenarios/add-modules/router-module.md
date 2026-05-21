@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
 TQID: https://experienceleague.adobe.com/ZKrvE8zGuVmfPCTMx7LZHw979aPLo89lARWejMCSETs
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 986
@@ -110,7 +111,7 @@ Les routeurs avec filtres affichent l’icône de filtre ![icône de filtre](ass
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 1. (Conditionnel) Si le nom du filtre est trop long pour tenir dans le libellé, pointez sur le libellé pour afficher le nom entier.
 
-1. Passez à [ Configurer un itinéraire de secours ](#configure-a-fallback-route).
+1. Passez à [&#x200B; Configurer un itinéraire de secours &#x200B;](#configure-a-fallback-route).
 
 ## Configuration d’un itinéraire de secours
 
@@ -128,7 +129,7 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
+   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 

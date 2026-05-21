@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1417
@@ -89,7 +91,7 @@ Le connecteur Bibliothèques Adobe Creative Cloud utilise les éléments suivant
 
 ## Modules [!UICONTROL Adobe Creative Cloud Libraries] et leurs champs
 
-Lorsque vous configurez les modules [!UICONTROL Bibliothèques ], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Creative Cloud Libraries] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules [!UICONTROL Bibliothèques &#x200B;], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Creative Cloud Libraries] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -113,7 +115,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 * [[!UICONTROL Charger un élément]](#upload-an-element)
 
-* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
+* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Surveiller les éléments mis à jour]](#watch-updated-elements)
 

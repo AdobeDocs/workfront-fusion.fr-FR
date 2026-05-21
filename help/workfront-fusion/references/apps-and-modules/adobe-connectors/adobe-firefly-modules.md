@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
 TQID: https://experienceleague.adobe.com/1hI4NuUl2eEAgWyXRKLHQ3-6MM9-2tFyujGbRfHSBmU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 3886
@@ -265,7 +268,7 @@ Ce module d&#39;action compose de manière transparente une image du sujet en un
    <td>Sélectionnez la manière dont vous fournissez l’image de l’objet. L’image de l’objet est l’image source de l’objet à composer en arrière-plan.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image de l’objet ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de l’objet.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Objet &gt; Masque &gt; Source]</td> 
+   <td role="rowheader">[!UICONTROL , Objet &gt; Masque &gt; Source]</td> 
    <td>Sélectionnez la manière dont vous fournissez le masque d’objet. Le masque d’objet est le masque de segmentation de l’objet .<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image du masque de saisie ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de masque d’objet.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -459,7 +462,7 @@ Ce module d’action génère une image à l’aide du modèle Image5 [!DNL Adob
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reference Image]</td> 
-   <td>Vous pouvez éventuellement fournir une image de référence pour guider la génération. Cliquez sur <b>Ajouter un élément</b> et fournissez l’image. Lorsque vous utilisez une image de référence, définissez le format de [!UICONTROL] sur <b>Auto</b>.</td> 
+   <td>Vous pouvez éventuellement fournir une image de référence pour guider la génération. Cliquez sur <b>Ajouter un élément</b> et fournissez l’image. Lorsque vous utilisez une image de référence, définissez le format de  sur <b>Auto</b>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]*</td> 
@@ -640,7 +643,7 @@ Ce module d’action génère une vidéo à partir d’une invite de texte. Vous
 
 Ce module d’action effectue un appel personnalisé à l’API Firefly.
 
-Pour connaître les API spécifiques disponibles, consultez [API ](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
+Pour connaître les API spécifiques disponibles, consultez [API &#x200B;](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
 
 <table style="table-layout:auto"> 
   <col/>

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
 TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 286
@@ -19,7 +20,7 @@ Cet article décrit l’accès et les fonctionnalités disponibles pour les diff
 
 >[!NOTE]
 >
->Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [ Présentation des organisations et des équipes ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [&#x200B; Présentation des organisations et des équipes &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Rôles d’organisation
 
