@@ -4,16 +4,23 @@ description: Pour utiliser  [!DNL Google Sheets]  avec Adobe Workfront Fusion, v
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/jotAS2NHIZV4NNM0tvhGFlTnT-owWSKo8zo7cV4J7dM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 65%
+source-wordcount: 4067
+ht-degree: 67%
 
 ---
 
 # Modules [!DNL Google Sheets]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Google Sheets] et les connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Google Sheets] et le connecter à plusieurs applications et services tiers.
 
 Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Google Sheets] à Workfront Fusion, voir [Créer une connexion vers Adobe Workfront Fusion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -26,8 +33,8 @@ Pour obtenir des instructions sur la procédure de connexion de votre compte [!D
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,22 +43,22 @@ Pour obtenir des instructions sur la procédure de connexion de votre compte [!D
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,9 +93,9 @@ Le connecteur Google Sheets utilise les éléments suivants :
 
 Lorsque vous configurez les modules [!DNL Google Forms], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Déclencheurs
 
@@ -140,7 +147,7 @@ Le module récupère uniquement les nouvelles lignes qui n’ont pas été rempl
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Date and time render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15 heures serait 33,625. L’année 1900 est traitée comme une année non bissextile, ce qui est correct.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15h serait 33.625. L'année 1900 n'est donc pas une année bissextile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -169,9 +176,9 @@ Ce module ajoute une ligne à une feuille.
 
 Lorsque vous configurez les modules [!DNL Google Sheets], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Google Sheets] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -431,7 +438,7 @@ Récupère une valeur d’une cellule sélectionnée.
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!DNL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15 heures serait 33,625. L’année 1900 est traitée comme une année non bissextile, ce qui est correct.</p></li><li> <p style="font-weight: bold;">[!DNL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p> </li><ul></td> 
+   <td> <ul><li><p style="font-weight: bold;">[!DNL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15h serait 33.625. L'année 1900 n'est donc pas une année bissextile.</p></li><li> <p style="font-weight: bold;">[!DNL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p> </li><ul></td> 
   </tr> 
  </tbody> 
 </table>
@@ -454,7 +461,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -605,7 +612,7 @@ Ce module permet de modifier le contenu d’une cellule dans une ligne sélectio
   </tr> 
   <tr> 
    <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15 heures serait 33,625. L’année 1900 est traitée comme une année non bissextile, ce qui est correct.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15h serait 33.625. L'année 1900 n'est donc pas une année bissextile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -675,7 +682,7 @@ Effectue une recherche dans les lignes à l’aide des options de filtre.
   </tr> 
   <tr> 
    <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15 heures serait 33,625. L’année 1900 est traitée comme une année non bissextile, ce qui est correct.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Les champs Date, Time, Datetime et Durée sont générés en double au format « numéro de série », tel que popularisé par Lotus 1-2-3. La partie entière de la valeur (à gauche de la décimale) compte les jours écoulés depuis le 30 décembre 1899. La partie fractionnaire (à droite de la décimale) compte le temps comme une fraction de la journée. Par exemple, le 1er janvier 1900 à midi serait 2,5, 2 pour 2 jours après le 30 décembre 1899, et 0,5 parce que midi est une demi-journée. Le 1er février 1900 à 15h serait 33.625. L'année 1900 n'est donc pas une année bissextile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Les champs Date, Heure, Date et Heure sont générés sous la forme de chaînes dans leur format numérique donné (qui dépend des paramètres régionaux de la feuille de calcul).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned rows]</td> 
@@ -745,7 +752,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 1. Dans la fenêtre [!UICONTROL Dessin], cliquez sur l&#39;icône **[!UICONTROL Zone de texte]** ![Zone de texte](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) située en haut de la fenêtre.
 1. Créez un bouton et cliquez sur le bouton **[!UICONTROL Enregistrer et fermer]** dans le coin supérieur droit :
 1. Le bouton est placé dans votre feuille de calcul. Cliquez sur les trois points verticaux dans le coin supérieur droit du bouton :
-1. Choisissez **[!UICONTROL Attribuer un script...]** dans le menu.
+1. Choisissez **[!UICONTROL Attribuer le script..].** dans le menu.
 1. Saisissez le nom de votre script (fonction), par exemple `runScenario`, et cliquez sur **[!UICONTROL OK]** :
 1. Choisissez **[!UICONTROL Outils]** > **[!UICONTROL Éditeur de script]** dans la barre de menu principale.
 

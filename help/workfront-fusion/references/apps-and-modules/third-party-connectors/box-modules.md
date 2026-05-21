@@ -4,16 +4,22 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 36%
+source-wordcount: 1556
+ht-degree: 38%
 
 ---
 
 # Modules Box
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Box] et les connecter à plusieurs applications et services tiers. Il surveille un dossier spécifié pour vérifier les modifications de fichier, modifier et supprimer des fichiers existants ou charger de nouveaux fichiers dans un dossier.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Box] et le connecter à plusieurs applications et services tiers. Il surveille un dossier spécifié pour vérifier les modifications de fichier, modifier et supprimer des fichiers existants ou charger de nouveaux fichiers dans un dossier.
 
 Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -144,7 +150,7 @@ Ce module de déclenchement lance un scénario lorsqu’un nouveau fichier est a
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Box] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   <tr> 
    <td role="rowheader">Observer dans le dossier</td> 
-   <td> <p>Sélectionnez le dossier que vous souhaitez observer. Un scénario peut surveiller un seul dossier.</p> 
+   <td> <p>Sélectionnez le dossier que vous souhaitez consulter. Un scénario peut surveiller un seul dossier.</p> 
    </td> 
   </tr> 
   <tr> 
@@ -365,7 +371,7 @@ Ce module d&#39;action effectue un appel personnalisé à l&#39;API Box.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Saisir un chemin relatif à <code>https://api.box.com</code>. <p>Exemple : <code>/2.0/users/me</code></p></td> 
+   <td>Saisissez un chemin relatif à <code>https://api.box.com</code>. <p>Exemple : <code>/2.0/users/me</code></p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 

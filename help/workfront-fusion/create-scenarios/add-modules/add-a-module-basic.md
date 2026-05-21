@@ -4,16 +4,19 @@ description: Cet article décrit le processus de base d’ajout d’un module à
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/R2JCX7aaYzmYHgiLqj1WDlVFHI-s-qanltoOrycQ5JU
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 14%
+source-wordcount: 684
+ht-degree: 18%
 
 ---
 
 # Ajouter un module dans un scénario
 
-Un scénario se compose d’une série de modules indiquant comment les données doivent être transformées dans une application ou transférées entre des applications et des services web. Vous créez un module en ajoutant et en configurant des modules.
+Un scénario se compose d’une série de modules qui indiquent comment les données doivent être transformées dans une application ou transférées entre les applications et les services web. Vous créez un module en ajoutant et en configurant des modules.
 
 Cet article décrit le processus de base d’ajout d’un module à un scénario. Pour obtenir des instructions plus spécifiques sur l’ajout d’un scénario, consultez les autres articles sous [Ajouter des modules : index des articles](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
 

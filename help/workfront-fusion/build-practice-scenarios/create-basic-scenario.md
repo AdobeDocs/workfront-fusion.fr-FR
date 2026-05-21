@@ -7,10 +7,15 @@ description: Découvrez comment créer un scénario d’automatisation simple av
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 29%
+source-wordcount: 1426
+ht-degree: 30%
 
 ---
 
@@ -45,7 +50,7 @@ Cet exemple vous guide tout au long du processus de création d’un scénario q
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -68,7 +73,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Une liste d&#39;applications s&#39;affiche à droite du module.
 
-1. Sélectionnez **Adobe Workfront**. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
+1. Sélectionnez **&#x200B;**. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
 
    La liste est modifiée afin d’afficher tous les modules Workfront que vous pouvez utiliser.
 
@@ -162,7 +167,7 @@ Dans ce scénario, un test réussi permet de localiser la requête et de la conv
 
    >[!IMPORTANT]
    >
-   >Enregistrez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
 
 >[!TIP]
 >

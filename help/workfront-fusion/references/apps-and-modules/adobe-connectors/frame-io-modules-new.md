@@ -4,10 +4,16 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/aqE-HRALPymeQ8S3v6W1DGXOKmWIBCCWETigPp232jA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4539'
-ht-degree: 100%
+source-wordcount: 4588
+ht-degree: 99%
 
 ---
 
@@ -206,7 +212,7 @@ Si vous ne disposez pas déjà d’informations d’identification de serveur à
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, consultez <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Créer des informations d’identification d’utilisateur ou d’utilisatrice dans l’Adobe Developer Console</a> dans cet article.</p>
+          <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].<p>Pour obtenir des instructions sur la création d’informations d’identification, consultez <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Créer des informations d’identification d’utilisateur ou d’utilisatrice dans l’Adobe Developer Console</a> dans cet article.</p>
         </tr>
        </tbody>
     </table>
@@ -893,7 +899,8 @@ Ce module de recherche récupère tous les projets pour l’équipe spécifiée.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
-   <td> <p>Saisissez ou mappez le nombre maximal de projets que le module doit renvoyer pour chaque cycle d’exécution de scénario.</p> </td> 
+   <td> <p>Saisir ou mapper le nombre maximal de projets
+   vous souhaitez que le module réapparaisse lors de chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1024,7 +1031,8 @@ Ce module répertorie tous les espaces de travail d’un compte.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
-   <td> <p>Saisissez ou mappez le nombre maximal d’espaces de travail que le module doit renvoyer pour chaque cycle d’exécution de scénario.</p> </td> 
+   <td> <p>Saisir ou mapper le nombre maximal d’espaces de travail
+   vous souhaitez que le module réapparaisse lors de chaque cycle d’exécution du scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

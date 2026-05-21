@@ -4,10 +4,13 @@ description: Les jetons de mise en forme de la date et de l’heure suivants son
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 91%
+source-wordcount: 253
+ht-degree: 100%
 
 ---
 
@@ -269,7 +272,7 @@ ht-degree: 91%
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with] zéro en début</p> </td> 
+   <td> <p>[!UICONTROL Minutes with] précédées d’un zéro</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 

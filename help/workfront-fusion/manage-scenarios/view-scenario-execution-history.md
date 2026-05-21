@@ -4,10 +4,13 @@ description: Vous pouvez afficher des informations sur les événements ou les e
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 65%
+source-wordcount: 915
+ht-degree: 63%
 
 ---
 
@@ -48,7 +51,7 @@ Un événement de scénario est une modification apportée au scénario, par exe
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -140,8 +143,8 @@ You can sort the scenario execution history.
 
    Ou
 
-   Saisir **Ctrl+Maj+F** (Windows) ou **Cmd+Maj+F** (Mac)
-La fenêtre [!UICONTROL Rechercher l’historique] s’ouvre.
+   Tapez **Ctrl+Maj+F** (Windows) ou **Cmd+Maj+F** (Mac)
+La fenêtre [!UICONTROL Rechercher dans l’historique] s’ouvre.
 
 1. (Facultatif) Pour rechercher des exécutions qui contiennent du texte spécifique, saisissez le texte dans la barre de recherche de la fenêtre **[!UICONTROL Rechercher l’historique]**.
 

@@ -4,9 +4,14 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: 4690
 ht-degree: 98%
 
 ---
@@ -21,7 +26,7 @@ Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows 
 >
 >Avant de lire cet article, consultez la documentation de l’API et familiarisez-vous avec les fonctionnalités de [!DNL GitLab].
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -252,7 +257,7 @@ Ce module de déclenchement planifié lance un scénario lors de l’ajout d’u
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 
@@ -363,7 +368,7 @@ Ce module d’action annule une seule version d’un projet.
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -781,7 +786,7 @@ Ce module de recherche renvoie une liste de versions pour un engagement spécifi
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour créer une connexion, voir la section <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -1014,7 +1019,7 @@ Ce module d’action réessaie une version unique dans un engagement.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour créer une connexion, voir la section <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
+   <td>Pour créer une connexion, voir <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 

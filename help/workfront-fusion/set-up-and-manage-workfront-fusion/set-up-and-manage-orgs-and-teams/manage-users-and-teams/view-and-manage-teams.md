@@ -1,17 +1,20 @@
 ---
-title: Affichage et gestion des équipes
+title: Afficher et gérer des équipes
 description: Vous pouvez afficher une liste des équipes de votre organisation et modifier les noms des équipes.
 author: Becky
 feature: Workfront Fusion
 exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+TQID: https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 18%
+source-wordcount: 308
+ht-degree: 43%
 
 ---
 
-# Affichage et gestion des équipes
+# Afficher et gérer des équipes
 
 Les équipes sont des groupes d’utilisateurs et d’utilisatrices qui partagent un accès à des ressources spécifiques. Ces ressources peuvent inclure les éléments suivants :
 
@@ -19,7 +22,7 @@ Les équipes sont des groupes d’utilisateurs et d’utilisatrices qui partagen
 * Connexions
 * Webhooks
 * Clés
-* Magasins de données
+* Entrepôts de données
 * Structures de données
 * Paramètres de notification par e-mail
 
@@ -36,8 +39,8 @@ Pour ajouter des utilisateurs à des équipes, voir [Ajouter un utilisateur à u
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -46,7 +49,7 @@ Pour ajouter des utilisateurs à des équipes, voir [Ajouter un utilisateur à u
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -59,7 +62,7 @@ Pour ajouter des utilisateurs à des équipes, voir [Ajouter un utilisateur à u
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

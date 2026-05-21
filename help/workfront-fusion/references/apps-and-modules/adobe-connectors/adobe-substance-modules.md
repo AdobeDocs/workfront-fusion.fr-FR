@@ -4,10 +4,15 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/TpqnvObLgYeYWDIMW8ufHLTculqL9wgLrWhrgHakGyc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 36%
+source-wordcount: 859
+ht-degree: 35%
 
 ---
 
@@ -59,7 +64,7 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez 
 
 ## Conditions préalables
 
-Avant d’utiliser le connecteur [!DNL Adobe Substance], vous devez vous assurer que les conditions préalables suivantes sont remplies :
+Avant d’utiliser le connecteur [!DNL Adobe Substance], assurez-vous que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Substance].
 
@@ -93,7 +98,7 @@ Ce module d’action génère du contenu pour un composite 3D qui inclut la ress
   </tr> 
   <tr> 
    <td role="rowheader">Autres champs</td> 
-   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">documentation de l’API Substance Adobe</a>.</td> 
+   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">documentation de l’API Substance </a>.</td> 
   </tr> 
   <!--
   <tr>
@@ -166,7 +171,7 @@ Ce module d’action crée une scène à l’aide des ressources que vous spéci
   </tr> 
   <tr> 
    <td role="rowheader">Autres champs</td> 
-   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/assemble">documentation de l’API Substance Adobe</a>.</td> 
+   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/assemble">documentation de l’API Substance </a>.</td> 
   </tr> 
    <tr> 
    <td role="rowheader">Sources</td> 
@@ -209,7 +214,7 @@ Ce module d’action effectue le rendu d’une image d’une scène.
    <td role="rowheader">Connexion</td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Substance] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
    <td role="rowheader">Autres champs</td> 
-   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render">documentation de l’API Substance Adobe</a>.</td> 
+   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render">documentation de l’API Substance </a>.</td> 
   </tr> 
    <tr> 
    <td role="rowheader">Sources</td> 
@@ -230,7 +235,7 @@ Ce module d’action effectue le rendu d’une image d’une scène avec moins d
    <td role="rowheader">Connexion</td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Adobe Substance] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
    <td role="rowheader">Autres champs</td> 
-   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render-basic">documentation de l’API Substance Adobe</a>.</td> 
+   <td>Configurez d’autres champs selon vos besoins. Pour plus d’informations sur les champs, consultez la <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render-basic">documentation de l’API Substance </a>.</td> 
   </tr> 
    <tr> 
    <td role="rowheader">Sources</td> 

@@ -2,19 +2,24 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: Ajout d’un module de déclenchement à un scénario de base
+title: Ajouter un module déclencheur à un scénario de base
 description: Découvrez comment ajouter un module de déclenchement pour permettre au scénario de rechercher régulièrement de nouvelles requêtes et de les convertir en projets.
 author: Becky
 feature: Workfront Fusion
 exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+TQID: https://experienceleague.adobe.com/xepLecibr9U6FpQM0neDy15DbFGF55rR6gVYvo644H4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 7%
+source-wordcount: 600
+ht-degree: 22%
 
 ---
 
-# Ajout d’un module de déclenchement à un scénario de base
+# Ajouter un module déclencheur à un scénario de base
 
 Les modules Trigger sont placés au début d’un scénario. Ces modules démarrent l’exécution d’un scénario lorsqu’il y a eu une modification dans un service donné. La modification peut être la création de nouveaux enregistrements, la suppression d’un enregistrement, la mise à jour d’un enregistrement, etc. Vous spécifiez les critères des modifications qui commencent le scénario.
 
@@ -33,8 +38,8 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -43,13 +48,13 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -66,7 +71,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
    Le module est supprimé, laissant un espace réservé vide.
 
-1. Cliquez sur le module vierge, puis sélectionnez **Adobe Workfront** dans la liste des applications.
+1. Cliquez sur le module vierge, puis sélectionnez **&#x200B;**&#x200B;dans la liste des applications.
 1. Sélectionnez **Enregistrement de contrôle**.
 1. Assurez-vous que le module utilise la même connexion que le reste des modules du scénario.
 1. Dans le champ Type d’enregistrement , sélectionnez **Événement**.

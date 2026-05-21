@@ -6,9 +6,18 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/J7kDB9abxI53dRs6xZikcHRDbgHZZfEhWLzGDUw2CRg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: 772
 ht-degree: 46%
 
 ---
@@ -132,6 +141,6 @@ Les modèles sans icônes ont un statut [!UICONTROL Privé]. Ils ne sont pas pub
 1. Cliquez sur **[!UICONTROL Modèles]** dans le panneau de navigation de gauche.
 1. Cliquez sur le modèle pour lequel vous souhaitez rechercher des informations.
 1. Cliquez sur **Options** dans le coin supérieur droit.
-1. Sélectionnez *Diagramme SVG*.
+1. Sélectionnez *Diagramme*.
 
 Vous pouvez y afficher le diagramme SVG et le code SVG.

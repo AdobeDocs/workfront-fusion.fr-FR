@@ -5,20 +5,23 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 770
 ht-degree: 25%
 
 ---
 
-# Flux d’exécution du scénario
+# Flux d’exécution de scénarios
 
 Cet article explique comment un scénario s’exécute et comment les données y circulent, ainsi que la manière d’afficher les données traitées par chaque module.
 
 Pour afficher le flux de données dans un scénario actif, consultez [Affichage du flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
-## Flux d’exécution du scénario
+## Flux d’exécution de scénarios
 
 Une fois qu’un scénario est correctement défini et activé, il s’exécute selon le planning défini.
 

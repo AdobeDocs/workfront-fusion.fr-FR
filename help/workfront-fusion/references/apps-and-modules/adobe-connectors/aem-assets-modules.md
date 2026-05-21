@@ -4,9 +4,17 @@ description: Avec le connecteur Adobe Experience Manager Assets pour Adobe W
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: ht
-source-wordcount: '3734'
+TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 3823
 ht-degree: 100%
 
 ---
@@ -17,7 +25,7 @@ Avec le connecteur Adobe Experience Manager Assets pour Adobe Workfront Fus
 
 Pour consulter une présentation vidéo du connecteur Adobe Experience Manager Assets, consultez :
 
-* [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
+* [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
 
 ## Conditions d’accès
 
@@ -206,7 +214,7 @@ Pour créer une connexion pour vos modules Adobe Experience Manager Assets, p
 
 Lorsque vous configurez les modules Adobe Experience Manager Assets, Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces élements, des champs Adobe Experience Manager Assets supplémentaires peuvent s’afficher, selon votre niveau d’accès dans l’application ou le service, par exemple. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -714,7 +722,7 @@ Ce module d’action récupère les résultats du traitement d’importation.
   </tr> 
   <tr> 
    <td role="rowheader">ID du traitement d’importation</td> 
-   <td> <p>Saisissez ou mappez l’ID du traitement pour lequel vous souhaitez obtenir des résultats.</p> </td> 
+   <td> <p>Saisissez ou mappez l’ID du traitement pour lequel vous souhaitez récupérer des résultats.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -998,7 +1006,7 @@ Ce module récupère les résultats d’un traitement asynchrone créé par l’
   </tr> 
   <tr> 
    <td role="rowheader">ID du traitement</td> 
-   <td> Saisissez ou mappez l’ID du traitement pour lequel vous souhaitez obtenir des résultats.</td>
+   <td> Saisissez ou mappez l’ID du traitement pour lequel vous souhaitez récupérer des résultats.</td>
   </tr> 
  </tbody> 
 </table>

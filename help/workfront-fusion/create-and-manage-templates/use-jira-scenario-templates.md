@@ -7,9 +7,20 @@ description: Utilisez ces modèles pour automatiser les workflows entre Adobe Wo
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2:
+  - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4171'
+source-wordcount: 4277
 ht-degree: 4%
 
 ---
@@ -47,7 +58,7 @@ Adobe Workfront Fusion propose des modèles qui peuvent automatiser les workflow
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -64,7 +75,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ### Jira
 
-Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [https://developer.atlassian.com/console](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
+Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
 
 <!--
 
@@ -288,7 +299,7 @@ Ce scénario crée une tâche ou un problème Workfront lorsqu’un problème es
 >[!NOTE]
 >
 >Ce scénario nécessite une connexion OAuth2 pour Jira.
->Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [https://developer.atlassian.com/console](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
+>Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
 
 +++**Développez pour afficher les instructions de configuration du Scénario 2 : JIRA vers Workfront : envoyez des mises à jour sur les problèmes et des commentaires à Workfront à partir de Jira**
 

@@ -2,19 +2,24 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: scenarios
-title: Affichage, modification et suppression de modèles
+title: Afficher, modifier et supprimer des modèles
 description: Adobe Workfront Fusion nécessite une licence Adobe Workfront Fusion en plus d’une licence Adobe Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 44%
+source-wordcount: 880
+ht-degree: 52%
 
 ---
 
-# Affichage, modification et suppression de modèles
+# Afficher, modifier et supprimer des modèles
 
 La fonctionnalité de modèles de Workfront Fusion vous permet de créer et d’utiliser des modèles existants comme point de départ pour vos scénarios Workfront Fusion. Les modèles représentent des cas d’utilisation courants que vous pouvez configurer et modifier en fonction des besoins de votre organisation et des cas d’utilisation spécifiques.
 
@@ -29,8 +34,8 @@ Pour obtenir la liste des modèles Fusion actuellement disponibles, voir [&#x200
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -39,13 +44,13 @@ Pour obtenir la liste des modèles Fusion actuellement disponibles, voir [&#x200
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -134,4 +139,4 @@ Notez qu’après la suppression d’un modèle, il ne peut pas être restauré.
 
    Cliquez sur le nom du modèle pour y accéder. Cliquez sur **[!UICONTROL Options]** dans le coin supérieur droit et sélectionnez **[!UICONTROL Supprimer]**.
 
-1. Cliquez sur **[!UICONTROL Voulez-vous vraiment supprimer cet élément ?]** pour confirmer la suppression.
+1. Cliquez sur **[!UICONTROL Vraiment ?]** pour confirmer la suppression.

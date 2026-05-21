@@ -4,9 +4,12 @@ description: Le mappage désigne le processus d’affectation des sorties d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+TQID: https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: 441
 ht-degree: 96%
 
 ---

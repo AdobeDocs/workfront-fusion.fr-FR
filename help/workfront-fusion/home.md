@@ -2,9 +2,12 @@
 title: Adobe Workfront Fusion
 description: Bienvenue sur la page d’accueil de la documentation technique et produit d’Adobe Workfront Fusion. Utilisez les liens, articles d’aide et autres ressources suivants pour découvrir comment mettre en œuvre et utiliser Adobe Workfront Fusion efficacement dans votre entreprise.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '306'
+TQID: https://experienceleague.adobe.com/IwGzn2TeOw9r-d2u9zdE7OKr5Q7AV5zoet1f9RHKP8o
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 347
 ht-degree: 100%
 
 ---
@@ -24,7 +27,7 @@ Bienvenue sur la page d’accueil de la documentation technique et produit d’A
 
 <tr>
     <td style="text-align: center;"><img src="assets/admin-icon.png" style="width: 80px; height: 80px;"><p><b>Administrateurs et administratrices</b></p></td>
-    <td style="text-align: center;"><img src="assets/users-icon.png" style="width: 75px; height: 75px;"><p><b>Utilisateurs</b></p></td>
+    <td style="text-align: center;"><img src="assets/users-icon.png" style="width: 75px; height: 75px;"><p><b>Utilisateurs et utilisatrices</b></p></td>
   </tr>
   <tr>
     <td>

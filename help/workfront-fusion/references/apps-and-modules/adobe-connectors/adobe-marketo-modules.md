@@ -4,9 +4,14 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '2237'
+TQID: https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 2255
 ht-degree: 100%
 
 ---
@@ -55,7 +60,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -138,7 +143,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Marketo] directement dep
 
 Lorsque vous configurez les modules [!DNL Marketo], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Marketo] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mapper des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -340,7 +345,7 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -367,7 +372,7 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -401,8 +406,7 @@ Ce module d’action lit des informations concernant un enregistrement à l’ai
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.
-Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
+   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module. Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL &lt;Object&gt; ID]</td> 
@@ -572,8 +576,7 @@ Ce module d’action récupère tous les enregistrements d’un type spécifique
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.
-Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
+   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module. Les champs sont disponibles en fonction du [!UICONTROL Record Type] que vous avez sélectionné.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -595,7 +598,7 @@ Ce module de recherche récupère une liste d’enregistrements correspondant à
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionnez le type d’enregistrement à rechercher.</p> 
     <ul> 
      <li> <p>[!UICONTROL Campaigns]</p> </li> 

@@ -1,17 +1,22 @@
 ---
-title: Configuration des adresses IP pour Fusion dans la place sur la liste autorisée de données de votre entreprise
+title: Configurer des adresses IP pour Fusion sur la liste autorisée de données de votre organisation
 description: Fusion utilise des adresses IP et des domaines spécifiques pour la communication web. Ces éléments doivent être ajoutés à la liste autorisée de votre entreprise pour que vous puissiez utiliser Workfront dans votre organisation.
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 45%
+source-wordcount: 569
+ht-degree: 54%
 
 ---
 
-# Configuration des adresses IP pour Fusion dans la place sur la liste autorisée de données de votre entreprise
+# Configurer des adresses IP pour Fusion sur la liste autorisée de données de votre organisation
 
 Comme Adobe Workfront Fusion communique avec le réseau de votre entreprise, le pare-feu de cette dernière doit être configuré pour autoriser cette communication. Les pare-feux sont des mesures de sécurité très efficaces qui séparent le réseau d’une entreprise d’Internet. Ils garantissent que seules les données et le trafic réseau sélectionnés peuvent entrer ou sortir du réseau de l’entreprise. Le pare-feu autorise ou bloque les données en fonction du site qui les envoie ou les reçoit. En tant qu’administrateur ou administratrice Fusion, vous devez vous assurer que les données envoyées à ou depuis Fusion peuvent passer par le pare-feu de votre entreprise.
 
@@ -28,7 +33,7 @@ En règle générale, une liste autorisée est configurée par un administrateur
 >
 >En tant qu’administrateur ou administratrice de Fusion, vous devez vous assurer que ces adresses IP et domaines sont ajoutés à la place sur la liste autorisée de données de votre organisation. Cela est valable même si vous ne les ajoutez pas vous-même. Fusion ne peut pas configurer la place sur la liste autorisée de votre organisation.
 
-Placer sur la liste autorisée Vous pouvez ajouter tous les domaines et adresses IP Fusion à votre cluster, ou vous pouvez localiser votre cluster Fusion et ajouter uniquement les domaines et adresses IP de ce cluster.
+Vous pouvez ajouter tous les domaines et adresses IP Fusion à votre cluster, ou vous pouvez localiser votre cluster Fusion et ajouter uniquement les domaines et adresses IP de ce cluster.
 
 ## Ajouter tous les domaines et adresses IP Fusion
 
@@ -65,7 +70,7 @@ Si vous accédez à Fusion par le biais d’une URL, vous pouvez examiner l’UR
 | --- | --- |
 | `https://app.workfrontfusion.com` | centre de données des États-Unis |
 | `https://app-eu.workfrontfusion.com` | centre de données de l&#39;UE |
-| `https://app-az.workfrontfusion.com` | Cluster Azure |
+| `https://app-az.workfrontfusion.com` | cluster Azure |
 
 Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l’onglet réseau dans votre navigateur pour identifier le centre de données.
 
@@ -73,7 +78,7 @@ Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l�
 | --- | --- |
 | Appels à `https://fusion.adobe.com` | centre de données des États-Unis |
 | Appels à `https://eu.fusion.adobe.com` | centre de données de l&#39;UE |
-| Appels à `https://az.fusion.adobe.com` | Cluster Azure |
+| Appels à `https://az.fusion.adobe.com` | cluster Azure |
 
 ### Ajouter des adresses IP et des domaines pour votre centre de données
 
@@ -114,7 +119,7 @@ Si vous accédez à Fusion via `experience.adobe.com`, vous pouvez vérifier l�
  </tbody> 
 </table>
 
-De même, si votre entreprise utilise le filtrage de réseau sortant, ajoutez le domaine suivant à votre place sur la liste autorisée pour permettre à votre système d’accéder à Workfront Fusion. Ils sont utilisés pour les Webhooks
+En outre, si votre organisation utilise le filtrage réseau sortant, ajoutez le domaine suivant à votre liste autorisée pour permettre à votre système d’accéder à Workfront Fusion. Ils sont utilisés pour les Webhooks
 
 <table style="table-layout:auto">
  <col> 

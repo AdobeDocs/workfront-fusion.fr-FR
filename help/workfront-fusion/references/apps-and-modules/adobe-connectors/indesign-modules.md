@@ -4,16 +4,23 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Modules Adobe InDesign
+title: Modules Adobe InDesign
 description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Adobe InDesign et les connecter à plusieurs applications et services tiers.
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 21%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Modules Adobe InDesign
 
@@ -122,8 +129,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Créer un rendu](#create-rendition)
 * [Suppression d’un script personnalisé](#delete-a-custom-script)
 * [Fusion des données](#merge-data)
-* [Remapper les liens](#remap-links)
-* [Envoi d’une demande d’exécution de script personnalisé](#submit-a-custom-script-execution-request)
+* [Remapper des liens](#remap-links)
+* [Envoyer une demande d’exécution de script personnalisé](#submit-a-custom-script-execution-request)
 
 #### Créer un rendu
 
@@ -149,7 +156,7 @@ Ce module d’action crée et renvoie un rendu JPEG, PNG ou PDF d’un document 
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource à ajouter au rendu :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource à ajouter au rendu :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Document cible</td>
@@ -198,7 +205,7 @@ Ce module crée des documents ou des fichiers PDF InDesign en fusionnant les don
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource à ajouter à la fusion de données :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource à ajouter à la fusion de données :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Document cible</td>
@@ -214,7 +221,7 @@ Ce module crée des documents ou des fichiers PDF InDesign en fusionnant les don
   </tbody>
 </table>
 
-#### Remapper les liens
+#### Remapper des liens
 
 Ce module remplace les liens basés sur des fichiers dans les documents InDesign par des URL Adobe Experience Manager (AEM). Cela peut s’avérer utile pour travailler avec Adobe Experience Manager à l’aide d’Adobe Asset Link.
 
@@ -234,7 +241,7 @@ Ce module remplace les liens basés sur des fichiers dans les documents InDesign
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Document cible</td>
@@ -250,7 +257,7 @@ Ce module remplace les liens basés sur des fichiers dans les documents InDesign
   </tbody>
 </table>
 
-#### Envoi d’une demande d’exécution de script personnalisé
+#### Envoyer une demande d’exécution de script personnalisé
 
 Ce module d’action envoie une demande d’exécution pour un script personnalisé. Vous définissez les ressources et paramètres d’entrée que le script personnalisé utilisera pendant l’exécution.
 
@@ -272,7 +279,7 @@ Ce module d’action envoie une demande d’exécution pour un script personnali
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource pour laquelle vous souhaitez envoyer une demande d’exécution, <ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource pour laquelle vous souhaitez envoyer une demande d’exécution, <ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Autres champs</td>
@@ -324,7 +331,7 @@ Ce module récupère les balises de fusion des données d’un document.
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Document cible</td>
@@ -356,7 +363,7 @@ Ce module récupère des informations complètes sur les documents INDD/IDML et 
       <td role="rowheader">
         <p>Ressources</p>
       </td>
-      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter à l'aide de '..' ou '/'. Un nom de fichier valide doit exister.</td>
+      <td>Pour chaque ressource que vous souhaitez ajouter au module :<ol><li>Cliquez sur <b> Ajouter un élément </b>.</li><li>Sélectionnez ou mappez la source de la ressource.</li><li>Saisissez une destination. La destination est un chemin relatif à un répertoire de base temporaire (répertoire de travail) où la ressource est téléchargée. Cela identifie les ressources dans les paramètres. Il ne peut pas augmenter en utilisant '..' ou '/'. Un nom de fichier valide doit exister.</td>
     </tr>
     <tr>
       <td role="rowheader">Document cible</td>
@@ -411,7 +418,7 @@ Ce module effectue un appel API personnalisé à l’API Adobe InDesign
         <p>Chemin d’accès</p>
       </td>
       <td>
-        <p>Saisir un chemin relatif à <code>https://indesign.adobe.io/v3</code>.</p><p> Exemple : <code>/create-rendition</code></p>
+        <p>Saisissez un chemin d’accès relatif à <code>https://indesign.adobe.io/v3</code>.</p><p> Exemple : <code>/create-rendition</code></p>
       </td>
     </tr>
     <tr>
@@ -438,7 +445,7 @@ Ce module effectue un appel API personnalisé à l’API Adobe InDesign
     </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

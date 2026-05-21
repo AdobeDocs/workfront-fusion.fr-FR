@@ -4,9 +4,17 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/oe0aoid5lPYljLtCBKV7GKd8KGNKh-LGQYD2d83-9eo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: 2040
 ht-degree: 79%
 
 ---
@@ -15,7 +23,7 @@ ht-degree: 79%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Anaplan] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -279,7 +287,7 @@ Ce module d’action supprime un enregistrement existant.
    <td role="rowheader">Type d’enregistrement</td> 
    <td> <p>Sélectionnez le type d’objet à supprimer.</p> 
     <ul> 
-     <li> <p><b>Actions</b> </p> <p>Sélectionnez ou mappez l’action à supprimer.</p> </li> 
+     <li> <p><b>Action</b> </p> <p>Sélectionnez ou mappez l’action à supprimer.</p> </li> 
      <li> <p><b>Élément de liste</b> </p> <p>Sélectionnez la liste dans laquelle vous souhaitez supprimer un élément, puis saisissez ou mappez l’identifiant ou le code de l’élément à supprimer.</p>  </li> 
      <li> <p><b>[!UICONTROL File]</b> </p> <p>Sélectionnez ou mappez le fichier à supprimer.</p> </li> 
     </ul> </td> 
@@ -396,7 +404,7 @@ Ce module d’action lit un seul enregistrement.
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Anaplan] à Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionnez le type d’enregistrement à lire.</p> 
     <ul> 
      <li> <p><b>Modèle</b> </p> <p>Sélectionnez ou mappez l’identifiant du modèle à lire.</p> </li> 
@@ -486,7 +494,7 @@ Ce module d’action met à jour un seul enregistrement dans [!UICONTROL Anaplan
    <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Anaplan], voir <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Anaplan] à Workfront Fusion</a> dans cet article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez mettre à jour.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL List item]</b> </p> <p>Pour les champs, voir <a href="#create-a-list-item" class="MCXref xref">Créer un élément de liste</a> dans cet article.</p> </li> 

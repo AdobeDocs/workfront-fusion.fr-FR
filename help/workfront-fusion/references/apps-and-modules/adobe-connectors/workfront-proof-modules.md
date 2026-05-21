@@ -4,10 +4,15 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 84%
+source-wordcount: 3117
+ht-degree: 83%
 
 ---
 
@@ -19,7 +24,7 @@ Cela s’avère utile si vous devez exécuter des tâches actuellement non prise
 
 Le connecteur [!DNL Workfront Proof] n’est pas comptabilisé dans le nombre d’applications actives disponibles pour votre organisation. Tous les scénarios, même s’ils utilisent uniquement l’application [!DNL Workfront Proof], sont comptabilisés dans le nombre total de scénarios de votre entreprise.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -340,7 +345,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Notify recipients about this proof]</td> 
-   <td>Sélectionnez une option pour indiquer si vous voulez informer les personnes destinataires de la création de l’épreuve.&gt;</td> 
+   <td>Sélectionnez une option pour indiquer si vous souhaitez que les destinataires soient avertis lors de la création du BAT.&gt;</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof name]</td> 
@@ -393,7 +398,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Appel API personnalisé]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Workfront Proof]. Vous pouvez ainsi, automatiser le flux de données d’une façon que les autres modules [!DNL Workfront Proof] ne permettent pas.
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Workfront Proof]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Workfront Proof].
 
 Le module renvoie le code d’état, les en-têtes et le corps du texte. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -433,9 +438,9 @@ Ce module d’action télécharge le fichier source d’une épreuve particuliè
 
 Vous indiquez l’ID de l’épreuve.
 
-Le module renvoie le contenu du fichier source utilisé pour créer l’épreuve. Vous pouvez mapper cette information dans les modules suivants du scénario.
+Le module renvoie le contenu du fichier source utilisé pour créer le BAT.Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
-Vous devez disposer des autorisations nécessaires pour accéder à l’enregistrement dans [!DNL Workfront Proof] afin de pouvoir récupérer ces informations.
+Vous devez disposer d’autorisations suffisantes pour accéder à l’enregistrement dans [!DNL Workfront Proof] afin de pouvoir récupérer ces informations.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -484,7 +489,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>Saisissez ou mappez l’ID unique [!DNL Workfront Proof] de l’enregistrement que vous souhaitez que le module lise.</td> 
+   <td>Saisissez ou mappez l’identifiant [!DNL Workfront Proof] unique de l’enregistrement que vous souhaitez que le module lise.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -671,7 +676,7 @@ Ce module de recherche répertorie tous les modèles de workflow disponibles.
 
 Ce module de recherche recherche les enregistrements dans un objet dans [!DNL Workfront Proof] qui correspondent à la requête que vous avez spécifiée.
 
-Le module renvoie l’identifiant de l’épreuve s’il recherche une épreuve. Il renvoie également les identifiants, les e-mails, les noms, les postes et les alias des e-mail, s’il recherche des destinataires. Vous pouvez mapper ces informations dans les modules suivants du scénario.
+Le module renvoie l’identifiant de l’épreuve s’il recherche une épreuve. Elle renvoie également les ID utilisateur, les e-mails, les noms, les positions et les alias de messagerie des destinataires, si elle recherche des destinataires.Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Vous devez disposer d’autorisations suffisantes pour accéder à l’enregistrement dans [!DNL Workfront Proof] afin de pouvoir récupérer ces informations.
 
@@ -687,7 +692,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Rechercher]</td> 
-   <td> <p>Sélectionnez le type d’enregistrement que le module doit rechercher.</p> 
+   <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez que le module recherche.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Saisissez le nom de l’épreuve que vous souhaitez rechercher.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Saisissez l’adresse e-mail de la destinataire ou du destinataire que vous souhaitez rechercher.</p> </li> 

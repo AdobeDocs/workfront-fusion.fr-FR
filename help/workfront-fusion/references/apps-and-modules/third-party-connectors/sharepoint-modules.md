@@ -4,9 +4,17 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4309
 ht-degree: 52%
 
 ---
@@ -15,7 +23,7 @@ ht-degree: 52%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Microsoft SharePoint Online et les connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -339,7 +347,7 @@ Ce module a récupéré des détails sur le dossier spécifié
    <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
+   <td role="rowheader">[!UICONTROL Entrez les ID de site, de lecteur et de fichier]</td> 
    <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Folder path]</strong> pour le dossier que vous souhaitez récupérer.</p> </li> 
@@ -362,7 +370,7 @@ Ce module d’action met à jour les métadonnées d’un dossier ou d’un fich
    <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entrez Site, Lecteur et Fichier                ID]</td> 
+   <td role="rowheader">[!UICONTROL Entrez les ID de site, de lecteur et de fichier]</td> 
    <td> <p>Sélectionnez le mode d’identification de l’emplacement du fichier que vous souhaitez obtenir.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Saisissez ou mappez les <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> et <strong>[!UICONTROL Folder ou item ID]</strong> pour le dossier ou le fichier que vous souhaitez récupérer.</p> </li> 
@@ -982,7 +990,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connexion]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Pour plus d’informations sur la connexion de votre compte Microsoft SharePoint Online à Workfront Fusion, voir <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connexion de Microsoft SharePoint Online à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 

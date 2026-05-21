@@ -4,9 +4,12 @@ description: Dans Adobe Workfront Fusion, une opération est une tâche effect
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
+TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: 413
 ht-degree: 64%
 
 ---
@@ -34,7 +37,7 @@ Dans Adobe Workfront Fusion, une opération est une tâche effectuée par un m
 
 ## Limites d’opérations
 
-Votre organisation peut avoir une limite mensuelle d’opérations. Ce montant est basé sur le forfait Workfront acheté par votre entreprise. Le plan Ultimate[!UICONTROL &#x200B; Workfront &#x200B;] offre un nombre illimité d’opérations.
+Votre organisation peut avoir une limite mensuelle d’opérations. Ce montant est basé sur le forfait Workfront acheté par votre entreprise. Le plan  Workfront  offre un nombre illimité d’opérations.
 
 Si votre organisation a une limite mensuelle, vous serez averti lorsque votre organisation approchera de la limite. Si votre entreprise dépasse la limite, Workfront contactera votre entreprise pour s’assurer que votre plan répond à vos besoins.
 

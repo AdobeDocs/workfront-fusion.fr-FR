@@ -1,21 +1,24 @@
 ---
 content-type: reference
-title: 'Set up and managing organizations and teams: article index'
-description: This section contains articles related to setting up and managing organizations and teams in Adobe Workfront Fusion.
+title: 'Configuration et gestion des organisations et des équipes : index des articles'
+description: Cette section contient des articles relatifs à la configuration et à la gestion des organisations et des équipes dans Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/ouJ-qNCBSqKotZOJ7lGeOm2sAv6gqTPpUv8CpfaSg7M
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: 483
 ht-degree: 67%
 
 ---
 
 # Supprimer des utilisateurs et utilisatrices via [!DNL Adobe Admin Console]
 
-You can remove a user from Adobe Workfront Fusion only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
+Vous pouvez supprimer un utilisateur d’Adobe Workfront Fusion uniquement, en laissant l’accès à tout autre profil de produit [!DNL Adobe], ou vous pouvez supprimer l’utilisateur de l’[!DNL Adobe Admin Console] entièrement.
 
 ## Conditions d’accès
 
@@ -42,7 +45,7 @@ You can remove a user from Adobe Workfront Fusion only, leaving access to any ot
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurations des niveaux d’accès</td> 
    <td> 
-     <p>You must be an Adobe Admin Console administrator for your organization.</p>
+     <p>Vous devez être un administrateur Adobe Admin Console pour votre organisation.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -52,15 +55,15 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 +++
 
-## Remove a user from Adobe Workfront Fusion only
+## Supprimer un utilisateur d’Adobe Workfront Fusion uniquement
 
-You can remove a user from Workfront Fusion while leaving their other Adobe product permissions intact.
+Vous pouvez supprimer un utilisateur de Workfront Fusion tout en conservant intactes ses autres autorisations de produit Adobe.
 
-For instructions, see &quot;Remove users and user groups from a product&quot; in the article [Manage products on Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html).
+Pour obtenir des instructions, reportez-vous à « Supprimer des utilisateurs et des groupes d’utilisateurs d’un produit » dans l’article [Gestion des produits sur Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-products.html).
 
-## Deactivate a user in all products in the [!DNL Adobe Admin Console]
+## Désactiver un utilisateur dans tous les produits du [!DNL Adobe Admin Console]
 
-To delete a user, you must deactivate the user through the [!DNL Adobe Admin Console].
+Pour supprimer un utilisateur, vous devez le désactiver à l’aide du [!DNL Adobe Admin Console].
 
 Une personne est désactivée d’[!DNL Adobe Admin Console] lorsque l’une des conditions suivantes s’applique :
 
@@ -71,15 +74,15 @@ Une personne est désactivée d’[!DNL Adobe Admin Console] lorsque l’une des
 
   Pour obtenir des instructions, consultez la section « Supprimer des utilisateurs et des utilisatrices » dans [Gérer les utilisateurs et les utilisatrices individuellement](https://helpx.adobe.com/fr/enterprise/using/manage-users-individually.html).
 
-In Workfront Fusion, the deactivation affects the user in one of the following ways:
+Dans Workfront Fusion, la désactivation affecte l’utilisateur de l’une des manières suivantes :
 
 * Si la personne se trouve dans une seule organisation, elle est désactivée.
 * Si la personne se trouve dans plusieurs organisations, elle est supprimée de l’organisation dans laquelle elle a été modifiée dans [!DNL Adobe Admin Console].
 
 ### Considérations relatives à la suppression d’un utilisateur ou d’une utilisatrice dans Workfront Fusion
 
-Consider the following when deleting a user.
+Tenez compte des points suivants lors de la suppression d’un utilisateur.
 
-* When a user is deleted, the user&#39;s connections, keys, and webhooks are removed.
+* Lorsqu’un utilisateur est supprimé, ses connexions, clés et Webhooks sont supprimés.
 * Tous les scénarios appartenant à l’utilisateur ou à l’utilisatrice sont transférés à la personne propriétaire de l’organisation. Les connexions dans ces scénarios doivent être mises à jour, car les connexions appartenant à l’utilisateur ou à l’utilisatrice ne sont plus valides.
 * Si le profil utilisateur supprimé possède des applications ou des modèles publics, les applications ou les modèles publics sont transférés à la personne propriétaire de l’organisation. S’il n’existe pas de personne propriétaire de l’organisation, les applications ou les modèles publics sont transférés à une autre personne.

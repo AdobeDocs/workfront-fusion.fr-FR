@@ -4,10 +4,15 @@ description: Compte  [!DNL Adobe Workfront Fusion Frame].io modules enable you t
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 82%
+source-wordcount: 2666
+ht-degree: 83%
 
 ---
 
@@ -116,7 +121,7 @@ Pour connecter votre compte [!DNL Frame.io] à Workfront Fusion à l’aide d’
 1. Cliquez sur **[!UICONTROL Nouveau]**.
 1. Saisissez le nom du jeton, sélectionnez les portées à utiliser, puis cliquez sur **[!UICONTROL Créer]**.
 1. Copiez le jeton fourni.
-1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue [!DNL Frame.io]Créer une connexion **[!UICONTROL du module de]**.
+1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module de [!DNL Frame.io].
 1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!DNL Frame.io]**.
 1. Saisissez le jeton que vous avez copié à l’étape 5 dans le champ **[!UICONTROL Votre clé API [!DNL Frame.io]]**
 1. Cliquez sur **[!UICONTROL Continuer]** pour établir la connexion et revenir au module .
@@ -130,7 +135,7 @@ Vous pouvez créer une connexion à [!DNL Frame.io] à l’aide d’OAuth 2.0 
 
 #### Se connecter à [!DNL Frame.io] à l’aide d’OAuth 2.0 PKCE (sans identifiant client)
 
-1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue [!DNL Frame.io]Créer une connexion **[!UICONTROL du module de]**.
+1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module de [!DNL Frame.io].
 1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Nom de la connexion]**.
 1. Cliquez sur **[!UICONTROL Continuer]** pour établir la connexion et revenir au module .
@@ -153,7 +158,7 @@ Vous pouvez créer une connexion à [!DNL Frame.io] à l’aide d’OAuth 2.0 
 
 
 1. Copiez la valeur `client_id` fournie.
-1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue [!DNL Frame.io]Créer une connexion **[!UICONTROL du module de]**.
+1. Accédez à Workfront Fusion et ouvrez la boîte de dialogue **[!UICONTROL Créer une connexion]** du module de [!DNL Frame.io].
 1. Dans le champ **[!UICONTROL Type de connexion]**, sélectionnez **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Saisissez le nom de la nouvelle connexion dans le champ **[!UICONTROL Nom de la connexion]**.
 1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
@@ -530,7 +535,7 @@ Ce module d’action supprime un commentaire existant.
    <td> <p> Sélectionnez ou mappez l’équipe propriétaire du projet qui contient la ressource dont vous souhaitez supprimer un commentaire.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
+   <td role="rowheader">[!UICONTROL ID du projet]</td> 
    <td> <p> Sélectionnez le projet ou mappez l’ID du projet qui contient la ressource dont vous souhaitez supprimer un commentaire.</p> </td> 
   </tr> 
   <tr> 
@@ -735,14 +740,14 @@ Ce module de recherche récupère tous les projets pour l’équipe spécifiée.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Saisissez ou mappez le nombre maximal de projets que le module doit renvoyer au cours de chaque cycle d'exécution du scénario.</p> </td> 
+   <td> <p>Saisissez ou mappez le nombre maximal de projets que le module doit renvoyer pour chaque cycle d’exécution de scénario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Autre
 
-#### [!UICONTROL Réaliser un appel API]
+#### [!UICONTROL Effectuer un appel API]
 
 Ce module vous permet d’effectuer un appel API personnalisé.
 

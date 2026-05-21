@@ -4,9 +4,14 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: 585574f60758a27eb695f31c1193ed86ab700d38
+TQID: https://experienceleague.adobe.com/zDpEDcxpSywImqPRr6QMH-MvFVv9KDF-bsesRzjG8J0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: 2071
 ht-degree: 68%
 
 ---
@@ -170,7 +175,7 @@ Ce module d’action crée un message.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse message text]</p> </td> 
-   <td> <p>Activez cette option pour autoriser l’analyse automatique. </p> <p>Pour plus d’informations, voir <a href="https://api.slack.com/docs/formatting">Formatage du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> <p>Note : si vous avez utilisé les options [!UICONTROL Link names] ou [!UICONTROL Parse message text] dans le message d’origine, vous devez les spécifier également lors de l’exécution du module [!UICONTROL Update a Message].</p> </td> 
+   <td> <p>Activez cette option pour autoriser l’analyse automatique. </p> <p>Pour plus d’informations, voir la section <a href="https://api.slack.com/docs/formatting">Mettre en forme du texte pour les surfaces d’application</a> dans la documentation [!DNL Slack].</p> <p>Note : si vous avez utilisé les options [!UICONTROL Link names] ou [!UICONTROL Parse message text] dans le message d’origine, vous devez les spécifier également lors de l’exécution du module [!UICONTROL Update a Message].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Use markdown]</p> </td> 
