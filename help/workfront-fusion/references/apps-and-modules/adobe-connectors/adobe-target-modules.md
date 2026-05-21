@@ -4,21 +4,24 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 92%
+source-wordcount: 2368
+ht-degree: 95%
 
 ---
 
 # Modules [!DNL Adobe Target]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Target] et les connecter à plusieurs applications et services tiers. [!DNL Adobe Target] modules vous permettent de créer, lire, mettre à jour ou supprimer des enregistrements, de répertorier tous les enregistrements d’un type donné, de rechercher des enregistrements en fonction de critères que vous spécifiez ou d’effectuer un appel API personnalisé à l’API [!DNL Adobe Target].
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Target] et le connecter à plusieurs applications et services tiers. [!DNL Adobe Target] modules vous permettent de créer, lire, mettre à jour ou supprimer des enregistrements, de répertorier tous les enregistrements d’un type donné, de rechercher des enregistrements en fonction de critères que vous spécifiez ou d’effectuer un appel API personnalisé à l’API [!DNL Adobe Target].
 
 
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -30,7 +33,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <tbody> 
   <tr> 
    <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront.</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -39,28 +42,28 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion.</p>
-   <p>Basé sur le connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Conditions préalables
 
-Avant d’utiliser le connecteur [!DNL Adobe Target], vous devez vous assurer que les conditions préalables suivantes sont remplies :
+Avant d’utiliser le connecteur [!DNL Adobe Target], assurez-vous que les conditions préalables suivantes sont remplies :
 
 * Vous devez disposer d’un compte [!DNL Adobe Target].
 
@@ -88,7 +91,7 @@ Le connecteur Adobe Target utilise les éléments suivants :
 >* Les connexions de compte de service existantes continueront à fonctionner jusqu’en janvier 2025. Vous devez remplacer vos connexions de compte de service par des connexions serveur à serveur Adobe Target avant janvier 2024.
 >* Pour créer une connexion serveur à serveur Adobe Target, vous devez faire partie de l’équipe de développement de votre organisation. Le rôle de l’équipe de développement est défini dans Adobe Admin Console.
 
-Pour créer une connexion pour vos modules [!DNL Adobe Target], procédez comme suit :
+Pour créer une connexion pour vos modules [!DNL Adobe Target] :
 
 1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
 
@@ -123,19 +126,19 @@ Pour créer une connexion pour vos modules [!DNL Adobe Target], procédez comme 
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre ID client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
+        <td>Saisissez votre ID client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre secret client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
+        <td>Saisissez votre secret client [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
+        <td>Saisissez l’ID de votre compte technique [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Saisissez votre ID d’organisation [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] de l’[!DNL Adobe Developer Console].
+        <td>Saisissez votre ID d’organisation [!DNL Adobe]. Vous pouvez le trouver dans la section [!UICONTROL Credentials details] d’[!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Tenant]</td>
@@ -181,9 +184,9 @@ Pour créer une connexion pour vos modules [!DNL Adobe Target], procédez comme 
 
 Lorsque vous configurez les modules [!DNL Adobe Target], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Target] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Bouton bascule Mapper](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Actions](#actions)
 
@@ -743,7 +746,7 @@ Ce module d’action crée une activité AB ou XT, une offre ou une audience.
 
 -->
 
-#### [!UICONTROL Effectuer un appel d’API personnalisé]
+#### [!UICONTROL Effectuer un appel API personnalisé]
 
 Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Target].
 
@@ -771,7 +774,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Target].
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
@@ -789,7 +792,7 @@ Ce module effectue un appel API personnalisé à l’API [!DNL Adobe Target].
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets en dehors de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -900,14 +903,14 @@ Ce module de recherche récupère une liste d’enregistrements du type sélecti
       <td role="rowheader">[!UICONTROL Starts At]</td>
       <td>
         <p>Saisissez la date la plus ancienne pour laquelle vous souhaitez récupérer les enregistrements. </p>
-        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p>
+        <p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ends At]</td>
       <td>
         <p>Saisissez la date la plus récente pour laquelle vous souhaitez récupérer les enregistrements. </p>
-        <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p>
+        <p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p>
       </td>
     </tr>
   </tbody>

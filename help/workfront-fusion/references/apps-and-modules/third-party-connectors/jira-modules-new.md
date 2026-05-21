@@ -4,10 +4,13 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
+TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 36%
+source-wordcount: 2399
+ht-degree: 37%
 
 ---
 
@@ -21,7 +24,7 @@ Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows 
 
 Le connecteur Jira peut être utilisé pour Jira Cloud et le serveur de données Jira.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -620,7 +623,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
    <tr> 
     <td role="rowheader">Offset</td> 
-    <td> Saisissez ou mappez l’ID du premier élément pour lequel vous souhaitez récupérer des détails. Il s’agit d’une méthode de pagination des enregistrements. Si vous saisissez le 5000e élément comme décalage, le module renvoie les éléments 5000-9999.</td> 
+    <td> Saisissez ou mappez l’ID du premier élément pour lequel vous souhaitez récupérer des détails. Il s’agit d’un moyen de paginer les enregistrements. Si vous saisissez le 5000e élément comme décalage, le module renvoie les éléments 5000-9999.</td> 
    </tr>
   <tr> 
    <td role="rowheader">Autres champs</td> 

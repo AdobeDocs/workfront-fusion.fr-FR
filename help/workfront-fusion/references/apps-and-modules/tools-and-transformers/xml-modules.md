@@ -1,13 +1,16 @@
 ---
 title: XML
-description: L’application XML vous permet d’analyser un texte au format XML via le module XML > Parse XML et de le convertir en lot afin de rendre les données disponibles pour d’autres modules. Vous pouvez également convertir un lot en texte XML via XML > Créer un module XML.
+description: L’application XML vous permet d’analyser un texte au format XML via le module XML > Parse XML et de le convertir en lot pour rendre les données disponibles pour d’autres modules. Vous pouvez également convertir un lot en texte au format XML via le module XML > Create XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 90%
+source-wordcount: 1433
+ht-degree: 86%
 
 ---
 
@@ -40,7 +43,7 @@ L’application [!UICONTROL XML] vous permet d’analyser un texte au format XML
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -104,12 +107,12 @@ Un cas d’utilisation type consiste à transformer des données d’une feuille
 1. Cliquer sur **[!UICONTROL Enregistrer]**.
 
    Le champ des spécifications de la structure de données contient désormais la structure générée.
-1. Remplacez le nom de votre structure de données par un nom plus spécifique, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Attribuez à votre structure de données un nom plus spécifique et cliquez sur **[!UICONTROL Enregistrer]**.
 
    Un champ correspondant à l’attribut de tableau racine apparaît comme champ mappable dans la configuration du module JSON.
 1. Cliquez sur le bouton **[!UICONTROL Mapper]** à côté du champ et mappez l’élément `Array[]` de la sortie de l’[!UICONTROL agrégateur de tableaux] sur ce champ :
 1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module XML.
-1. Ouvrez la configuration du module [!UICONTROL Agrégateur de tableaux]. Modifiez la **[!UICONTROL structure cible]** de « Personnalisé » à un champ de module XML correspondant à des éléments element.Map XML parents, et mappez les éléments du module [!DNL Google Sheets] aux champs appropriés.
+1. Ouvrez la configuration du module [!UICONTROL Agrégateur de tableaux]. Remplacez la **[!UICONTROL Structure cible]** de Personnalisé par le champ d’un module XML correspondant à l’élément XML parent.Mappez les éléments du module [!DNL Google Sheets] aux champs appropriés.
 1. Cliquez sur **[!UICONTROL OK]** pour fermer la configuration du module d’agrégation de tableaux.
 1. Exécutez le scénario.
 

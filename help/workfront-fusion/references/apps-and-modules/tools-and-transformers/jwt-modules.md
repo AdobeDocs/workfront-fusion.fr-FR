@@ -4,10 +4,12 @@ description: L’application Adobe Workfront Fusion [!UICONTROL JWT] fournit un 
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 5%
+source-wordcount: 528
+ht-degree: 18%
 
 ---
 
@@ -24,8 +26,8 @@ L’application Adobe Workfront Fusion [!UICONTROL JWT] fournit un module qui cr
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +36,13 @@ L’application Adobe Workfront Fusion [!UICONTROL JWT] fournit un module qui cr
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -74,18 +76,18 @@ Ce module génère un jeton JWT en fonction de l’algorithme sélectionné.
   <tr> 
    <td role="rowheader">[!UICONTROL Algorithm]</td> 
    <td> <p>Sélectionnez l’algorithme avec lequel vous souhaitez générer le jeton JWT.</p> <ul>
-   <li><b>HS256</b> : HMAC à l’aide de l’algorithme de hachage SHA-256</li>
-   <li><b>HS384</b> : HMAC à l’aide de l’algorithme de hachage SHA-384</li>
-   <li><b>HS512</b> : HMAC à l’aide de l’algorithme de hachage SHA-512</li>
-   <li><b>RS256</b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-256</li>
-   <li><b>RS384</b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-384</li>
-   <li><b>RS512</b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-512</li>
-   <li><b>PS256</b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-256 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
-   <li><b>PS384</b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-384 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
-   <li><b>PS512</b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-512 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
-   <li><b>ES256</b> : ECDSA utilisant la courbe P-256 et l’algorithme de hachage SHA-256</li>
-   <li><b>ES384</b> : ECDSA utilisant la courbe P-384 et l’algorithme de hachage SHA-384</li>
-   <li><b>ES512</b> : ECDSA utilisant la courbe P-521 et l’algorithme de hachage SHA-512</li>
+   <li><b></b> : HMAC à l’aide de l’algorithme de hachage SHA-256</li>
+   <li><b></b> : HMAC à l’aide de l’algorithme de hachage SHA-384</li>
+   <li><b></b> : HMAC à l’aide de l’algorithme de hachage SHA-512</li>
+   <li><b></b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-256</li>
+   <li><b></b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-384</li>
+   <li><b></b> : RSASSA-PKCS1-v1_5 avec l’algorithme de hachage SHA-512</li>
+   <li><b></b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-256 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
+   <li><b></b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-384 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
+   <li><b></b> : RSASSA-PSS utilisant l’algorithme de hachage SHA-512 (uniquement pour le nœud ^6.12.0 OU &gt;=8.0.0)</li>
+   <li><b></b> : ECDSA utilisant la courbe P-256 et l’algorithme de hachage SHA-256</li>
+   <li><b></b> : ECDSA utilisant la courbe P-384 et l’algorithme de hachage SHA-384</li>
+   <li><b></b> : ECDSA utilisant la courbe P-521 et l’algorithme de hachage SHA-512</li>
    </ul></td> 
   </tr> 
   <tr> 

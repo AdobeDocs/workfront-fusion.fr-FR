@@ -7,10 +7,13 @@ description: Les filtres vous permettent de vous assurer que votre scénario ne 
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 19%
+source-wordcount: 617
+ht-degree: 21%
 
 ---
 
@@ -51,7 +54,7 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -103,7 +106,7 @@ Vous devriez maintenant avoir `ID`, `Name` et `Project` sélectionnés.
 
    >[!IMPORTANT]
    >
-   >Enregistrez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
 
 ## Ressources
 

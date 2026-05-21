@@ -4,10 +4,12 @@ description: Vous pouvez regarder un scénario en cours d’exécution pour voir
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: 283
+ht-degree: 36%
 
 ---
 
@@ -21,7 +23,7 @@ Lorsqu’un scénario s’exécute, le module actif est marqué par un anneau cr
 
 Une fois le module exécuté, un indicateur de sortie s’affiche.
 
-![Indicateur de sortie &#x200B;](assets/data-flow-output.png)
+![Indicateur de sortie ](assets/data-flow-output.png)
 
 Si le module traite plusieurs lots, l&#39;anneau apparaît pour chaque lot traité, et l&#39;indicateur de sortie compte pour chaque lot qu&#39;il sort.
 
@@ -36,8 +38,8 @@ Pour plus d’informations sur le flux de données du scénario, voir [Flux d’
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -46,13 +48,13 @@ Pour plus d’informations sur le flux de données du scénario, voir [Flux d’
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -63,4 +65,4 @@ Pour plus d’informations sur les informations contenues dans ce tableau, voir 
 1. Si le scénario n’est pas en cours d’exécution, activez-le ou cliquez sur **Exécuter une fois** pour lancer l’exécution du scénario.
 1. Sélectionnez l’exécution à afficher dans la section En cours d’exécution du panneau Historique d’exécution.
 
-![&#x200B; En cours d’exécution &#x200B;](assets/currently-running.png)
+![ En cours d’exécution ](assets/currently-running.png)

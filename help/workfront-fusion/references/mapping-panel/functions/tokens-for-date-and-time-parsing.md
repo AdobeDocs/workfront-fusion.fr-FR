@@ -1,17 +1,19 @@
 ---
-title: Jetons pour l’analyse de date et d’heure
+title: Jetons pour l’analyse de la date et de l’heure
 description: Les jetons suivants pour l’analyse de la date et de l’heure sont disponibles dans le panneau  [!DNL Adobe Workfront Fusion mapping] .
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 92%
+source-wordcount: 164
+ht-degree: 100%
 
 ---
 
-# Jetons pour l’analyse de date et d’heure
+# Jetons pour l’analyse de la date et de l’heure
 
 ## Jetons d’année, de mois et de jour
 

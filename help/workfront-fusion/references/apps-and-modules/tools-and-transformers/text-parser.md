@@ -4,10 +4,13 @@ description: Vous pouvez utiliser l’outil d’analyse de texte pour analyser l
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 86%
+source-wordcount: 1324
+ht-degree: 83%
 
 ---
 
@@ -40,7 +43,7 @@ Vous pouvez utiliser l’outil d’analyse [!UICONTROL Text parser] pour analyse
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -183,7 +186,7 @@ Le présent article ne vise pas à aborder la question des expressions réguliè
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Activez cette option pour vous assurer que le point (.) correspond aux caractères de nouvelle ligne (<code>\n</code>).</td> 
+   <td>Activez cette option pour vous assurer que la période (.) correspond aux caractères de nouvelle ligne (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -226,7 +229,7 @@ Recherche une valeur ou une expression régulière dans le texte saisi et rempla
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Activez cette option pour vous assurer que le point (.) correspond aux caractères de nouvelle ligne (<code>\n</code>).</td> 
+   <td>Activez cette option pour vous assurer que la période (.) correspond aux caractères de nouvelle ligne (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 
@@ -263,7 +266,7 @@ Cela est dû au fait que la valeur « i » indique uniquement le nombre de cor
 
 ![Correspondance](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-Pour obtenir les valeurs de correspondance dont vous avez besoin pour ajouter des intervalles à la partie que vous souhaitez analyser (par exemple, pour extraire uniquement « docx » de « filename.docx »), selon l’expression régulière que nous utilisons pour ce scénario, vous devez appliquer les intervalles sur \.(.+)
+Pour obtenir les valeurs correspondantes dont vous avez besoin pour ajouter des crochets à la partie que vous souhaitez analyser (par exemple, pour extraire de « filename.docx » - « docx » uniquement), alors, selon l&#39;expression regex que nous utilisons pour ce scénario, les crochets doivent être appliqués sur \(.+)
 
 Cela capture « docx », le place dans un groupe et ignore « . » .
 

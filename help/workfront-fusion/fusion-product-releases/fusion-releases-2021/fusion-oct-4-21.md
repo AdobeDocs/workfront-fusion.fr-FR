@@ -6,9 +6,11 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
-source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
+TQID: https://experienceleague.adobe.com/ez1tN0Sv1-1dXYem-CFQE57-CHUUCR1TUjKQy7BBGMQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: 374
 ht-degree: 100%
 
 ---
@@ -19,7 +21,7 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Voir les filtres d’événements existants dans les modules Workfront > Événements de contrôle
 

@@ -4,16 +4,18 @@ description: Vous pouvez utiliser les types MIME dans Adobe Workfront Fusion. 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/65lJuH7aL35rZCYDowjJuxuQAh88LHNyL3XRQVDJoOY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 74%
+source-wordcount: 358
+ht-degree: 93%
 
 ---
 
 # Modules [!UICONTROL MIME]
 
-Vous pouvez utiliser les types MIME dans Adobe Workfront Fusion. Les types MIME (Multipurpose Internet Mail Extension) sont des libellés qui permettent aux logiciels d’identifier les différents types des données partagées sur Internet. Les serveurs web et les navigateurs utilisent le type MIME pour déterminer ce qu’il convient de faire avec un fichier. Par exemple, un fichier de type MIME `text/html` sera traité dans un navigateur différemment d’un fichier de type MIME `image/jpeg`. Les types MIME fonctionnent indépendamment du système d’exploitation et du matériel.
+Vous pouvez utiliser les types MIME dans Adobe Workfront Fusion. Les types MIME (Multipurpose Internet Mail Extension) sont des libellés qui permettent aux logiciels d’identifier les différents types des données partagées sur Internet. Les serveurs web et les navigateurs utilisent le type MIME pour déterminer ce qu’il convient de faire avec un fichier. Par exemple, un fichier dont le type MIME est `text/html` sera traité différemment dans un navigateur qu’un fichier dont le type MIME est `image/jpeg`. Les types MIME fonctionnent indépendamment du système d’exploitation et du matériel.
 
 ## Conditions d’accès
 
@@ -24,8 +26,8 @@ Vous pouvez utiliser les types MIME dans Adobe Workfront Fusion. Les types MIM
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +36,13 @@ Vous pouvez utiliser les types MIME dans Adobe Workfront Fusion. Les types MIM
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

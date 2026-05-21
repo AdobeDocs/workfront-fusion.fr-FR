@@ -5,20 +5,22 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 770
 ht-degree: 25%
 
 ---
 
-# Flux d’exécution du scénario
+# Flux d’exécution de scénarios
 
 Cet article explique comment un scénario s’exécute et comment les données y circulent, ainsi que la manière d’afficher les données traitées par chaque module.
 
 Pour afficher le flux de données dans un scénario actif, consultez [Affichage du flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
-## Flux d’exécution du scénario
+## Flux d’exécution de scénarios
 
 Une fois qu’un scénario est correctement défini et activé, il s’exécute selon le planning défini.
 
@@ -96,6 +98,6 @@ Une erreur peut se produire pendant l’exécution du scénario. Par exemple, si
 
 * Pour plus d’informations sur la configuration d’un scénario, voir [Éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 * Pour plus d’informations sur la page des détails du scénario, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
-* Pour plus d’informations sur l’activation d’un scénario, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+* Pour plus d’informations sur l’activation d’un scénario, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * Pour plus d’informations sur la planification d’un scénario, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * Pour plus d’informations sur les modules, voir [Présentation des modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).

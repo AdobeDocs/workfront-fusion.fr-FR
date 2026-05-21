@@ -4,9 +4,11 @@ description: Gestion des utilisateurs d’Adobe Workfront Fusion dans votre entr
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
+TQID: https://experienceleague.adobe.com/XdJ9BXb-lRUhJG-8ThzonprCyEEAIk--hKzVlfHJm4Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: 516
 ht-degree: 25%
 
 ---
@@ -61,7 +63,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 Les administrateurs d’Adobe Workfront Fusion peuvent afficher et mettre à jour les rôles utilisateur d’une organisation.
 
 1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
-1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou de l’utilisatrice que vous souhaitez afficher.
+1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
 1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une organisation, cliquez sur la liste déroulante de la colonne **[!DNL Role]** de la ligne de l’organisation dans laquelle vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
 
 ### Remarques concernant l’ajout ou la modification des propriétaires d’organisation
@@ -83,6 +85,6 @@ Lors de l’affectation d’un utilisateur à un rôle de propriétaire ou à pa
 Les administrateurs Adobe Workfront Fusion et les administrateurs d’équipe peuvent afficher et mettre à jour les rôles utilisateur.
 
 1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
-1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou de l’utilisatrice que vous souhaitez afficher.
+1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
 1. Cliquez sur l’icône Équipes dans la colonne **[!DNL Role]** de la ligne de l’organisation contenant l’équipe dans laquelle vous souhaitez afficher ou modifier le rôle de l’utilisateur.
 1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une équipe, cliquez sur la liste déroulante de la colonne **[!DNL Role]** dans la ligne de l’équipe où vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.

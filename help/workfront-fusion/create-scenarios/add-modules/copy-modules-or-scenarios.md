@@ -1,17 +1,20 @@
 ---
-title: Copie de modules ou de scénarios
+title: Copier des modules ou des scénarios
 description: Vous pouvez copier des modules, des groupes de modules ou des scénarios entiers dans Adobe Workfront Fusion. Cette fonctionnalité vous permet de réutiliser des scénarios ou des parties de scénarios sans avoir à les créer à nouveau.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 60%
+source-wordcount: 914
+ht-degree: 69%
 
 ---
 
-# Copie de modules ou de scénarios
+# Copier des modules ou des scénarios
 
 Vous pouvez copier des modules, des groupes de modules ou des scénarios entiers dans Adobe Workfront Fusion. Cette fonctionnalité vous permet de réutiliser des scénarios ou des parties de scénarios sans avoir à les créer à nouveau.
 
@@ -24,8 +27,8 @@ Vous pouvez copier des modules, des groupes de modules ou des scénarios entiers
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +37,13 @@ Vous pouvez copier des modules, des groupes de modules ou des scénarios entiers
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -85,7 +88,7 @@ Le clonage d’un scénario crée une copie du scénario, que vous pouvez ensuit
 
 1. Ouvrez la page de détails du scénario :
 
-   1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis cliquez sur un scénario sur lequel vous souhaitez obtenir des détails.
+   1. Cliquez sur l’onglet **[!UICONTROL Scenario]** dans le panneau de gauche, puis sur un scénario dont vous souhaitez obtenir des détails.
 
       Ou
 

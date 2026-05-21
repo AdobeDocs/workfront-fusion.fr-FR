@@ -1,13 +1,15 @@
 ---
-title: Mise à jour d’un module vers une nouvelle version
+title: Mettre à jour un module vers une nouvelle version
 description: Comme les applications auxquelles Workfront Fusion se connecte peuvent mettre à jour ou publier de nouvelles versions, il est parfois nécessaire que Fusion publie des modules mis à jour pour ces applications.
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+TQID: https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 8%
+source-wordcount: 373
+ht-degree: 28%
 
 ---
 
@@ -30,8 +32,8 @@ Vous pouvez mettre à jour le module sans créer de scénario.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -40,13 +42,13 @@ Vous pouvez mettre à jour le module sans créer de scénario.
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

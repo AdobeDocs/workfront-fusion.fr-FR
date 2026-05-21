@@ -1,17 +1,19 @@
 ---
-title: Ajout d’un utilisateur à une équipe
+title: Ajouter un personne à une équipe
 description: Vos utilisateurs sont affectés à des équipes lorsque vous les créez. Si un utilisateur existant doit être ajouté à une équipe, vous pouvez l’ajouter sur la page Utilisateurs de l’équipe.
 author: Becky
 feature: Workfront Fusion
 exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+TQID: https://experienceleague.adobe.com/OrXq9QrehAn2GnWWvEjgj0rm4W9JEgRvhESMJIvRJEY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 6%
+source-wordcount: 323
+ht-degree: 31%
 
 ---
 
-# Ajout d’un utilisateur à une équipe
+# Ajouter un personne à une équipe
 
 Vos utilisateurs sont affectés à des équipes lorsque vous les créez. Si un utilisateur existant doit être ajouté à une équipe, vous pouvez l’ajouter sur la page Utilisateurs de l’équipe.
 
@@ -26,8 +28,8 @@ Pour ajouter un utilisateur à Fusion, consultez [Ajout d’utilisateurs à Adob
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,13 +38,13 @@ Pour ajouter un utilisateur à Fusion, consultez [Ajout d’utilisateurs à Adob
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

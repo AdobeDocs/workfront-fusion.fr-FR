@@ -1,13 +1,16 @@
 ---
-title: Modules de magasin de données
+title: Modules d’entrepôts de données
 description: Un magasin de données Adobe Workfront Fusion, similaire à une base de données ou à une table simple, peut stocker des données issues de scénarios, ce qui permet de transférer des données entre des scénarios individuels ou des exécutions de scénario. Vous pouvez utiliser un magasin de données pour stocker de nouvelles données provenant de différents systèmes lors de la synchronisation.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 77%
+source-wordcount: 1139
+ht-degree: 84%
 
 ---
 
@@ -21,7 +24,7 @@ Les modules d’entrepôt de données vous permettent d’ajouter, de remplacer,
 
 Pour une vidéo de présentation des entrepôts de données dans Workfront Fusion, voir :
 
-* [Entrepôts de données](https://video.tv.adobe.com/v/3427029/){target=_blank}
+* [Magasins de données](https://video.tv.adobe.com/v/3427029/){target=_blank}
 
 ## Conditions d’accès
 
@@ -32,8 +35,8 @@ Pour une vidéo de présentation des entrepôts de données dans Workfront Fusio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -42,13 +45,13 @@ Pour une vidéo de présentation des entrepôts de données dans Workfront Fusio
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -66,9 +69,9 @@ Lorsque vous configurez des modules de magasin de données, Workfront Fusion aff
 
 Il n’est pas nécessaire de créer une connexion pour utiliser les entrepôts de données.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [Ajouter/remplacer un enregistrement](#addreplace-a-record)
@@ -111,7 +114,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Activez cette option pour écraser l’enregistrement. L’enregistrement que vous souhaitez écraser doit être spécifié dans le champ Clé ci-dessus.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record] </td> 
+   <td>[!UICONTROL Enregistrement] </td> 
    <td> <p>Saisissez les valeurs souhaitées dans les champs de l’enregistrement.</p> </td> 
   </tr> 
  </tbody> 
@@ -282,7 +285,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Activez cette option pour créer un enregistrement si l’enregistrement avec la clé spécifiée n’existe pas déjà.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record]</td> 
+   <td>[!UICONTROL Enregistrement]</td> 
    <td> <p> Saisissez les valeurs souhaitées dans les champs de l’enregistrement que vous souhaitez mettre à jour.</p> </td> 
   </tr> 
  </tbody> 

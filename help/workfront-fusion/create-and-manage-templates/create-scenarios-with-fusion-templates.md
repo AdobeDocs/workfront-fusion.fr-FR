@@ -1,17 +1,19 @@
 ---
-title: Création de scénarios avec des modèles
+title: Créer des scénarios avec des modèles
 description: Les modèles Adobe Workfront Fusion vous permettent de créer et d’utiliser des modèles existants comme point de départ pour vos scénarios Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+TQID: https://experienceleague.adobe.com/U7C1PmiNClfdUnl0qj1j71dKt0eWINJgdwSEFYo7pgQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 53%
+source-wordcount: 364
+ht-degree: 74%
 
 ---
 
-# Création de scénarios avec des modèles
+# Créer des scénarios avec des modèles
 
 Vous pouvez utiliser des modèles Adobe Workfront Fusion comme point de départ pour vos scénarios Workfront Fusion.
 
@@ -24,8 +26,8 @@ Vous pouvez utiliser des modèles Adobe Workfront Fusion comme point de départ 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,13 +36,13 @@ Vous pouvez utiliser des modèles Adobe Workfront Fusion comme point de départ 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

@@ -4,9 +4,11 @@ description: Lorsque vous mappez des éléments, vous pouvez utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
+TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: 717
 ht-degree: 44%
 
 ---
@@ -65,7 +67,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 1. Cliquez sur le champ dans lequel vous souhaitez insérer une fonction.
 1. Sélectionnez l’onglet dans le panneau de mappage qui contient la fonction que vous souhaitez insérer.
 
-   Pour plus d’informations sur les onglets du panneau de mappage, voir [&#x200B; Présentation des fonctions &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   Pour plus d’informations sur les onglets du panneau de mappage, voir [ Présentation des fonctions ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
 1. Cliquez sur le nom de la fonction.
 
    Ou

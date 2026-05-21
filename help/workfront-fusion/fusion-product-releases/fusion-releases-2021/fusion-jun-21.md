@@ -9,9 +9,12 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: d9203aa7-f9c4-421c-ae0b-4481d05d5b6f
-source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
+TQID: https://experienceleague.adobe.com/mWOiDOaU04irnp4lmI3Xx5HTlrweSjUUXUOpERPdSy8
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: 145
 ht-degree: 100%
 
 ---
@@ -22,7 +25,7 @@ Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusio
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Consulter les informations sur le planning dans l’éditeur de scénario
 

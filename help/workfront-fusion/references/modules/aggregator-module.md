@@ -4,9 +4,12 @@ description: Un module d’agrégation est un type de module conçu pour fusionn
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 21%
 
 ---
@@ -98,7 +101,7 @@ L’illustration suivante présente une configuration standard du module d’[!U
 
 Cet exemple de scénario montre comment compresser toutes les pièces jointes d’e-mail et charger le fichier ZIP vers [!DNL Dropbox].
 
-![Exemple d’archive Dropbox](assets/dropbox-archive.png)
+![Exemple d’archive ](assets/dropbox-archive.png)
 
 Le scénario ci-dessous montre comment :
 
@@ -108,7 +111,7 @@ Le scénario ci-dessous montre comment :
 
 * Le troisième module est l&#39;agrégateur. Il agrège les lots générés par le module [!UICONTROL E-mail] > [!UICONTROL Itérer les pièces jointes]. [!UICONTROL Archive] >[!UICONTROL Créer un agrégateur d’archives] accumule tous les lots qu’il reçoit et génère un seul lot contenant le fichier ZIP.
 
-* Le dernier module charge le fichier ZIP obtenu dans [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Télécharger un fichier] récupère le fichier ZIP à partir du module [!UICONTROL Archive] > [!UICONTROL Créer une archive] et le charge dans [!DNL Dropbox].
+* Le dernier module charge le fichier ZIP obtenu dans [!DNL Dropbox]. [!DNL Dropbox] > [!UICONTROL Charger un fichier] récupère le fichier ZIP à partir du module [!UICONTROL Archiver] > [!UICONTROL Créer une archive] et le charge dans [!DNL Dropbox].
 
 
 

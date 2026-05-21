@@ -4,14 +4,16 @@ description: Cet article décrit les événements qui se produisent pendant l’
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 22%
+source-wordcount: 482
+ht-degree: 23%
 
 ---
 
-# Exécution de scénarios, cycles et phases
+# Exécution, cycles et phases de scénarios
 
 Chaque exécution de scénario commence par la phase d’initialisation, se poursuit par au moins un cycle composé des phases d’opération et de validation/restauration, et se termine par la phase de finalisation
 
@@ -46,20 +48,20 @@ Vous pouvez définir le nombre maximal de cycles dans le panneau [!UICONTROL par
 
 * [Opération](#operation)
 * [Valider](#commit)
-* [Restaurer](#rollback)
+* [Restauration](#rollback)
 
 #### Opération
 
 Pendant la phase de fonctionnement, on effectue une opération de lecture ou d&#39;écriture:
 
-* Une opération de lecture consiste à obtenir des données d&#39;un service qui sont ensuite traitées par d&#39;autres modules selon un scénario prédéfini. Par exemple, le module [!UICONTROL Workfront] >[!UICONTROL Observer les enregistrements] renvoie les nouveaux lots (enregistrements) créés depuis la dernière exécution du scénario.
+* Une opération de lecture consiste à obtenir des données d&#39;un service qui sont ensuite traitées par d&#39;autres modules selon un scénario prédéfini. Par exemple, le module  >[!UICONTROL Observer les enregistrements] renvoie les nouveaux lots (enregistrements) créés depuis la dernière exécution du scénario.
 * Une opération d&#39;écriture consiste à envoyer des données à un service donné pour traitement ultérieur. Par exemple, le module Workfront >[!UICONTROL Télécharger le document] télécharge un fichier dans Workfront.
 
 #### Valider
 
 Si la phase d’opération est réussie, la phase de validation commence, au cours de laquelle toutes les opérations effectuées par les modules sont validées. Cela signifie que Workfront Fusion envoie des informations à tous les services impliqués dans la phase d’exploitation sur son succès.
 
-### Restaurer
+### Restauration
 
 Si une erreur se produit au cours de la phase d&#39;opération ou de validation sur un module, la phase est abandonnée et la phase de restauration est démarrée, rendant toutes les opérations au cours du cycle donné annulées.
 

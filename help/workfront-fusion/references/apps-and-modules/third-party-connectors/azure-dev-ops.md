@@ -4,20 +4,24 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 70%
+source-wordcount: 1897
+ht-degree: 80%
 
 ---
 
 # Modules [!DNL Azure DevOps]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Azure DevOps] et les connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Azure DevOps] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -28,8 +32,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -38,22 +42,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -63,7 +67,7 @@ Pour utiliser les modules [!DNL Azure DevOps], vous devez disposer d’un compte
 
 ## Informations sur l’API [!DNL Azure DevOps]
 
-Le connecteur Azure DevOps utilise les éléments suivants :
+Le connecteur DevOps d’Azure utilise les éléments suivants :
 
 <table style="table-layout:auto"> 
  <col> 
@@ -115,16 +119,16 @@ Le connecteur Azure DevOps utilise les éléments suivants :
       </tr>
    </table>
 
-1. Pour saisir un ID d’application Azure DevOps ou un secret client, cliquez sur <b>Afficher les paramètres avancés</b> et saisissez-les dans les champs qui s’ouvrent.
+1. Pour saisir un ID d’application DevOps Azure ou un secret client, cliquez sur <b>Afficher les paramètres avancés</b> et saisissez-les dans les champs qui s’ouvrent.
 1. Cliquez sur **[!UICONTROL Continuer]** pour terminer la configuration de la connexion et poursuivre la création de votre scénario.
 
 ## Modules [!UICONTROL Azure DevOps] et leurs champs
 
 Lorsque vous configurez les modules [!DNL Azure DevOps], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Azure DevOps] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -176,7 +180,7 @@ Le module génère l’ID de l’objet pour l’élément de travail nouvellemen
    <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Azure DevOps] à Workfront Fusion, voir <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Azure DevOps] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionnez si vous souhaitez créer un élément de travail ou un projet.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Remplissez les champs suivants :</p> 
@@ -185,7 +189,7 @@ Le module génère l’ID de l’objet pour l’élément de travail nouvellemen
        <li> <p><strong>[!UICONTROL Description]</strong> : saisissez ou mappez une description pour le nouveau projet. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong> : sélectionnez si vous souhaitez que votre projet soit public ou privé. Les utilisateurs et utilisatrices doivent être connectés à votre organisation et avoir reçu l’autorisation d’accéder au projet pour pouvoir interagir avec un projet privé. Les projets publics sont visibles par les utilisateurs et utilisatrices qui ne sont pas connectés à votre organisation.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong> : indiquez si vous souhaitez que le projet utilise [!DNL Git] ou [!UICONTROL Team Foundation Version Control (TFCV)] pour la gestion de versions.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong> : sélectionnez le processus de travail que vous souhaitez utiliser pour le projet. Les options sont [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] et [!UICONTROL Agile].</p> <p>Pour plus d’informations sur les processus [!DNL Azure DevOps], voir <a href="https://learn.microsoft.com/fr-fr/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Processus par défaut et modèles de processus</a> dans la documentation [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong> : sélectionnez le processus de travail que vous souhaitez utiliser pour le projet. Les options sont [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] et [!UICONTROL Agile].</p> <p>Pour plus d’informations sur les processus [!DNL Azure DevOps], voir <a href="https://learn.microsoft.com/fr-fr/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Processus par défaut et modèles de processus</a> dans la documentation [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Remplissez les champs suivants :</p> 
       <ul> 
@@ -200,7 +204,7 @@ Le module génère l’ID de l’objet pour l’élément de travail nouvellemen
 
 #### [!UICONTROL Appel API personnalisé]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Azure DevOps]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Azure DevOps].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Azure DevOps]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Azure DevOps].
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -226,7 +230,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -317,7 +321,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
    <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Azure DevOps] à Workfront Fusion, voir <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connexion de [!DNL Azure DevOps] à [!UICONTROL Workfront Fusion]</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionner si vous voulez lire un projet ou un élément de travail.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Project]</strong> : sélectionnez le projet que vous souhaitez lire.</p> </li> 
@@ -326,8 +330,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module.
-Les champs disponibles dépendent du type d’élément de travail.</td> 
+   <td>Sélectionnez les informations que vous souhaitez inclure dans le bundle de sortie pour ce module. Les champs disponibles dépendent du type d’élément de travail.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 

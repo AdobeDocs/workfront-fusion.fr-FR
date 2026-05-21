@@ -7,10 +7,13 @@ description: Découvrez comment créer un scénario d’automatisation simple av
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 29%
+source-wordcount: 1426
+ht-degree: 30%
 
 ---
 
@@ -45,7 +48,7 @@ Cet exemple vous guide tout au long du processus de création d’un scénario q
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -60,7 +63,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
    L’éditeur de scénarios s’affiche, contenant un module vide au centre.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom.
-1. Continuez avec [&#x200B; Ajouter et configurer le premier module &#x200B;](#add-and-configure-the-first-module).
+1. Continuez avec [ Ajouter et configurer le premier module ](#add-and-configure-the-first-module).
 
 ### Ajouter et configurer le premier module
 
@@ -68,7 +71,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Une liste d&#39;applications s&#39;affiche à droite du module.
 
-1. Sélectionnez **Adobe Workfront**. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
+1. Sélectionnez ****. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
 
    La liste est modifiée afin d’afficher tous les modules Workfront que vous pouvez utiliser.
 
@@ -96,7 +99,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
       Cela permet au module de trouver des projets dont le nom contient les mots que vous avez choisis, même si vous ne saisissez pas le nom en entier ou si vous saisissez le nom avec une casse incorrecte (par exemple, tout en majuscules).
    1. Dans le dernier champ sous [!UICONTROL Critères de recherche], saisissez un mot ou une expression dont vous savez qu’il se trouve dans le nom de la tâche que vous recherchez.
 
-1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **&#x200B;**&#x200B;Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
+1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **** Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
 
    >[!TIP]
    >
@@ -108,7 +111,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Le nom apparaît juste en dessous du module. Ci-dessous, Workfront Fusion comprend une brève description du type d’action effectuée par le module.
 
-   ![&#x200B; Module renommé &#x200B;](assets/module-renamed-wf.png)
+   ![ Module renommé ](assets/module-renamed-wf.png)
 
 1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
 
@@ -162,7 +165,7 @@ Dans ce scénario, un test réussi permet de localiser la requête et de la conv
 
    >[!IMPORTANT]
    >
-   >Enregistrez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
 
 >[!TIP]
 >
@@ -186,7 +189,7 @@ La dernière étape de la création d’un scénario consiste à l’activer.
 
 Ce scénario recherchant un problème spécifique, il n’est pas nécessaire de l’activer. L’activation d’un scénario entraîne son exécution selon un planning ou lorsqu’une action spécifique se produit dans une application. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 

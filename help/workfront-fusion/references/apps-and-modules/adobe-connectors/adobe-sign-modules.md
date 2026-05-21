@@ -4,10 +4,13 @@ description: Avec les modules  [!DNL Adobe Acrobat Sign] , vous pouvez lancer un
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '6763'
-ht-degree: 93%
+source-wordcount: 6796
+ht-degree: 95%
 
 ---
 
@@ -24,8 +27,8 @@ Avec les modules [!DNL Adobe Acrobat Sign], vous pouvez lancer un scénario Adob
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -34,22 +37,22 @@ Avec les modules [!DNL Adobe Acrobat Sign], vous pouvez lancer un scénario Adob
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,9 +90,9 @@ Les accords [!DNL Adobe Sign] ont besoin d’un champ avec lequel travailler. Il
 
 Lorsque vous configurez les modules [!DNL Adobe Acrobat Sign], Workfront Fusion affiche les champs répertoriés ci-dessous. En plus de ces derniers, des champs [!DNL Adobe Acrobat Sign] supplémentaires peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
 
-Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mappage des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -231,7 +234,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
    <td>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard. Par exemple, <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez créer.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Group]</b> </p> </li> 
@@ -263,7 +266,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Indiquez qui doit avoir accès au document de bibliothèque.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Indiquez si le document est en cours de création ou s’il est actif.</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>Pour chaque type de modèle de bibliothèque que vous souhaitez utiliser, cliquez sur <b>[!UICONTROL Add item]</b> et sélectionnez le type de modèle.</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Saisissez la dernière date à laquelle un événement s’est produit sur le document de bibliothèque.</p> <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercition</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Saisissez la dernière date à laquelle un événement s’est produit sur le document de bibliothèque.</p> <p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercition de type</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Sélectionnez le statut du document de bibliothèque.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -315,7 +318,7 @@ Ce module d’action crée un enregistrement du type sélectionné.
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Web form participant ID] </b> </p> <p>Saisissez l’identifiant du participant ou de la participante au formulaire web.</p> </li> 
-       <li> <p><b>[!UICONTROL Order]</b> </p> <p>Indiquez l’ordre dans lequel cet ensemble de participantes et participants doit interagir avec le formulaire web. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit passer en premier, 2 doit passer ensuite, et ainsi de suite. Les numéros d’ordre doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
+       <li> <p><b>[!UICONTROL Order]</b> </p> <p>Indiquez l’ordre dans lequel cet ensemble de participantes et participants doit interagir avec le formulaire web. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit passer en premier, 2 doit passer ensuite, et ainsi de suite. Les numéros de commande doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
        <li> <p><b>[!UICONTROL Provider participant set info]</b> </p> <p>Si la personne participante est inconnue, indiquez si le fournisseur doit fournir des informations sur la personne participante et saisissez un message contenant les informations requises pour la personne participante inconnue.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>Si vous souhaitez fournir une page d’échec ou d’erreur à vos utilisateurs et utilisatrices, sélectionnez <b>[!UICONTROL Yes]</b>, puis remplissez les champs suivants :</p> 
@@ -399,7 +402,7 @@ Ce module d’action crée un accord, l’envoie pour signature et renvoie l’i
    <td> <p>Pour chaque ensemble de participantes et participants que vous souhaitez ajouter, cliquez sur <b>[!UICONTROL Add item]</b> et renseignez les champs suivants.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Members]</b> </p> <p>Pour chaque personne que vous souhaitez ajouter à l’ensemble de participantes et participants, cliquez sur <b>[!UICONTROL Add item]</b> et saisissez l’adresse e-mail de la personne.</p> </li> 
-     <li> <p><b>[!UICONTROL Order]</b> </p> <p>Précisez l’ordre dans lequel cet ensemble de participantes et participants doit signer l’accord. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit signer en premier, 2 doit signer ensuite, et ainsi de suite. Les numéros d’ordre doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
+     <li> <p><b>[!UICONTROL Order]</b> </p> <p>Précisez l’ordre dans lequel cet ensemble de participantes et participants doit signer l’accord. Par exemple, le groupe de participantes et participants dont la valeur d’ordre est 1 doit signer en premier, 2 doit signer ensuite, et ainsi de suite. Les numéros de commande doivent commencer par 1 et ne pas comporter de trous dans la série. </p> </li> 
      <li> <p><b>[!UICONTROL Role]</b> </p> <p>Sélectionnez un rôle pour cet ensemble de participantes et participants. Tous les participantes et participants de l’ensemble reçoivent ce rôle.</p> </li> 
      <li> <p><b>[!UICONTROL ID]</b> </p> <p>Saisissez ou mappez l’identifiant de cet ensemble de participantes et participants.</p> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>Saisissez ou mappez un libellé unique pour l’ensemble de participantes et participants. Pour les workflows personnalisés, le libellé spécifié dans l’ensemble de participation doit être mappé à l’étape de participation dans le workflow.</p> </li> 
@@ -532,7 +535,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue que vous souhaitez créer.</p> </li> 
        <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice à l’URL renvoyée.</p> </li> 
-       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
        <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
@@ -563,7 +566,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
       <ul> 
        <li> <p><b>[!UICONTROL Agreement name]</b> </p> <p>Saisissez ou mappez le nom de l’accord pour le document de bibliothèque sur la page de composition.</p> </li> 
        <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour que les liens vers les documents de bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que les liens vers les documents de la bibliothèque soient visibles. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher les liens permettant de joindre des documents provenant de sources web. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
        <li> <p><b>L’aperçu est-il sélectionné ?</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour mettre la page Composer en mode Création.</p> </li> 
       </ul> <p> </p> </li> 
@@ -594,7 +597,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Saisissez l’adresse e-mail de la personne qui recevra le formulaire web nouvellement créé.</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Entrez un commentaire décrivant la façon dont l’entité appelant l’API a établi l’identité de la personne signataire. Cette information apparaît dans le journal d’audit d’[!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Entrez une date d’expiration pour la personnalisation de ce formulaire web. </p> <p>Pour obtenir la liste des formats de date et d’heure pris en charge, voir <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercition</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Entrez une date d’expiration pour la personnalisation de ce formulaire web. </p> <p>Pour une liste des formats de date et d’heure pris en charge, consultez la section <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercition de type</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour que la personne signataire prévue puisse signer le formulaire plusieurs fois.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -619,11 +622,11 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Saisir un chemin relatif à <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Remarque : pour obtenir la liste des points d’entrée disponibles, reportez-vous à la référence de l’API [!DNL Adobe Sign].</p> </td> 
+   <td> <p>Saisir un chemin relatif à <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Note : pour obtenir la liste des points d’entrée disponibles, voir la référence de l’API [!DNL Adobe Sign].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -635,7 +638,7 @@ Ce module vous permet d’effectuer un appel API personnalisé.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles comme <code>if</code> dans votre JSON, mettez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -695,7 +698,7 @@ Ce module d’action répertorie tous les enregistrements du type sélectionné 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
-   <td> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si ce champ est laissée vide, les pages [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </td> 
+   <td> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -753,7 +756,7 @@ Consultez les informations complémentaires relatives à un seul enregistrement.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record ID] (Exemple : [!UICONTROL Account ID])</td> 
-   <td>Saisissez ou mappez l’identifiant de l’enregistrement pour lequel vous souhaitez extraire des enregistrements associés.</td> 
+   <td>Saisissez ou mappez l’identifiant de l’enregistrement pour lequel vous souhaitez récupérer des enregistrements associés.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Other fields]</td> 
@@ -933,7 +936,7 @@ Chargez un document transitoire. Un document transitoire est disponible pendant 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL MIME type]</td> 
-   <td>Saisissez le type MIME du fichier d’origine. Les types MIME (Multipurpose Internet Mail Extension) sont des libellés qui permettent aux logiciels d’identifier les différents types des données partagées sur Internet. Les serveurs web et les navigateurs utilisent le type MIME pour déterminer ce qu’il convient de faire avec un fichier. Par exemple, un fichier de type MIME <code>text/html</code> sera traité différemment dans un navigateur par rapport à un fichier de type MIME <code>image/jpeg</code>.</td> 
+   <td>Saisissez le type MIME du fichier d’origine. Les types MIME (Multipurpose Internet Mail Extension) sont des libellés qui permettent aux logiciels d’identifier les différents types des données partagées sur Internet. Les serveurs web et les navigateurs utilisent le type MIME pour déterminer ce qu’il convient de faire avec un fichier. Par exemple, un fichier dont le type MIME est <code>text/html</code> sera traité différemment dans un navigateur qu’un fichier dont le type MIME est <code>image/jpeg</code>.</td> 
   </tr> 
  </tbody> 
 </table>

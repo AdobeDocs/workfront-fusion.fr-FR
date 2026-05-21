@@ -4,9 +4,13 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: 2717
 ht-degree: 71%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 71%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent le calendrier [!UICONTROL Google] et les connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -511,7 +515,7 @@ Pour déclencher un scénario à un moment précis avant un événement, utilise
    1. Cliquez sur la bulle au-dessus du module pour inspecter la sortie du module.
    1. Développez l’élément `Text` et copiez le code de confirmation :
 
-      ![&#x200B; Code de confirmation &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![ Code de confirmation ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Dans Gmail, collez le code de confirmation dans la zone d’édition, puis cliquez sur **[!UICONTROL Vérifier]** :
 

@@ -1,30 +1,32 @@
 ---
 title: Workflow de création d’un scénario
-description: Follow this general workflow to create a scenario
+description: Suivez ce workflow général pour créer un scénario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: 782
 ht-degree: 21%
 
 ---
 
 # Workflow de création d’un scénario
 
-Scenarios are built to meet the needs of your organization, with applications and modules that address your use cases. However, creating a scenario follows the same basic workflow regardless of use case. This article describes the basic process of creating a scenario.
+Les scénarios sont conçus pour répondre aux besoins de votre entreprise, avec des applications et des modules qui répondent à vos cas d’utilisation. Cependant, la création d’un scénario suit le même workflow de base, quel que soit le cas d’utilisation. Cet article décrit le processus de base de création d’un scénario.
 
 
-* [Create and name the scenario](#create-and-name-the-scenario)
+* [Créer et nommer le scénario](#create-and-name-the-scenario)
 * [Ajouter et configurer le premier module](#configure-the-first-module)
 * [Créer des connexions](#create-connections)
-* [Add and configure additional modules](#add-and-configure-additional-modules)
-* [Map data between modules](#map-data-between-modules)
-* [Configure routing](#configure-routing)
+* [Ajout et configuration de modules supplémentaires](#add-and-configure-additional-modules)
+* [Mappage des données entre les modules](#map-data-between-modules)
+* [Configurer le routage](#configure-routing)
 * [Configurer la gestion des erreurs](#configure-error-handling)
 * [Configurer les paramètres de scénario](#onfigure-scenario-settings)
-* [Test and revise](#test-and-revise)
+* [Tester et réviser](#test-and-revise)
 * [Activer le scénario](#activate-the-scenario)
 * [Raccourcis clavier du scénario Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
 
@@ -32,44 +34,44 @@ Raccourcis clavier
 
 
 
-## Create and name the scenario
+## Créer et nommer le scénario
 
-1. Sign into your Workfront Fusion account.
+1. Connectez-vous à votre compte Workfront Fusion.
 1. Cliquez sur **[!UICONTROL Scénarios]** ![icône Scénarios](assets/scenarios-icon.png) dans le panneau de gauche.
 
    >[!NOTE]
    >
    >Si le panneau de navigation de gauche ou ses icônes ne s’affichent pas, cliquez sur l’icône menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Optional)In the [!UICONTROL **Folders**] panel, click the **[!UICONTROL Add folder]** icon ![Add folder icon](assets/add-folder-icon.png), then type a name like &quot;Practice scenarios&quot; for your first folder.
+1. (Facultatif) Dans le panneau [!UICONTROL **Dossiers**], cliquez sur l’icône **[!UICONTROL Ajouter un dossier]** ![Icône Ajouter un dossier](assets/add-folder-icon.png), puis saisissez un nom tel que « Scénarios d’exercices pratiques » pour votre premier dossier.
 
-1. (Optional) Open the folder, then click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
+1. (Facultatif) Ouvrez le dossier, puis cliquez sur **[!UICONTROL Créer un nouveau scénario]** dans le coin supérieur droit de la page.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom tel que « Scénario pratique 1 ».
 
-   ![Name the scenario](assets/name-the-scenario.png)
+   ![Nommez le scénario](assets/name-the-scenario.png)
 
-1. Continue with [Connect the first module](#2-connect-the-first-module) below.
+1. Continuez avec [Connecter le premier module](#2-connect-the-first-module) ci-dessous.
 
 ## Ajouter et configurer le premier module
 
-The first module for your scenario is a trigger module, which will start the scenario when certain conditions are met.
+Le premier module de votre scénario est un module de déclenchement qui démarre le scénario lorsque certaines conditions sont remplies.
 
-For instructions on adding the first module to a scenario, see [Add the first module to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) in the article Add a module to a scenario.
+Pour obtenir des instructions sur l’ajout du premier module à un scénario, voir [Ajouter le premier module à un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) dans l’article Ajouter un module à un scénario.
 
-For instructions on configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+Pour obtenir des instructions sur la configuration d’un module, voir [Configuration d’un module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 
 ## Créer des connexions
 
-When configuring a module, you must enter or create a connection. The module uses this connection and the permissions it contains to access date in the application.
+Lors de la configuration d’un module, vous devez entrer ou créer une connexion. Le module utilise cette connexion et les autorisations qu’elle contient pour accéder à la date dans l’application.
 
-For basic instructions on how to create a connection, see [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+Pour obtenir des instructions de base sur la création d’une connexion, voir [Créer une connexion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-For specific use cases involving Google, Microsoft, or applications without dedicated connectors, see the other articles under [Connect to applications: article index](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md).
+Pour des cas d’utilisation spécifiques impliquant Google, Microsoft ou des applications sans connecteurs dédiés, consultez les autres articles sous [Se connecter aux applications : index des articles](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md).
 
-## Add and configure additional modules
+## Ajout et configuration de modules supplémentaires
 
-Continue adding and configuring additional modules.
+Continuez à ajouter et à configurer des modules supplémentaires.
 
 Pour obtenir des instructions sur l’ajout de modules, consultez les articles répertoriés sous [Ajouter des modules : index des articles](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
 
@@ -117,7 +119,7 @@ Le test de votre scénario vous permet de déterminer si celui-ci fonctionne com
 
 Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -153,9 +155,9 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
-   <td>Shift+Drag</td> 
-   <td>Shift+Drag</span> </td> 
+   <td role="rowheader">[!UICONTROL Sélectionner plusieurs modules]</td> 
+   <td>Maj+Glisser</td> 
+   <td>Maj+Glisser</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy]</td> 
@@ -168,13 +170,13 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
    <td>Cmd+V</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search for modules]</td> 
+   <td role="rowheader">[!UICONTROL Rechercher des modules]</td> 
    <td>Ctrl+K</td> 
    <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paste cURL into scenario to create HTTP module</td> 
-   <td colspan="2">Copy cURL, then paste anywhere in the scenario editor.<p>For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Use cURL to add an HTTP module</a>.</td> 
+   <td role="rowheader">Collez cURL dans le scénario pour créer le module HTTP .</td> 
+   <td colspan="2">Copiez cURL, puis collez-la n’importe où dans l’éditeur de scénarios.<p>Pour plus d’informations, voir <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Utiliser cURL pour ajouter un module HTTP</a>.</td> 
   </tr> 
  </tbody> 
 </table>

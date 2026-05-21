@@ -4,10 +4,12 @@ description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 85%
+source-wordcount: 2290
+ht-degree: 89%
 
 ---
 
@@ -26,8 +28,8 @@ La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,13 +38,13 @@ La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -422,7 +424,7 @@ Vérifie la valeur d’entrée pour une correspondance avec la liste de valeurs 
      <ul> 
       <li>Pour obtenir la liste complète des métacaractères, voir <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Expressions régulières</a> dans la documentation web MDN.</li> 
       <li>Pour consulter un tutoriel sur la création d’expressions régulières, nous vous recommandons <a href="https://regexone.com/">RegexOne</a>.</li> 
-      <li>Pour tester des expressions régulières, nous vous recommandons le site web <a href="https://regex101.com/">Regular Expressions 101</a>. Sélectionnez le ECMAScript (JavaScript) FLAVOR dans le panneau de gauche.</li> 
+      <li>Pour expérimenter des expressions régulières, nous vous recommandons le site web <a href="https://regex101.com/">Regular Expressions 101</a>. Sélectionnez le ECMAScript (JavaScript) FLAVOR dans le panneau de gauche.</li> 
      </ul> 
     </div> </td> 
   </tr> 

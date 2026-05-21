@@ -4,10 +4,13 @@ description: Les modules CSV d’Adobe Workfront Fusion vous permettent de crée
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 48%
+source-wordcount: 941
+ht-degree: 56%
 
 ---
 
@@ -26,8 +29,8 @@ Comme il s&#39;agit d&#39;un transformateur, ces modules ne nécessitent pas de 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,13 +39,13 @@ Comme il s&#39;agit d&#39;un transformateur, ces modules ne nécessitent pas de 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -115,7 +118,7 @@ Pour plus d’informations sur les agrégateurs, voir [Module Agrégateur](/help
 
 **Exemple** :
 
-Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts Google] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL &#x200B; E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
+Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts ] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL  E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
 ![Transformation](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
 Le module [!DNL Create CSV] simple propose une liste de cases à cocher correspondant aux éléments de niveau supérieur d’un lot. Si vous tentez de sélectionner <code>Nom complet</code> et <code>E-mails</code> , le module [!UICONTROL Créer CSV] génère la sortie suivante, qui peut ne pas être celle que vous souhaitez :
@@ -130,7 +133,7 @@ Le module [!DNL Create CSV] simple propose une liste de cases à cocher correspo
 
 Parce que l’élément <code>Nom complet</code> est de type Texte simple, il est exporté comme prévu. L’élément <code>E-mails</code>, qui est d’un tableau de collections de type complexe, est exporté en tant qu’[objet Object], qui correspond à la manière dont les collections et les tableaux sont transformés en texte par défaut.
 
-Pour plus d’informations, voir [Types de données d’élément](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
+Pour plus d’informations, consultez [Types de données d’élément](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 
 Pour exporter le contenu de l’e-mail <code> </code>élément de la première collection des <code>Emails[]</code> Au lieu de cela, vous devez utiliser le module [!UICONTROL Créer CSV (avancé)]. Ce module vous permet de définir des colonnes individuelles de votre fichier CSV et de mapper des éléments à celles-ci, y compris les colonnes imbriquées.
@@ -139,7 +142,7 @@ Pour exporter le contenu de l’e-mail <code> </code>élément de la première c
 1. Cliquez sur le bouton <strong>[!UICONTROL Ajouter]</strong> en regard du champ [!UICONTROL Structure de données] pour créer une structure de données.
 1. Saisissez le nom de la structure de données et cliquez sur <strong>[!UICONTROL Ajouter un élément]</strong> pour ajouter les différentes colonnes. Pour exporter deux colonnes : « Nom complet » et « E-mail », la structure de données résultante ressemblerait à ceci :
 
-   ![Sortie des contacts Google](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
+   ![Sortie des contacts ](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
 1. Une fois la structure des données définie, les champs correspondant à chaque colonne individuelle apparaissent dans la configuration du module [!UICONTROL Créer CSV (avancé)] afin que vous puissiez mapper les éléments. Prenez le premier élément de la <code>[!UICONTROL E-mails[]]</code> tableau et mapper son élément <code>E-mail </code>dans le champ/la colonne E-mail :
 

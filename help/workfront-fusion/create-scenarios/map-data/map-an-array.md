@@ -4,10 +4,13 @@ description: Vous pouvez mapper un tableau ou des éléments de tableau individu
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 26%
+source-wordcount: 898
+ht-degree: 33%
 
 ---
 
@@ -35,8 +38,8 @@ Un tableau est un élément de lot qui peut contenir les éléments suivants :
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -45,13 +48,13 @@ Un tableau est un élément de lot qui peut contenir les éléments suivants :
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -124,13 +127,13 @@ Certains tableaux contiennent des collections avec des éléments clé-valeur te
 
 L’exemple suivant illustre la sortie de l’application [!DNL Jira].
 
-![&#x200B; Sortie du module Jira &#x200B;](assets/output-of-jira-app-350x100.png)
+![ Sortie du module Jira ](assets/output-of-jira-app-350x100.png)
 
 Cet exemple obtient un nom de fichier à partir d’un tableau de pièces jointes, pour la pièce jointe spécifique avec l’ID 10108.
 
 Cet exemple génère la sortie suivante :
 
-![&#x200B; Sortie du module Jira &#x200B;](assets/output-from-jira-350x261.png)
+![ Sortie du module Jira ](assets/output-from-jira-350x261.png)
 
 La formule peut être expliquée comme suit :
 

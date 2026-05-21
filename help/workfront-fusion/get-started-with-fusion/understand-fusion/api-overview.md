@@ -3,10 +3,14 @@ title: Vue d’ensemble de l’API
 description: Les interfaces de programmation d’applications (API) permettent aux applications et aux services de communiquer entre eux. Fusion utilise des API pour communiquer avec l’application à laquelle vous vous connectez. Chaque application dispose d’une API distincte.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
+TQID: https://experienceleague.adobe.com/LTJpx90BlcSJp-l1JieuH8Tr2ulGpLujwt50-5IYttY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 87%
+source-wordcount: 494
+ht-degree: 79%
 
 ---
 
@@ -32,7 +36,7 @@ Le fait que les API sont définies par leurs propriétaires et non par Fusion im
 
   Pour obtenir la liste des connecteurs universels, consultez [Connecteurs universels](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-* **Les modifications apportées à l’API d’une application par son propriétaire peuvent affecter le fonctionnement de Fusion.** S’il s’agit de modifications majeures, Fusion peut avoir besoin de mettre à jour des modules ou des types de connexion, ou dans des cas extrêmes, de créer un nouveau connecteur pour l’application.
+* **Les modifications apportées à l’API d’une application par son propriétaire peuvent affecter la fonctionnalité Fusion.** Si les modifications sont suffisamment importantes, Fusion peut avoir besoin de mettre à jour des modules ou des types de connexion, ou dans des cas extrêmes, peut créer un nouveau connecteur pour l’application.
 
   Pour plus d’informations sur ces cas extrêmes, connus sous le nom de « modifications avec rupture », consultez [Modifications avec rupture](#breaking-changes) dans cet article.
 

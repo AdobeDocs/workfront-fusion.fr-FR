@@ -4,9 +4,11 @@ description: 'Adobe Workfront Fusion distingue cinq types de modules : modul
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '917'
+TQID: https://experienceleague.adobe.com/68pDfEru4WzXlcAi8u3A2PEImixguNX-AqQgI9x1qVk
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 917
 ht-degree: 100%
 
 ---

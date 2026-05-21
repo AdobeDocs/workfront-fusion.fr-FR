@@ -4,20 +4,23 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/FS2TZrWeFQ-6hQZlmu7pd46bIHjnVvIU6g61hxWFkWc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 72%
+source-wordcount: 1113
+ht-degree: 84%
 
 ---
 
 # Modules [!DNL Azure Active Directory]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Azure Active Directory] et les connecter à plusieurs applications et services tiers.
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Azure Active Directory] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Conditions d’accès
 
@@ -28,8 +31,8 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -38,22 +41,22 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
-   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
+   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Pour plus d’informations sur les licences Adobe Workfront Fusion, voir [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,7 +89,7 @@ Lorsque vous configurez les modules [!DNL Azure Active Directory], Workfront Fu
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, voir [Mapper des informations d’un module à l’autre dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Basculement de carte](../assets/map-toggle-350x74.png)
+![Bouton (bascule) de mappage](../assets/map-toggle-350x74.png)
 
 * [Déclencheurs](#triggers)
 * [Actions](#actions)
@@ -96,7 +99,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 #### [!UICONTROL Surveiller les enregistrements] (planifié)
 
-Ce module de déclenchement par interrogation (planifié) exécute un scénario lorsqu’un enregistrement dans un objet sélectionné a été créé depuis la dernière exécution planifiée dans [!DNL Azure Active Directory]. Il renvoie également tous les champs standard associés à l’enregistrement ou aux enregistrements, ainsi que tous les champs et valeurs personnalisés auxquels la connexion accède. Vous pouvez mapper ces informations dans les modules suivants du scénario.
+Ce module de déclenchement par interrogation (planifié) exécute un scénario lorsqu’un enregistrement dans un objet sélectionné a été créé depuis la dernière exécution planifiée dans [!DNL Azure Active Directory]. Elle renvoie également tous les champs standard associés à l’enregistrement ou aux enregistrements, ainsi que tous les champs et valeurs personnalisés auxquels la connexion accède.Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -155,7 +158,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Saisissez ou mappez l’ID unique [!DNL Azure Active Directory] de l’enregistrement que vous souhaitez que le module lise.</td> 
+   <td>Saisissez ou mappez l’identifiant [!DNL Azure Active Directory] unique de l’enregistrement que vous souhaitez que le module lise.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -191,7 +194,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Appel API personnalisé]
 
-Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API [!DNL Azure Active Directory]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Azure Active Directory].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Azure Active Directory]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Azure Active Directory].
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 
@@ -209,7 +212,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, voir <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -221,7 +224,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lors de l’utilisation d’instructions conditionnelles telles que <code>if</code> dans votre fichier JSON, placez les guillemets autour de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="../assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -236,7 +239,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Rechercher des utilisateurs et des utilisatrices]
 
-Ce module de recherche trouve les enregistrements d’un objet dans [!DNL Azure Active Directory] qui correspondent à la requête de recherche que vous avez spécifiée. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+Ce module de recherche permet de rechercher les enregistrements d’un objet dans [!DNL Azure Active Directory] qui correspondent à la requête de recherche que vous avez spécifiée. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 

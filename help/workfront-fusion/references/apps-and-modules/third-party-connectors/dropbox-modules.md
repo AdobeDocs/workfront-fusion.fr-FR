@@ -1,21 +1,24 @@
 ---
 title: Modules Dropbox
-description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Dropbox et les connecter à plusieurs applications et services tiers. Vous pouvez ainsi automatiser des activités telles que la surveillance, la recherche, la récupération, la mise en liste, la création et la modification de fichiers et de dossiers dans votre Dropbox.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent Dropbox et les connecter à plusieurs applications et services tiers.Vous pouvez ainsi automatiser des activités telles que la surveillance, la recherche, la récupération, la mise en liste, la création et la modification de fichiers et de dossiers dans votre Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
-ht-degree: 75%
+source-wordcount: 3309
+ht-degree: 74%
 
 ---
 
 # Modules [!DNL Dropbox]
 
-Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!UICONTROL Dropbox] ou [!DNL Dropbox Business], et les connecter à plusieurs applications et services tiers. Vous pouvez ainsi automatiser des activités telles que la surveillance, la recherche, la récupération, la mise en liste, la création et la modification de fichiers et de dossiers dans votre [!UICONTROL Dropbox].
+Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!UICONTROL Dropbox] ou [!DNL Dropbox Business], et les connecter à plusieurs applications et services tiers.Vous pouvez ainsi automatiser des activités telles que la surveillance, la recherche, la récupération, la mise en liste, la création et la modification de fichiers et de dossiers dans votre .
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -125,7 +128,7 @@ Pour créer une connexion pour vos modules [!DNL Dropbox], procédez comme suit�
         <td>Saisissez votre [!UICONTROL Dropbox] [!UICONTROL Client ID]. </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Dropbox]. </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Account Type]</td>
@@ -138,7 +141,7 @@ Pour créer une connexion pour vos modules [!DNL Dropbox], procédez comme suit�
       </tbody>
     </table>
 
-1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.## Modules [!DNL Dropbox] et leurs champs
+1. Cliquez sur **[!UICONTROL Continuer]** pour enregistrer la connexion et revenir au module.## modules [!DNL Dropbox] et leurs champs
 
 ## Modules [!DNL Dropbox] et leurs champs
 
@@ -149,8 +152,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Modules déclencheurs](#trigger-modules)
-* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
-* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
+* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Autres modules](#other-modules)
 
 ### Modules déclencheurs
@@ -319,7 +322,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Rechercher des fichiers/dossiers]
 
-Ce module de recherche recherche les enregistrements dans un objet dans [!DNL Dropbox] qui correspondent à la requête que vous avez spécifiée.
+Ce module de recherche permet de rechercher les enregistrements d’un objet dans [!DNL Dropbox] qui correspondent à la requête de recherche que vous avez spécifiée.
 
 Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -650,7 +653,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Effectuer un appel API]
 
-Ce module d’action permet d’effectuer un appel authentifié personnalisé vers l’API [!DNL Dropbox]. Cela vous permet de créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Dropbox].
+Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié vers l’API [!DNL Dropbox]. Ainsi, vous pouvez créer une automatisation du flux de données qui ne peut pas être réalisée par les autres modules [!DNL Dropbox].
 
 Lorsque vous configurez ce module, les champs suivants s’affichent.
 

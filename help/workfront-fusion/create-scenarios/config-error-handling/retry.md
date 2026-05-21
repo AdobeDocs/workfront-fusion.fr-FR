@@ -1,13 +1,15 @@
 ---
-title: Configuration de la solution de contournement de la gestion des erreurs de reprise
+title: Configurer la solution de contournement pour la gestion des erreurs de reprise
 description: Parfois, il est utile de réexécuter un module en échec s’il existe une chance que la raison de l’échec puisse se résoudre rapidement.
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/r1SIrrx4tb8p7urdzHacKlFTlYCv47tlsj7c5jT-k3w
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 16%
+source-wordcount: 740
+ht-degree: 25%
 
 ---
 
@@ -26,8 +28,8 @@ Adobe Workfront Fusion n’offre actuellement pas la directive de gestion des er
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Package Adobe Workfront</td> 
-   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>les packages Workfront Prime et Select, avec un achat supplémentaire de Workfront Fusion.</p> </td> 
+   <td role="rowheader">Package Adobe Workfront</td> 
+   <td> <p>Tout package de workflow Adobe Workfront et tout package d’automatisation et d’intégration Adobe Workfront</p><p>Workfront Ultimate</p><p>Packages Workfront Prime et Select, avec l’achat supplémentaire de Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licences Adobe Workfront</td> 
@@ -36,13 +38,13 @@ Adobe Workfront Fusion n’offre actuellement pas la directive de gestion des er
   <tr> 
    <td role="rowheader">Produit</td> 
    <td>
-   <p>Si votre entreprise dispose d’un package Select ou Prime Workfront qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acheter Adobe Workfront Fusion.</li></ul>
+   <p>Si votre organisation dispose d’un package Workfront Select ou Prime qui n’inclut pas l’automatisation et l’intégration de Workfront, elle doit acquérir Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Pour plus d’informations sur les informations contenues dans ce tableau, voir [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -68,7 +70,7 @@ Pour obtenir des instructions sur la résolution des exécutions incomplètes, v
 * L’intervalle de reprise minimal est d’une minute.
 * Si le module traite plusieurs lots et que le traitement d’un lot échoue, l’exécution partielle (uniquement le lot à l’origine de l’erreur) est déplacée vers le dossier des exécutions incomplètes et planifiée pour les reprises, conformément aux paramètres de la directive [!UICONTROL Interrompre]. Cependant, l’exécution en cours se poursuit et le module continue de traiter les lots suivants.
 
-  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL &#x200B; Traitement séquentiel &#x200B;] » dans les [!UICONTROL &#x200B; paramètres du scénario].
+  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL  Traitement séquentiel ] » dans les [!UICONTROL  paramètres du scénario].
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
