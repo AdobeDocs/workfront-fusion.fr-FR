@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
 TQID: https://experienceleague.adobe.com/uzyMYKqpIGORM1QDNEkkPUumYtLdgTVD7s04At0fNzM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2252
@@ -454,7 +456,7 @@ Le résultat se trouve dans la sortie du module sous Lot > Corps > Enveloppes.
 
 Dans notre exemple, six enveloppes ont été renvoyées :
 
-![Exemple de sortie docusign ](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+![Exemple de sortie docusign &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 >[!ENDSHADEBOX]
 

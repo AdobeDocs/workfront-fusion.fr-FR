@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
 TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 898
@@ -127,13 +129,13 @@ Certains tableaux contiennent des collections avec des éléments clé-valeur te
 
 L’exemple suivant illustre la sortie de l’application [!DNL Jira].
 
-![ Sortie du module Jira ](assets/output-of-jira-app-350x100.png)
+![&#x200B; Sortie du module Jira &#x200B;](assets/output-of-jira-app-350x100.png)
 
 Cet exemple obtient un nom de fichier à partir d’un tableau de pièces jointes, pour la pièce jointe spécifique avec l’ID 10108.
 
 Cet exemple génère la sortie suivante :
 
-![ Sortie du module Jira ](assets/output-from-jira-350x261.png)
+![&#x200B; Sortie du module Jira &#x200B;](assets/output-from-jira-350x261.png)
 
 La formule peut être expliquée comme suit :
 
