@@ -150,15 +150,15 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier de votre [
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Spreadsheets].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Slides].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Slides].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Drawings].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Drawings].</td>
   </tr>  
   <tr> 
    <td>[!UICONTROL Watch]</td> 
@@ -227,11 +227,11 @@ Ce module de déclenchement démarre un scénario lorsqu’un fichier est ajout�
   </tr> 
   <tr> 
     <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Documents].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Documents].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Spreadsheets].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
@@ -285,11 +285,11 @@ Se déclenche lorsqu’un nouveau fichier est partagé avec vous ou qu’un fich
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Spreadsheets].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
-    <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Slides].</td>
+    <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Slides].</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
@@ -421,7 +421,7 @@ Ce module d&#39;action récupère le fichier avec l&#39;identifiant spécifié.
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Documents] files to format]</td> 
-   <td>Sélectionnez le format de fichier dans lequel vous voulez convertir les [!DNL Google Documents].</td> 
+   <td>Sélectionnez le format de fichier auquel vous souhaitez convertir les [!DNL Google Documents].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td> 
