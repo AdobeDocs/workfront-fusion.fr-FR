@@ -5,13 +5,8 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
 TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 6796
@@ -540,7 +535,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue que vous souhaitez créer.</p> </li> 
        <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice à l’URL renvoyée.</p> </li> 
-       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
        <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
@@ -583,7 +578,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue utilisateur demandée.</p> </li> 
      <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice. Sélectionnez <b>[!UICONTROL No]</b> pour demander des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
-     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
      <li> <p><b>Pas d’indicateur Chrome</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
     </ul> </td> 
   </tr> 
