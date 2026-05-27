@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
-ht-degree: 27%
+source-wordcount: 1300
+ht-degree: 26%
 
 ---
 
@@ -31,7 +30,7 @@ Si un connecteur n’inclut pas de webhook, vous pouvez effectuer l’une des op
 * Créez un webhook personnalisé à l’aide du module Webhook.
 Pour plus d’informations, voir [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Utilisez des déclencheurs d’interrogation pour interroger régulièrement le service.
-Pour plus d’informations, voir [&#x200B; Planification d’un scénario &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+Pour plus d’informations, voir [ Planification d’un scénario ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 Pour une introduction vidéo aux webhooks dans Workfront Fusion, consultez :
 
@@ -82,6 +81,10 @@ Vous pouvez afficher une liste de Webhooks dans la zone Webhooks .
 1. Pour définir la priorité d’un webhook, cliquez sur la liste déroulante de la colonne Priorité et sélectionnez la nouvelle priorité.
 
    Les Webhooks dotés d’une priorité supérieure sont gérés en premier, ce qui peut s’avérer bénéfique si un pool de salariés comporte de nombreuses automatisations en concurrence pour les ressources.
+
+   >[!NOTE]
+   >
+   >Seuls les utilisateurs disposant du rôle [!UICONTROL Administrateur d’équipe] ou de l’organisation [!UICONTROL Administrateur] ou [!UICONTROL Propriétaire] peuvent modifier la priorité d’un webhook. Pour les autres utilisateurs, la liste déroulante Priorité est désactivée.
 1. Pour désactiver ou activer un webhook, activez ou désactivez le bouton (bascule) dans la colonne Statut de la ligne correspondant à ce webhook.
 1. Pour vérifier si une file d’attente webhooks est pleine, cochez la colonne File d’attente complète . Le nombre dans cette colonne correspond au nombre d’éléments actuellement dans la file d’attente.
 1. Pour afficher les opérations gérées par un webhook, cliquez sur **Opérations** dans la colonne File d’attente complète de ce webhook.
