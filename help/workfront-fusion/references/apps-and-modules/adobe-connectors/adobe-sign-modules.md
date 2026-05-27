@@ -540,7 +540,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue que vous souhaitez créer.</p> </li> 
        <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice à l’URL renvoyée.</p> </li> 
-       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+       <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>Saisissez la langue dans laquelle vous souhaitez créer la vue. </p> </li> 
        <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
        <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> si vous souhaitez que la section de chargement de fichiers puisse être modifiée en ajoutant ou en supprimant des fichiers. Il ne s’agit pas d’un mécanisme de contrôle d’accès. La valeur par défaut est [!UICONTROL Yes].</p> </li> 
@@ -583,7 +583,7 @@ Ce module d’action crée des enregistrements liés à un module de votre choix
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>Sélectionnez le nom de la vue utilisateur demandée.</p> </li> 
      <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour connecter automatiquement l’utilisateur ou l’utilisatrice. Sélectionnez <b>[!UICONTROL No]</b> pour demander des informations d’identification. La valeur par défaut est [!UICONTROL No].</p> </li> 
-     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle reste vide, les pages d’[!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
+     <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>Entrez ou mappez une liste d’URL de domaines parent séparée par des virgules, les URL renvoyés pouvant être encadrés par la balise iframe. Si elle est vide, les pages de [!DNL Adobe Acrobat Sign] ne sont pas visibles dans l’iframe.</p> </li> 
      <li> <p><b>Pas d’indicateur Chrome</b> </p> <p>Sélectionnez <b>[!UICONTROL Yes]</b> pour afficher la page intégrée sans en-tête ni pied de page de navigation.</p> </li> 
     </ul> </td> 
   </tr> 

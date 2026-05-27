@@ -221,7 +221,7 @@ Ce module d’action récupère les détails des enregistrements.
  <tbody> 
   <tr> 
    <td>Connexion </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte Airtable à Workfront Fusion, voir <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte Airtable à Workfront Fusion, voir la section <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>Base </td> 
@@ -297,7 +297,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>Connexion </td> 
-   <td> <p>Pour savoir comment connecter votre compte Airtable à Workfront Fusion, voir la section <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte Airtable à Workfront Fusion, voir <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>Base </td> 
@@ -431,7 +431,7 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
  <tbody> 
   <tr> 
    <td>Connexion </td> 
-   <td> <p>Pour des instructions sur la connexion de votre compte Airtable à Workfront Fusion, voir <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour savoir comment connecter votre compte Airtable à Workfront Fusion, voir la section <a href="#connect-airtable-to-workfront-fusion" class="MCXref xref">Connecter Airtable à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>Base </td> 
