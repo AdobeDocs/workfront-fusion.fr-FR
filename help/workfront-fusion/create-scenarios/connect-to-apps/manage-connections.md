@@ -8,12 +8,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
 TQID: https://experienceleague.adobe.com/P-zEd2tJCk9-uzE1xW6COpTCdFJiIq4NwGRLDdpCSVU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 586
@@ -27,7 +24,7 @@ Une connexion représente l’autorisation et les droits utilisés par Fusion po
 
 Vous pouvez gérer ces connexions dans la zone Connexions .
 
-Pour plus d’informations sur les connexions, voir [&#x200B; Présentation de la connexion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+Pour plus d’informations sur les connexions, voir [ Présentation de la connexion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
 ## Conditions d’accès
 
