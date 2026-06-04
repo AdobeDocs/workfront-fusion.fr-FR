@@ -2,10 +2,10 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
+source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 55%
+source-wordcount: '2445'
+ht-degree: 54%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Activité de publication de Fusion {#fusion-release-activity}
    * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versions de Fusion - 2026 {#fusion-releases-2026}
+      * [Activité de publication de Workfront Fusion : semaine du 1er juin 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
       * [Activité de publication de Workfront Fusion : semaine du 25 mai 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Activité de publication de Workfront Fusion : semaine du 11 mai 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Activité de publication de Workfront Fusion : semaine du 4 mai 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -185,7 +186,7 @@ ht-degree: 55%
    * Vues d’ensemble des licences et des opérations {#licensing-and-operations-overviews}
       * [Vues d’ensemble des licences et des opérations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [&#x200B; Opérations &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [ Opérations ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         [Pools de salariés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurer et gérer des organisations et des équipes {#set-up-and-manage-orgs-and-teams}
       * [Configurer et gérer des organisations et des équipes : index des articles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
@@ -279,6 +280,8 @@ ht-degree: 55%
    * [Supprimer les éléments de scénario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gestion des scénarios dans la zone des Scénarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
    * [Modifier les Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+   * [Redéclencher l’exécution d’un scénario](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+   * [Utiliser Exécuter une fois pour tester un scénario](/help/workfront-fusion/manage-scenarios/run-once.md)
 * Créer des scénarios de test {#build-practice-scenarios}
    * [Créer des scénarios de test](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Créer un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
