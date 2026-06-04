@@ -2,7 +2,7 @@
 user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 54%
@@ -186,7 +186,7 @@ ht-degree: 54%
    * Vues d’ensemble des licences et des opérations {#licensing-and-operations-overviews}
       * [Vues d’ensemble des licences et des opérations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [&#x200B; Opérations &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [ Opérations ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         [Pools de salariés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurer et gérer des organisations et des équipes {#set-up-and-manage-orgs-and-teams}
       * [Configurer et gérer des organisations et des équipes : index des articles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
@@ -275,7 +275,7 @@ ht-degree: 54%
    * [Afficher et gérer les relations de scénario chaîné](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [Afficher le flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Afficher la file d’attente d’un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-   * [Assistant IA dans Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+   * {hide-from-toc}[Assistant IA dans Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Exécuter l’expert en notation de scénario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Supprimer les éléments de scénario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gestion des scénarios dans la zone des Scénarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
