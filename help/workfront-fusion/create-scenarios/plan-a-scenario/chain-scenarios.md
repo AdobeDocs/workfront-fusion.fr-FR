@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 12%
+source-wordcount: 1705
+ht-degree: 9%
 
 ---
 
 # Enchaîner plusieurs scénarios
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Cette fonctionnalité est actuellement disponible dans Beta.
+>Cette fonctionnalité est disponible dans Beta et n’est pas recommandée pour les workflows de production critiques. En tant que fonctionnalité Beta, le comportement peut changer et les cas Edge peuvent ne pas être entièrement gérés.
+>
+>Pour les intégrations stables, envisagez de déclencher un second scénario par le biais d’un webhook à l’aide d’un module de requête HTTP . Ce modèle utilise des primitives entièrement prises en charge et donne à chaque scénario un contrôle d’exécution indépendant.
+>
+>Si vous choisissez d’utiliser des scénarios chaînés, examinez attentivement les conseils et les contraintes de conception de cet article, en particulier la section [ Bonnes pratiques ](#best-practices).
 
 Vous pouvez enchaîner des scénarios, ce qui permet à un scénario de déclencher un autre et de renvoyer la sortie de données du deuxième scénario au premier. Cela permet de créer des scénarios plus modulaires, où vous n’avez pas à dupliquer des sections de scénario dans plusieurs scénarios.
 
@@ -26,7 +29,7 @@ Vous pouvez appeler plusieurs scénarios enfants à partir d’un scénario pare
 
 Lorsqu’un scénario parent attend qu’un scénario enfant renvoie des données, ce temps n’est pas comptabilisé dans le délai d’expiration du scénario parent. Par exemple, un scénario parent appelle 5 scénarios enfants, dont l’exécution prend chacun 10 minutes, pour un total de 50 minutes. L’exécution des modules du scénario parent lui-même prend 15 minutes. Le scénario parent n’expire pas, même si un total de 65 minutes s’est écoulé, ce qui dépasse la limite de délai de 40 minutes.
 
-Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+Pour plus d’informations sur les mécanismes de sécurisation des performances de Fusion, y compris les délais d’expiration, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Pour obtenir des instructions sur la configuration des modules Chain, voir [Modules Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
@@ -63,7 +66,9 @@ Tenez compte des cas d’utilisation suivants pour le chaînage de scénarios :
 
 * **Gestion des erreurs** : il est courant pour les organisations de disposer des mêmes actions de gestion des erreurs dans plusieurs scénarios, par exemple une itinéraire de gestion des erreurs qui envoie un journal des erreurs à un magasin de données et crée une notification Slack. Vous pouvez créer un scénario enfant avec ces actions et enchaîner ce scénario dans des itinéraires de gestion des erreurs dans plusieurs scénarios.
 
-* **Prolonger le temps** : vous pouvez utiliser le chaînage pour les opérations par lots volumineuses avec des actions à long terme, par exemple lorsque vous exportez et importez des fichiers. Cette opération prend un certain temps s’il y a de nombreux fichiers. Comme les scénarios enfants ne sont pas comptabilisés dans le délai d’expiration du scénario parent, vous pouvez dépasser le temps d’exécution en utilisant plusieurs scénarios enfants pour exporter ou importer les fichiers.
+* **Prolonger le temps** : utilisez le chaînage pour les opérations par lots volumineuses lorsque le temps de traitement total dépasse la limite d’exécution de 40 minutes d’un seul scénario. Toutefois, traitez ce modèle avec précaution : un scénario parent qui est lié à plusieurs scénarios enfants de longue durée n’a pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou qu’un problème de plateforme se produit, le parent attend indéfiniment sans faire apparaître d’erreur.
+
+  Avant d’utiliser le chaînage pour étendre le temps d’exécution, déterminez s’il est possible de réduire la taille du lot, d’augmenter la fréquence ou de restructurer la conception afin d’éviter de longues chaînes séquentielles. Voir [Bonnes pratiques](#best-practices) ci-dessous.
 
 * **Remplacement des itérateurs** Le remplacement des itérateurs par des scénarios enfants peut réduire l’utilisation de la mémoire, par exemple dans des opérations complexes dans une itération qui provoque une erreur de mémoire insuffisante. Vous pouvez créer un scénario distinct pour l’opération complexe et remplacer l’itérateur par Appeler un module de scénario enfant
 
@@ -111,3 +116,39 @@ Lors du chaînage de scénarios, suivez ces pratiques pour éviter la récursivi
 ### Utilisation de la gestion des erreurs pour garantir une réponse
 
 Comme le scénario parent attend une réponse du scénario enfant avant de pouvoir continuer, vous devez vous assurer que le scénario enfant est créé de sorte qu’il fournisse une réponse même s’il rencontre une erreur.
+
+### N’utilisez pas le paramètre « Dernier déclencheur de validation (CTL) »
+
+Il est déconseillé d’utiliser le paramètre de scénario « Dernier déclencheur de validation (CTL) » avec des scénarios chaînés. Si vous avez besoin d’un comportement de reprise sur un scénario qui utilise le chaînage, implémentez-le explicitement à l’aide d’un itinéraire de gestion des erreurs avec un nombre maximal de reprises défini.
+
+### Profondeur d’imbrication limite
+
+Limitez les réseaux de scénarios chaînés à deux niveaux de profondeur (parent → enfant). Les scénarios imbriqués à trois niveaux ou plus (parent → enfant → petit-enfant) augmentent considérablement la complexité, réduisent l’observabilité et rendent difficile le diagnostic des défaillances sans le soutien de l’ingénierie.
+
+Si votre conception nécessite une imbrication plus profonde, documentez la carte de chaîne complète et assurez-vous que la surveillance est en place avant le déploiement en production.
+
+### Utilisez le feu et oubliez soigneusement
+
+Lorsque l’option **Déclencher et oublier** est activée dans le module Appeler un scénario enfant, le scénario parent distribue l’enfant et continue immédiatement sans attendre de réponse. Le parent ne sait pas si le scénario enfant s’est exécuté, a réussi ou a échoué.
+
+Utiliser Fire and Forget uniquement dans les cas suivants :
+
+* Le scénario enfant effectue une journalisation, des notifications ou des écritures d’audit qui n’affectent pas la logique du scénario parent
+* Une surveillance indépendante est en place pour détecter les échecs des enfants silencieux
+
+N’utilisez pas Fire and Forget lorsque :
+
+* Le scénario enfant exécute des écritures dont dépend le parent
+* Vous devez savoir si le scénario enfant a réussi avant que le parent ne continue
+* Le workflow est transactionnel ou nécessite des garanties de traitement uniques
+
+### Évitez d’appeler des scénarios enfants dans des itérateurs à volume élevé
+
+Placer un module Appeler un scénario enfant dans un BasicFeeder ou un autre itérateur distribue un scénario enfant pour chaque élément traité. Lorsque le nombre d’articles est élevé (des centaines ou plus par exécution), cela entraîne une surcharge importante au niveau des envois et accroît l’exposition aux problèmes de fiabilité de la plateforme.
+
+Avant d’utiliser ce modèle :
+
+* Déterminez si la logique du scénario enfant peut être insérée directement dans le scénario parent en tant que modules
+* Précalculez toutes les recherches qui renvoient la même valeur pour chaque itération en dehors de l’itérateur, plutôt que de distribuer un appel de chaîne par élément
+* Confirmez le nombre maximal d’éléments réaliste et vérifiez-le avec votre administrateur avant le déploiement en production
+

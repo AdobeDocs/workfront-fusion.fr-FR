@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1101
-ht-degree: 94%
+source-wordcount: 1351
+ht-degree: 77%
 
 ---
 
@@ -27,6 +26,12 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
 * Le délai d’expiration par défaut pour l’exécution d’un scénario est de **40 minutes**. Une fois ce délai dépassé, Workfront Fusion interrompt l’exécution du scénario après le cycle suivant ou l’opération suivante, selon le scénario. Cela force l’arrêt du scénario peu après l’atteinte de la limite de 40 minutes.
 
   Le chaîne de scénarios n’est pas comptabilisée dans le délai d’exécution d’un scénario. Un scénario parent n’accumule pas de temps pendant l’attente de l’exécution d’un scénario enfant.
+
+  >[!IMPORTANT]
+  >
+  > Bien que le chaînage permette aux workflows de s’exécuter au-delà de 40 minutes, cela doit être considéré comme un signal de risque de conception, et non comme une solution prise en charge. Les scénarios parents qui s’étendent sur plusieurs scénarios enfants à exécution longue n’ont pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou rencontre un problème de plateforme, le parent attend indéfiniment sans erreur et sans récupération automatique.
+  >
+  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.
@@ -35,6 +40,14 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
    * Lors de l’utilisation d’autres applications, utilisez des modules API personnalisés pour interagir avec n’importe quel type d’enregistrement comportant un grand nombre de champs.
 
 * Bien qu’il n’y ait pas de limite pour le nombre de modules dans un scénario, les scénarios comportant plus de 150 modules ont une incidence négative sur les performances de votre système Workfront Fusion. Pour cette raison, il est déconseillé de créer des scénarios comportant plus de 150 modules.
+
+## Scénarios chaînés
+
+* La fonctionnalité de chaînage de scénarios est disponible dans Beta et n’est pas recommandée pour les workflows critiques. En tant que fonctionnalité Beta, le comportement peut changer et les cas Edge peuvent ne pas être entièrement gérés.
+
+  Pour des intégrations stables, envisagez de déclencher un second scénario par le biais d’un webhook à l’aide d’un module de requête HTTP. Ce modèle utilise des primitives entièrement prises en charge et donne à chaque scénario un contrôle d’exécution indépendant.
+
+  Si vous choisissez d’utiliser des scénarios enchaînés, consultez les conseils de conception et les contraintes dans l’article [Enchaîner plusieurs scénarios ensemble](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Opérations
 
@@ -77,6 +90,8 @@ Pour plus d’informations, consultez [Utiliser des fichiers volumineux](/help/w
 * Les journaux d’historique d’exécution sont limités à une taille de **100 Mo**. Si l’historique d’exécution dépasse cette taille, seuls les 100 premiers Mo s’affichent.
 * Si l’entrée ou la sortie d’une seule opération est supérieure à 15 Mo, elle n’apparaît pas dans l’historique d’exécution.
 * Si un scénario comporte plusieurs exécutions simultanées, seules 5 exécutions s’affichent dans la zone Exécutions de la page des détails du scénario. Cela est vrai même lorsque plus de 5 exécutions sont en cours d’exécution.
+* Si un scénario fait partie d’un réseau chaîné, l’historique d’exécution est conservé séparément pour chaque scénario de la chaîne. Il n’existe pas de vue de trace unifiée dans les scénarios parents et enfants. Pour rechercher une exécution chaînée, ouvrez l’historique d’exécution de chaque scénario individuellement.
+* Si l’entrée ou la sortie d’une seule opération dépasse 15 Mo, elle n’apparaît pas dans l’historique d’exécution. Cette limite s’applique aux données transmises entre les scénarios parents et enfants via les modules de chaîne.
 
 ## Exécutions incomplètes
 

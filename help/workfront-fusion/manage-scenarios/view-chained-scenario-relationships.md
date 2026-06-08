@@ -4,14 +4,22 @@ description: Vous pouvez mapper les relations entre les scénarios parents et en
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 21%
+source-wordcount: '557'
+ht-degree: 18%
 
 ---
 
 # Afficher et gérer les relations de scénario chaîné
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est disponible dans Beta et n’est pas recommandée pour les workflows de production critiques. En tant que fonctionnalité Beta, le comportement peut changer et les cas Edge peuvent ne pas être entièrement gérés.
+>
+>Pour les intégrations stables, envisagez de déclencher un second scénario par le biais d’un webhook à l’aide d’un module de requête HTTP . Ce modèle utilise des primitives entièrement prises en charge et donne à chaque scénario un contrôle d’exécution indépendant.
+>
+>Si vous choisissez d’utiliser des scénarios enchaînés, consultez [Enchaîner plusieurs scénarios ensemble](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) pour obtenir des conseils de conception.
 
 Vous pouvez mapper les relations entre les scénarios parents et enfants. Vous pouvez également utiliser la carte pour accéder à différents scénarios de la chaîne.
 

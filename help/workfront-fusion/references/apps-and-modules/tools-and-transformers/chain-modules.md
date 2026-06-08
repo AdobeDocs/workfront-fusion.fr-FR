@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Modules de chaîne
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Cette fonctionnalité est actuellement disponible dans Beta.
+>Cette fonctionnalité est disponible dans Beta et n’est pas recommandée pour les workflows de production critiques. En tant que fonctionnalité Beta, le comportement peut changer et les cas Edge peuvent ne pas être entièrement gérés.
+>
+>Pour les intégrations stables, envisagez de déclencher un second scénario par le biais d’un webhook à l’aide d’un module de requête HTTP . Ce modèle utilise des primitives entièrement prises en charge et donne à chaque scénario un contrôle d’exécution indépendant.
+>
+>Si vous choisissez d’utiliser des scénarios enchaînés, consultez [Enchaîner plusieurs scénarios ensemble](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) pour obtenir des conseils de conception.
 
 À l’aide des modules de chaîne, vous pouvez connecter un scénario à un autre.
 
@@ -84,6 +87,16 @@ Pour configurer l’option Recevoir des données du module parent :
 
 Ce module se trouve dans le scénario parent. Les champs reflètent la structure de données définie dans le module Recevoir les données du parent dans le scénario enfant.
 
+>[!IMPORTANT]
+>
+> Examinez les points suivants avant de configurer ce module dans un scénario de production :
+>
+> * **N’activez pas l’option Valider le dernier déclencheur (CTL)** sur ce scénario lorsque les options Déclenchement et oubli sont désactivées. CTL relance le scénario lorsqu’il est suspendu en attendant une réponse enfant, créant ainsi une boucle de reprise illimitée.
+> * **Soyez prudent lorsque vous placez ce module dans un itérateur.** L’envoi d’un scénario enfant pour chaque élément dans un grand itérateur crée une charge de plateforme importante. Envisagez d’intégrer la logique du scénario enfant ou de pré-calculer les recherches partagées en dehors de l’itérateur.
+> * **Déclencher et oublier** signifie que le parent n’a aucune visibilité sur l’exécution ou le succès de l’enfant. À utiliser uniquement lorsque les échecs enfants sont surveillés indépendamment.
+>
+> Pour obtenir des conseils de conception complets, voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* Vous pouvez sélectionner un scénario enfant existant ou en créer un nouveau à l’aide de ce module.
@@ -112,7 +125,11 @@ Pour configurer le module Appeler un scénario enfant
 
 Se trouve dans le scénario enfant et envoie les données de la structure sélectionnée au scénario parent. Vous pouvez mapper ces données dans des modules ultérieurs dans le scénario parent.
 
-Si votre scénario enfant comporte plusieurs itinéraires, nous vous recommandons d’ajouter ce module à un itinéraire qui s’exécute toujours après tout autre itinéraire.
+>[!IMPORTANT]
+>
+> Si votre scénario enfant comporte plusieurs itinéraires, vous **devez** vous assurer que la réponse Retour au module parent est accessible à partir de chaque chemin d’exécution. Si le module de réponse de retour se trouve sur un itinéraire qui est ignoré ou qui n’est pas exécuté, le scénario parent attend indéfiniment une réponse qui n’arrive jamais.
+>
+> Ajoutez la réponse Retour au module parent après votre routeur, sur une route qui s&#39;exécute toujours quel que soit le résultat du routeur, ou ajoutez la gestion des erreurs pour vous assurer qu&#39;une réponse est toujours renvoyée même lorsqu&#39;une erreur se produit.
 
 Pour configurer le module Ajouter un répondeur :
 

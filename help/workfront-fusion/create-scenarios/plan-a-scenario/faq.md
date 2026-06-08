@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
 TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 554
 ht-degree: 35%
@@ -22,7 +21,7 @@ Les informations de cet article peuvent s’avérer utiles lorsque vous commence
 
 ### Réponse
 
-Un scénario définit une séquence d’étapes à exécuter par Adobe Workfront Fusion. Pour chaque scénario, vous spécifiez la source de données, les données à utiliser et la manière dont les données doivent être traitées. Fusion vous permet de créer des scénarios simples ou complexes, capables de répondre aux cas d’utilisation de votre organisation.
+Un scénario définit une séquence d’étapes à exécuter par Adobe Workfront Fusion. Pour chaque scénario, vous spécifiez la source de données, les données à utiliser et la manière dont les données doivent être traitées. Fusion vous permet de créer des scénarios simples ou complexes, capables de répondre aux cas d’utilisation de votre organisation
 
 Pour plus d’informations sur les scénarios, consultez [Vue d’ensemble des scénarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
