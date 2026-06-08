@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 1871
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -170,7 +170,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Ce module d’action copie un e-mail ou un brouillon d’e-mail dans un dossier que vous spécifiez.
 
-Vous indiquez le dossier, le dossier de destination et l’identifiant de l’e-mail.
+Vous spécifiez le dossier , le dossier de destination et l’identifiant de l’e-mail.
 
 Le module renvoie l’identifiant de l’e-mail et de tous les champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -370,7 +370,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Ce module d’action déplace un e-mail ou un brouillon d’e-mail vers un dossier que vous spécifiez.
 
-Vous indiquez le dossier, le dossier de destination et l’identifiant de l’e-mail.
+Vous spécifiez le dossier , le dossier de destination et l’identifiant de l’e-mail.
 
 Le module renvoie l’identifiant de l’e-mail et des champs associés, ainsi que les champs personnalisés et les valeurs auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 

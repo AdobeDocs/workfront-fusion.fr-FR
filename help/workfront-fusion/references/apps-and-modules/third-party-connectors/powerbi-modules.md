@@ -10,7 +10,7 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 2612
 ht-degree: 95%
@@ -417,7 +417,7 @@ Ce module d’action ajoute ou supprime des lignes d’un tableau de jeu de donn
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Enter a table]</td>
-      <td>Sélectionnez ou mappez l’option pour sélectionner le jeu de données qui contient le tableau que vous souhaitez ajuster.</td>
+      <td>Sélectionnez ou mappez l’option pour sélectionner le jeu de données contenant le tableau à ajuster.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Dataset ID]</td>
@@ -990,7 +990,7 @@ Ce module d’action effectue un appel API à l’API [!DNL Power BI].
         <p>[!UICONTROL Path]</p>
       </td>
       <td>
-        <p>Saisissez un chemin d’accès relatif à <code>https://api.powerbi.com</code>. Exemple : <code>/v1.0/myorg/datasets</code>.</p>
+        <p>Saisissez un chemin relatif à <code>https://api.powerbi.com</code>. Exemple : <code>/v1.0/myorg/datasets</code>.</p>
       </td>
     </tr>
     <tr>

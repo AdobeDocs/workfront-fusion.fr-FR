@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -125,7 +125,7 @@ Vous pouvez choisir d’exécuter les éléments suivants :
 Pour exécuter le module unique :
 
 1. Cliquez avec le bouton droit sur le module, puis cliquez sur **[!UICONTROL Exécuter ce module uniquement]** dans le menu qui s’affiche.
-1. Indiquez des exemples de valeurs pour les éléments d’entrée, puis cliquez sur **[!UICONTROL OK]**.
+1. Fournissez des exemples de valeurs pour les éléments d’entrée, puis cliquez sur **[!UICONTROL OK]**.
 1. Lorsque l’exécution du module est terminée, cliquez sur la bulle au-dessus du module pour explorer sa sortie complète.
 
    Le panneau de mappage pour les modules ultérieurs contient désormais tous les éléments dans la sortie du module.
