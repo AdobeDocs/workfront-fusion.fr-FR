@@ -96,7 +96,7 @@ Ce module se trouve dans le scénario parent. Les champs reflètent la structure
 > * **Soyez prudent lorsque vous placez ce module dans un itérateur.** L’envoi d’un scénario enfant pour chaque élément dans un grand itérateur crée une charge de plateforme importante. Envisagez d’intégrer la logique du scénario enfant ou de pré-calculer les recherches partagées en dehors de l’itérateur.
 > * **Déclencher et oublier** signifie que le parent n’a aucune visibilité sur l’exécution ou le succès de l’enfant. À utiliser uniquement lorsque les échecs enfants sont surveillés indépendamment.
 >
-> Pour obtenir des conseils de conception complets, voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Pour obtenir des conseils de conception complets, voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >

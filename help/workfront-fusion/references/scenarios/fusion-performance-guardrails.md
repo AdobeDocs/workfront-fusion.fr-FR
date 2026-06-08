@@ -32,7 +32,7 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
   >
   > Bien que le chaînage permette aux workflows de s’exécuter au-delà de 40 minutes, cela doit être considéré comme un signal de risque de conception, et non comme une solution prise en charge. Les scénarios parents qui s’étendent sur plusieurs scénarios enfants à exécution longue n’ont pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou rencontre un problème de plateforme, le parent attend indéfiniment sans erreur et sans récupération automatique.
   >
-  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
+  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.
