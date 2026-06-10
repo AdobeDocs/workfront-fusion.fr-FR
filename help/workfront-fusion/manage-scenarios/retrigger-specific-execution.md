@@ -3,9 +3,8 @@ title: Redéclencher l’exécution d’un scénario spécifique
 description: Vous pouvez déclencher à nouveau l’exécution d’un scénario spécifique pour traiter les données à l’aide d’un plan directeur de scénario mis à jour ou pour afficher son flux de données.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +17,7 @@ Vous pouvez déclencher à nouveau l’exécution d’un scénario spécifique p
 
 Par exemple, si vous mettez à jour un scénario pour ajouter une action telle que la création d’un problème, vous pouvez déclencher à nouveau une exécution qui s’est produite avant la mise à jour. Le scénario mis à jour s’exécute à l’aide de l’événement déclencheur du scénario d’origine, mais inclut l’action mise à jour. Dans cet exemple, le scénario crée un problème dans le cadre de la nouvelle exécution.
 
-Le redéclenchement est disponible pour les scénarios comportant des déclencheurs webhook et pour les scénarios enfants.
+Le redéclenchement est disponible pour les scénarios comportant des déclencheurs webhook et pour les scénarios chaînés.
 
 Lors du redéclenchement d’un scénario qui utilise un webhook, l’événement webhook d’origine peut être utilisé à nouveau. Vous n’avez donc pas besoin de recréer l’événement pour redéclencher le scénario.
 
