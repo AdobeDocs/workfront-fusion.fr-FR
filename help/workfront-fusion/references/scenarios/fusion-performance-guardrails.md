@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -32,7 +31,7 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
   >
   > Bien que le chaînage permette aux workflows de s’exécuter au-delà de 40 minutes, cela doit être considéré comme un signal de risque de conception, et non comme une solution prise en charge. Les scénarios parents qui s’étendent sur plusieurs scénarios enfants à exécution longue n’ont pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou rencontre un problème de plateforme, le parent attend indéfiniment sans erreur et sans récupération automatique.
   >
-  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
+  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.
@@ -41,6 +40,7 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
    * Lors de l’utilisation d’autres applications, utilisez des modules API personnalisés pour interagir avec n’importe quel type d’enregistrement comportant un grand nombre de champs.
 
 * Bien qu’il n’y ait pas de limite pour le nombre de modules dans un scénario, les scénarios comportant plus de 150 modules ont une incidence négative sur les performances de votre système Workfront Fusion. Pour cette raison, il est déconseillé de créer des scénarios comportant plus de 150 modules.
+* Les noms de scénario ne peuvent pas comporter plus de 120 caractères.
 
 ## Scénarios chaînés
 
