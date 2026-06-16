@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 65%
+source-wordcount: 2236
+ht-degree: 61%
 
 ---
 
@@ -277,6 +277,8 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
       </tr>
   </tbody>
 </table>
+
+Pour un exemple d’utilisation de la logique avancée sur ce module, voir [Exemple de logique avancée dans le module Événements de montre](#example-of-advanced-logic-in-the-watch-events-module).
 
 ### Actions
 
@@ -571,3 +573,40 @@ L’expression JSONata suivante crée une sortie lisible par l’utilisateur de 
 
 Pour plus d’informations sur l’utilisation des modules JSONata, voir [Modules JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Exemple de logique avancée dans le module watch Events
+
+Il s’agit d’un exemple du format pris par une logique avancée lors de l’utilisation du module Workfront Planning > Événements Espion .
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Tenez compte des points suivants lors de l’utilisation d’une logique avancée dans le module Événement de contrôle :
+
+* La première entrée de `"fieldvalue":` est l’identifiant de type d’enregistrement Planning extrait de l’URL. Dans cet exemple, l&#39;ID de type d&#39;enregistrement Planning est `Rt68c886502d4b5554ee80896b`.
+* Les données Planning sont renvoyées dans un tableau appelé `data `, qui apparaît dans cet exemple sous la forme `"fieldName": "data"`.
+* Les fieldNames Planning sont renvoyés sous la forme d&#39;identifiants commençant par `F`.
+* Comme cet exemple évalue un connecteur de filtre `OR`, il comporte deux entrées pour le même champ (`F68c886502d4b5554eec808975`).  Les deux options de liste déroulante en fonction desquelles le module effectue un filtrage sont `"planning"` et `"active"`.
