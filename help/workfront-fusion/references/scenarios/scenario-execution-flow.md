@@ -6,11 +6,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: 771
 ht-degree: 25%
 
 ---
@@ -99,6 +98,6 @@ Une erreur peut se produire pendant l’exécution du scénario. Par exemple, si
 
 * Pour plus d’informations sur la configuration d’un scénario, voir [Éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 * Pour plus d’informations sur la page des détails du scénario, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
-* Pour plus d’informations sur l’activation d’un scénario, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+* Pour plus d’informations sur l’activation d’un scénario, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * Pour plus d’informations sur la planification d’un scénario, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * Pour plus d’informations sur les modules, voir [Présentation des modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
