@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 2236
+source-wordcount: 2237
 ht-degree: 61%
 
 ---
@@ -204,7 +204,7 @@ Vous pouvez créer une connexion à votre compte Workfront Planning directement 
 
 ## Modules [!DNL Adobe Workfront Planning] et leurs champs
 
-Lorsque vous configurez les modules Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. Des champs Workfront supplémentaires peuvent s’afficher, selon votre niveau d’accès dans l’application ou le service, par exemple. Un titre en gras dans un module indique un champ obligatoire.
+Lorsque vous configurez les modules de planification Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. Des champs Workfront supplémentaires peuvent s’afficher, selon votre niveau d’accès dans l’application ou le service, par exemple. Un titre en gras dans un module indique un champ obligatoire.
 
 Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction, vous pouvez l’utiliser pour définir des variables et des fonctions pour ce champ. Pour plus d’informations, consultez [Mappage d’informations d’un module à l’autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -390,7 +390,7 @@ Ce module d’action récupère une liste d’enregistrements en fonction des cr
       <td role="rowheader">
         <p>[!UICONTROL Record Fields]</p>
       </td>
-      <td>Pour chaque champ à utiliser dans votre recherche, localisez ce champ, sélectionnez l’opérateur et saisissez ou mappez la valeur à rechercher. Les champs sont disponibles en fonction du type d’enregistrement sélectionné.</td> 
+      <td>Pour chaque champ à utiliser dans votre recherche, recherchez ce champ, sélectionnez l’opérateur, puis saisissez ou mappez la valeur à rechercher. Les champs sont disponibles en fonction du type d’enregistrement sélectionné.</td> 
       </tr>
      <tr>
       <td role="rowheader">
