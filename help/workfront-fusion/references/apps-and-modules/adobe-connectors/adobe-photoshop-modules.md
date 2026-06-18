@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
 workflow-type: tm+mt
 source-wordcount: 7285
@@ -30,7 +32,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 >
 >Nous vous recommandons de mettre à jour dès que possible les scénarios qui utilisent ces modules vers les modules mis à jour.
 >
->Pour obtenir la liste des modules concernés, voir [Mises à jour de l’obsolescence de l’API ](#adobe-photoshop-api-deprecation-updates).
+>Pour obtenir la liste des modules concernés, voir [Mises à jour de l’obsolescence de l’API &#x200B;](#adobe-photoshop-api-deprecation-updates).
 >
 >Pour une explication de la manière dont les modifications d’API affectent Workfront Fusion, consultez [Présentation des API dans Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
@@ -1356,7 +1358,7 @@ Ce module d’action exécute des actions Photoshop à l’aide de commandes JSO
    <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL, action JSON]</td>
+      <td role="rowheader">[!UICONTROL , action JSON]</td>
       <td>
         <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
       </td>
