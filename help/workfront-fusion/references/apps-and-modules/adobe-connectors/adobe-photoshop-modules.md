@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
+source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
 workflow-type: tm+mt
-source-wordcount: 6526
-ht-degree: 14%
+source-wordcount: 7285
+ht-degree: 13%
 
 ---
 
@@ -20,10 +20,21 @@ ht-degree: 14%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Photoshop] et le connecter à plusieurs applications et services tiers.
 
-
 Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
+
+>[!IMPORTANT]
+>
+>Adobe Photoshop a rendu obsolète certains éléments de son API, que Fusion utilise pour effectuer des actions dans Photoshop.
+>
+>**Par conséquent, certains des modules Photoshop existants ne fonctionneront pas après le 30 juillet 2026.**
+>
+>Nous vous recommandons de mettre à jour dès que possible les scénarios qui utilisent ces modules vers les modules mis à jour.
+>
+>Pour obtenir la liste des modules concernés, voir [Mises à jour de l’obsolescence de l’API &#x200B;](#adobe-photoshop-api-deprecation-updates).
+>
+>Pour une explication de la manière dont les modifications d’API affectent Workfront Fusion, consultez [Présentation des API dans Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
 ## Conditions d’accès
 
@@ -70,6 +81,34 @@ Avant d’utiliser le connecteur [!DNL Adobe Photoshop], assurez-vous que les co
 * Vous devez disposer d’un compte [!DNL Adobe Photoshop].
 * Vous devez posséder une licence Firefly Services.
 * Vous devez disposer d’un identifiant client et d’un secret client. Vous pouvez les acquérir à partir du Adobe Developer Console.
+
+## Mises à jour de l’obsolescence de l’API Adobe Photoshop
+
+Adobe Photoshop a rendu obsolète certains éléments de son API, que Fusion utilise pour effectuer des actions dans Photoshop.
+
+**Par conséquent, certains des modules Photoshop existants ne fonctionneront pas après le 30 juillet 2026.**
+
+Ce tableau documente les modules qui ont été affectés par cette obsolescence et le module vers lequel vous devez mettre à jour.
+
+| Module hérité obsolète | Mettre à jour vers le nouveau module |
+|---|---|
+| Application des modifications PSD | Création ou modification d’un composite |
+| Convertir le format d’image | Création ou modification d’un composite |
+| Création d’un composite | Création ou modification d’un composite |
+| Création d’un nouveau PSD | Création ou modification d’un composite |
+| Créer des rendus | Création ou modification d’un composite |
+| Modifier des calques de texte | Exécution d’actions, de scripts et de transformations Photoshop |
+| Modifier les calques de texte 2 | Exécution d’actions, de scripts et de transformations Photoshop |
+| Exécuter une action JSON | Exécution d’actions, de scripts et de transformations Photoshop |
+| Exécution du flou de profondeur | (non disponible) |
+| Exécution d’actions Photoshop | Exécution d’actions, de scripts et de transformations Photoshop |
+| Exécution du recadrage de produit | Exécution d’actions, de scripts et de transformations Photoshop |
+| Obtenir les informations sur le calque | Générer un manifeste |
+| Redimensionnement d’une image | Création ou modification d’un composite |
+| Remplacer l&#39;objet intelligent | Création ou modification d’un composite |
+| Remplacer l&#39;objet intelligent 2 | Création ou modification d’un composite |
+| Rotation d’une image | Exécution d’actions, de scripts et de transformations Photoshop |
+| Filigrane d’une image | Création ou modification d’un composite |
 
 ## Informations sur l’API Adobe Photoshop
 
@@ -169,1339 +208,36 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Application des modifications PSD](#apply-psd-edits)
-* [Correction automatique des couleurs d’une image](#auto-color-correct-an-image)
-* [Convertir le format d’image](#convert-image-format)
-* [Création d’un masque](#create-a-mask)
-* [Création d’un nouveau PSD](#create-a-new-psd)
-* [Modifier des calques de texte](#edit-text-layers)
-* [Modifier les calques de texte (hérités)](#edit-text-layers-legacy)
-* [Exécuter une action JSON](#execute-an-action-json)
-* [Flou relatif à la profondeur d’exécution](#execute-depth-blur)
-* [Exécution d’actions Photoshop](#execute-photoshop-actions)
-* [Exécuter le recadrage de produit](#execute-product-crop)
-* [Obtenir les informations sur le calque](#get-layer-info)
-* [Effectuer un appel API personnalisé](#make-a-custom-api-call)
+### Actions
+
+* [Convertir l’hexadécimal en RGB](#convert-hex-to-rgb)
+* [Création d’un plan de travail](#create-an-artboard)
+* [Création ou modification d’un composite](#create-or-edit-a-composite)
+* [Modification d’une image avec différents réglages](#edit-an-image-with-various-adjustments)
+* [Exécution d’actions, de scripts et de transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations)
+* [Générer un manifeste](#generate-a-manifest)
 * [Supprimer l’arrière-plan](#remove-background)
-* [Remplacement d’un objet dynamique](#replace-a-smart-object)
-* [Remplacement d’un objet dynamique (hérité)](#replace-a-smart-object-legacy)
-* [Redimensionnement d’une image](#resize-an-image)
-* [Filigrane d’une image](#watermark-an-image)
 
-### Application des modifications PSD
+#### Convertir l’hexadécimal en RGB
 
-Ce module d’action applique diverses modifications au niveau du document et des calques.
+Ce module convertit un code couleur HEX en couleur RGB.
 
-Ce module prend en charge les fichiers volumineux. Pour plus d’informations sur les fichiers volumineux, voir [Utilisation de fichiers volumineux](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+
+
+Ce module apporte des ajustements de style Lightroom à une image.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Hauteur]</p>
-      </td>
-      <td> Saisissez ou mappez la hauteur de l’image en pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Largeur]</p>
-      </td>
-      <td> Saisissez ou mappez la largeur de l’image en pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Haut]</p>
-      </td>
-   <td> Saisissez ou mappez, en pixels, la coordonnée y du coin supérieur gauche du document. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Bas]</p>
-      </td>
-   <td> Saisissez ou mappez, en pixels, la coordonnée y du coin inférieur droit du document. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) à gauche]</p>
-      </td>
-   <td> Saisissez ou mappez, en pixels, la coordonnée x du coin supérieur gauche du document. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Droite]</p>
-      </td>
-   <td> Saisissez ou mappez, en pixels, la coordonnée x du coin inférieur droit du document. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Trim]</p>
-      </td>
-   <td> Sélectionnez Pixels transparents pour baser le rognage sur les pixels transparents de l’image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Default font]</p>
-      </td>
-   <td> Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Pour chaque police dont le document a besoin, cliquez sur Ajouter un élément et saisissez l’emplacement de stockage et de fichier de la police. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Gérer les polices manquantes]</p>
-      </td>
-   <td> Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. <ul><li><code>fail</code>: la tâche ne réussira pas et le statut sera défini sur échec, avec les détails de l’erreur fournis dans la section détails du statut.</li><li><code>useDefault</code>: le traitement réussit et toutes les polices manquantes sont remplacées par ArialMT.</li></ul></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Calques]</p>
-      </td>
-   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Appliquer les modifications PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque fichier modifié que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Trim to Canvas]</p>
-      </td>
-   <td>Indiquez si les rendus doivent être de taille Zone de travail. True ajuste les rendus à la taille de la zone de travail, tandis que False les rend à la taille du calque.</td> 
+      <td role="rowheader">[!UICONTROL HEX]</td>
+      <td>Saisissez ou mappez le code HEX que vous souhaitez convertir en RGB.</td>
     </tr>
     </tbody>
 </table>
 
-### Correction automatique des couleurs d’une image
-
-Ce module d’action corrige automatiquement la couleur de l’image spécifiée.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier dont vous souhaitez corriger les couleurs est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier dont vous souhaitez corriger la couleur. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Convertir le format d’image
-
-Ce module d’action convertit un fichier en JPEG, PNG, PSD ou TIFF.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier que vous souhaitez supprimer de l’arrière-plan.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier duquel vous souhaitez supprimer l’arrière-plan. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque fichier converti que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Création d’un masque
-
-Ce module d’action renvoie un fichier PNG avec un masque appliqué autour du sujet.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers à partir duquel est stocké le fichier à partir duquel vous souhaitez créer un masque.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier à partir duquel vous souhaitez créer un masque. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier de masque.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès où le fichier de masque sera stocké. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Color space]</p>
-      </td>
-   <td>Choisissez si l’image de sortie utilise la couleur RGB ou RGBA. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Mask format]</p>
-      </td>
-   <td>Indiquez si le masque doit être souple (en drapeau) ou binaire. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Optimize]</p>
-      </td>
-   <td>Sélectionnez Performances pour optimiser la vitesse ou Lot pour permettre le temps d’attente. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Post process]</p>
-      </td>
-   <td>Choisissez d’activer ou non le post-traitement.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Version]</p>
-      </td>
-   <td>La valeur par défaut est 4.0</td> 
-    </tr> 
-    </tbody>
-</table>
-
-### Création d’un nouveau PSD
-
-Ce module d’action crée un nouveau PSD avec des calques facultatifs et génère des rendus ou des enregistrements en tant que PSD.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Hauteur]</p>
-      </td>
-      <td> Saisissez ou mappez la hauteur de l’image en pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Largeur]</p>
-      </td>
-      <td> Saisissez ou mappez la largeur de l’image en pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Résolution]</p>
-      </td>
-   <td> Saisissez ou mappez, en pixels par pouce, la résolution de l’image. Ce doit être entre 72 et 300. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Mode]</p>
-      </td>
-   <td> Sélectionnez le mode de l’image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Fill]</p>
-      </td>
-   <td> Choisissez si vous souhaitez que le remplissage du calque d’arrière-plan soit transparent, blanc ou la couleur d’arrière-plan de l’image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Depth]</p>
-      </td>
-   <td> Sélectionnez la profondeur de l’image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Calques]</p>
-      </td>
-   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Global font]</p>
-      </td>
-   <td> Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Pour chaque police dont le document a besoin, cliquez sur Ajouter un élément et saisissez l’emplacement de stockage et de fichier de la police. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Gérer les polices manquantes]</p>
-      </td>
-   <td> Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. <ul><li><code>fail</code>: la tâche ne réussira pas et le statut sera défini sur échec, avec les détails de l’erreur fournis dans la section détails du statut.</li><li><code>useDefault</code>: le traitement réussit et toutes les polices manquantes sont remplacées par ArialMT.</li></ul></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque fichier que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Autres champs]</td>
-      <td>
-        <p><p>Pour plus d’informations sur les options de sortie, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Modifier des calques de texte
-
-Ce module d’action modifie les calques de texte d’un fichier Photoshop. Vous pouvez saisir des détails de modification distincts pour plusieurs calques dans le même fichier.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Gérer les polices manquantes]</td>
-      <td>
-        <p>Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. Si la police n’est pas fournie, le module utilise la police par défaut.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Default font]  </td>
-      <td>
-        <p>Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Saisissez l’emplacement de stockage et de fichier de la police. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Pour chaque calque de texte à modifier, cliquez sur <b>Ajouter un élément</b> et saisissez les options de calque.<p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Modifier les calques de texte (hérités)
-
-Ce module d’action modifie un calque de texte sur un fichier Photoshop.
-
-Pour modifier plusieurs calques, utilisez le module [Modifier les calques de texte](#edit-text-layers).
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Gérer les polices manquantes]</td>
-      <td>
-        <p>Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. Si la police n’est pas fournie, le module utilise la police par défaut.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Default font]  </td>
-      <td>
-        <p>Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Saisissez l’emplacement de stockage et de fichier de la police. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Stockage du fichier de sortie]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-### Exécuter une action JSON
-
-Ce module d’action exécute des actions Photoshop à l’aide de commandes JSON.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL , action JSON]</td>
-      <td>
-        <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Polices / Motifs / Brosses / Images supplémentaires]</td>
-      <td>
-        <p>Pour chaque police, modèle, pinceau ou image supplémentaire à utiliser dans cette action, cliquez sur Ajouter un élément et saisissez l’espace de stockage et l’emplacement du fichier de l’élément.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier que vous souhaitez utiliser. </td> 
-    </tr>
-    <tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque fichier à créer, cliquez sur Ajouter un élément et saisissez les options de stockage, d’emplacement, de type et de remplacement répertoriées.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) URL du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-      </tbody>
-</table>
-
-### Flou relatif à la profondeur d’exécution
-
-Ce module d’action exécute l’action Flou de profondeur sur le fichier sélectionné.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) URL du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Exécution d’actions Photoshop
-
-Ce module d’action exécute une action Photoshop sur l’image sélectionnée.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Actions file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier d’actions est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Actions file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier d’actions. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Nom de l’action]</p>
-      </td>
-   <td> Si vous souhaitez uniquement exécuter une action spécifique, vous pouvez spécifier l’action à lire à partir du jeu d’actions. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Font / Pattern / Brush storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez utiliser est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier que vous souhaitez utiliser. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) URL du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Exécuter le recadrage de produit
-
-Ce module d’action exécute le recadrage de produit sur l’image sélectionnée.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier à recadrer est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez recadrer. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Unit]</p>
-      </td>
-   <td> Choisissez si vous souhaitez décrire l’ajustement de la hauteur et de la largeur en pixels ou en pourcentage. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Width]</p>
-      </td>
-   <td> Saisissez ou mappez la quantité de remplissage de largeur que vous souhaitez ajouter. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Height]</p>
-      </td>
-   <td> Saisissez ou mappez la quantité de remplissage en hauteur à ajouter. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) URL du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Obtenir les informations sur le calque
-
-Ce module d’action récupère les informations de calque du fichier PSD spécifié.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier à partir duquel vous souhaitez récupérer les informations de calque.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier à partir duquel vous souhaitez récupérer les informations de calque. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Thumbnails]</p>
-      </td>
-   <td> Sélectionnez le type de fichier dont vous souhaitez afficher les miniatures. Les miniatures sont de petits aperçus pour tout calque rendu.</td> 
-    </tr>
-  </tbody>
-</table>
-
-### Effectuer un appel API personnalisé
-
-Ce module d’action effectue un appel personnalisé à l’API Photoshop.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p>Saisissez un chemin d’accès relatif à <code>https://image.adobe.io/pie/psdService</code>. Exemple : <code>/photoshopActions</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p>
-        <p>Par exemple, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion ajoute automatiquement des en-têtes d’autorisation.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
-      <td>
-        <p>Saisissez la chaîne de requête.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
-### Supprimer l’arrière-plan
-
-Ce module d’action identifie l’objet principal de votre image et supprime l’arrière-plan.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier que vous souhaitez supprimer de l’arrière-plan.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier duquel vous souhaitez supprimer l’arrière-plan. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Color space]</p>
-      </td>
-   <td>Choisissez si l’image de sortie utilise la couleur RGB ou RGBA. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Mask format]</p>
-      </td>
-   <td>Indiquez si les bords de l’image doivent être lisses (contours progressifs) ou binaires. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Optimize]</p>
-      </td>
-   <td>Sélectionnez Performances pour optimiser la vitesse ou Lot pour permettre le temps d’attente. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Post process]</p>
-      </td>
-   <td>Choisissez d’activer ou non le post-traitement.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Version]</p>
-      </td>
-   <td>La valeur par défaut est 4.0</td> 
-    </tr> 
-    </tbody>
-</table>
-
-### Remplacement d’un objet dynamique
-
-Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
-
-Ce module utilise l’API d’objet intelligent version 2.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel l’objet dynamique est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’objet dynamique. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Layers]</p>
-      </td>
-   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Redimensionner l'image pendant le déplacement]</p>
-      </td>
-   <td> Choisissez si vous souhaitez redimensionner l’image.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque nouveau rendu que vous souhaitez que le module produise, cliquez sur Ajouter un élément et renseignez les champs suivants. Vous pouvez avoir un maximum de 25 fichiers de sortie.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sorties) Type]</p>
-      </td>
-   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
-    </tr>
-     </tbody>
-</table>
-
-### Remplacement d’un objet intelligent (hérité)
-
-Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
-
-Ce module utilise l’ancienne version des objets dynamiques.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel l’objet dynamique est stocké.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’objet dynamique. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Layers]</p>
-      </td>
-   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque nouveau rendu que vous souhaitez que le module produise, cliquez sur Ajouter un élément et renseignez les champs suivants. Vous pouvez avoir un maximum de 25 fichiers de sortie.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sortie) Largeur]</p>
-      </td>
-   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tbody>
-</table>
-
-### Redimensionnement d’une image
-
-Cette action redimensionne une image en utilisant les mêmes proportions.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel le fichier à redimensionner est stocké.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Emplacement du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier à redimensionner.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>Pour chaque fichier converti que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez les options de stockage, d’emplacement et autres, comme indiqué.</p>
-      </td>
-    </tr>
-    <tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Emplacement du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Width]</p>
-      </td>
-   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Largeur max.]</p>
-      </td>
-   <td>Lorsque la largeur est égale à 0, la propriété Max avec peut être fournie pour obtenir la taille. La largeur maximale est prioritaire et est inférieure à la largeur du document.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Rogner sur la zone de travail]</p>
-      </td>
-   <td>Sélectionnez Oui pour ajuster les rendus à la taille de la zone de travail ou Non pour définir la taille du calque des rendus.</td> 
-    </tr>
-    </tbody>
-</table>
-
-### Filigrane d’une image
-
-Ce module d’action ajoute un filigrane à l’image sélectionnée.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Base &gt; Entrée) Stockage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier auquel vous souhaitez ajouter un filigrane.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Base &gt; Entrée) Emplacement du fichier]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier auquel vous souhaitez ajouter un filigrane. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Filigrane &gt; Entrée) Stockage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le filigrane que vous souhaitez ajouter.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Filigrane &gt; Entrée) Stockage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel est stocké le filigrane que vous souhaitez ajouter.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Filigrane &gt; Limites) Hauteur]</p>
-      </td>
-   <td>Saisissez ou mappez la hauteur souhaitée du filigrane en pixels.</td> 
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Filigrane &gt; Limites) Largeur]</p>
-      </td>
-   <td> Saisissez ou mappez la largeur souhaitée du filigrane en pixels. </td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Filigrane &gt; Limites) À Gauche]</p>
-      </td>
-   <td> Saisissez ou mappez la distance en pixels entre le côté gauche de l’image et le filigrane.</td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Filigrane &gt; Limites) Haut]</p>
-      </td>
-   <td> Saisissez ou mappez la distance en pixels entre le haut de l’image et le filigrane.</td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier en filigrane.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier en filigrane. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Sortie) Largeur]</p>
-      </td>
-   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
-      </td>
-    </tbody>
-</table>
-
-
-### Création d’un plan de travail
+#### Création d’un plan de travail
 
 Ce module permet de créer un plan de travail dans Photoshop.
 
@@ -1534,7 +270,7 @@ Ce module permet de créer un plan de travail dans Photoshop.
     </tbody>
 </table>
 
-### Création ou modification d’un composite
+#### Création ou modification d’un composite
 
 Ce module permet de créer ou de modifier un composite dans Photoshop.
 
@@ -1699,7 +435,7 @@ Ce module permet de créer ou de modifier un composite dans Photoshop.
       </tbody>
 </table>
 
-### Modification d’une image avec différents réglages
+#### Modification d’une image avec différents réglages
 
 Ce module apporte des ajustements de style Lightroom à une image.
 
@@ -1726,7 +462,7 @@ Ce module apporte des ajustements de style Lightroom à une image.
     </tbody>
 </table>
 
-### Exécution d’actions, de scripts et de transformations Photoshop
+#### Exécution d’actions, de scripts et de transformations Photoshop
 
 Ce module exécute les actions, scripts et transformations disponibles dans l’API Photoshop Firefly.
 
@@ -1777,7 +513,7 @@ Ce module exécute les actions, scripts et transformations disponibles dans l’
     </tbody>
 </table>
 
-### Générer un manifeste
+#### Générer un manifeste
 
 Ce module génère un manifeste PSD pour l’image d’entrée donnée.
 
@@ -1842,3 +578,1461 @@ Ce module génère un manifeste PSD pour l’image d’entrée donnée.
     </tbody>
 </table>
 
+#### Supprimer l’arrière-plan
+
+Ce module d’action identifie l’objet principal de votre image et supprime l’arrière-plan.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier que vous souhaitez supprimer de l’arrière-plan.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier duquel vous souhaitez supprimer l’arrière-plan. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Color space]</p>
+      </td>
+   <td>Choisissez si l’image de sortie utilise la couleur RGB ou RGBA. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Mask format]</p>
+      </td>
+   <td>Indiquez si les bords de l’image doivent être lisses (contours progressifs) ou binaires. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Optimize]</p>
+      </td>
+   <td>Sélectionnez Performances pour optimiser la vitesse ou Lot pour permettre le temps d’attente. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Post process]</p>
+      </td>
+   <td>Choisissez d’activer ou non le post-traitement.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Version]</p>
+      </td>
+   <td>La valeur par défaut est 4.0</td> 
+    </tr> 
+    </tbody>
+</table>
+
+
+### Hérité
+
+* [Application des modifications PSD (héritées)](#apply-psd-edits-legacy)
+* [Correction automatique des couleurs d’une image (héritée)](#auto-color-correct-an-image-legacy)
+* [Convertir le format d’image (hérité)](#convert-image-format-legacy)
+* [Création d’un masque (hérité)](#create-a-mask-legacy)
+* [Création d’un nouveau PSD (hérité)](#create-a-new-psd-legacy)
+* [Créer des rendus (hérités)](#create-renditions-legacy)
+* [Modifier les calques de texte (hérités)](#edit-text-layers-legacy)
+* [Modifier les calques de texte 2 (hérités)](#edit-text-layers-2-legacy)
+* [Exécuter une action JSON (héritée)](#execute-an-action-json-legacy)
+* [Flou de profondeur d’exécution (hérité)](#execute-depth-blur-legacy)
+* [Exécution d’actions Photoshop (héritées)](#execute-photoshop-actions-legacy)
+* [Exécuter le recadrage de produit (hérité)](#execute-product-crop-legacy)
+* [Obtenir les informations sur le calque (hérité)](#get-layer-info-legacy)
+* [Effectuer un appel API personnalisé (hérité)](#make-a-custom-api-call-legacy)
+* [Supprimer l’arrière-plan (hérité)](#remove-background-legacy)
+* [Remplacement d’un objet dynamique (hérité)](#replace-a-smart-object-legacy)
+* [Remplacer un objet dynamique 2 (hérité)](#replace-a-smart-object-2-legacy)
+* [Redimensionnement d’une image (hérité)](#resize-an-image-legacy)
+* [Filigrane d’une image (hérité)](#watermark-an-image-legacy)
+
+#### Application des modifications PSD (héritées)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Ce module d’action applique diverses modifications au niveau du document et des calques.
+
+Ce module prend en charge les fichiers volumineux. Pour plus d’informations sur les fichiers volumineux, voir [Utilisation de fichiers volumineux](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Hauteur]</p>
+      </td>
+      <td> Saisissez ou mappez la hauteur de l’image en pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Largeur]</p>
+      </td>
+      <td> Saisissez ou mappez la largeur de l’image en pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Haut]</p>
+      </td>
+   <td> Saisissez ou mappez, en pixels, la coordonnée y du coin supérieur gauche du document. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Bas]</p>
+      </td>
+   <td> Saisissez ou mappez, en pixels, la coordonnée y du coin inférieur droit du document. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) à gauche]</p>
+      </td>
+   <td> Saisissez ou mappez, en pixels, la coordonnée x du coin supérieur gauche du document. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de la zone de travail) Droite]</p>
+      </td>
+   <td> Saisissez ou mappez, en pixels, la coordonnée x du coin inférieur droit du document. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document) Trim]</p>
+      </td>
+   <td> Sélectionnez Pixels transparents pour baser le rognage sur les pixels transparents de l’image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Default font]</p>
+      </td>
+   <td> Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Pour chaque police dont le document a besoin, cliquez sur Ajouter un élément et saisissez l’emplacement de stockage et de fichier de la police. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Gérer les polices manquantes]</p>
+      </td>
+   <td> Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. <ul><li><code>fail</code>: la tâche ne réussira pas et le statut sera défini sur échec, avec les détails de l’erreur fournis dans la section détails du statut.</li><li><code>useDefault</code>: le traitement réussit et toutes les polices manquantes sont remplacées par ArialMT.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Calques]</p>
+      </td>
+   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Appliquer les modifications PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier modifié que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Trim to Canvas]</p>
+      </td>
+   <td>Indiquez si les rendus doivent être de taille Zone de travail. True ajuste les rendus à la taille de la zone de travail, tandis que False les rend à la taille du calque.</td> 
+    </tr>
+    </tbody>
+</table>
+
+#### Correction automatique des couleurs d’une image (héritée)
+
+Ce module d’action corrige automatiquement la couleur de l’image spécifiée.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier dont vous souhaitez corriger les couleurs est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier dont vous souhaitez corriger la couleur. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Convertir le format d’image (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Ce module d’action convertit un fichier en JPEG, PNG, PSD ou TIFF.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier que vous souhaitez supprimer de l’arrière-plan.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier duquel vous souhaitez supprimer l’arrière-plan. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier converti que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Création d’un masque (hérité)
+
+Ce module d’action renvoie un fichier PNG avec un masque appliqué autour du sujet.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers à partir duquel est stocké le fichier à partir duquel vous souhaitez créer un masque.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier à partir duquel vous souhaitez créer un masque. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier de masque.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès où le fichier de masque sera stocké. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Color space]</p>
+      </td>
+   <td>Choisissez si l’image de sortie utilise la couleur RGB ou RGBA. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Mask format]</p>
+      </td>
+   <td>Indiquez si le masque doit être souple (en drapeau) ou binaire. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Optimize]</p>
+      </td>
+   <td>Sélectionnez Performances pour optimiser la vitesse ou Lot pour permettre le temps d’attente. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Post process]</p>
+      </td>
+   <td>Choisissez d’activer ou non le post-traitement.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Version]</p>
+      </td>
+   <td>La valeur par défaut est 4.0</td> 
+    </tr> 
+    </tbody>
+</table>
+
+#### Création d’un nouveau PSD (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Ce module d’action crée un nouveau PSD avec des calques facultatifs et génère des rendus ou des enregistrements en tant que PSD.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Hauteur]</p>
+      </td>
+      <td> Saisissez ou mappez la hauteur de l’image en pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document &gt; Taille de l’image) Largeur]</p>
+      </td>
+      <td> Saisissez ou mappez la largeur de l’image en pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document) Résolution]</p>
+      </td>
+   <td> Saisissez ou mappez, en pixels par pouce, la résolution de l’image. Ce doit être entre 72 et 300. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document) Mode]</p>
+      </td>
+   <td> Sélectionnez le mode de l’image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document) Fill]</p>
+      </td>
+   <td> Choisissez si vous souhaitez que le remplissage du calque d’arrière-plan soit transparent, blanc ou la couleur d’arrière-plan de l’image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options &gt; Document) Depth]</p>
+      </td>
+   <td> Sélectionnez la profondeur de l’image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Calques]</p>
+      </td>
+   <td> Pour chaque calque à ajouter, cliquez sur Ajouter un élément et renseignez les détails du calque. <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Global font]</p>
+      </td>
+   <td> Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Pour chaque police dont le document a besoin, cliquez sur Ajouter un élément et saisissez l’emplacement de stockage et de fichier de la police. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Gérer les polices manquantes]</p>
+      </td>
+   <td> Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. <ul><li><code>fail</code>: la tâche ne réussira pas et le statut sera défini sur échec, avec les détails de l’erreur fournis dans la section détails du statut.</li><li><code>useDefault</code>: le traitement réussit et toutes les polices manquantes sont remplacées par ArialMT.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez le stockage, l’emplacement et le type répertoriés.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Autres champs]</td>
+      <td>
+        <p><p>Pour plus d’informations sur les options de sortie, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Créer un PSD</a> dans la documentation d’Adobe Photoshop.  </p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Créer des rendus (hérités)
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier à créer, cliquez sur Ajouter un élément et saisissez les options de stockage, d’emplacement, de type et de remplacement répertoriées.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Emplacement du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+      </tbody>
+</table>
+
+#### Modifier les calques de texte (hérités)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module en lui attribuant le module [Exécuter les actions, scripts et transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+
+Ce module d’action modifie les calques de texte d’un fichier Photoshop. Vous pouvez saisir des détails de modification distincts pour plusieurs calques dans le même fichier.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gérer les polices manquantes]</td>
+      <td>
+        <p>Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. Si la police n’est pas fournie, le module utilise la police par défaut.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Saisissez l’emplacement de stockage et de fichier de la police. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+   <td> <p>Pour chaque calque de texte à modifier, cliquez sur <b>Ajouter un élément</b> et saisissez les options de calque.<p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Modifier les calques de texte 2 (hérités)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module en lui attribuant le module [Exécuter les actions, scripts et transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+
+Ce module d’action modifie un calque de texte sur un fichier Photoshop.
+
+Pour modifier plusieurs calques, utilisez le module [Modifier les calques de texte](#edit-text-layers).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gérer les polices manquantes]</td>
+      <td>
+        <p>Sélectionnez l’action à effectuer s’il manque une ou plusieurs polices dans le document. Si la police n’est pas fournie, le module utilise la police par défaut.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Saisissez le nom postscript complet de la police à utiliser comme valeur par défaut globale pour le document. Cette police sera utilisée pour tout calque de texte qui comporte une police manquante et pour lequel aucune autre police n’a été spécifiquement fournie. Si cette police est manquante, l’option spécifiée dans Gérer les polices manquantes prend effet.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Saisissez l’emplacement de stockage et de fichier de la police. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+   <td> <p>Pour plus d’informations sur les options de calque, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifier le calque de texte</a> dans la documentation d’Adobe Photoshop.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Stockage du fichier de sortie]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### Exécuter une action JSON (héritée)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module en lui attribuant le module [Exécuter les actions, scripts et transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+
+Ce module d’action exécute des actions Photoshop à l’aide de commandes JSON.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL , action JSON]</td>
+      <td>
+        <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Polices / Motifs / Brosses / Images supplémentaires]</td>
+      <td>
+        <p>Pour chaque police, modèle, pinceau ou image supplémentaire à utiliser dans cette action, cliquez sur Ajouter un élément et saisissez l’espace de stockage et l’emplacement du fichier de l’élément.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier que vous souhaitez utiliser. </td> 
+    </tr>
+    <tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier à créer, cliquez sur Ajouter un élément et saisissez les options de stockage, d’emplacement, de type et de remplacement répertoriées.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) URL du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+      </tbody>
+</table>
+
+#### Flou de profondeur d’exécution (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+
+Ce module d’action exécute l’action Flou de profondeur sur le fichier sélectionné.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) URL du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Exécution d’actions Photoshop (héritées)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module en lui attribuant le module [Exécuter les actions, scripts et transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+
+Ce module d’action exécute une action Photoshop sur l’image sélectionnée.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez modifier est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Actions file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier d’actions est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Actions file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier d’actions. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Nom de l’action]</p>
+      </td>
+   <td> Si vous souhaitez uniquement exécuter une action spécifique, vous pouvez spécifier l’action à lire à partir du jeu d’actions. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Font / Pattern / Brush storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier que vous souhaitez utiliser est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier que vous souhaitez utiliser. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) URL du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Exécuter le recadrage de produit (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module en lui attribuant le module [Exécuter les actions, scripts et transformations Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+
+Ce module d’action exécute le recadrage de produit sur l’image sélectionnée.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier à recadrer est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez recadrer. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Unit]</p>
+      </td>
+   <td> Choisissez si vous souhaitez décrire l’ajustement de la hauteur et de la largeur en pixels ou en pourcentage. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td> Saisissez ou mappez la quantité de remplissage de largeur que vous souhaitez ajouter. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Height]</p>
+      </td>
+   <td> Saisissez ou mappez la quantité de remplissage en hauteur à ajouter. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier modifié.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) URL du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier modifié.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Sorties) Remplacer]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>Pour plus d’informations sur les autres options de flou de profondeur, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur</a> dans la documentation de l’API Adobe Photoshop.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Obtenir les informations sur le calque (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module vers le module [Générer un manifeste](#generate-a-manifest).
+
+Ce module d’action récupère les informations de calque du fichier PSD spécifié.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier à partir duquel vous souhaitez récupérer les informations de calque.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès au fichier à partir duquel vous souhaitez récupérer les informations de calque. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Thumbnails]</p>
+      </td>
+   <td> Sélectionnez le type de fichier dont vous souhaitez afficher les miniatures. Les miniatures sont de petits aperçus pour tout calque rendu.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Effectuer un appel API personnalisé
+
+Ce module d’action effectue un appel personnalisé à l’API Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p>Saisissez un chemin d’accès relatif à <code>https://image.adobe.io/pie/psdService</code>. Exemple : <code>/photoshopActions</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Méthodes de requête HTTP</a>.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p>
+        <p>Par exemple, <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion ajoute automatiquement des en-têtes d’autorisation.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>Saisissez la chaîne de requête.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un objet JSON standard.</p> <p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
+#### Remplacement d’un objet intelligent (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
+
+Ce module utilise l’API d’objet intelligent version 2.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel l’objet dynamique est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’objet dynamique. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Redimensionner l'image pendant le déplacement]</p>
+      </td>
+   <td> Choisissez si vous souhaitez redimensionner l’image.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque nouveau rendu que vous souhaitez que le module produise, cliquez sur Ajouter un élément et renseignez les champs suivants. Vous pouvez avoir un maximum de 25 fichiers de sortie.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sorties) Type]</p>
+      </td>
+   <td> Sélectionnez le type de fichier pour le fichier modifié. </td> 
+    </tr>
+     </tbody>
+</table>
+
+#### Remplacer un objet intelligent 2 (hérité)
+
+Ce module d’action remplace un objet dynamique dans un calque PSD et génère de nouveaux rendus.
+
+Ce module utilise l’ancienne version des objets dynamiques.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel l’objet dynamique est stocké.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’objet dynamique. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>Pour chaque calque que vous souhaitez ajouter à l’objet dynamique, cliquez sur Ajouter un élément et saisissez le nom ou l’ID de l’objet, le service de fichiers dans lequel l’objet dynamique est stocké et l’URL ou le chemin d’accès du calque.<p>Pour obtenir une description des paramètres avancés de cette zone, voir <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Remplacer un objet dynamique</a> dans la documentation de l’API Photoshop </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque nouveau rendu que vous souhaitez que le module produise, cliquez sur Ajouter un élément et renseignez les champs suivants. Vous pouvez avoir un maximum de 25 fichiers de sortie.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sortie) Largeur]</p>
+      </td>
+   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tbody>
+</table>
+
+#### Redimensionnement d’une image (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Cette action redimensionne une image en utilisant les mêmes proportions.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel le fichier à redimensionner est stocké.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Emplacement du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier à redimensionner.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>Pour chaque fichier converti que vous souhaitez créer, cliquez sur Ajouter un élément et saisissez les options de stockage, d’emplacement et autres, comme indiqué.</p>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le nouveau fichier.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Emplacement du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du nouveau fichier.  Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Largeur max.]</p>
+      </td>
+   <td>Lorsque la largeur est égale à 0, la propriété Max avec peut être fournie pour obtenir la taille. La largeur maximale est prioritaire et est inférieure à la largeur du document.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Rogner sur la zone de travail]</p>
+      </td>
+   <td>Sélectionnez Oui pour ajuster les rendus à la taille de la zone de travail ou Non pour définir la taille du calque des rendus.</td> 
+    </tr>
+    </tbody>
+</table>
+
+#### Filigrane d’une image (hérité)
+
+>[!NOTE]
+>
+>Ce module a été abandonné et ne fonctionnera plus après le 30 juillet 2026.
+>Mettez à jour ce module sur le module [Créer ou modifier un composite](#create-or-edit-a-composite).
+
+Ce module d’action ajoute un filigrane à l’image sélectionnée.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Photoshop], voir <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Créer une connexion à [!DNL Adobe Photoshop]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Base &gt; Entrée) Stockage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le fichier auquel vous souhaitez ajouter un filigrane.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Base &gt; Entrée) Emplacement du fichier]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier auquel vous souhaitez ajouter un filigrane. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Filigrane &gt; Entrée) Stockage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le filigrane que vous souhaitez ajouter.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Filigrane &gt; Entrée) Stockage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel est stocké le filigrane que vous souhaitez ajouter.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Filigrane &gt; Limites) Hauteur]</p>
+      </td>
+   <td>Saisissez ou mappez la hauteur souhaitée du filigrane en pixels.</td> 
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Filigrane &gt; Limites) Largeur]</p>
+      </td>
+   <td> Saisissez ou mappez la largeur souhaitée du filigrane en pixels. </td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Filigrane &gt; Limites) À Gauche]</p>
+      </td>
+   <td> Saisissez ou mappez la distance en pixels entre le côté gauche de l’image et le filigrane.</td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Filigrane &gt; Limites) Haut]</p>
+      </td>
+   <td> Saisissez ou mappez la distance en pixels entre le haut de l’image et le filigrane.</td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Sélectionnez le service de fichiers dans lequel vous souhaitez stocker le fichier en filigrane.</p><p>La sélection du stockage interne Fusion rend le fichier disponible pour les modules ultérieurs, mais ne rend pas le fichier disponible en dehors du scénario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Saisissez ou mappez l’URL ou le chemin d’accès de l’emplacement de stockage du fichier en filigrane. Cela n’est nécessaire que si vous n’avez pas choisi le stockage interne Fusion pour le stockage de sortie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Sélectionnez le type de fichier vers lequel vous souhaitez convertir le fichier. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Sortie) Largeur]</p>
+      </td>
+   <td> Largeur, en pixels, du fichier de sortie. Le module conserve les proportions d’origine. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Indiquez si le fichier nouvellement modifié remplacera un fichier de sortie existant. Cela s’applique uniquement aux fichiers dans l’espace de stockage Adobe.</p>
+      </td>
+    </tbody>
+</table>
