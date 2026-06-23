@@ -4,10 +4,10 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
+source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -48,9 +48,11 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Modules Adobe App Builder
 
-### Exécution d’un bloc de code personnalisé
+<!--
 
-Ce module vous permet d’exécuter un bloc de code. Vous configurez le bloc de code lorsque vous configurez le module, qui est exécuté lorsque le module s’exécute lors de l’exécution d’un scénario.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -58,16 +60,18 @@ Ce module vous permet d’exécuter un bloc de code. Vous configurez le bloc de 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Sélectionnez la connexion contenant la fonction personnalisée que vous souhaitez exécuter. </td> 
+   <td>Select the connection that contains the custom function that you want to run. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Code block]</td> 
-   <td>Saisissez le bloc de code que le module doit exécuter.<p>Pour formater le code afin de le lire plus facilement, cliquez sur l’icône <b>Formater le code</b>.</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
   </tr> 
    </tbody> 
 </table>
 
-### Exécution d’une fonction personnalisée
+-->
+
+### Exécuter une fonction personnalisée ou un bloc de code
 
 Ce module vous permet d’utiliser une fonction JavaScript personnalisée configurée précédemment et stockée dans la zone Fonctions .
 
@@ -86,7 +90,7 @@ Pour obtenir des instructions sur la configuration d’une fonction personnalis�
    <td>Sélectionnez la fonction personnalisée que vous souhaitez exécuter.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres  </td> 
+   <td role="rowheader">Paramètres [!UICONTROL] </td> 
    <td>Saisissez les valeurs des paramètres de la fonction. Les paramètres disponibles sont basés sur les paramètres configurés lors de la création de la fonction.<p>Si un paramètre possède une valeur par défaut, vous ne le verrez pas dans le champ, mais vous pouvez le remplacer en saisissant ou en mappant une valeur dans le champ.</p></td> 
   </tr> 
    </tbody> 
