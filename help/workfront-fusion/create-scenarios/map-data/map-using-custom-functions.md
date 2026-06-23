@@ -3,10 +3,11 @@ title: Mappage de données à l’aide de fonctions personnalisées
 description: Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour créer des formules simples ou complexes.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 109ea8a6b3c37918110dc930a19ac85ef3e6d764
+exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
+source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 16%
 
 ---
 
@@ -53,9 +54,19 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Configuration d’une fonction personnalisée
 
-Les fonctions personnalisées sont configurées dans la zone Fonctions de Workfront Fusion. Une fois qu’une fonction est configurée, vous pouvez l’ajouter à un scénario à l’aide du connecteur Adobe App Builder.
+Vous pouvez créer une fonction personnalisée dans la zone Fonctions qui peut être utilisée dans plusieurs scénarios ou configurer des fonctions personnalisées dans des scénarios individuels.
 
-### Initialiser votre environnement d’exécution
+* [Créer une fonction personnalisée à utiliser dans plusieurs scénarios](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [Création d’une fonction personnalisée dans un scénario](#create-a-custom-function-within-a-scenario)
+
+### Créer une fonction personnalisée à utiliser dans plusieurs scénarios
+
+Les fonctions personnalisées qui peuvent être utilisées dans plusieurs scénarios sont configurées dans la zone Fonctions de Workfront Fusion. Une fois qu’une fonction est configurée, vous pouvez l’ajouter à un scénario à l’aide du connecteur Adobe App Builder.
+
+* [Initialiser votre environnement d’exécution](#initialize-your-runtime-environment)
+* [Créez une fonction personnalisée dans la zone Fonctions](#create-a-custom-function-in-the-functions-area)
+
+#### Initialiser votre environnement d’exécution
 
 Avant de pouvoir créer des fonctions personnalisées, vous devez initialiser votre environnement d’exécution. Cela ne doit être effectué que si votre équipe ne dispose d’aucune fonction personnalisée.
 
@@ -72,7 +83,7 @@ Avant de pouvoir créer des fonctions personnalisées, vous devez initialiser vo
 
    Au bout d’un certain temps, une liste de fonctions s’affiche, avec deux exemples de fonctions.
 
-### Création d’une fonction personnalisée
+#### Créez une fonction personnalisée dans la zone Fonctions
 
 Une fois votre environnement d’exécution configuré, vous pouvez commencer à créer des fonctions personnalisées.
 
@@ -96,9 +107,14 @@ Une fois votre environnement d’exécution configuré, vous pouvez commencer à
    Vous pouvez remplacer les paramètres par défaut lors de l’ajout de la fonction à un scénario.
 1. Cliquer sur **Enregistrer**.
 
+### Création d’une fonction personnalisée dans un scénario
+
+Pour créer une fonction personnalisée dans un scénario, utilisez le module **Exécuter un bloc de code personnalisé** dans le connecteur Adobe App Builder.
+
+Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
 ## Ajouter une fonction personnalisée à un scénario
 
 Pour ajouter une fonction personnalisée à un scénario, utilisez le connecteur Adobe App Builder.
 
 Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
-
