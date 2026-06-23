@@ -3,10 +3,11 @@ title: Module Adobe App Builder
 description: Le connecteur Adobe App Builder vous permet d’utiliser des fonctions personnalisées dans vos scénarios.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -45,15 +46,32 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 +++
 
-## Module Adobe App Builder
+## Modules Adobe App Builder
 
-Le seul module Adobe App Builder actuellement disponible est Exécuter une action , qui vous permet d’utiliser une fonction JavaScript personnalisée configurée précédemment.
+### Exécution d’un bloc de code personnalisé
+
+Ce module vous permet d’exécuter un bloc de code. Vous configurez le bloc de code lorsque vous configurez le module, qui est exécuté lorsque le module s’exécute lors de l’exécution d’un scénario.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Sélectionnez la connexion contenant la fonction personnalisée que vous souhaitez exécuter. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Saisissez le bloc de code que le module doit exécuter.<p>Pour formater le code afin de le lire plus facilement, cliquez sur l’icône <b>Formater le code</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Exécution d’une fonction personnalisée
+
+Ce module vous permet d’utiliser une fonction JavaScript personnalisée configurée précédemment et stockée dans la zone Fonctions .
 
 Pour obtenir des instructions sur la configuration d’une fonction personnalisée, voir [Mapper des données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Exécuter une action
-
-Ce module exécute une fonction personnalisée configurée précédemment.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -68,10 +86,8 @@ Ce module exécute une fonction personnalisée configurée précédemment.
    <td>Sélectionnez la fonction personnalisée que vous souhaitez exécuter.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres  </td> 
+   <td role="rowheader">Paramètres [!UICONTROL] </td> 
    <td>Saisissez les valeurs des paramètres de la fonction. Les paramètres disponibles sont basés sur les paramètres configurés lors de la création de la fonction.<p>Si un paramètre possède une valeur par défaut, vous ne le verrez pas dans le champ, mais vous pouvez le remplacer en saisissant ou en mappant une valeur dans le champ.</p></td> 
   </tr> 
    </tbody> 
 </table>
-
-
