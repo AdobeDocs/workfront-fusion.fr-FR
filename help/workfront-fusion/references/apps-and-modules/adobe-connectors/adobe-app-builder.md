@@ -90,7 +90,7 @@ Pour obtenir des instructions sur la configuration d’une fonction personnalis�
    <td>Sélectionnez la fonction personnalisée que vous souhaitez exécuter.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres [!UICONTROL] </td> 
+   <td role="rowheader">Paramètres  </td> 
    <td>Saisissez les valeurs des paramètres de la fonction. Les paramètres disponibles sont basés sur les paramètres configurés lors de la création de la fonction.<p>Si un paramètre possède une valeur par défaut, vous ne le verrez pas dans le champ, mais vous pouvez le remplacer en saisissant ou en mappant une valeur dans le champ.</p></td> 
   </tr> 
    </tbody> 
