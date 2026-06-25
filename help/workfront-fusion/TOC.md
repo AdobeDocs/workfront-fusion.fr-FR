@@ -189,7 +189,7 @@ ht-degree: 53%
    * Vues d’ensemble des licences et des opérations {#licensing-and-operations-overviews}
       * [Vues d’ensemble des licences et des opérations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [ Opérations ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [&#x200B; Opérations &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         [Pools de salariés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurer et gérer des organisations et des équipes {#set-up-and-manage-orgs-and-teams}
       * [Configurer et gérer des organisations et des équipes : index des articles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
@@ -384,7 +384,7 @@ ht-degree: 53%
          * [Modules Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Modules Adobe User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Modules Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-         * [Modules de planification ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Modules de révision et d’approbation unifiés Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+         * [Modules de planification &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Modules de révision et d’approbation unifiés Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
          * [Modules Workfront Boards](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
          * [Modules Workfront Proof](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
       * Connecteurs pour les applications tierces {#third-party-app-connectors}
