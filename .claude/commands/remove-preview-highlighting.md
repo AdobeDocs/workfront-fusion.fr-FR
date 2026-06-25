@@ -130,4 +130,4 @@ Si la structure est ambiguë (pas de parallèle clair), **arrêtez** et affichez
 
 ## Références
 
-- Respectez les conventions de style de documentation et de référentiel **[Workfront &#x200B;](https://experienceleague.adobe.com/?lang=fr)** (règles de validation/RP si l’utilisateur effectue une validation).
+- Respectez les conventions de style de documentation et de référentiel **[Workfront &#x200B;](https://experienceleague.adobe.com/fr?lang=fr)** (règles de validation/RP si l’utilisateur effectue une validation).
