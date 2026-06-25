@@ -4,10 +4,10 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
+source-git-commit: 54a188eda2ac9f535d16e0e865cbf27c48a1ee74
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 23%
+source-wordcount: '506'
+ht-degree: 19%
 
 ---
 
@@ -48,11 +48,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Modules Adobe App Builder
 
-<!--
+### Exécution d’un bloc de code personnalisé
 
-### Run a custom code block
-
-This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
+Ce module vous permet d’exécuter un bloc de code. Vous configurez le bloc de code lorsque vous configurez le module, qui est exécuté lorsque le module s’exécute lors de l’exécution d’un scénario.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -60,22 +58,20 @@ This module allows you to run a code block. You configure the code block when yo
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Select the connection that contains the custom function that you want to run. </td> 
+   <td>Sélectionnez la connexion contenant la fonction personnalisée que vous souhaitez exécuter. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Code block]</td> 
-   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
+   <td>Saisissez le bloc de code que le module doit exécuter.<p>Pour formater le code afin de le lire plus facilement, cliquez sur l’icône <b>Formater le code</b>.</td> 
   </tr> 
    </tbody> 
 </table>
-
--->
 
 ### Exécuter une fonction personnalisée à partir d’un package
 
 Ce module exécute une fonction à partir d’un package.
 
-<!--For information on packages, see []().-->
+Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -100,7 +96,7 @@ Ce module exécute une fonction à partir d’un package.
 
 Ce module intègre une variable configurée dans un package à votre scénario.
 
-<!--For information on packages, see []().-->
+Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
