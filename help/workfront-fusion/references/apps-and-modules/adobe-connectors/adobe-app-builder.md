@@ -4,7 +4,7 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 54a188eda2ac9f535d16e0e865cbf27c48a1ee74
+source-git-commit: eb4c1ed6991606928beccbb57a8a86182e58a9e7
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 19%
@@ -141,3 +141,6 @@ Pour obtenir des instructions sur la configuration d’une fonction personnalis�
   </tr> 
    </tbody> 
 </table>
+
+
+
