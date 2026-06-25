@@ -11,7 +11,7 @@ Modèles détaillés pour chaque type de page de note de mise à jour. Ils sont 
 `help/quicksilver/product-announcements/product-releases/release-note-templates/` et
 mise en forme réelle utilisée dans les dernières versions trimestrielles.
 
----
+&#x200B;---
 
 ## Modèle de page de la zone de produit
 
@@ -57,15 +57,17 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
+
 - Si une fonction a été temporairement supprimée, ajoutez une ligne après la date :
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
+
 - Les liens d’aide utilisent des chemins absolus commençant par `/help/quicksilver/`
 
----
+&#x200B;---
 
 ## Modèle de page d’aperçu
 
@@ -188,7 +190,7 @@ For information about the maintenance updates made during the {Written Quarter} 
 Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
----
+&#x200B;---
 
 ## Modèle de page d’apparence
 
@@ -217,7 +219,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
----
+&#x200B;---
 
 ## Formats de légende de date
 
@@ -247,7 +249,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
----
+&#x200B;---
 
 ## Incohérences connues à surveiller
 

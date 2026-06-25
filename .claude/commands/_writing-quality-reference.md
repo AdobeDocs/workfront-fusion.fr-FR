@@ -9,7 +9,7 @@ ht-degree: 3%
 
 Règles détaillées pour la compétence `writing-quality`. Le fichier SKILL.md couvre les règles les plus courantes ; ce fichier fournit la référence complète pour la ponctuation, la terminologie, les exemples de majuscules et la mise en forme de la procédure.
 
----
+&#x200B;---
 
 ## Ponctuation
 
@@ -85,7 +85,7 @@ Utilisez avec parcimonie. Envisagez plutôt de restructurer la phrase .
 - Utiliser pour les combinaisons : interrupteur marche/arrêt
 - Utiliser pour les adresses et les fractions Internet
 
----
+&#x200B;---
 
 ## Exemples de majuscules
 
@@ -117,7 +117,7 @@ Utilisez avec parcimonie. Envisagez plutôt de restructurer la phrase .
 - Respecter la casse de l’interface utilisateur
 - Si le bouton est en majuscules dans l’interface utilisateur, écrivez-le au lieu de le faire en majuscules de phrase .
 
----
+&#x200B;---
 
 ## Terminologie
 
@@ -147,7 +147,7 @@ Ce sont des mots différents qui ont des significations différentes — utilise
 
 Utilisez toujours l’extension de fichier, et non l’acronyme : « Télécharger un fichier .pdf » (et non « Télécharger un PDF »).
 
----
+&#x200B;---
 
 ## Formatage de procédure
 
@@ -210,7 +210,7 @@ Commencez par documenter la méthode la plus simple :
 - Espaces autour des crochets
 - Ne pas utiliser pour le menu principal : utilisez le fragment de code du menu principal.
 
----
+&#x200B;---
 
 ## Référence en gras et en italique
 
@@ -230,7 +230,7 @@ Commencez par documenter la méthode la plus simple :
 - Texte que l’utilisateur doit saisir : « Saisissez *my.workfront.com* dans la zone d’URL »
 - Jamais pour mettre l&#39;accent — restructurer plutôt la phrase
 
----
+&#x200B;---
 
 ## Notes, Conseils, Avertissements — Conseils Détaillés
 
@@ -258,15 +258,15 @@ Commencez par documenter la méthode la plus simple :
 - Combiner des notes connexes en une seule avec une liste à puces
 - N’utilisez pas de notes pour annoncer de nouvelles fonctionnalités : relisez le texte de l’article
 
----
+&#x200B;---
 
 ## Modèles de référence croisée
 
 | Situation | Motif |
 |-----------|---------|
-| Après avoir donné des informations | « Pour plus d’informations, voir [Nom de l’article](link). » |
-| Sans information préalable | « Pour plus d’informations, voir [Nom de l’article](link). » |
-| Vers une section d&#39;un autre article | « Pour plus d’informations, voir [Section] dans [Nom de l’article](link). » |
+| Après avoir donné des informations | « Pour plus d’informations, voir [Nom de l’article] (link). » |
+| Sans information préalable | « Pour plus d’informations, voir [Nom de l’article] (link). » |
+| Vers une section d&#39;un autre article | « Pour plus d’informations, voir [Section] dans [Nom de l’article] (link). » |
 | Vers une section du même article | « Pour plus d’informations, voir [Section] dans cet article. » |
 
 Emplacement :
@@ -274,7 +274,7 @@ Emplacement :
 - Dans les étapes de la procédure : nouvelle ligne après l’étape
 - Références multiples : liste à puces
 
----
+&#x200B;---
 
 ## Caractéristiques de qualité du DQTI
 
@@ -302,7 +302,7 @@ Emplacement :
 | Récupérabilité | Un lecteur peut-il parcourir les titres et comprendre le contenu ? Des liens sont-ils fournis ? |
 | Efficacité visuelle | Des listes pour 3 éléments et plus ? Tableaux de comparaison ? Pas de paragraphes de mur de texte ? |
 
----
+&#x200B;---
 
 ## Correctifs courants
 

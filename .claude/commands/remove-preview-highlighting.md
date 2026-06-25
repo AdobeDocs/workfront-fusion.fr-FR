@@ -26,7 +26,7 @@ Appliquer uniquement lorsque **tous** sont vrais :
 
 Si la portée n’est pas claire, confirmez avant de modifier.
 
-**Table des matières / pages d’index — toujours ignorer ce cas :** **Jamais** placez un fichier dans l’inventaire lorsque le **seul** libellé lié à l’aperçu est **à l’intérieur** du texte d’affichage d’un lien Markdown pointant vers **un autre** article (par exemple *Envoyez un rapport dans l’environnement de sandbox de prévisualisation*) et **le fichier a** no ****, `class="preview"`no **des variables de fragment de code et** no **en** prose en dehors de links ****. Il ne s’agit pas d’une mise en surbrillance de la prévisualisation sur cette page ; il s’agit uniquement d’une mention Table des matières. S’applique à n’importe quel index/table des matières et non à un seul fichier.
+**Table des matières / pages d’index — toujours ignorer ce cas :** **Jamais** placez un fichier dans l’inventaire lorsque le **seul** libellé lié à l’aperçu est **à l’intérieur** du texte d’affichage d’un lien Markdown pointant vers **un autre** article (par exemple *Envoyez un rapport dans l’environnement de sandbox de prévisualisation*) et **le fichier a** no **&#x200B;**, `class="preview"`no **des variables de fragment de code et** no **en** prose en dehors de links **&#x200B;**. Il ne s’agit pas d’une mise en surbrillance de la prévisualisation sur cette page ; il s’agit uniquement d’une mention Table des matières. S’applique à n’importe quel index/table des matières et non à un seul fichier.
 
 ### Chemins exclus
 
@@ -118,7 +118,7 @@ Si la structure est ambiguë (pas de parallèle clair), **arrêtez** et affichez
 - N’exécutez pas ce workflow sur les chemins d’accès sous **`product-announcements`** (notes de mise à jour et connexes), car l’inventaire doit les exclure.
 - N’inventoriez ou ne modifiez pas les chemins répertoriés sous **[Chemins exclus](#excluded-paths)**, sauf si l’utilisateur demande explicitement à en inclure un.
 - **Ne supprimez pas** ne modifiez pas automatiquement les blocs **`<!-- … -->`)** commentés ; suivez **sections commentées** ci-dessus.
-- Ne supprimez pas le « Prévisualisation » lorsqu’il n’est **pas** concernant ce modèle de disponibilité des fonctionnalités (par exemple, [Prévisualisation de l’environnement Sandbox](·) en tant que **nom du produit** dans un contexte non lié) ; faites preuve de jugement et demandez si vous n’êtes pas sûr.
+- Ne supprimez pas le « Prévisualisation » lorsqu’il n’est **pas** concernant ce modèle de disponibilité des fonctionnalités (par exemple, [Prévisualisation de l’environnement Sandbox] (·) en tant que **nom du produit** dans un contexte non lié) ; faites preuve de jugement et demandez si vous n’êtes pas sûr.
 - Ne modifiez pas `author:` ou le frontMATTER sans rapport à moins que l&#39;utilisateur ne le demande.
 - N’ignorez pas l’étape **afficher → approuver**.
 
@@ -130,4 +130,4 @@ Si la structure est ambiguë (pas de parallèle clair), **arrêtez** et affichez
 
 ## Références
 
-- Respectez les conventions de style de documentation et de référentiel **[Workfront ](https://experienceleague.adobe.com/?lang=fr)** (règles de validation/RP si l’utilisateur effectue une validation).
+- Respectez les conventions de style de documentation et de référentiel **[Workfront &#x200B;](https://experienceleague.adobe.com/?lang=fr)** (règles de validation/RP si l’utilisateur effectue une validation).
