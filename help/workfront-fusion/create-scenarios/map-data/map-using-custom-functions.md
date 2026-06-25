@@ -21,7 +21,7 @@ Les fonctions personnalisées, comme la plupart des éléments de scénario, son
 
 Les fonctions sont de simples fonctions JavaScript. Pour inclure des variables ou des dépendances dans votre logique de fonction, utilisez des packages.
 
-Pour plus d’informations sur les packages, voir [ Utilisation de packages de fonctions personnalisées ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion inclut également des fonctions intégrées qui vous permettent de créer des formules simples ou complexes. Ces fonctions couvrent un large éventail de cas d’utilisation, y compris les fonctions pour les tableaux, les chaînes, les nombres et les données des modules précédents.
 
