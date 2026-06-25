@@ -4,7 +4,7 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: eb4c1ed6991606928beccbb57a8a86182e58a9e7
+source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 19%
@@ -71,7 +71,7 @@ Ce module vous permet d’exécuter un bloc de code. Vous configurez le bloc de 
 
 Ce module exécute une fonction à partir d’un package.
 
-Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d’informations sur les packages, voir [ Utilisation de packages de fonctions personnalisées ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -96,7 +96,7 @@ Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packa
 
 Ce module intègre une variable configurée dans un package à votre scénario.
 
-Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d’informations sur les packages, voir [ Utilisation de packages de fonctions personnalisées ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,11 +136,12 @@ Pour obtenir des instructions sur la configuration d’une fonction personnalis�
    <td>Sélectionnez la fonction personnalisée que vous souhaitez exécuter.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres  </td> 
+   <td role="rowheader">Paramètres [!UICONTROL] </td> 
    <td>Saisissez les valeurs des paramètres de la fonction. Les paramètres disponibles sont basés sur les paramètres configurés lors de la création de la fonction.<p>Si un paramètre possède une valeur par défaut, vous ne le verrez pas dans le champ, mais vous pouvez le remplacer en saisissant ou en mappant une valeur dans le champ.</p></td> 
   </tr> 
    </tbody> 
 </table>
+
 
 
 
