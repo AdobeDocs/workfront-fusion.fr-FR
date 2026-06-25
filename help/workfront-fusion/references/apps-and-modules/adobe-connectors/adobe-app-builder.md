@@ -4,10 +4,10 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
+source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 32%
+source-wordcount: '409'
+ht-degree: 23%
 
 ---
 
@@ -70,6 +70,56 @@ This module allows you to run a code block. You configure the code block when yo
 </table>
 
 -->
+
+### Exécuter une fonction personnalisée à partir d’un package
+
+Ce module exécute une fonction à partir d’un package.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Sélectionnez la connexion contenant la fonction personnalisée que vous souhaitez exécuter. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Sélectionnez le package contenant la fonction que vous souhaitez exécuter dans le scénario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Sélectionnez la fonction que vous souhaitez exécuter dans le scénario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Utiliser la variable depuis le package
+
+Ce module intègre une variable configurée dans un package à votre scénario.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Sélectionnez la connexion contenant la fonction personnalisée que vous souhaitez exécuter. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Sélectionnez le package qui comprend la variable que vous souhaitez importer dans le scénario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Sélectionnez la variable que vous souhaitez importer dans le scénario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Exécuter une fonction personnalisée ou un bloc de code
 
