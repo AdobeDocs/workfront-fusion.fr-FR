@@ -4,10 +4,10 @@ description: Lorsque vous mappez des éléments, vous pouvez utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 16%
+source-wordcount: '665'
+ht-degree: 15%
 
 ---
 
@@ -18,6 +18,10 @@ Vous pouvez créer des fonctions personnalisées dans la zone Fonctions de Fusio
 Les fonctions personnalisées fonctionnent via Adobe App Builder. Votre entreprise doit donc disposer d’une licence Adobe App Builder pour les utiliser.
 
 Les fonctions personnalisées, comme la plupart des éléments de scénario, sont détenues par les équipes.
+
+Les fonctions sont de simples fonctions JavaScript. Pour inclure des variables ou des dépendances dans votre logique de fonction, utilisez des packages.
+
+Pour plus d’informations sur les packages, voir [ Utilisation de packages de fonctions personnalisées ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion inclut également des fonctions intégrées qui vous permettent de créer des formules simples ou complexes. Ces fonctions couvrent un large éventail de cas d’utilisation, y compris les fonctions pour les tableaux, les chaînes, les nombres et les données des modules précédents.
 
