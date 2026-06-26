@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 18%
+source-wordcount: 713
+ht-degree: 16%
 
 ---
 
@@ -102,7 +101,7 @@ La fonctionnalité Afficher les modifications indique les différences entre deu
 
 ### Examiner les modifications
 
-&#x200B;
+
 Chaque modification est affichée sur le côté auquel elle appartient et colorée par ce que la restauration ferait
 faire :
 
@@ -110,9 +109,7 @@ faire :
 * Vert (droite) : cette modification se trouve dans la version à droite et serait ajoutée si la version était restaurée.
 
 Si quelque chose a été modifié, au lieu d’être supprimé ou ajouté, la valeur s’affiche en rouge à gauche et en vert à droite.
-&#x200B;
 Les modifications sont regroupées en sections :
-&#x200B;
 
 * **Scénario** : nom, description et type.
 * **Paramètres du scénario** : options de planification et de traitement.
@@ -121,9 +118,5 @@ Les modifications sont regroupées en sections :
 * **Itinéraires du routeur** : Itinéraires et leur contenu.
 * **Gestionnaires d’erreurs** : branches de gestion des erreurs.
 * **Groupes orphelins** : modules déconnectés sur la zone de travail.
-&#x200B;
 Si les deux versions sont identiques, la vue affiche le message/ **Aucune différence trouvée**.
-&#x200B;
-
-
 

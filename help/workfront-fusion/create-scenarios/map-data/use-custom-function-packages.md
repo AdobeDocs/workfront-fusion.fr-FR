@@ -3,9 +3,9 @@ title: Utilisation de packages de fonctions personnalisées
 description: Lorsque vous mappez des éléments, vous pouvez utiliser des fonctions pour créer des formules simples ou complexes.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: 4ec81401b5a76edd620b9779414ee578966b4315
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '2042'
 ht-degree: 6%
 
 ---
@@ -127,17 +127,26 @@ Si vous manquez d’espace, nous vous recommandons de supprimer les dépendances
 Pour revenir à la liste des packages, sélectionnez la flèche Précédent en regard du nom du package.
 
 <!--Create toc here-->
+* [Fonctions](#functions)
+* [Variables](#variables)
+* [Dépendances](#dependencies)
+* [Historique](#history)
 
 ### Fonctions
 
 La zone **Fonctions** affiche une liste des fonctions du package, y compris le nom de la fonction, son statut, sa taille et le nombre d’entrées attendu.
 
-Pour filtrer la liste des fonctions :
+* [Affichage et gestion de la liste des fonctions](#view-and-manage-the-functions-list)
+* [Créez ou modifiez une fonction dans la zone Packages](#create-or-edit-a-function-in-the-packages-area)
+* [Apporter des modifications à une fonction active](#make-changes-to-a-live-function)
+* [Suppression d’une fonction](#delete-a-function)
+
+#### Affichage et gestion de la liste des fonctions
+
+Pour filtrer la liste Fonctions :
 
 1. Filtrez par statut en cliquant sur **Tous**, **Brouillons** ou **Publié**.
 1. Utilisez la barre de recherche pour rechercher des fonctions spécifiques.
-
-#### Statut de la fonction
 
 Une fonction peut avoir le statut brouillon ou publié.
 
@@ -191,6 +200,9 @@ L’utilisation de brouillons permet d’apporter des modifications en toute sé
    >[!NOTE]
    >
    >La publication d’une fonction efface son historique de versions. La version publiée devient le point de départ actuel et les brouillons précédents ne sont plus conservés.
+
+* [Définir les entrées](#define-inputs)
+* [Tester une fonction](#test-a-function)
 
 ##### Définir les entrées
 
@@ -256,11 +268,14 @@ Une fois la fonction publiée, le bouton **Publier** devient un menu :
 >
 >La suppression d’une fonction la supprime complètement, ainsi que son historique. Tout scénario ou fonction qui l’utilise cessera de fonctionner.
 
-## Variables
+### Variables
 
 Les variables sont des valeurs réutilisables que vos fonctions peuvent utiliser, telles qu’une URL de base, un identifiant de compte ou une clé API. En les stockant en tant que variables, vous définissez une valeur une fois et la mettez à jour à un seul endroit, au lieu de la mettre à jour sur de nombreuses fonctions.
 
-### Créer ou modifier une variable
+* [Créer ou modifier une variable](#create-or-edit-a-variable)
+* [Suppression d’une variable](#delete-a-variable)
+
+#### Créer ou modifier une variable
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
 1. Dans l’onglet **Variables**, sélectionnez **Nouvelle variable**.
@@ -283,7 +298,7 @@ Les variables sont des valeurs réutilisables que vos fonctions peuvent utiliser
 
 1. Sélectionnez **Créer une variable** ou **Enregistrer les modifications**.
 
-### Suppression d’une variable
+#### Suppression d’une variable
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
 1. Dans l’onglet **Variables**, cliquez sur l’icône **Supprimer** en regard de la variable à supprimer.
@@ -292,18 +307,21 @@ Les variables sont des valeurs réutilisables que vos fonctions peuvent utiliser
 >
 >Les fonctions qui utilisent une variable supprimée cesseront de fonctionner.
 
-## Dépendances
+### Dépendances
 
 Certaines fonctions nécessitent des bibliothèques supplémentaires pour faire leur travail. L’onglet **Dépendances** vous permet d’ajouter et de gérer ces bibliothèques.
 
-### Ajout de bibliothèques
+* [Ajout de bibliothèques](#add-libraries)
+* [Suppression d’une bibliothèque](#remove-a-library)
+
+#### Ajout de bibliothèques
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
 1. Dans l’onglet **Dépendances**, saisissez un ou plusieurs noms de bibliothèque, séparés par des virgules. Vous pouvez demander une version spécifique en l’ajoutant après le nom (par exemple, `axios, lodash@4.17.21`).
 
 1. Cliquez sur **Installer**.
 
-### Suppression d’une bibliothèque
+#### Suppression d’une bibliothèque
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
 1. Dans l’onglet **Dépendances**, cliquez sur l’icône **Supprimer** en regard de la bibliothèque à supprimer.
@@ -312,7 +330,7 @@ Certaines fonctions nécessitent des bibliothèques supplémentaires pour faire 
 >
 >Les fonctions qui reposent sur une bibliothèque supprimée peuvent cesser de fonctionner.
 
-## Historique
+### Historique
 
 Chaque fois que vous enregistrez un brouillon d’une fonction, Fusion conserve une copie. L’onglet **Historique** vous permet d’afficher et de restaurer des versions antérieures.
 
