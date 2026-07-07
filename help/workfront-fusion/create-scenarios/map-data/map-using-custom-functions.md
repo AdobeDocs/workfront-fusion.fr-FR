@@ -4,7 +4,7 @@ description: Lorsque vous mappez des éléments, vous pouvez utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
+source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 15%
@@ -21,7 +21,7 @@ Les fonctions personnalisées, comme la plupart des éléments de scénario, son
 
 Les fonctions sont de simples fonctions JavaScript. Pour inclure des variables ou des dépendances dans votre logique de fonction, utilisez des packages.
 
-Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d’informations sur les packages, voir [ Utilisation de packages de fonctions personnalisées ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion inclut également des fonctions intégrées qui vous permettent de créer des formules simples ou complexes. Ces fonctions couvrent un large éventail de cas d’utilisation, y compris les fonctions pour les tableaux, les chaînes, les nombres et les données des modules précédents.
 
@@ -122,3 +122,4 @@ Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfr
 Pour ajouter une fonction personnalisée à un scénario, utilisez le connecteur Adobe App Builder.
 
 Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
