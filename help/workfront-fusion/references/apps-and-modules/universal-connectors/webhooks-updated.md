@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
 workflow-type: tm+mt
-source-wordcount: 1535
-ht-degree: 83%
+source-wordcount: 1571
+ht-degree: 81%
 
 ---
 
@@ -78,7 +78,8 @@ Pour utiliser un webhook afin de connecter une application à Workfront Fusion :
 1. Si vous souhaitez valider les données entrantes, dans le champ **Structure de données**, sélectionnez ou ajoutez la structure de données à utiliser.
 
    Pour plus d’informations sur les structures de données, voir [Structures de données](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. Dans le champ **Informations d’identification**, vous pouvez saisir les informations d’identification à utiliser pour l’autorisation. Pour saisir les informations d’identification, cliquez sur **Ajouter** et saisissez les informations d’identification.
+1. Dans le champ **Type d’autorisation**, indiquez si ce webhook utilise une autorisation de base ou un certificat client.
+1. Dans le champ **Informations d’identification**, vous pouvez saisir les informations d’identification à utiliser pour l’autorisation. Pour saisir les informations d’identification, cliquez sur **Ajouter** et saisissez les informations d’identification. Il peut s’agir du nom d’utilisateur et du mot de passe pour l’authentification de base ou du certificat client et de la clé publique pour l’authentification de certificat.
 1. Activez d’autres paramètres selon vos besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
