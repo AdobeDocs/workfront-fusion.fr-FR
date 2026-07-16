@@ -3,9 +3,8 @@ title: Utiliser Exécuter une fois pour tester un scénario
 description: Vous pouvez tester un scénario sans déclencheur externe à l’aide du bouton Exécuter une fois .
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
 workflow-type: tm+mt
 source-wordcount: 332
 ht-degree: 0%
