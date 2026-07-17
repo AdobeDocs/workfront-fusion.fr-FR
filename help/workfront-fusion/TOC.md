@@ -386,7 +386,7 @@ ht-degree: 53%
       * [Modules Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Modules Adobe User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Modules Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Modules de planification ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Modules de révision et d’approbation unifiés Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+      * [Modules de planification &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Modules de révision et d’approbation unifiés Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Modules Workfront Boards](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Modules Workfront Proof](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * Connecteurs pour les applications tierces {#third-party-app-connectors}
