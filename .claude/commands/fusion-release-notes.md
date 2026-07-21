@@ -97,6 +97,7 @@ Notes :
   
   {Regular description paragraph(s).}
   ```
+
 - Chaque fonctionnalité doit se terminer par un « Pour plus d’informations, voir [...] » lien vers l’article d’aide approprié. Vérifiez que la cible du lien existe dans le référentiel.
 
 ## Étape 4 : ajouter la page à l’index d’aperçu
@@ -111,6 +112,7 @@ Modifier le `help/workfront-fusion/fusion-product-releases/fusion-release-activi
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - S’il s’agit de la première version d’une nouvelle année, ajoutez un nouvel en-tête `## Fusion releases in {YYYY}` au-dessus de l’en-tête de l’année précédente, et enveloppez la section *année précédente* dans un bloc `+++ **Click to open**`/`+++` réductible si ce n’est pas déjà fait (seule l’année en cours reste développée).
 
 ## Étape 5 : ajouter la page à la table des matières
@@ -123,6 +125,7 @@ Modifier le `help/workfront-fusion/TOC.md` :
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Si le titre de l&#39;année en cours n&#39;existe pas encore, ajoutez `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` au-dessus du titre de l&#39;année précédente.
 - **N’ajoutez pas** le préfixe `{hide-from-toc}` aux nouvelles entrées ; il n’est utilisé que pour les entrées plus anciennes une fois qu’elles ne sont plus visibles (voir Incohérences connues ci-dessous).
 
