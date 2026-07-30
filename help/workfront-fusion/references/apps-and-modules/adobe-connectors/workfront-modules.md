@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -256,7 +250,7 @@ Le module renvoie tous les champs standard associés à l’enregistrement, ains
      </tr> 
      <tr> 
       <td>[!UICONTROL Connection]</td> 
-      <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+      <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Type]</td> 
@@ -308,7 +302,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -320,7 +314,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td>[!UICONTROL Outputs]</td> 
-   <td>Sélectionnez les champs d’objet que vous souhaitez inclure dans le lot de sortie pour ce module.</td> 
+   <td>Sélectionnez les champs d’objet que vous souhaitez inclure dans le bundle de sortie pour ce module.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -349,7 +343,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
@@ -361,15 +355,15 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Sélectionnez les champs que vous souhaitez inclure dans le lot de sortie pour ce module.</p> </td> 
+   <td> <p>Sélectionnez les champs que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reference]</td> 
-   <td> <p>Sélectionnez les champs de référence que vous souhaitez inclure dans le lot de sortie pour ce module.</p> </td> 
+   <td> <p>Sélectionnez les champs de référence que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Sélectionnez les champs de collection que vous souhaitez inclure dans le lot de sortie pour ce module.</p> </td> 
+   <td> <p>Sélectionnez les champs de collection que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Optional Filter]</td> 
@@ -479,7 +473,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -496,7 +490,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -523,7 +517,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 >   Pour valider les utilisateurs et utilisatrices ajoutés dans un lot volumineux, vous pouvez ajouter ce lot de personnes directement dans Adobe Admin Console.
 >
->   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
+>   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
 
 +++
 
@@ -603,7 +597,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -655,7 +649,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Force delete]</td> 
@@ -704,7 +698,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Document ID]</td> 
@@ -727,7 +721,7 @@ Ce module d’action reçoit des URL de fichier prédéfinies qui peuvent être 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Document ID]</td> 
@@ -758,7 +752,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -790,6 +784,10 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 #### Options d’action diverses
+
+* [Tâche](#task)
+* [Problème](#issue)
+* [Projet](#project)
 
 ##### Tâche
 
@@ -959,7 +957,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+    <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -973,7 +971,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
   <tr> 
     <td>[!UICONTROL Output Custom Form]</td>
-     <td> <p>Sélectionnez les formulaires personnalisés à inclure dans le lot de sortie pour ce module, puis sélectionnez les champs spécifiques à partir des formulaires personnalisés à inclure dans la sortie.</p> </td> 
+     <td> <p>Sélectionnez les formulaires personnalisés à inclure dans le bundle de sortie pour ce module, puis sélectionnez les champs spécifiques à partir des formulaires personnalisés à inclure dans la sortie.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL References]</td>
@@ -1289,7 +1287,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1326,7 +1324,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1373,8 +1371,8 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 >[!IMPORTANT]
 >
->Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans les nouveaux scénarios.
->Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module recherche les enregistrements dans un objet de Workfront correspondant à la requête que vous spécifiez.
 
@@ -1388,7 +1386,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connexion de Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, consultez <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connecter Workfront à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1674,7 +1672,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Approbation d’épreuve</td> 
+   <td>Approbation d'épreuve</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -2382,6 +2380,13 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 
 ## Filtres d’abonnement aux événements dans les modules Workfront > [!UICONTROL Surveiller les événements]
 
+Les filtres dans les abonnements aux événements vous permettent de vous assurer que vos scénarios s’exécutent uniquement lorsque certains paramètres sont remplis.
+
+* [Bonnes pratiques relatives au filtre d&#39;abonnement aux événements](#event-subscription-filter-best-practices)
+* [Utilisation de filtres avancés](#using-advanced-filters)
+
+### Bonnes pratiques relatives au filtre d&#39;abonnement aux événements
+
 >[!NOTE]
 >
 >* Il est vivement recommandé d’utiliser des filtres d’abonnement aux événements dans vos modules [!UICONTROL Surveiller les événements].
@@ -2390,7 +2395,7 @@ Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctio
 >
 >   Pour plus d’informations sur la nouvelle version de l’abonnement aux événements, consultez [Contrôle de version des abonnements aux événements](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) dans la documentation de Workfront.
 >
->   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau de l’abonnement aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr)].
+>   Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fusion pendant la mise à niveau des abonnements aux événements, y compris un enregistrement de webinaire, consultez [Conservation de vos scénarios Fusion pendant la mise à niveau de la version V2 des abonnements aux événements](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=fr).
 
 Le module [!UICONTROL Surveiller les événements] de Workfront déclenche des scénarios basés sur un webhook qui crée un abonnement à un événement dans l’API Workfront. L’abonnement à un événement est un ensemble de données qui détermine les événements envoyés au webhook. Par exemple, si vous configurez un module [!UICONTROL Surveiller les événements] qui recherche les problèmes, alors l’abonnement à l’événement envoie uniquement les événements liés aux problèmes.
 
@@ -2408,13 +2413,13 @@ Les opérateurs suivants sont disponibles dans le filtre Workfront > Surveiller 
 * Est inférieur ou égal à
 * Contient
 * Existe
-   * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
 * N’existe pas
-   * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
 * Modifié
-   * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
-   * Cet opérateur ignore le champ État.
-   * Lorsque vous utilisez `Changed`, sélectionnez **Événements mis à jour uniquement** dans le champ **Origine de l’enregistrement**.
+  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ignore le champ État.
+  * Lorsque vous utilisez `Changed`, sélectionnez **Événements mis à jour uniquement** dans le champ **Origine de l’enregistrement**.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2429,7 @@ Les opérateurs suivants sont disponibles dans le filtre Workfront > Surveiller 
 >
 >**Exemple :** supposons un scénario de traitement de nouveaux problèmes affectés à une utilisatrice spécifique, Ana.
 >
->### Filtrer les événements à l’aide d’un filtre d’abonnement aux événements (recommandé)
+>#### Filtrer les événements à l’aide d’un filtre d’abonnement aux événements (recommandé)
 >
 >En utilisant le filtre d’événement, vous pouvez configurer le webhook pour qu’il déclenche le scénario lorsqu’un problème est affecté à Ana lors de la création du problème. L’ID d’utilisatrice d’Ana est b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2437,7 @@ Les opérateurs suivants sont disponibles dans le filtre Workfront > Surveiller 
 >
 >Si 100 problèmes sont créés en une journée, mais que seuls deux d’entre eux sont affectés à Ana, le scénario s’exécutera deux fois.
 >
->### Filtrer les événements au sein du scénario (non recommandé)
+>#### Filtrer les événements au sein du scénario (non recommandé)
 >
 >Pour filtrer les événements afin que seuls les problèmes affectés à Ana soient traités, vous pouvez créer un filtre après le module [!UICONTROL Événements de contrôle].
 >
@@ -2445,3 +2450,26 @@ Pour plus d’informations sur les abonnements aux événements Workfront, consu
 Pour plus d’informations sur les webhooks, consultez [Déclencheurs instantanés (webhooks) dans Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Pour plus d’informations sur les filtres dans les scénarios, consultez [Ajouter un filtre à un scénario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Utilisation de filtres avancés
+
+Le module Workfront > Événements Espion propose deux types de filtres.
+
+* **Simple** : ce filtre fournit une interface qui vous permet de sélectionner des champs, des opérateurs et des valeurs, ainsi que des opérateurs ET et OU pour créer un filtre.
+* **Avancé** : ce filtre vous permet de télécharger un fichier JSON qui représente votre filtre.
+
+#### Filtres simples ou avancés
+
+La principale différence entre les deux types est l’état du filtre.
+
+* **Simple** : lors de la configuration d’un filtre simple, vous choisissez de filtrer selon l’ancien état ou le nouvel état d’un champ. En d’autres termes, vous décidez si vous souhaitez activer le scénario lorsque le champ passe **de** à une valeur donnée ou s’il faut l’activer lorsqu’il passe **à** à une valeur donnée. L’utilisation des opérateurs AND et OR permet d’inclure plusieurs champs et valeurs, mais ils doivent partager le même état. Vous ne pouvez pas utiliser l’ancien état pour certains champs et le nouvel état pour d’autres.
+* **Avancé** : vous pouvez configurer le fichier JSON dans un filtre avancé afin de spécifier des valeurs pour les anciens et les nouveaux états d’un même filtre. Par exemple, vous pouvez indiquer que vous souhaitez déclencher un scénario lorsqu’un projet passe d’un statut Planification à un statut Actuel. Cela exclurait les projets qui passent de Planification à Immobilisations ou qui passent de En attente à Actuels.
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+
