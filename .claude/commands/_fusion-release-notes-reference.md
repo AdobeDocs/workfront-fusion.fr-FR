@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 &#x200B;---
 
+## Exemple 3 : lancement d’un nouveau connecteur
+
+Basé sur `fusion-2026-7-27.md`.
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+Pour un lancement de connecteur de ce type, demandez toujours (selon l’étape 1 de la compétence) si l’utilisateur souhaite qu’une redirection soit configurée pour celui-ci.
+
+&#x200B;---
+
 ## Modèle de mise à jour de la page Aperçu (`fusion-release-activity.md`)
 
 Ajouter la semaine du 20 juillet 2026 à une section du mois de juillet 2026 existante :
@@ -143,6 +165,21 @@ Ajout de la semaine du 20 juillet 2026 comme dernière entrée :
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+&#x200B;---
+
+## Redirige la référence du référentiel (pour l’étape 7)
+
+Le référentiel de `redirects` frère (`Adobe-Enterprise-Docs/redirects`) contient des redirections 1:1 dans les fichiers CSV sous `redirects/`, une par environnement : `redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`.
+
+Règles de ligne (à partir du fichier README de ce référentiel) :
+
+- `source` doit commencer par `/en` (les variations de langue sont créées automatiquement) et ne contenir aucun espace.
+- `destination` peut s’agir d’un chemin relatif commençant par `/en` ou d’une URL complète commençant par `https` et ne doit contenir aucun espace.
+- Pas de doublons `source`, et pas de doublons `source`/`destination`.
+- Une redirection ne doit pas entraîner de boucle de redirection.
+
+Après l’ajout d’une ligne, une requête de tirage doit toujours être générée dans le référentiel `redirects` et fusionnée avant de passer en ligne (~5 minutes après la fusion pour les redirections 1:1). Cette compétence n’ajoute la ligne qu’une fois que l’utilisateur l’a confirmée ; elle n’élève pas la requête de tirage.
 
 &#x200B;---
 
