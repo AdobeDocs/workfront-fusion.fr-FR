@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
 source-wordcount: 3034
@@ -187,7 +189,7 @@ Ce module de déclenchement lance un scénario lorsqu’un champ est mis à jour
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Sélectionnez le type d’enregistrement qui contient le champ que le module doit surveiller. Vous devez choisir un type d’enregistrement pour lequel [!UICONTROL Field History] est activé dans la configuration de [!DNL Salesforce]. Pour plus d’informations, consultez la section <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Suivi de l’historique des champs</a> dans la documentation [!DNL Salesforce]. </p> </td> 
+   <td> <p>Sélectionnez le type d’enregistrement qui contient le champ que le module doit surveiller. Vous devez choisir un type d’enregistrement pour lequel [!UICONTROL Field History] est activé dans la configuration de [!DNL Salesforce]. Pour plus d’informations, consultez la section <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Suivi de l’historique des champs</a> dans la documentation [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -240,7 +242,7 @@ Ce module de déclenchement exécute un scénario lorsqu’une personne envoie u
 Ce module nécessite une configuration supplémentaire. Un flux doit être configuré pour les messages sortants.
 
 * Pour obtenir des instructions sur les flux dans Salesforce, voir [Automatiser les tâches avec des flux](https://help.salesforce.com/s/articleView?id=platform.flow.htm) dans la documentation de Salesforce.
-* Pour plus d’informations sur la configuration d’un message sortant dans Salesforce, voir [ Envoyer un message sortant à partir de votre flux déclenché par enregistrement ](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) dans la documentation de Salesforce
+* Pour plus d’informations sur la configuration d’un message sortant dans Salesforce, voir [&#x200B; Envoyer un message sortant à partir de votre flux déclenché par enregistrement &#x200B;](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) dans la documentation de Salesforce
 
 <!--
 
@@ -575,7 +577,7 @@ Ce module d’action charge un seul fichier dans Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL Salesforce] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à[!DNL  Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL Salesforce] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à[!DNL &#x200B; Adobe Workfront Fusion] - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -615,7 +617,7 @@ Ce module d’action permet de récupérer tous les enregistrements répondant �
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL Salesforce] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à[!DNL  Adobe Workfront Fusion] - Instructions de base</a></td> 
+   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL Salesforce] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à[!DNL &#x200B; Adobe Workfront Fusion] - Instructions de base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
