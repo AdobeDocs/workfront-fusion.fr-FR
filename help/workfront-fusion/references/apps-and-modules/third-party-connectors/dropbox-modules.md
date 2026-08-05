@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
 TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3309
+source-wordcount: 3311
 ht-degree: 74%
 
 ---
@@ -44,7 +41,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -155,8 +152,8 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Modules déclencheurs](#trigger-modules)
-* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] &#x200B;](#modules-for-getting-dropbox-files-and-folders)
-* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] &#x200B;](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [Modules pour l’obtention de fichiers et de dossiers  [!DNL Dropbox] ](#modules-for-getting-dropbox-files-and-folders)
+* [Modules pour la création et la modification de fichiers et de données  [!DNL Dropbox] ](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [Autres modules](#other-modules)
 
 ### Modules déclencheurs
@@ -713,7 +710,7 @@ Corps :
 }
 ```
 
-Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Lot] > [!UICONTROL Corps] > entrées.
+Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Corps] > entrées.
 
 Dans notre exemple, 10 billets ont été retournés.
 

@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
 TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4690
+source-wordcount: 4692
 ht-degree: 98%
 
 ---
@@ -49,7 +47,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -278,7 +276,7 @@ Ce module de déclenchement planifié lance un scénario lorsqu’une nouvelle b
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Pour des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la connexion de votre compte [!DNL GitLab] à Workfront Fusion, consultez <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Connecter [!DNL GitLab] à Workfront Fusion</a> dans cet article.</td> 
    </tr> 
    <tr> 
    <td role="rowheader">Nbre max. de résultats</td> 

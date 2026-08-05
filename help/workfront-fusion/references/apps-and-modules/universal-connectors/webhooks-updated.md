@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
 TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2418
-ht-degree: 59%
+source-wordcount: 2420
+ht-degree: 58%
 
 ---
 
@@ -43,7 +41,7 @@ Un webhook est un appel HTTP déclenché par un événement. Vous pouvez utilise
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -240,7 +238,7 @@ Lors de la création ou de la modification d’un webhook personnalisé dans Fus
 
 ## La file d’attente webhook
 
-Si un webhook reçoit des données et qu’aucun scénario actif n’attend ces données, les données sont stockées dans la file d’attente. Une fois le scénario activé, il traite tous les lots en attente dans la file d’attente de manière séquentielle.
+Si un webhook reçoit des données et qu’aucun scénario actif n’attend ces données, les données sont stockées dans la file d’attente. Une fois le scénario activé, il traite tous les bundles en attente dans la file d’attente de manière séquentielle.
 
 >[!IMPORTANT]
 >
@@ -389,29 +387,29 @@ Le délai d’attente pour l’envoi d’une réponse est de 5 minutes. Si la r�
 >Configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>Code HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Clé</strong> : type de contenu</li> 
->&gt;     <li><strong>Valeur</strong> : text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Code de statut HTTP de succès 2xx (par exemple, 200)</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>Code HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Clé</strong> : type de contenu</li> 
+&gt;     <li><strong>Valeur</strong> : text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
->![En-têtes personnalisés &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![En-têtes personnalisés ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Cette opération génère une réponse HTML qui s’affiche dans un navigateur web :
 >
@@ -424,23 +422,23 @@ Le délai d’attente pour l’envoi d’une réponse est de 5 minutes. Si la r�
 >**Exemple :** configurez le module [!UICONTROL Réponse webhook] comme suit :
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Code d’état HTTP de redirection 3xx, par exemple 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong> : emplacement</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong> : URL vers laquelle vous souhaitez effectuer les redirections.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Réponse du Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

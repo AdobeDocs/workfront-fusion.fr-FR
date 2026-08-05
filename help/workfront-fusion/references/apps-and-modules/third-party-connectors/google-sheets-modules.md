@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
 TQID: https://experienceleague.adobe.com/jotAS2NHIZV4NNM0tvhGFlTnT-owWSKo8zo7cV4J7dM
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4067
+source-wordcount: 4069
 ht-degree: 67%
 
 ---
@@ -43,7 +40,7 @@ Pour obtenir des instructions sur la procédure de connexion de votre compte [!D
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -728,7 +725,7 @@ Pour plus de détails, voir [developers.google.com/sheets/api/limits](https://de
 
 ## Conseils et astuces
 
-* [Récupérer des cellules vides à partir d&#39;une feuille  [!DNL Google] &#x200B;](#get-empty-cells-from-a-google-sheet)
+* [Récupérer des cellules vides à partir d&#39;une feuille  [!DNL Google] ](#get-empty-cells-from-a-google-sheet)
 * [Ajouter un bouton dans une feuille pour exécuter un scénario](#add-a-button-in-a-sheet-to-run-a-scenario)
 
 ### Récupérer des cellules vides à partir d’un [!DNL Google Sheet]
@@ -743,7 +740,7 @@ Ici, « E » est la colonne et « est nul » est la condition. Vous pouvez crée
 
 ### Ajouter un bouton dans une feuille pour exécuter un scénario
 
-1. Dans Workfront Fusion, insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [&#x200B; Webhooks &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. Dans Workfront Fusion, insérez le module **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** dans le scénario et configurez-le. Pour obtenir des instructions, voir [ Webhooks ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Copiez l’URL du webhook.
 1. Exécutez le scénario.

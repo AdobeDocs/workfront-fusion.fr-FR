@@ -4,9 +4,9 @@ description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser l
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 965cb643039be36eb3608cd801439a6a055974e4
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1432'
 ht-degree: 17%
 
 ---
@@ -40,7 +40,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -233,7 +233,7 @@ Ce module applique un ou plusieurs paramètres prédéfinis de Lightroom XMP à 
    <td>Sélectionnez le type de stockage dans lequel l’image est stockée.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres prédéfinis</td> 
+   <td role="rowheader">Préréglages</td> 
    <td>Pour chaque paramètre prédéfini à appliquer, cliquez sur <b>Ajouter un élément</b>, saisissez l’URL prédéfinie du paramètre prédéfini et sélectionnez son type de stockage.</td> 
   </tr> 
   <tr> 

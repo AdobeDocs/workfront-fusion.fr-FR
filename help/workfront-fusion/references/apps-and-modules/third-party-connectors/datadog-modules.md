@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
 TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 959
-ht-degree: 84%
+source-wordcount: 961
+ht-degree: 83%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 84%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Datadog] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -46,7 +42,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -162,7 +158,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, consultez <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, consultez <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Utiliser un domaine dédié]</td> 
@@ -202,7 +198,7 @@ Méthode : `GET`
 
 ![Exemple d’appel API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
-Le résultat se trouve dans la sortie du module sous Offre spéciale > Corps > Tableaux de bord.
+Le résultat se trouve dans la sortie du module sous Bundle > Corps > Tableaux de bord.
 
 Dans notre exemple, 3 tableaux de bord ont été renvoyés :
 
@@ -220,7 +216,7 @@ La limite pour les payloads compressées est de 3,2 mégaoctets (3 200 000), 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, consultez <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Datadog] à Workfront Fusion, consultez <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Datadog] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

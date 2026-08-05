@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
 TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2238
+source-wordcount: 2240
 ht-degree: 69%
 
 ---
@@ -39,7 +37,7 @@ Les modules SFTP d’Adobe Workfront Fusion vous permettent de surveiller les mo
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -235,7 +233,7 @@ Ce module d’action crée un dossier à l’emplacement spécifié.
 
 >[!NOTE]
 >
->Si le dossier existe déjà, le module renvoie une erreur. Pour poursuivre le flux sans interruption, associez un itinéraire de gestionnaire d’erreurs au module afin de détecter l’erreur et utilisez la directive [!UICONTROL Resume] pour poursuivre le flux. Pour plus d’informations sur l’association d’un itinéraire de gestionnaire d’erreurs, voir [&#x200B; Gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Pour plus d’informations sur l’itinéraire du gestionnaire d’erreurs, voir [Directives relatives à la gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Si le dossier existe déjà, le module renvoie une erreur. Pour poursuivre le flux sans interruption, associez un itinéraire de gestionnaire d’erreurs au module afin de détecter l’erreur et utilisez la directive [!UICONTROL Resume] pour poursuivre le flux. Pour plus d’informations sur l’association d’un itinéraire de gestionnaire d’erreurs, voir [ Gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Pour plus d’informations sur l’itinéraire du gestionnaire d’erreurs, voir [Directives relatives à la gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 

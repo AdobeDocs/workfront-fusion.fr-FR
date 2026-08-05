@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
 TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2053
-ht-degree: 80%
+source-wordcount: 2055
+ht-degree: 79%
 
 ---
 
@@ -39,7 +37,7 @@ Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflow
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -561,12 +559,12 @@ Ce module vous permet d’effectuer un appel API personnalisé.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connexion]</td> 
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Office 365] à Workfront Fusion, voir <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Création d’une connexion à Adobe Workfront Fusion - Instructions de base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Saisissez un chemin relatif à <code>https://graph.microsoft.com</code>. Exemple :<code> /v1.0/me/events</code></p> </td> 
+   <td> <p>Saisissez un chemin d’accès relatif à <code>https://graph.microsoft.com</code>. Exemple :<code> /v1.0/me/events</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 

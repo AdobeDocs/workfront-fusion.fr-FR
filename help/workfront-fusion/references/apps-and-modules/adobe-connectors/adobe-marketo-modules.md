@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
 TQID: https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2255
-ht-degree: 100%
+source-wordcount: 2257
+ht-degree: 99%
 
 ---
 
@@ -47,7 +45,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -198,7 +196,7 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Sélectionnez les champs que vous souhaitez inclure dans le lot de sortie pour ce module.</p> </td> 
+   <td> <p>Sélectionnez les champs que vous souhaitez inclure dans le bundle de sortie pour ce module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -372,7 +370,7 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -598,7 +596,7 @@ Ce module de recherche récupère une liste d’enregistrements correspondant à
    <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type d’enregistrement]</td> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>Sélectionnez le type d’enregistrement à rechercher.</p> 
     <ul> 
      <li> <p>[!UICONTROL Campaigns]</p> </li> 

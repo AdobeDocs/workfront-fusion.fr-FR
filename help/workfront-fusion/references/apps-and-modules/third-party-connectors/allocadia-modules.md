@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
 TQID: https://experienceleague.adobe.com/bCfkq5fzw21hmZWLrWztL27g2RAlBbyk9vPEQ-v6bBU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1467
-ht-degree: 95%
+source-wordcount: 1469
+ht-degree: 94%
 
 ---
 
@@ -43,7 +41,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -190,7 +188,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-#### [!UICONTROL Lire un enregistrement]
+#### [!UICONTROL Lire l’enregistrement]
 
 Ce module d’action lit les données d’un seul enregistrement dans [!DNL Allocadia].
 
@@ -206,7 +204,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -237,7 +235,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -274,7 +272,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -335,7 +333,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL Allocadia] à Workfront Fusion, consultez <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Allocadia] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 

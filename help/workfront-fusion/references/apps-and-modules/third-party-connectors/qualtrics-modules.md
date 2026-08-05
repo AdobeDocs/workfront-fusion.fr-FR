@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
 TQID: https://experienceleague.adobe.com/gbH5KTIEYyIAVMSjhmnAyuApEPu7i3eicmMvmJC-gi4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 352
-ht-degree: 88%
+source-wordcount: 354
+ht-degree: 86%
 
 ---
 
@@ -41,7 +40,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 

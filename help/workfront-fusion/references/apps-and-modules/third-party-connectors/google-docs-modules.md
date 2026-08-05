@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
 TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4106
+source-wordcount: 4108
 ht-degree: 83%
 
 ---
@@ -47,7 +44,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -215,7 +212,7 @@ Ce module d’action crée une copie d’un modèle de document existant et remp
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel vous souhaitez créer le document.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel vous souhaitez créer le document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel vous souhaitez créer le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas utilisateur ou utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel vous souhaitez créer le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas utilisateur ou utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -239,7 +236,7 @@ Ce module d’action supprime un document.
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document à supprimer, puis sélectionnez ce dernier.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document à supprimer, puis sélectionnez ce dernier.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document à supprimer, puis sélectionnez le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document à supprimer, puis sélectionnez le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -305,7 +302,7 @@ Vous devrez peut-être augmenter vos autorisations.
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier contenant le document à récupérer.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier contenant le document à récupérer.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé qui contient le document à récupérer.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé qui contient le document à récupérer.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -460,7 +457,7 @@ Ce module d’action récupère une liste de documents du dossier sélectionné.
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dont vous souhaitez répertorier les documents.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dont vous souhaitez répertorier les documents.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé dont vous souhaitez répertorier les documents.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé dont vous souhaitez répertorier les documents.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -496,7 +493,7 @@ Ce module d’action remplace le texte dans un document.
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document auquel vous souhaitez ajouter du texte, puis sélectionnez le document.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document auquel vous souhaitez ajouter du texte, puis sélectionnez le document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document auquel vous souhaitez ajouter du texte, puis sélectionnez le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas utilisateur ou utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document auquel vous souhaitez ajouter du texte, puis sélectionnez le document.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas utilisateur ou utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -540,7 +537,7 @@ Ce module d’action remplace une image existante. Les proportions de l’image 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document dont vous souhaitez remplacer une image, puis sélectionnez le document.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier dans lequel se trouve le document dont vous souhaitez remplacer une image, puis sélectionnez le document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document dont vous souhaitez remplacer une image, puis sélectionnez le document.</p> <p>Remarque : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé sur lequel se trouve le document dont vous souhaitez remplacer une image, puis sélectionnez le document.</p> <p>Remarque : si vous avez sélectionné l’option [!DNL Google Docs] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -577,7 +574,7 @@ Ce module de déclenchement renvoie les détails du document lorsqu’un nouveau
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Sélectionnez le dossier à surveiller pour les documents créés ou modifiés.</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Sélectionnez le dossier à surveiller pour les documents créés ou modifiés.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et les utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé que vous souhaitez surveiller.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Shared Drive] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (disponible pour les utilisateurs et utilisatrices de [!DNL Google Workspace] uniquement)</p> <p>Indiquez si vous souhaitez [!UICONTROL Use Domain Admin Access]. Si vous sélectionnez [!UICONTROL Yes], la requête est émise en tant qu’administrateur ou administratrice de domaine et tous les lecteurs partagés administrés par la personne effectuant la requête seront renvoyés.</p> <p>Sélectionnez le lecteur partagé que vous souhaitez surveiller.</p> <p>Note : si vous avez sélectionné l’option [!DNL Google Shared Drive] dans ce champ et que vous n’êtes pas un utilisateur ou une utilisatrice de [!DNL Google Workspace], l’erreur <code>[400] Invalid Value</code> est renvoyée.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -684,7 +681,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
 
 ![Exemple d’appel API](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
-Les détails du document récupéré se trouvent dans la sortie du module sous [!UICONTROL Lot] > [!UICONTROL Corps].
+Les détails du document récupéré se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Corps].
 
 ![Sortie d’appel API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 

@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
 TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2707
-ht-degree: 80%
+source-wordcount: 2709
+ht-degree: 79%
 
 ---
 
@@ -44,7 +41,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -722,7 +719,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
 
 #### [!UICONTROL Récupérer les données]
 
-Cette action récupère les données de la plage de feuilles de travail définie et renvoie un lot pour chaque ligne.
+Cette action récupère les données de la plage de feuilles de travail définie et renvoie un bundle pour chaque ligne.
 
 <table style="table-layout:auto"> 
  <col> 

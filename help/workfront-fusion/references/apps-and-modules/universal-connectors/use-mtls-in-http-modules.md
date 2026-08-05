@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 899
-ht-degree: 66%
+source-wordcount: 901
+ht-degree: 65%
 
 ---
 
@@ -51,7 +50,7 @@ Le protocole TLS mutuel permet à cette confirmation d’identité de se déroul
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
