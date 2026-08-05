@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -49,13 +48,13 @@ Les scénarios peuvent être restaurés pendant 7 jours après la suppression. E
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
 ## Restaurer un scénario supprimé
 
-1. Dans le volet de navigation de gauche, cliquez sur Présentation de l’équipe.
+1. Dans le volet de navigation de gauche, cliquez sur Présentation de l’organisation.
 1. Cliquez sur l’onglet **Corbeille** près du haut de la fenêtre.
 1. (Facultatif) Filtrez la liste des scénarios supprimés en saisissant un terme de recherche dans la barre **Rechercher**, en sélectionnant une période dans le champ **Supprimé entre** ou en sélectionnant une équipe spécifique dans le menu déroulant **Équipe**.
 1. Sélectionnez un ou plusieurs scénarios à restaurer, puis cliquez sur **Restaurer** dans la barre située en bas de l’écran.
