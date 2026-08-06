@@ -10,10 +10,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2252
-ht-degree: 77%
+source-wordcount: 2254
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -396,7 +396,7 @@ Ce module d’action vous permet d’effectuer un appel API personnalisé.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, consultez <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour des instructions sur la connexion de votre compte [!DNL DocuSign] à Workfront Fusion, consultez <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connecter [!DNL DocuSign] à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Account]</td> 
@@ -452,7 +452,7 @@ Indique le moment où la requête commence à vérifier les modifications de sta
 
 ![Exemple de configuration Docusign](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 
-Le résultat se trouve dans la sortie du module sous Lot > Corps > Enveloppes.
+Le résultat se trouve dans la sortie du module sous Bundle > Corps > Enveloppes.
 
 Dans notre exemple, six enveloppes ont été renvoyées :
 

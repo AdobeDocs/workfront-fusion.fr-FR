@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2045
-ht-degree: 59%
+source-wordcount: 2047
+ht-degree: 58%
 
 ---
 
@@ -45,7 +45,7 @@ Vous devez également avoir [!DNL Google Slides] dans votre [!DNL Google Drive].
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -534,7 +534,7 @@ L’appel API suivant renvoie les détails de la présentation :
 
 ![Détails de la présentation](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
-Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Lot] > [!UICONTROL Corps] > [!UICONTROL presentationId].
+Les correspondances de la recherche se trouvent dans la sortie du module sous [!UICONTROL Bundle] > [!UICONTROL Corps] > [!UICONTROL presentationId].
 
 Dans notre exemple, les détails de présentation demandés ont été renvoyés :
 

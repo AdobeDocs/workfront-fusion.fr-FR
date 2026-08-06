@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1871
-ht-degree: 85%
+source-wordcount: 1876
+ht-degree: 84%
 
 ---
 
@@ -43,7 +43,7 @@ Pour obtenir des instructions sur la création d’un scénario, consultez les a
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -452,7 +452,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 #### [!UICONTROL Itérer les pièces jointes]
 
-Vous pouvez itérer les pièces jointes d’e-mail. Chaque pièce jointe est un lot distinct dans la sortie du module. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
+Vous pouvez itérer les pièces jointes d’e-mail. Chaque pièce jointe est un bundle distinct dans la sortie du module. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
 
 <table style="table-layout:auto"> 
  <col> 

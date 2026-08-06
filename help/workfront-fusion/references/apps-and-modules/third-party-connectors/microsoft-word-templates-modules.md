@@ -10,10 +10,10 @@ product_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1363
-ht-degree: 92%
+source-wordcount: 1365
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -219,11 +219,11 @@ Ce module du transformateur permet de remplir un document avec les données indi
 
 ### [!UICONTROL Remplir un document avec un lot de données] {#fill-a-document-with-a-batch-of-data}
 
-Ce module d’agrégation s’avère utile si vos entrées de données sont des lots distincts. Grâce à ce module, vous pouvez facilement configurer la structure requise pour le champ Valeur et mapper les éléments à chaque élément de valeur. Contrairement au module Remplir un document, le champ Valeurs du module Remplir un document avec un lot de données n’autorise qu’une seule entrée contenant des variables.
+Ce module d’agrégation s’avère utile si vos entrées de données sont des bundles distincts. Grâce à ce module, vous pouvez facilement configurer la structure requise pour le champ Valeur et mapper les éléments à chaque élément de valeur. Contrairement au module Remplir un document, le champ Valeurs du module Remplir un document avec un lot de données n’autorise qu’une seule entrée contenant des variables.
 
-Vous pouvez également utiliser ce module si vos entrées de données sont fournies sous la forme d’un tableau, en utilisant le module *Itérateur* pour transformer le contenu du tableau en une série de lots.
+Vous pouvez également utiliser ce module si vos entrées de données sont fournies sous la forme d’un tableau, en utilisant le module *Itérateur* pour transformer le contenu du tableau en une série de bundles.
 
-Les valeurs réelles sont créées et renseignées pour chaque lot entrant. Le modèle est produit une fois tous les lots d’entrée traités.
+Les valeurs réelles sont créées et renseignées pour chaque bundle entrant. Le modèle est produit une fois tous les bundles d’entrée traités.
 
 Ce module d’agrégation est particulièrement utile pour la création de listes ou de rapports.
 
@@ -245,7 +245,7 @@ Ce module d’agrégation est particulièrement utile pour la création de liste
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by]</td> 
-   <td> Définissez une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont séparées en groupes ayant la même valeur d’expression. Chaque groupe génère une sortie en tant que lot distinct contenant une clé avec l’expression évaluée et le texte agrégé. Ce faisant, vous pouvez utiliser la clé comme filtre dans les modules suivants.</td> 
+   <td> Définissez une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont séparées en groupes ayant la même valeur d’expression. Chaque groupe génère une sortie en tant que bundle distinct contenant une clé avec l’expression évaluée et le texte agrégé. Ce faisant, vous pouvez utiliser la clé comme filtre dans les modules suivants.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation]</td> 

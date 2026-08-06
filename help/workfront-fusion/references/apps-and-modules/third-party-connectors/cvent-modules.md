@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1134
+source-wordcount: 1136
 ht-degree: 80%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 80%
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Cvent] et le connecter à plusieurs applications et services tiers.
 
-Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index des articles](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Pour obtenir des instructions sur la création d’un scénario, consultez les articles sous [Créer des scénarios : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
   <tr> 
    <td role="rowheader">Licence Adobe Workfront Fusion</td> 
    <td>
-   <p>Basé sur les opérations : aucune exigence de licence Workfront Fusion</p>
+   <p>Basé sur les opérations : disponible pour les organisations disposant de licences basées sur les opérations</p>
    <p>Basé sur un connecteur (hérité) : Workfront Fusion pour l’automatisation et l’intégration du travail </p>
    </td> 
   </tr> 
@@ -321,7 +321,7 @@ Ce module de recherche récupère des informations sur tous les enregistrements 
    <td> <p>Pour plus d’informations sur la connexion de votre compte [!DNL Cvent] à Workfront Fusion, voir <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Connexion de [!DNL Cvent] à Adobe Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type d’enregistrement]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 
    <td> <p>Sélectionnez le type d’enregistrement que vous souhaitez répertorier.</p> 
     <ul> 
      <li> <p>Tous les événements de votre compte [!DNL Cvent]</p> </li> 
