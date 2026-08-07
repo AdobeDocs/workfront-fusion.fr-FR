@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
 source-wordcount: 2392
 ht-degree: 73%
@@ -945,7 +943,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
@@ -954,3 +952,4 @@ Cependant, il est préférable d’utiliser l’intervalle à demi-ouverture à 
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
