@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 73%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 73%
 
 ### maintenant
 
-Obtient l’heure actuelle au format AAAA-MM-JJ-hh:mm:ss.
+Obtient l&#39;heure actuelle au format ` YYYY-MM-DD-hh:mm:ss`.
 
 ### horodatage
 
@@ -721,7 +719,7 @@ La fonction `formatDate` renvoie une représentation textuelle de la valeur Date
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  Renvoie 2018-10-01 09:32 AM
+  Renvoie 2018-10-01 09:32
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
@@ -945,7 +943,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
