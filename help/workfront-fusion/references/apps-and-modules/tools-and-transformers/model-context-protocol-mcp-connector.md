@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # Module de l’agent MCP
-
-<!--SET UP REDIRECTS-->
 
 Le protocole MCP (Model Context Protocol) permet de connecter en toute sécurité des modèles de langage d’IA à d’autres applications. Vous configurez des serveurs MCP qui permettent au modèle d’IA d’accéder à l’application. Vous pouvez ensuite envoyer une invite au modèle d’IA, qui peut renvoyer des informations depuis l’application.
 
@@ -83,7 +80,7 @@ Ce module d’action traite une invite à l’aide du modèle de langue et des s
        <li><b>LLM</b> : sélectionnez le modèle de langue volumineux auquel cette clé est associée.</li>
        <li><b>Clé</b> : saisissez ou mappez votre clé API pour le modèle sélectionné.</li>
        <li><b>Modèle</b> : sélectionnez le modèle LLM que la clé utilisera.</li>
-       <li><b>Jetons max</b> : saisissez ou mappez le nombre maximal de jetons que le LLM peut générer dans sa réponse.<p>Un jeton équivaut généralement à quatre caractères, soit .75 d’un mot en anglais. « Hello world » serait égal à deux jetons et « Authentification » serait égal à un à deux jetons.</li>
+       <li><b>Nombre maximal de jetons</b> : saisissez ou mappez le nombre maximal de jetons que le module LLM peut générer dans sa réponse.<p>Un jeton équivaut généralement à quatre caractères, soit .75 d’un mot en anglais. « Hello world » serait égal à deux jetons et « Authentification » serait égal à un à deux jetons.</li>
       </ul>
     </td> 
   </tr> 
