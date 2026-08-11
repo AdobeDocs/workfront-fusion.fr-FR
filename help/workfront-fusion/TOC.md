@@ -3,10 +3,10 @@ user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 nudge: true
-source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
+source-git-commit: 73f52ca232e84750fb67ad7ea8e11d7cb00822dd
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 53%
+source-wordcount: '2520'
+ht-degree: 52%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Activité de publication de Fusion {#fusion-release-activity}
   * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versions de Fusion - 2026 {#fusion-releases-2026}
+    * [Activité de publication de Workfront Fusion : semaine du 10 août 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
     * [Activité de publication de Workfront Fusion : semaine du 27 juillet 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
     * [Activité de publication de Workfront Fusion : semaine du 20 juillet 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
     * [Activité de publication de Workfront Fusion : semaine du 13 juillet 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
@@ -203,7 +204,7 @@ ht-degree: 53%
       * [Créer une équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
       * [Ajouter des utilisateurs et utilisatrices à Adobe Workfront Fusion via Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
       * [Ajouter un personne à une équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-      * [Définir les options de notification d’équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+      * [Définir les options de notification](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
       * [Afficher le journal des activités d’une organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
       * [Afficher le tableau de bord des performances d’une organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
     * Gérer les personnes et les équipes {#manage-users-and-teams}

@@ -6,12 +6,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
 workflow-type: tm+mt
-source-wordcount: 1306
-ht-degree: 47%
+source-wordcount: 1366
+ht-degree: 46%
 
 ---
 
@@ -182,6 +181,12 @@ Pour plus d’informations sur les erreurs, voir [Types d’erreur](/help/workfr
 >[!NOTE]
 >
 >Si un scénario commence par un déclencheur instantané, le paramètre est ignoré et le scénario est désactivé immédiatement une fois la première erreur survenue.
+
+### Envoyer une notification en cas d’avertissement / Envoyer une notification en cas d’erreur / Envoyer une notification lorsque le scénario est désactivé
+
+Pour définir un remplacement au niveau du scénario pour un type de notification, cochez ou décochez la case en regard du type de notification.
+
+Pour plus d’informations sur les paramètres de notification, y compris les remplacements au niveau du scénario, voir [Définir des options de notification](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
 
 ### Pool de salariés
 
