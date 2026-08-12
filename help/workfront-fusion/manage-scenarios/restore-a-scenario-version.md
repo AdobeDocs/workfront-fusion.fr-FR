@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 713
-ht-degree: 16%
+source-wordcount: 754
+ht-degree: 15%
 
 ---
 
@@ -19,6 +18,11 @@ ht-degree: 16%
 Adobe Workfront Fusion enregistre une version de votre scénario à chaque fois qu’il change.
 
 Vous pouvez afficher, restaurer, renommer ou télécharger des plans directeurs pour les versions précédentes d’un scénario.
+
+>[!NOTE]
+>
+>Les versions de scénario enregistrées précédemment sont disponibles pendant 60 jours après la création de la version de scénario suivante.
+>Pour conserver l’historique des versions du scénario au-delà de cette période à des fins d’audit, nous vous recommandons d’enregistrer et d’archiver un plan directeur du scénario à un autre emplacement.
 
 ## Conditions d’accès
 
@@ -80,7 +84,7 @@ La fonctionnalité Afficher les modifications indique les différences entre deu
 1. Cliquez sur l’icône [!UICONTROL Plus] ![Plus](assets/more-icon.png) en bas de l’écran, puis sur **[!UICONTROL Versions précédentes]**.
 
    Une liste des versions précédentes s’affiche.
-&#x200B;
+   &#x200B;
 1. Cliquez sur **Afficher les modifications** pour la version du scénario que vous souhaitez afficher.
 1. La vue **Vérifier les modifications** s’ouvre et compare cette version à votre scénario actuel.
 
@@ -102,7 +106,7 @@ La fonctionnalité Afficher les modifications indique les différences entre deu
 
 ### Examiner les modifications
 
-
+&#x200B;
 Chaque modification est affichée sur le côté auquel elle appartient et colorée par ce que la restauration ferait
 faire :
 
@@ -110,7 +114,9 @@ faire :
 * Vert (droite) : cette modification se trouve dans la version à droite et serait ajoutée si la version était restaurée.
 
 Si quelque chose a été modifié, au lieu d’être supprimé ou ajouté, la valeur s’affiche en rouge à gauche et en vert à droite.
+&#x200B;
 Les modifications sont regroupées en sections :
+&#x200B;
 
 * **Scénario** : nom, description et type.
 * **Paramètres du scénario** : options de planification et de traitement.
@@ -119,5 +125,7 @@ Les modifications sont regroupées en sections :
 * **Itinéraires du routeur** : Itinéraires et leur contenu.
 * **Gestionnaires d’erreurs** : branches de gestion des erreurs.
 * **Groupes orphelins** : modules déconnectés sur la zone de travail.
+&#x200B;
 Si les deux versions sont identiques, la vue affiche le message/ **Aucune différence trouvée**.
+&#x200B;
 
