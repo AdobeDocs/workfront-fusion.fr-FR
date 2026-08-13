@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 40%
+source-wordcount: 659
+ht-degree: 37%
 
 ---
 
@@ -80,7 +80,7 @@ Vous devrez peut-être cliquer sur l&#39;icône des trois points dans la zone Co
 
 | Action | Détails |
 | ---------- | ---------- |
-| Enregistrez. <p>![&#x200B; Icône Enregistrer &#x200B;](assets/save-icon.png)</p> | Après avoir enregistré votre scénario, une nouvelle version est disponible dans le menu à trois points si vous avez besoin d’y accéder ultérieurement. Les versions de scénario précédemment enregistrées ne sont disponibles que pendant 60 jours. |
+| Enregistrez. <p>![&#x200B; Icône Enregistrer &#x200B;](assets/save-icon.png)</p> | <p>Après avoir enregistré votre scénario, une nouvelle version est disponible dans le menu à trois points si vous avez besoin d’y accéder ultérieurement. Les versions de scénario enregistrées précédemment sont disponibles pendant 60 jours après la création de la version de scénario suivante. </p><p>Pour conserver l’historique des versions du scénario au-delà de 60 jours à des fins d’audit, nous vous recommandons d’enregistrer et d’archiver un plan directeur du scénario à un autre emplacement.</p> |
 | Paramètres du scénario <p>![Icône Paramètres du scénario](assets/scenario-settings-icon.png)</p> | Le panneau des paramètres du scénario contient des paramètres avancés pour le scénario. Pour plus d’informations sur les paramètres disponibles, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notes  <p>![icône Notes](assets/notes-icon.png)</p> | Prenez des notes sur le scénario. Les autres utilisateurs peuvent afficher ces notes lorsqu’ils se trouvent dans le scénario. |
 | Auto-align <p>![Icône d’alignement automatique](assets/auto-align-icon.png)</p> | Alignement automatique des modules dans votre scénario. |
