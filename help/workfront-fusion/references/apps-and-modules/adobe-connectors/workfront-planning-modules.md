@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
-ht-degree: 44%
+source-wordcount: 6097
+ht-degree: 43%
 
 ---
 
@@ -206,7 +203,8 @@ Vous pouvez créer une connexion à votre compte Workfront Planning directement 
 
 >[!IMPORTANT]
 >
->Les modules de cette section appartiennent au connecteur Workfront Planning V2.Pour les modules du connecteur Workfront Planning V1, consultez les modules [[!DNL Adobe Workfront Planning] Version 1 et leurs champs](#adobe-workfront-planning-version-1-modules-and-their-fields).
+>Les modules de cette section appartiennent au connecteur Workfront Planning V2.
+>Pour les modules du connecteur Workfront Planning V1, consultez les modules [[!DNL Adobe Workfront Planning] Version 1 et leurs champs](#adobe-workfront-planning-version-1-modules-and-their-fields).
 
 Lorsque vous configurez les modules de planification Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. Des champs Workfront supplémentaires peuvent s’afficher, selon votre niveau d’accès dans l’application ou le service, par exemple. Un titre en gras dans un module indique un champ obligatoire.
 
@@ -576,7 +574,7 @@ Ce module met à jour un type d’enregistrement.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez l’espace de travail dans lequel vous souhaitez mettre à jour un type d’enregistrement.</td> 
     </tr>
@@ -744,7 +742,7 @@ Ce module récupère une liste de tous les enregistrements du type d’enregistr
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d'enregistrement à renvoyer.</td> 
     </tr>
@@ -777,7 +775,7 @@ Ce module réorganise un ou plusieurs enregistrements dans un type d&#39;enregis
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement à déplacer.</td> 
     </tr>
@@ -816,7 +814,7 @@ Retourner les enregistrements selon les critères que vous spécifiez
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement qui contient les enregistrements à récupérer.</td> 
     </tr>
@@ -899,7 +897,7 @@ Ce module d’action crée un champ sur le type d’enregistrement spécifié.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement pour lequel vous souhaitez créer un champ.</td> 
     </tr>
@@ -992,7 +990,7 @@ Ce module récupère une liste de champs pour un type d’enregistrement spécif
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement pour lequel vous souhaitez renvoyer des champs.</td> 
     </tr>
@@ -1079,7 +1077,7 @@ Ce module d’action crée une vue pour le type d’enregistrement sélectionné
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement pour lequel vous souhaitez créer une vue.</td> 
     </tr>
@@ -1172,7 +1170,7 @@ Ce module récupère une liste de vues pour le type d’enregistrement spécifiq
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement qui contient les vues à récupérer.</td> 
     </tr>
@@ -1205,7 +1203,7 @@ Ce module d&#39;action met à jour la vue spécifiée.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Type d’enregistrement]</p>
+        <p>[!UICONTROL Record type]</p>
       </td>
       <td>Sélectionnez le type d’enregistrement pour lequel vous souhaitez mettre à jour une vue.</td> 
     </tr>
@@ -1467,6 +1465,11 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
 >
 >Pour plus d’informations sur la modification des Webhooks, voir [Modifier les Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>Après le 23 août 2026, Fusion activera la sécurité basée sur authToken par défaut pour tous les modules Planification Workfront > Événement de contrôle, y compris les modules existants.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1534,8 @@ Pour un exemple d’utilisation de la logique avancée sur ce module, voir [Exem
 
 >[!IMPORTANT]
 >
->Les modules de cette section appartiennent au connecteur Workfront Planning V1.Pour les modules du connecteur Workfront Planning V2, consultez les modules [[!DNL Adobe Workfront Planning] Version 2 et leurs champs](#adobe-workfront-planning-version-2-modules-and-their-fields).
+>Les modules de cette section appartiennent au connecteur Workfront Planning V1.
+>Pour les modules du connecteur Workfront Planning V2, consultez les modules [[!DNL Adobe Workfront Planning] Version 2 et leurs champs](#adobe-workfront-planning-version-2-modules-and-their-fields).
 
 Lorsque vous configurez les modules de planification Workfront, Workfront Fusion affiche les champs répertoriés ci-dessous. Des champs Workfront supplémentaires peuvent s’afficher, selon votre niveau d’accès dans l’application ou le service, par exemple. Un titre en gras dans un module indique un champ obligatoire.
 
