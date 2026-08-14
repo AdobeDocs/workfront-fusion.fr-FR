@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +217,11 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ### Déclencheurs
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [Surveiller les événements](#watch-events)
+* [Champ de surveillance](#watch-field)
+* [Surveiller l’enregistrement](#watch-record)
 
-+++ **[!UICONTROL Surveiller les événements]**
+#### [!UICONTROL Surveiller les événements]
 
 Ce module de déclenchement exécute un scénario en temps réel lorsque des objets d’un type spécifique sont ajoutés, mis à jour ou supprimés dans Workfront.
 
@@ -294,9 +292,7 @@ Pour plus d’informations, consultez la section [Exemples de payloads d’évé
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Champ de contrôle]**
+#### [!UICONTROL Champ de contrôle]
 
 Ce module de déclenchement exécute un scénario lorsqu’un champ que vous spécifiez est mis à jour. Le module renvoie l’ancienne et la nouvelle valeur du champ que vous spécifiez. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -331,9 +327,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Enregistrement de contrôle]**
+#### [!UICONTROL Enregistrement de contrôle]
 
 Ce module déclencheur exécute un scénario lorsque des objets d’un type spécifique sont ajoutés, mis à jour ou les deux. Le module renvoie tous les champs standard associés à l’enregistrement ou aux enregistrements, ainsi que les champs et valeurs personnalisés auxquels la connexion a accès. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
 
@@ -384,25 +378,21 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-
 ### Actions
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [Convertir l’objet](#convert-object)
+* [Créer un enregistrement](#create-a-record)
+* [Appel API personnalisé](#custom-api-call)
+* [Supprimer l’enregistrement](#delete-record)
+* [Télécharger document](#download-document)
+* [Obtenir une URL de fichier prédéfinie](#get-a-presigned-file-url)
+* [Action Divers](#misc-action)
+* [Lire un enregistrement](#read-a-record)
+* [Mettre à jour la version de la payload des événements](#update-events-payload-version)
+* [Mettre à jour un enregistrement](#update-a-record)
+* [Charger le document](#upload-document)
 
-+++ **[!UICONTROL Convertir un objet]**
+#### [!UICONTROL Convertir un objet]
 
 Ce module d’action effectue l’une des conversions suivantes :
 
@@ -457,9 +447,7 @@ Ce module d’action effectue l’une des conversions suivantes :
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Créer un enregistrement]** 
+#### [!UICONTROL Créer un enregistrement]
 
 Ce module d’action crée un objet tel qu’un projet, une tâche ou un problème dans Workfront et vous permet d’ajouter un formulaire personnalisé au nouvel objet. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
 
@@ -525,8 +513,6 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 >   Pour obtenir des instructions, voir la section [Gérer plusieurs utilisateurs et utilisatrices | Chargement CSV en masse](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html?lang=fr) dans la documentation Adobe.
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +566,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL Appel API personnalisé]**
+#### [!UICONTROL Appel API personnalisé]
 
 Ce module d’action vous permet d’effectuer un appel personnalisé et authentifié à l’API Workfront. Vous pouvez ainsi créer une automatisation du flux de données que les autres modules Workfront ne peuvent pas réaliser.
 
@@ -637,9 +623,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Supprimer l’enregistrement]**
+#### [!UICONTROL Supprimer l’enregistrement]
 
 Ce module d’action supprime un objet, tel qu’un projet, une tâche ou un problème dans Workfront.
 
@@ -686,9 +670,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >1. Ajoutez la gestion des erreurs au module Supprimer l’enregistrement pour ignorer l’erreur provoquée par le délai d’expiration de 40 secondes.
 
 
-+++
-
-+++ **[!UICONTROL Télécharger un document]**
+#### [!UICONTROL Télécharger un document]
 
 Ce module d’action permet de télécharger un document à partir de Workfront.
 
@@ -713,11 +695,9 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
+Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **Obtenir une URL de fichier présignée**
+#### Obtenir une URL de fichier prédéfinie
 
 Ce module d’action reçoit des URL de fichier prédéfinies qui peuvent être utilisées ultérieurement par d’autres API.
 
@@ -740,9 +720,7 @@ Ce module d’action reçoit des URL de fichier prédéfinies qui peuvent être 
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Actions diverses]**
+#### [!UICONTROL Actions diverses]
 
 Ce module d’action vous permet d’effectuer des actions sur l’API.
 
@@ -789,13 +767,13 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-#### Options d’action diverses
+##### Options d’action diverses
 
 * [Tâche](#task)
 * [Problème](#issue)
 * [Projet](#project)
 
-##### Tâche
+###### Tâche
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +821,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
  </tbody> 
 </table>
 
-##### Problème
+###### Problème
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +868,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 
 
 
-##### Projet
+###### Projet
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +921,7 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 
 
 
-+++
-
-+++ **[!UICONTROL Lire un enregistrement]**
+#### [!UICONTROL Lire un enregistrement]
 
 Ce module d’action récupère les données d’un seul enregistrement.
 
@@ -994,9 +970,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans les [types d’objet Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
-
-+++
+Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 <!--
 
@@ -1052,11 +1026,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **Mettre à jour la version de la payload des événements**
+#### Mettre à jour la version de la payload des événements
 
 Workfront a récemment publié une nouvelle version de son service d’abonnement aux événements. La nouvelle version ne constitue pas une modification de l’API Workfront, mais plutôt une modification de la fonctionnalité d’abonnement aux événements. Ce module d’action met à jour la version de la payload de l’événement utilisée pour ce scénario.
 
@@ -1080,9 +1052,7 @@ Pour obtenir des ressources sur la conservation de vos scénarios Workfront Fus
 </table>
 
 
-+++
-
-+++ **Mettre à jour un enregistrement**
+#### Mettre à jour un enregistrement
 
 
 Ce module d’action met à jour un objet, tel qu’un projet, une tâche ou un problème. Le module vous permet de sélectionner les champs de l’objet disponibles dans le module.
@@ -1128,8 +1098,6 @@ Consultez la liste des types d’objets Workfront pour lesquels vous pouvez util
 >
 > Lors de la saisie du texte d’un champ personnalisé ou d’un objet [!UICONTROL Note] (commentaire ou réponse), vous pouvez utiliser des balises HTML dans le champ [!UICONTROL Texte de la note] pour créer du texte enrichi, comme du texte en gras ou en italique.
 
-
-+++
 
 <!--
 
@@ -1180,11 +1148,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL Charger le document]**
+#### [!UICONTROL Charger le document]
 
 Ce module d’action charge un document vers un objet Workfront, comme un projet, une tâche ou un problème. Ce module charge le document par blocs, ce qui rend le processus de chargement plus fluide pour Workfront.
 
@@ -1224,8 +1190,6 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
 </table>
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1274,12 +1238,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### Recherches
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [Lire les enregistrements associés](#read-related-records)
+* [Rechercher](#search)
+* [Rechercher (hérité)](#search-legacy)
 
-+++ **[!UICONTROL Lire les enregistrements associés]**
+#### [!UICONTROL Lire les enregistrements associés]
 
 Ce module de recherche lit les enregistrements correspondant à la requête de recherche que vous spécifiez, dans un objet parent particulier.
 
@@ -1314,9 +1277,7 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Rechercher]**
+#### [!UICONTROL Rechercher]
 
 Ce module recherche les enregistrements dans un objet de Workfront correspondant à la requête que vous spécifiez.
 
@@ -1371,14 +1332,12 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Recherche (hérité)]**
+#### [!UICONTROL Recherche (hérité)]
 
 >[!IMPORTANT]
 >
->Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans de nouveaux scénarios.
->Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
+>Ce module a été remplacé par le module Rechercher des enregistrements. Nous vous recommandons d’utiliser ce module dans les nouveaux scénarios.
+>Les scénarios existants qui utilisent ce module continueront à fonctionner comme prévu. Ce module sera supprimé du sélecteur de modules en mai 2025.
 
 Ce module recherche les enregistrements dans un objet de Workfront correspondant à la requête que vous spécifiez.
 
@@ -1428,8 +1387,6 @@ Lorsque vous configurez ce module, les champs suivants s’affichent.
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1445,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Types d’objet Workfront disponibles pour chaque module Workfront
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [Types d’objet disponibles pour chaque module de déclenchement Workfront](#object-types-available-for-each-workfront-trigger-module)
+* [Types d’objet disponibles pour chaque module d’action Workfront](#object-types-available-for-each-workfront-action-module)
+* [Types d’objet disponibles pour chaque module de recherche Workfront](#object-types-available-for-each-workfront-search-module)
 
-+++**Types d’objet disponibles pour chaque module déclencheur Workfront**
+### Types d’objet disponibles pour chaque module de déclenchement Workfront
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1713,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Types d’objets disponibles pour chaque module d’action Workfront**
+### Types d’objet disponibles pour chaque module d’action Workfront
 
 >[!NOTE]
 >
@@ -2181,9 +2134,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Types d’objets disponibles pour chaque module de recherche Workfront**
+### Types d’objet disponibles pour chaque module de recherche Workfront
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2381,8 +2332,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 Nous vous recommandons de vérifier deux fois pour vous assurer que cela fonctionne comme prévu.
-
-+++
 
 ## Filtres d’abonnement aux événements dans les modules Workfront > [!UICONTROL Surveiller les événements]
 
