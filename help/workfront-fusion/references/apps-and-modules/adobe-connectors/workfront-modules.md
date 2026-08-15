@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +277,13 @@ Le module renvoie tous les champs standard associés à l’enregistrement, ains
       <td>
        <p>Choisissez si vous souhaitez que le scénario surveille les [!UICONTROL New Records Only], les [!UICONTROL Updated Records Only], les [!UICONTROL New and Updated Records] ou les [!DNL Deleted Records Only].</p>
        <p><b>NOTE</b> : si vous choisissez les [!UICONTROL New and Updated Records], la création du webhook entraîne la création de deux abonnements à des événements (pour la même adresse de webhook).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Activer les hooks sécurisés]</td> 
+      <td>
+       <p>Choisissez si vous souhaitez activer la sécurité basée sur les jetons auth pour ce webhook.</p><p>
+       <b>REMARQUE </b> : après le 23 août 2026, Fusion activera la sécurité basée sur authToken par défaut pour tous les modules Workfront &gt; Événement de contrôle, y compris les modules existants. Si un webhooks spécifique est rompu ou si vous devez le désactiver pour des raisons de compatibilité, vous pouvez désactiver l’option Activer les hooks sécurisés avant le 23 août 2026.</p>
        </td> 
      </tr> 
     </tbody> 
