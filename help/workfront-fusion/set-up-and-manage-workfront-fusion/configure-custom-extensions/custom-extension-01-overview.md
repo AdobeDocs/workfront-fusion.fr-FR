@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 835
@@ -147,6 +149,6 @@ Pour créer une extension d’interface utilisateur, procédez comme suit :
 1. [Publiez pour que Fusion puisse le trouver](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
 1. (Facultatif) [Appeler les API Workfront/Fusion pour obtenir des données réelles sans CORS](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 
-Pour lancer le processus, accédez à [ Configuration de vos outils et de votre compte Adobe ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
+Pour lancer le processus, accédez à [&#x200B; Configuration de vos outils et de votre compte Adobe &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
 
 

@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 603
@@ -85,7 +87,7 @@ Fusion expose actuellement ces points d’extension :
 * `fusion/nav-organization/1` : apparaît sous la section **Organisation**.
 * `fusion/nav-team/1` : apparaît sous la section **Équipe**.
 
-Avant de pouvoir effectuer une publication sur l’un de ces sites, le point d’extension doit avoir été intégré à votre organisation Adobe. Si l’étape de publication échoue en indiquant que le point d’extension n’existe pas, reportez-vous à la section [ Dépannage ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
+Avant de pouvoir effectuer une publication sur l’un de ces sites, le point d’extension doit avoir été intégré à votre organisation Adobe. Si l’étape de publication échoue en indiquant que le point d’extension n’existe pas, reportez-vous à la section [&#x200B; Dépannage &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 
 ## Documentation officielle d’Adobe
 

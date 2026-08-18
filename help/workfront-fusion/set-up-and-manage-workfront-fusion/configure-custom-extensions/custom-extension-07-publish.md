@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 1236
@@ -41,7 +43,7 @@ Chaque projet App Builder comporte un espace de travail **d’évaluation** et *
 >Pour plus d’informations, voir :
 >
 > * [Configurer des outils et un compte d’extension d’interface utilisateur](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
-> * [Accès ](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
+> * [Accès &#x200B;](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
 
 Par défaut, Fusion affiche uniquement les extensions **publiées**. Il s’agit d’extensions que vous avez déployées dans l’espace de travail **de production**, puis envoyées pour **approbation**. Il s’agit de la valeur par défaut sécurisée, de sorte qu’un déploiement en cours ne semble jamais accidentellement à l’ensemble de votre organisation.
 
@@ -136,9 +138,9 @@ aio app deploy
 
 La publication est une **demande d’approbation envoyée à partir de l’espace de travail de production** :
 
-1. Ouvrez le [](https://developer.adobe.com/console), sélectionnez votre **Organisation**, ouvrez votre **Projet** et passez à l’espace de travail **Production**.
+1. Ouvrez le [&#128279;](https://developer.adobe.com/console), sélectionnez votre **Organisation**, ouvrez votre **Projet** et passez à l’espace de travail **Production**.
 1. Envoyez votre application pour **approbation/publication** (le rôle **Administrateur système** est requis).
-1. Après approbation, votre extension est ajoutée au registre des applications **** et devient disponible dans [Adobe Experience Cloud](https://experience.adobe.com?lang=fr), y compris Fusion, pour votre organisation.
+1. Après approbation, votre extension est ajoutée au registre des applications **&#x200B;**&#x200B;et devient disponible dans [Adobe Experience Cloud](https://experience.adobe.com?lang=fr), y compris Fusion, pour votre organisation.
 
 Pour obtenir des instructions détaillées, voir [Gestion des extensions d’interface utilisateur](https://developer.adobe.com/uix/docs/guides/publication/) dans la documentation d’Adobe Developer.
 
@@ -160,7 +162,7 @@ Certains comportements valent la peine d’être connus, afin que vous puissiez 
 
 La suppression d’une extension publiée est effectuée en **révoquant** dans Adobe Exchange :
 
-1. Se connecter à ****.
+1. Se connecter à **&#x200B;**.
 1. Accédez à **Gérer** > **Applications App Builder**.
 1. Sélectionnez **Révoquer** en regard de l’extension à supprimer, puis confirmez.
 
