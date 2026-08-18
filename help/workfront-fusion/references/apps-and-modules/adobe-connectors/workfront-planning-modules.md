@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 43%
+source-wordcount: 6620
+ht-degree: 42%
 
 ---
 
@@ -642,17 +639,61 @@ Ce module met à jour un type d’enregistrement.
 
 ### Enregistrements (V2)
 
-* [Créer un enregistrement](#create-a-record-v2)
+* [Création d’un enregistrement (V2)](#create-a-record-v2)
+* [Créer un enregistrement (hérité)](#create-a-record-legacy)
 * [Supprimer un enregistrement](#delete-a-record-v2)
 * [Obtenir un enregistrement](#get-a-record-v2)
 * [Obtenir des enregistrements par type d’enregistrement](#get-records-by-record-type-v2)
 * [Déplacer des enregistrements](#move-records-v2)
-* [Rechercher des enregistrements](#search-records-v2)
-* [Mettre à jour un enregistrement](#update-a-record-v2)
+* [Rechercher des enregistrements (V2)](#search-records-v2)
+* [Rechercher des enregistrements (hérités)](#search-records-legacy)
+* [Mise à jour d’un enregistrement (V2)](#update-a-record-v2)
+* [Mise à jour d’un enregistrement (hérité)](#update-a-record-legacy)
 
 #### Création d’un enregistrement (V2)
 
+Cette action crée un enregistrement unique dans Workfront Planning. Cette version du module vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs, ce qui crée une payload plus petite et plus efficace lors de la création de l’enregistrement.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Sélectionnez l’espace de travail dans lequel vous souhaitez créer un enregistrement.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Sélectionnez le type d’enregistrement que vous souhaitez créer.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Sélectionner les champs à mapper</p>
+      </td>
+      <td>Sélectionnez les champs pour lesquels vous souhaitez fournir des valeurs lors de la création du module.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Autres champs</p>
+      </td>
+      <td>Saisissez les valeurs que vous souhaitez attribuer au nouvel enregistrement. Ces champs sont basés sur le type d’enregistrement et les champs que vous avez sélectionnés, et sont propres à votre organisation Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Créer un enregistrement (hérité)
+
 Cette action crée un enregistrement unique dans Workfront Planning.
+
+Nous vous recommandons d’utiliser le nouveau module Créer un enregistrement , qui vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs. La sélection de champs crée une payload plus petite et plus efficace lors de la création de l’enregistrement.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +840,48 @@ Ce module réorganise un ou plusieurs enregistrements dans un type d&#39;enregis
 
 #### Rechercher des enregistrements (V2)
 
+Retourner des enregistrements en fonction des critères que vous spécifiez.Cette version du module vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs, ce qui crée une payload plus petite et plus efficace lors de la recherche d’enregistrements.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Sélectionnez l’espace de travail qui contient les enregistrements à récupérer.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Sélectionnez le type d’enregistrement qui contient les enregistrements à récupérer.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Sélectionner les champs à mapper</p>
+      </td>
+      <td>Sélectionnez les champs dont vous souhaitez mettre à jour les valeurs.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Pour chaque champ sur lequel vous souhaitez appliquer un filtre, saisissez l’opérateur et la valeur de ce champ. Ces champs sont basés sur le type d’enregistrement et les champs que vous avez sélectionnés, et sont propres à votre organisation Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Rechercher des enregistrements (hérités)
+
 Retourner les enregistrements selon les critères que vous spécifiez
+
+Nous vous recommandons d’utiliser le nouveau module Mettre à jour un enregistrement , qui vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs. La sélection de champs crée une payload plus petite et plus efficace lors de la mise à jour de l’enregistrement.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +914,56 @@ Retourner les enregistrements selon les critères que vous spécifiez
 
 #### Mise à jour d’un enregistrement (V2)
 
+Ce module met à jour l’enregistrement spécifié. Cette version du module vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs, ce qui crée une payload plus petite et plus efficace lors de la mise à jour de l’enregistrement.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Sélectionnez l’espace de travail contenant l’enregistrement à mettre à jour.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Sélectionnez le type d’enregistrement à mettre à jour.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>Saisissez ou mappez l’ID de l’enregistrement que vous souhaitez mettre à jour.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Sélectionner les champs à mapper</p>
+      </td>
+      <td>Sélectionnez les champs dont vous souhaitez mettre à jour les valeurs.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Saisissez des valeurs pour d’autres champs. Les champs disponibles dépendent de l’enregistrement et des champs sélectionnés.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Mise à jour d’un enregistrement (hérité)
+
 Ce module met à jour l’enregistrement spécifié.
 
+Nous vous recommandons d’utiliser le nouveau module Mettre à jour un enregistrement , qui vous permet de sélectionner les champs pour lesquels vous souhaitez fournir des valeurs. La sélection de champs crée une payload plus petite et plus efficace lors de la mise à jour de l’enregistrement.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1000,6 @@ Ce module met à jour l’enregistrement spécifié.
     </tr>
   </tbody>
 </table>
-
 
 ### Champs (V2)
 
