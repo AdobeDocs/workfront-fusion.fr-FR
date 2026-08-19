@@ -3,12 +3,11 @@ title: Redéclencher l’exécution d’un scénario spécifique
 description: Vous pouvez déclencher à nouveau l’exécution d’un scénario spécifique pour traiter les données à l’aide d’un plan directeur de scénario mis à jour ou pour afficher son flux de données.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ Lors de l’utilisation de scénarios chaînés, le redéclenchement peut égale
 Pour plus d’informations sur les webhooks, consultez la section [Déclencheurs instantanés (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Pour plus d’informations sur le chaînage de scénarios, voir [Enchaîner plusieurs scénarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Seules 256 Ko de données sont conservés dans l’historique d’exécution. Par conséquent, les exécutions avec des données d’entrée supérieures à 256 Ko ne peuvent pas être redéclenchées. Toute tentative de redéclenchement d’une telle exécution échoue avec un message d’erreur.
 
 ## Conditions d’accès
 
