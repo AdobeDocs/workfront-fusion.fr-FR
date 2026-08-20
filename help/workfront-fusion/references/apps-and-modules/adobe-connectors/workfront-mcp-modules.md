@@ -3,12 +3,11 @@ title: Modules MCP Adobe Workfront
 description: Avec le module MCP d’Adobe Workfront, vous pouvez envoyer une invite en anglais clair au serveur MCP d’Adobe Workfront et laisser un modèle d’IA effectuer la requête.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
-ht-degree: 19%
+source-wordcount: 871
+ht-degree: 18%
 
 ---
 
@@ -19,6 +18,8 @@ Le connecteur MCP Adobe Workfront est une intégration Fusion dédiée pour le p
 Par exemple, vous pouvez saisir l’invite « Rechercher tous mes projets actifs qui sont en retard et résumer leur statut » et le module renvoie une réponse synthétisée, au lieu d’avoir à enchaîner plusieurs modules Get et Filter.
 
 Vous pouvez restreindre les actions Workfront que l’IA est autorisée à entreprendre, de sorte que même un scénario sans assistance puisse garantir qu’aucune action destructrice inattendue n’est entreprise.
+
+Par défaut, ce module utilise l’IA gérée par Adobe, qui utilise le modèle `claude-sonnet-5` . Vous pouvez configurer le module pour utiliser un autre LLM, à l’aide d’une clé et des autres informations d’identification que vous fournissez.
 
 Pour plus d’informations sur MCP dans les scénarios Fusion, voir [Ajouter une invite d’IA à votre scénario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
@@ -133,7 +134,7 @@ Ce module d’action traite une invite en anglais clair par rapport au serveur M
   </tr>  </tbody> 
 </table>
 
-Pour obtenir la liste des outils que vous pouvez sélectionner pour les champs Outils en lecture seule et Outils en écriture/suppression , consultez [Outils de serveur Adobe Workfront MCP](https://experienceleague.adobe.com/fr/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) dans la documentation de Workfront.
+Pour obtenir la liste des outils que vous pouvez sélectionner pour les champs Outils en lecture seule et Outils en écriture/suppression , consultez [Outils de serveur Adobe Workfront MCP](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) dans la documentation de Workfront.
 
 Le module renvoie les informations suivantes, que vous pouvez mapper dans les modules suivants du scénario :
 
