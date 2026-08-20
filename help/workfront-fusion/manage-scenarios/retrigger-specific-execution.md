@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +27,12 @@ Lors de l’utilisation de scénarios chaînés, le redéclenchement peut égale
 Pour plus d’informations sur les webhooks, consultez la section [Déclencheurs instantanés (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Pour plus d’informations sur le chaînage de scénarios, voir [Enchaîner plusieurs scénarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Seules 256 Ko de données sont conservés dans l’historique d’exécution. Par conséquent, les exécutions avec des données d’entrée supérieures à 256 Ko ne peuvent pas être redéclenchées. Toute tentative de redéclenchement d’une telle exécution échoue avec un message d’erreur.
 
 ## Conditions d’accès
 
@@ -53,11 +59,15 @@ Pour plus d’informations sur le chaînage de scénarios, voir [Enchaîner plus
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
 ## Redéclencher une exécution
+
+>[!NOTE]
+>
+>Seules 256 Ko de données sont conservés dans l’historique d’exécution. Par conséquent, les exécutions avec des données d’entrée supérieures à 256 Ko ne peuvent pas être redéclenchées. Toute tentative de redéclenchement d’une telle exécution échoue avec un message d’erreur.
 
 Vous pouvez redéclencher l’exécution d’un scénario à partir du diagramme du scénario, de la zone Historique du scénario ou de la page d’exécution du scénario spécifique.
 
