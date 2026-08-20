@@ -135,7 +135,7 @@ Ce module d’action traite une invite en anglais clair par rapport au serveur M
   </tr>  </tbody> 
 </table>
 
-Pour obtenir la liste des outils que vous pouvez sélectionner pour les champs Outils en lecture seule et Outils en écriture/suppression , consultez [Outils de serveur Adobe Workfront MCP](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) dans la documentation de Workfront.
+Pour obtenir la liste des outils que vous pouvez sélectionner pour les champs Outils en lecture seule et Outils en écriture/suppression , consultez [Outils de serveur Adobe Workfront MCP](https://experienceleague.adobe.com/fr/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) dans la documentation de Workfront.
 
 Le module renvoie les informations suivantes, que vous pouvez mapper dans les modules suivants du scénario :
 
