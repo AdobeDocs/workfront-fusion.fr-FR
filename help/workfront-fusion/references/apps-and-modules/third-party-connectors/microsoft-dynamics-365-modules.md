@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 1886
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -108,7 +108,7 @@ Vous pouvez créer une connexion à votre compte [!DNL Microsoft Dynamics 365] d
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Choisissez si vous souhaitez vous connecter à un compte de service ou à un compte personnel.</td>
+          <td>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Facultatif)</p></td>

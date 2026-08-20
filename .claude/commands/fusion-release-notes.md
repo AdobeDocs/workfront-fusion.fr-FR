@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: Créez une page de notes de mise à jour hebdomadaires de Workfront Fusion et connectez-la à la page d’aperçu de l’activité de version et à la table des matières. À utiliser lorsque l’utilisateur souhaite écrire, ajouter ou rédiger une nouvelle note de mise à jour de Fusion ou une page de version hebdomadaire, ou lorsqu’il demande de documenter les nouvelles fonctionnalités de Fusion pour une version. N’utilisez pas pour les notes de mise à jour de Workfront (Quicksilver) dans les annonces de produits/versions de produits. Utilisez le formateur de notes de mise à jour pour ces notes.
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Demandez à l&#39;utilisateur (s&#39;il n&#39;a pas déjà été fourni) la list
 - Description claire de ce qui a changé et des raisons de son importance
 - Le ou les articles d’aide auxquels ils renvoient (vérifiez que le chemin existe, n’essayez pas de deviner).
 - Si elle requiert une action de l’utilisateur ou de l’administrateur ou s’il s’agit d’une obsolescence (appelle une légende `>[!IMPORTANT]`)
+- **Qu’il s’agisse d’un nouveau lancement de connecteur** (un tout nouveau connecteur/application devient disponible, et pas seulement de nouveaux modules ajoutés à un connecteur existant). Si oui, cela déclenche **Étape 7** — ne passez pas à côté de la question sur une redirection juste parce que la note de mise à jour elle-même est terminée.
 
 ## Étape 2 : déterminer le nom et la date du fichier
 
@@ -134,7 +135,23 @@ Modifier le `help/workfront-fusion/TOC.md` :
 - Plusieurs entrées de la table des matières de début 2026 sont imbriquées par erreur sous l’en-tête `Fusion releases - 2025` , même si les pages elles-mêmes sont des versions de 2026. Lors de l’ajout d’une nouvelle entrée, vérifiez toujours qu’elle se trouve sous la rubrique correspondant **à son année propre**, et non pas là où se trouve l’entrée précédente.
 - Certains titres de pages plus anciens/H1 omettent la virgule avant l’année (`July 13 2026` au lieu de `July 13, 2026`). Utilisez toujours la virgule dans les nouvelles pages.
 
-## Étape 6 : Liste de contrôle finale
+## Étape 7 : Nouveaux lancements de connecteur — demandez des informations sur une redirection (ne pas ignorer)
+
+**Cette étape s’applique chaque fois que l’étape 1 a identifié un nouveau lancement de connecteur.** Il est facile de considérer la note de mise à jour comme « terminé » après l’étape 5 et d’oublier cela : traitez une nouvelle fonctionnalité de connecteur comme incomplète jusqu’à ce que cette étape soit traitée d’une manière ou d’une autre.
+
+Demandez à l’utilisateur : *« Voulez-vous configurer une redirection pour le nouvel article du connecteur ? »*
+
+- Si **non**, notez-le et passez à autre chose. Rien d&#39;autre à faire.
+- Si **oui**, regroupez les éléments suivants :
+  - Le **chemin source** (doit commencer par `/en`, sans espaces)
+  - Le **destination** — un chemin relatif commençant par `/en`, ou une URL `https` complète (sans espaces)
+- Ajoutez la ligne au référentiel de `Adobe-Enterprise-Docs/redirects` frère, sous `redirects/`, un fichier par environnement (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Règles de ligne (à partir du fichier README de ce référentiel) :
+  - Pas de doublons `source`, et pas de doublons `source`/`destination`.
+  - La redirection ne doit pas entraîner de boucle de redirection.
+- **Cette compétence ajoute uniquement la ligne CSV une fois que l’utilisateur l’a confirmée.** L’augmentation de la requête persistante dans le référentiel `redirects` est une étape distincte que cette compétence ne permet pas d’effectuer : indiquez à l’utilisateur qu’une requête persistante doit toujours être ouverte et fusionnée à cet endroit avant que la redirection ne soit activée (~5 minutes après la fusion pour les redirections 1:1).
+
+## Étape 8 : Liste de contrôle finale
 
 - [ ] Fichier créé au bon chemin d’accès sans zéros au début de la date
 - [ ] FrontMATTER utilise du `hidefromtoc: true`, pas de `exl-id`/`TQID` inventé
@@ -144,6 +161,7 @@ Modifier le `help/workfront-fusion/TOC.md` :
 - [ ] Nouvelle page ajoutée comme entrée la plus récente en `fusion-release-activity.md`, sous l’année/le mois approprié
 - [ ] Nouvelle page ajoutée comme entrée la plus récente en `TOC.md`, sous l’en-tête année correcte
 - [ ] de nouveaux en-têtes année/mois créés si nécessaire, avec l’année précédente réduite en `fusion-release-activity.md`
+- [ ] **Si une fonctionnalité était un nouveau lancement de connecteur : a posé une question sur une redirection (étape 7), et en a configuré une ou a explicitement refusé**
 
 ## Ressources supplémentaires
 
