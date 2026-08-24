@@ -3,7 +3,8 @@ title: Modules MCP Adobe Workfront
 description: Avec le module MCP d’Adobe Workfront, vous pouvez envoyer une invite en anglais clair au serveur MCP d’Adobe Workfront et laisser un modèle d’IA effectuer la requête.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
 source-wordcount: 884
