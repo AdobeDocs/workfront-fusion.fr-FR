@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
 TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4311
-ht-degree: 52%
+source-wordcount: 4849
+ht-degree: 47%
 
 ---
 
@@ -94,9 +90,10 @@ Le connecteur SharePoint utilise les éléments suivants :
 
 ## Connexion de Microsoft SharePoint Online à Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte [!DNL Microsoft]
 
@@ -204,6 +201,97 @@ Vous pouvez utiliser l’autorisation de certificat pour vous connecter à Share
 
 1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
 
+### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service
+
+Vous pouvez créer une connexion qui utilise un principal de service (une connexion API d’application) au lieu d’un compte personnel. Cela s’avère utile lorsque vous souhaitez que la connexion s’exécute en tant qu’identité d’application ou de service plutôt qu’en tant que personne spécifique, de sorte que l’intégration ne soit pas interrompue si cette personne quitte l’entreprise ou modifie son mot de passe.
+
+>[!IMPORTANT]
+>
+>Ce type de connexion est disponible uniquement pour le module [ Effectuer un appel API ](#make-an-api-call). Les autres modules SharePoint nécessitent l’un des autres types de connexion décrits dans cet article.
+
+* [Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Création de l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id)
+* [Créer un secret client](#create-a-client-secret)
+* [Octroi d’autorisations d’API](#grant-api-permissions)
+* [Collecter les détails de votre connexion](#collect-your-connection-details)
+* [Créer la connexion](#create-the-connection)
+
+#### Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service
+
+Vous devez disposer d’un accès **Administrateur global**, **Administrateur d’application** ou **Administrateur de rôle privilégié** dans Microsoft Entra ID pour enregistrer l’application et lui accorder des autorisations. Si vous ne disposez pas de cet accès, demandez à un membre de votre équipe informatique ou d’identité d’effectuer ces étapes pour vous.
+
+Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id).
+
+#### Création de l’enregistrement de l’application dans l’ID Microsoft Entra
+
+1. Connectez-vous au centre d’administration [!DNL Microsoft Entra].
+1. Accédez à **[!UICONTROL Enregistrements des applications]** > **[!UICONTROL Nouvel enregistrement]**.
+1. Donnez à l’application un nom clair et reconnaissable. Par exemple, `Make - SharePoint Integration`.
+1. Laissez le champ **[!UICONTROL URI de redirection]** vide. Cette connexion n’implique aucune connexion via un navigateur.
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Passez à [Créer un secret client](#create-a-client-secret).
+
+#### Créer un secret client
+
+1. Dans l’enregistrement de votre nouvelle application, accédez à **[!UICONTROL Certificats et secrets]**.
+1. Sélectionnez **[!UICONTROL Nouveau secret client]**, ajoutez une description, puis choisissez une période d’expiration.
+1. Sélectionnez **[!UICONTROL Ajouter]**.
+1. Copiez immédiatement la **[!UICONTROL valeur]** du secret. Il s’affiche une seule fois. Si vous quittez cette page avant de la copier, vous devez en créer une nouvelle.
+1. Passez à [Octroi des autorisations d’API](#grant-api-permissions).
+
+#### Octroi d’autorisations d’API
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME : contrairement aux opérations de développement Azure, Microsoft Graph prend en charge les autorisations d’application directement au cours de cette étape. Confirmez la ou les autorisations exactes dont le module Effectuer un appel API a besoin (par exemple, une portée d’autorisation Sites) avant de publier cette section et mettez à jour les étapes ci-dessous en conséquence.
+
+1. Dans l’enregistrement de votre application, accédez à **[!UICONTROL Autorisations d’API]**.
+1. Sélectionnez **[!UICONTROL Ajouter une autorisation]**, puis sélectionnez **[!UICONTROL Graphique Microsoft]**.
+1. Sélectionnez **[!UICONTROL Autorisations d’application]**.
+1. Sélectionnez la ou les autorisations dont vos appels API ont besoin, puis sélectionnez **[!UICONTROL Ajouter des autorisations]**.
+1. Sélectionnez **[!UICONTROL Accorder le consentement administrateur pour]** votre organisation, puis confirmez.
+1. Continuez pour [Collecter les détails de votre connexion](#collect-your-connection-details).
+
+#### Collecter les détails de votre connexion
+
+Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, notez les valeurs suivantes. Vous les saisissez lors de la création de la connexion dans le module .
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL Tenant ID]</td>
+   <td>Sur la page Aperçu , intitulé <b>ID de répertoire (client)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client ID]</td>
+   <td>Sur la page Aperçu , intitulé <b>ID d’application (client)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client Secret]</td>
+   <td>Valeur copiée dans <a href="#create-a-client-secret" class="MCXref xref">Créer un secret client</a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+Passez à [ Créer la connexion ](#create-the-connection).
+
+#### Créer la connexion
+
+1. Dans le module [!UICONTROL Effectuer un appel API], cliquez sur **[!UICONTROL Ajouter]** près du champ Connexion pour ouvrir la zone **[!UICONTROL Créer une connexion]**.
+1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
+1. Dans le champ [!UICONTROL Type de connexion], sélectionnez **[!UICONTROL Principal de service]**.
+1. Saisissez les informations suivantes :
+
+   * [!UICONTROL ID de client]
+   * [!UICONTROL Identifiant du client]
+   * [!UICONTROL Secret du client]
+
+1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
+
+   Si tout est correctement configuré, la connexion est validée avec succès.
+
 ## Modules SharePoint Microsoft et leurs champs
 
 Lorsque vous configurez les modules Microsoft SharePoint Online, Workfront Fusion affiche les champs répertoriés ci-dessous. D’autres champs Microsoft SharePoint Online peuvent s’afficher, selon des facteurs tels que votre niveau d’accès dans l’application ou le service. Un titre en gras dans un module indique un champ obligatoire.
@@ -222,6 +310,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 ### Élément Drive
 
 * [Créer un fichier](#create-a-file)
+* [Créer un fichier (hérité)](#create-a-file-legacy)
 * [Créer un dossier](#create-a-folder)
 * [Obtenir un fichier](#get-a-file)
 * [Obtenir un dossier](#get-a-folder)
@@ -1036,7 +1125,7 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un élém
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Sélectionnez un webhook existant ou cliquez sur Ajouter et saisissez la connexion pour créer un webhook.</p> 
