@@ -3,7 +3,8 @@ title: Déplacer des modules vers une chaîne
 description: Vous pouvez sélectionner un groupe de modules dans un scénario et les déplacer dans un nouveau scénario chaîné, sans recréer manuellement les mappages ou les structures de données.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
