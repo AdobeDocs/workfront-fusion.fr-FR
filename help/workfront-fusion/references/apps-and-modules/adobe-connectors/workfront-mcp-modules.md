@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
+source-wordcount: 884
 ht-degree: 18%
 
 ---
@@ -21,6 +21,10 @@ Par exemple, vous pouvez saisir l’invite « Rechercher tous mes projets actifs
 Vous pouvez restreindre les actions Workfront que l’IA est autorisée à entreprendre, de sorte que même un scénario sans assistance puisse garantir qu’aucune action destructrice inattendue n’est entreprise.
 
 Par défaut, ce module utilise l’IA gérée par Adobe, qui utilise le modèle `claude-sonnet-5` . Vous pouvez configurer le module pour utiliser un autre LLM, à l’aide d’une clé et des autres informations d’identification que vous fournissez.
+
+>[!NOTE]
+>
+>L’utilisation de l’IA gérée par Adobe est limitée à 25 $ par organisation et par mois.
 
 Pour plus d’informations sur MCP dans les scénarios Fusion, voir [Ajouter une invite d’IA à votre scénario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 

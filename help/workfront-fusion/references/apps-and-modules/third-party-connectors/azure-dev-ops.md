@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 79%
+source-wordcount: 2645
+ht-degree: 58%
 
 ---
 
@@ -89,6 +89,11 @@ Le connecteur DevOps d’Azure utilise les éléments suivants :
 
 ## Connecter [!DNL Azure DevOps] à Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Connexion d’Azure DevOps à Workfront Fusion à l’aide d’EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [Connecter les opérations de développement Azure à Workfront Fusion à l’aide d’un principal de service](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### Connexion d’Azure DevOps à Workfront Fusion à l’aide d’EntraApp
+
 1. Ajoutez un module [!DNL Azure DevOps] à votre scénario.
 1. Cliquez sur **[!UICONTROL Ajouter]** à côté du champ [!UICONTROL Connexion].
 1. Dans le champ [!UICONTROL Type de connexion], sélectionnez le type de connexion à utiliser.
@@ -124,6 +129,112 @@ Le connecteur DevOps d’Azure utilise les éléments suivants :
 
 1. Pour saisir un ID d’application DevOps Azure ou un secret client, cliquez sur <b>Afficher les paramètres avancés</b> et saisissez-les dans les champs qui s’ouvrent.
 1. Cliquez sur **[!UICONTROL Continuer]** pour terminer la configuration de la connexion et poursuivre la création de votre scénario.
+
+### Connecter les opérations de développement Azure à Workfront Fusion à l’aide d’un principal de service
+
+Vous pouvez créer une connexion qui utilise un principal de service (une connexion API d’application) au lieu d’un compte personnel. Cela s’avère utile lorsque vous souhaitez que la connexion s’exécute en tant qu’identité d’application ou de service plutôt qu’en tant que personne spécifique. Cela peut s’avérer utile pour que l’intégration ne se rompe pas si, par exemple, cette personne quitte l’entreprise ou modifie son mot de passe.
+
+Ce type de connexion est disponible pour tous les modules DevOps d’Azure.
+
+>[!NOTE]
+>
+>L’authentification principale du service ne prend pas en charge toutes les fonctionnalités DevOps d’Azure. Un petit nombre d’actions au niveau administrateur, telles que la gestion des licences utilisateur, nécessitent toujours une connexion à un compte personnel. Utilisez l’authentification principale du service si vous n’en avez besoin que pour les éléments de travail, les tableaux, les référentiels ou les pipelines.
+
+* [Conditions préalables à la connexion d’Azure DevOps à Workfront Fusion à l’aide d’un principal de service](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [Création de l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id)
+* [Créer un secret client](#create-a-client-secret)
+* [Collecter les détails de votre connexion](#collect-your-connection-details)
+* [Ajoutez le principal de service à votre organisation DevOps Azure](#add-the-service-principal-to-your-azure-devops-organization)
+* [Créer la connexion](#create-the-connection)
+
+#### Conditions préalables à la connexion d’Azure DevOps à Workfront Fusion à l’aide d’un principal de service
+
+Pour créer cette connexion, vous avez besoin des éléments suivants :
+
+* **Accès administrateur global** ou **administrateur de l’application** dans l’ID d’entrée Microsoft, pour enregistrer l’application. Si vous ne disposez pas de cet accès, demandez à un membre de votre équipe informatique ou d’identité de terminer cette étape pour vous.
+* **Administrateur de la collecte de projets** accédez à votre organisation DevOps Azure pour ajouter le principal de service en tant que membre. Il s’agit souvent d’une personne différente de celle qui gère l’identifiant Microsoft Entra.
+* Nom de votre organisation Azure DevOps. Vous pouvez le retrouver dans votre URL DevOps Azure : `dev.azure.com/<your organization name>`.
+
+#### Création de l’enregistrement de l’application dans l’ID Microsoft Entra
+
+1. Connectez-vous au centre d’administration [!DNL Microsoft Entra].
+1. Accédez à **[!UICONTROL Enregistrements des applications]** > **[!UICONTROL Nouvel enregistrement]**.
+1. Donnez à l’application un nom clair et reconnaissable. Par exemple, `Workfront Fusion Azure DevOps Integration`.
+1. Laissez le champ **[!UICONTROL URI de redirection]** vide. Cette connexion n’implique pas de connexion via un navigateur.
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Passez à [Créer un secret client](#create-a-client-secret).
+
+#### Créer un secret client
+
+1. Dans l’enregistrement de votre nouvelle application, accédez à **[!UICONTROL Certificats et secrets]**.
+1. Sélectionnez **[!UICONTROL Nouveau secret client]**, ajoutez une description, puis choisissez une période d’expiration.
+1. Sélectionnez **[!UICONTROL Ajouter]**.
+1. Copiez immédiatement la **[!UICONTROL valeur]** du secret. Il s’affiche une seule fois. Si vous quittez cette page avant de la copier, vous devez en créer une nouvelle.
+1. Continuez pour [Collecter les détails de votre connexion](#collect-your-connection-details).
+
+#### Collecter les détails de votre connexion
+
+1. Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, notez les valeurs suivantes. Vous les saisissez lors de la création de la connexion dans le module .
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Tenant ID]</td>
+      <td>Sur la page Aperçu , intitulé <b>ID de répertoire (client)</b>.</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>Sur la page Aperçu , intitulé <b>ID d’application (client)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client Secret]</td>
+      <td>Valeur copiée dans <a href="#create-a-client-secret" class="MCXref xref">Créer un secret client</a>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organization]</td>
+      <td>Nom de votre organisation Azure DevOps. Par exemple, si votre URL est <code>dev.azure.com/yourorg</code>, saisissez <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >Vous pouvez ignorer la zone **Autorisations API** de l’enregistrement de l’application. Si vous y ajoutez des opérations de développement Azure, seules les **autorisations déléguées** sont disponibles. Les **Autorisations d’application** apparaissent grisées. Cela est normal, car les opérations de développement Azure ne prennent pas en charge l’octroi d’accès de cette manière. Au lieu de cela, l’accès est accordé directement dans les DevOps Azure, dans la partie suivante.
+
+1. Passez à [Ajouter le principal de service à votre organisation DevOps Azure](#add-the-service-principal-to-your-azure-devops-organization).
+
+#### Ajoutez le principal de service à votre organisation DevOps Azure
+
+L’enregistrement de l’application dans Microsoft Entra ID crée uniquement son identité. L’application n’a pas encore accès à vos données DevOps Azure. Cette procédure permet d’accorder cet accès.
+
+1. Connectez-vous à votre organisation Azure DevOps à l’adresse `dev.azure.com/<your organization name>`.
+1. Sélectionnez **[!UICONTROL Paramètres de l’organisation]** dans le coin inférieur gauche, puis sélectionnez **[!UICONTROL Utilisateurs]**.
+1. Sélectionnez **[!UICONTROL Ajouter des utilisateurs]**.
+1. Dans la zone de recherche, effectuez une recherche en fonction du nom d’affichage de l’application, qui est le nom que vous lui avez donné lors de son enregistrement. Ne pas effectuer de recherche par ID client.
+1. Sélectionner un niveau d&#39;accès :
+
+   * **[!UICONTROL De base]** est généralement suffisant pour lire et écrire des éléments de travail, des tableaux et des référentiels.
+   * Si votre workflow doit parcourir les processus disponibles, tels que les modèles Agile, Scrum ou personnalisés, dans le cadre de la configuration, ajoutez plutôt le principal de service au groupe **[!UICONTROL Administrateurs de collection de projets]**. Il s’agit d’un niveau d’accès plus large, donc n’accordez-le que si vous avez besoin de cette fonctionnalité.
+
+1. Attribuez le principal de service au ou aux projets spécifiques dont il a besoin, en suivant les pratiques d’accès habituelles de votre entreprise.
+1. Sélectionnez **[!UICONTROL Ajouter]**.
+1. Passez à [&#x200B; Créer la connexion &#x200B;](#create-the-connection).
+
+#### Créer la connexion
+
+1. Dans l’écran de configuration de la connexion du module, sélectionnez le type de connexion **[!UICONTROL Principal de service]**.
+1. Saisissez les informations suivantes :
+
+   * [!UICONTROL ID de client]
+   * [!UICONTROL Identifiant du client]
+   * [!UICONTROL Secret du client]
+   * [!UICONTROL Organisation]
+
+1. Enregistrez la connexion.
+
+   Si tout est correctement configuré, la connexion est validée avec succès.
 
 ## Modules [!UICONTROL Azure DevOps] et leurs champs
 

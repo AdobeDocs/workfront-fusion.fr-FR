@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
-ht-degree: 42%
+source-wordcount: 6660
+ht-degree: 41%
 
 ---
 
@@ -1600,11 +1600,6 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
 >
 >Pour plus d’informations sur la modification des Webhooks, voir [Modifier les Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->Après le 23 août 2026, Fusion activera la sécurité basée sur authToken par défaut pour tous les modules Planification Workfront > Événement de contrôle, y compris les modules existants.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>Activez cette option pour empêcher le déclenchement du scénario lorsqu’une modification est effectuée par la connexion utilisée par ce module. Cela empêche qu’une autre instance du scénario soit déclenchée si ce scénario exécute une action de déclenchement.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Activer les hooks sécurisés]</td>
+      <td>
+       <p>Choisissez si vous souhaitez activer la sécurité basée sur authToken pour ce webhook.</p><p>
+       <b>REMARQUE </b> : depuis le 23 août 2026, Fusion active la sécurité basée sur authToken par défaut pour tous les modules Planification Workfront &gt; Événement de contrôle, y compris les modules existants. Si un webhook spécifique est rompu ou si vous devez le désactiver pour des raisons de compatibilité, vous pouvez désactiver l’option Activer les hooks sécurisés .</p>
+      </td>
     </tr>
   </tbody>
 </table>
