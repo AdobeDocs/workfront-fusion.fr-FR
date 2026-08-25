@@ -7,9 +7,9 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 Pour obtenir des instructions sur la planification de scénarios chaînés, voir [Enchaîner plusieurs scénarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+>[!NOTE]
+>
+>Au lieu de configurer ces modules manuellement, vous pouvez sélectionner des modules existants dans un scénario et les déplacer dans un nouveau scénario enfant. Pour obtenir des instructions, voir [Déplacer des modules vers une chaîne](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 
 ## Conditions d’accès
