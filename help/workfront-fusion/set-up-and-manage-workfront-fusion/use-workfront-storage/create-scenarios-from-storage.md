@@ -3,7 +3,8 @@ title: Création de scénarios à partir du stockage
 description: Storage s’intègre au créateur de scénarios de Fusion. Vous pouvez donc créer des scénarios préconfigurés directement à partir de la page Storage pour télécharger ou télécharger des fichiers.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: aef1685cb25c0cdcb0dcdf9b0c73fb482d392e5f
 workflow-type: tm+mt
 source-wordcount: 272

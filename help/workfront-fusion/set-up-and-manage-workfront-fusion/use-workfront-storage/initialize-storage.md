@@ -3,7 +3,8 @@ title: Initialiser le stockage
 description: Lorsque l’utilisateur accède pour la première fois au stockage , un écran d’initialisation lui est associé et il établit une connexion sécurisée au stockage Adobe pour le compte de l’équipe.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 216

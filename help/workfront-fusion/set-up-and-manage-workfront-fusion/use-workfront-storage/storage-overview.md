@@ -3,7 +3,8 @@ title: Vue d’ensemble de l’espace de stockage
 description: Le stockage est une page de Workfront Fusion qui permet aux équipes d’accéder directement à leurs référentiels Adobe Enterprise Storage Management (ESM). Les utilisateurs peuvent ainsi parcourir les dossiers, charger et télécharger des fichiers, afficher l’historique des versions et créer des scénarios d’automatisation.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279
