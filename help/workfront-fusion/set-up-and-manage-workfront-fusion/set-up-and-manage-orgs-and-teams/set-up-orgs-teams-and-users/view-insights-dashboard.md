@@ -1,5 +1,5 @@
 ---
-title: Afficher le tableau de bord des performances d’une organisation
+title: Affichage du tableau de bord des informations pour une organisation
 description: Les administrateurs et administratrices de Fusion peuvent afficher un tableau de bord qui affiche les mesures d’exécution pour une organisation.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
-# Afficher le tableau de bord des performances d’une organisation
+# Affichage du tableau de bord des informations pour une organisation
 
-Le tableau de bord des performances de Fusion vous permet de voir rapidement quels scénarios sont les plus exécutés, où les retards se produisent et à quel point vos pools de salariés fonctionnent efficacement. Vous bénéficiez ainsi d’une visibilité en temps réel sur les volumes d’exécution, la profondeur de file d’attente, l’utilisation du pool et les performances au niveau du scénario.
+Le tableau de bord Fusion Insights vous permet de voir rapidement quels scénarios sont les plus exécutés, où les retards se produisent et avec quelle efficacité vos pools de salariés fonctionnent. Vous bénéficiez ainsi d’une visibilité en temps réel sur les volumes d’exécution, la profondeur de file d’attente, l’utilisation du pool et les performances au niveau du scénario.
 
 ## Conditions d’accès
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 +++
 
-## Composants du tableau de bord des performances
+## Composants du tableau de bord Insights
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 -->
 
-Dans le tableau de bord des performances de Fusion , vous pouvez voir les mesures suivantes.
+Dans le tableau de bord Fusion Insights, vous pouvez voir les mesures suivantes.
 
 * **Exécutions en attente de traitement**
 Ce graphique montre le nombre d’exécutions en attente de traitement (également appelées liste d’attente d’exécution) à un moment donné.
@@ -80,9 +80,9 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 
   Vous pouvez utiliser ce graphique pour identifier les scénarios qui prennent plus de temps que d’habitude, y compris ceux affectés par des problèmes liés à une application ou un service connecté.
 
-## Affichage du tableau de bord des performances de Fusion
+## Affichage du tableau de bord Fusion Insights
 
-1. Dans Fusion, cliquez sur **Performances** dans le volet de navigation de gauche.
+1. Dans Fusion, cliquez sur **Insights** dans le volet de navigation de gauche.
 
    Le tableau de bord s’ouvre.
 

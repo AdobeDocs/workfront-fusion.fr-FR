@@ -15,10 +15,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: ff9c9176b83d4ec7a19200836b575537a3c7e945
+source-git-commit: 37064a6e8e189a2d27a2d9a00194f93137daba32
 workflow-type: tm+mt
-source-wordcount: 65
-ht-degree: 70%
+source-wordcount: 68
+ht-degree: 67%
 
 ---
 
@@ -28,3 +28,4 @@ ht-degree: 70%
 * [Configurer et gérer des organisations et des équipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
 * [Configuration des extensions d’interface utilisateur personnalisées](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
 * [Gérer les modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+* [Utilisation du stockage Workfront](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
