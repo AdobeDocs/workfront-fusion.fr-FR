@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 41%
 
 ---
@@ -408,6 +408,7 @@ Ce module d&#39;action met à jour un nouvel espace de travail dans Planning.
 * [Obtention des types d’enregistrements globaux](#get-global-record-types-v2)
 * [Obtenir un type d’enregistrement](#get-a-record-type-v2)
 * [Obtenir des types d’enregistrement](#get-record-types-v2)
+* [Configuration du type d’enregistrement de refonte](#recast-record-type-configuration-v2)
 * [Mise à jour d’un type d’enregistrement](#update-a-record-type-v2)
 
 #### Création d’un type d’enregistrement (V2)
@@ -553,6 +554,27 @@ Ce module récupère une liste des types d’enregistrements disponibles dans un
         <p>[!UICONTROL Nombre maximal de types d'enregistrements renvoyés]</p>
       </td>
       <td>Saisissez ou mappez le nombre maximal de types d’enregistrements que le module renverra au cours d’un cycle d’exécution.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Configuration du type d’enregistrement de refonte (V2)
+
+Ce module récupère tous les types d’enregistrements de l’espace de travail, regroupés par leur section, ainsi que les champs de chaque type d’enregistrement et les options de sélection de chaque champ. La sortie est structurée sous la forme section > type d’enregistrement > champs.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Pour obtenir des instructions sur la création d’une connexion à [!DNL Adobe Workfront Planning], voir <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Créer une connexion à [!DNL Adobe Workfront Planning]</a> dans cet article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Saisissez ou mappez l’identifiant de l’espace de travail pour lequel vous souhaitez récupérer la configuration de type d’enregistrement.</td> 
     </tr>
   </tbody>
 </table>
