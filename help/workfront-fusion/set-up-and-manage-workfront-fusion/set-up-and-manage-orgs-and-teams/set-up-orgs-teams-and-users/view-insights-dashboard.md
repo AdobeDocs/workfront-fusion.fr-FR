@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 6%
 
 ---
@@ -63,6 +62,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Dans le tableau de bord Fusion Insights, vous pouvez voir les mesures suivantes.
 
+* **Journaux Des Exécutions Ayant Échoué**
+Ce tableau répertorie chaque exécution de scénario d’échec ou d’avertissement dans votre organisation. Vous pouvez ainsi rechercher et résoudre les problèmes d’exécution sans quitter le tableau de bord.
+
 * **Exécutions en attente de traitement**
 Ce graphique montre le nombre d’exécutions en attente de traitement (également appelées liste d’attente d’exécution) à un moment donné.
 
@@ -79,8 +81,6 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 Ce graphique affiche les exécutions par scénario. Différentes couleurs représentent différents scénarios. Lorsque vous pointez sur le graphique, une fenêtre s’affiche, indiquant la couleur du scénario.
 
   Vous pouvez utiliser ce graphique pour identifier les scénarios qui prennent plus de temps que d’habitude, y compris ceux affectés par des problèmes liés à une application ou un service connecté.
-* **Journal d’exécution**
-Ce tableau répertorie chaque exécution de scénario d’échec ou d’avertissement dans votre organisation. Vous pouvez ainsi rechercher et résoudre les problèmes d’exécution sans quitter le tableau de bord.
 
 ## Affichage du tableau de bord Fusion Insights
 
@@ -107,15 +107,15 @@ Utilisez le Journal d’exécution pour rechercher les exécutions de scénario 
    * [!UICONTROL Équipe]
    * [!UICONTROL Scénario]
    * [!UICONTROL Type d’exécution]
-   * [!UICONTROL Période &#x200B;]
+   * [!UICONTROL Période ]
    * [!UICONTROL État de désactivation]
-   * [!UICONTROL &#x200B; Message d’erreur &#x200B;]
+   * [!UICONTROL  Message d’erreur ]
 
    Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
 
 1. Cliquez sur une exécution pour afficher plus de détails sur son erreur.
 1. Pour réactiver un ou plusieurs scénarios qui ont été automatiquement désactivés après des échecs répétés, sélectionnez les exécutions, puis cliquez sur **Activer**.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   Avant de réactiver un scénario, recherchez la cause de ses échecs, tels que des informations d’identification expirées ou un problème de connecteur, afin que le scénario n’échoue pas immédiatement à nouveau.
+   >[!NOTE]
+   >
+   >Avant de réactiver un scénario, recherchez la cause de ses échecs, tels que des informations d’identification expirées ou un problème de connecteur, afin que le scénario n’échoue pas immédiatement à nouveau.
