@@ -3,9 +3,8 @@ title: Modules Workfront Fusion
 description: Avec le connecteur Workfront Fusion, vous pouvez gérer votre propre organisation Fusion à partir d’un scénario, y compris les enregistrements, les hooks, les scénarios et les connexions.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 05cd734c1bc65f58d60c2668f91e065342290341
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
 source-wordcount: 1374
 ht-degree: 25%
@@ -416,6 +415,8 @@ Ce module renvoie l’ID de région et d’organisation de chaque organisation F
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 

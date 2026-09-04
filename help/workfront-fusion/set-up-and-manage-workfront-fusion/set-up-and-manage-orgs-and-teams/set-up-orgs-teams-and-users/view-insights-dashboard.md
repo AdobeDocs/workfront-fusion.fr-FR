@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 7%
+source-wordcount: 848
+ht-degree: 6%
 
 ---
 
@@ -79,6 +78,8 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 Ce graphique affiche les exécutions par scénario. Différentes couleurs représentent différents scénarios. Lorsque vous pointez sur le graphique, une fenêtre s’affiche, indiquant la couleur du scénario.
 
   Vous pouvez utiliser ce graphique pour identifier les scénarios qui prennent plus de temps que d’habitude, y compris ceux affectés par des problèmes liés à une application ou un service connecté.
+* **Journal d’exécution**
+Ce tableau répertorie chaque exécution de scénario d’échec ou d’avertissement dans votre organisation. Vous pouvez ainsi rechercher et résoudre les problèmes d’exécution sans quitter le tableau de bord.
 
 ## Affichage du tableau de bord Fusion Insights
 
@@ -95,3 +96,25 @@ Ce graphique affiche les exécutions par scénario. Différentes couleurs repré
 1. Pour modifier la période du tableau de bord, sélectionnez le champ Période dans le coin supérieur droit du tableau de bord, puis sélectionnez une nouvelle période. La période disponible la plus longue est de 24 heures et la plus courte est de 15 minutes.
 1. Pour actualiser les graphiques, cliquez sur l’icône Actualiser située en haut à droite du tableau de bord.
 1. Pour afficher un autre pool de traitement, cliquez sur le champ Pool près du coin supérieur gauche du tableau de bord, puis sélectionnez le pool à afficher.
+
+## Filtrer et trier les exécutions dans le journal d’exécution
+
+Utilisez le Journal d’exécution pour rechercher les exécutions de scénario ayant échoué ou renvoyé un avertissement dans l’ensemble de votre organisation, et réactivez tous les scénarios qui ont été automatiquement désactivés après des échecs répétés.
+
+1. Dans le journal d’exécution, filtrez les exécutions selon l’une des méthodes suivantes :
+
+   * [!UICONTROL Équipe]
+   * [!UICONTROL Scénario]
+   * [!UICONTROL Type d’exécution]
+   * [!UICONTROL Période ]
+   * [!UICONTROL État de désactivation]
+   * [!UICONTROL  Message d’erreur ]
+
+   Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
+
+1. Cliquez sur une exécution pour afficher plus de détails sur son erreur.
+1. Pour réactiver un ou plusieurs scénarios qui ont été automatiquement désactivés après des échecs répétés, sélectionnez les exécutions, puis cliquez sur **Activer**.
+
+   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
+
+   Avant de réactiver un scénario, recherchez la cause de ses échecs, tels que des informations d’identification expirées ou un problème de connecteur, afin que le scénario n’échoue pas immédiatement à nouveau.
