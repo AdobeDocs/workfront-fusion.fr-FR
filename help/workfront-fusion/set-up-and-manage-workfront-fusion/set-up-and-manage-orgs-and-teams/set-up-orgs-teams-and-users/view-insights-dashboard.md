@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
 source-wordcount: 848
@@ -106,9 +107,9 @@ Utilisez le Journal d’exécution pour rechercher les exécutions de scénario 
    * [!UICONTROL Équipe]
    * [!UICONTROL Scénario]
    * [!UICONTROL Type d’exécution]
-   * [!UICONTROL Période ]
+   * [!UICONTROL Période &#x200B;]
    * [!UICONTROL État de désactivation]
-   * [!UICONTROL  Message d’erreur ]
+   * [!UICONTROL &#x200B; Message d’erreur &#x200B;]
 
    Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
 
