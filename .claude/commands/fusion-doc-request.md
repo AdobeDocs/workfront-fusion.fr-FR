@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gérer une demande de documentation Fusion à partir du modèle
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Il s’agit d’un workflow différent de celui de la compétence `fusion-releas
 
 ## Étape 1 : obtenir les détails de la requête
 
-Si un lien Slack est fourni, analysez le `channel_id` et `message_ts` hors de l’URL et récupérez le thread (`slack_get_thread_replies` ou `slack_read_thread`, selon l’outil de MCP Slack connecté ; essayez les deux si l’un d’eux échoue). Conservez le lien permanent/l’URL du thread - cela est nécessaire à l’étape 3.
+Si un lien Slack est fourni, analysez le `channel_id` et `message_ts` hors de l’URL et récupérez le thread (`slack_get_thread_replies` ou `slack_read_thread`, selon l’outil de MCP Slack connecté ; essayez les deux si l’un d’eux échoue). Conservez le lien permanent/l’URL du thread - cela est nécessaire à l’étape 4.
 
 Les connexions Slack dans cet environnement sont fragiles (jetons expirés, déconnexions en milieu de session). Si une récupération échoue :
 - Réessayez une fois.
@@ -33,9 +33,17 @@ Le modèle de requête comporte les champs suivants (extrayez chacun d’eux) :
 
 Si la requête renvoie à une page de wiki Confluence avec la spécification complète, récupérez-la (`get_wiki_content`) avant de rédiger la documentation. Ne vous fiez pas uniquement au résumé Slack pour les détails techniques (noms de champ exacts, étapes, libellés d’interface utilisateur). Extrayez-les à partir de la spécification du wiki lorsqu’un lien est créé.
 
-Si la requête renvoie plutôt à une source secondaire hors Confluence (par exemple, une publication de la communauté Experience League, un article d’assistance, un résumé généré par l’IA), vous pouvez l’utiliser pour renseigner les détails techniques qui font défaut au texte de Slack, mais la traiter comme une requête moins fiable que la requête Slack elle-même. Lorsqu’il entre en conflit avec le texte du Slack ou l’ajoute à celui-ci (un nom différent pour le même bouton/champ, un détail qui n’est pas du tout mentionné dans Slack), ne le sélectionnez pas en silence. Écrivez le document en utilisant le libellé de la requête Slack comme source principale et signalez la différence en ligne avec un commentaire HTML (par exemple, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) conformément aux conseils de l’étape 2.
+Si la requête renvoie plutôt à une source secondaire hors Confluence (par exemple, une publication de la communauté Experience League, un article d’assistance, un résumé généré par l’IA), vous pouvez l’utiliser pour renseigner les détails techniques qui font défaut au texte de Slack, mais la traiter comme une requête moins fiable que la requête Slack elle-même. Lorsqu’il entre en conflit avec le texte du Slack ou l’ajoute à celui-ci (un nom différent pour le même bouton/champ, un détail qui n’est pas du tout mentionné dans Slack), ne le sélectionnez pas en silence. Écrivez le document en utilisant le libellé de la requête Slack comme source principale et signalez la différence en ligne avec un commentaire HTML (par exemple, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) conformément aux conseils de l’étape 3.
 
-## Étape 2 : mettre à jour la documentation
+## Étape 2 : créer une branche pour la requête
+
+Avant de toucher des fichiers, créez une branche Git pour cette requête et extrayez-la. Branchement à partir de la branche par défaut actuelle (`main`), et non à partir de la branche qui se trouve être extraite.
+
+Nommez le `becky-{short-kebab-case-description}` de branche, dérivé du **Titre de la fonctionnalité** - le premier mot doit être `becky`, correspondant à la convention de branche existante de ce référentiel (par exemple, `becky-webhook-update`, `becky-storage-beta-sos`). Soyez bref - quelques mots, pas le titre complet.
+
+Si l’arborescence de travail n’est pas propre (modifications non validées provenant d’un travail non lié), arrêtez-la et informez-en l’utilisateur plutôt que de la survoler.
+
+## Étape 3 : mettre à jour la documentation
 
 Recherchez le ou les articles existants pertinents dans ce référentiel (repérez les noms de module, les libellés d’interface utilisateur ou les noms de paramètres associés, sans deviner le fichier). Mettez-les à jour pour refléter la modification, en suivant la structure existante de cet article, le niveau de titre et le style de la maison.
 
@@ -46,7 +54,7 @@ Recherchez le ou les articles existants pertinents dans ce référentiel (repér
   - Tout sous-index/page de destination contenu qui renvoie également vers des articles de ce type (par exemple, `apps-and-modules-toc.md` pour une nouvelle page de modules de connecteur).
     Vérifiez explicitement et confirmez que la nouvelle entrée se trouve dans la même liste, au même niveau d’imbrication, que ses articles frères les plus proches dans chaque fichier. Ne supposez pas que l’ajout de l’une à l’autre recouvre l’autre.
 
-## Étape 3 : création de la tâche Workfront
+## Étape 4 : création de la tâche Workfront
 
 Projet : **tâches de documentation du produit - pour les problèmes de développement qui nécessitent une messagerie**. Résolvez son identifiant avec `insights_find_id_by_name` (entité `project`) plutôt que de le coder en dur, au cas où il changerait. Consultez les valeurs connues ci-dessous pour connaître le dernier identifiant résolu.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Avant l’appel de création, appelez `read_workflow_docs` avec `workfront://tools/create-any-object` : cet appel définit les champs personnalisés et une valeur d’énumération (`DE:Preview Date Known`), qui la requiert selon les règles du serveur MCP.
 
-## Étape 4 : confirmer à l’utilisateur ou à l’utilisatrice
+## Étape 5 : confirmer à l’utilisateur ou à l’utilisatrice
 
 Signalez simplement :
 
+&#x200B;* Branche que vous avez créée.
 &#x200B;* Quel(s) fichier(s) de documents avez-vous modifié et ce que vous avez ajouté.
 &#x200B;* Nom et URL de la tâche.
 &#x200B;* Les valeurs de champ exactes que vous définissez, y compris les champs de date de prévisualisation.
