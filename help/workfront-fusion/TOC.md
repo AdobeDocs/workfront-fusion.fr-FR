@@ -3,9 +3,9 @@ user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 nudge: true
-source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
+source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2664'
 ht-degree: 49%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 49%
 * Activité de publication de Fusion {#fusion-release-activity}
   * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versions de Fusion - 2026 {#fusion-releases-2026}
+    * [Activité de publication de Workfront Fusion : semaine du 7 septembre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
     * [Activité de publication de Workfront Fusion : semaine du 31 août 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
     * [Activité de publication de Workfront Fusion : semaine du 24 août 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-24.md)
     * [Activité de publication de Workfront Fusion : semaine du 17 août 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
@@ -417,7 +418,7 @@ ht-degree: 49%
       * [Modules Adobe User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Modules MCP Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Modules Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Modules Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Modules de planification Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Modules Adobe Workfront Unified Review and Approvals](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Modules Workfront Boards](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Modules Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
