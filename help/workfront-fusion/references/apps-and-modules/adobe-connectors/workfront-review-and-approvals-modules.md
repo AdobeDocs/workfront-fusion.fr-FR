@@ -21,7 +21,7 @@ ht-degree: 17%
 
 Grâce aux modules de révision et d’approbation unifiées d’Adobe Workfront, vous pouvez obtenir des détails d’approbation, prendre une décision concernant une ressource, ajouter ou supprimer des participants à l’approbation, ajouter ou mettre à jour des étapes d’approbation, verrouiller ou déverrouiller des étapes et effectuer des appels d’API personnalisés.
 
-Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
+Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/fr/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
 
 ## Conditions d’accès
 
