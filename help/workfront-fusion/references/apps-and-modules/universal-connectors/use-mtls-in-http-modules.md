@@ -7,7 +7,7 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 65%
@@ -95,12 +95,12 @@ Vous pouvez utiliser les liens suivants pour télécharger les certificats publi
 
 Téléchargez le fichier zip suivant, puis décompressez-le et utilisez le fichier PEM pour votre centre de données.
 
-[Téléchargement des certificats Workfront Fusion 2026](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Téléchargement des certificats Workfront Fusion 2026](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Datacenter | Lien de téléchargement | Dates valides |
 | --- | --- | --- |
 | Centre de données US AWS | `fusion-prod-us-mtls-certificate-2026.pem` | Du 29 janvier 2026 au 2 mars 2027 |
-| Cluster Azure US | `fusion-prod-az-mtls-certificate.pem` | Du 21 septembre 2025 au 23 octobre 2026 |
+| Cluster Azure US | `fusion-prod-az-mtls-certificate-2026-sept.pem` | Du 19 août 2026 au 6 mars 2027 |
 | Centre de données EU AWS | `fusion-prod-eu-mtls-certificate-2026.pem` | Du 29 janvier 2026 au 2 mars 2027 |
 | Cluster EU Azure | `fusion-prod-eu-az-mtls-certificate-2026.pem` | Du 4 février 2026 au 8 mars 2027 |
 
