@@ -3,12 +3,11 @@ title: Modules Workfront Fusion
 description: Avec le connecteur Workfront Fusion, vous pouvez gérer votre propre organisation Fusion à partir d’un scénario, y compris les enregistrements, les hooks, les scénarios et les connexions.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 25%
+source-wordcount: 1430
+ht-degree: 24%
 
 ---
 
@@ -276,6 +275,9 @@ Met à jour un enregistrement spécifié.
 
 ### Exporter
 
+* [Exporter les journaux d’activité](#export-activity-logs)
+* [Scénarios d’exportation](#export-scenarios)
+
 #### Exporter les journaux d’activité
 
 Ce module exporte les journaux d’activité.
@@ -311,6 +313,25 @@ Ce module exporte les journaux d’activité.
   <tr> 
    <td role="rowheader">Direction</td> 
    <td>Choisissez si vous souhaitez classer les résultats par ordre croissant ou décroissant.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Scénarios d’exportation
+
+Ce module exporte les plans directeurs de Fusion pour un ou plusieurs scénarios.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+  <tr> 
+   <td role="rowheader">Identifiants de scénario</td> 
+   <td>Pour chaque scénario que vous souhaitez exporter, cliquez sur <b>Ajouter un élément</b> et saisissez l’identifiant du scénario.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
