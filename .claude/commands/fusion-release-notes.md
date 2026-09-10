@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Créez une page de notes de mise à jour hebdomadaires de Workfront Fusion et connectez-la à la page d’aperçu de l’activité de version et à la table des matières. À utiliser lorsque l’utilisateur souhaite écrire, ajouter ou rédiger une nouvelle note de mise à jour de Fusion ou une page de version hebdomadaire, ou lorsqu’il demande de documenter les nouvelles fonctionnalités de Fusion pour une version. N’utilisez pas pour les notes de mise à jour de Workfront (Quicksilver) dans les annonces de produits/versions de produits. Utilisez le formateur de notes de mise à jour pour ces notes.
-source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/fr/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ Notes :
   
   {Regular description paragraph(s).}
   ```
-
 - Chaque fonctionnalité doit se terminer par un « Pour plus d’informations, voir [...] » lien vers l’article d’aide approprié. Vérifiez que la cible du lien existe dans le référentiel.
 
 ## Étape 4 : ajouter la page à l’index d’aperçu
@@ -113,7 +112,6 @@ Modifier le `help/workfront-fusion/fusion-product-releases/fusion-release-activi
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - S’il s’agit de la première version d’une nouvelle année, ajoutez un nouvel en-tête `## Fusion releases in {YYYY}` au-dessus de l’en-tête de l’année précédente, et enveloppez la section *année précédente* dans un bloc `+++ **Click to open**`/`+++` réductible si ce n’est pas déjà fait (seule l’année en cours reste développée).
 
 ## Étape 5 : ajouter la page à la table des matières
@@ -126,7 +124,6 @@ Modifier le `help/workfront-fusion/TOC.md` :
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Si le titre de l&#39;année en cours n&#39;existe pas encore, ajoutez `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` au-dessus du titre de l&#39;année précédente.
 - **N’ajoutez pas** le préfixe `{hide-from-toc}` aux nouvelles entrées ; il n’est utilisé que pour les entrées plus anciennes une fois qu’elles ne sont plus visibles (voir Incohérences connues ci-dessous).
 
@@ -145,10 +142,11 @@ Demandez à l’utilisateur : *« Voulez-vous configurer une redirection pour le
 - Si **oui**, regroupez les éléments suivants :
   - Le **chemin source** (doit commencer par `/en`, sans espaces)
   - Le **destination** — un chemin relatif commençant par `/en`, ou une URL `https` complète (sans espaces)
-- Ajoutez la ligne au référentiel de `Adobe-Enterprise-Docs/redirects` frère, sous `redirects/redirects-prod.csv` **uniquement**. Ne l&#39;ajoutez jamais à `redirects-dev.csv` ou `redirects-stage.csv` - prod est le seul environnement que cette compétence touche.
+- Ajoutez la ligne au référentiel de `Adobe-Enterprise-Docs/redirects` frère, à `redirects/redirects-prod.csv` **et à aucun autre fichier**. Ne l’ajoutez jamais à `redirects-dev.csv`, `redirects-stage.csv` ou tout autre fichier de ce référentiel. prod est le seul environnement touché par cette compétence et la branche ne doit contenir que la modification de ce fichier.
 - Règles de ligne (à partir du fichier README de ce référentiel) :
   - Pas de doublons `source`, et pas de doublons `source`/`destination`.
   - La redirection ne doit pas entraîner de boucle de redirection.
+- Effectuez la modification sur une nouvelle branche du référentiel `redirects`, nommée `workfront-{month}-{day}-{year}-{topic}` (en minuscules, par exemple `workfront-sep-10-2026-aem-mcp-redirect`) ; ne validez jamais directement sur `main`.
 - **Cette compétence ajoute uniquement la ligne CSV une fois que l’utilisateur l’a confirmée.** L’augmentation de la requête persistante dans le référentiel `redirects` est une étape distincte que cette compétence ne permet pas d’effectuer : indiquez à l’utilisateur qu’une requête persistante doit toujours être ouverte et fusionnée à cet endroit avant que la redirection ne soit activée (~5 minutes après la fusion pour les redirections 1:1).
 
 ## Étape 8 : Liste de contrôle finale
