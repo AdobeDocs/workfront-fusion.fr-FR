@@ -15,9 +15,9 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 7687
+source-wordcount: 7725
 ht-degree: 93%
 
 ---
@@ -284,6 +284,12 @@ Le module renvoie tous les champs standard associés à l’enregistrement, ains
       <td>
        <p>Choisissez si vous souhaitez activer la sécurité basée sur authToken pour ce webhook.</p><p>
        <b>REMARQUE </b> : à compter du 23 août 2026, Fusion active la sécurité basée sur authToken par défaut pour tous les modules Workfront &gt; Événement de contrôle, y compris les modules existants. Si un webhook spécifique est rompu ou si vous devez le désactiver pour des raisons de compatibilité, vous pouvez désactiver l’option Activer les hooks sécurisés .</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Facultatif) Si [!UICONTROL Enable secure hooks] est défini sur [!UICONTROL Yes], vous pouvez saisir votre propre valeur de jeton pour sécuriser le webhook. Si vous laissez ce champ vide, Fusion génère automatiquement un jeton pour vous.</p>
        </td> 
      </tr> 
     </tbody> 

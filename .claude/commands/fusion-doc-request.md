@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gérer une demande de documentation Fusion à partir du modèle
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Champs de tâche :
 | `description` | le **texte complet du message Slack** (tous les champs du modèle de demande, et non une paraphrase), suivi d’un lien vers la conversation Slack |
 | `DE:Release notes` | une note de mise à jour formatée, voir format ci-dessous |
 | `DE:Preview Date Known` | `Yes`, par défaut |
-| `DE:Preview Date` | la **date de publication prévue** de la requête, par défaut |
+| `DE:Preview Date` | la date citée dans le message Slack d’origine (la **date de publication prévue** de la demande), par défaut |
+| `taskConstraint` + `constraintDate` | Définissez `taskConstraint` sur `MFO` (Doit se terminer le) avec `constraintDate` = la date citée dans le message Slack d’origine (la **date de publication prévue** de la demande), de sorte que la date d’achèvement prévue de la tâche la corresponde également. |
 | Produit/zone | sélectionnez `Fusion` (un champ d’énumération du formulaire de documentation du produit ; confirmez le nom exact du champ par `insights_search_fields` s’il est peu clair) |
 
-Définissez les champs de date de prévisualisation dans le cadre de ce même appel de création - ne les laissez pas pour plus tard ou n’attendez pas d’être interrogés. Si l’utilisateur ou l’utilisatrice donne une date différente ultérieurement ou indique que la date n’est pas encore connue, mettez-la à jour en conséquence, mais remplissez-la par défaut à chaque fois.
+Définissez les champs de date de prévisualisation et la date d’achèvement prévue dans le cadre de ce même appel de création - ne les laissez pas en attente d’affichage ultérieur ou d’interrogation. Si l’utilisateur ou l’utilisatrice donne une date différente ultérieurement ou indique que la date n’est pas encore connue, mettez-la à jour en conséquence, mais remplissez-la par défaut à chaque fois.
+
+Les nouvelles tâches utilisent par défaut une contrainte Dès Que Possible de durée 0, en vertu de laquelle les `plannedStartDate`/`plannedCompletionDate` sont dérivées du planificateur et une écriture directe vers est silencieusement supprimée (aucune erreur, la date ne change simplement pas). La définition de `taskConstraint: "MFO"` avec `constraintDate` est le moyen le plus fiable d’épingler la date d’achèvement prévisionnelle à la date citée dans le message Slack. Lisez `workfront://knowledge/task/update` avant cette écriture : il s’agit d’un champ de planification/date selon les règles du serveur MCP.
 
 Format des notes de mise à jour pour le champ `DE:Release notes`. Commencez toujours par `***FUSION***` sur sa propre ligne, puis une ligne vide, puis le titre. La note est marquée comme appartenant à Fusion (par opposition au Workfront principal) en un coup d’œil :
 

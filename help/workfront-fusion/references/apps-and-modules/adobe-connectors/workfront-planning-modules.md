@@ -1,5 +1,5 @@
 ---
-title: Modules Adobe Workfront Planning
+title: Modules de planification Adobe Workfront
 description: Avec les modules  [!DNL Adobe Workfront Planning] , vous pouvez lancer un scénario Adobe Workfront Fusion en fonction des événements de votre compte de planification  [!DNL Adobe] Workfront, créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et charger des documents.
 author: Becky
 feature: Workfront Fusion
@@ -11,15 +11,15 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 41%
 
 ---
 
 
-# Modules Adobe Workfront Planning
+# Modules de planification Adobe Workfront
 
 Avec les modules [!DNL Adobe Workfront Planning], vous pouvez déclencher un scénario lorsque des événements se produisent dans Workfront Planning. Vous pouvez également créer, lire, mettre à jour et supprimer des enregistrements, ou effectuer un appel API personnalisé vers votre compte [!DNL Adobe Workfront Planning].
 
@@ -1677,6 +1677,12 @@ Ce module de déclenchement démarre un scénario lorsqu’un enregistrement, un
       <td>
        <p>Choisissez si vous souhaitez activer la sécurité basée sur authToken pour ce webhook.</p><p>
        <b>REMARQUE </b> : depuis le 23 août 2026, Fusion active la sécurité basée sur authToken par défaut pour tous les modules Planification Workfront &gt; Événement de contrôle, y compris les modules existants. Si un webhook spécifique est rompu ou si vous devez le désactiver pour des raisons de compatibilité, vous pouvez désactiver l’option Activer les hooks sécurisés .</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Custom token]</td>
+      <td>
+       <p>(Facultatif) Si [!UICONTROL Enable secure hooks] est défini sur [!UICONTROL Yes], vous pouvez saisir votre propre valeur de jeton pour sécuriser le webhook. Si vous laissez ce champ vide, Fusion génère automatiquement un jeton pour vous.</p>
       </td>
     </tr>
   </tbody>
