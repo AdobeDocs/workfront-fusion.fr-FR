@@ -4,15 +4,12 @@ description: Grâce aux modules Contenu et approbations d’Adobe Workfront, vou
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
+source-wordcount: 3631
 ht-degree: 17%
 
 ---
@@ -21,7 +18,7 @@ ht-degree: 17%
 
 Grâce aux modules de révision et d’approbation unifiées d’Adobe Workfront, vous pouvez obtenir des détails d’approbation, prendre une décision concernant une ressource, ajouter ou supprimer des participants à l’approbation, ajouter ou mettre à jour des étapes d’approbation, verrouiller ou déverrouiller des étapes et effectuer des appels d’API personnalisés.
 
-Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/fr/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
+Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
 
 ## Conditions d’accès
 
@@ -135,7 +132,6 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Ajouter ou mettre à jour des participants](#add-or-update-participants)
 * [Modèles de suppression en bloc](#bulk-delete-templates)
 * [Créer un modèle](#create-a-template)
-* [Création d’une validation](#create-an-approval)
 * [Création d’étapes](#create-stages)
 * [Suppression d’une décision sur une étape](#delete-a-decision-on-a-stage)
 * [Supprimer une étape](#delete-a-stage)
@@ -237,35 +233,6 @@ Ce module d&#39;action crée un modèle d&#39;approbation
     <tr>
       <td role="rowheader"><p>Partagé avec</p></td>
       <td>Pour chaque utilisateur avec lequel vous souhaitez partager le modèle, cliquez sur <b>Ajouter un élément</b> puis sur ID utilisateur et niveau d’accès souhaité.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Création d’une validation
-
-Ce module d’action crée une approbation pour un document sur l’espace de stockage dans le cloud d’Adobe, y compris les données d’évaluation ou un modèle.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connexion</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à Adobe Workfront Unified Review and Approvals, voir <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Se connecter à Adobe Workfront Unified Review and Approvals</a> dans cet article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID de document</p></td>
-      <td>Saisissez ou mappez l’identifiant de la ressource pour laquelle vous souhaitez créer une approbation.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Étapes</p>
-      </td>
-      <td>Pour chaque étape à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez les données de l’étape.<p>Pour plus d’informations, voir <a href="#stages-fields" class="MCXref xref" >Champs d’étape</a> dans cet article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>ID de modèle</p></td>
-      <td>Saisissez ou mappez l'ID du modèle que vous souhaitez utiliser pour cette approbation.</td> 
       </tr>
   </tbody>
 </table>
