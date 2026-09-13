@@ -10,9 +10,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
+source-wordcount: 3631
 ht-degree: 17%
 
 ---
@@ -135,7 +135,6 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 * [Ajouter ou mettre à jour des participants](#add-or-update-participants)
 * [Modèles de suppression en bloc](#bulk-delete-templates)
 * [Créer un modèle](#create-a-template)
-* [Création d’une validation](#create-an-approval)
 * [Création d’étapes](#create-stages)
 * [Suppression d’une décision sur une étape](#delete-a-decision-on-a-stage)
 * [Supprimer une étape](#delete-a-stage)
@@ -237,35 +236,6 @@ Ce module d&#39;action crée un modèle d&#39;approbation
     <tr>
       <td role="rowheader"><p>Partagé avec</p></td>
       <td>Pour chaque utilisateur avec lequel vous souhaitez partager le modèle, cliquez sur <b>Ajouter un élément</b> puis sur ID utilisateur et niveau d’accès souhaité.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Création d’une validation
-
-Ce module d’action crée une approbation pour un document sur l’espace de stockage dans le cloud d’Adobe, y compris les données d’évaluation ou un modèle.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connexion</td>
-      <td>Pour obtenir des instructions sur la création d’une connexion à Adobe Workfront Unified Review and Approvals, voir <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Se connecter à Adobe Workfront Unified Review and Approvals</a> dans cet article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID de document</p></td>
-      <td>Saisissez ou mappez l’identifiant de la ressource pour laquelle vous souhaitez créer une approbation.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Étapes</p>
-      </td>
-      <td>Pour chaque étape à ajouter, cliquez sur <b>Ajouter un élément</b> et saisissez les données de l’étape.<p>Pour plus d’informations, voir <a href="#stages-fields" class="MCXref xref" >Champs d’étape</a> dans cet article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>ID de modèle</p></td>
-      <td>Saisissez ou mappez l'ID du modèle que vous souhaitez utiliser pour cette approbation.</td> 
       </tr>
   </tbody>
 </table>
