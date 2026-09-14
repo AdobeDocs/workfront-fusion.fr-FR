@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Mécanismes de sécurisation des performances de Fusion
 
 L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe Workfront Fusion est conçu pour des performances élevées. Comme les scénarios de longue durée peuvent ralentir le rythme de votre travail, Workfront Fusion a été conçu avec des mécanismes de sécurisation permettant de préserver les performances, pour limiter le temps d’exécution, la taille des données et d’autres paramètres du scénario. Les équipes de conception Workfront Fusion doivent connaître ces mécanismes de sécurisation et les intégrer dans leurs pratiques de conception.
@@ -32,13 +31,13 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
   >
   > Bien que le chaînage permette aux workflows de s’exécuter au-delà de 40 minutes, cela doit être considéré comme un signal de risque de conception, et non comme une solution prise en charge. Les scénarios parents qui s’étendent sur plusieurs scénarios enfants à exécution longue n’ont pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou rencontre un problème de plateforme, le parent attend indéfiniment sans erreur et sans récupération automatique.
   >
-  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
+  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.
 
-   * Lors de l’utilisation de l’application Workfront, veillez à sélectionner uniquement les champs nécessaires à vos cas d’utilisation de création ou de mise à jour.
-   * Lors de l’utilisation d’autres applications, utilisez des modules API personnalisés pour interagir avec n’importe quel type d’enregistrement comportant un grand nombre de champs.
+  * Lors de l’utilisation de l’application Workfront, veillez à sélectionner uniquement les champs nécessaires à vos cas d’utilisation de création ou de mise à jour.
+  * Lors de l’utilisation d’autres applications, utilisez des modules API personnalisés pour interagir avec n’importe quel type d’enregistrement comportant un grand nombre de champs.
 
 * Bien qu’il n’y ait pas de limite pour le nombre de modules dans un scénario, les scénarios comportant plus de 150 modules ont une incidence négative sur les performances de votre système Workfront Fusion. Pour cette raison, il est déconseillé de créer des scénarios comportant plus de 150 modules.
 * Les noms de scénario ne peuvent pas comporter plus de 120 caractères.
@@ -79,10 +78,14 @@ Pour plus d’informations, consultez [Utiliser des fichiers volumineux](/help/w
 * La taille maximale par défaut d’un payload est de **5 Mo**.
 * Les webhooks sont limités à **100 demandes par seconde**. Lorsque cette limite est atteinte, Workfront Fusion envoie un statut 429 ([!UICONTROL Trop de demandes]).
 * Workfront Fusion stocke les payloads de webhook pendant 30 jours. L’accès à un payload de webhook plus de 30 jours après sa réception entraîne l’erreur « [!UICONTROL Échec de la lecture du fichier à partir de l’enregistrement.] »
+* La file d’attente d’un webhook peut contenir jusqu’à 100 000 **d’événements** file d’attente. La file d’attente se remplit lorsqu’un scénario qui utilise le webhook est désactivé ou configuré pour s’exécuter selon un planning plutôt qu’instantanément. Lorsque la file d’attente atteint 100 000 événements, les nouveaux événements sont rejetés avec une erreur « La file d’attente est pleine » et un code d’état 400.
+
+  Pour les événements Workfront et Planning, si la file d’attente reste pleine pendant une période prolongée, l’abonnement à l’événement est désactivé, puis figé, et Workfront Fusion cesse de recevoir les événements pour cet abonnement.
+
 * Les webhooks sont désactivés automatiquement si l’une des conditions suivantes s’applique :
 
-   * Le webhook n’a été connecté à aucun scénario depuis plus de 5 jours.
-   * Le webhook est utilisé uniquement dans les scénarios inactifs, qui sont inactifs depuis plus de 30 jours.
+  * Le webhook n’a été connecté à aucun scénario depuis plus de 5 jours.
+  * Le webhook est utilisé uniquement dans les scénarios inactifs, qui sont inactifs depuis plus de 30 jours.
 
 * Les webhooks désactivés sont supprimés et désinscrits automatiquement s’ils ne sont connectés à aucun scénario et s’ils sont restés désactivés pendant plus de 30 jours.
 * Le délai d’expiration d’une réponse webhook est de 5 minutes.
