@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Gérer une demande de documentation Fusion à partir du modèle
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Gérer une demande de documentation Fusion depuis #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Demande de documentation Fusion
 
@@ -25,11 +23,11 @@ Les connexions Slack dans cet environnement sont fragiles (jetons expirés, déc
 
 Le modèle de requête comporte les champs suivants (extrayez chacun d’eux) :
 
-&#x200B;* **Titre de la fonctionnalité**
-&#x200B;* **Description**
-&#x200B;* **Points à ajouter à la documentation** *(parfois présents - sections/détails spécifiques que le demandeur souhaite voir couverts ; traitez-les comme requis, et non comme facultatifs, le cas échéant)*
-&#x200B;* **Date de publication prévue**
-&#x200B;* **Annonce des besoins** *(Oui/Non - à titre d’information uniquement ; voir la note ci-dessus. N’agissez pas sur ce champ.)*
+* **Titre de la fonctionnalité**
+* **Description**
+* **Points à ajouter à la documentation** *(parfois présents - sections/détails spécifiques que le demandeur souhaite voir couverts ; traitez-les comme requis, et non comme facultatifs, le cas échéant)*
+* **Date de publication prévue**
+* **Annonce des besoins** *(Oui/Non - à titre d’information uniquement ; voir la note ci-dessus. N’agissez pas sur ce champ.)*
 
 Si la requête renvoie à une page de wiki Confluence avec la spécification complète, récupérez-la (`get_wiki_content`) avant de rédiger la documentation. Ne vous fiez pas uniquement au résumé Slack pour les détails techniques (noms de champ exacts, étapes, libellés d’interface utilisateur). Extrayez-les à partir de la spécification du wiki lorsqu’un lien est créé.
 
@@ -43,16 +41,19 @@ Nommez le `becky-{short-kebab-case-description}` de branche, dérivé du **Titre
 
 Si l’arborescence de travail n’est pas propre (modifications non validées provenant d’un travail non lié), arrêtez-la et informez-en l’utilisateur plutôt que de la survoler.
 
+Cette compétence crée et valide la branche, mais ne la transmet pas et n’ouvre pas de demande d’extraction. Laissez cela à l’utilisateur, sauf s’il vous le demande séparément.
+
 ## Étape 3 : mettre à jour la documentation
 
 Recherchez le ou les articles existants pertinents dans ce référentiel (repérez les noms de module, les libellés d’interface utilisateur ou les noms de paramètres associés, sans deviner le fichier). Mettez-les à jour pour refléter la modification, en suivant la structure existante de cet article, le niveau de titre et le style de la maison.
 
-&#x200B;* N’inventez pas de détails techniques (noms de champ exacts, portées d’autorisation, étapes de configuration) qui ne figurent pas dans la requête Slack ou la spécification du wiki lié. Si quelque chose n’est pas confirmé, signalez-le sur la ligne en tant que commentaire HTML (par exemple, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) plutôt que comme une supposition, et jamais en tant que légende visible. Il ne doit pas s’afficher sur la page publiée.
-&#x200B;* Si cela nécessite un tout nouveau fichier d&#39;article (et pas seulement une modification d&#39;un fichier existant), suivez les conventions permanentes de ce référentiel : aucun `exl-id`/`TQID` fabriqué dans frontMATTER, et convertissez le fichier en CRLF/no-BOM après sa création (l&#39;outil `Write` par défaut est LF).
-&#x200B;* Le câblage d’une nouvelle page dans la « table des matières » signifie qu’une page peut être liée à partir d’un sous-index tout en restant invisible pour les lecteurs et lectrices :
+* N’inventez pas de détails techniques (noms de champ exacts, portées d’autorisation, étapes de configuration) qui ne figurent pas dans la requête Slack ou la spécification du wiki lié. Si quelque chose n’est pas confirmé, signalez-le sur la ligne en tant que commentaire HTML (par exemple, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) plutôt que comme une supposition, et jamais en tant que légende visible. Il ne doit pas s’afficher sur la page publiée.
+* Si cela nécessite un tout nouveau fichier d&#39;article (et pas seulement une modification d&#39;un fichier existant), suivez les conventions permanentes de ce référentiel : aucun `exl-id`/`TQID` fabriqué dans frontMATTER, et convertissez le fichier en CRLF/no-BOM après sa création (l&#39;outil `Write` par défaut est LF).
+* Le câblage d’une nouvelle page dans la « table des matières » signifie qu’une page peut être liée à partir d’un sous-index tout en restant invisible pour les lecteurs et lectrices :
   - Le fichier de navigation principal pour la zone de produit (par exemple, `help/workfront-fusion/TOC.md`) : il s’agit de ce qui génère réellement l’arborescence de navigation publiée.
   - Tout sous-index/page de destination contenu qui renvoie également vers des articles de ce type (par exemple, `apps-and-modules-toc.md` pour une nouvelle page de modules de connecteur).
     Vérifiez explicitement et confirmez que la nouvelle entrée se trouve dans la même liste, au même niveau d’imbrication, que ses articles frères les plus proches dans chaque fichier. Ne supposez pas que l’ajout de l’une à l’autre recouvre l’autre.
+* Laissez les modifications apportées au document non validées sur la branche . N’exécutez pas `git commit` (ou `git add`) dans le cadre de cette compétence : l’utilisateur valide lorsqu’il est prêt, après avoir examiné les modifications. Validez uniquement si l’utilisateur vous le demande explicitement.
 
 ## Étape 4 : création de la tâche Workfront
 
@@ -78,6 +79,11 @@ Définissez les champs de date de prévisualisation et la date d’achèvement p
 
 Les nouvelles tâches utilisent par défaut une contrainte Dès Que Possible de durée 0, en vertu de laquelle les `plannedStartDate`/`plannedCompletionDate` sont dérivées du planificateur et une écriture directe vers est silencieusement supprimée (aucune erreur, la date ne change simplement pas). La définition de `taskConstraint: "MFO"` avec `constraintDate` est le moyen le plus fiable d’épingler la date d’achèvement prévisionnelle à la date citée dans le message Slack. Lisez `workfront://knowledge/task/update` avant cette écriture : il s’agit d’un champ de planification/date selon les règles du serveur MCP.
 
+Le champ `description` a une limite stricte de 4 000 caractères. Si le texte complet du message Slack n’est pas adapté :
+
+1. Créez d’abord la tâche avec une `description` courte à la place : titre de la fonctionnalité, date de publication prévue, annonce des besoins, résumé d’une ligne de la demande, note que le texte complet de la demande est publié comme premier commentaire sur la tâche et lien du thread Slack.
+1. Publiez ensuite le texte intégral et textuel du message Slack (tous les champs du modèle, et non une paraphrase) comme commentaire sur la tâche nouvellement créée, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` l’identifiant de la nouvelle tâche) - cet outil n’a pas de limite de longueur comparable. Incluez les `content` (texte brut) et les `contentHTML` (structurés avec des en-têtes/listes, pas seulement des balises `<p>`).
+
 Format des notes de mise à jour pour le champ `DE:Release notes`. Commencez toujours par `***FUSION***` sur sa propre ligne, puis une ligne vide, puis le titre. La note est marquée comme appartenant à Fusion (par opposition au Workfront principal) en un coup d’œil :
 
 ```markdown
@@ -96,17 +102,18 @@ Avant l’appel de création, appelez `read_workflow_docs` avec `workfront://too
 
 Signalez simplement :
 
-&#x200B;* Branche que vous avez créée.
-&#x200B;* Quel(s) fichier(s) de documents avez-vous modifié et ce que vous avez ajouté.
-&#x200B;* Nom et URL de la tâche.
-&#x200B;* Les valeurs de champ exactes que vous définissez, y compris les champs de date de prévisualisation.
-&#x200B;* Pour tout ce dont vous n’étiez pas entièrement certain (par exemple, Slack était inatteignable et vous travailliez à partir de texte collé uniquement), l’article du document cible était ambigu ou un détail technique ne figurait pas dans le document source et était marqué au lieu d’être deviné.
+* La branche que vous avez créée (validée localement, non transmise et aucune demande d’extraction ouverte, par étape 2).
+* Quel(s) fichier(s) de documents avez-vous modifié et ce que vous avez ajouté.
+* Les modifications ne sont pas validées sur la branche, en attente de la révision de l’utilisateur.
+* Nom et URL de la tâche.
+* Les valeurs de champ exactes que vous définissez, y compris les champs de date de prévisualisation.
+* Pour tout ce dont vous n’étiez pas entièrement certain (par exemple, Slack était inatteignable et vous travailliez à partir de texte collé uniquement), l’article du document cible était ambigu ou un détail technique ne figurait pas dans le document source et était marqué au lieu d’être deviné.
 
 ## Valeurs connues (issues d’exécutions précédentes)
 
 Confirmez que ces problèmes sont toujours résolus plutôt que de supposer qu’ils sont permanents :
 
-&#x200B;* Le projet « Tâches de documentation du produit - pour les problèmes de développement qui nécessitent une messagerie » est mappé sur l’ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* La tâche parent « Becky - Tâches du canal Fusion-Documentation » est mappée à l’ID `6a9b065100003a7554832780c2015e93` (dans le même projet) - résolvez avec `insights_find_id_by_name` (entité `task`) plutôt qu’avec du codage en dur, au cas où il changerait
-&#x200B;* Le formulaire personnalisé de la documentation du produit (`categoryID`) est `5d7275b9000514604bd969d418725843`
-&#x200B;* Champs personnalisés utilisés : `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Le projet « Tâches de documentation du produit - pour les problèmes de développement qui nécessitent une messagerie » est mappé sur l’ID `5e69583f00236b9f767c3e3944100ee4`
+* La tâche parent « Becky - Tâches du canal Fusion-Documentation » est mappée à l’ID `6a9b065100003a7554832780c2015e93` (dans le même projet) - résolvez avec `insights_find_id_by_name` (entité `task`) plutôt qu’avec du codage en dur, au cas où il changerait
+* Le formulaire personnalisé de la documentation du produit (`categoryID`) est `5d7275b9000514604bd969d418725843`
+* Champs personnalisés utilisés : `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
