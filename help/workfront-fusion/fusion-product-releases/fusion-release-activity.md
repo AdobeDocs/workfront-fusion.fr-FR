@@ -12,15 +12,15 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 TQID: https://experienceleague.adobe.com/Gk5AKwj-C46H2HyURlUxcndsqWWpJmA1AUxZFYbg4uo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
+    internal-label: Integrations
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 1598
-ht-degree: 85%
-
+source-wordcount: '1607'
+ht-degree: 84%
 ---
-
 # Vue d’ensemble de l’activité Version d’Adobe Workfront Fusion
 
 Adobe Workfront Fusion connecte vos applications et services web de manière transparente afin que vous puissiez vous concentrer sur de nouvelles tâches plutôt que de répéter les mêmes tâches encore et encore.
@@ -29,6 +29,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Septembre 2026
 
+* [Activité de publication de Workfront Fusion : semaine du 14 septembre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-14.md)
 * [Activité de publication de Workfront Fusion : semaine du 7 septembre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
 
 ### Août 2026
