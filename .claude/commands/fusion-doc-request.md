@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Gérer une demande de documentation Fusion à partir du modèle
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Gérer une demande de documentation Fusion depuis #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Demande de documentation Fusion
 
@@ -43,6 +41,8 @@ Nommez le `becky-{short-kebab-case-description}` de branche, dérivé du **Titre
 
 Si l’arborescence de travail n’est pas propre (modifications non validées provenant d’un travail non lié), arrêtez-la et informez-en l’utilisateur plutôt que de la survoler.
 
+Cette compétence crée et valide la branche, mais ne la transmet pas et n’ouvre pas de demande d’extraction. Laissez cela à l’utilisateur, sauf s’il vous le demande séparément.
+
 ## Étape 3 : mettre à jour la documentation
 
 Recherchez le ou les articles existants pertinents dans ce référentiel (repérez les noms de module, les libellés d’interface utilisateur ou les noms de paramètres associés, sans deviner le fichier). Mettez-les à jour pour refléter la modification, en suivant la structure existante de cet article, le niveau de titre et le style de la maison.
@@ -53,6 +53,7 @@ Recherchez le ou les articles existants pertinents dans ce référentiel (repér
   - Le fichier de navigation principal pour la zone de produit (par exemple, `help/workfront-fusion/TOC.md`) : il s’agit de ce qui génère réellement l’arborescence de navigation publiée.
   - Tout sous-index/page de destination contenu qui renvoie également vers des articles de ce type (par exemple, `apps-and-modules-toc.md` pour une nouvelle page de modules de connecteur).
     Vérifiez explicitement et confirmez que la nouvelle entrée se trouve dans la même liste, au même niveau d’imbrication, que ses articles frères les plus proches dans chaque fichier. Ne supposez pas que l’ajout de l’une à l’autre recouvre l’autre.
+&#x200B;* Laissez les modifications apportées au document non validées sur la branche . N’exécutez pas `git commit` (ou `git add`) dans le cadre de cette compétence : l’utilisateur valide lorsqu’il est prêt, après avoir examiné les modifications. Validez uniquement si l’utilisateur vous le demande explicitement.
 
 ## Étape 4 : création de la tâche Workfront
 
@@ -78,6 +79,11 @@ Définissez les champs de date de prévisualisation et la date d’achèvement p
 
 Les nouvelles tâches utilisent par défaut une contrainte Dès Que Possible de durée 0, en vertu de laquelle les `plannedStartDate`/`plannedCompletionDate` sont dérivées du planificateur et une écriture directe vers est silencieusement supprimée (aucune erreur, la date ne change simplement pas). La définition de `taskConstraint: "MFO"` avec `constraintDate` est le moyen le plus fiable d’épingler la date d’achèvement prévisionnelle à la date citée dans le message Slack. Lisez `workfront://knowledge/task/update` avant cette écriture : il s’agit d’un champ de planification/date selon les règles du serveur MCP.
 
+Le champ `description` a une limite stricte de 4 000 caractères. Si le texte complet du message Slack n’est pas adapté :
+
+1. Créez d’abord la tâche avec une `description` courte à la place : titre de la fonctionnalité, date de publication prévue, annonce des besoins, résumé d’une ligne de la demande, note que le texte complet de la demande est publié comme premier commentaire sur la tâche et lien du thread Slack.
+1. Publiez ensuite le texte intégral et textuel du message Slack (tous les champs du modèle, et non une paraphrase) comme commentaire sur la tâche nouvellement créée, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` l’identifiant de la nouvelle tâche) - cet outil n’a pas de limite de longueur comparable. Incluez les `content` (texte brut) et les `contentHTML` (structurés avec des en-têtes/listes, pas seulement des balises `<p>`).
+
 Format des notes de mise à jour pour le champ `DE:Release notes`. Commencez toujours par `***FUSION***` sur sa propre ligne, puis une ligne vide, puis le titre. La note est marquée comme appartenant à Fusion (par opposition au Workfront principal) en un coup d’œil :
 
 ```markdown
@@ -96,8 +102,9 @@ Avant l’appel de création, appelez `read_workflow_docs` avec `workfront://too
 
 Signalez simplement :
 
-&#x200B;* Branche que vous avez créée.
+&#x200B;* La branche que vous avez créée (validée localement, non transmise et aucune demande d’extraction ouverte, par étape 2).
 &#x200B;* Quel(s) fichier(s) de documents avez-vous modifié et ce que vous avez ajouté.
+&#x200B;* Les modifications ne sont pas validées sur la branche, en attente de la révision de l’utilisateur.
 &#x200B;* Nom et URL de la tâche.
 &#x200B;* Les valeurs de champ exactes que vous définissez, y compris les champs de date de prévisualisation.
 &#x200B;* Pour tout ce dont vous n’étiez pas entièrement certain (par exemple, Slack était inatteignable et vous travailliez à partir de texte collé uniquement), l’article du document cible était ambigu ou un détail technique ne figurait pas dans le document source et était marqué au lieu d’être deviné.

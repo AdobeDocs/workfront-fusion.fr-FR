@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 82%
-
+source-wordcount: '3056'
+ht-degree: 81%
 ---
-
 # Modules [!DNL Salesforce]
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Salesforce] et le connecter à plusieurs applications et services tiers.
@@ -111,7 +111,7 @@ Pour plus d’informations sur les possibilités de recherche, voir la documenta
 
 ## Créer une connexion à [!DNL Salesforce]
 
-Pour créer une connexion pour vos modules [!DNL Salesforce], procédez comme suit :
+Pour créer une connexion pour vos modules [!DNL Salesforce], vous pouvez vous authentifier à l’aide d’OAuth 2 ou de PKCE.
 
 1. Dans un module [!DNL Salesforce], cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
@@ -139,6 +139,12 @@ Pour créer une connexion pour vos modules [!DNL Salesforce], procédez comme su
         <td role="rowheader">[!UICONTROL Type]</td>
         <td>
           <p>Indiquez si vous vous connectez à un compte de service ou à un compte personnel.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Choisissez si vous souhaitez vous authentifier à l’aide d’OAuth 2 ou de PKCE.</p>
         </td>
       </tr>
       <tr>
