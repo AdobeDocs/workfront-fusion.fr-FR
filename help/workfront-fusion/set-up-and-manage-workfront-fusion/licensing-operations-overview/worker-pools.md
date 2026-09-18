@@ -3,13 +3,12 @@ title: Pools de salariés
 description: Un pool de travail est une quantité de ressources de traitement Workfront Fusion dédiées à une ou plusieurs organisations spécifiques. Toutes les opérations et tous les traitements Fusion s’effectuent dans le contexte du pool de programmes de travail affecté d’une organisation.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Pools de salariés
 
 Un pool de travail est une quantité de ressources de traitement Workfront Fusion dédiées à une organisation spécifique. Toutes les opérations et tous les traitements Fusion s’effectuent dans le contexte du pool de programmes de travail affecté d’une organisation.
