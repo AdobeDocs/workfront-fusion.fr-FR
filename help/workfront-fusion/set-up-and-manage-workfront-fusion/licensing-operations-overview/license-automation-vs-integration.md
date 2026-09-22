@@ -8,10 +8,10 @@ TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHR
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 1feb4fce42c7759ca8fc91d4270dd00c0a59da24
+source-git-commit: ed2fc06e4c43fe84b5f88792cc24115468059431
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 32%
+source-wordcount: '801'
+ht-degree: 31%
 ---
 # Licences Adobe Workfront Fusion
 
@@ -19,7 +19,7 @@ Workfront Fusion possède deux modèles de licence, un nouveau modèle basé sur
 
 >[!NOTE]
 >
->La prise en charge des fichiers volumineux dans les scénarios Workfront Fusion n’est disponible que pour les organisations qui utilisent le package Workfront Ultimate, quel que soit le modèle de licence Fusion utilisé.
+>La prise en charge des fichiers volumineux dans les scénarios Workfront Fusion n’est disponible que pour les organisations qui utilisent le package Workfront Ultimate, quel que soit le modèle de licence Fusion utilisé par votre organisation.
 >
 >Pour plus d’informations, consultez [Utiliser des fichiers volumineux](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
