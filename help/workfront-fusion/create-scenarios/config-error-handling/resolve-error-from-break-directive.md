@@ -4,19 +4,21 @@ description: Parfois, il est utile de réexécuter un module en échec s’il ex
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-TQID: https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI
+TQID: 'https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 67%
-
 ---
-
 # Résoudre les erreurs gérées par la directive Interrompre
 
-Lorsqu’une erreur est gérée par la directive Break, un enregistrement est créé dans le dossier Exécutions incomplètes . Cet enregistrement stocke l’état de l’exécution du scénario, ainsi que les données des modules précédents. L’enregistrement fait référence au module d’où provient l’erreur et contient des informations concernant les données reçues par le module en tant qu’entrée. Un enregistrement distinct est créé pour chaque paquet de données à l’origine de l’erreur.
+Lorsqu’une erreur est gérée par la directive Break, un enregistrement est créé dans le dossier Exécutions incomplètes . Cet enregistrement stocke l’état de l’exécution du scénario, ainsi que les données des modules précédents. L’enregistrement fait référence au module d’où provient l’erreur et contient des informations concernant les données reçues par le module en tant qu’entrée. Un enregistrement distinct est créé pour chaque bundle de données à l’origine de l’erreur.
 
 Pour plus d’informations, voir [Affichage et résolution des exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 

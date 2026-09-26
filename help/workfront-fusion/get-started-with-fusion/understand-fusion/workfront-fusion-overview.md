@@ -4,16 +4,18 @@ description: Le rôle d’Adobe Workfront Fusion est d’automatiser vos proce
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-TQID: https://experienceleague.adobe.com/EJVhcQRdvOE03JREhQc-ZIz3oac4XT-QQIRxpfX2AVg
+TQID: 'https://experienceleague.adobe.com/EJVhcQRdvOE03JREhQc-ZIz3oac4XT-QQIRxpfX2AVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 386
+source-wordcount: '386'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble d’Adobe Workfront Fusion
 
 Le rôle d’Adobe Workfront Fusion est d’automatiser vos processus afin que vos utilisateurs et utilisatrices n’aient pas besoin de passer autant de temps sur des tâches de routine. La plateforme fonctionne en liant les actions dans et entre les applications et les services pour créer un scénario qui transfère et transforme vos données automatiquement. Le scénario que vous créez recherche les données dans une application ou un service et traite ces données pour obtenir le résultat souhaité.

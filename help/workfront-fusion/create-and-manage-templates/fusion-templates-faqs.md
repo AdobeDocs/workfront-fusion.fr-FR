@@ -1,19 +1,21 @@
 ---
 title: Questions fréquentes sur les modèles Adobe Workfront Fusion
-description: Cet article répond aux questions les plus courantes sur les modèles  [!DNL Adobe Workfront Fusion scenario] .
+description: Cet article répond aux questions courantes sur les modèles de [!DNL Adobe Workfront Fusion scenario].
 author: Becky
 feature: Workfront Fusion
 exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
-TQID: https://experienceleague.adobe.com/7vcKvFskdlSF-0aGVFtyA6JWqMemNMXpsRfEgQWBcUA
+TQID: 'https://experienceleague.adobe.com/7vcKvFskdlSF-0aGVFtyA6JWqMemNMXpsRfEgQWBcUA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 276
-ht-degree: 75%
-
+source-wordcount: '277'
+ht-degree: 72%
 ---
-
 # Questions fréquentes sur les modèles Adobe Workfront Fusion
 
 Cet article répond aux questions courantes sur les modèles de scénario Adobe Workfront Fusion.

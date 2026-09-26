@@ -5,16 +5,18 @@ description: Cet article explique comment un scénario s’exécute et comment l
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
+TQID: 'https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 771
+source-wordcount: '771'
 ht-degree: 25%
-
 ---
-
 # Flux d’exécution de scénarios
 
 Cet article explique comment un scénario s’exécute et comment les données y circulent, ainsi que la manière d’afficher les données traitées par chaque module.
@@ -37,9 +39,9 @@ Si les lots sont traités correctement par tous les modules, le scénario est ma
 
 **Exemple :** dans ce scénario, qui surveille les requêtes entrantes dans Workfront, puis les convertit en projets Workfront, les données sont transmises comme suit :
 
-La première étape du scénario, réalisée par le premier module, consiste à surveiller les demandes. Chaque requête qu’il détecte est considérée comme un lot. Si le module s’exécute sans trouver de lot, le scénario se termine après le premier module.
+La première étape du scénario, réalisée par le premier module, consiste à surveiller les demandes. Chaque requête qu’il détecte est considérée comme un lot. Si le module s’exécute sans trouver de bundle, le scénario se termine après le premier module.
 
-Si le premier module renvoie un lot, le lot passe par le reste du scénario. Dans cet exemple, le lot accède au deuxième module , qui convertit la requête en projet.
+Si le premier module renvoie un bundle, le bundle passe par le reste du scénario. Dans cet exemple, le lot accède au deuxième module , qui convertit la requête en projet.
 
 ![Flux d’exécution du scénario Workfront](assets/example-execution-flow-wf-only.png)
 
@@ -51,17 +53,17 @@ Si le premier module renvoie un lot, le lot passe par le reste du scénario. Dan
 
 **Exemple :** dans ce scénario, qui télécharge des documents depuis Adobe Workfront et les envoie vers un dossier dans [!DNL Dropbox], les données sont transmises comme suit :
 
-La première étape du scénario, effectuée par le premier module, consiste à rechercher des documents dans Workfront. Chaque document trouvé est considéré comme un lot. Si le module s’exécute sans trouver de lot, le scénario se termine après le premier module.
+La première étape du scénario, effectuée par le premier module, consiste à rechercher des documents dans Workfront. Chaque document trouvé est considéré comme un lot. Si le module s’exécute sans trouver de bundle, le scénario se termine après le premier module.
 
-Si un lot est renvoyé, le lot passe par le reste du scénario. Dans cet exemple, le reste du scénario est constitué du deuxième module , qui charge le lot dans le dossier [!DNL Dropbox].
+Si un bundle est renvoyé, le bundle passe par le reste du scénario. Dans cet exemple, le reste du scénario est constitué du deuxième module , qui charge le lot dans le dossier [!DNL Dropbox].
 
 ![Flux d’exécution du scénario d’intégration](assets/example-execution-flow-wf-dropbox.png)
 
-Si le premier module renvoie plusieurs lots, le premier lot est chargé sur [!DNL Dropbox] avant le second. Ensuite, le deuxième lot est chargé, puis le troisième, et ainsi de suite.
+Si le premier module renvoie plusieurs bundles, le premier bundle est chargé sur [!DNL Dropbox] avant le second. Ensuite, le deuxième bundle est chargé, puis le troisième, et ainsi de suite.
 
 >[!ENDSHADEBOX]
 
-## Informations sur les lots traités
+## Informations sur les bundles traités
 
 Pour chaque module, le lot passe par un processus en 4 étapes avant de passer au module suivant ou d’atteindre sa destination finale.
 

@@ -4,21 +4,23 @@ description: Le mappage désigne le processus d’affectation des sorties d’un
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-TQID: https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc
+TQID: 'https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 441
+source-wordcount: '441'
 ht-degree: 96%
-
 ---
-
 # Vue d’ensemble du mappage
 
 Le mappage désigne le processus d’affectation des sorties d’un module aux champs d’entrée d’un autre.
 
-L’opération d’un module produit zéro, un ou plusieurs lots en tant que sortie. Un lot se compose d’un ou de plusieurs éléments.
+L’opération d’un module produit zéro, un ou plusieurs bundles en tant que sortie. Un bundle se compose d’un ou de plusieurs éléments.
 
 Vous pouvez mapper ces éléments aux champs dans les modules ultérieurs.
 
@@ -74,7 +76,7 @@ Pour plus d’informations sur le mappage d’éléments à l’aide de fonction
 
 Des éléments peuvent contenir plusieurs valeurs de différents types. Il s’agit d’éléments de type collection.
 
-Les lots de type collection affichent `(Collection)` en regard du libellé du lot dans la sortie du module.
+Les bundles de type collection affichent `(Collection)` en regard du libellé du bundle dans la sortie du module.
 
 ![Collection](assets/collection.png)
 
@@ -92,7 +94,7 @@ Pour plus d’informations sur le mappage des collections, consultez la section 
 
 Des éléments peuvent contenir plusieurs éléments du même type. Il s’agit d’éléments de type tableau.
 
-Les lots de type tableau affichent `(Array)` en regard du libellé du lot dans la sortie du module.
+Les bundles de type tableau affichent `(Array)` en regard du libellé du bundle dans la sortie du module.
 
 Dans le panneau de mappage, les tableaux s’affichent avec des crochets. Vous pouvez identifier un élément de type tableau par les crochets à la fin du libellé de l’élément. Pour localiser un élément de tableau spécifique dans le panneau de mappage, cliquez sur la flèche en regard du tableau.
 

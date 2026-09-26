@@ -1,29 +1,31 @@
 ---
 title: Ajouter un filtre à un scénario
-description: Dans certains scénarios, vous devez travailler uniquement avec des lots qui répondent à des critères spécifiques. Les filtres vous permettent de sélectionner ces lots.
+description: Dans certains scénarios, vous devez travailler uniquement avec des bundles qui répondent à des critères spécifiques. Les filtres vous permettent de sélectionner ces bundles.
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-TQID: https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs
+TQID: 'https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 528
+source-wordcount: '528'
 ht-degree: 45%
-
 ---
-
 # Ajouter un filtre à un scénario
 
-Dans certains scénarios, vous devez travailler uniquement avec des lots qui répondent à des critères spécifiques. Les filtres vous permettent de sélectionner ces lots.
+Dans certains scénarios, vous devez travailler uniquement avec des bundles qui répondent à des critères spécifiques. Les filtres vous permettent de sélectionner ces bundles.
 
 Par exemple, vous pouvez créer un scénario avec le déclencheur [!UICONTROL Observer des enregistrements] pour que Workfront capture uniquement les tâches affectées à un utilisateur spécifique.
 
-Vous pouvez ajouter un filtre entre deux modules et vérifier si les lots reçus des modules précédents remplissent des conditions de filtrage spécifiques :
+Vous pouvez ajouter un filtre entre deux modules et vérifier si les bundles reçus des modules précédents remplissent des conditions de filtrage spécifiques :
 
-* Si tel est le cas, les lots sont transmis au module suivant dans le scénario.
-* Dans le cas contraire, le traitement des lots s’arrête.
+* Si tel est le cas, les bundles sont transmis au module suivant dans le scénario.
+* Dans le cas contraire, le traitement des bundles s’arrête.
 
 ## Conditions d’accès
 
@@ -74,7 +76,7 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
    >Vous pouvez saisir des valeurs dans les champs de filtre à partir du panneau de mappage
    >Pour plus d’informations sur le mappage, voir [Mapper des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-   Par exemple, si vous souhaitez que le filtre transmette les fichiers dans Adobe Workfront se terminant par XML, entrez **[!UICONTROL Nom du fichier]** dans la première zone et .**[!UICONTROL xml]** dans la seconde zone. Dans le menu déroulant qui sépare les champs, vous pouvez sélectionner **[!UICONTROL Se termine par (non sensible à la casse)]**. Ce filtre s’applique aux lots entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
+   Par exemple, si vous souhaitez que le filtre transmette les fichiers dans Adobe Workfront se terminant par XML, entrez **[!UICONTROL Nom du fichier]** dans la première zone et .**[!UICONTROL xml]** dans la seconde zone. Dans le menu déroulant qui sépare les champs, vous pouvez sélectionner **[!UICONTROL Se termine par (non sensible à la casse)]**. Ce filtre s’applique aux bundles entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
 
    ![Configurer un filtre](assets/set-up-filter-box.png)
 

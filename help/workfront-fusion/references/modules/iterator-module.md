@@ -1,24 +1,27 @@
 ---
 title: Module Itérateur
-description: Un module Itérateur est un type spécial de module qui convertit un tableau en une série de lots. Chaque élément du tableau est généré sous la forme d’un lot.
+description: Un module Itérateur est un type spécial de module qui convertit un tableau en une série de bundles. Chaque élément du tableau est généré sous la forme d’un bundle.
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-TQID: https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM
+TQID: 'https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 616
+source-wordcount: '616'
 ht-degree: 32%
-
 ---
-
 # Module [!UICONTROL Iterator]
 
-Un [!UICONTROL Itérateur] est un type de module qui convertit un tableau en une série de lots. Chaque élément du tableau est généré sous la forme d’un lot.
+Un [!UICONTROL Itérateur] est un type de module qui convertit un tableau en une série de lots. Chaque élément du tableau est généré sous la forme d’un bundle.
 
 ## Conditions d’accès
 
@@ -67,7 +70,7 @@ Pour plus d’informations, voir [Configuration d’un module](/help/workfront-f
 
 * Le scénario ci-dessous montre comment récupérer des e-mails avec des pièces jointes et enregistrer les pièces jointes en tant que fichiers uniques dans un dossier [!DNL Dropbox] sélectionné.
 
-  Les e-mails peuvent contenir un tableau de pièces jointes. Le module [!UICONTROL Iterator] après le premier module permet au scénario de gérer chaque pièce jointe séparément. La module [!UICONTROL Itérateur] divise le tableau de pièces jointes en lots uniques. Chaque lot, accompagné d’une pièce jointe, est ensuite enregistré un par un dans un dossier [!DNL Dropbox] sélectionné. Le champ [!UICONTROL Array] du module Itérateur doit contenir le tableau `Attachments`.
+  Les e-mails peuvent contenir un tableau de pièces jointes. Le module [!UICONTROL Iterator] après le premier module permet au scénario de gérer chaque pièce jointe séparément. Le module [!UICONTROL Itérateur] divise le tableau de pièces jointes en bundles uniques. Chaque bundle, accompagné d’une pièce jointe, est ensuite enregistré un par un dans un dossier [!DNL Dropbox] sélectionné. Le champ [!UICONTROL Array] du module Itérateur doit contenir le tableau `Attachments`.
 
   ![Tableau des pièces jointes](assets/attachments-array.jpg)
 

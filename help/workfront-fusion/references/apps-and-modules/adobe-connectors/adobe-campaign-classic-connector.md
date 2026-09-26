@@ -1,22 +1,26 @@
 ---
 title: Modules Adobe Campaign v7/v8
-description: Avec les modules  [!DNL Adobe Campaign]   [!DNL Adobe Campaign] , vous pouvez lancer un scénario Adobe Workfront Fusion en fonction des événements de votre compte, créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et charger des documents.
+description: Avec les modules [!DNL Adobe Campaign], vous pouvez lancer un scénario Adobe Workfront Fusion en fonction des événements de votre compte [!DNL Adobe Campaign], créer, lire ou mettre à jour des contrats et d’autres enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et charger des documents.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
+TQID: 'https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1452
+source-wordcount: '1454'
 ht-degree: 82%
-
 ---
-
 # Modules [!DNL Adobe Campaign]
 
 Avec les modules [!DNL Adobe Campaign], vous pouvez démarrer un scénario Adobe Workfront Fusion en fonction des événements de votre compte [!DNL Adobe Campaign v7/v8], créer, lire ou mettre à jour des enregistrements, rechercher des enregistrements à l’aide des critères que vous avez définis et effectuer des appels d’API personnalisés.

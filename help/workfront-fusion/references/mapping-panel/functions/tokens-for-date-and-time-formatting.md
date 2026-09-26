@@ -1,19 +1,21 @@
 ---
 title: Jetons pour le formatage de la date et de l’heure
-description: Les jetons de mise en forme de la date et de l’heure suivants sont disponibles dans le panneau  [!DNL Adobe Workfront Fusion mapping] .
+description: Les jetons suivants pour le formatage de la date et de l’heure sont disponibles dans le panneau [!DNL Adobe Workfront Fusion mapping].
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+TQID: 'https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 253
-ht-degree: 100%
-
+source-wordcount: '254'
+ht-degree: 94%
 ---
-
 # Jetons pour le formatage de la date et de l’heure
 
 ## Jetons d’année, de mois et de jour

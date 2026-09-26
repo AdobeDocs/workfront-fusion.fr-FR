@@ -7,18 +7,20 @@ description: Gestion des scénarios verrouillés dans Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-TQID: https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo
+TQID: 'https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '327'
 ht-degree: 77%
-
 ---
-
 # Gérer des scénarios verrouillés
 
 Dans certains cas, un scénario peut être temporairement verrouillé dans Workfront Fusion. Les scénarios verrouillés seront automatiquement déverrouillés dans les 2 à 4 heures. Vous pouvez déverrouiller les scénarios manuellement, mais cela n’est généralement pas recommandé.

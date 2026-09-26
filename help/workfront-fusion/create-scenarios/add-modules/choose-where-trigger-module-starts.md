@@ -1,24 +1,26 @@
 ---
 title: Choisir l’emplacement de démarrage d’un module déclencheur
-description: Certains modules déclencheur vous permettent de sélectionner le premier lot à partir duquel vous souhaitez que la récupération des lots démarre.
+description: Certains modules déclencheurs vous permettent de sélectionner le premier bundle à partir duquel vous souhaitez que la récupération des bundles démarre.
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-TQID: https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4
+TQID: 'https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 330
+source-wordcount: '330'
 ht-degree: 67%
-
 ---
-
 # Choisir l’emplacement de démarrage d’un module déclencheur
 
-Certains modules déclencheur vous permettent de sélectionner le premier lot à partir duquel vous souhaitez que la récupération des lots démarre.
+Certains modules déclencheurs vous permettent de sélectionner le premier bundle à partir duquel vous souhaitez que la récupération des bundles démarre.
 
-Vous pouvez également indiquer si vous souhaitez récupérer tous les lots ou uniquement les lots à partir d’une date spécifique.
+Vous pouvez également indiquer si vous souhaitez récupérer tous les bundles ou uniquement les bundles à partir d’une date spécifique.
 
 Pour plus d’informations sur les modules de déclenchement, consultez la section [Modules de déclenchement](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) dans l’article Présentation des modules.
 
@@ -82,11 +84,11 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
       </tr>
       <tr>
     <td>[!UICONTROL All]</td>
-    <td>Récupère tous les lots disponibles</td>
+    <td>Récupère tous les bundles disponibles</td>
      </tr>
       <tr>
     <td>[!UICONTROL Choisir manuellement]</td>
-    <td>Permet de sélectionner le premier lot à partir duquel la récupération des lots doit démarrer.</td>
+    <td>Permet de sélectionner le premier bundle à partir duquel la récupération des bundles doit démarrer.</td>
      </tr>
      </tbody>
    </table>
