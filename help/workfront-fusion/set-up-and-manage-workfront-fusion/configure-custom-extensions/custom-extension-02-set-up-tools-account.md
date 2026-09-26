@@ -42,7 +42,7 @@ Pour configurer vos outils d’extensibilité de l’interface utilisateur et vo
 * **Administrateur système** <!--Adobe? Fusion?--> (éventuellement un autre membre de votre équipe) pour l’étape de publication finale. La création et le déploiement nécessitent uniquement le rôle Développeur, mais **l’envoi d’une extension pour approbation/publication nécessite le rôle Administrateur système**.
 
   Pour plus d&#39;informations sur les niveaux d&#39;accès Adobe, voir
-  [Accès ](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
+  [Accès &#x200B;](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
 
 * **Ordinateur sur lequel vous pouvez installer un logiciel** et exécuter des commandes de terminal (macOS, Windows ou Linux).
 
@@ -94,7 +94,7 @@ Pour l’installer globalement :
 
 >[!NOTE]
 >
-> Si une erreur d’autorisations s’affiche sur macOS/Linux, n’utilisez **** `sudo`. Au lieu de cela, corrigez les autorisations de dossier globales de npm ou utilisez un gestionnaire de versions de nœud qui s’installe dans votre répertoire personnel.
+> Si une erreur d’autorisations s’affiche sur macOS/Linux, n’utilisez **&#x200B;**&#x200B;`sudo`. Au lieu de cela, corrigez les autorisations de dossier globales de npm ou utilisez un gestionnaire de versions de nœud qui s’installe dans votre répertoire personnel.
 
 ## Connexion à Adobe
 

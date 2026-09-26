@@ -607,7 +607,7 @@ Ce module d’action effectue un appel personnalisé à l’API Workfront Boards
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un Graphql incorporé JSON </p> <p>Exemple :</p><p>Cet exemple montre comment mettre à jour le nom d'une colonne. Vous pouvez inclure les <code>boardId</code> et <code>columnId</code> en tant que GUID codés en dur ou mappés à partir d’un module précédent.<p><pre>{<br> « query »: « mutation { updateColumn(boardId: \« \ », columnId: \« \ », updateColumnInput: { name: \« \ » }) { id name }}« <br>}</pre><p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
+   <td> <p>Ajoutez le contenu du corps de l’appel API sous la forme d’un Graphql incorporé JSON </p> <p>Exemple :</p><p>Cet exemple montre comment mettre à jour le nom d'une colonne. Vous pouvez inclure les <code>boardId</code> et <code>columnId</code> en tant que GUID codés en dur ou mappés à partir d’un module précédent.<p><pre>{<br> « query »: « mutation { updateColumn(boardId: \« \ », columnId: \« \ », updateColumnInput: { name: \« \ » }) { id name }&#x200B;}« <br>}</pre><p>Note :  <p>Lorsque vous utilisez des instructions conditionnelles telles que <code>if</code> dans votre JSON, placez les guillemets à l’extérieur de l’instruction conditionnelle.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

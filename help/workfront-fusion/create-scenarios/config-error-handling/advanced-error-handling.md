@@ -84,7 +84,7 @@ Si vous utilisez le module Dropbox > Create a folder alors qu’un dossier porta
 
 Le scénario complet fonctionne comme suit :
 
-![Scénario ](assets/dropbox-scenario.png)
+![Scénario &#x200B;](assets/dropbox-scenario.png)
 
 1. Le module Outils > Définir la variable contient le nom du dossier
 1. Le module HTTP > Get a file récupère le fichier qui doit être téléchargé dans le dossier

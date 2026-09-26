@@ -74,7 +74,7 @@ Pour mapper un fichier :
 1. Dans le module cible, qui est la cible que vous mappez, recherchez la zone **Fichier**.
 1. Pour mapper un fichier généré par un module précédent, sélectionnez le module qui génère le fichier.
 
-   ![Document de téléchargement ](assets/wf-download-document.png)
+   ![Document de téléchargement &#x200B;](assets/wf-download-document.png)
 
 1. Pour mapper manuellement le nom et les données, sélectionnez Mapper, puis saisissez ou mappez le nom et les données du fichier.
 

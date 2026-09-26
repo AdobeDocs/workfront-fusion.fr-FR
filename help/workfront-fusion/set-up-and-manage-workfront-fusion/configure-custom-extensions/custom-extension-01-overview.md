@@ -151,6 +151,6 @@ Pour créer une extension d’interface utilisateur, procédez comme suit :
 1. [Publiez pour que Fusion puisse le trouver](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
 1. (Facultatif) [Appeler les API Workfront/Fusion pour obtenir des données réelles sans CORS](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 
-Pour lancer le processus, accédez à [ Configuration de vos outils et de votre compte Adobe ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
+Pour lancer le processus, accédez à [&#x200B; Configuration de vos outils et de votre compte Adobe &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
 
 

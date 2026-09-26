@@ -597,7 +597,7 @@ Ce module d’action récupère les ressources détenues par l’utilisateur don
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ?« ]</td>
+      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ?« &#x200B;]</td>
       <td>
         <p>Sélectionnez Oui pour masquer les ressources à l’intérieur des piles (les ressources à l’intérieur des piles ne sont pas renvoyées). Sélectionnez Non pour inclure des ressources dans les piles dans les résultats.</p>
       </td>
@@ -934,7 +934,7 @@ Ce module d’action récupère une liste des ressources de l’album spécifié
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ?« ]</td>
+      <td role="rowheader">[!UICONTROL Masquer les ressources qui se trouvent dans les piles ?« &#x200B;]</td>
       <td>
         <p>Sélectionnez Oui pour masquer les ressources à l’intérieur des piles (les ressources à l’intérieur des piles ne sont pas renvoyées). Sélectionnez Non pour inclure des ressources dans les piles dans les résultats.</p>
       </td>

@@ -24,7 +24,7 @@ En outre, vous pouvez créer des fonctions et des packages personnalisés que vo
 
 Pour plus d’informations et d’instructions sur les fonctions personnalisées, voir [Mappage de données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
-Pour plus d’informations et d’instructions sur les packages de fonctions, voir [ Utilisation de packages de fonctions personnalisés ](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d’informations et d’instructions sur les packages de fonctions, voir [&#x200B; Utilisation de packages de fonctions personnalisés &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 ## Conditions d’accès
 
@@ -72,7 +72,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 1. Cliquez sur le champ dans lequel vous souhaitez insérer une fonction.
 1. Sélectionnez l’onglet dans le panneau de mappage qui contient la fonction que vous souhaitez insérer.
 
-   Pour plus d’informations sur les onglets du panneau de mappage, voir [ Présentation des fonctions ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   Pour plus d’informations sur les onglets du panneau de mappage, voir [&#x200B; Présentation des fonctions &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
 1. Cliquez sur le nom de la fonction.
 
    Ou

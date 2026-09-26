@@ -89,7 +89,7 @@ Fusion expose actuellement ces points d’extension :
 * `fusion/nav-organization/1` : apparaît sous la section **Organisation**.
 * `fusion/nav-team/1` : apparaît sous la section **Équipe**.
 
-Avant de pouvoir effectuer une publication sur l’un de ces sites, le point d’extension doit avoir été intégré à votre organisation Adobe. Si l’étape de publication échoue en indiquant que le point d’extension n’existe pas, reportez-vous à la section [ Dépannage ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
+Avant de pouvoir effectuer une publication sur l’un de ces sites, le point d’extension doit avoir été intégré à votre organisation Adobe. Si l’étape de publication échoue en indiquant que le point d’extension n’existe pas, reportez-vous à la section [&#x200B; Dépannage &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 
 ## Documentation officielle d’Adobe
 

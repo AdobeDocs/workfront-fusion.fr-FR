@@ -110,9 +110,9 @@ Utilisez le Journal d’exécution pour rechercher les exécutions de scénario 
    * [!UICONTROL Équipe]
    * [!UICONTROL Scénario]
    * [!UICONTROL Type d’exécution]
-   * [!UICONTROL Période ]
+   * [!UICONTROL Période &#x200B;]
    * [!UICONTROL État de désactivation]
-   * [!UICONTROL  Message d’erreur ]
+   * [!UICONTROL &#x200B; Message d’erreur &#x200B;]
 
    Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
 

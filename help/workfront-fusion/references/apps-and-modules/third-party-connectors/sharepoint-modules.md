@@ -98,7 +98,7 @@ Le connecteur SharePoint utilise les éléments suivants :
 
 ## Connexion de Microsoft SharePoint Online à Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -215,7 +215,7 @@ Vous pouvez créer une connexion qui utilise un principal de service (une connex
 
 >[!IMPORTANT]
 >
->Ce type de connexion est disponible uniquement pour le module [ Effectuer un appel API ](#make-an-api-call). Les autres modules SharePoint nécessitent l’un des autres types de connexion décrits dans cet article.
+>Ce type de connexion est disponible uniquement pour le module [&#x200B; Effectuer un appel API &#x200B;](#make-an-api-call). Les autres modules SharePoint nécessitent l’un des autres types de connexion décrits dans cet article.
 
 * [Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 * [Création de l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id)
@@ -283,7 +283,7 @@ Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, n
  </tbody>
 </table>
 
-Passez à [ Créer la connexion ](#create-the-connection).
+Passez à [&#x200B; Créer la connexion &#x200B;](#create-the-connection).
 
 #### Créer la connexion
 
@@ -1133,7 +1133,7 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un élém
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
--->
+  -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Sélectionnez un webhook existant ou cliquez sur Ajouter et saisissez la connexion pour créer un webhook.</p> 

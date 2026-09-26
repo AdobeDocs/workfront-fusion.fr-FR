@@ -54,7 +54,7 @@ Si quelque chose ne fonctionne pas, vérifiez d’abord les éléments suivants 
 
 * votre **identifiant de l’organisation IMS** (`XXXX@AdobeOrg`),
 * le(s) **point(s) d’extension** dont vous avez besoin,
-* vos noms de projet et espace de travail ****.
+* vos noms de projet et espace de travail **&#x200B;**.
 
 Une fois l’intégration confirmée, exécutez à nouveau `aio app deploy`.
 
@@ -110,7 +110,7 @@ Fusion autorise uniquement les extensions hébergées sur le réseau CDN App Bui
 
 * **Vide juste après le chargement :** lisez le contexte **après** la résolution du `attach`, pas avant. D’ici là, afficher un état « Connexion... ».
 * **Pas de mise à jour lorsque l’utilisateur change d’organisation ou d’équipe** Abonnez-vous à l’événement `contextchange` et lisez à nouveau vos clés dans le gestionnaire. Pour plus d’informations, consultez la section [Lire le contexte des partages Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md#read-the-context-fusion-shares) dans l’article Créer l’interface utilisateur de l’extension personnalisée.
-* **Les dates ne semblent pas correctes :** les champs de date arrivent sous la forme de chaînes ISO **strings**, et non d’objets `Date`. Enveloppez-les dans du `new Date(...)`. Voir [ Dates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md#dates) dans l’article Référence contextuelle de Fusion.
+* **Les dates ne semblent pas correctes :** les champs de date arrivent sous la forme de chaînes ISO **strings**, et non d’objets `Date`. Enveloppez-les dans du `new Date(...)`. Voir [&#x200B; Dates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md#dates) dans l’article Référence contextuelle de Fusion.
 
 ## L’appel d’une API échoue avec une erreur CORS.
 

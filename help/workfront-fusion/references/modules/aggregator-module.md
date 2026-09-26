@@ -106,7 +106,7 @@ L’illustration suivante présente une configuration standard du module d’[!U
 
 Cet exemple de scénario montre comment compresser toutes les pièces jointes d’e-mail et charger le fichier ZIP vers [!DNL Dropbox].
 
-![Exemple d’archive ](assets/dropbox-archive.png)
+![Exemple d’archive &#x200B;](assets/dropbox-archive.png)
 
 Le scénario ci-dessous montre comment :
 

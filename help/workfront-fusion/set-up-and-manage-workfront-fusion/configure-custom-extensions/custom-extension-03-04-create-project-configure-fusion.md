@@ -34,7 +34,7 @@ Cette page décrit comment générer un projet App Builder générique avec la l
 
 Il peut être utile de vous familiariser avec les concepts et la terminologie suivants concernant la création d’un projet à utiliser avec l’extensibilité d’Adobe Fusion AI.
 
-* **** (<https://developer.adobe.com/console>) est le tableau de bord web où réside votre projet.
+* **&#x200B;**&#x200B;(<https://developer.adobe.com/console>) est le tableau de bord web où réside votre projet.
 
 * **Terminologie** :
 

@@ -196,7 +196,7 @@ Ce module d’action modifie les paramètres d’autorisation d’un fichier ou 
             <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Définissez les autorisations de fichier ou de dossier de votre choix. Utilisez les paramètres chmod. Par exemple, saisissez <code>777 </code> ou <code>-rwxrwxrwx</code>.</p>
-               <p>Les autorisations doivent correspondre au motif <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Les autorisations doivent correspondre au motif <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>

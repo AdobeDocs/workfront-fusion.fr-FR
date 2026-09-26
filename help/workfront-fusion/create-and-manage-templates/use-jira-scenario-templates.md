@@ -81,7 +81,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ### Jira
 
-Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
+Si vous utilisez l’autorisation OAuth2 pour Jira (recommandée), vous devez configurer une application OAuth2 à l’adresse [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la section [Créer une connexion OAuth2 à Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) dans l’article Modules Jira.
 
 <!--
 
@@ -276,7 +276,7 @@ Si une tâche Workfront est affectée, le problème dans Jira est une tâche. Si
 
 1. Dans **chaque** module Workfront, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
 1. Dans **each** Module Jira, dans le champ Connexion , sélectionnez la connexion Workfront que vous avez créée dans [Configurer les connexions dans Workfront Fusion](#configure-connections-in-workfront-fusion), puis cliquez sur **OK** pour enregistrer la connexion à ce module.
-1. Passez à [ Mettre à jour le module Paramètres généraux ](#update-the-general-parameters-module).
+1. Passez à [&#x200B; Mettre à jour le module Paramètres généraux &#x200B;](#update-the-general-parameters-module).
 
 #### Mise à jour du module Paramètres généraux
 
@@ -305,7 +305,7 @@ Ce scénario crée une tâche ou un problème Workfront lorsqu’un problème es
 >[!NOTE]
 >
 >Ce scénario nécessite une connexion OAuth2 pour Jira.
->Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
+>Pour utiliser l’autorisation OAuth2 pour Jira, vous devez configurer une application OAuth2 sur [&#128279;](https://developer.atlassian.com/console). Pour plus d’informations et d’instructions, consultez la documentation Jira.
 
 +++**Développez pour afficher les instructions de configuration du Scénario 2 : JIRA vers Workfront : envoyez des mises à jour sur les problèmes et des commentaires à Workfront à partir de Jira**
 

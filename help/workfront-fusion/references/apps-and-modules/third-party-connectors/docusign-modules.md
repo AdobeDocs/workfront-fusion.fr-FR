@@ -464,7 +464,7 @@ Le résultat se trouve dans la sortie du module sous Bundle > Corps > Envelopp
 
 Dans notre exemple, six enveloppes ont été renvoyées :
 
-![Exemple de sortie docusign ](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+![Exemple de sortie docusign &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 >[!ENDSHADEBOX]
 

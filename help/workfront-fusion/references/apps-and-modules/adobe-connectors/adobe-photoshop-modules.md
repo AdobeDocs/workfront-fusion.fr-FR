@@ -40,7 +40,7 @@ Pour plus d’informations sur les modules, consultez les articles sous [Modules
 >
 >Nous vous recommandons de mettre à jour dès que possible les scénarios qui utilisent ces modules vers les modules mis à jour.
 >
->Pour obtenir la liste des modules concernés, voir [Mises à jour de l’obsolescence de l’API ](#adobe-photoshop-api-deprecation-updates).
+>Pour obtenir la liste des modules concernés, voir [Mises à jour de l’obsolescence de l’API &#x200B;](#adobe-photoshop-api-deprecation-updates).
 >
 >Pour une explication de la manière dont les modifications d’API affectent Workfront Fusion, consultez [Présentation des API dans Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
@@ -1366,7 +1366,7 @@ Ce module d’action exécute des actions Photoshop à l’aide de commandes JSO
    <td> Saisissez ou mappez l’URL ou le chemin d’accès du fichier que vous souhaitez modifier. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL, action JSON]</td>
+      <td role="rowheader">[!UICONTROL , action JSON]</td>
       <td>
         <p>Saisissez la commande JSON correspondant à l’action à effectuer.</p>
       </td>
