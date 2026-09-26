@@ -4,16 +4,18 @@ description: Grâce à ces modules, vous pouvez enchaîner les scénarios, en pa
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+TQID: 'https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 913
+source-wordcount: '913'
 ht-degree: 10%
-
 ---
-
 # Modules de chaîne
 
 >[!IMPORTANT]
@@ -100,7 +102,7 @@ Ce module se trouve dans le scénario parent. Les champs reflètent la structure
 > * **Soyez prudent lorsque vous placez ce module dans un itérateur.** L’envoi d’un scénario enfant pour chaque élément dans un grand itérateur crée une charge de plateforme importante. Envisagez d’intégrer la logique du scénario enfant ou de pré-calculer les recherches partagées en dehors de l’itérateur.
 > * **Déclencher et oublier** signifie que le parent n’a aucune visibilité sur l’exécution ou le succès de l’enfant. À utiliser uniquement lorsque les échecs enfants sont surveillés indépendamment.
 >
-> Pour obtenir des conseils de conception complets, voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Pour obtenir des conseils de conception complets, voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >

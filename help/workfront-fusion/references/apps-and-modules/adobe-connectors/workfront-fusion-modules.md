@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1430
+source-wordcount: '1430'
 ht-degree: 24%
-
 ---
-
 # Modules Workfront Fusion
 
 Avec le connecteur Workfront Fusion, vous pouvez gérer votre propre organisation Fusion à partir d’un scénario. Contrairement aux autres connecteurs qui connectent Fusion à une application ou à un service tiers, ce connecteur permet à un scénario d’appeler la propre API de Fusion, comme le fait le connecteur Adobe Workfront pour permettre à un scénario de gérer Workfront.

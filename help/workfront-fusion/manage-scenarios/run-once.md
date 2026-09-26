@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # Utiliser Exécuter une fois pour tester un scénario
 
 Lors de la création, de la mise à jour ou de l’affinement d’un scénario, vous pouvez utiliser le bouton « Exécuter une fois » pour déclencher le scénario à la demande. Vous pouvez ainsi tester le scénario sans attendre sa logique de déclenchement, telle que des événements spécifiques ou des intervalles d’interrogation.

@@ -4,16 +4,18 @@ description: Les administrateurs et administratrices de Fusion peuvent afficher 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
+TQID: 'https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 849
+source-wordcount: '849'
 ht-degree: 6%
-
 ---
-
 # Affichage du tableau de bord des informations pour une organisation
 
 Le tableau de bord Fusion Insights vous permet de voir rapidement quels scénarios sont les plus exécutés, où les retards se produisent et avec quelle efficacité vos pools de salariés fonctionnent. Vous bénéficiez ainsi d’une visibilité en temps réel sur les volumes d’exécution, la profondeur de file d’attente, l’utilisation du pool et les performances au niveau du scénario.
@@ -108,9 +110,9 @@ Utilisez le Journal d’exécution pour rechercher les exécutions de scénario 
    * [!UICONTROL Équipe]
    * [!UICONTROL Scénario]
    * [!UICONTROL Type d’exécution]
-   * [!UICONTROL Période &#x200B;]
+   * [!UICONTROL Période ]
    * [!UICONTROL État de désactivation]
-   * [!UICONTROL &#x200B; Message d’erreur &#x200B;]
+   * [!UICONTROL  Message d’erreur ]
 
    Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
 

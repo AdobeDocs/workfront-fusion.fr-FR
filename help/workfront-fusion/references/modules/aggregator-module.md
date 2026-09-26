@@ -1,21 +1,24 @@
 ---
 title: Module d'agrégation
-description: Un module d’agrégation est un type de module conçu pour fusionner plusieurs lots de données en un seul lot.
+description: Un module d’agrégation est un type de module conçu pour fusionner plusieurs bundles de données en un seul.
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+TQID: 'https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 810
+source-wordcount: '810'
 ht-degree: 21%
-
 ---
-
 # Module d’[!UICONTROL Agrégation]
 
 Un module agrégateur est un module qui fusionne plusieurs lots de données en un seul lot.
@@ -81,7 +84,7 @@ L’illustration suivante présente une configuration standard du module d’[!U
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
    <td> <p>À l’aide du champ Regrouper par , vous pouvez définir une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont ensuite séparées en groupes par la valeur de l’expression. Chaque groupe génère un lot distinct, contenant une clé et un tableau de données. En regroupant les résultats, vous pouvez utiliser la clé comme filtre dans les modules suivants.</p>
-   <p>Chaque lot contient deux éléments :</p> 
+   <p>Chaque bundle contient deux éléments :</p> 
     <ul> 
      <li><code>Key</code>: valeur par laquelle vous effectuez un regroupement.</li> 
      <li><code>Array</code>: données agrégées des lots pour lesquels la formule a été évaluée sur la valeur <code>Key</code>.</li> 
@@ -103,7 +106,7 @@ L’illustration suivante présente une configuration standard du module d’[!U
 
 Cet exemple de scénario montre comment compresser toutes les pièces jointes d’e-mail et charger le fichier ZIP vers [!DNL Dropbox].
 
-![Exemple d’archive &#x200B;](assets/dropbox-archive.png)
+![Exemple d’archive ](assets/dropbox-archive.png)
 
 Le scénario ci-dessous montre comment :
 

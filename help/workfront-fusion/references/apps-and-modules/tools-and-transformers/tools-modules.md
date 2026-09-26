@@ -1,19 +1,21 @@
 ---
 title: Outils
-description: La section  [!DNL Adobe Workfront Fusion Tools]  comprend plusieurs modules utiles qui peuvent améliorer votre scénario.
+description: La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles qui peuvent améliorer votre scénario.
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+TQID: 'https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2290
+source-wordcount: '2290'
 ht-degree: 89%
-
 ---
-
 # [!UICONTROL Outils]
 
 La section [!DNL Adobe Workfront Fusion Tools] comprend plusieurs modules utiles qui peuvent améliorer votre scénario.
@@ -62,7 +64,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 #### [!UICONTROL Déclencheur de base]
 
-Ce module vous permet de créer un déclencheur personnalisé et de définir ses lots d’entrée.
+Ce module vous permet de créer un déclencheur personnalisé et de définir ses bundles d’entrée.
 
 Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre liste dont l’envoi est programmé vers une adresse e-mail spécifiée (comme les modules du type [!UICONTROL E-mail] > [!UICONTROL Envoyer un e-mail], ou [!DNL Gmail] > [!UICONTROL Envoyer un e-mail]), ou en tant que simple rappel à déclencher quand vous le souhaitez.
 
@@ -72,7 +74,7 @@ Vous pouvez utiliser ce module, par exemple, pour les contacts ou toute autre li
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Créez des lots personnalisés en ajoutant des éléments de tableau. Pour chaque élément à ajouter au lot, cliquez sur <b>Ajouter un élément</b> et saisissez le nom et la valeur de l’élément.</p> </td> 
+   <td> <p>Créez des bundles personnalisés en ajoutant des éléments de tableau. Pour chaque élément à ajouter au lot, cliquez sur <b>Ajouter un élément</b> et saisissez le nom et la valeur de l’élément.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,7 +261,7 @@ Cette fonction peut s’avérer utile, par exemple, si vous souhaitez réduire l
 
 #### [!UICONTROL Agrégateur numérique]
 
-Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’une des fonctions sélectionnées (SUM, AVG, COUNT, MAX, MIN) et de renvoyer le résultat dans un seul lot.
+Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’une des fonctions sélectionnées (SUM, AVG, COUNT, MAX, MIN) et de renvoyer le résultat dans un seul bundle.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -275,7 +277,7 @@ Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
-   <td> <p>Définissez une expression selon laquelle vous souhaitez regrouper la sortie agrégée. Cette expression peut contenir un ou plusieurs éléments mappés. Les données agrégées sont ensuite séparées en groupes à l’aide de la valeur de cette expression. Chaque groupe génère un lot distinct avec une clé (l’expression évaluée) et une valeur (la valeur agrégée). Vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
+   <td> <p>Définissez une expression selon laquelle vous souhaitez regrouper la sortie agrégée. Cette expression peut contenir un ou plusieurs éléments mappés. Les données agrégées sont ensuite séparées en groupes à l’aide de la valeur de cette expression. Chaque groupe génère un bundle distinct avec une clé (l’expression évaluée) et une valeur (la valeur agrégée). Vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
@@ -290,7 +292,7 @@ Ce module permet de récupérer des valeurs numériques, puis d’appliquer l’
 
 #### [!UICONTROL Agrégateur de tableau]
 
-Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un seul lot à l’aide d’un séparateur de colonne et de ligne spécifié (ce qui vous permet de créer un tableau).
+Ce module fusionne les valeurs des champs sélectionnés des bundles reçus en un seul bundle à l’aide d’un séparateur de colonne et de ligne spécifié (ce qui vous permet de créer un tableau).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -302,19 +304,19 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggregated fields]</td> 
-   <td> <p> Sélectionnez dans le module sélectionné ci-dessus les champs contenant les valeurs que vous souhaitez agréger dans le lot unique.</p> </td> 
+   <td> <p> Sélectionnez dans le module sélectionné ci-dessus les champs contenant les valeurs que vous souhaitez agréger dans le bundle unique.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les colonnes de valeurs de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les colonnes de valeurs de champ dans le bundle obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le bundle obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
-   <td> <p>Définissez une expression selon laquelle vous souhaitez regrouper la sortie agrégée. Cette expression peut contenir un ou plusieurs éléments mappés. Les données agrégées seront ensuite séparées en groupes à l’aide de la valeur de cette expression. Chaque groupe génère un lot distinct avec une clé (l’expression évaluée) et une valeur (la valeur agrégée). Vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
+   <td> <p>Définissez une expression selon laquelle vous souhaitez regrouper la sortie agrégée. Cette expression peut contenir un ou plusieurs éléments mappés. Les données agrégées seront ensuite séparées en groupes à l’aide de la valeur de cette expression. Chaque groupe génère un bundle distinct avec une clé (l’expression évaluée) et une valeur (la valeur agrégée). Vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
@@ -325,7 +327,7 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
 
 #### [!UICONTROL Agrégateur de texte]
 
-Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un seul lot.
+Ce module fusionne les valeurs des champs sélectionnés des bundles reçus en un seul bundle.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -337,11 +339,11 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le lot obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
+   <td> <p>Sélectionnez ou saisissez le type de séparateur qui séparera les lignes de valeur de champ dans le bundle obtenu. Si vous sélectionnez [!UICONTROL Other], saisissez le caractère à utiliser pour séparer les valeurs dans le champ du séparateur.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
-   <td> <p>Définissez une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont séparées en groupes ayant la même valeur d’expression. Chaque groupe génère une sortie en tant que lot distinct contenant une clé avec l’expression évaluée et le texte agrégé. Ce faisant, vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
+   <td> <p>Définissez une expression contenant un ou plusieurs éléments mappés. Les données agrégées sont séparées en groupes ayant la même valeur d’expression. Chaque groupe génère une sortie en tant que bundle distinct contenant une clé avec l’expression évaluée et le texte agrégé. Ce faisant, vous pouvez utiliser la clé comme filtre dans les modules suivants.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
@@ -356,7 +358,7 @@ Ce module fusionne les valeurs des champs sélectionnés des lots reçus en un s
 
 >[!BEGINSHADEBOX]
 
-**Exemple :** vous pouvez utiliser l’agrégateur de texte pour insérer d’autres valeurs (par exemple, les noms de clientes et clients ou les notes) dans un lot unique et envoyer un e-mail contenant toutes les valeurs du corps de l’e-mail ou de son objet.
+**Exemple :** vous pouvez utiliser l’agrégateur de texte pour insérer d’autres valeurs (par exemple, les noms de clientes et clients ou les notes) dans un bundle unique et envoyer un e-mail contenant toutes les valeurs du corps de l’e-mail ou de son objet.
 
 >[!ENDSHADEBOX]
 

@@ -4,20 +4,23 @@ description: Le glossaire suivant explique certains termes courants d’Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-TQID: https://experienceleague.adobe.com/3qVkZnMHsCJX8htr8-BheNyOiQM8WReuRzEYCA70pGw
+TQID: 'https://experienceleague.adobe.com/3qVkZnMHsCJX8htr8-BheNyOiQM8WReuRzEYCA70pGw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 926
+source-wordcount: '926'
 ht-degree: 98%
-
 ---
-
 # Glossaire d’Adobe Workfront Fusion
 
 Le glossaire suivant explique certains termes courants d’Adobe Workfront Fusion.
@@ -33,7 +36,7 @@ Le glossaire suivant explique certains termes courants d’Adobe Workfront Fus
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Agrégateur</p> </td> 
-   <td> <p>Type de module qui fusionne plusieurs lots (plusieurs collections de données) en un seul lot. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Module agrégateur</a>.</p> </td> 
+   <td> <p>Type de module qui fusionne plusieurs bundles (plusieurs collections de données) en un seul. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Module agrégateur</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API</td> 
@@ -48,8 +51,8 @@ Le glossaire suivant explique certains termes courants d’Adobe Workfront Fus
    <td> <p>Une application logicielle. Fusion peut se connecter à la plupart des applications, même s’il ne dispose pas d’un connecteur dédié pour telle ou telle application.</p> <p>Une application peut également être une fonction spéciale qui manipule des données, comme un itérateur ou un agrégateur. </p> <p>Un service est une source de données qui peut inclure une API web, une page web, différents types de serveurs (FTP, SMTP, IMAP), etc. </p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Lot</p> </td> 
-   <td> <p>Un lot est une unité de données de base qui est renvoyée ou reçue par les modules. Par exemple, un module de recherche qui renvoie trois enregistrements génère trois lots de données, un pour chaque enregistrement. Un lot se compose de plusieurs éléments.</p> </td> 
+   <td role="rowheader"> <p>Bundle</p> </td> 
+   <td> <p>Un bundle est une unité de données de base qui est renvoyée ou reçue par les modules. Par exemple, un module de recherche qui renvoie trois enregistrements génère trois bundles de données, un pour chaque enregistrement. Un bundle se compose de plusieurs éléments.</p> </td> 
   </tr> 
   <tr>
    <td role="rowheader"> <p>Connexion</p> </td> 
@@ -69,19 +72,19 @@ Le glossaire suivant explique certains termes courants d’Adobe Workfront Fus
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filtre</p> </td> 
-   <td> <p> Un filtre peut être appliqué entre deux modules et permet de ne travailler qu’avec des lots répondant à certains critères. Il existe un certain nombre de filtres différents que vous pouvez appliquer. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Ajouter un filtre à un scénario</a>.</p> </td> 
+   <td> <p> Un filtre peut être appliqué entre deux modules et permet de ne travailler qu’avec des bundles répondant à certains critères. Il existe un certain nombre de filtres différents que vous pouvez appliquer. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Ajouter un filtre à un scénario</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID </p> </td> 
-   <td> <p>Nom utilisé pour identifier de manière unique un lot. Un ID est généralement utilisé pour différencier un lot qui doit être mis à jour ou supprimé d’un service donné. Les ID peuvent être mappés à partir de la sortie d’un module précédent.</p> </td> 
+   <td> <p>Nom utilisé pour identifier de manière unique un bundle. Un ID est généralement utilisé pour différencier un bundle qui doit être mis à jour ou supprimé d’un service donné. Les ID peuvent être mappés à partir de la sortie d’un module précédent.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Éléments</p> </td> 
-   <td> <p>Partie d’un lot. Les lots peuvent être composés de plusieurs éléments. Il existe plusieurs types d’éléments : texte, nombre, booléen (oui/non), date, heure, buffer (données binaires), collections, menu de sélection, tableau et validation.</p><p> Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Types de données d’élément</a>.</p> </td> 
+   <td> <p>Partie d’un bundle. Les bundles peuvent être composés de plusieurs éléments. Il existe plusieurs types d’éléments : texte, nombre, booléen (oui/non), date, heure, buffer (données binaires), collections, menu de sélection, tableau et validation.</p><p> Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Types de données d’élément</a>.</p> </td> 
   </tr>
   <tr> 
    <td role="rowheader"> <p>Itérateur</p> </td> 
-   <td> <p>Type de module qui vous permet de prendre un lot de données (une collection de données) et de le diviser en lots distincts. Ces lots peuvent ensuite être traités individuellement par des modules ultérieurs. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">le module [!UICONTROL Iterator]</a>.</p> </td> 
+   <td> <p>Type de module qui vous permet de prendre un bundle de données (une collection de données) et de le diviser en bundles distincts. Ces bundles peuvent ensuite être traités individuellement par des modules ultérieurs. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">le module [!UICONTROL Iterator]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Module</p> </td> 
@@ -113,7 +116,7 @@ Le glossaire suivant explique certains termes courants d’Adobe Workfront Fus
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 
-   <td> <p>Type spécial de déclencheur qui vous permet d’exécuter un scénario immédiatement après la mise à disposition d’un nouveau lot. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Déclencheurs instantanés (webhooks)</a>.</p> </td> 
+   <td> <p>Type spécial de déclencheur qui vous permet d’exécuter un scénario immédiatement après la mise à disposition d’un nouveau bundle. </p><p>Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Déclencheurs instantanés (webhooks)</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

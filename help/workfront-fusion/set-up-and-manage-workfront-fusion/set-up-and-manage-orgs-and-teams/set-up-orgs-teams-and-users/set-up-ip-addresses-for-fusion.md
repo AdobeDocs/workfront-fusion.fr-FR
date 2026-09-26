@@ -4,18 +4,21 @@ description: Fusion utilise des adresses IP et des domaines spécifiques pour la
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+TQID: 'https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
-ht-degree: 54%
-
+source-wordcount: '554'
+ht-degree: 52%
 ---
-
 # Configurer des adresses IP pour Fusion sur la liste autorisée de données de votre organisation
 
 Comme Adobe Workfront Fusion communique avec le réseau de votre entreprise, le pare-feu de cette dernière doit être configuré pour autoriser cette communication. Les pare-feux sont des mesures de sécurité très efficaces qui séparent le réseau d’une entreprise d’Internet. Ils garantissent que seules les données et le trafic réseau sélectionnés peuvent entrer ou sortir du réseau de l’entreprise. Le pare-feu autorise ou bloque les données en fonction du site qui les envoie ou les reçoit. En tant qu’administrateur ou administratrice Fusion, vous devez vous assurer que les données envoyées à ou depuis Fusion peuvent passer par le pare-feu de votre entreprise.

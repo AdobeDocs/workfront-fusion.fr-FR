@@ -4,11 +4,14 @@ description: L’automatisation du travail exige un traitement rapide, c’est p
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ L’automatisation du travail exige un traitement rapide, c’est pourquoi Adobe
   >
   > Bien que le chaînage permette aux workflows de s’exécuter au-delà de 40 minutes, cela doit être considéré comme un signal de risque de conception, et non comme une solution prise en charge. Les scénarios parents qui s’étendent sur plusieurs scénarios enfants à exécution longue n’ont pas de limite de délai d’expiration globale. Si un scénario enfant se bloque ou rencontre un problème de plateforme, le parent attend indéfiniment sans erreur et sans récupération automatique.
   >
-  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/fr/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
+  > Si la conception de votre scénario nécessite un chaînage pour éviter la limite de 40 minutes, passez en revue votre architecture avant le déploiement en production. Voir [Enchaînement de plusieurs scénarios](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) pour obtenir des conseils de conception.
 * La taille maximale d’un plan directeur de scénario est de **5 Mo**, mais nous recommandons de ne pas dépasser **3 Mo** pour la taille du scénario.
 
   Les modules d’application qui créent ou mettent à jour des données avec un grand nombre de champs peuvent générer des plans directeurs très volumineux.

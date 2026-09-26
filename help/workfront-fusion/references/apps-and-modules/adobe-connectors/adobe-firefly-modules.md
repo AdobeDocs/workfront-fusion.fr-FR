@@ -1,23 +1,31 @@
 ---
 title: Modules Adobe Firefly
-description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent  [!DNL Adobe Firefly], et le connecter à plusieurs applications et services tiers.
+description: Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Firefly] et le connecter à plusieurs applications et services tiers.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-TQID: https://experienceleague.adobe.com/1hI4NuUl2eEAgWyXRKLHQ3-6MM9-2tFyujGbRfHSBmU
+TQID: 'https://experienceleague.adobe.com/1hI4NuUl2eEAgWyXRKLHQ3-6MM9-2tFyujGbRfHSBmU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3888
+source-wordcount: '3888'
 ht-degree: 16%
-
 ---
-
 # Modules [!DNL Adobe Firefly]
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez automatiser les workflows qui utilisent [!DNL Adobe Firefly] et le connecter à plusieurs applications et services tiers.
@@ -268,7 +276,7 @@ Ce module d&#39;action compose de manière transparente une image du sujet en un
    <td>Sélectionnez la manière dont vous fournissez l’image de l’objet. L’image de l’objet est l’image source de l’objet à composer en arrière-plan.<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image de l’objet ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de l’objet.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , Objet &gt; Masque &gt; Source]</td> 
+   <td role="rowheader">[!UICONTROL, Objet &gt; Masque &gt; Source]</td> 
    <td>Sélectionnez la manière dont vous fournissez le masque d’objet. Le masque d’objet est le masque de segmentation de l’objet .<ul><li><p><b>Charger l’image</b></p><p>Chargez l’image du masque de saisie ou mappez le fichier image d’un module précédent.</p></li><li><p><b>URL de l’image</b></p><p>Saisissez ou mappez l’URL de l’image de masque d’objet.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -462,7 +470,7 @@ Ce module d’action génère une image à l’aide du modèle Image5 [!DNL Adob
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reference Image]</td> 
-   <td>Vous pouvez éventuellement fournir une image de référence pour guider la génération. Cliquez sur <b>Ajouter un élément</b> et fournissez l’image. Lorsque vous utilisez une image de référence, définissez le format de  sur <b>Auto</b>.</td> 
+   <td>Vous pouvez éventuellement fournir une image de référence pour guider la génération. Cliquez sur <b>Ajouter un élément</b> et fournissez l’image. Lorsque vous utilisez une image de référence, définissez le format de [!UICONTROL] sur <b>Auto</b>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]*</td> 
@@ -643,7 +651,7 @@ Ce module d’action génère une vidéo à partir d’une invite de texte. Vous
 
 Ce module d’action effectue un appel personnalisé à l’API Firefly.
 
-Pour connaître les API spécifiques disponibles, consultez [API &#x200B;](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
+Pour connaître les API spécifiques disponibles, consultez [API ](https://developer.adobe.com/firefly-services/docs/firefly-api/) dans la documentation d’Adobe Developer.
 
 <table style="table-layout:auto"> 
   <col/>

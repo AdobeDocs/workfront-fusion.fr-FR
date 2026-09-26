@@ -4,16 +4,18 @@ description: Vous pouvez afficher des informations sur les événements ou les e
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 63%
-
 ---
-
 # Afficher l’historique de l’exécution d’un scénario
 
 Vous pouvez afficher des informations sur les événements ou les exécutions d’un scénario, ou vous pouvez rechercher des données spécifiques dans toutes les exécutions du scénario.
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    Ou
 
    Tapez **Ctrl+Maj+F** (Windows) ou **Cmd+Maj+F** (Mac)
-La fenêtre [!UICONTROL Rechercher dans l’historique] s’ouvre.
+   La fenêtre [!UICONTROL Rechercher dans l’historique] s’ouvre.
 
 1. (Facultatif) Pour rechercher des exécutions qui contiennent du texte spécifique, saisissez le texte dans la barre de recherche de la fenêtre **[!UICONTROL Rechercher l’historique]**.
 
@@ -182,4 +184,4 @@ La fenêtre [!UICONTROL Rechercher dans l’historique] s’ouvre.
 
 1. (Facultatif) Pour copier un ID d’exécution de scénario, cliquez sur l’icône **[!UICONTROL Copier l’ID d’exécution]** <img src="assets/copy-fusion-execution-id-icon.png"> dans la ligne de l’exécution souhaitée.
 
-1. (Facultatif) Cliquez sur un résultat de la [!UICONTROL recherche de texte intégral] pour examiner le lot de sortie du module de scénario qui contient les informations.
+1. (Facultatif) Cliquez sur un résultat de la [!UICONTROL recherche de texte intégral] pour examiner le bundle de sortie du module de scénario qui contient les informations.

@@ -4,16 +4,18 @@ description: Lorsque vous créez ou modifiez un scénario, vous pouvez configure
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
+TQID: 'https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 634
+source-wordcount: '634'
 ht-degree: 77%
-
 ---
-
 # Contrôle de flux
 
 Lorsque vous créez ou modifiez un scénario, vous pouvez configurer des paramètres pour contrôler la manière dont les données transitent dans celui-ci.
@@ -51,7 +53,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Répéteur
 
-Vous pouvez utiliser un module [!UICONTROL Répéteur] pour répéter une tâche un nombre de fois défini. Une module [!UICONTROL Répéteur] génère des lots l’un après l’autre.
+Vous pouvez utiliser un module [!UICONTROL Répéteur] pour répéter une tâche un nombre de fois défini. Un module [!UICONTROL Répéteur] génère des bundles l’un après l’autre.
 
 
 <table>
@@ -82,7 +84,7 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer
 
    Dans cet exemple, entrez 5.
 
-   ![&#x200B; Répéteur &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    La valeur de l’élément augmente à chaque répétition selon la valeur spécifiée dans le champ **[!UICONTROL Étape]** que vous pouvez afficher en sélectionnant **[!UICONTROL Afficher les paramètres avancés]**. Ce nombre est 1 par défaut.
 
@@ -93,7 +95,7 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer
 
    Dans notre exemple d’e-mail, vous devez saisir Bonjour dans le champ [!UICONTROL Objet], puis mapper `i` à partir du module répéteur.
 
-   ![&#x200B; Répéteur &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 
 
@@ -105,15 +107,15 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer
 
 ## [!UICONTROL Itérateur]
 
-Un [!UICONTROL Itérateur] est un type spécial de module qui convertit un tableau en une série de lots. Chaque élément du tableau constitue un lot distinct dans la sortie du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
+Un [!UICONTROL Itérateur] est un type spécial de module qui convertit un tableau en une série de bundles. Chaque élément du tableau constitue un bundle distinct dans la sortie du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [Module Itérateur](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Agrégateur de tableaux
 
-Un agrégateur de tableaux est un type spécial de module qui permet de fusionner plusieurs lots en un seul lot. Pour plus d’informations, consultez [Module agrégateur](/help/workfront-fusion/references/modules/aggregator-module.md).
+Un agrégateur de tableaux est un type spécial de module qui permet de fusionner plusieurs bundles en un seul. Pour plus d’informations, consultez [Module agrégateur](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## [!UICONTROL Routeur]
 
-Le module [!UICONTROL Routeur] vous permet de diviser votre flux en plusieurs itinéraires et de traiter les données de chaque itinéraire de manière différente. Dès qu’un module [!UICONTROL Routeur] reçoit un lot, il le transfère vers chaque itinéraire connecté dans l’ordre dans lequel les itinéraires ont été associés au module [!UICONTROL Routeur]. Pour plus d’informations, voir [Module routeur dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Le module [!UICONTROL Routeur] vous permet de diviser votre flux en plusieurs itinéraires et de traiter les données de chaque itinéraire de manière différente. Dès qu’un module [!UICONTROL Routeur] reçoit un bundle, il le transfère vers chaque itinéraire connecté dans l’ordre dans lequel les itinéraires ont été associés au module [!UICONTROL Routeur]. Pour plus d’informations, voir [Module routeur dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 ## Directives
 

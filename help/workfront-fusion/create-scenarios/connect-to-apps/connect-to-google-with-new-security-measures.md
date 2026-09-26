@@ -4,18 +4,21 @@ description: Google a introduit des restrictions sur la manière dont les utilis
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-TQID: https://experienceleague.adobe.com/R2hPx1AF2Vul-mQFWYiZLOm63-o6QIhgW1Azn9AMOIg
+TQID: 'https://experienceleague.adobe.com/R2hPx1AF2Vul-mQFWYiZLOm63-o6QIhgW1Azn9AMOIg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 806
+source-wordcount: '806'
 ht-degree: 26%
-
 ---
-
 # Connecter Adobe Workfront Fusion à Google Services avec des mesures de sécurité mises à jour
 
 Google a introduit des restrictions sur la manière dont les utilisateurs peuvent utiliser leur API. Cet article décrit comment connecter Adobe Workfront Fusion à Google, en tenant compte de ces mesures de sécurité de mise à jour.
@@ -64,7 +67,7 @@ Google a introduit des restrictions sur la manière dont les utilisateurs peuven
 
 Ces restrictions sont liées aux applications Gmail et Google Drive.
 
-Pour plus d’informations sur ces restrictions, voir « Exigences supplémentaires pour les portées d’API spécifiques » dans la politique de données utilisateur des services d’API Google [&#128279;](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
+Pour plus d’informations sur ces restrictions, voir « Exigences supplémentaires pour les portées d’API spécifiques » dans la politique de données utilisateur des services d’API Google [](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
 
 Pour accéder aux portées restreintes, le service connecté (Adobe Workfront Fusion ou tout autre service qui accède aux données de l’utilisateur via l’API) doit être vérifié et doit disposer d’une lettre d’évaluation prouvant que le service est sécurisé et transparent sur la manière dont il utilise les données. Workfront Fusion se conforme à toutes les exigences de Google relatives à l’accès aux portées restreintes. Cependant, la plupart des services connectés tiers de Workfront Fusion ne disposent pas de la lettre d’évaluation et ne se conforment donc pas aux conditions générales de Google. Pour cette raison, Workfront Fusion n’est pas autorisé à envoyer des données à ces services.
 

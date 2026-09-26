@@ -4,18 +4,21 @@ description: Les modules CSV d’Adobe Workfront Fusion vous permettent de crée
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+TQID: 'https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 941
+source-wordcount: '952'
 ht-degree: 56%
-
 ---
-
 # CSV
 
 Les modules Adobe Workfront Fusion [!UICONTROL CSV] vous permettent de créer des fichiers CSV et d’analyser le texte CSV à partir d’une valeur de texte reçue ou d’un fichier.
@@ -120,7 +123,7 @@ Pour plus d’informations sur les agrégateurs, voir [Module Agrégateur](/help
 
 **Exemple** :
 
-Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts &#x200B;] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL &#x200B; E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
+Cet exemple montre comment exporter des contacts Google dans un fichier CSV avec deux colonnes appelées « Nom complet » et « E-mail ». Le lot de sortie du module [!UICONTROL Contacts ] > [!UICONTROL Obtenir les contacts d&#39;un groupe] présente la structure suivante. Les adresses e-mail sont stockées dans le <code>[!UICONTROL  E-mails []]</code> item, qui est un tableau de collections, chaque collection contenant deux éléments : <code>Label</code> et <code>E-mail</code>.
 ![Transformation](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
 Le module [!DNL Create CSV] simple propose une liste de cases à cocher correspondant aux éléments de niveau supérieur d’un lot. Si vous tentez de sélectionner <code>Nom complet</code> et <code>E-mails</code> , le module [!UICONTROL Créer CSV] génère la sortie suivante, qui peut ne pas être celle que vous souhaitez :
@@ -144,7 +147,7 @@ Pour exporter le contenu de l’e-mail <code> </code>élément de la première c
 1. Cliquez sur le bouton <strong>[!UICONTROL Ajouter]</strong> en regard du champ [!UICONTROL Structure de données] pour créer une structure de données.
 1. Saisissez le nom de la structure de données et cliquez sur <strong>[!UICONTROL Ajouter un élément]</strong> pour ajouter les différentes colonnes. Pour exporter deux colonnes : « Nom complet » et « E-mail », la structure de données résultante ressemblerait à ceci :
 
-   ![Sortie des contacts &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
+   ![Sortie des contacts ](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
 1. Une fois la structure des données définie, les champs correspondant à chaque colonne individuelle apparaissent dans la configuration du module [!UICONTROL Créer CSV (avancé)] afin que vous puissiez mapper les éléments. Prenez le premier élément de la <code>[!UICONTROL E-mails[]]</code> tableau et mapper son élément <code>E-mail </code>dans le champ/la colonne E-mail :
 

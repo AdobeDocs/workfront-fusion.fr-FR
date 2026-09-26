@@ -11,15 +11,17 @@ recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: '500'
 ht-degree: 0%
-
 ---
-
 
 # Configurer des outils et un compte d’extension d’interface utilisateur
 
@@ -40,7 +42,7 @@ Pour configurer vos outils d’extensibilité de l’interface utilisateur et vo
 * **Administrateur système** <!--Adobe? Fusion?--> (éventuellement un autre membre de votre équipe) pour l’étape de publication finale. La création et le déploiement nécessitent uniquement le rôle Développeur, mais **l’envoi d’une extension pour approbation/publication nécessite le rôle Administrateur système**.
 
   Pour plus d&#39;informations sur les niveaux d&#39;accès Adobe, voir
-  [Accès &#x200B;](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
+  [Accès ](https://developer.adobe.com/uix/docs/guides/get-access/) dans la documentation d’Adobe.
 
 * **Ordinateur sur lequel vous pouvez installer un logiciel** et exécuter des commandes de terminal (macOS, Windows ou Linux).
 
@@ -92,7 +94,7 @@ Pour l’installer globalement :
 
 >[!NOTE]
 >
-> Si une erreur d’autorisations s’affiche sur macOS/Linux, n’utilisez **&#x200B;**&#x200B;`sudo`. Au lieu de cela, corrigez les autorisations de dossier globales de npm ou utilisez un gestionnaire de versions de nœud qui s’installe dans votre répertoire personnel.
+> Si une erreur d’autorisations s’affiche sur macOS/Linux, n’utilisez **** `sudo`. Au lieu de cela, corrigez les autorisations de dossier globales de npm ou utilisez un gestionnaire de versions de nœud qui s’installe dans votre répertoire personnel.
 
 ## Connexion à Adobe
 

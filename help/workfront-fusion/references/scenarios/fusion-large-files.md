@@ -4,16 +4,18 @@ description: La prise en charge des fichiers volumineux est actuellement disponi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-TQID: https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc
+TQID: 'https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1075'
 ht-degree: 8%
-
 ---
-
 # Utilisation de fichiers volumineux
 
 >[!IMPORTANT]
@@ -34,26 +36,26 @@ Actuellement, les connecteurs suivants prennent en charge les fichiers volumineu
 >* Les modules qui ne prennent pas en charge les fichiers volumineux peuvent traiter des fichiers d’une taille allant jusqu’à 200 Mo.
 
 * Workfront
-   * Charger le document
-   * Télécharger document
+  * Charger le document
+  * Télécharger document
 * Adobe Experience Manager Assets
-   * Charger le document
+  * Charger le document
 * Workfront Proof
-   * Charger fichier
-   * Télécharger l&#39;épreuve
+  * Charger fichier
+  * Télécharger l&#39;épreuve
 * Adobe Authenticator
-   * Effectuer un appel API personnalisé
+  * Effectuer un appel API personnalisé
 * Adobe Photoshop
-   * Application des modifications PSD
+  * Application des modifications PSD
 * SharePoint
-   * Créer un fichier
-   * Créer un fichier (hérité)
-   * Obtenir un fichier
+  * Créer un fichier
+  * Créer un fichier (hérité)
+  * Obtenir un fichier
 * Salesforce
-   * Charger fichier
+  * Charger fichier
 * AWS S3
-   * Charger fichier
-   * Obtenir le fichier
+  * Charger fichier
+  * Obtenir le fichier
 * HTTP
 
 D’autres connecteurs seront pris en charge dans les prochaines versions.

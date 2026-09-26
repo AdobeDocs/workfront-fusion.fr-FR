@@ -4,16 +4,18 @@ description: 'Adobe Workfront Fusion distingue cinq types de modules : modul
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-TQID: https://experienceleague.adobe.com/68pDfEru4WzXlcAi8u3A2PEImixguNX-AqQgI9x1qVk
+TQID: 'https://experienceleague.adobe.com/68pDfEru4WzXlcAi8u3A2PEImixguNX-AqQgI9x1qVk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: '917'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble des modules
 
 Adobe Workfront Fusion distingue cinq types de modules :
@@ -28,7 +30,7 @@ Les agrégateurs et les itérateurs sont destinés à des scénarios avancés.
 
 ## Modules d’action
 
-Les modules d’action sont le type de module le plus courant. Un module d’action type effectue une action et renvoie un lot unique, qui est ensuite transmis au module suivant pour traitement.
+Les modules d’action sont le type de module le plus courant. Un module d’action type effectue une action et renvoie un bundle unique, qui est ensuite transmis au module suivant pour traitement.
 
 Contrairement aux modules déclencheurs, les modules d’action peuvent être placés au début, au milieu ou à la fin d’un scénario.
 
@@ -58,7 +60,7 @@ Le sous-type Mettre à jour permet les trois opérations suivantes :
 
 * **Ne pas modifier le contenu d’un champ**. Cette opération se produit lorsque le champ est vide ou que le contenu du champ est évalué sur vide (représenté par une valeur nulle dans JSON).
 
-  ![Lot vide](assets/leave-content-field-unchanged.png)
+  ![Bundle vide](assets/leave-content-field-unchanged.png)
 
 * **Remplacer le contenu d’un champ**. Cette opération a lieu dans tous les autres cas que les deux décrits ci-dessus.
 
@@ -73,7 +75,7 @@ Le sous-type Mettre à jour permet les trois opérations suivantes :
 
 ## Modules de recherche
 
-Les modules de recherche peuvent renvoyer zéro, un ou plusieurs lots qui sont ensuite transmis au module suivant pour traitement.
+Les modules de recherche peuvent renvoyer zéro, un ou plusieurs bundles qui sont ensuite transmis au module suivant pour traitement.
 
 Vous pouvez placer les modules de recherche au début, au milieu ou à la fin d’un scénario.
 
@@ -89,9 +91,9 @@ Les scénarios peuvent contenir un nombre illimité de modules de recherche, bie
 
 ## Modules déclencheurs
 
-Les déclencheurs génèrent des lots lorsqu’il y a eu une modification dans un service donné, comme la création ou la mise à jour d’un enregistrement.
+Les déclencheurs génèrent des bundles lorsqu’il y a eu une modification dans un service donné, comme la création ou la mise à jour d’un enregistrement.
 
-Les déclencheurs peuvent renvoyer zéro, un ou plusieurs lots qui sont ensuite transmis au module suivant pour traitement.
+Les déclencheurs peuvent renvoyer zéro, un ou plusieurs bundles qui sont ensuite transmis au module suivant pour traitement.
 
 Étant donné que les déclencheurs entraînent le début de l’exécution des scénarios, ils ne peuvent être placés qu’au début d’un scénario.
 
@@ -101,11 +103,11 @@ Workfront Fusion fait la distinction entre deux types de déclencheurs : les 
 
 ### Déclencheurs d’interrogation
 
-Les déclencheurs d’interrogation interrogent régulièrement un service donné, même s’il n’y a pas eu de changement depuis l’exécution du dernier scénario. Nous vous recommandons de planifier l’exécution d’un scénario contenant un déclencheur d’interrogation à intervalles réguliers. Si une modification correspond à la configuration du déclencheur, celui-ci renvoie des lots contenant des informations sur la modification. Si aucune modification ne correspond à la configuration, le déclencheur ne renvoie aucun lot.
+Les déclencheurs d’interrogation interrogent régulièrement un service donné, même s’il n’y a pas eu de changement depuis l’exécution du dernier scénario. Nous vous recommandons de planifier l’exécution d’un scénario contenant un déclencheur d’interrogation à intervalles réguliers. Si une modification correspond à la configuration du déclencheur, celui-ci renvoie des bundles contenant des informations sur la modification. Si aucune modification ne correspond à la configuration, le déclencheur ne renvoie aucun bundle.
 
 Pour obtenir des instructions sur la planification d’un scénario, consultez [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
-Les déclencheurs d’interrogation vous permettent de sélectionner le premier lot qu’ils doivent générer via un panneau qui s’affiche automatiquement après l’enregistrement d’un déclencheur ou la modification de ses paramètres. Cette sélection n’affecte que la première exécution du module. Une fois le module exécuté une fois, les exécutions suivantes surveillent uniquement les modifications qui se produisent après l’exécution la plus récente.
+Les déclencheurs d’interrogation vous permettent de sélectionner le premier bundle qu’ils doivent générer via un panneau qui s’affiche automatiquement après l’enregistrement d’un déclencheur ou la modification de ses paramètres. Cette sélection n’affecte que la première exécution du module. Une fois le module exécuté une fois, les exécutions suivantes surveillent uniquement les modifications qui se produisent après l’exécution la plus récente.
 
 Pour plus d’informations, consultez [Sélection du point de départ d’un module de déclenchement](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md).
 
@@ -138,9 +140,9 @@ Pour plus d’informations sur la manière dont les données entrantes sont trai
 
 ## Agrégateurs
 
-Un module agrégateur regroupe plusieurs lots en un seul lot.
+Un module agrégateur regroupe plusieurs bundles en un seul.
 
-Les agrégateurs ne renvoient qu’un seul lot, qui est ensuite transmis au module suivant pour traitement.
+Les agrégateurs ne renvoient qu’un seul bundle, qui est ensuite transmis au module suivant pour traitement.
 
 Vous ne pouvez placer des agrégateurs qu’au milieu d’un scénario.
 
@@ -160,9 +162,9 @@ Pour plus d’informations, consultez [Module agrégateur](/help/workfront-fusio
 
 ## Itérateurs
 
-Un itérateur est un type de module qui divise les tableaux en plusieurs lots.
+Un itérateur est un type de module qui divise les tableaux en plusieurs bundles.
 
-Les itérateurs renvoient un ou plusieurs lots, qui sont ensuite transmis au module suivant pour traitement.
+Les itérateurs renvoient un ou plusieurs bundles, qui sont ensuite transmis au module suivant pour traitement.
 
 Vous ne pouvez placer des itérateurs qu’au milieu d’un scénario.
 
@@ -172,7 +174,7 @@ Les scénarios peuvent contenir un nombre illimité d’itérateurs, bien qu’u
 
 **Exemple :**
 
-**[!UICONTROL E-mail] > [!UICONTROL Récupérer les pièces jointes]** divise un tableau de pièces jointes en plusieurs lots.
+**[!UICONTROL E-mail] > [!UICONTROL Récupérer les pièces jointes]** divise un tableau de pièces jointes en plusieurs bundles.
 
 >[!ENDSHADEBOX]
 

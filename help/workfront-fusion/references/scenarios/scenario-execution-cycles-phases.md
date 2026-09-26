@@ -4,31 +4,33 @@ description: Cet article décrit les événements qui se produisent pendant l’
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 23%
-
 ---
-
 # Exécution, cycles et phases de scénarios
 
 Chaque exécution de scénario commence par la phase d’initialisation, se poursuit par au moins un cycle composé des phases d’opération et de validation/restauration, et se termine par la phase de finalisation
 
 * Initialisation
 * Cycle 1
-   * Opération (lecture ou écriture)
-   * Engagement ou restauration
+  * Opération (lecture ou écriture)
+  * Engagement ou restauration
 * Cycle 2
-   * Opération (lecture ou écriture)
-   * Engagement ou restauration
+  * Opération (lecture ou écriture)
+  * Engagement ou restauration
 * ...
 * #n de cycle
-   * Opération (lecture ou écriture)
-   * Engagement ou restauration
+  * Opération (lecture ou écriture)
+  * Engagement ou restauration
 * Finalisation
 
 A plus petite échelle, chaque module suit également ces phases. Vous trouverez des informations sur les phases du module dans les informations de lot traitées, dans la bulle numérotée en haut à droite de chaque module une fois le scénario exécuté. Pour plus d’informations sur la recherche des informations de bundle traité, voir [Informations sur les bundles traités](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) dans l’article Flux d’exécution de scénario.

@@ -4,16 +4,18 @@ description: Vous pouvez regarder un scénario en cours d’exécution pour voir
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
+TQID: 'https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 283
+source-wordcount: '283'
 ht-degree: 36%
-
 ---
-
 # Afficher le flux de données dans un scénario en cours d’exécution
 
 Vous pouvez regarder un scénario en cours d’exécution pour voir comment les données y circulent.
@@ -24,7 +26,7 @@ Lorsqu’un scénario s’exécute, le module actif est marqué par un anneau cr
 
 Une fois le module exécuté, un indicateur de sortie s’affiche.
 
-![Indicateur de sortie &#x200B;](assets/data-flow-output.png)
+![Indicateur de sortie ](assets/data-flow-output.png)
 
 Si le module traite plusieurs lots, l&#39;anneau apparaît pour chaque lot traité, et l&#39;indicateur de sortie compte pour chaque lot qu&#39;il sort.
 
@@ -66,4 +68,4 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 1. Si le scénario n’est pas en cours d’exécution, activez-le ou cliquez sur **Exécuter une fois** pour lancer l’exécution du scénario.
 1. Sélectionnez l’exécution à afficher dans la section En cours d’exécution du panneau Historique d’exécution.
 
-![&#x200B; En cours d’exécution &#x200B;](assets/currently-running.png)
+![ En cours d’exécution ](assets/currently-running.png)

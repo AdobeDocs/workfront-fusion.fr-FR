@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion nécessite une licence Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble des scénarios
 
 Le rôle d’Adobe Workfront Fusion est d’automatiser vos processus afin que vos utilisateurs et utilisatrices n’aient pas besoin de passer autant de temps sur des tâches de routine. La plateforme fonctionne en liant les actions dans et entre les applications et les services pour créer un scénario qui transfère et transforme vos données automatiquement. Le scénario que vous créez recherche les données dans une application ou un service et traite ces données pour obtenir le résultat souhaité.
@@ -51,7 +53,7 @@ Le déclencheur est suivi d’un certain nombre de **modules**. Un module repré
 
 ### Itinéraire
 
-Un scénario peut être divisé en **itinéraires**. Un itinéraire est une section du scénario qui peut être utilisée ou non pour un lot de données spécifique. Les itinéraires sont configurés à l’aide d’un module de routeur et de filtres.
+Un scénario peut être divisé en **itinéraires**. Un itinéraire est une section du scénario qui peut être utilisée ou non pour un bundle de données spécifique. Les itinéraires sont configurés à l’aide d’un module de routeur et de filtres.
 
 ![Itinéraire](assets/scenario-route.png)
 
@@ -111,5 +113,5 @@ Pour obtenir la liste des connecteurs dédiés, consultez [Références des appl
 * Pour obtenir un glossaire des termes utilisés dans Workfront Fusion, consultez [Glossaire Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 * Pour créer un scénario de test, consultez [Création d’un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 * Pour plus d’informations sur la création et la gestion des scénarios, consultez les articles répertoriés dans :
-   * [Créer des scénarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [Gérer des scénarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [Créer des scénarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [Gérer des scénarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

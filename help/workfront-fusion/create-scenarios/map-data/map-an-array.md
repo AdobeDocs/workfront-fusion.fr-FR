@@ -4,18 +4,21 @@ description: Vous pouvez mapper un tableau ou des éléments de tableau individu
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 33%
-
 ---
-
 # Mapper un tableau ou un élément de tableau
 
 Un tableau est un élément de lot qui peut contenir les éléments suivants :
@@ -73,7 +76,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Vous pouvez ajouter n’importe quel nombre d’éléments à un tableau.
 
-Vous pouvez diviser un tableau en lots individuels à l’aide d’un itérateur. Pour plus d’informations, consultez la section [[!UICONTROL Module Itérateur] dans Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
+Vous pouvez diviser un tableau en bundles individuels à l’aide d’un itérateur. Pour plus d’informations, consultez la section [[!UICONTROL Module Itérateur] dans Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Mapper des éléments dans un nouveau tableau
 
@@ -129,40 +132,40 @@ Certains tableaux contiennent des collections avec des éléments clé-valeur te
 
 L’exemple suivant illustre la sortie de l’application [!DNL Jira].
 
-![&#x200B; Sortie du module Jira &#x200B;](assets/output-of-jira-app-350x100.png)
+![ Sortie du module Jira ](assets/output-of-jira-app-350x100.png)
 
 Cet exemple obtient un nom de fichier à partir d’un tableau de pièces jointes, pour la pièce jointe spécifique avec l’ID 10108.
 
 Cet exemple génère la sortie suivante :
 
-![&#x200B; Sortie du module Jira &#x200B;](assets/output-from-jira-350x261.png)
+![ Sortie du module Jira ](assets/output-from-jira-350x261.png)
 
 La formule peut être expliquée comme suit :
 
 * `map`
 
-   1. Le premier paramètre de la fonction `map()` est l’élément de tableau entier.
-   1. Le deuxième paramètre est le nom brut de l’élément de valeur. Pour obtenir le nom brut, pointez sur l’élément dans le panneau de [!UICONTROL mapping] :
+  1. Le premier paramètre de la fonction `map()` est l’élément de tableau entier.
+  1. Le deuxième paramètre est le nom brut de l’élément de valeur. Pour obtenir le nom brut, pointez sur l’élément dans le panneau de [!UICONTROL mapping] :
 
-      ![Obtenir le nom brut](assets/obtain-raw-name-350x124.png)
+     ![Obtenir le nom brut](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >Tous les paramètres respectent la casse. Même si dans cet exemple particulier, le libellé de l’élément diffère de son nom brut uniquement en majuscules, il est nécessaire d’utiliser le nom brut.
+     >[!NOTE]
+     >
+     >Tous les paramètres respectent la casse. Même si dans cet exemple particulier, le libellé de l’élément diffère de son nom brut uniquement en majuscules, il est nécessaire d’utiliser le nom brut.
 
-   1. Le troisième paramètre est le nom brut de l’élément de clé :
+  1. Le troisième paramètre est le nom brut de l’élément de clé :
 
-      ![Troisième paramètre](assets/3rd-parameter-350x166.png)
+     ![Troisième paramètre](assets/3rd-parameter-350x166.png)
 
-   1. Le quatrième paramètre est la valeur de clé donnée.
+  1. Le quatrième paramètre est la valeur de clé donnée.
 
   Parce que la fonction `map()` renvoie un tableau (puisqu’il peut y avoir plus d’éléments avec la valeur de clé donnée), il est nécessaire d’appliquer la fonction `get()` pour obtenir son premier élément :
 
 * `get`
 
-   1. Le premier paramètre de la fonction `get()` est le résultat de la fonction `map()`.
+  1. Le premier paramètre de la fonction `get()` est le résultat de la fonction `map()`.
 
-   1. Le deuxième paramètre est l’index de l’élément . Dans cet exemple, l’index est `1`.
+  1. Le deuxième paramètre est l’index de l’élément . Dans cet exemple, l’index est `1`.
 
 Cet exemple génère la sortie suivante :
 
@@ -176,6 +179,6 @@ Pour plus d&#39;informations sur la fonction `get()`, voir [Fonctions générale
 
 ## Convertir des éléments de tableau en une série de lots
 
-Les tableaux peuvent être convertis en une série de lots à l’aide du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [[!UICONTROL Module Itérateur]](/help/workfront-fusion/references/modules/iterator-module.md).
+Les tableaux peuvent être convertis en une série de bundles à l’aide du module [!UICONTROL Itérateur]. Pour plus d’informations, voir [[!UICONTROL Module Itérateur]](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Série de lots](assets/series-of-bundles.png)

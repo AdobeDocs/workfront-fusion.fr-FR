@@ -9,28 +9,37 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: d5732b6c-b039-4bf7-a7e6-e59b6e8f1a63
-TQID: https://experienceleague.adobe.com/Hk-KEhaY3GixeNB762ApX4-noSihs-ElXMr7VYIn9K8
+TQID: 'https://experienceleague.adobe.com/Hk-KEhaY3GixeNB762ApX4-noSihs-ElXMr7VYIn9K8'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 618
+source-wordcount: '618'
 ht-degree: 100%
-
 ---
-
 # Activité Version de Workfront Fusion : semaine du 11 janvier 2021
 
 Cette page décrit toutes les améliorations apportées à Adobe Workfront Fusion au cours de la semaine du mardi 11 janvier 2021.
 
 Pour obtenir la liste de toutes les modifications récentes, voir [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=fr) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
+Pour obtenir la liste des correctifs récents dans Workfront Fusion, reportez-vous à la page [Mises à jour de maintenance Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) et recherchez toutes les mises à jour intitulées Mise à jour de maintenance de Workfront Fusion.
 
 ## Connecteur et modules Widen désormais disponibles
 
@@ -88,7 +97,7 @@ Vous pouvez désormais utiliser Workfront Fusion 2.0 pour vous connecter à vo
 
 ## Rechercher l’historique d’exécution de votre scénario
 
-Nous vous avons facilité la recherche d’informations spécifiques provenant d’exécutions de scénarios précédentes. La nouvelle recherche de texte intégral de Fusion permet de rechercher dans l’historique d’exécution toutes les données contenues dans un lot. Par exemple, pour identifier l’exécution qui a créé une tâche spécifique, vous pouvez utiliser la recherche de texte intégral pour rechercher cet ID de tâche.
+Nous vous avons facilité la recherche d’informations spécifiques provenant d’exécutions de scénarios précédentes. La nouvelle recherche de texte intégral de Fusion permet de rechercher dans l’historique d’exécution toutes les données contenues dans un bundle. Par exemple, pour identifier l’exécution qui a créé une tâche spécifique, vous pouvez utiliser la recherche de texte intégral pour rechercher cet ID de tâche.
 
 Auparavant, la recherche d’informations d’exécution spécifiques nécessitait d’afficher chaque exécution individuellement.
 

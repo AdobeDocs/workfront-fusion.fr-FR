@@ -4,16 +4,18 @@ description: L’expert en notation de scénario peut vous aider à vous assurer
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-TQID: https://experienceleague.adobe.com/g8v-odwnN-wtyzSh8wr6LSNL7xLIBs8Guw2zY-JW700
+TQID: 'https://experienceleague.adobe.com/g8v-odwnN-wtyzSh8wr6LSNL7xLIBs8Guw2zY-JW700'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 346
+source-wordcount: '346'
 ht-degree: 32%
-
 ---
-
 # Exécuter l’expert en notation de scénario
 
 >[!IMPORTANT]
@@ -63,7 +65,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 L’expert en notation de scénario renvoie une note sur 10 et indique les vérifications qui ont réussi ou échoué. Si une vérification a échoué, l’expert en notation de scénario fournit des recommandations sur la manière de s’assurer que le scénario répond à ces vérifications.
 
-![&#x200B; Score du scénario &#x200B;](assets/scenario-score.png)
+![ Score du scénario ](assets/scenario-score.png)
 
 ## Vérifications du score du scénario
 
@@ -76,7 +78,7 @@ L’expert en notation de scénario effectue les vérifications suivantes :
   Pour obtenir des instructions, consultez [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * La taille du plan directeur du scénario doit être inférieure à 5 Mo.
 
-  Pour plus d’informations, voir [&#x200B; Mécanismes de sécurisation des performances de Fusion &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios).
+  Pour plus d’informations, voir [ Mécanismes de sécurisation des performances de Fusion ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios).
 * Si un module de déclenchement instantané Workfront est utilisé, il doit être filtré.
 
   Pour plus d’informations, consultez la section [Filtres d’abonnement aux événements du module Workfront > [!UICONTROL Événements Espion]](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules).

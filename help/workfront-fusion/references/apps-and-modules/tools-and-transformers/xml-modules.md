@@ -4,22 +4,26 @@ description: L’application XML vous permet d’analyser un texte au format XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+TQID: 'https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1433
+source-wordcount: '1433'
 ht-degree: 86%
-
 ---
-
 # XML
 
-L’application [!UICONTROL XML] vous permet d’analyser un texte au format XML à l’aide du module [!UICONTROL XML] > [!UICONTROL Parse XML] et de le convertir en un lot afin de rendre les données disponibles pour d’autres modules. Vous pouvez également convertir un lot en texte XML au moyen du module [!UICONTROL XML] > [!UICONTROL Créer un XML].
+L’application [!UICONTROL XML] vous permet d’analyser un texte au format XML à l’aide du module [!UICONTROL XML] > [!UICONTROL Parse XML] et de le convertir en un bundle afin de rendre les données disponibles pour d’autres modules. Vous pouvez également convertir un bundle en texte XML au moyen du module [!UICONTROL XML] > [!UICONTROL Créer un fichier XML].
 
 ## Conditions d’accès
 
@@ -54,7 +58,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Créer du XML
 
-Le module [!UICONTROL XML] > [!UICONTROL Créer du XML] convertit un lot en texte XML.
+Le module [!UICONTROL XML] > [!UICONTROL Créer un fichier XML] convertit un bundle en texte XML.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -156,7 +160,7 @@ Si vous souhaitez ajouter des attributs à un nœud complexe (un nœud qui conti
 
 ## [!UICONTROL Parse XML]
 
-Le module [!UICONTROL XML] > [!UICONTROL Parse XML] analyse un texte au format XML et génère un seul lot contenant toutes les informations extraites du XML.
+Le module [!UICONTROL XML] > [!UICONTROL Analyser le XML] analyse un texte au format XML et génère un seul bundle contenant toutes les informations extraites du XML.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -245,7 +249,7 @@ Par défaut, le module [!UICONTROL XML] > [!UICONTROL Analyser XML] place des at
 </root>
 ```
 
-est converti en ce lot :
+est converti en ce bundle :
 
 ![XML converti en lot](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 

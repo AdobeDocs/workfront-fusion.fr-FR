@@ -4,21 +4,24 @@ description: Vos scénarios Adobe Workfront Fusion peuvent contenir les types d�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-TQID: https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w
+TQID: 'https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 580
+source-wordcount: '580'
 ht-degree: 70%
-
 ---
-
 # Types de données d’élément
 
-Vous pouvez contenir les types d’éléments répertoriés ci-dessous dans un lot.
+Vous pouvez contenir les types d’éléments répertoriés ci-dessous dans un bundle.
 
 Pour plus d’informations sur les types d’éléments que Workfront Fusion permet de convertir, voir [Type coercition](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 

@@ -5,24 +5,30 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-TQID: https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs
+TQID: 'https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: d5896d07-2812-5418-8b18-8957a0d7f0fb
+    internal-label: System Setup and Administration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 694
+source-wordcount: '694'
 ht-degree: 48%
-
 ---
-
 # Conditions d’accès dans la documentation
 
 Les articles pratiques de la documentation d’Adobe Workfront Fusion contiennent un tableau qui explique les exigences d’accès et d’autorisations nécessaires à cette procédure. Ce tableau des exigences d’accès vous permet de comprendre si vous pouvez effectuer une certaine action dans Fusion ou pourquoi vous ne le pouvez pas. Cet article explique chaque élément du tableau des conditions d’accès et fournit des conseils de dépannage et des liens vers des informations plus détaillées.
@@ -45,7 +51,7 @@ Certaines lignes contiennent des informations intitulées « Nouveau » et «�
    <td role="rowheader">Package Adobe Workfront 
    <td> Les packages Adobe Workfront font référence à l’ensemble des fonctionnalités achetées par votre entreprise. La plupart des fonctionnalités de Fusion sont disponibles dans tous les plans, mais certaines exceptions ne sont disponibles que pour les organisations qui disposent d’un package Ultimate Workfront. 
    <ul><li>Pour savoir quel package Adobe Workfront votre organisation utilise, et notamment si votre organisation applique le modèle de package nouveau ou actuel, contactez votre administrateur Workfront.</li>
-   <li>Pour plus d’informations sur la manière dont un administrateur Workfront peut localiser le package Workfront de votre organisation, consultez <a href="https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Affichage du plan de cluster et de Workfront de votre organisation</a> dans l’article Présentation du pare-feu.</li><li>Pour plus d’informations sur les nouveaux packages Workfront, voir <a href="https://business.adobe.com/fr/products/workfront/pricing.html">Tarification et package Adobe Workfront</a>.</li></ul> </td> 
+   <li>Pour plus d’informations sur la manière dont un administrateur Workfront peut localiser le package Workfront de votre organisation, consultez <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Affichage du plan de cluster et de Workfront de votre organisation</a> dans l’article Présentation du pare-feu.</li><li>Pour plus d’informations sur les nouveaux packages Workfront, voir <a href="https://business.adobe.com/products/workfront/pricing.html">Tarification et package Adobe Workfront</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licence Adobe Workfront</td> 
@@ -54,9 +60,9 @@ Certaines lignes contiennent des informations intitulées « Nouveau » et «�
    <li>Pour connaître la licence qui vous est attribuée, contactez votre administrateur ou administratrice Workfront.</li>
    <li>Adobe Workfront passe à un nouveau modèle de tarification et de conditionnement. Pour plus d’informations sur les licences, consultez :
    <ul>
-   <li>Nouveau : <a href="https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Vue d’ensemble des nouvelles licences</a></li>
-   <li>Actuel : <a href="https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Vue d’ensemble des licences</a></li></ul></li>
-   <li>Si vous disposez du bon niveau d’accès et que vous n’y avez toujours pas accès, demandez à votre administrateur ou administratrice Workfront s’il existe des restrictions supplémentaires à votre niveau d’accès. Pour plus d’informations sur la manière dont un administrateur Workfront peut modifier votre niveau d’accès, voir <a href="https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Création et modification de niveaux d’accès personnalisés</a>.
+   <li>Nouveau : <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Vue d’ensemble des nouvelles licences</a></li>
+   <li>Actuel : <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Vue d’ensemble des licences</a></li></ul></li>
+   <li>Si vous disposez du bon niveau d’accès et que vous n’y avez toujours pas accès, demandez à votre administrateur ou administratrice Workfront s’il existe des restrictions supplémentaires à votre niveau d’accès. Pour plus d’informations sur la manière dont un administrateur Workfront peut modifier votre niveau d’accès, voir <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Création et modification de niveaux d’accès personnalisés</a>.
    </ul>
       </p> </td> 
   </tr> 
