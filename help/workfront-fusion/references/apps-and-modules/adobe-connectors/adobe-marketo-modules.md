@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 87%
 ---
 # Modules [!DNL Marketo]
 
@@ -214,9 +214,12 @@ Ce module de déclenchement lance un scénario lorsqu’un enregistrement est cr
 
 * [[!UICONTROL Ajouter des leads à une liste]](#add-leads-to-a-list)
 * [[!UICONTROL Cloner un programme]](#clone-a-program)
+* [[!UICONTROL Créer une tâche d’extraction en bloc]](#create-a-bulk-extract-job)
 * [[!UICONTROL Créer un enregistrement]](#create-a-record)
 * [[!UICONTROL Appel API personnalisé]](#custom-api-call)
+* [[!UICONTROL Télécharger un fichier d’extraction en bloc]](#download-a-bulk-extract-file)
 * [[!UICONTROL Télécharger un fichier]](#download-a-file)
+* [[!UICONTROL Obtention du statut de la tâche d’extraction en bloc]](#get-bulk-extract-job-status)
 * [[!UICONTROL Lire un enregistrement]](#read-a-record)
 * [[!UICONTROL Supprimer des leads d’une liste]](#remove-leads-from-a-list)
 * [[!UICONTROL Planifier une campagne]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Ce module d’action effectue une copie d’un programme à l’aide de l’ID d
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td>Saisissez ou mappez l’ID du dossier dans lequel vous souhaitez que le nouveau programme soit situé.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Créer une tâche d’extraction en bloc]
+
+Ce module d’action crée une tâche d’extraction en bloc pour les enregistrements de leads et de personnes. Utilisez [!UICONTROL Obtenir le statut de la tâche d’extraction en bloc] pour vérifier la tâche, puis [!UICONTROL Télécharger un fichier d’extraction en bloc] pour récupérer l’exportation terminée. Ce module renvoie l’ID d’exportation utilisé par les modules d’état et de téléchargement.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Pour chaque champ que vous souhaitez ajouter à la tâche d’extraction en bloc, cliquez sur <b>Ajouter un élément</b> et saisissez le nom de l’API du champ.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td> <p>Sélectionnez le format du fichier pour l’extrait : CSV, TSV ou SSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter by]</td> 
+   <td> <p>Sélectionnez le filtre de ce module, puis renseignez les informations demandées dans les champs qui s'affichent :</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL Smart List]</strong> </p> <p>Saisissez ou mappez l’ID de liste dynamique.</p> </li> 
+    <li> <p><strong>[!UICONTROL Plage de dates créée]</strong> </p> <p>Sélectionnez les dates de début et de fin entre lesquelles effectuer la recherche.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Custom column headers]</td> 
+   <td> <p>Pour chaque en-tête de colonne personnalisé que vous souhaitez inclure dans la tâche d’extraction, cliquez sur <b>Ajouter un élément</b> et saisissez le nom de l’API du champ et le texte de l’en-tête de colonne.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mettre en file d'attente immédiatement]</td> 
+   <td> <p>Sélectionnez Oui pour mettre le traitement en file d’attente et l’exécuter immédiatement après sa création. Sélectionnez Non pour mettre le traitement en file d’attente ultérieurement avec une étape distincte.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>Pour chaque champ à ajouter à votre appel API, cliquez sur <b>Ajouter un élément</b> et saisissez la clé et la valeur du champ.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body Type]</td> 
+   <td> <p>Sélectionnez le format du corps de la requête : <b>[!UICONTROL URL-encoded (Fields)]</b> ou <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Request Body (JSON)]</td> 
+   <td> <p>Utilisé uniquement lorsque le type de corps [!UICONTROL] est défini sur [!UICONTROL JSON]. Saisissez un corps JSON brut.</p> <p>Important : lors de l’utilisation de JSON, modifiez l’en-tête [!UICONTROL Content-Type] ci-dessus de <code>application/x-www-form-urlencoded</code> en <code>application/json</code>, sinon Marketo peut rejeter la requête.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Télécharger un fichier d’extraction en bloc]
+
+Ce module d’action récupère le fichier pour une tâche d’extraction en bloc terminée.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>Saisissez ou mappez l’identifiant de la tâche d’extraction en bloc pour laquelle vous souhaitez télécharger le fichier.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Ce module d’action télécharge un fichier à l’aide de l’identifiant de f
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Saisissez ou mappez l’ID du fichier que vous souhaitez télécharger.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Obtention du statut de la tâche d’extraction en bloc]
+
+Ce module d’action récupère le statut d’une tâche d’extraction en bloc à l’aide de son identifiant de tâche.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de votre compte [!DNL Marketo] à Workfront Fusion, consultez <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connecter [!DNL Marketo] à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>Saisissez ou mappez l’identifiant de la tâche d’extraction en bloc dont vous souhaitez vérifier le statut.</td> 
   </tr> 
  </tbody> 
 </table>
