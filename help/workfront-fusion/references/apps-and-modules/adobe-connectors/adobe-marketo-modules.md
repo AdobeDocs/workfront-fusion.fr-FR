@@ -410,7 +410,7 @@ Ce module d’action vous permet d’effectuer un appel personnalisé et authent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request Body (JSON)]</td> 
-   <td> <p>Utilisé uniquement lorsque le type de corps [!UICONTROL] est défini sur [!UICONTROL JSON]. Saisissez un corps JSON brut.</p> <p>Important : lors de l’utilisation de JSON, modifiez l’en-tête [!UICONTROL Content-Type] ci-dessus de <code>application/x-www-form-urlencoded</code> en <code>application/json</code>, sinon Marketo peut rejeter la requête.</p> </td> 
+   <td> <p>Utilisé uniquement lorsque le type de corps  est défini sur [!UICONTROL JSON]. Saisissez un corps JSON brut.</p> <p>Important : lors de l’utilisation de JSON, modifiez l’en-tête [!UICONTROL Content-Type] ci-dessus de <code>application/x-www-form-urlencoded</code> en <code>application/json</code>, sinon Marketo peut rejeter la requête.</p> </td> 
   </tr> 
  </tbody> 
 </table>
