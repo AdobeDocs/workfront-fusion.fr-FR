@@ -1,7 +1,7 @@
 ---
 title: Outils de serveur MCP Adobe Workfront Fusion
 description: Liste de référence des outils que le serveur MCP Adobe Workfront Fusion expose aux plateformes d’IA et à Coworker.
-source-git-commit: 322a34df48a5218bc045e6cac6a5a8b3837e8c2e
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 7%
@@ -175,4 +175,5 @@ Tous les outils de cet article sont disponibles dans Coworker, à la fois en mod
 ## Mise à jour des outils
 
 Lorsqu’Adobe publie une nouvelle version du serveur MCP Fusion, les agents connectés récupèrent automatiquement l’ensemble d’outils mis à jour. Vous n&#39;avez pas besoin de vous reconnecter.
+
 
