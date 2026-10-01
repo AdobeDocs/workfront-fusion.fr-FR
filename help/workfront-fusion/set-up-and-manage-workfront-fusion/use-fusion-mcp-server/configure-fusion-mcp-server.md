@@ -23,7 +23,7 @@ Le serveur MCP Fusion fonctionne avec n’importe quelle plateforme agentique d�
 
 Cet article décrit les étapes de connexion pour :
 
-* [Collègue Adobe ](#use-fusion-with-coworker) : collègue en tant que travailleur autonome et collègue dans le rail de droite de Fusion
+* [Collègue Adobe &#x200B;](#use-fusion-with-coworker) : collègue en tant que travailleur autonome et collègue dans le rail de droite de Fusion
 * [Claude](#connect-fusion-to-claude) : Connecteur personnalisé
 * [ChatGPT](#connect-fusion-to-chatgpt) : serveur MCP personnalisé
 * [Une solution MCP personnalisée](#connect-fusion-to-a-custom-mcp-solution)
@@ -50,7 +50,7 @@ Avant de pouvoir connecter Fusion à une plateforme agentique d’IA, vous devez
 Un collègue est un agent d’IA Adobe. Fusion est intégré à Coworker, de sorte que vous n’avez pas besoin de saisir une URL MCP ou d’enregistrer une application OAuth. Vous pouvez utiliser Coworker avec Fusion à deux endroits :
 
 * [Collègue (autonome)](#use-fusion-in-coworker) : utilisez Fusion avec vos autres applications Adobe.
-* [Coworker dans le rail de droite de Fusion ](#use-coworker-in-the-fusion-right-rail) : ouvrez Coworker dans un panneau à l’intérieur de l’interface utilisateur de Fusion.
+* [Coworker dans le rail de droite de Fusion &#x200B;](#use-coworker-in-the-fusion-right-rail) : ouvrez Coworker dans un panneau à l’intérieur de l’interface utilisateur de Fusion.
 
 Les deux utilisent les mêmes outils de MCP Fusion, votre Adobe ID et vos autorisations Fusion. Les paramètres des outils de MCP Lecture ou Écriture s’appliquent aux deux. Les actions destructrices, telles que la suppression, l’effacement de la file d’attente ou le remplacement, demandent toujours une confirmation.
 
@@ -127,7 +127,7 @@ Ajoutez Fusion comme serveur MCP personnalisé.
 ### ChatGPT sur le web
 
 1. Connectez-vous à [ChatGPT](https://chatgpt.com).
-2. Accédez à [](https://chatgpt.com/plugins). (Il se peut que le mode Développeur doive être activé sous **Paramètres** ; dans les plans Entreprise/Entreprise, un administrateur doit autoriser les connecteurs personnalisés.)
+2. Accédez à [&#128279;](https://chatgpt.com/plugins). (Il se peut que le mode Développeur doive être activé sous **Paramètres** ; dans les plans Entreprise/Entreprise, un administrateur doit autoriser les connecteurs personnalisés.)
 3. Cliquez sur **+**.
 4. Saisissez un **nom**.
 5. Pour **Connexion**, sélectionnez **URL du serveur** et saisissez l’URL du serveur MCP.
