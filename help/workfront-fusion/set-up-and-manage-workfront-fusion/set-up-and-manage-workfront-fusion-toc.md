@@ -19,10 +19,10 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 740f7e0e96d0eb4e6290f42f52b75eb64de791dc
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 67%
+source-wordcount: '72'
+ht-degree: 63%
 ---
 # Configurer et gérer Workfront Fusion : index des articles
 
@@ -30,4 +30,5 @@ ht-degree: 67%
 * [Configurer et gérer des organisations et des équipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
 * [Configuration des extensions d’interface utilisateur personnalisées](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
 * [Gérer les modèles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+* [Utiliser le serveur MCP Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/use-fusion-mcp-server-toc.md)
 * [Utilisation du stockage Workfront](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
