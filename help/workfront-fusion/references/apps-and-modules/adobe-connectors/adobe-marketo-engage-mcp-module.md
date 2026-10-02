@@ -243,6 +243,6 @@ Vous pouvez utiliser des invites telles que :
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/fr/docs/marketo-developer/marketo/mcp-server
 
   -->
