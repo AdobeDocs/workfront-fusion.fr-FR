@@ -46,7 +46,7 @@ Vous pouvez ajouter une invite d’IA à votre scénario à l’aide du module A
 
 Pour obtenir des instructions, reportez-vous aux articles suivants pour des serveurs spécifiques :
 
-* [Modules MCP ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Modules MCP &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
 * [Module Adobe Marketo Engage MCP](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
-* [Modules MCP ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
+* [Modules MCP &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
 * [Module Agent MCP](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
