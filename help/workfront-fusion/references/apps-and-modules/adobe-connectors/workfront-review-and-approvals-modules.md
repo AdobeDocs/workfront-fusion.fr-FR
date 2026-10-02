@@ -15,10 +15,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 12%
+source-wordcount: '5905'
+ht-degree: 17%
 ---
 # Modules Adobe Workfront Unified Review and Approvals
 
@@ -131,6 +131,7 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 * [Actions](#actions)
 * [Recherches](#searches)
+* [Déclencheurs](#triggers)
 * [Autre](#other)
 
 ### Actions
@@ -1353,6 +1354,89 @@ Ce module de recherche les validations groupées à l&#39;aide d&#39;une vue nom
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### Déclencheurs
+
+* [Regarder les événements d’approbation](#watch-approval-events)
+
+#### Regarder les événements d’approbation
+
+Ce module de déclenchement exécute un scénario en temps réel lorsque des événements liés à l’approbation se produisent dans Adobe Workfront Unified Review and Approvals.
+
+Le module renvoie tous les champs standard associés à l’événement d’approbation, ainsi que tous les champs et valeurs personnalisés auxquels la connexion accède. Vous pouvez mettre en correspondance ces informations dans les modules suivants du scénario.
+
+Pour configurer le webhook pour le module Événements d’approbation Watch :
+
+1. Cliquez sur **[!UICONTROL Ajouter]** à droite de la zone **Webhook**.
+
+1. Configurez le webhook dans la zone **[!UICONTROL Ajouter un hook]** qui s’affiche.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook name]</td> 
+      <td>Saisissez un nom pour le webhook.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Connection]</td> 
+      <td> <p>Pour plus d’informations sur la connexion de votre application Workfront à Workfront Fusion, voir <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Se connecter à la révision et aux approbations unifiées d’Adobe Workfront</a> dans cet article.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Type]</td> 
+      <td>Sélectionnez le type d’enregistrement de validation que vous souhaitez que le module regarde.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Configuration Type]</td> 
+      <td>Choisissez si vous souhaitez utiliser un filtre simple ou avancé.<p>Pour plus d’informations sur les filtres simples ou avancés, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Utilisation de filtres avancés</a> dans l’article Modules Workfront .</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Event filter payload]</td> 
+      <td>Si vous utilisez des filtres avancés, saisissez le code JSON qui décrit le filtre.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>Si vous utilisez des filtres avancés, sélectionnez le connecteur que vous souhaitez utiliser pour le filtre.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL State]</td> 
+      <td>Si vous utilisez un filtre simple, choisissez d’observer l’ancien état ou le nouvel état.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Déclenchez un scénario lorsque l’enregistrement <b>prend</b> une valeur donnée.</p><p>Par exemple, si l’état est défini sur [!UICONTROL New State] et que le filtre est défini sur [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], le webhook déclenche un scénario lorsque le [!UICONTROL Status] passe à [!UICONTROL In Progress], quel que soit le statut antérieur.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Déclenchez un scénario lorsque l’enregistrement <b>quitte</b> une valeur donnée.</p><p>Par exemple, si l’état est défini sur [!UICONTROL Old State] et que le filtre est défini sur [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], le webhook déclenche un scénario lorsqu’un [!UICONTROL Status], qui est actuellement [!UICONTROL In Progress] passe à un autre statut.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL Filtres d’événements]</p> </td> 
+      <td> <p>Si vous utilisez un filtre simple, définissez des filtres.</p> <p>Pour chaque filtre, saisissez le champ que le filtre doit évaluer, l’opérateur et la valeur que le filtre doit autoriser. Vous pouvez utiliser plusieurs filtres en ajoutant des règles ET.</p> <p><b>NOTE</b> : vous ne pouvez pas modifier les filtres dans les webhooks Workfront existants. Pour configurer différents filtres pour les abonnements aux événements Workfront, supprimez le webhook actuel et créez-en un nouveau.</p> <p>Pour plus d’informations sur les filtres d’événement, consultez la section <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref"> Filtres d’abonnement aux événements dans les modules Workfront &gt; [!UICONTROL Watch Events]</a> dans l’article Modules Workfront .</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Exclure les événements créés par cette connexion</td> 
+      <td>Si vous utilisez un filtre simple, activez cette option pour exclure les événements créés ou mis à jour à l’aide du même connecteur que celui utilisé par ce module de déclenchement. Cela peut empêcher qu’un scénario se déclenche lui-même et se répète en une boucle sans fin. Cette option peut ne pas être disponible pour tous les types d'événements d'approbation.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Origin]</td> 
+      <td>
+       <p>Choisissez si vous souhaitez que le scénario surveille les [!UICONTROL New Records Only], les [!UICONTROL Updated Records Only], les [!UICONTROL New and Updated Records] ou les [!DNL Deleted Records Only].</p>
+       <p><b>NOTE</b> : si vous choisissez les [!UICONTROL New and Updated Records], la création du webhook entraîne la création de deux abonnements à des événements (pour la même adresse de webhook).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Activer les hooks sécurisés]</td> 
+      <td>
+       <p>Choisissez si vous souhaitez activer la sécurité basée sur authToken pour ce webhook.</p><p>
+       <b>REMARQUE </b> : à compter du 23 août 2026, Fusion active la sécurité basée sur authToken par défaut pour tous les modules Workfront &gt; Événement de contrôle, y compris les modules existants. Si un webhook spécifique est rompu ou si vous devez le désactiver pour des raisons de compatibilité, vous pouvez désactiver l’option Activer les hooks sécurisés .</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Facultatif) Si [!UICONTROL Enable secure hooks] est défini sur [!UICONTROL Yes], vous pouvez saisir votre propre valeur de jeton pour sécuriser le webhook. Si vous laissez ce champ vide, Fusion génère automatiquement un jeton pour vous.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+Une fois le webhook créé, vous pouvez afficher l’adresse du point d’entrée auquel les événements sont envoyés.
+
+Pour plus d’informations, consultez la section [Exemples de payloads d’événement](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) dans l’article API d’abonnement aux événements dans la documentation de Workfront.
 
 ### Autre
 
