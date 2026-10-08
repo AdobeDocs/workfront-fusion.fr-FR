@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 37%
+source-wordcount: '2675'
+ht-degree: 34%
 ---
 # Modules Jira
 
@@ -78,10 +78,14 @@ Pour plus d’informations sur les licences Adobe Workfront Fusion, consultez 
 
 ## Connecter Jira à Workfront Fusion
 
-La procédure de création d’une connexion à Jira diffère selon que vous créez une connexion de base ou une connexion OAuth2.
+La procédure de création d’une connexion à Jira dépend du type de compte et de la méthode d’authentification que vous utilisez. Utilisez une connexion de compte personnel lorsqu’une connexion est associée à un utilisateur Jira individuel. Utilisez une connexion de compte de service lorsque la connexion est destinée à s’exécuter à l’aide d’une automatisation dédiée ou d’une identité de non-utilisateur.
+
+Dans le champ **Type de connexion**, sélectionnez la méthode d’authentification appropriée pour votre compte Jira :
 
 * [Créer une connexion OAuth2 à Jira](#create-an-oauth2-connection-to-jira)
 * [Créer une connexion de base à Jira](#create-a-basic-connection-to-jira)
+* [Créer une connexion du jeton API du compte de service à Jira](#create-a-service-account-api-token-connection-to-jira)
+* [Créer une connexion OAuth2 de compte de service à Jira](#create-a-service-account-oauth2-connection-to-jira)
 
 ### Créer une connexion OAuth2 à Jira
 
@@ -195,7 +199,7 @@ La création d’une connexion de base à Jira diffère selon que vous créez un
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Type de connexion</p> </td> 
-      <td> <p>Choisissez si vous créez une connexion de base ou une connexion OAuth 2.</p> </td> 
+      <td> <p>Sélectionnez <b>De base</b> pour cette connexion.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Nom de la connexion</p> </td> 
@@ -243,7 +247,7 @@ La création d’une connexion de base à Jira diffère selon que vous créez un
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Type de connexion</p> </td> 
-      <td> <p>Choisissez si vous créez une connexion de base ou une connexion OAuth 2.</p> </td> 
+      <td> <p>Sélectionnez <b>De base</b> pour cette connexion.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Nom de la connexion</p> </td> 
@@ -294,6 +298,33 @@ Pour utiliser un PAT, vous devez activer les éléments suivants dans le `jira/b
 * `jira.rest.csrf.disabled = true`
 
 Si ce fichier n’existe pas, vous devez le créer.
+
+### Créer une connexion du jeton API du compte de service à Jira
+
+Utilisez cette option pour un compte de service Jira qui s’authentifie avec un jeton API. Dans le champ **Type de connexion**, sélectionnez **Jeton API du compte de service**.
+
+1. Dans n’importe quel module Jira, cliquez sur **Ajouter** en regard du champ **Connexion**.
+1. Dans le champ **Type de connexion**, sélectionnez **Jeton API du compte de service**.
+1. Saisissez un **Nom de la connexion**.
+1. Saisissez l’**URL du service** pour votre instance Jira.
+1. Sélectionnez le **type de compte Jira** approprié.
+1. Saisissez le jeton API pour le compte de service Jira.
+1. Sélectionnez la **version de l’API** que vous souhaitez que cette connexion utilise.
+1. Cliquez sur **Continuer** pour créer la connexion et revenir au module.
+
+### Créer une connexion OAuth2 de compte de service à Jira
+
+Utilisez cette option pour un compte de service Jira qui s’authentifie avec OAuth 2. Dans le champ **Type de connexion**, sélectionnez **Compte de service OAuth 2**.
+
+1. Dans n’importe quel module Jira, cliquez sur **Ajouter** en regard du champ **Connexion**.
+1. Dans le champ **Type de connexion**, sélectionnez **Compte de service OAuth 2**.
+1. Saisissez un **Nom de la connexion**.
+1. Saisissez l’**URL du service** pour votre instance Jira.
+1. Sélectionnez le **type de compte Jira** approprié.
+1. Saisissez l’**ID client** et le **Secret client** pour l’application Jira OAuth 2 associée au compte de service.
+1. Saisissez éventuellement les **portées supplémentaires** requises pour la connexion.
+1. Sélectionnez la **version de l’API** que vous souhaitez que cette connexion utilise.
+1. Cliquez sur **Continuer** pour créer la connexion et revenir au module.
 
 ## Modules Jira et leurs champs
 
