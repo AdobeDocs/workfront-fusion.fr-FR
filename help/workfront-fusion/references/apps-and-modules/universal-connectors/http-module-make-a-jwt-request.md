@@ -227,7 +227,7 @@ Lorsque vous configurez le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une 
 
 ## Création du jeton
 
-1. Le module collecte les revendications dans le champ [!UICONTROL  Payload (revendications)] du JWT .
+1. Le module collecte les revendications dans le champ [!UICONTROL &#x200B; Payload (revendications)] du JWT .
 1. Créances réservées telles que <code>exp</code><code>iat</code>, et <code>nbf</code> sont converties en valeurs NumericDate.
 1. Le module applique les [!UICONTROL options de signature] et signe le jeton à l’aide de l’algorithme de la connexion.
 1. Le jeton signé est placé dans l’en-tête de la requête défini par [!UICONTROL Nom de l’en-tête].
@@ -281,7 +281,7 @@ Non. L’algorithme est fixé par la connexion. Si vous avez besoin d’un autre
 
 ### Puis-je envoyer le jeton dans un en-tête personnalisé ?
 
-Oui. Définissez le champ [!UICONTROL  Nom de l’en-tête ] sur un nom personnalisé, mais il ne peut pas contenir de point (`.`).
+Oui. Définissez le champ [!UICONTROL &#x200B; Nom de l’en-tête &#x200B;] sur un nom personnalisé, mais il ne peut pas contenir de point (`.`).
 
 ### Puis-je envoyer le jeton brut sans `Bearer` ?
 
