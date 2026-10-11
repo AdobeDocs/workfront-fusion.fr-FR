@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 74%
+source-wordcount: '1194'
+ht-degree: 62%
 ---
 # Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête]
 
@@ -128,6 +128,14 @@ Lorsque vous configurez le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
    <td> <p>Spécifiez le délai d’expiration de la requête en secondes (1 à 300). La valeur par défaut est de 40 secondes.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Retry Count]</td> 
+   <td> <p>Spécifiez le nombre de reprises de la requête en cas d'erreur de connexion (ETIMEDOUT, ECONNRESET, EPROTO). La valeur par défaut est 3. Définissez cette valeur sur 0 pour désactiver les reprises.</p> <p>Ce paramètre n'a d'effet que lorsque l'option [!UICONTROL Evaluate all states as errors] est activée.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Additional Retry Status Codes]</td> 
+   <td> <p>Spécifiez d’autres codes d’état HTTP qui doivent être traités comme pouvant être réessayés lorsque l’option [!UICONTROL Evaluate all states as errors] est activée. Par défaut, seuls les codes 408, 429 et tous les codes 5xx peuvent être réessayés.</p> <p>Lorsque vous ajoutez un code d’état à ce champ, il se transforme en erreur de connexion réutilisable et déclenche de nouvelles tentatives conformément au paramètre [!UICONTROL Retry Count]. Les codes d’état non répertoriés ici conservent leur comportement par défaut. Les codes qui ne peuvent généralement pas être réessayés, tels que 404 ou 422, peuvent être réessayés en les ajoutant ici.</p> <p><b>Exemple :</b> si vous activez [!UICONTROL Evaluate all states as errors], définissez [!UICONTROL Retry Count] sur 4, puis ajoutez 422 à ce champ, une réponse HTTP 422 sera traitée comme pouvant faire l'objet d'une nouvelle tentative et fera l'objet d'une nouvelle tentative comme les autres échecs de type connexion.</p> <p><b>Remarque :</b> le paramètre [!UICONTROL Timeout] contrôle la durée d’attente de chaque tentative. Il ne définit pas de pause entre les reprises. Ce paramètre n'a d'effet que lorsque l'option [!UICONTROL Evaluate all states as errors] est activée.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
