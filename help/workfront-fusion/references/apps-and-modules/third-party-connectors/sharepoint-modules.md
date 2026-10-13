@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5856'
+source-wordcount: '5813'
 ht-degree: 39%
 ---
 # Modules Microsoft SharePoint Online
@@ -98,7 +98,7 @@ Le connecteur SharePoint utilise les éléments suivants :
 
 ## Connexion de Microsoft SharePoint Online à Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -229,7 +229,7 @@ Vous pouvez créer une connexion qui utilise un principal de service (une connex
 
 >[!IMPORTANT]
 >
->Ce type de connexion est disponible uniquement pour le module [&#x200B; Effectuer un appel API &#x200B;](#make-an-api-call). Les autres modules SharePoint nécessitent l’un des autres types de connexion décrits dans cet article.
+>Ce type de connexion est disponible uniquement pour le module [ Effectuer un appel API ](#make-an-api-call). Les autres modules SharePoint nécessitent l’un des autres types de connexion décrits dans cet article.
 
 * [Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 * [Création de l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id)
@@ -263,10 +263,6 @@ Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft En
 
 #### Octroi d’autorisations d’API (principal de service)
 
->[!IMPORTANT]
->
->BECKY CHECK ME : contrairement aux opérations de développement Azure, Microsoft Graph prend en charge les autorisations d’application directement au cours de cette étape. Confirmez la ou les autorisations exactes dont le module Effectuer un appel API a besoin (par exemple, une portée d’autorisation Sites) avant de publier cette section et mettez à jour les étapes ci-dessous en conséquence.
-
 1. Dans l’enregistrement de votre application, accédez à **[!UICONTROL Autorisations d’API]**.
 1. Sélectionnez **[!UICONTROL Ajouter une autorisation]**, puis sélectionnez **[!UICONTROL Graphique Microsoft]**.
 1. Sélectionnez **[!UICONTROL Autorisations d’application]**.
@@ -297,7 +293,7 @@ Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, n
  </tbody>
 </table>
 
-Passez à [&#x200B; Créer la connexion &#x200B;](#create-the-connection).
+Passez à [ Créer la connexion ](#create-the-connection).
 
 #### Créer la connexion (principal de service)
 
@@ -422,7 +418,7 @@ Workfront Fusion affiche trois valeurs. Vous les utiliserez dans la procédure s
    >Ne fermez pas le panneau et ne sélectionnez pas Annuler. La connexion n&#39;est pas terminée tant que vous n&#39;avez pas terminé les procédures restantes. Si vous fermez le panneau, vous devez supprimer la connexion et recommencer, car une nouvelle connexion reçoit un nouvel objet.
 
 
-1. Passez à [&#x200B; Ajouter les informations d’identification fédérées dans l’ID Microsoft Entra &#x200B;](#add-the-federated-credential-in-microsoft-entra-id-federated-connection).
+1. Passez à [ Ajouter les informations d’identification fédérées dans l’ID Microsoft Entra ](#add-the-federated-credential-in-microsoft-entra-id-federated-connection).
 
 #### Ajout des informations d’identification fédérées dans l’ID Microsoft Entra (connexion fédérée)
 
@@ -1327,7 +1323,7 @@ Ce module de déclenchement instantané démarre un scénario lorsqu’un élém
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Sélectionnez un webhook existant ou cliquez sur Ajouter et saisissez la connexion pour créer un webhook.</p> 
