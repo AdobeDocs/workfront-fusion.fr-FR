@@ -139,7 +139,7 @@ Cette étape indique à AWS que les jetons émis par Workfront Fusion peuvent ê
    ```
 
 1. Sélectionnez **Ajouter un fournisseur**.
-1. Passez à [ Créer le rôle IAM ](#create-the-iam-role).
+1. Passez à [&#x200B; Créer le rôle IAM &#x200B;](#create-the-iam-role).
 
 #### Créer le rôle IAM
 
@@ -371,7 +371,7 @@ Ce module d’action télécharge un fichier à partir d’un compartiment.
 
 Ce module d’action effectue un appel personnalisé à l’API AWS S3.
 
-Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL  REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
+Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la section Présentation de l’API [[!DNL Amazon S3] [!UICONTROL &#x200B; REST]](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
 <table style="table-layout:auto">
  <col> 
@@ -391,7 +391,7 @@ Pour consulter une discussion détaillée de l’API [!DNL Amazon S3], voir la s
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
-   <td> <p>Sélectionnez la méthode de requête [!UICONTROL HTTP] dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref"> méthodes de requête HTTP[!UICONTROL] dans Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Sélectionnez la méthode de requête [!UICONTROL HTTP] dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref"> méthodes de requête HTTP dans Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 

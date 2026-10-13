@@ -202,7 +202,7 @@ Pour créer cette connexion, vous avez besoin des éléments suivants :
    >Ne fermez pas le panneau et ne sélectionnez pas Annuler. La connexion n’est pas terminée tant que vous n’avez pas terminé le reste de la procédure. Si vous fermez le panneau, vous devez supprimer la connexion et recommencer, car une nouvelle connexion reçoit un nouvel objet.
 
 1. Copiez la valeur **Objet**.
-1. Passez à [ Ajouter les informations d’identification fédérées dans l’ID Microsoft Entra ](#add-the-federated-credential-in-microsoft-entra-id).
+1. Passez à [&#x200B; Ajouter les informations d’identification fédérées dans l’ID Microsoft Entra &#x200B;](#add-the-federated-credential-in-microsoft-entra-id).
 
 #### Ajout des informations d’identification fédérées dans l’ID Microsoft Entra
 
@@ -503,7 +503,7 @@ Le module génère l’ID de l’objet pour l’élément de travail nouvellemen
        <li> <p><strong>[!UICONTROL Description]</strong> : saisissez ou mappez une description pour le nouveau projet. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong> : sélectionnez si vous souhaitez que votre projet soit public ou privé. Les utilisateurs et utilisatrices doivent être connectés à votre organisation et avoir reçu l’autorisation d’accéder au projet pour pouvoir interagir avec un projet privé. Les projets publics sont visibles par les utilisateurs et utilisatrices qui ne sont pas connectés à votre organisation.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong> : indiquez si vous souhaitez que le projet utilise [!DNL Git] ou [!UICONTROL Team Foundation Version Control (TFCV)] pour la gestion de versions.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong> : sélectionnez le processus de travail que vous souhaitez utiliser pour le projet. Les options sont [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] et [!UICONTROL Agile].</p> <p>Pour plus d’informations sur les processus [!DNL Azure DevOps], voir <a href="https://learn.microsoft.com/fr-fr/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Processus par défaut et modèles de processus</a> dans la documentation [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong> : sélectionnez le processus de travail que vous souhaitez utiliser pour le projet. Les options sont [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] et [!UICONTROL Agile].</p> <p>Pour plus d’informations sur les processus [!DNL Azure DevOps], voir <a href="https://learn.microsoft.com/fr-fr/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Processus par défaut et modèles de processus</a> dans la documentation [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Remplissez les champs suivants :</p> 
       <ul> 
