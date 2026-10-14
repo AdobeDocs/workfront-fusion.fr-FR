@@ -18,10 +18,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '4849'
-ht-degree: 47%
+source-wordcount: '5813'
+ht-degree: 39%
 ---
 # Modules Microsoft SharePoint Online
 
@@ -105,9 +105,15 @@ Le connecteur SharePoint utilise les éléments suivants :
 
 ### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte [!DNL Microsoft]
 
-Vous pouvez utiliser votre compte [!DNL Microsoft] pour créer une connexion à Microsoft SharePoint Online. Pour obtenir des instructions sur la procédure de connexion de votre compte [!DNL Sharepoint] à Workfront Fusion, voir [Créer une connexion vers Adobe Workfront Fusion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
++++ Développez pour afficher les instructions de connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un compte Microsoft.
+
+Vous pouvez utiliser votre compte [!DNL Microsoft] pour créer une connexion à Microsoft SharePoint Online. Pour obtenir des instructions sur la connexion de votre compte [!DNL Sharepoint] à Workfront Fusion, voir [Création d’une connexion à Adobe Workfront Fusion - Instructions de base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+
++++
 
 ### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de paramètres avancés
+
++++ Développez pour afficher les instructions de connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide des paramètres avancés.
 
 Pour inclure des informations d’identification dans la connexion, activez l’option Afficher les paramètres avancés . Pour ce type de connexion, vous avez besoin d’un identifiant client, d’un secret client et d’un identifiant client.
 
@@ -144,7 +150,11 @@ Pour inclure des informations d’identification dans la connexion, activez l’
 
 1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
 
++++
+
 ### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat
+
++++ Développez pour afficher les instructions de connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide de l’autorisation de certificat.
 
 Vous pouvez utiliser l’autorisation de certificat pour vous connecter à SharePoint.
 
@@ -209,7 +219,11 @@ Vous pouvez utiliser l’autorisation de certificat pour vous connecter à Share
 
 1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
 
++++
+
 ### Connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service
+
++++ Développez pour afficher les instructions de connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’un principal de service.
 
 Vous pouvez créer une connexion qui utilise un principal de service (une connexion API d’application) au lieu d’un compte personnel. Cela s’avère utile lorsque vous souhaitez que la connexion s’exécute en tant qu’identité d’application ou de service plutôt qu’en tant que personne spécifique, de sorte que l’intégration ne soit pas interrompue si cette personne quitte l’entreprise ou modifie son mot de passe.
 
@@ -230,7 +244,7 @@ Vous devez disposer d’un accès **Administrateur global**, **Administrateur d�
 
 Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft Entra](#create-the-app-registration-in-microsoft-entra-id).
 
-#### Création de l’enregistrement de l’application dans l’ID Microsoft Entra
+#### Créer l’enregistrement de l’application dans l’ID Microsoft Entra (principal de service)
 
 1. Connectez-vous au centre d’administration [!DNL Microsoft Entra].
 1. Accédez à **[!UICONTROL Enregistrements des applications]** > **[!UICONTROL Nouvel enregistrement]**.
@@ -239,7 +253,7 @@ Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft En
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Passez à [Créer un secret client](#create-a-client-secret).
 
-#### Créer un secret client
+#### Créer un secret client (principal de service)
 
 1. Dans l’enregistrement de votre nouvelle application, accédez à **[!UICONTROL Certificats et secrets]**.
 1. Sélectionnez **[!UICONTROL Nouveau secret client]**, ajoutez une description, puis choisissez une période d’expiration.
@@ -247,11 +261,7 @@ Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft En
 1. Copiez immédiatement la **[!UICONTROL valeur]** du secret. Il s’affiche une seule fois. Si vous quittez cette page avant de la copier, vous devez en créer une nouvelle.
 1. Passez à [Octroi des autorisations d’API](#grant-api-permissions).
 
-#### Octroi d’autorisations d’API
-
->[!IMPORTANT]
->
->BECKY CHECK ME : contrairement aux opérations de développement Azure, Microsoft Graph prend en charge les autorisations d’application directement au cours de cette étape. Confirmez la ou les autorisations exactes dont le module Effectuer un appel API a besoin (par exemple, une portée d’autorisation Sites) avant de publier cette section et mettez à jour les étapes ci-dessous en conséquence.
+#### Octroi d’autorisations d’API (principal de service)
 
 1. Dans l’enregistrement de votre application, accédez à **[!UICONTROL Autorisations d’API]**.
 1. Sélectionnez **[!UICONTROL Ajouter une autorisation]**, puis sélectionnez **[!UICONTROL Graphique Microsoft]**.
@@ -260,7 +270,7 @@ Passez à [Créer l’enregistrement de l’application dans l’ID Microsoft En
 1. Sélectionnez **[!UICONTROL Accorder le consentement administrateur pour]** votre organisation, puis confirmez.
 1. Continuez pour [Collecter les détails de votre connexion](#collect-your-connection-details).
 
-#### Collecter les détails de votre connexion
+#### Collecter les détails de votre connexion (principal de service)
 
 Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, notez les valeurs suivantes. Vous les saisissez lors de la création de la connexion dans le module .
 
@@ -285,7 +295,7 @@ Sur la page **[!UICONTROL Aperçu]** de l’enregistrement de l’application, n
 
 Passez à [&#x200B; Créer la connexion &#x200B;](#create-the-connection).
 
-#### Créer la connexion
+#### Créer la connexion (principal de service)
 
 1. Dans le module [!UICONTROL Effectuer un appel API], cliquez sur **[!UICONTROL Ajouter]** près du champ Connexion pour ouvrir la zone **[!UICONTROL Créer une connexion]**.
 1. Cliquez sur **[!UICONTROL Afficher les paramètres avancés]**.
@@ -299,6 +309,186 @@ Passez à [&#x200B; Créer la connexion &#x200B;](#create-the-connection).
 1. Cliquez sur **Continuer** pour enregistrer la connexion et revenir au module.
 
    Si tout est correctement configuré, la connexion est validée avec succès.
+
++++
+
+### Connexion de Microsoft SharePoint Online à Adobe Workfront Fusion à l’aide d’une connexion fédérée
+
++++ Développez pour afficher les instructions de connexion de Microsoft SharePoint Online à Adobe Workfront Fusion à l’aide d’une connexion fédérée.
+
+Une connexion fédérée fonctionne comme la connexion principale du service, sauf qu’elle n’utilise pas de secret client.
+Au lieu de stocker un secret, vous indiquez à Microsoft Entra ID d’approuver les jetons que Workfront Fusion émet pour une connexion spécifique. Lorsque la connexion s’exécute, Fusion présente une preuve d’identité de courte durée et l’ID Microsoft Entra renvoie un jeton d’accès. Comme il n’existe aucun secret client, il n’existe aucun secret qui expire et aucun secret à faire pivoter ou à stocker.
+
+>[!NOTE]
+>
+>La configuration de cette connexion nécessite deux visites au centre d’administration Microsoft Entra. Vous enregistrez d’abord l’application, puis vous créez la connexion dans Workfront Fusion, et revenez ensuite à Microsoft Entra ID pour ajouter les informations d’identification fédérées. En effet, les informations d’identification fédérées identifient une connexion spécifique et cet identifiant n’existe pas tant que la connexion n’a pas été créée.
+
+* [Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’une connexion fédérée](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-federated-connection)
+* [Création de l’enregistrement de l’application dans Microsoft Entra ID (connexion fédérée)](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [Octroi des autorisations d’API (connexion fédérée)](#grant-api-permissions-federated-connection)
+* [Collecter les détails de votre connexion (connexion fédérée)](#collect-your-connection-details-federated-connection)
+* [Création de la connexion dans Workfront Fusion (connexion fédérée)](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Ajout des informations d’identification fédérées dans l’ID Microsoft Entra (connexion fédérée)](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)
+* [Vérification de la connexion (connexion fédérée)](#verify-the-connection-federated-connection)
+* [Dépannage](#troubleshooting)
+
+#### Conditions préalables à la connexion de Microsoft SharePoint Online à Workfront Fusion à l’aide d’une connexion fédérée
+
+Vous avez besoin d’un accès d’administrateur global, d’administrateur d’application ou d’administrateur de rôle privilégié dans Microsoft Entra ID pour enregistrer l’application, lui accorder des autorisations et ajouter les informations d’identification fédérées. Si vous ne disposez pas de cet accès, demandez à un membre de votre équipe informatique ou d’identité d’effectuer ces étapes pour vous.
+
+#### Création de l’enregistrement de l’application dans Microsoft Entra ID (connexion fédérée)
+
+1. Connectez-vous au centre d’administration Microsoft Entra.
+1. Accédez à Enregistrements des applications > Nouvel enregistrement.
+1. Donnez à l’application un nom clair et reconnaissable. Par exemple, `Workfront Fusion SharePoint Integration`.
+1. Laissez l’URI de redirection vide. Cette connexion n’implique aucune connexion via un navigateur.
+1. Sélectionnez **Enregistrer**.
+Ne créez pas de secret client. Une connexion fédérée n’en utilise pas.
+1. Continuez pour accorder des autorisations d’API.
+
+
+#### Octroi des autorisations d’API (connexion fédérée)
+
+1. Dans l’enregistrement de votre application, accédez à **Autorisations d’API**.
+1. Sélectionnez **Ajouter une autorisation**, puis sélectionnez **Graphique Microsoft**.
+1. Sélectionnez **Autorisations d’application**.
+1. Sélectionnez la ou les autorisations dont vos appels API ont besoin, puis sélectionnez **Ajouter des autorisations**.
+1. Sélectionnez **Accorder le consentement administrateur** pour votre organisation, puis confirmez.
+1. Continuez pour [Collecter les détails de votre connexion](#collect-your-connection-details-federated-connection).
+
+
+#### Collecter les détails de votre connexion (connexion fédérée)
+
+1. Sur la page Aperçu de l’enregistrement de l’application, notez les valeurs suivantes. Vous les saisissez lors de la création de la connexion dans le module .
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Tenant ID]</td>
+      <td>Sur la page Aperçu , intitulé <b>ID de répertoire (client)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>Sur la page Aperçu , intitulé <b>ID d’application (client)</b>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Passez à [Création de la connexion dans Workfront Fusion](#create-the-connection-in-workfront-fusion-federated-connection).
+
+#### Création de la connexion dans Workfront Fusion (connexion fédérée)
+
+1. Dans le module Effectuer un appel API , cliquez sur b près du champ Connexion pour ouvrir la zone Créer une connexion .
+1. Cliquez sur (Connexion fédérée).
+1. Dans le champ Type de connexion , sélectionnez le type de connexion fédérée .
+1. Saisissez les informations suivantes :
+
+   * Identifiant du tenant
+   * ID client
+
+1. Sélectionnez **Créer**.
+Workfront Fusion affiche trois valeurs. Vous les utiliserez dans la procédure suivante.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td>Toujours <code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject]</td>
+      <td>Identifie cette connexion. On dirait <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. Il est différent pour chaque connexion que vous créez.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td>Toujours <code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+
+1. Laissez ce panneau ouvert et copiez la valeur **Objet**.
+
+   >[!NOTE]
+   >
+   >Ne fermez pas le panneau et ne sélectionnez pas Annuler. La connexion n&#39;est pas terminée tant que vous n&#39;avez pas terminé les procédures restantes. Si vous fermez le panneau, vous devez supprimer la connexion et recommencer, car une nouvelle connexion reçoit un nouvel objet.
+
+
+1. Passez à [&#x200B; Ajouter les informations d’identification fédérées dans l’ID Microsoft Entra &#x200B;](#add-the-federated-credential-in-microsoft-entra-id-federated-connection).
+
+#### Ajout des informations d’identification fédérées dans l’ID Microsoft Entra (connexion fédérée)
+
+Cette procédure remplace le secret client. Il indique à Microsoft Entra ID d’accepter les jetons que Workfront Fusion rencontre pour cette connexion.
+
+1. Dans un nouvel onglet du navigateur, revenez au centre d’administration Microsoft Entra et ouvrez votre enregistrement d’application.
+1. Accédez à **Certificats et secrets** > **Federated credentials**.
+1. Sélectionnez **Ajouter des informations d’identification**.
+1. Dans le scénario Federated Credential, sélectionnez **Autre émetteur**.
+1. Saisissez les informations suivantes :
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Identifiant de l'objet]</td>
+      <td>Objet copié à partir de Workfront Fusion. Collez-le exactement, sans espace ajouté.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>Nom qui identifie cette connexion afin que vous puissiez la trouver ultérieurement. Par exemple, <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td><code>api://AzureADTokenExchange</code>. Ce champ est généralement renseigné pour vous. Laissez la valeur par défaut.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Sélectionnez **Ajouter**.
+1. Passez à [Vérifier la connexion](#verify-the-connection-federated-connection).
+
+
+#### Vérification de la connexion (connexion fédérée)
+
+1. Revenez à l’onglet du navigateur de Workfront Fusion, où le panneau de connexion est toujours ouvert.
+2. Sélectionnez **Enregistrer**.
+
+   * Si tout est configuré correctement, la connexion est validée avec succès et vous pouvez poursuivre la configuration du module.
+   * Si la vérification échoue, le panneau reste ouvert et affiche l’erreur. Corrigez le problème dans Microsoft Entra ID et sélectionnez à nouveau Enregistrer. Vous n’avez pas besoin de recréer la connexion et l’objet ne change pas.
+
+
+#### Dépannage
+
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">La vérification de la connexion échoue avec un client non valide ou une erreur de requête non valide</td>
+   <td>L’ID Microsoft Entra n’a pas pu faire correspondre le jeton à des informations d’identification fédérées. Vérifiez que l'émetteur est exactement <code>https://oidc.automations.adobe.com</code> sans barre oblique, et que l'identifiant du sujet est caractère pour caractère identique au sujet affiché dans Workfront Fusion. Un objet copié à partir d’une autre connexion est la cause la plus courante.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">La connexion vérifie, mais les appels API renvoient la valeur 403</td>
+   <td>L’identité est approuvée, mais l’application ne dispose pas des autorisations Microsoft Graph dont votre appel a besoin. Revenez à Accorder les autorisations d’API, ajoutez l’autorisation d’application requise et accordez le consentement administrateur.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">Vous ne pouvez pas ajouter d’autres informations d’identification fédérées</td>
+   <td>Vous avez atteint la limite de 20 informations d’identification fédérées pour cet enregistrement d’application. Enregistrez une application supplémentaire et créez d’autres connexions.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
 
 ## Modules SharePoint Microsoft et leurs champs
 
