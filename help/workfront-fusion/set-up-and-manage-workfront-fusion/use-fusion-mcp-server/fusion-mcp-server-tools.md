@@ -1,9 +1,9 @@
 ---
 title: Outils de serveur MCP Adobe Workfront Fusion
 description: Liste de référence des outils que le serveur MCP Adobe Workfront Fusion expose aux plateformes d’IA et à Coworker.
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ L’organisation active s’applique à tous les autres outils de la session en 
 | --- | --- | --- | --- |
 | Liste des organisations | `fusion_orgs_list` | Lire | Répertorie les organisations Fusion auxquelles vous pouvez accéder, avec leur identifiant, leur région (zone) et leur libellé. |
 | Définir l’organisation active | `fusion_orgs_set` | Session | Active l’organisation pour la session en cours. Ne modifie aucune donnée Fusion. |
+| Obtenir l’organisation actuelle | `fusion_organizations_get` | Lire | Renvoie l’organisation actuelle. |
+| Liste des organisations | `fusion_organizations_list` | Lire | Répertorie toutes les organisations que vous pouvez afficher. |
+
+## Équipes
+
+| Outil | Nom | Action | Description |
+| --- | --- | --- | --- |
+| Liste des équipes | `fusion_teams_list` | Lire | Répertorie les équipes de l’organisation que vous pouvez afficher. |
+| Obtenir l’équipe | `fusion_teams_get` | Lire | Renvoie une seule équipe dans une organisation. |
+| Supprimer l&#39;équipe | `fusion_teams_delete` | Write | Supprime une équipe. Cela arrête également ses scénarios et supprime ses autorisations. Elle ne peut pas être annulée via l’API et nécessite une confirmation. |
+
+## Utilisateurs et utilisatrices
+
+| Outil | Nom | Action | Description |
+| --- | --- | --- | --- |
+| Obtention des régions Fusion | `fusion_users_get_regions` | Lire | Renvoie les régions et organisations Fusion auxquelles vous pouvez accéder. Utilisez-le pour rechercher des ID d’organisation valides. |
+| Obtenir l’utilisateur actuel | `fusion_users_get_me` | Lire | Renvoie votre profil avec les rôles de votre organisation et de votre équipe. |
+| Liste des utilisateurs | `fusion_users_list` | Lire | Répertorie les utilisateurs et utilisatrices de l’organisation. |
+| Obtenir l’utilisateur | `fusion_users_get` | Lire | Renvoie un utilisateur unique dans une organisation. |
 
 ## Outils de scénario
 
@@ -40,6 +59,7 @@ L’organisation active s’applique à tous les autres outils de la session en 
 | --- | --- | --- | --- |
 | Répertorier les scénarios | `fusion_scenarios_list` | Lire | Répertorie les scénarios dans l’organisation. |
 | Obtenir le scénario | `fusion_scenarios_get` | Lire | Renvoie un scénario, y compris son plan directeur complet. |
+| Obtenir le lien du scénario | `fusion_scenarios_get_link` | Lire | Renvoie le lien de l’interface utilisateur de Fusion pour ouvrir un scénario dans le navigateur. |
 | Obtention des dépendances de scénario | `fusion_scenarios_getDependencies` | Lire | Renvoie les connexions, les clés, les entrepôts de données, les structures de données et les Webhooks aux références du plan directeur du scénario. |
 | Rechercher les scénarios dépendants | `fusion_scenarios_dependents` | Lire | Recherche les scénarios qui font référence à un webhook, un magasin de données, une structure de données, une connexion, une clé ou un scénario donné. Utile pour l’analyse d’impact avant de modifier ou supprimer une ressource. |
 | Validation du plan directeur | `fusion_scenarios_validate_blueprint` | Lire | Valide structurellement un plan directeur par rapport à une équipe (références de module, connexions, champs obligatoires) sans enregistrer quoi que ce soit. |
@@ -63,6 +83,7 @@ Exemples d’invites :
 | --- | --- | --- | --- |
 | Liste des versions de scénario | `fusion_scenario_versions_list` | Lire | Répertorie les versions enregistrées d’un scénario. Filtrez par `version`, `createdAt`, `comment`. |
 | Obtenir la version du scénario | `fusion_scenario_versions_get` | Lire | Renvoie le plan directeur et les métadonnées d’une version spécifique. |
+| Créer une version de scénario | `fusion_scenario_versions_create` | Write | Publie un plan directeur en tant que nouvelle version de scénario, qui devient le plan directeur actif. Les versions antérieures sont conservées et la publication d’un plan directeur identique n’a aucun effet. |
 
 Exemples d’invites :
 
@@ -109,8 +130,10 @@ Ces outils renvoient uniquement des métadonnées. Ils ne renvoient pas d’info
 | --- | --- | --- | --- |
 | Rechercher des connexions | `fusion_connections_search` | Lire | Répertorie les connexions. Filtrez par `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Obtenir la connexion | `fusion_connections_get` | Lire | Renvoie les détails d’une seule connexion. |
+| Supprimer la connexion | `fusion_connections_delete` | Write | Supprime une connexion. Échoue si un webhook en dépend toujours. Les scénarios qui l’utilisent sont désolidarisés et ne bloquent pas la suppression. |
 | Clés de recherche | `fusion_keys_search` | Lire | Répertorie les clés. Filtrez par `name`, `typeName`, `teamId`. |
 | Obtenir la clé | `fusion_keys_get` | Lire | Renvoie les détails d’une seule clé. |
+| Supprimer la clé | `fusion_keys_delete` | Write | Supprime une clé. Les scénarios qui l’utilisent ne bloquent pas la suppression. |
 
 Exemples d’invites :
 
@@ -124,6 +147,9 @@ Exemples d’invites :
 | --- | --- | --- | --- |
 | Répertorier les webhooks | `fusion_hooks_list` | Lire | Répertorie les Webhooks (hooks). Filtrez par `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached`, etc. |
 | Obtenir webhook | `fusion_hooks_get` | Lire | Renvoie la configuration d’un webhook, la liaison du propriétaire et les références externes. |
+| Obtenir les dépendances webhook | `fusion_hooks_dependencies` | Lire | Répertorie la connexion, la structure de données et la clé référencée par un webhook. Exécutez-le avant le clonage. |
+| Cloner le webhook | `fusion_hooks_clone` | Write | Copie un webhook avec une nouvelle URL, éventuellement dans une autre équipe. Peut remplacer sa connexion, sa structure de données ou sa clé. |
+| Supprimer le webhook | `fusion_hooks_delete` | Write | Supprime un webhook et ses événements placés en file d’attente. Seul le créateur du webhook peut le supprimer. |
 | Rechercher des webhooks dépendants | `fusion_hooks_dependents` | Lire | Recherche les Webhooks qui font référence à une connexion donnée. |
 
 ### File d’attente du Webhook
@@ -133,7 +159,7 @@ Exemples d’invites :
 | Obtenir les statistiques sur la file d’attente | `fusion_queue_stats` | Lire | Renvoie le nombre d’événements en file d’attente, la limite de la file d’attente et si le webhook est activé. |
 | File d’attente de la liste | `fusion_queue_list` | Lire | Répertorie les événements webhook reçus en attente de traitement. |
 | Obtenir l’élément de file d’attente | `fusion_queue_get` | Lire | Retourne un seul événement en file d&#39;attente, incluant sa payload décodée. |
-| Supprimer les éléments de la file d’attente | `fusion_queue_delete` | Write | Supprime des événements spécifiques placés dans la file d’attente (jusqu’à 50) ou efface la file d’attente, en excluant éventuellement certains événements. Les événements en cours de traitement ne peuvent pas être supprimés. |
+| Supprimer les éléments de la file d’attente | `fusion_hook_queue_delete` | Write | Supprime les événements webhook mis en file d’attente par ID (jusqu’à 50), ou tous ceux-ci avec des exclusions facultatives. Le nom de l&#39;outil connecté est `fusion_hook_queue_delete` et ne correspond pas à l&#39;ancien nom de `fusion_queue_delete`. |
 
 Exemples d’invites :
 
@@ -146,10 +172,14 @@ Exemples d’invites :
 | --- | --- | --- | --- |
 | Répertorier les magasins de données | `fusion_datastores_list` | Lire | Répertorie les magasins de données avec le nombre d’enregistrements, la taille et la taille maximale. |
 | Obtenir le magasin de données | `fusion_datastores_get` | Lire | Renvoie les métadonnées et l’utilisation d’un magasin de données, la structure de données liée et le paramètre de validation stricte. |
+| Supprimer le magasin de données | `fusion_datastores_delete` | Write | Supprime un magasin de données et tous ses enregistrements. Échoue si un scénario l’utilise toujours. |
 | Liste des enregistrements du magasin de données | `fusion_data_list` | Lire | Lit les enregistrements (clé + données JSON) d’un magasin de données, avec la pagination décalée. |
+| Supprimer des enregistrements du magasin de données | `fusion_data_stores_data_delete` | Write | Supprime plusieurs enregistrements par clé, ou tous les enregistrements avec des exclusions facultatives. |
+| Supprimer l’enregistrement du magasin de données | `fusion_data_stores_data_key_delete` | Write | Supprime un enregistrement par clé. Y parvient même si la clé n’existe pas. |
 | Rechercher des magasins de données dépendants | `fusion_datastores_dependents` | Lire | Recherche les magasins de données qui utilisent une structure de données donnée. |
 | Rechercher des structures de données | `fusion_data_structures_search` | Lire | Répertorie les structures de données. Filtrez par `name`, `strict`, `teamId`. |
 | Obtenir la structure des données | `fusion_data_structures_get` | Lire | Renvoie une structure de données, y compris sa spécification de champ complète. |
+| Supprimer la structure de données | `fusion_data_structures_delete` | Write | Supprime une structure de données. Échoue si un magasin de données l’utilise toujours. |
 
 Exemples d’invites :
 
@@ -167,6 +197,12 @@ Exemples d’invites :
 
 * _Qui a supprimé les scénarios au cours des 7 derniers jours ?_
 * _Exporter toutes les modifications de connexion de ce trimestre vers Excel._
+
+## Commentaires
+
+| Outil | Nom | Action | Description |
+| --- | --- | --- | --- |
+| Envoyer des commentaires | `fusion_feedback_submit` | Write | Envoie vos commentaires (bug, résultat incorrect, demande de fonctionnalité, éloge ou autre) à l’équipe Fusion. |
 
 ## Collègue
 
