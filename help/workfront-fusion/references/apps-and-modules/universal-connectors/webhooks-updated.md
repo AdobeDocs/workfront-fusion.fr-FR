@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 49%
+source-wordcount: '3193'
+ht-degree: 48%
 ---
 # Webhooks
 
@@ -325,10 +325,6 @@ Lors de la création ou de la modification d’un webhook personnalisé dans Fus
 ## La file d’attente webhook
 
 Si un webhook reçoit des données et qu’aucun scénario actif n’attend ces données, les données sont stockées dans la file d’attente. Une fois le scénario activé, il traite tous les bundles en attente dans la file d’attente de manière séquentielle.
-
->[!IMPORTANT]
->
->Les files d’attente de webhook sont partagées entre les scénarios qui utilisent le même webhook. Si l’un des scénarios est désactivé, toutes les données entrantes sont conservées dans la file d’attente.
 
 ## Formats de données entrantes pris en charge
 
