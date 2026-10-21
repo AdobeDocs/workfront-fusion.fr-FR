@@ -15,7 +15,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
 source-wordcount: '5905'
 ht-degree: 17%
@@ -24,7 +24,7 @@ ht-degree: 17%
 
 Grâce aux modules de révision et d’approbation unifiées d’Adobe Workfront, vous pouvez obtenir des détails d’approbation, prendre une décision concernant une ressource, ajouter ou supprimer des participants à l’approbation, ajouter ou mettre à jour des étapes d’approbation, verrouiller ou déverrouiller des étapes et effectuer des appels d’API personnalisés.
 
-Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/fr/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
+Pour plus d’informations sur la révision et les approbations unifiées de Workfront, voir [Présentation de la révision et de l’approbation unifiées](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) dans la documentation de Workfront.
 
 ## Conditions d’accès
 
@@ -270,7 +270,7 @@ Ce module d’action crée une approbation groupée : ensemble de versions de do
       <li><b>ID d’étape</b><p>Saisissez un identifiant attribué par le client à l’étape, unique pour tous les chemins d’accès. Doit être alphanumérique, avec des traits de soulignement ou des tirets autorisés, et ne pas dépasser 64 caractères.</p></li>
       <li><b>Nom de l'étape</b><p>Saisissez ou mappez un nom pour l’étape.</p></li>
       <li><b>ID d’étape parent</b><p>Pour chaque étape parent que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez l’ID parent.</p></li>
-      <li><b>Participantes et participants</b><p>Pour chaque participant que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez les détails du participant.
+      <li><b>Participants</b><p>Pour chaque participant que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez les détails du participant.
       <ul>
       <li><b>ID de participant</b><p>Saisissez ou mappez l’ID du participant.</p></li>
       <li><b>Type de participant</b><p>Indiquez si le participant est un utilisateur ou une équipe.</p></li>
@@ -335,7 +335,12 @@ Ce module d’action crée une approbation avec les données d’étape données
 </table>
 
 <!--
-BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+AUTHOR: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+-->
+
+<!--
 
 #### Delete a decision on a stage
 
@@ -977,7 +982,7 @@ Ce module d&#39;action applique une mise à jour complète à une approbation gr
       <li><b>ID d’étape</b><p>Saisissez un identifiant attribué par le client à l’étape, unique pour tous les chemins d’accès. Doit être alphanumérique, avec des traits de soulignement ou des tirets autorisés, et ne pas dépasser 64 caractères.</p></li>
       <li><b>Nom de l'étape</b><p>Saisissez ou mappez un nom pour l’étape.</p></li>
       <li><b>ID d’étape parent</b><p>Pour chaque étape parent que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez l’ID parent.</p></li>
-      <li><b>Participantes et participants</b><p>Pour chaque participant que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez les détails du participant.
+      <li><b>Participants</b><p>Pour chaque participant que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez les détails du participant.
       <ul>
       <li><b>ID de participant</b><p>Saisissez ou mappez l’ID du participant.</p></li>
       <li><b>Type de participant</b><p>Indiquez si le participant est un utilisateur ou une équipe.</p></li>
@@ -1353,8 +1358,6 @@ Ce module de recherche les validations groupées à l&#39;aide d&#39;une vue nom
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
-
 ### Déclencheurs
 
 * [Regarder les événements d’approbation](#watch-approval-events)
@@ -1521,7 +1524,7 @@ Les champs suivants sont disponibles lors de la configuration des étapes. Tous 
       <td>Si l’échéance est une heure spécifique, saisissez ou mappez l’heure.</td> 
       </tr>
      <tr>
-      <td role="rowheader"><p>Participantes et participants</p></td>
+      <td role="rowheader"><p>Participants</p></td>
       <td>Pour chaque participant que vous souhaitez ajouter à l’étape, cliquez sur <b>Ajouter un élément</b> et saisissez les détails du participant.      
       <ul>
       <li><b>ID de participant</b><p>Saisissez ou mappez l’ID du participant.</p></li>
