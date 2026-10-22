@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 24%
+source-wordcount: '1550'
+ht-degree: 22%
 ---
 # Modules Workfront Fusion
 
@@ -127,12 +127,12 @@ Ce module effectue une copie de l’enregistrement spécifié.
    <td> Sélectionnez le type d’enregistrement à cloner. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Identifiant du scénario</td> 
-   <td> Saisissez ou mappez l’identifiant du scénario que vous souhaitez cloner. </td> 
+   <td role="rowheader">Identifiant du scénario / Identifiant du crochet / Identifiant de la structure de données</td> 
+   <td> Saisissez ou mappez l’ID de l’élément à cloner. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nom</td> 
-   <td> Saisissez ou mappez un nom pour le nouveau scénario.</td> 
+   <td> Saisissez ou mappez un nom pour le nouveau scénario, hook ou structure de données.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Ce module renvoie une liste paginée d’enregistrements à l’aide d’une pag
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
    <td>Sélectionnez le type d’enregistrement dont vous souhaitez renvoyer une liste.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Champs</td> 
+   <td>Sélectionnez les champs que vous souhaitez inclure dans les résultats.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Propriété</td> 
@@ -380,9 +384,36 @@ Ce module récupère les dépendances de l’enregistrement.
    <td> Sélectionnez le type d’enregistrement pour lequel vous souhaitez récupérer les dépendances. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Identifiant du scénario</td> 
+   <td role="rowheader">Identifiant du scénario / Identifiant du crochet</td> 
    <td> Saisissez ou mappez l’identifiant de l’enregistrement pour lequel vous souhaitez récupérer les dépendances. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obtenir les dépendances des enregistrements
+
+Ce module identifie ce qui dépend d’une ressource donnée. Utilisez ce module avant de supprimer une ressource, pour vérifier si quelque chose dépend de cette ressource et peut être affecté par sa suppression.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type d'enregistrement</td> 
+   <td>Sélectionnez le type d’enregistrement dont vous souhaitez rechercher les personnes à charge.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type</td> 
+   <td>Sélectionnez le type de personnes à charge que vous souhaitez rechercher.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>Saisissez ou mappez l’ID de l’enregistrement pour lequel vous souhaitez renvoyer les personnes à charge.</td> 
   </tr> 
  </tbody> 
 </table>
