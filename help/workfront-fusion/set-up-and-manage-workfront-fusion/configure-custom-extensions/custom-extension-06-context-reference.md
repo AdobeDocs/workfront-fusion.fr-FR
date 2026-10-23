@@ -20,7 +20,7 @@ feature_v2:
 source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 8%
+ht-degree: 9%
 ---
 # Référence du contexte de Fusion
 
@@ -64,7 +64,7 @@ Chaque entité possède un **Fusion ID** (utilisé par les propres API de Fusion
 | Équipe | `team.id` | *(Les équipes sont dans Fusion uniquement ; aucun identifiant IMS)* |
 | Utilisateur ou utilisatrice | `user.id` | `imsUserId` |
 
-## `organization` champs
+## Champs `organization`
 
 Ces champs se trouvent dans l’enregistrement d’organisation actif. La plupart des extensions ne requièrent que des `id`, des `name` et les identifiants .
 
@@ -90,7 +90,7 @@ Ces champs se trouvent dans l’enregistrement d’organisation actif. La plupar
 | `usersCount` | Nombre | Nombre d’utilisateurs dans l’organisation |
 | `nextReset` | chaîne (date) | La prochaine réinitialisation des compteurs d’utilisation. Voir [Dates](#dates) |
 
-## `team` champs
+## Champs `team`
 
 Ces champs sont présents lorsqu’une équipe est active. Vous devez fournir une solution de secours au cas où l’équipe est `undefined` (par exemple, sur un écran au niveau de l’organisation sans équipe sélectionnée).
 
@@ -108,7 +108,7 @@ Ces champs sont présents lorsqu’une équipe est active. Vous devez fournir un
 | `isDeleted` | booléen | Indique si l&#39;équipe est marquée comme supprimée. |
 | `created` | chaîne (date) | Lors de la création de l’équipe. Voir [Dates](#dates). |
 
-## `user` champs
+## Champs `user`
 
 Ces champs s’appliquent à l’utilisateur Fusion connecté.
 
