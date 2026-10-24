@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 37%
@@ -98,7 +98,7 @@ Vous devrez peut-être cliquer sur l&#39;icône des trois points dans la zone Co
 ![panneau outils](assets/tools-scenario-editor.png)
 
 | Action | Détails |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Contrôle de flux | Configurez les paramètres pour contrôler le flux de données. Pour plus d’informations, [voir le lien nécessaire]. |
 | Outils | La section Outils contient plusieurs modules utiles qui peuvent améliorer vos scénarios. Pour plus d’informations, [voir le lien nécessaire]. |
 | Analyseur de texte | Utilisez l’outil d’analyse de texte pour analyser le texte à utiliser dans d’autres modules de scénario. L’analyseur de texte ne nécessite pas de connexion. Pour plus d’informations, [voir le lien nécessaire]. |
