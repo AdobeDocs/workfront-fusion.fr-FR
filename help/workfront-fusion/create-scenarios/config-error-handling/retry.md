@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 25%
@@ -73,7 +73,7 @@ Pour obtenir des instructions sur la résolution des exécutions incomplètes, v
 * L’intervalle de reprise minimal est d’une minute.
 * Si le module traite plusieurs bundles et que le traitement d’un bundle échoue, l’exécution partielle (uniquement le bundle à l’origine de l’erreur) est déplacée vers le dossier des exécutions incomplètes et planifiée pour les reprises, conformément aux paramètres de la directive [!UICONTROL Interrompre]. Cependant, l’exécution en cours se poursuit et le module continue de traiter les lots suivants.
 
-  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL &#x200B; Traitement séquentiel &#x200B;] » dans les [!UICONTROL &#x200B; paramètres du scénario].
+  Pour empêcher le scénario de s’exécuter à nouveau jusqu’à ce que l’exécution stockée dans le dossier Exécutions incomplètes ait été résolue, activez l’option « [!UICONTROL  Traitement séquentiel ] » dans les [!UICONTROL  paramètres du scénario].
 
 Pour plus d’informations sur les exécutions incomplètes, voir [Afficher et résoudre les exécutions incomplètes](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -115,7 +115,7 @@ La solution de contournement du module Répéteur est plus complexe, mais plus p
 
 Dans cet exemple de scénario, le module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête] représente le module potentiellement en échec :
 
-![HTTP Effectuer une requête](assets/http-make-request.png)
+![HTTP Effectuer une requête](assets/new-http-make-request.png)
 
 >[!ENDSHADEBOX]
 

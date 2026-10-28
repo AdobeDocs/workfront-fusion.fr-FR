@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '774'
 ht-degree: 21%
 ---
 # Workflow de création d’un scénario
@@ -122,7 +122,7 @@ Le test de votre scénario vous permet de déterminer si celui-ci fonctionne com
 
 Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -152,11 +152,13 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
    <td>Ctrl+Maj+Entrée</td> 
    <td>Cmd+Maj+Entrée</span> </td> 
   </tr> 
+<!--
   <tr> 
-   <td role="rowheader">[!UICONTROL Ouvrir l’outil de développement]</td> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Sélectionner plusieurs modules]</td> 
    <td>Maj+Glisser</td> 

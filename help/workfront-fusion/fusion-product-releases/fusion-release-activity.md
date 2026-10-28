@@ -23,9 +23,9 @@ feature_v2:
 subfeature_v2:
   - id: a29813d3-f0cc-4b60-9396-13b558370803
     internal-label: Product announcements
-source-git-commit: 316b112552e5383fdca3f408223594a2fbb6f535
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1654'
 ht-degree: 82%
 ---
 # Vue d’ensemble de l’activité Version d’Adobe Workfront Fusion
@@ -36,6 +36,7 @@ Adobe Workfront Fusion connecte vos applications et services web de manière tra
 
 ### Octobre 2026
 
+* [Activité de publication de Workfront Fusion : semaine du 26 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
 * [Activité de publication de Workfront Fusion : semaine du 19 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
 * [Activité de publication de Workfront Fusion : semaine du 12 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
 * [Activité de publication de Workfront Fusion : semaine du 5 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)

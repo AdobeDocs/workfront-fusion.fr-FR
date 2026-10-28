@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 18%
 ---
 # Afficher et gérer les relations de scénario chaîné
@@ -64,21 +64,17 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Vous pouvez afficher une carte du scénario actuel et de ses scénarios parents ou enfants. La carte affiche un diagramme du flux de données dans les scénarios chaînés.
 
-![Relations de scénario chaîné](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 Pour afficher la carte des relations pour un scénario chaîné :
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénario]** dans le panneau de gauche, puis sur le scénario.
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez sur l’onglet **Relations**.
 
-   ![Onglet Relations](assets/relations-tab.png)
+   ![Onglet Relations](assets/new-relationships-tab.png)
 
 1. Pour obtenir des détails généraux sur chaque scénario chaîné, vérifiez les balises .
 

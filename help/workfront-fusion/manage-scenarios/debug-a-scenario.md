@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 76%
+source-wordcount: '1962'
+ht-degree: 59%
 ---
 # Déboguer un scénario
 
@@ -28,6 +28,26 @@ L’outil Adobe Workfront Fusion Developer vous aide à comprendre et à résoud
 >[!NOTE]
 >
 >La connexion au panneau du débogueur sera limitée ou indisponible pour les scénarios confidentiels, les exécutions automatiques et les opérations réussies.
+
+>[!NOTE]
+>
+>Dans la nouvelle expérience , plusieurs outils DevTool sont intégrés à l’éditeur de scénarios. Vous pouvez donc les utiliser sans ouvrir l’outil de développement :
+>
+>| Outil | Où le trouver dans la nouvelle expérience |
+>| ---------- | ---------- |
+>| Obtenir les métadonnées de l’application | Cliquez avec le bouton droit sur un module et sélectionnez **Métadonnées de l’application**. |
+>| Copier le mappage | Cliquez avec le bouton droit sur le module source, sélectionnez **Copier le mappage**, puis collez-le sur un module compatible. |
+>| Copier le filtre | Cliquez avec le bouton droit sur le lien filtré, sélectionnez **Copier le filtre**, puis collez-le sur un autre lien. |
+>| Copier le nom du module | Cliquez avec le bouton droit sur un module et sélectionnez **Copier le nom du module** ou **Coller le nom du module**. |
+>| Permuter la connexion | Ouvrez Rechercher et remplacer, puis utilisez l’onglet **Connexion**. |
+>| Permuter la variable | Ouvrez Rechercher et remplacer, puis utilisez l’onglet **Variable**. |
+>| Remapper la source | Ouvrez Rechercher et remplacer, puis utilisez l’onglet ****. |
+>
+>Ces outils sont également toujours disponibles dans l’onglet **Outils** de DevTool, ainsi que dans les modules Focus a, Rechercher des modules par mappage et Base 64. Vous pouvez également utiliser les fonctions de conversion `base64()` et binaire dans les mappages.
+>
+>Vous pouvez également afficher les détails de la requête et de la réponse directement à partir du [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) et l’historique de l’exécution dans l’éditeur de scénarios. Pour plus d’informations sur la recherche et le remplacement, voir [Rechercher et remplacer des variables, des sources et des connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
 Pour une vidéo d’introduction et une présentation de l’outil Fusion Devtool, voir
 
@@ -67,6 +87,26 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Si vous utilisez Fusion dans Adobe Unified Shell ou avez mis à jour votre expérience avec Fusion, vous pouvez accéder à l’outil Développement à partir de l’éditeur de scénarios.
 
+### Accéder au Devtool dans la nouvelle expérience
+
+1. Accédez à l’éditeur de scénarios pour le scénario que vous souhaitez déboguer.
+
+   Pour localiser l’éditeur de scénarios, voir [L’éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
+
+1. Cliquez sur l&#39;icône des trois points dans la zone Contrôles, puis sélectionnez **DevTool**.
+
+Ou :
+
+1. Accédez à l’éditeur de scénarios pour le scénario que vous souhaitez déboguer.
+1. Effectuez un clic droit dans une zone vide de la page (et non dans un module).
+1. Sélectionnez **Ouvrir le Devtool**.
+
+L’outil de développement s’ouvre dans un panneau sous la zone de travail.
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### Accéder au Devtool dans l’expérience classique
+
 1. Cliquez sur l’icône **Outils d’assistance** ![Outils d’assistance](assets/debugger-icon.png) située en bas de l’écran.
 
 Ou :
@@ -80,15 +120,20 @@ Ou :
 
 ## Utilisation de l’outil de développement Workfront Fusion
 
-Le Devtool de Workfront Fusion est divisé en trois sections principales. Vous pouvez les trouver dans le panneau de gauche de votre fenêtre Devtool.
+L’outil de développement Workfront Fusion est divisé en 3 sections principales, ainsi qu’un lien d’aide. Vous pouvez les trouver dans le panneau de gauche de votre fenêtre Devtool.
 
 * [Live Stream](#live-stream)
 * [Débogueur de scénario](#scenario-debugger)
 * [Outils](#tools)
+* **Aide de DevTool** : cliquez sur l’icône de point d’interrogation pour ouvrir l’article sur l’outil de développement.
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### Live Stream
 
 Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur Exécuter une fois dans votre scénario.
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. Cliquez sur l’icône **[!UICONTROL Diffusion en direct]** ![Icône de diffusion en direct](assets/live-stream-icon.png) pour ouvrir la section Diffusion en direct .
 1. Effectuez l’une des opérations suivantes :
@@ -149,18 +194,42 @@ Le Live Stream affiche ce qui se passe en arrière-plan lorsque vous cliquez sur
 Le débogueur de scénario est utile pour les scénarios plus complexes. Il affiche l’historique du scénario qui s’exécute et vous permet de rechercher les modules par leur nom ou ID.
 
 1. Cliquez sur l’icône **[!UICONTROL Débogueur de scénario]** ![icône du débogueur](assets/scenario-debugger-icon.png) pour ouvrir le débogueur de scénario.
-1. (Facultatif) Saisissez le terme de recherche (nom ou ID de module) dans le champ de recherche.
+
+   Le débogueur de scénario répertorie les modules de votre scénario. Chaque module affiche son nom, l’application et l’action, ainsi qu’un badge numéroté avec l’identifiant du module.
+
+1. (Facultatif) Saisissez le terme de recherche (nom ou ID de module) dans le champ **Rechercher des modules par nom ou ID**.
 1. Cliquez sur le nom du module.
-1. Cliquez sur l’opération pour afficher les détails de la requête.
+
+   Les cycles de l’exécution la plus récente du module sont répertoriés en regard de la liste des modules. Si le module ne contient aucune donnée d’exécution, le débogueur de scénario s’affiche **Aucun résultat trouvé**.
+
+1. Développez un cycle, puis cliquez sur une opération.
+
+   Chaque opération indique si elle a réussi et combien de temps elle a pris, par exemple **Opération 1** avec une durée de 0 ms.
+
+1. Passez en revue les détails de la requête. Utilisez les onglets pour afficher :
+
+   * **En-têtes de requête** : URL du point d’entrée de l’API, méthode HTTP, moment de l’appel de la requête et en-têtes de requête.
+   * **Corps de la requête**
+   * **En-têtes de réponse**
+   * **Corps de réponse**
+
+1. (Facultatif) Pour copier la requête, cliquez sur **Copier RAW** ou **Copier cURL**.
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### Outils
 
 L’outil de développement Workfront Fusion comporte des outils qui facilitent la configuration de votre scénario.
 
 1. Cliquez sur l’icône **[!UICONTROL Outils]** ![Icône des outils de la console](assets/console-tools-icon.png) pour ouvrir les outils.
+1. (Facultatif) Pour rechercher un outil, saisissez son nom dans le champ **Rechercher un outil par nom**.
 1. Sélectionnez l’outil que vous souhaitez utiliser.
 1. Configurez les champs comme indiqué ci-dessous.
 1. Cliquez sur **[!UICONTROL Exécuter]**.
+
+Jusqu’à ce que vous sélectionniez un outil, le côté droit du panneau vous invite à en sélectionner un. Un lien au bas de l’onglet Outils vous mène à l’article sur l’outil de développement.
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 Outils et leurs champs :
 

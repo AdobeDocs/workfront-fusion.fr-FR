@@ -10,15 +10,15 @@ exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 617
-ht-degree: 21%
-
+source-wordcount: '1072'
+ht-degree: 12%
 ---
-
 # Ajouter un filtre à un scénario de base
 
 Les filtres vous permettent de vous assurer que votre scénario ne progresse que si certaines conditions sont remplies.
@@ -29,7 +29,8 @@ Cet exemple montre comment modifier le scénario créé dans [Créer un scénari
 
 >[!NOTE]
 >
->Les modules de déclenchement de Workfront incluent des filtres qui permettent à un scénario de démarrer uniquement si certaines conditions sont remplies. Cependant, comme des filtres entre modules sont utilisés pour chaque cas d’utilisation autre que le déclencheur et le Workfront, il est important d’apprendre à utiliser les filtres entre les modules. Cet exemple utilise un filtre intermodule pour les fonctionnalités qui peuvent être satisfaites avec un filtre intermodule.
+>* Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
+>* Les modules de déclenchement de Workfront incluent des filtres qui permettent à un scénario de démarrer uniquement si certaines conditions sont remplies. Cependant, comme des filtres entre modules sont utilisés pour chaque cas d’utilisation autre que le déclencheur et le Workfront, il est important d’apprendre à utiliser les filtres entre les modules. Cet exemple utilise un filtre intermodule pour les fonctionnalités qui peuvent être satisfaites avec un filtre intermodule.
 
 ## Conditions d’accès
 
@@ -64,7 +65,11 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) avant de suivre cette procédure.
 
-## Ajouter un filtre
+## Ajouter un filtre dans la nouvelle expérience (recommandé)
+
+* [Préparer l’ajout du filtre](#prepare-to-add-the-filter)
+* [Ajouter et configurer le filtre](#add-and-configure-the-filter)
+* [Tester et activer](#test-and-activate)
 
 ### Préparer l’ajout du filtre
 
@@ -85,16 +90,78 @@ Vous devriez maintenant avoir `ID`, `Name` et `Project` sélectionnés.
 ### Ajouter et configurer le filtre
 
 1. Revenez au scénario dans l’éditeur de scénarios.
+1. Cliquez avec le bouton gauche de la souris sur le chemin entre le premier et le second module.
+
+   La fenêtre **[!UICONTROL Configurer un filtre]** s’ouvre.
+
+1. Dans le champ Libellé , saisissez un libellé pour ce filtre, par exemple « Filtrer pour la file d’attente des demandes ».
+1. Dans la zone **Condition**, dans le champ supérieur, mappez le `projectID` du premier module.
+
+   ![Mapper l’ID de projet](assets/new-map-in-filter.png)
+
+1. Laissez l’opérateur **Condition** sur Égal à.
+1. Dans le champ inférieur de la zone **Condition**, collez l’ID de projet dont vous avez pris note dans l’URL du projet dans [Préparez l’ajout du filtre](#prepare-to-add-the-filter).
+1. Cliquez sur **OK** pour enregistrer les paramètres de filtre.
+
+### Tester et activer
+
+1. Accédez à l’environnement Workfront auquel Fusion se connecte et ajoutez un problème au projet que vous avez spécifié dans le filtre. Ajoutez un autre événement à un autre projet.
+1. Cliquez sur l’icône **[!UICONTROL Exécuter une fois]**.
+
+   L’exécution unique est réservée aux icônes dans la nouvelle expérience. Pointez sur l’icône pour afficher l’info-bulle **[!UICONTROL Exécuter une fois]**.
+
+   ![bouton exécuter le scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examinez la sortie pour vous assurer que le scénario s’est exécuté comme prévu.
+
+   Les deux problèmes doivent apparaître dans la sortie du premier module, mais seul le problème du projet spécifié doit apparaître comme entrée dans le deuxième module.
+1. Lorsque vous êtes convaincu que le scénario fonctionne comme prévu, cliquez sur le bouton (bascule) **Planification** pour **Activé**.
+
+   Le scénario est alors activé.
+
+   ![Basculement de la planification](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Cliquez sur l’icône **Enregistrer** ![Icône Enregistrer](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) dans la zone Contrôles pour enregistrer votre progression dans le scénario.
+
+   >[!IMPORTANT]
+   >
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+
+## Ajouter un filtre dans l’expérience classique
+
+* [Préparer l’ajout du filtre (Classique)](#prepare-to-add-the-filter-classic)
+* [Ajouter et configurer le filtre (Classique)](#add-and-configure-the-filter-classic)
+* [Tester et activer (Classique)](#test-and-activate-classic)
+
+### Préparer l’ajout du filtre (Classique)
+
+1. Ouvrez le scénario.
+1. Cliquez sur le premier module pour l’ouvrir.
+1. Dans la zone **Sorties**, sélectionnez `Project`.
+Vous devriez maintenant avoir `ID`, `Name` et `Project` sélectionnés.
+1. Cliquez sur OK pour enregistrer les paramètres du module.
+1. Ouvrez Workfront.
+1. Dans Workfront, recherchez le projet qui représente la file d’attente des demandes avec laquelle le scénario Fusion fonctionnera.
+
+   Ce projet doit se trouver sur le même compte Workfront que celui pour lequel la connexion Fusion a été configurée.
+
+1. Notez l’ID de projet dans l’URL.
+
+   Exemple : https://\&lt;MyDomain\>.my.workfront.com/project/\&lt;ProjectID\>/tasks
+
+### Ajouter et configurer le filtre (Classique)
+
+1. Revenez au scénario dans l’éditeur de scénarios.
 1. Cliquez sur l’icône de clé à molette ![icône de clé à molette](assets/wrench-icon.png) entre le premier et le deuxième module, puis sélectionnez **Configurer un filtre**.
 1. Dans le champ Libellé , saisissez un libellé pour ce filtre, par exemple « Filtrer pour la file d’attente des demandes ».
 1. Dans la zone **Condition**, dans le champ supérieur, mappez le `projectID` du premier module.
 
    ![Mapper l’ID de projet](assets/map-proj-id.png)
 1. Laissez l’opérateur **Condition** sur Égal à.
-1. Dans le champ inférieur de la zone **Condition**, collez l’ID de projet dont vous avez pris note dans l’URL du projet dans [Préparez l’ajout du filtre](#prepare-to-add-the-filter).
+1. Dans le champ inférieur de la zone **Condition**, collez l’ID de projet dont vous avez pris note dans l’URL du projet dans [Préparer l’ajout du filtre (Classique)](#prepare-to-add-the-filter-classic).
 1. Cliquez sur **OK** pour enregistrer les paramètres de filtre.
 
-### Tester et activer
+### Tester et activer (Classique)
 
 1. Accédez à l’environnement Workfront auquel Fusion se connecte et ajoutez un problème au projet que vous avez spécifié dans le filtre. Ajoutez un autre événement à un autre projet.
 1. Cliquez sur **[!UICONTROL Exécuter une fois]** dans le coin inférieur gauche de l’éditeur de scénario.

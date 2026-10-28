@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 22%
+source-wordcount: '1677'
+ht-degree: 16%
 ---
 # Ajouter la gestion des erreurs
 
@@ -39,6 +39,10 @@ Pour plus d’informations sur les directives de gestion des erreurs, voir [Dire
 >
 >Workfront Fusion prend en charge la gestion des erreurs au niveau des itinéraires, ce qui vous permet de définir une logique de gestion des erreurs une fois par itinéraire, plutôt que d’associer des gestionnaires d’erreur à chaque module individuel.
 >La gestion des erreurs au niveau de l’itinéraire étant un moyen plus évolutif, plus cohérent et plus épuré sur le plan architectural de gérer les erreurs, en particulier dans les automatisations avancées à plusieurs branches, nous vous recommandons d’utiliser la gestion des erreurs au niveau de l’itinéraire comme bonne pratique.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -88,9 +92,9 @@ Les erreurs sont gérées par la hiérarchie suivante :
 
 ### Exemple
 
-Prenons l’exemple de scénario suivant :
+Considérez l’exemple de scénario suivant, illustré ici en mode compact pour plus de lisibilité :
 
-![Exemple de scénario montrant les itinéraires et les gestionnaires d’erreurs](assets/error-handling-route-example-with-numbers.png)
+![Exemple de scénario montrant les itinéraires et les gestionnaires d’erreurs](assets/new-error-handler-examples-with-numbers.png)
 
 1. Ce module a un gestionnaire d&#39;erreurs. Toute erreur sur ce module est gérée par la directive Commit.
 1. Ce module ne dispose pas d&#39;un gestionnaire d&#39;erreurs. Si ce module rencontre une erreur, celle-ci est gérée par le gestionnaire sur le routeur qui a créé l&#39;itinéraire du module. Toute erreur sur ce module est gérée par la directive Rollback.
@@ -113,7 +117,41 @@ Vous pouvez ajouter un gestionnaire d&#39;erreurs à un module ou à un routeur.
 
 ### Ajout d’un gestionnaire d’erreurs à un module
 
-Pour ajouter un gestionnaire d’erreurs à un module :
+* [Ajouter un gestionnaire d’erreurs à un module dans la nouvelle expérience (Recommandé)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Ajouter un gestionnaire d’erreurs à un module dans l’expérience classique](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Ajouter un gestionnaire d’erreurs à un module dans la nouvelle expérience (Recommandé)
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
+1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de gestion des erreurs.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez avec le bouton droit sur le module après lequel vous souhaitez ajouter un itinéraire de gestionnaire d’erreurs, puis sélectionnez **[!UICONTROL Ajouter un gestionnaire d’erreurs]** :
+
+   ![Ajouter un gestionnaire d’erreurs dans le menu](assets/new-add-error-handler-in-menu.png)
+
+   Un itinéraire de gestionnaire d’erreurs est ajouté au module . Si le module est le dernier module d’une itinéraire, le gestionnaire d’erreurs suit directement le module. Si le module comporte d’autres modules par la suite, un itinéraire de gestionnaire d’erreurs distinct est ajouté.
+
+   Le module de gestion des erreurs affiche une liste des directives ainsi que des applications utilisées dans votre scénario.
+
+   ![Directives de gestion des erreurs](assets/new-error-handling-directives.png)
+
+1. Sélectionnez l’une des directives.
+
+   Ou
+
+   Ajoutez un ou plusieurs modules à l’itinéraire du gestionnaire d’erreurs.
+
+   Si vous ajoutez d’autres modules à l’itinéraire, la directive Ignorer est appliquée par défaut. En cas d’erreur, les modules suivants de cet itinéraire sont traités.
+
+   Pour plus d’informations sur les directives, voir [Gestion des erreurs liées aux directives](#error-handling-directives) dans cet article.
+
+1. (Facultatif) Ajoutez un filtre à l’itinéraire de gestion des erreurs. Pour obtenir des instructions, voir [Ajouter le filtrage et l’imbrication aux itinéraires de gestion des erreurs](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Un itinéraire de gestionnaire d’erreurs est marqué d’une ligne pointillée rouge **[!UICONTROL gestionnaire d’erreurs]**.
+
+#### Ajouter un gestionnaire d’erreurs à un module dans l’expérience classique
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de gestion des erreurs.
@@ -145,6 +183,40 @@ Pour ajouter un gestionnaire d’erreurs à un module :
 >Notez qu’un itinéraire du gestionnaire des erreurs est composé de cercles transparents, tandis qu’un itinéraire normal est composé de cercles pleins.
 
 ### Ajouter un gestionnaire d&#39;erreurs à un routeur
+
+* [Ajouter un gestionnaire d’erreurs à un routeur dans la nouvelle expérience (Recommandé)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Ajouter un gestionnaire d’erreurs à un routeur dans l’expérience classique](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Ajouter un gestionnaire d’erreurs à un routeur dans la nouvelle expérience (Recommandé)
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
+1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de gestion des erreurs.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez avec le bouton droit sur le routeur sur lequel vous souhaitez ajouter un itinéraire de gestionnaire d&#39;erreurs, puis sélectionnez **[!UICONTROL Ajouter un gestionnaire d&#39;erreurs]**.
+
+   Une route de gestionnaire d&#39;erreurs est ajoutée au routeur.
+
+   Le module de gestion des erreurs affiche une liste des directives ainsi que des applications utilisées dans votre scénario.
+
+   ![Directives de gestion des erreurs](assets/new-error-handling-directives.png)
+
+1. Sélectionnez l’une des directives.
+
+   Ou
+
+   Ajoutez un ou plusieurs modules à l’itinéraire du gestionnaire d’erreurs.
+
+   Si vous ajoutez d’autres modules à l’itinéraire, la directive Ignorer est appliquée par défaut. En cas d’erreur, les modules suivants de cet itinéraire sont traités.
+
+   Pour plus d’informations sur les directives, voir [Gestion des erreurs liées aux directives](#error-handling-directives) dans cet article.
+
+1. (Facultatif) Ajoutez un filtre à l’itinéraire de gestion des erreurs. Pour obtenir des instructions, voir [Ajouter le filtrage et l’imbrication aux itinéraires de gestion des erreurs](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Un itinéraire de gestionnaire d’erreurs est marqué d’une ligne pointillée rouge **[!UICONTROL gestionnaire d’erreurs]**.
+
+#### Ajouter un gestionnaire d’erreurs à un routeur dans l’expérience classique
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un itinéraire de gestion des erreurs.

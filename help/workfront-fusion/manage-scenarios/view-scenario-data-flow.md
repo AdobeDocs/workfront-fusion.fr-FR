@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 27%
 ---
 # Afficher le flux de données dans un scénario en cours d’exécution
 
 Vous pouvez regarder un scénario en cours d’exécution pour voir comment les données y circulent.
 
-Lorsqu’un scénario s’exécute, le module actif est marqué par un anneau croissant autour du module. L’anneau indique uniquement que le module est en cours d’exécution, et non sa progression. Les modules qui fonctionnent rapidement peuvent n’afficher qu’une petite partie de l’anneau.
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
-![Entourer le module](assets/ring-around-module.png)
+Lorsqu’un scénario s’exécute, le module actif est marqué d’un anneau qui tourne sur l’icône du module dans la nouvelle expérience ou d’un anneau qui grossit autour du module dans l’expérience classique. L’anneau indique uniquement que le module est en cours d’exécution, et non sa progression. Les modules qui fonctionnent rapidement peuvent n’afficher qu’une petite partie de l’anneau.
+
+Nouvelle expérience
+
+![Spinning ring sur l’icône du module dans la nouvelle expérience](assets/new-spinning-icon.png)
+
+Expérience Classic
+
+![Module Sonnerie autour dans l’expérience classique](assets/ring-around-module.png)
 
 Une fois le module exécuté, un indicateur de sortie s’affiche.
 
-![Indicateur de sortie &#x200B;](assets/data-flow-output.png)
+Nouvelle expérience
+
+![ Indicateur de sortie dans la nouvelle expérience ](assets/new-output-indicator.png)
+
+Expérience Classic
+
+![ Indicateur de sortie dans l’expérience classique ](assets/data-flow-output.png)
 
 Si le module traite plusieurs lots, l&#39;anneau apparaît pour chaque lot traité, et l&#39;indicateur de sortie compte pour chaque lot qu&#39;il sort.
 
@@ -65,7 +81,8 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez afficher le flux de données.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
 1. Si le scénario n’est pas en cours d’exécution, activez-le ou cliquez sur **Exécuter une fois** pour lancer l’exécution du scénario.
 1. Sélectionnez l’exécution à afficher dans la section En cours d’exécution du panneau Historique d’exécution.
 
-![&#x200B; En cours d’exécution &#x200B;](assets/currently-running.png)
+![ En cours d’exécution ](assets/currently-running.png)

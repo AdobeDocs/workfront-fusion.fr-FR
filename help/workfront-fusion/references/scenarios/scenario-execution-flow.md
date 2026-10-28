@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 25%
+source-wordcount: '821'
+ht-degree: 24%
 ---
 # Flux d’exécution de scénarios
 
 Cet article explique comment un scénario s’exécute et comment les données y circulent, ainsi que la manière d’afficher les données traitées par chaque module.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 Pour afficher le flux de données dans un scénario actif, consultez [Affichage du flux de données dans un scénario en cours d’exécution](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
@@ -43,7 +47,7 @@ La première étape du scénario, réalisée par le premier module, consiste à 
 
 Si le premier module renvoie un bundle, le bundle passe par le reste du scénario. Dans cet exemple, le lot accède au deuxième module , qui convertit la requête en projet.
 
-![Flux d’exécution du scénario Workfront](assets/example-execution-flow-wf-only.png)
+![Flux d’exécution du scénario Workfront](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -51,13 +55,13 @@ Si le premier module renvoie un bundle, le bundle passe par le reste du scénari
 
 >[!BEGINSHADEBOX]
 
-**Exemple :** dans ce scénario, qui télécharge des documents depuis Adobe Workfront et les envoie vers un dossier dans [!DNL Dropbox], les données sont transmises comme suit :
+**Exemple :** dans ce scénario qui télécharge des documents depuis Adobe Workfront et les envoie vers un dossier dans [!DNL Dropbox], les données se déplacent comme suit :
 
 La première étape du scénario, effectuée par le premier module, consiste à rechercher des documents dans Workfront. Chaque document trouvé est considéré comme un lot. Si le module s’exécute sans trouver de bundle, le scénario se termine après le premier module.
 
 Si un bundle est renvoyé, le bundle passe par le reste du scénario. Dans cet exemple, le reste du scénario est constitué du deuxième module , qui charge le lot dans le dossier [!DNL Dropbox].
 
-![Flux d’exécution du scénario d’intégration](assets/example-execution-flow-wf-dropbox.png)
+![Flux d’exécution du scénario d’intégration](assets/new-example-execution-flow-wf-dropbox.png)
 
 Si le premier module renvoie plusieurs bundles, le premier bundle est chargé sur [!DNL Dropbox] avant le second. Ensuite, le deuxième bundle est chargé, puis le troisième, et ainsi de suite.
 
@@ -78,7 +82,7 @@ Pour chaque module, le lot passe par un processus en 4 étapes avant de passer a
 
 Une fois l’exécution d’un scénario terminée, chaque module affiche une icône indiquant le nombre d’opérations effectuées. Vous pouvez cliquer sur cette icône pour afficher les informations détaillées sur les lots traités pour chaque étape du processus. Vous pouvez voir quels paramètres de module ont été utilisés et quels lots ont été renvoyés par chaque module.
 
-![Lots traités](assets/Info-processed-bundles.png)
+![Lots traités](assets/new-Info-processed-bundles.png)
 
 Dans cet example, le module a reçu des informations d&#39;entrée telles que:
 
@@ -101,6 +105,6 @@ Une erreur peut se produire pendant l’exécution du scénario. Par exemple, si
 
 * Pour plus d’informations sur la configuration d’un scénario, voir [Éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 * Pour plus d’informations sur la page des détails du scénario, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
-* Pour plus d’informations sur l’activation d’un scénario, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+* Pour plus d’informations sur l’activation d’un scénario, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * Pour plus d’informations sur la planification d’un scénario, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * Pour plus d’informations sur les modules, voir [Présentation des modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
