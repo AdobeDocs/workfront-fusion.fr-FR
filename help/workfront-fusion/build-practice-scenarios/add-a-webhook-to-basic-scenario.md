@@ -81,7 +81,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
    ![Sélecteur d’application et de service](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
-1. Sélectionnez ****.
+1. Sélectionnez **&#x200B;**.
 1. Sélectionnez **Observer les événements**.
 1. Cliquez sur **Ajouter** à côté du champ Webhook.
 1. dans le champ Type d’enregistrement , sélectionnez **Problème** afin que le module se déclenche pour les modifications dans les problèmes.
@@ -131,7 +131,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
    Le module est supprimé, laissant un espace réservé vide.
 
-1. Cliquez sur le module vierge, puis sélectionnez **** dans la liste des applications.
+1. Cliquez sur le module vierge, puis sélectionnez **&#x200B;**&#x200B;dans la liste des applications.
 1. Sélectionnez **Observer les événements**.
 1. Cliquez sur **Ajouter** à côté du champ Webhook.
 1. dans le champ Type d’enregistrement , sélectionnez **Problème** afin que le module se déclenche pour les modifications dans les problèmes.

@@ -94,7 +94,7 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
    Les itinéraires désactivés affichent des points gris menant du routeur au premier module de l&#39;itinéraire, et affichent une icône d&#39;itinéraire désactivé ![icône d&#39;itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé.
 
 1. (Facultatif et conditionnel) Pour activer un itinéraire désactivé, cliquez sur l’icône d’itinéraire désactivé ![icône d’itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé de l’itinéraire.
-1. Passez à [ Ajouter un filtre à un itinéraire dans la nouvelle expérience ](#add-a-filter-to-a-route-in-the-new-experience-recommended).
+1. Passez à [&#x200B; Ajouter un filtre à un itinéraire dans la nouvelle expérience &#x200B;](#add-a-filter-to-a-route-in-the-new-experience-recommended).
 
 ### Ajoutez un module Routeur à un scénario dans l’expérience classique
 
@@ -132,7 +132,7 @@ Vous devez ajouter un module Routeur avant de configurer des itinéraires.
    Les itinéraires désactivés affichent des points gris menant du routeur au premier module de l&#39;itinéraire, et affichent une icône d&#39;itinéraire désactivé ![icône d&#39;itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé.
 
 1. (Facultatif et conditionnel) Pour activer un itinéraire désactivé, cliquez sur l’icône d’itinéraire désactivé ![icône d’itinéraire désactivé](assets/disabled-route-icon.png) sur le libellé de l’itinéraire.
-1. Passez à [ Ajouter un filtre à un itinéraire dans l’expérience classique ](#add-a-filter-to-a-route-in-the-classic-experience).
+1. Passez à [&#x200B; Ajouter un filtre à un itinéraire dans l’expérience classique &#x200B;](#add-a-filter-to-a-route-in-the-classic-experience).
 
 ## Ajouter un filtre à un itinéraire
 
@@ -164,7 +164,7 @@ Les routeurs avec filtres affichent l’icône de filtre ![icône de filtre](ass
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 1. (Conditionnel) Si le nom du filtre est trop long pour tenir dans le libellé, pointez sur le libellé pour afficher le nom entier.
 
-1. Passez à [ Configurer un itinéraire de secours dans la nouvelle expérience ](#configure-a-fallback-route-in-the-new-experience-recommended).
+1. Passez à [&#x200B; Configurer un itinéraire de secours dans la nouvelle expérience &#x200B;](#configure-a-fallback-route-in-the-new-experience-recommended).
 
 ### Ajouter un filtre à un itinéraire dans l’expérience classique
 
@@ -181,7 +181,7 @@ Les routeurs avec filtres affichent l’icône de filtre ![icône de filtre](ass
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 1. (Conditionnel) Si le nom du filtre est trop long pour tenir dans le libellé, pointez sur le libellé pour afficher le nom entier.
 
-1. Passez à [ Configurer un itinéraire de secours dans l’expérience classique ](#configure-a-fallback-route-in-the-classic-experience).
+1. Passez à [&#x200B; Configurer un itinéraire de secours dans l’expérience classique &#x200B;](#configure-a-fallback-route-in-the-classic-experience).
 
 ## Configuration d’un itinéraire de secours
 
@@ -206,7 +206,7 @@ Vous pouvez activer un itinéraire de secours dans le panneau de filtrage.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![ Itinéraire de secours ](assets/fallback-route-new.png)
+   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-new.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 
@@ -222,7 +222,7 @@ Le libellé de l’itinéraire de secours s’affiche en vert **Fallback**.
 1. Dans le champ libellé du panneau qui s’affiche, ajoutez un libellé. Ce libellé s’affiche dans le scénario.
 1. Cochez la case itinéraire de secours .
 
-   ![ Itinéraire de secours ](assets/fallback-route-350x260.png)
+   ![&#x200B; Itinéraire de secours &#x200B;](assets/fallback-route-350x260.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration des filtres.
 

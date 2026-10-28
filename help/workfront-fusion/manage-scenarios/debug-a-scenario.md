@@ -41,7 +41,7 @@ L’outil Adobe Workfront Fusion Developer vous aide à comprendre et à résoud
 >| Copier le nom du module | Cliquez avec le bouton droit sur un module et sélectionnez **Copier le nom du module** ou **Coller le nom du module**. |
 >| Permuter la connexion | Ouvrez Rechercher et remplacer, puis utilisez l’onglet **Connexion**. |
 >| Permuter la variable | Ouvrez Rechercher et remplacer, puis utilisez l’onglet **Variable**. |
->| Remapper la source | Ouvrez Rechercher et remplacer, puis utilisez l’onglet ****. |
+>| Remapper la source | Ouvrez Rechercher et remplacer, puis utilisez l’onglet **&#x200B;**. |
 >
 >Ces outils sont également toujours disponibles dans l’onglet **Outils** de DevTool, ainsi que dans les modules Focus a, Rechercher des modules par mappage et Base 64. Vous pouvez également utiliser les fonctions de conversion `base64()` et binaire dans les mappages.
 >

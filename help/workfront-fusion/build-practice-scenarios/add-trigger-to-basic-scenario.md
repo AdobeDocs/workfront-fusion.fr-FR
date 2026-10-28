@@ -84,7 +84,7 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 
    ![Sélecteur d’application et de service](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
-1. Sélectionnez ****.
+1. Sélectionnez **&#x200B;**.
 1. Sélectionnez **Enregistrement de contrôle**.
 1. Assurez-vous que le module utilise la même connexion que le reste des modules du scénario.
 1. Dans le champ Type d’enregistrement , sélectionnez **Événement**.
@@ -153,7 +153,7 @@ Le premier module ayant été remplacé, le second module doit être mappé au n
 
    Le module est supprimé, laissant un espace réservé vide.
 
-1. Cliquez sur le module vierge, puis sélectionnez **** dans la liste des applications.
+1. Cliquez sur le module vierge, puis sélectionnez **&#x200B;**&#x200B;dans la liste des applications.
 1. Sélectionnez **Enregistrement de contrôle**.
 1. Assurez-vous que le module utilise la même connexion que le reste des modules du scénario.
 1. Dans le champ Type d’enregistrement , sélectionnez **Événement**.

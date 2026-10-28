@@ -88,7 +88,7 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer
 
    Dans cet exemple, entrez 5.
 
-   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
+   ![&#x200B; Répéteur &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    La valeur de l’élément augmente à chaque répétition selon la valeur spécifiée dans le champ **[!UICONTROL Étape]** que vous pouvez afficher en sélectionnant **[!UICONTROL Afficher les paramètres avancés]**. Ce nombre est 1 par défaut.
 
@@ -99,7 +99,7 @@ Par exemple, vous pouvez utiliser un module [!UICONTROL Répéteur] pour envoyer
 
    Dans notre exemple d’e-mail, vous devez saisir Bonjour dans le champ [!UICONTROL Objet], puis mapper `i` à partir du module répéteur.
 
-   ![ Répéteur ](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
+   ![&#x200B; Répéteur &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

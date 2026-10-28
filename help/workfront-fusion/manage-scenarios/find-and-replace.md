@@ -82,9 +82,9 @@ Utilisez l’onglet **Variable** pour remplacer une variable mappée.
 
 ## Remapper une source
 
-Utilisez l&#39;onglet **** pour modifier le module auquel les mappages dans d&#39;autres modules font référence.
+Utilisez l&#39;onglet **&#x200B;**&#x200B;pour modifier le module auquel les mappages dans d&#39;autres modules font référence.
 
-1. Ouvrez Rechercher et remplacer, puis cliquez sur l’onglet ****.
+1. Ouvrez Rechercher et remplacer, puis cliquez sur l’onglet **&#x200B;**.
 1. Dans le champ Module Source , sélectionnez le module source auquel les mappages font actuellement référence.
 1. Dans les champs Module cible , sélectionnez le module auquel ils doivent faire référence à la place.
 1. Dans le champ Module , choisissez le module auquel la modification s’appliquera, ou sélectionnez **Scénario entier** pour appliquer la modification à tous les modules concernés du scénario.

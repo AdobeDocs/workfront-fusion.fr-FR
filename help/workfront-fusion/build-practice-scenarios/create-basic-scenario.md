@@ -77,7 +77,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
    ![Module Espace réservé](assets/new-placeholder-module.png)
 
 1. Cliquez sur le nom du scénario dans le coin supérieur gauche, puis saisissez un nom.
-1. Continuez avec [ Ajouter et configurer le premier module ](#add-and-configure-the-first-module).
+1. Continuez avec [&#x200B; Ajouter et configurer le premier module &#x200B;](#add-and-configure-the-first-module).
 
 ### Ajouter et configurer le premier module
 
@@ -87,7 +87,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    ![Sélecteur d’application et de service](assets/new-connector-picker.png)
 
-1. Sélectionnez **** :
+1. Sélectionnez **&#x200B;**&#x200B;:
 
    * Parcourez les ressources par catégorie à l’aide du panneau de gauche ([!UICONTROL Favoris], [!UICONTROL Toutes les applications], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL IA générative] ou [!UICONTROL Built-in]), ou
    * Saisissez un terme dans la zone de recherche pour filtrer la liste.
@@ -118,7 +118,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
       Cela permet au module de trouver des projets dont le nom contient les mots que vous avez choisis, même si vous ne saisissez pas le nom en entier ou si vous saisissez le nom avec une casse incorrecte (par exemple, tout en majuscules).
    1. Dans le dernier champ sous [!UICONTROL Critères de recherche], saisissez un mot ou une expression dont vous savez qu’il se trouve dans le nom de la tâche que vous recherchez.
 
-1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **** Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
+1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **&#x200B;**&#x200B;Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
 
    >[!TIP]
    >
@@ -130,14 +130,14 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Le nom apparaît juste en dessous du module. Ci-dessous, Workfront Fusion comprend une brève description du type d’action effectuée par le module.
 
-   ![ Module renommé ](assets/new-renamed-module.png)
+   ![&#x200B; Module renommé &#x200B;](assets/new-renamed-module.png)
 
 1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
 
 ### Ajouter et configurer le deuxième module
 
 1. Pointez sur le bord droit du module, puis cliquez sur **[!UICONTROL Ajouter un autre module]** lorsqu’il s’affiche.
-1. Sélectionnez **** dans la liste des applications, puis choisissez le module **[!UICONTROL Convert object]**.
+1. Sélectionnez **&#x200B;**&#x200B;dans la liste des applications, puis choisissez le module **[!UICONTROL Convert object]**.
 1. Dans le champ [!UICONTROL Connexion], sélectionnez la même connexion Workfront que celle que vous avez utilisée dans le module précédent .
 1. Dans le champ **[!UICONTROL Type d’enregistrement]**, sélectionnez **[!UICONTROL événement]**, car le module convertira un événement.
 1. Dans le champ **[!UICONTROL Convertir en]**, sélectionnez **Projet**.
@@ -215,7 +215,7 @@ La dernière étape de la création d’un scénario consiste à l’activer.
 
 Ce scénario recherchant un problème spécifique, il n’est pas nécessaire de l’activer. L’activation d’un scénario entraîne son exécution selon un planning ou lorsqu’une action spécifique se produit dans une application. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -236,7 +236,7 @@ Pour plus d’informations sur les planifications, voir [Planification d’un sc
    L’éditeur de scénarios s’affiche, contenant un module vide au centre.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom.
-1. Continuez avec [ Ajouter et configurer le premier module (Classic)](#add-and-configure-the-first-module-classic).
+1. Continuez avec [&#x200B; Ajouter et configurer le premier module (Classic)](#add-and-configure-the-first-module-classic).
 
 ### Ajouter et configurer le premier module (Classic)
 
@@ -244,7 +244,7 @@ Pour plus d’informations sur les planifications, voir [Planification d’un sc
 
    Une liste d&#39;applications s&#39;affiche à droite du module.
 
-1. Sélectionnez ****. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
+1. Sélectionnez **&#x200B;**. S’il n’est pas visible, cliquez sur la barre de recherche au bas de la liste, saisissez « Workfront », puis sélectionnez-le lorsqu’il apparaît dans la liste.
 
    La liste est modifiée afin d’afficher tous les modules Workfront que vous pouvez utiliser.
 
@@ -272,7 +272,7 @@ Pour plus d’informations sur les planifications, voir [Planification d’un sc
       Cela permet au module de trouver des projets dont le nom contient les mots que vous avez choisis, même si vous ne saisissez pas le nom en entier ou si vous saisissez le nom avec une casse incorrecte (par exemple, tout en majuscules).
    1. Dans le dernier champ sous [!UICONTROL Critères de recherche], saisissez un mot ou une expression dont vous savez qu’il se trouve dans le nom de la tâche que vous recherchez.
 
-1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **** Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
+1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **&#x200B;**&#x200B;Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
 
    >[!TIP]
    >
@@ -284,9 +284,9 @@ Pour plus d’informations sur les planifications, voir [Planification d’un sc
 
    Le nom apparaît juste en dessous du module. Ci-dessous, Workfront Fusion comprend une brève description du type d’action effectuée par le module.
 
-   ![ Module renommé ](assets/module-renamed-wf.png)
+   ![&#x200B; Module renommé &#x200B;](assets/module-renamed-wf.png)
 
-1. Continuez avec [ Ajouter et configurer le deuxième module (Classic)](#add-and-configure-the-second-module-classic).
+1. Continuez avec [&#x200B; Ajouter et configurer le deuxième module (Classic)](#add-and-configure-the-second-module-classic).
 
 ### Ajouter et configurer le deuxième module (Classic)
 
@@ -362,7 +362,7 @@ La dernière étape de la création d’un scénario consiste à l’activer.
 
 Ce scénario recherchant un problème spécifique, il n’est pas nécessaire de l’activer. L’activation d’un scénario entraîne son exécution selon un planning ou lorsqu’une action spécifique se produit dans une application. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
