@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 70%
+source-wordcount: '583'
+ht-degree: 69%
 ---
 # Vue d’ensemble des détails de scénario
 
@@ -59,11 +59,11 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Sur la page qui s’affiche, vous pouvez passer en revue les éléments répertoriés dans le tableau ci-dessous :
 
-   ![Détails du scénario](assets/scenario-detail-350x207.png)
+   ![Détails du scénario](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>Ce menu fournit des options supplémentaires sans avoir à ouvrir l’éditeur de scénarios. Notamment :</p> 
        <ul> 
+        <li>[!UICONTROL Exécution du déverrouillage]</li> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clone comme modèle]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

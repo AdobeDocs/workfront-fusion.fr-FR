@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 63%
+source-wordcount: '987'
+ht-degree: 59%
 ---
 # Afficher l’historique de l’exécution d’un scénario
 
@@ -26,7 +26,13 @@ Un événement de scénario est une modification apportée au scénario, par exe
 
 >[!NOTE]
 >
->L’historique d’un scénario affiche toutes les exécutions d’un scénario au cours des 30 derniers jours.
+>* L’historique d’un scénario affiche toutes les exécutions d’un scénario au cours des 30 derniers jours.
+>* Dans la nouvelle expérience, l’éditeur de scénarios dispose également d’un panneau Historique d’exécution . Il affiche le statut, la durée, les opérations et la taille des données de chaque exécution. Vous pouvez effectuer les opérations suivantes :
+>
+>   * Filtrer par statut
+>   * Rechercher des événements
+>   * Utilisez **Précédent** et **Suivant** pour vous déplacer entre les exécutions sans revenir à la liste d’exécution
+>   * Sélectionnez un événement à centrer et surlignez le module correspondant sur la zone de travail. Lorsque les détails de l’opération sont disponibles, le panneau de requête et de réponse s’ouvre pour cet événement.
 
 ## Conditions d’accès
 
@@ -72,7 +78,7 @@ L’onglet [!UICONTROL Historique] affiche plus de détails que la page [!UICONT
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/new-exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez sur **Historique** près du nom du scénario.
    ![onglet historique](assets/history-tab.png)
@@ -103,7 +109,7 @@ L’onglet [!UICONTROL Historique] affiche plus de détails que la page [!UICONT
 
    Ou
 
-   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+   Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/new-exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez sur l’onglet **[!UICONTROL Historique]** dans le panneau de droite.
 1. (Facultatif) Pour plus d’informations sur l’exécution d’un scénario sélectionné, cliquez sur l’exécution dans le panneau de droite.

@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # Utiliser Exécuter une fois pour tester un scénario
@@ -23,6 +23,10 @@ Vous pouvez également exécuter un scénario une seule fois pour configurer les
 >[!TIP]
 >
 >Nous vous recommandons de tester fréquemment au fur et à mesure que vous créez et affinez des scénarios.
+
+>[!NOTE]
+>
+>Dans la nouvelle expérience, l’option Exécuter une fois conserve toujours les détails de la requête et de la réponse. Pour les exécutions régulières du scénario, vous pouvez les collecter en activant les journaux de débogage temporaires dans les paramètres du scénario. Pour plus d’informations, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
 
 ## Utiliser la fonctionnalité Exécuter une seule fois
 

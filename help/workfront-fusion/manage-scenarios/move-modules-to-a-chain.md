@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # Déplacer des modules vers une chaîne
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >Cette fonctionnalité est disponible dans Beta et n’est pas recommandée pour les workflows de production critiques. En tant que fonctionnalité Beta, le comportement peut changer et les cas Edge peuvent ne pas être entièrement gérés.
 
 Vous pouvez sélectionner un groupe de modules dans un scénario et les déplacer dans un nouveau scénario chaîné, sans recréer manuellement les mappages ou les structures de données. Cela permet de modulariser facilement des scénarios volumineux.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 Lorsque vous déplacez un groupe de modules dans une chaîne, Workfront Fusion :
 

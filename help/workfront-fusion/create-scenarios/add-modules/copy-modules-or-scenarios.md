@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 67%
+source-wordcount: '966'
+ht-degree: 62%
 ---
 # Copier des modules ou des scénarios
 
@@ -69,18 +69,19 @@ Tenez compte des points suivants lorsque vous collez des modules dans un autre s
 
 ### Copier des modules
 
-Copier un groupe de modules revient à copier un module.
+Vous pouvez copier un seul module ou un groupe de modules.
+
+
+>[!NOTE]
+>
+>Vous pouvez sélectionner plusieurs modules en maintenant la touche [!UICONTROL Maj] enfoncée et en cliquant sur les modules à copier. Copier un groupe de modules copie également toutes les lignes de connexion, tous les filtres ou toute logique de routage entre eux.
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez copier un module.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
-1. Cliquez avec le bouton droit sur le module à copier.
-
-   >[!NOTE]
-   >
-   >Vous pouvez sélectionner plusieurs modules en maintenant la touche [!UICONTROL Maj] enfoncée et en cliquant sur les modules à copier. Copier un groupe de modules copie également toutes les lignes de connexion, tous les filtres ou toute logique de routage entre eux.
-
-1. Sélectionnez **[!UICONTROL Copier le module]**.
+1. Si vous copiez plusieurs modules, maintenez la touche Maj enfoncée et cliquez sur les modules à copier.
+1. Cliquez avec le bouton droit de la souris sur le module, ou sur l’un des modules, que vous souhaitez copier.
+1. Sélectionnez **[!UICONTROL Copier le module]** ou **[!UICONTROL Copier les modules]**.
 1. Déplacez le curseur vers la zone du scénario où vous souhaitez copier le scénario.
 1. Cliquez avec le bouton droit de la souris, puis sélectionnez **[!UICONTROL Coller]**.
 1. Connectez les modules collés au scénario en les faisant glisser à l’emplacement souhaité dans le scénario.
@@ -101,7 +102,7 @@ Le clonage d’un scénario crée une copie du scénario, que vous pouvez ensuit
 
       Ou
 
-      Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
+      Si vous travaillez sur le scénario dans l’éditeur de scénarios, cliquez sur la flèche de gauche ![flèche de modification de sortie](assets/new-exit-editing-arrow.png) près du coin supérieur gauche de la fenêtre.
 
 1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Options]** dans l’angle supérieur droit de la page.
 1. Sélectionnez **[!UICONTROL Cloner]**.

@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 21%
+source-wordcount: '950'
+ht-degree: 19%
 ---
 # Ajouter le filtrage et l’imbrication aux itinéraires de gestion des erreurs
 
 Vous pouvez ajouter des techniques avancées de gestion des erreurs à votre itinéraire de gestion des erreurs en incluant le filtrage et l’imbrication.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -74,7 +78,13 @@ Pour plus d’informations sur la manière dont Fusion évalue et traite divers 
 
 ### Exemple : gestion des erreurs avec des filtres
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Cet exemple utilise l’éditeur de scénario classique.
 
 Cet exemple de scénario montre comment ces filtres fonctionnent pour la gestion des erreurs.
 
@@ -122,7 +132,13 @@ La directive Resume fournit ensuite le chemin d’accès Folder comme sortie pou
 
 Les itinéraires des gestionnaires d&#39;erreurs peuvent être créés et configurés sur tous les modules, sauf les routeurs. Par conséquent, vous pouvez créer un itinéraire de gestionnaire d’erreurs pour un module qui fait déjà partie d’un itinéraire de gestionnaire d’erreurs existant.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Cet exemple utilise l’éditeur de scénario classique.
 
 Exemple :
 

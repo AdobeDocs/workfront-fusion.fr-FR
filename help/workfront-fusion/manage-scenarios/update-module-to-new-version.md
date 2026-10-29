@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 28%
+source-wordcount: '371'
+ht-degree: 29%
 ---
 # Mettre à niveau un module vers une nouvelle version
 
@@ -74,7 +74,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 ## Mettre à niveau un module non Workfront vers une nouvelle version
 
 1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
-   ![Icône Mettre à jour](assets/update-indicator.png)
+   <!--![Update icon](assets/update-indicator.png)-->
 1. Cliquez sur **Choisir nouveau**.
 1. Sélectionnez le module qui doit remplacer le module précédent.
 1. Configurez le module avec les mêmes paramètres que le module existant.

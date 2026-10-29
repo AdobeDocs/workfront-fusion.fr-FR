@@ -10,20 +10,24 @@ exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
 TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 347280547bea92c0ee498da519495569a3cac661
 workflow-type: tm+mt
-source-wordcount: 1426
-ht-degree: 30%
-
+source-wordcount: '2691'
+ht-degree: 23%
 ---
-
 # Créer un scénario de base
 
 Le rôle d’Adobe Workfront Fusion est d’automatiser vos processus afin que vous puissiez vous concentrer sur de nouvelles tâches plutôt que de répéter les mêmes tâches en boucle. La plateforme fonctionne en liant les actions dans et entre les applications et les services pour créer un scénario qui transfère et transforme vos données automatiquement. Le scénario que vous créez recherche les données dans une application ou un service et traite ces données pour obtenir le résultat souhaité.
 
 Cet exemple vous guide tout au long du processus de création d’un scénario qui recherche une requête dans Workfront et la convertit en projet.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -50,13 +54,180 @@ Cet exemple vous guide tout au long du processus de création d’un scénario q
  </tbody> 
 </table>
 
-Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d’accès requises dans la documentation Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Créer un scénario pratique
+## Créer un scénario d’exercice pratique dans la nouvelle expérience (recommandé)
+
+* [Commencer à créer le scénario](#begin-creating-the-scenario)
+* [Ajouter et configurer le premier module](#add-and-configure-the-first-module)
+* [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module)
+* [Tester le scénario](#test-the-scenario)
+* [Activer le scénario](#activate-the-scenario)
 
 ### Commencer à créer le scénario
+
+1. Dans la zone **Scénarios**, cliquez sur **Créer un scénario**.
+
+   Pour localiser la zone des Scénarios, voir [Accès à Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
+
+   L’éditeur de scénarios s’affiche, contenant un module d’espace réservé vide au centre.
+
+   ![Module Espace réservé](assets/new-placeholder-module.png)
+
+1. Cliquez sur le nom du scénario dans le coin supérieur gauche, puis saisissez un nom.
+1. Continuez avec [&#x200B; Ajouter et configurer le premier module &#x200B;](#add-and-configure-the-first-module).
+
+### Ajouter et configurer le premier module
+
+1. Cliquez sur le module d’espace réservé pour ouvrir la liste des applications et services.
+
+   Un panneau s’ouvre à droite du module.
+
+   ![Sélecteur d’application et de service](assets/new-connector-picker.png)
+
+1. Sélectionnez **&#x200B;**&#x200B;:
+
+   * Parcourez les ressources par catégorie à l’aide du panneau de gauche ([!UICONTROL Favoris], [!UICONTROL Toutes les applications], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL IA générative] ou [!UICONTROL Built-in]), ou
+   * Saisissez un terme dans la zone de recherche pour filtrer la liste.
+
+   La liste est modifiée afin d’afficher tous les modules Workfront que vous pouvez utiliser.
+
+1. Cliquez sur le module **[!UICONTROL Search]**.
+
+   La fenêtre de configuration du module s’ouvre.
+
+1. Dans la zone [!UICONTROL Connexion], sélectionnez votre connexion Workfront.
+
+   Si vous ne disposez pas d’une connexion Workfront, voir [Créer une connexion](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+1. Dans la zone [!UICONTROL Type d’enregistrement], sélectionnez **[!UICONTROL Événement]**. Cette option permet au module de rechercher uniquement les événements, notamment les requêtes.
+
+   Vous pouvez trouver **[!UICONTROL Problème]** dans la liste si vous commencez à saisir le mot « [!UICONTROL Problème]. »
+
+1. Dans la zone **[!UICONTROL Jeu de résultats]**, sélectionnez **[!UICONTROL Premier enregistrement correspondant]**.
+
+   Cela définit le module pour renvoyer uniquement le premier enregistrement qu’il trouve et qui répond aux critères.
+1. Dans la zone **[!UICONTROL Critères de recherche]**, configurez les critères pour renvoyer la tâche spécifique.
+
+   1. Dans la première zone sous [!UICONTROL Critères de recherche], sélectionnez le champ à inclure dans la recherche. Pour cet exemple, sélectionnez **[!UICONTROL Nom]**.
+
+      Vous pouvez trouver **[!UICONTROL Nom]** dans la liste si vous commencez à saisir le mot « [!UICONTROL nom] ».
+   1. Pour l’opérateur/opératrice, cliquez sur la flèche de liste déroulante en regard de **Exist** et remplacez-la par [!UICONTROL **Contient (non-respect de la casse)**].
+
+      Cela permet au module de trouver des projets dont le nom contient les mots que vous avez choisis, même si vous ne saisissez pas le nom en entier ou si vous saisissez le nom avec une casse incorrecte (par exemple, tout en majuscules).
+   1. Dans le dernier champ sous [!UICONTROL Critères de recherche], saisissez un mot ou une expression dont vous savez qu’il se trouve dans le nom de la tâche que vous recherchez.
+
+1. Dans la liste Sorties, sélectionnez les champs que le module doit générer. **&#x200B;**&#x200B;Pour cet exemple, sélectionnez les champs **[!UICONTROL ID]** et **[!UICONTROL Nom]**.
+
+   >[!TIP]
+   >
+   >Vous pouvez utiliser **Cmd+F** (système d’exploitation [!DNL Mac]) ou **Ctrl+F** (système d’exploitation [!DNL Windows]) pour trouver rapidement un champ.
+
+1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration du module.
+
+1. Cliquez avec le bouton droit sur le module, cliquez sur **[!UICONTROL Renommer]**, puis entrez un nom décrivant ce que vous souhaitez que le module fasse (par exemple, « Rechercher des requêtes »), puis cliquez sur **[!UICONTROL OK]**.
+
+   Le nom apparaît juste en dessous du module. Ci-dessous, Workfront Fusion comprend une brève description du type d’action effectuée par le module.
+
+   ![&#x200B; Module renommé &#x200B;](assets/new-renamed-module.png)
+
+1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
+
+### Ajouter et configurer le deuxième module
+
+1. Pointez sur le bord droit du module, puis cliquez sur **[!UICONTROL Ajouter un autre module]** lorsqu’il s’affiche.
+1. Sélectionnez **&#x200B;**&#x200B;dans la liste des applications, puis choisissez le module **[!UICONTROL Convert object]**.
+1. Dans le champ [!UICONTROL Connexion], sélectionnez la même connexion Workfront que celle que vous avez utilisée dans le module précédent .
+1. Dans le champ **[!UICONTROL Type d’enregistrement]**, sélectionnez **[!UICONTROL événement]**, car le module convertira un événement.
+1. Dans le champ **[!UICONTROL Convertir en]**, sélectionnez **Projet**.
+1. En regard du champ ID de tâche , cliquez sur le bouton (bascule) de mappage pour l’activer.
+
+   Le bouton bascule devient bleu lorsqu’il est activé. Vous pouvez ainsi mapper l’identifiant de tâche du module précédent.
+
+   ![Bouton (bascule) de mappage](assets/new-map-toggle.png)
+1. Cliquez sur le champ **[!UICONTROL ID de tâche]**.
+
+   Un panneau s’ouvre, vous permettant de sélectionner les éléments à utiliser comme identifiant de la tâche à convertir en projet. Étant donné que vous avez activé le mappage, le panneau inclut la sortie de tous les modules précédents. Vous avez sélectionné ID comme sortie du module précédent. Il est donc désormais disponible dans le panneau.
+
+   Ce panneau est appelé panneau de mappage. Pour plus d’informations sur le panneau de mappage, voir [Présentation du mappage](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
+1. Sélectionnez **ID** dans le panneau de mappage.
+
+   Un bloc d’identifiant s’affiche dans le champ d’identifiant. Il indique le numéro du module à partir duquel il est mappé, ainsi que le champ qui est mappé.
+
+   ![Identifiant de carte](assets/new-map-id.png)
+
+1. Cliquez sur le champ **ID du modèle**, commencez à saisir le nom du modèle Workfront que vous souhaitez utiliser pour ce projet, puis sélectionnez-le lorsqu’il apparaît dans la liste.
+1. Cliquez sur **[!UICONTROL OK]** pour enregistrer la configuration du module.
+
+1. Cliquez avec le bouton droit sur le module, cliquez sur **[!UICONTROL Renommer]**, puis entrez un nom décrivant ce que vous souhaitez que le module fasse (par exemple, « Convertir en projet »), puis cliquez sur **[!UICONTROL OK]**.
+
+1. Continuez pour [Tester le scénario](#test-the-scenario).
+
+### Tester le scénario
+
+Avant d’activer votre scénario, il est important de le tester en l’exécutant au moins une fois et en visualisant les résultats. Cela vous permet de comprendre comment les données circulent dans le scénario et de détecter les éventuelles erreurs.
+
+Dans ce scénario, un test réussi permet de localiser la requête et de la convertir en projet.
+
+1. Cliquez sur l’icône **[!UICONTROL Exécuter une fois]**.
+
+   L’exécution unique est réservée aux icônes dans la nouvelle expérience. Pointez sur l’icône pour afficher l’info-bulle **[!UICONTROL Exécuter une fois]**.
+
+   ![bouton exécuter le scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Une fois l’exécution du scénario terminée, cliquez sur la bulle située au-dessus du premier module pour afficher des informations sur le lot de données traité par le module, y compris les données extraites de la requête renvoyée par le module.
+
+1. Cliquez sur la bulle de l’inspecteur d’exécution au-dessus du deuxième module pour afficher l’entrée (la requête) et la sortie (le projet converti).
+
+   ![Bulle de l’inspecteur d’exécution](assets/new-execution-bubble.png)
+
+   Pour plus d&#39;informations sur les données des bulles d&#39;inspection, voir :
+
+   * Pour obtenir des informations générales, voir [Flux d’exécution de scénario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * Pour plus d’informations sur les lots traités, voir [Exécution de scénario, cycles et phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+
+1. Cliquez sur l’icône **Enregistrer** ![Icône Enregistrer](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) dans la zone Contrôles pour enregistrer votre progression dans le scénario.
+
+   >[!IMPORTANT]
+   >
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+
+>[!TIP]
+>
+>Nous vous recommandons d’ajouter des notes sur chaque module, ce qui est facultatif mais utile.
+>
+>1. Cliquez avec le bouton droit de la souris sur un module, puis sélectionnez **[!UICONTROL Ajouter une note]**.
+>1. Dans la note qui s’affiche, saisissez un aperçu du module.
+>
+>    Vous pouvez ajouter plusieurs notes pour un module.
+>
+>1. Fermez la zone **[!UICONTROL Notes]**.
+>
+>     Après avoir ajouté une note à un scénario, un point s’affiche sur l’icône **[!UICONTROL Notes]** ![icône Notes avec un point](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) dans la zone Contrôles.
+>
+>1. Cliquez sur l’icône **[!UICONTROL Notes]** ![Icône Notes avec un point](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) pour afficher vos notes. Lorsque les notes sont ouvertes, un cercle s&#39;affiche autour de l&#39;icône Notes.
+>
+
+### Activer le scénario
+
+La dernière étape de la création d’un scénario consiste à l’activer.
+
+Ce scénario recherchant un problème spécifique, il n’est pas nécessaire de l’activer. L’activation d’un scénario entraîne son exécution selon un planning ou lorsqu’une action spécifique se produit dans une application. Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
+
+Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+
+Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+
+## Création d’un scénario d’exercice dans l’expérience classique
+
+* [Commencer à créer le scénario (Classique)](#begin-creating-the-scenario-classic)
+* [Ajouter et configurer le premier module (Classic)](#add-and-configure-the-first-module-classic)
+* [Ajouter et configurer le deuxième module (Classic)](#add-and-configure-the-second-module-classic)
+* [Tester le scénario (classique)](#test-the-scenario-classic)
+* [Activer le scénario (Classique)](#activate-the-scenario-classic)
+
+### Commencer à créer le scénario (Classique)
 
 1. Dans la zone **Scénarios**, cliquez sur **Créer un scénario**.
 
@@ -65,9 +236,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
    L’éditeur de scénarios s’affiche, contenant un module vide au centre.
 
 1. Sélectionnez le nom de l’espace réservé **[!UICONTROL Nouveau scénario]** dans le coin supérieur gauche, puis saisissez un nom.
-1. Continuez avec [&#x200B; Ajouter et configurer le premier module &#x200B;](#add-and-configure-the-first-module).
+1. Continuez avec [&#x200B; Ajouter et configurer le premier module (Classic)](#add-and-configure-the-first-module-classic).
 
-### Ajouter et configurer le premier module
+### Ajouter et configurer le premier module (Classic)
 
 1. Cliquez sur le module vide pour choisir l’application à partir de laquelle vous allez sélectionner un module.
 
@@ -115,9 +286,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    ![&#x200B; Module renommé &#x200B;](assets/module-renamed-wf.png)
 
-1. Continuez avec [Ajouter et configurer le deuxième module](#add-and-configure-the-second-module).
+1. Continuez avec [&#x200B; Ajouter et configurer le deuxième module (Classic)](#add-and-configure-the-second-module-classic).
 
-## Ajouter et configurer le deuxième module
+### Ajouter et configurer le deuxième module (Classic)
 
 1. Pointez sur le cercle partiel à droite du du module, puis cliquez sur **[!UICONTROL Ajouter un autre module]**.
 1. Sélectionnez Adobe Workfront dans la liste des applications, puis choisissez le module **[!UICONTROL Convertir l’objet]**.
@@ -145,9 +316,9 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 1. Cliquez avec le bouton droit sur le module, cliquez sur **[!UICONTROL Renommer]**, puis entrez un nom décrivant ce que vous souhaitez que le module fasse (par exemple, « Convertir en projet »), puis cliquez sur **[!UICONTROL OK]**.
 
-1. Continuez pour [Tester le scénario](#test-the-scenario).
+1. Continuez pour [Tester le scénario (classique)](#test-the-scenario-classic).
 
-## Tester le scénario
+### Tester le scénario (classique)
 
 Avant d’activer votre scénario, il est important de le tester en l’exécutant au moins une fois et en visualisant les résultats. Cela vous permet de comprendre comment les données circulent dans le scénario et de détecter les éventuelles erreurs.
 
@@ -185,7 +356,7 @@ Dans ce scénario, un test réussi permet de localiser la requête et de la conv
 >1. Cliquez sur l’icône **[!UICONTROL Notes]** ![Icône Notes avec un point](assets/notes-icon-w-dot.png) pour afficher vos notes. Lorsque les notes sont ouvertes, un cercle s&#39;affiche autour de l&#39;icône Notes.
 >
 
-## Activer le scénario
+### Activer le scénario (Classique)
 
 La dernière étape de la création d’un scénario consiste à l’activer.
 

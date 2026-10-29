@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 45%
+source-wordcount: '942'
+ht-degree: 27%
 ---
 # Ajouter un filtre à un scénario
 
@@ -26,6 +26,10 @@ Vous pouvez ajouter un filtre entre deux modules et vérifier si les bundles re�
 
 * Si tel est le cas, les bundles sont transmis au module suivant dans le scénario.
 * Dans le cas contraire, le traitement des bundles s’arrête.
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -60,7 +64,37 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un filtre entre eux.
 
-## Ajoutez un filtre entre deux modules :
+## Ajouter un filtre entre deux modules
+
+* [Ajouter un filtre entre deux modules dans la nouvelle expérience (Recommandé)](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [Ajoutez un filtre entre deux modules dans l’expérience classique](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### Ajouter un filtre entre deux modules dans la nouvelle expérience (Recommandé)
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
+1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez avec le bouton gauche de la souris sur le chemin d’accès entre les modules auxquels vous souhaitez ajouter un filtre.
+
+   La fenêtre **[!UICONTROL Configurer un filtre]** s’ouvre directement. (Cliquez avec le bouton droit sur le chemin d’accès pour ouvrir un autre menu.)
+
+1. Dans la zone qui s’affiche, saisissez un **[!UICONTROL Libellé]** pour le filtre.
+1. Définissez le filtre **[!UICONTROL Condition]**.
+
+   Saisissez le champ selon lequel vous souhaitez filtrer dans le premier champ, l’opérateur et (si nécessaire) la valeur avec laquelle vous souhaitez comparer le champ.
+
+   >[!TIP]
+   >
+   >Vous pouvez saisir des valeurs dans les champs de filtre à partir du panneau de mappage
+   >Pour plus d’informations sur le mappage, voir [Mapper des informations d’un module à un autre](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+   Par exemple, si vous souhaitez que le filtre transmette les fichiers dans Adobe Workfront se terminant par XML, entrez **[!UICONTROL Nom du fichier]** dans la première zone et .**[!UICONTROL xml]** dans la seconde zone. Dans le menu déroulant qui sépare les champs, vous pouvez sélectionner **[!UICONTROL Se termine par (non sensible à la casse)]**. Ce filtre s’applique aux bundles entrants du premier module (Workfront). Seuls les lots contenant des fichiers XML sont transmis au module suivant.
+
+   ![Configurer un filtre](assets/new-filter-setup-xml-example.png)
+
+1. Cliquez sur **[!DNL OK]**.
+
+### Ajoutez un filtre entre deux modules dans l’expérience classique
 
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
@@ -86,6 +120,22 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
 
 Vous pouvez copier un filtre existant et le coller ailleurs dans le scénario.
 
+* [Copier un filtre dans la nouvelle expérience (Recommandé)](#copy-a-filter-in-the-new-experience-recommended)
+* [Copier un filtre dans l’expérience classique](#copy-a-filter-in-the-classic-experience)
+
+### Copier un filtre dans la nouvelle expérience (Recommandé)
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
+1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez avec le bouton droit sur le chemin d’accès entre les modules où se trouve le filtre.
+1. Sélectionnez **Copier le filtre**.
+1. Cliquez avec le bouton droit sur le chemin d’accès entre les modules où vous souhaitez coller le filtre.
+1. Sélectionnez **Coller le filtre**.
+1. (Facultatif) Pour ajuster le filtre, cliquez sur l’icône ou le libellé du filtre et saisissez les valeurs comme décrit dans [Ajouter un filtre entre deux modules dans la nouvelle expérience](#add-a-filter-between-two-modules-in-the-new-experience-recommended) dans cet article.
+
+### Copier un filtre dans l’expérience classique
+
 1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
 1. Sélectionnez le scénario dans lequel vous souhaitez ajouter un filtre.
 1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
@@ -93,7 +143,7 @@ Vous pouvez copier un filtre existant et le coller ailleurs dans le scénario.
 1. Sélectionnez **Copier le filtre**.
 1. Cliquez avec le bouton droit sur les points de connexion entre les modules où vous souhaitez coller le filtre.
 1. Sélectionnez **Coller** filtrer
-1. (Facultatif) Pour ajuster le filtre, cliquez sur l’icône ou le libellé du filtre et saisissez les valeurs comme décrit dans [Ajouter un filtre entre deux modules](#add-a-filter-between-two-modules) dans cet article.
+1. (Facultatif) Pour ajuster le filtre, cliquez sur l’icône ou le libellé du filtre et saisissez les valeurs comme décrit dans [Ajouter un filtre entre deux modules dans l’expérience classique](#add-a-filter-between-two-modules-in-the-classic-experience) dans cet article.
 
 
 

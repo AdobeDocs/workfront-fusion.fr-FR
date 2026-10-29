@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 35%
+source-wordcount: '446'
+ht-degree: 31%
 ---
 # Gérer les connexions
 
@@ -71,6 +71,10 @@ Vous pouvez gérer toutes les connexions à partir de la zone Connexions .
 1. (Facultatif) Pour réautoriser une connexion, cliquez sur **Réautoriser** dans la ligne correspondant à cette connexion.
 1. (Facultatif) Pour vérifier que la connexion au service fonctionnait, cliquez sur **Vérifier** dans la ligne correspondant à cette connexion.
 1. (Facultatif) Pour supprimer une connexion, cliquez sur **Supprimer** dans la ligne correspondant à cette connexion, puis cliquez sur **Vraiment ?**.
+
+>[!NOTE]
+>
+>Pour utiliser une autre connexion dans les modules d’un scénario, vous pouvez copier une connexion vers un ou tous les modules compatibles à partir de la même application dans l’éditeur de scénarios. Pour plus d’informations, voir [Rechercher et remplacer des variables, des sources et des connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 
 ## Renouveler une connexion
 

@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Vous pouvez redéclencher l’exécution d’un scénario à partir du diagramme
 1. Recherchez l’exécution à redéclencher dans la liste Exécutions sur le côté droit de la page.
 1. Cliquez sur **Redéclencher** pour ce scénario.
 
-![Redéclencher à partir du diagramme](assets/retrigger-from-diagram.png)
+![Redéclencher à partir du diagramme](assets/new-retrigger-from-diagram.png)
 
 ### Redéclencher une exécution à partir de l’historique des scénarios
 
@@ -95,7 +95,7 @@ Vous pouvez redéclencher l’exécution d’un scénario à partir du diagramme
 1. Recherchez l’exécution à redéclencher. Vous pouvez utiliser la recherche en texte intégral pour la localiser si nécessaire.
 1. Cliquez sur **Redéclencher** pour ce scénario.
 
-![Redéclencher à partir de l’historique](assets/retrigger-from-history.png)
+![Redéclencher à partir de l’historique](assets/new-retrigger-from-history.png)
 
 ### Redéclencher un scénario à partir de la page d’exécution du scénario
 
@@ -108,7 +108,7 @@ Vous pouvez redéclencher l’exécution d’un scénario à partir du diagramme
 1. Sur la page d’exécution, cliquez sur **Redéclencher**.
 
 
-![Redéclencher à partir de l’exécution](assets/retrigger-from-execution.png)
+![Redéclencher à partir de l’exécution](assets/new-retrigger-from-execution.png)
 
 
 

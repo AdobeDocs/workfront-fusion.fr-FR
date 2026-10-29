@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 66%
+source-wordcount: '580'
+ht-degree: 68%
 ---
 # Afficher et résoudre les exécutions incomplètes
 
@@ -26,9 +26,11 @@ Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécutions de scén
 >
 >Pour plus d’informations sur les paramètres de scénario, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Prévisualisation mise en surbrillance pour l’article complet {#highlighted-preview-article-level}
+Aperçu mis en surbrillance pour la {#highlighted-preview-article-level} complète de l’article
 
-<span class="preview">Les informations de cette page font référence à des fonctionnalités qui ne sont pas encore disponibles de façon générale. Il est disponible uniquement dans l’environnement de sandbox de prévisualisation.</span>## Afficher les exécutions incomplètes
+<span class="preview">Les informations de cette page font référence à des fonctionnalités qui ne sont pas encore disponibles de façon générale. Cette option n’est disponible que dans l’environnement de prévisualisation de sandbox.</span>
+
+## Afficher les exécutions incomplètes
 
 Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les bundles pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL &#x200B; Exécutions incomplètes &#x200B;] de la page des détails du scénario.
 
@@ -61,7 +63,7 @@ Lorsqu’une nouvelle exécution incomplète est stockée, vous pouvez la résou
 1. Ouvrez le journal du module, où toutes les opérations du module sont affichées.
 1. Recherchez l’opération ayant échoué et cliquez sur **[!UICONTROL Résoudre]** :
 
-   ![bouton Résoudre](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ Si vous souhaitez consulter le journal de toutes les opérations du module avant
 1. Ouvrez le journal du module, où toutes les opérations du module sont affichées.
 1. Recherchez l’opération ayant échoué et cliquez sur **[!UICONTROL Résoudre]** :
 
-   ![bouton Résoudre](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## Options relatives aux exécutions incomplètes
 

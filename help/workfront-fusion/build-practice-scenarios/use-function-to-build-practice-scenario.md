@@ -10,15 +10,15 @@ exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
 TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 607
-ht-degree: 20%
-
+source-wordcount: '1116'
+ht-degree: 12%
 ---
-
 # Utiliser une fonction pour mettre à jour un projet dans un scénario de base
 
 La mise à jour d’un élément de travail Workfront est un cas d’utilisation courant pour Workfront Fusion. Dans cet exemple, vous allez utiliser une fonction pour modifier le nom d’un projet en majuscules.
@@ -26,6 +26,10 @@ La mise à jour d’un élément de travail Workfront est un cas d’utilisation
 Fusion comprend de nombreux types de fonctions qui vous permettent de transformer et d’exécuter une logique conditionnelle sur vos données. Pour plus d’informations sur l’utilisation des fonctions, voir [Présentation des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 Cet exemple montre comment modifier le scénario créé dans [Créer un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -60,16 +64,20 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) avant de suivre cette procédure.
 
-## Utiliser une fonction pour mettre à jour un projet
+## Utiliser une fonction pour mettre à jour un projet dans la nouvelle expérience (recommandé)
 
-### Ajoutez le module Mettre à jour l’enregistrement à votre scénario
+* [Ajouter le module Mettre à jour un enregistrement à votre scénario](#add-the-update-a-record-module-to-your-scenario)
+* [Mappez la fonction pour la mise à jour du nom.](#map-the-function-for-the-name-update)
+* [Tester et activer](#test-and-activate)
+
+### Ajouter le module Mettre à jour un enregistrement à votre scénario
 
 1. Ouvrez le scénario dans l’éditeur de scénarios.
-1. Pointez sur le cercle partiel à droite du du deuxième module, puis cliquez sur **[!UICONTROL Ajouter un autre module]**.
-1. Sélectionnez Adobe Workfront dans la liste des applications, puis choisissez le module **[!UICONTROL Mettre à jour l&#39;enregistrement]**.
+1. Pointez sur le bord droit du deuxième module, puis cliquez sur **[!UICONTROL Ajouter un autre module]** lorsqu’il s’affiche.
+1. Sélectionnez Adobe Workfront dans la liste des applications, puis choisissez le module **[!UICONTROL Mettre à jour un enregistrement]**.
 1. Dans le champ ID , sélectionnez le bloc d’ID situé sous le module Convertir l’objet . Il s’agit de l’identifiant du projet qui a été généré par ce module.
 
-   ![ID de l’objet Convert](assets/id-convert-object.png)
+   ![Identifiant mappé dans le module Mettre à jour un enregistrement](assets/new-mapped-update-record.png)
 
 1. Dans le champ Type d’enregistrement , sélectionnez Projet, car l’objet à mettre à jour est un projet.
 1. Dans la zone Sélectionner les champs à mapper, sélectionnez Nom.
@@ -78,6 +86,72 @@ Vous devez créer le scénario décrit dans [Créer un scénario de base](/help/
 1. Passez à [&#x200B; Mapper la fonction pour la mise à jour du nom &#x200B;](#map-the-function-for-the-name-update).
 
 ### Mappez la fonction pour la mise à jour du nom.
+
+Lorsque ce scénario convertit une demande en projet, le nom du projet est identique à celui de la demande. La fonction ici prend ce nom et met en majuscule toutes les lettres qu&#39;il contient.
+
+1. Cliquez sur le champ **Nom**.
+
+   Le panneau de mappage s’ouvre.
+1. Dans le panneau de mappage, cliquez sur l’icône **Texte et fonctions binaires**. ![Icône Fonctions de texte](assets/new-text-binary-function.png)
+1. Sélectionnez la fonction **upper**.
+
+   La fonction apparaît dans le champ Nom, y compris la mise en forme de l’entrée attendue.
+
+   L’entrée de cet exemple est le nom de l’événement à partir duquel le projet a été converti.
+
+1. Déplacez le curseur entre les parenthèses, car c&#39;est là que va se trouver l&#39;entrée.
+1. Dans le panneau de mappage, cliquez sur l’icône **Sortie du module**. ![&#x200B; Icône de sortie du module &#x200B;](assets/new-module-output-icon.png)
+1. Sélectionnez le bloc de nom qui a été généré par votre premier module.
+
+   Le bloc de nom apparaît dans la fonction .
+
+   ![Bloc de nom dans la fonction](assets/new-mapped-name-block.png)
+
+1. Cliquez sur **OK** pour enregistrer les paramètres du module.
+
+### Tester et activer
+
+1. Testez le scénario en cliquant sur l’icône **[!UICONTROL Exécuter une fois]**.
+
+   L’exécution unique est réservée aux icônes dans la nouvelle expérience. Pointez sur l’icône pour afficher l’info-bulle **[!UICONTROL Exécuter une fois]**.
+
+   ![bouton exécuter le scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examinez la sortie pour vous assurer que le scénario s’est exécuté comme prévu.
+1. Lorsque vous êtes convaincu que le scénario fonctionne comme prévu, cliquez sur le bouton (bascule) **Planification** pour **Activé**.
+
+   Le scénario est alors activé. Les scénarios actifs s’exécutent selon le planning défini dans le module de déclenchement.
+
+   ![Basculement de la planification](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Cliquez sur l’icône **Enregistrer** ![Icône Enregistrer](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) dans la zone Contrôles pour enregistrer votre progression dans le scénario.
+
+   >[!IMPORTANT]
+   >
+   >Sauvegardez souvent lorsque vous affinez et testez un scénario. Vous devrez peut-être créer un nouveau problème dans votre compte Workfront pour déclencher le scénario.
+
+## Utilisation d’une fonction pour mettre à jour un projet dans l’expérience classique
+
+* [Ajoutez le module Mettre à jour un enregistrement à votre scénario (Classique)](#add-the-update-a-record-module-to-your-scenario-classic)
+* [Mappez la fonction pour la mise à jour du nom (classique).](#map-the-function-for-the-name-update-classic)
+* [Tester et activer (Classique)](#test-and-activate-classic)
+
+### Ajoutez le module Mettre à jour un enregistrement à votre scénario (Classique)
+
+1. Ouvrez le scénario dans l’éditeur de scénarios.
+1. Pointez sur le cercle partiel à droite du du deuxième module, puis cliquez sur **[!UICONTROL Ajouter un autre module]**.
+1. Sélectionnez Adobe Workfront dans la liste des applications, puis choisissez le module **[!UICONTROL Mettre à jour un enregistrement]**.
+1. Dans le champ ID , sélectionnez le bloc d’ID situé sous le module Convertir l’objet . Il s’agit de l’identifiant du projet qui a été généré par ce module.
+
+   ![ID de l’objet Convert](assets/id-convert-object.png)
+
+1. Dans le champ Type d’enregistrement , sélectionnez Projet, car l’objet à mettre à jour est un projet.
+1. Dans la zone Sélectionner les champs à mapper, sélectionnez Nom.
+
+   Un champ Nom s’ouvre.
+1. Passez à [&#x200B; Mapper la fonction pour la mise à jour du nom (Classique)](#map-the-function-for-the-name-update-classic).
+
+### Mappez la fonction pour la mise à jour du nom (classique).
 
 Lorsque ce scénario convertit une demande en projet, le nom du projet est identique à celui de la demande. La fonction ici prend ce nom et met en majuscule toutes les lettres qu&#39;il contient.
 
@@ -101,7 +175,7 @@ Lorsque ce scénario convertit une demande en projet, le nom du projet est ident
 
 1. Cliquez sur **OK** pour enregistrer les paramètres du module.
 
-### Tester et activer
+### Tester et activer (Classique)
 
 1. Testez le scénario en cliquant sur **Exécuter une fois** dans le coin inférieur gauche de l’écran.
 1. Examinez la sortie pour vous assurer que le scénario s’est exécuté comme prévu.

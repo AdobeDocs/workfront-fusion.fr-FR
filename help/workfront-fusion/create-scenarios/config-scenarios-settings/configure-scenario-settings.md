@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 46%
+source-wordcount: '1757'
+ht-degree: 36%
 ---
 # Configurer les paramètres de scénario
 
 Vous pouvez configurer des paramètres spécifiques pour les scénarios dans le panneau Paramètres du scénario .
+
+>[!NOTE]
+>
+>Workfront Fusion effectue la transition de l’éditeur de scénarios vers une nouvelle expérience . Au cours de cette transition, les expériences classique et nouvelle sont disponibles et vous pouvez basculer entre elles à tout moment. Nous vous recommandons d’utiliser la nouvelle expérience . Pour plus d’informations, voir [Expériences nouvelles et classiques](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) dans l’éditeur de scénarios d’article.
 
 ## Conditions d’accès
 
@@ -51,6 +55,23 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 +++
 
 ## Ouvrir les paramètres du scénario
+
+* [Ouvrir les paramètres du scénario dans la nouvelle expérience (recommandé)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Ouvrez les paramètres du scénario dans l’expérience classique.](#open-the-scenario-settings-in-the-classic-experience)
+
+### Ouvrir les paramètres du scénario dans la nouvelle expérience (recommandé)
+
+1. Cliquez sur **Scénarios** dans le panneau de gauche.
+1. Recherchez le scénario souhaité, puis cliquez sur son nom.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez sur l’icône **Paramètres du scénario** ![Icône Paramètres du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) dans la zone Contrôles.
+
+   Vous devrez peut-être d&#39;abord cliquer sur l&#39;icône des trois points dans la zone Contrôles pour l&#39;afficher.
+
+   Dans le panneau [!UICONTROL Paramètres du scénario] qui s’affiche, vous pouvez configurer différents paramètres avancés pour le scénario.
+1. Activez ou désactivez les paramètres du scénario, au besoin. Voir [Options des paramètres du scénario](#scenario-settings-options) ci-dessous.
+
+### Ouvrez les paramètres du scénario dans l’expérience classique.
 
 1. Cliquez sur **Scénarios** dans le panneau de gauche.
 1. Recherchez le scénario souhaité, puis cliquez sur son nom.
@@ -150,13 +171,13 @@ La définition de davantage de cycles peut s’avérer utile lorsque vous souhai
 
 **Exemples :** Workfront > [!UICONTROL Observer l’enregistrement] recherche les nouveaux problèmes et Workfront >[!UICONTROL Convertir l’objet] convertit la nouvelle demande en projet et lui affecte le modèle approprié.
 
-![Paramètres du scénario](assets/scenario-settings-ex-1-350x157.png)
+![Paramètres du scénario](assets/new-scenario-settings-ex-1.png)
 
 Un paramètre [!UICONTROL cycles supplémentaires] est appliqué uniquement lorsque vous planifiez l’exécution de votre scénario. Lorsque vous utilisez le bouton [!UICONTROL Exécuter une seule fois], les paramètres du cycle sont pris en compte.
 
 #### Le nombre maximal de cycles est défini sur 1 (valeur par défaut).
 
-![Nombre maximal de cycles](assets/max-number-cycles-1-350x201.png)
+![Nombre maximal de cycles](assets/new-max-number-cycles.png)
 
 Le nombre maximal de cycles dans le module Workfront > Enregistrements de contrôle est défini sur `10`.
 Si 100 requêtes sont envoyées à Workfront et que le champ Nombre maximal de cycles est défini sur 10, 90 fichiers ne sont pas traités après l’exécution d’un scénario. Les 10 fichiers suivants sont traités lors de la prochaine exécution planifiée du scénario.
@@ -169,9 +190,7 @@ Si 100 fichiers sont ajoutés au dossier Dropbox et que l’option Nombre maxima
 
 Tous les fichiers sont traités dans un scénario d’exécution.
 
-Vous pouvez voir les cycles déjà exécutés dans les détails du scénario :
-
-![Détails du scénario](assets/scenario-detail-350x207.png)
+Les cycles déjà exécutés s’affichent dans la zone Historique de la page Détails du scénario.
 
 Pour plus d’informations sur cette page, voir [Détails du scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -192,6 +211,34 @@ Pour plus d’informations sur les erreurs, voir [Types d’erreur](/help/workfr
 Pour définir un remplacement au niveau du scénario pour un type de notification, cochez ou décochez la case en regard du type de notification.
 
 Pour plus d’informations sur les paramètres de notification, y compris les remplacements au niveau du scénario, voir [Définir des options de notification](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Journaux de débogage temporaires
+
+>[!NOTE]
+>
+>* Les journaux de débogage temporaires ne sont disponibles que dans le nouveau concepteur de scénario et uniquement si la fonctionnalité est activée pour votre organisation.
+>* La modification du paramètre nécessite l’autorisation de modifier le scénario.
+
+Les détails des requêtes et des réponses ne sont pas conservés pour chaque exécution planifiée ou déclenchée, car ils nécessitent un stockage important. Exécuter une fois les conserve toujours.
+
+Pour collecter les détails de requête et de réponse pour les exécutions régulières du scénario, choisissez la durée pendant laquelle les collecter :
+
+* Pour la prochaine heure
+* Pour le jour suivant
+* Pour la prochaine exécution
+* Pour les 10 exécutions suivantes
+
+La modification s’applique immédiatement. Il n’est pas nécessaire d’enregistrer le scénario.
+
+Lorsque les journaux de débogage temporaires sont actifs, le paramètre indique le moment où ils restent actifs jusqu’au, ou le nombre d’exécutions restantes. Pour arrêter la collecte des détails de la requête et de la réponse avant cela, cliquez sur **Désactiver**.
+
+Les journaux de débogage s’éteignent automatiquement lorsque le temps ou le nombre d’exécutions est écoulé. Chaque exécution compte, y compris les exécutions planifiées qui ne trouvent aucune nouvelle donnée.
+
+>[!NOTE]
+>
+>Les journaux de débogage temporaires ne sont disponibles que dans la nouvelle expérience et uniquement si la fonctionnalité est activée pour votre organisation. Pour modifier ce paramètre, vous devez disposer des autorisations nécessaires pour modifier le scénario.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Pool de salariés
 
