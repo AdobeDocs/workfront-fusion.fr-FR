@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
-ht-degree: 93%
+source-wordcount: '7804'
+ht-degree: 92%
 ---
 # Modules Adobe Workfront
 
@@ -312,6 +312,13 @@ Une fois le webhook créé, vous pouvez afficher l’adresse du point d’entré
 Pour plus d’informations, consultez la section [Exemples de payloads d’événement](https://experienceleague.adobe.com/fr/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) dans l’article API d’abonnement aux événements dans la documentation de Workfront.
 
 Consultez la liste des types d’objets Workfront pour lesquels vous pouvez utiliser ce module dans [Types d’objets Workfront disponibles pour chaque module Workfront](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+>La détection des doublons s’applique aux notifications qui incluent un en-tête `x-event-id` et identifient leur `User-Agent` comme `Workfront Event Subscription`.
+>
+>Lorsque Fusion reçoit une notification éligible, elle enregistre l’identifiant d’événement pour ce webhook pendant **une heure**. Si une autre notification avec le même ID d’événement arrive au même webhook pendant cette période, Fusion l’acquitte sans la transférer pour le traitement du scénario.
+>La détection des doublons est spécifique à chaque webhook. Un même événement peut être traité indépendamment par différents webhooks. La réception d’un doublon ne relance pas la période d’une heure.
 
 #### [!UICONTROL Champ de contrôle]
 
