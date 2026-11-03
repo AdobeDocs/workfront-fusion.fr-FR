@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 849e1bd273945528faba033d8d77a97990e1cda1
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 31%
+source-wordcount: '476'
+ht-degree: 29%
 ---
 # Gérer les connexions
 
@@ -60,21 +60,24 @@ Vous pouvez gérer toutes les connexions à partir de la zone Connexions .
 >Pour sélectionner une nouvelle équipe, cliquez sur la flèche déroulante en regard du nom de l’équipe, en haut de la page. Sélectionnez une nouvelle équipe dans la liste.
 
 1. Pour ouvrir la zone Connexions, cliquez sur Connexions ![icône Connexions](assets/connections-icon.png) dans le volet de navigation de gauche.
+1. (Facultatif) Pour renommer ou modifier le nom d’une connexion, cliquez sur le nom et effectuez la modification.
+1. Pour modifier les métadonnées d’une connexion, cliquez sur le champ de métadonnées et apportez la modification.
+
+   Les métadonnées sont un champ de texte ou d’e-mail basé sur le connecteur. Vous pouvez utiliser ce champ pour inclure des informations sur la connexion, ce qui s’avère utile lorsque vous disposez de plusieurs connexions pour le même connecteur.
+1. (Facultatif) Pour afficher les autorisations accordées à Workfront Fusion pour une connexion, cliquez sur l’icône Affichage ![Afficher les autorisations de connexion](assets/view-connection-permissions.png) pour cette connexion.
 1. (Facultatif) Pour spécifier l’environnement ou le type, cliquez sur les listes déroulantes Environnement et Type et sélectionnez une option.
 
    >[!NOTE]
    >
    >Les paramètres Environnement et Type servent uniquement à identifier les connexions. Ils n’ont aucun impact sur les fonctionnalités de la connexion.
 
-1. (Facultatif) Pour afficher les autorisations accordées à Workfront Fusion pour une connexion, cliquez sur l’icône Affichage ![Afficher les autorisations de connexion](assets/view-connection-permissions.png) pour cette connexion.
-1. (Facultatif) Pour renommer ou modifier le nom d’une connexion, cliquez sur le nom et effectuez la modification.
-1. (Facultatif) Pour réautoriser une connexion, cliquez sur **Réautoriser** dans la ligne correspondant à cette connexion.
-1. (Facultatif) Pour vérifier que la connexion au service fonctionnait, cliquez sur **Vérifier** dans la ligne correspondant à cette connexion.
-1. (Facultatif) Pour supprimer une connexion, cliquez sur **Supprimer** dans la ligne correspondant à cette connexion, puis cliquez sur **Vraiment ?**.
+1. (Facultatif) Pour réautoriser une connexion, cliquez sur la connexion, puis cliquez sur **Réautoriser** dans la bannière située en bas de l’écran.
 
->[!NOTE]
->
->Pour utiliser une autre connexion dans les modules d’un scénario, vous pouvez copier une connexion vers un ou tous les modules compatibles à partir de la même application dans l’éditeur de scénarios. Pour plus d’informations, voir [Rechercher et remplacer des variables, des sources et des connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+   >[!NOTE]
+   >
+   >Autoriser à nouveau réinitialise les métadonnées à la valeur par défaut.
+1. (Facultatif) Pour vérifier que la connexion au service fonctionnait, cliquez sur la connexion, puis sur **Vérifier** dans la bannière située en bas de l’écran.
+1. (Facultatif) Pour supprimer une connexion, cliquez sur celle-ci, puis cliquez sur **Supprimer** dans la bannière située en bas de l’écran.
 
 ## Renouveler une connexion
 

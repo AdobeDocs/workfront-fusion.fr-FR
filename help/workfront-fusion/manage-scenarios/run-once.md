@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -59,6 +59,4 @@ La fonction Exécuter une fois se trouve dans l’éditeur de scénarios.
    * **Fournir une entrée manuelle** : vous devez fournir la payload webhook pour l’entrée du scénario. Elle doit être au format JSON.
 
      Pour fournir l’entrée, saisissez le texte dans la zone **Payload du Webhook** et cliquez sur **Exécuter**.
-
-
 
