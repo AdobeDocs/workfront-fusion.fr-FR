@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 16%
+source-wordcount: '953'
+ht-degree: 12%
 ---
 # Afficher l’exécution d’un scénario spécifique
 
 Vous pouvez afficher les détails d’une exécution de scénario spécifique, y compris le filtrage et la recherche d’événements de scénario.
+
+Vous pouvez également afficher les détails d’exécution du scénario pour chaque module et filtre.
 
 ## Conditions d’accès
 
@@ -74,9 +76,13 @@ Vous pouvez afficher une exécution à partir de l’historique des scénarios d
 
 1. Pour afficher la sortie d’un module, cliquez sur la bulle des détails de sortie près du module. Le nombre dans la bulle représente le nombre de lots générés par le module.
 
+   Pour afficher des lots spécifiques dans la sortie du module, vous pouvez utiliser la barre de recherche du panneau de sortie ou filtrer les lots ayant un statut spécifique (tel que Succès, Avertissement ou Échec).
+
    ![Bulle de sortie près d&#39;un module](assets/new-output-bubble.png)
 
 1. Pour afficher les lots qui ont passé par un filtre, cliquez sur le filtre. Le nombre près du filtre représente le nombre de lots qui ont passé par le filtre.
+
+   Pour afficher des lots spécifiques gérés par le filtre, vous pouvez utiliser la barre de recherche du filtre ou filtrer les lots ayant un statut spécifique (tel que Réussite ou Échec).
 1. Pour rechercher un module ou un événement spécifique dans le panneau d’exécution, saisissez le terme de recherche dans la zone **Rechercher des événements d’exécution**. Les résultats s’affichent au fur et à mesure que vous tapez.
 1. Pour limiter les résultats de recherche du panneau d’exécution par statut, tel que Succès ou Avertissement, cliquez sur le menu déroulant **Filtre de statut** et sélectionnez le statut.
 
@@ -94,6 +100,23 @@ Vous pouvez afficher une exécution à partir de l’historique des scénarios d
 >
 >Cela peut s’avérer utile lors du débogage de scénarios ou de la copie de la configuration du module.
 
+
+## Examinez la sortie des modules et des filtres
+
+Vous pouvez examiner la sortie du scénario pour voir si le scénario s’est comporté comme prévu.
+
+1. Pour afficher la sortie d’un module, cliquez sur la bulle des détails de sortie près du module. Le nombre dans la bulle représente le nombre de lots générés par le module.
+
+   Pour afficher des lots spécifiques dans la sortie du module, vous pouvez utiliser la barre de recherche du panneau de sortie ou filtrer les lots ayant un statut spécifique (tel que Succès, Avertissement ou Échec).
+
+   ![Bulle de sortie près d&#39;un module](assets/output-bubble.png)
+
+1. Pour afficher les lots qui ont passé par un filtre, cliquez sur le filtre. Le nombre près du filtre représente le nombre de lots qui ont passé par le filtre.
+
+   Pour afficher des lots spécifiques gérés par le filtre, vous pouvez utiliser la barre de recherche du filtre ou filtrer les lots ayant un statut spécifique (tel que Réussite ou Échec).
+1. Pour rechercher un module ou un événement spécifique dans le panneau d’exécution, saisissez le terme de recherche dans la zone **Rechercher des événements d’exécution**. Les résultats s’affichent au fur et à mesure que vous tapez.
+1. Pour limiter les résultats de recherche du panneau d’exécution par statut, tel que Succès ou Avertissement, cliquez sur le menu déroulant **Filtre de statut** et sélectionnez le statut.
+
 ## Vérifier une exécution dans le nouvel éditeur de scénarios
 
 Dans la nouvelle expérience , lorsque vous ouvrez une exécution à partir de l’historique d’exécution, les commandes proches du côté droit de la zone de travail vous aident à identifier le problème sans modifier le scénario :
@@ -110,4 +133,4 @@ Dans la nouvelle expérience , lorsque vous ouvrez une exécution à partir de l
 
 Le commutateur **Vue compacte** est également disponible dans le coin supérieur droit. Lorsque vous révisez une exécution, la mise en page n’est modifiée que lorsque vous examinez cette exécution. Cela ne modifie pas le paramètre de la vue compacte à modifier et rien n’est enregistré dans le scénario.
 
-Sélectionnez un événement dans l’exécution pour centrer et mettre en surbrillance le module correspondant. Lorsque les détails de l’opération sont disponibles, le panneau de requête et de réponse s’ouvre. Si le panneau ne contient aucune donnée, les détails de la requête et de la réponse n’ont pas été conservés pour cette exécution. Pour les collecter en vue d’exécutions ultérieures, voir [&#x200B; Journaux de débogage temporaires &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
+Sélectionnez un événement dans l’exécution pour centrer et mettre en surbrillance le module correspondant. Lorsque les détails de l’opération sont disponibles, le panneau de requête et de réponse s’ouvre. Si le panneau ne contient aucune donnée, les détails de la requête et de la réponse n’ont pas été conservés pour cette exécution. Pour les collecter en vue d’exécutions ultérieures, voir [ Journaux de débogage temporaires ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
