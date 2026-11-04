@@ -14,12 +14,14 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 73%
+source-wordcount: '2413'
+ht-degree: 72%
 ---
 # Fonctions de date et d’heure
+
+Pour plus d’informations sur l’affichage et la gestion des paramètres de fuseau horaire utilisés par votre profil Fusion, voir [Affichage et gestion des fuseaux horaires](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
 
 ## Variables
 
@@ -948,7 +950,7 @@ Cette formule présente un moyen de calculer la dernière milliseconde du mois p
 
 Si vous avez besoin que le résultat utilise votre paramètre de fuseau horaire, omettez l’argument UTC :
 
-![&#x200B; Omettre UTC &#x200B;](assets/omit-utc-argument-350x45.png)
+![ Omettre UTC ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

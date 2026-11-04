@@ -3,10 +3,10 @@ user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 nudge: true
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
 workflow-type: tm+mt
-source-wordcount: '2797'
-ht-degree: 47%
+source-wordcount: '2821'
+ht-degree: 46%
 ---
 
 # Documentation d’Adobe Workfront Fusion {#using}
@@ -15,6 +15,7 @@ ht-degree: 47%
 * Activité de publication de Fusion {#fusion-release-activity}
   * [Activité de publication d’Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versions de Fusion - 2026 {#fusion-releases-2026}
+    * [Activité de publication de Workfront Fusion : semaine du 2 novembre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
     * [Activité de publication de Workfront Fusion : semaine du 26 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Activité de publication de Workfront Fusion : semaine du 19 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Activité de publication de Workfront Fusion : semaine du 12 octobre 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
@@ -195,7 +196,6 @@ ht-degree: 47%
     * [Vue d’ensemble de l’éditeur de scénarios](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
     * [Vue d’ensemble des détails de scénario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
     * [Basculer entre les organisations ou les équipes](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-    * [Modifier les paramètres de profil](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Configurer et gérer Workfront Fusion {#set-up-and-manage-fusion}
   * [Configurer et gérer Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
   * Vues d’ensemble des licences et des opérations {#licensing-and-operations-overviews}
@@ -203,6 +203,10 @@ ht-degree: 47%
     * [Licences Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
     * [Opérations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
     * [Pools de salariés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+  * Configuration de votre compte Fusion {#configure-fusion-account}
+    * [Configuration de votre compte Fusion : index d’article](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/configure-fusion-account-toc.md)
+    * [Modifier les paramètres de profil](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/change-profile-settings.md)
+    * [Afficher et gérer les fuseaux horaires](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
   * Configurer et gérer des organisations et des équipes {#set-up-and-manage-orgs-and-teams}
     * [Configurer et gérer des organisations et des équipes : index des articles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
     * Configurer des organisations et des équipes {#set-up-orgs-teams-and-users}

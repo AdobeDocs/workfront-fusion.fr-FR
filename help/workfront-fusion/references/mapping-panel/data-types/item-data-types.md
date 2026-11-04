@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 70%
+source-wordcount: '616'
+ht-degree: 66%
 ---
 # Types de données d’élément
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur les types d’éléments que Workfront Fusion per
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Date</p> </td> 
-   <td> <p>Les dates sont saisies au format de date ISO 8601, par exemple : <code>2015-09-18T11:58Z</code>. Vous pouvez modifier le fuseau horaire dans les paramètres de votre profil. </p> <p>Si vous cliquez sur un champ qui nécessite une date, un calendrier contextuel s’affiche dans les paramètres du module. L’heure n’est pas nécessaire pour certains éléments.</p> <p>Les valeurs des éléments de date sont formatées à l’aide du fuseau horaire local et web sélectionné dans votre profil. Vous pouvez afficher la version ISO 8601 de la valeur d’un élément de date en pointant la souris sur l’élément.</p> <p>Note : si la valeur ISO ne s’affiche pas, l’élément est probablement du texte et non pas une date.</p> <p>L’heure est saisie au format <code>hours:minutes:seconds</code>, par exemple : <code>14:03:52</code>.</p> </td> 
+   <td> <p>Les dates sont saisies au format de date ISO 8601, par exemple : <code>2015-09-18T11:58Z</code>. Vous pouvez modifier le fuseau horaire dans les paramètres de votre profil. </p> <p>Si vous cliquez sur un champ qui nécessite une date, un calendrier contextuel s’affiche dans les paramètres du module. L’heure n’est pas nécessaire pour certains éléments.</p> <p>Les valeurs des éléments de date sont formatées à l’aide du fuseau horaire local et web sélectionné dans votre profil. Vous pouvez afficher la version ISO 8601 de la valeur d’un élément de date en pointant la souris sur l’élément.</p> <p>Pour plus d’informations sur l’affichage et la gestion des paramètres de fuseau horaire dans votre profil Fusion, voir [Afficher et gérer les fuseaux horaires](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).</p> <p>Note : si la valeur ISO ne s’affiche pas, l’élément est probablement du texte et non pas une date.</p> <p>L’heure est saisie au format <code>hours:minutes:seconds</code>, par exemple : <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (données binaires)</p> </td> 
