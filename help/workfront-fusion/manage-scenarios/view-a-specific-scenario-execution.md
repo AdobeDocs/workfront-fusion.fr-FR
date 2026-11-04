@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '980'
 ht-degree: 12%
 ---
 # Afficher l’exécution d’un scénario spécifique
@@ -85,6 +85,7 @@ Vous pouvez afficher une exécution à partir de l’historique des scénarios d
    Pour afficher des lots spécifiques gérés par le filtre, vous pouvez utiliser la barre de recherche du filtre ou filtrer les lots ayant un statut spécifique (tel que Réussite ou Échec).
 1. Pour rechercher un module ou un événement spécifique dans le panneau d’exécution, saisissez le terme de recherche dans la zone **Rechercher des événements d’exécution**. Les résultats s’affichent au fur et à mesure que vous tapez.
 1. Pour limiter les résultats de recherche du panneau d’exécution par statut, tel que Succès ou Avertissement, cliquez sur le menu déroulant **Filtre de statut** et sélectionnez le statut.
+1. Pour obtenir une explication en langage clair d’une erreur d’exécution, cliquez sur **[!UICONTROL Expliquer]** sous l’erreur. Pour plus d’informations, voir [Expliquer une erreur de scénario avec l’IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 
