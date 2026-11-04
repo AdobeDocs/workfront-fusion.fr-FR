@@ -3,9 +3,9 @@ user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 nudge: true
-source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2797'
 ht-degree: 47%
 ---
 
@@ -308,6 +308,7 @@ ht-degree: 47%
   * [Gérer les connexions](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [Expliquer une erreur de scénario à l’aide de l’IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
   * [Utilisation du Live Trail pour passer en revue l’exécution d’un scénario](/help/workfront-fusion/manage-scenarios/live-trail.md)
   * [Recherche et remplacement de variables, de sources et de connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [Restaurer une version de scénario](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)

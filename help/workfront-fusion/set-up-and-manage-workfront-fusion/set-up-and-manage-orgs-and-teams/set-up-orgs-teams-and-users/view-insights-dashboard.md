@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 5%
 ---
 # Affichage du tableau de bord des informations pour une organisation
@@ -201,13 +201,14 @@ Utilisez le Journal d’exécution pour rechercher les exécutions de scénario 
    * [!UICONTROL Équipe]
    * [!UICONTROL Scénario]
    * [!UICONTROL Type d’exécution]
-   * [!UICONTROL Période &#x200B;]
+   * [!UICONTROL Période ]
    * [!UICONTROL État de désactivation]
-   * [!UICONTROL &#x200B; Message d’erreur &#x200B;]
+   * [!UICONTROL  Message d’erreur ]
 
    Pour la plupart des filtres, vous pouvez choisir de ne faire correspondre que les valeurs sélectionnées ou tout le reste, à l’exception de celles-ci.
 
 1. Cliquez sur une exécution pour afficher plus de détails sur son erreur.
+1. Pour obtenir une explication en langage clair d’une erreur, pointez sur l’exécution ayant échoué et cliquez sur **[!UICONTROL Expliquer]**. Pour plus d’informations, voir [Expliquer une erreur de scénario avec l’IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. Pour réactiver un ou plusieurs scénarios qui ont été automatiquement désactivés après des échecs répétés, sélectionnez les exécutions, puis cliquez sur **Activer**.
 
    >[!NOTE]

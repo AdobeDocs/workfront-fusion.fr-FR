@@ -13,16 +13,17 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 47%
+source-wordcount: '139'
+ht-degree: 45%
 ---
 # Gérer les scénarios : index d’article
 
 * [Gérer les connexions](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Déboguer un scénario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Expliquer une erreur de scénario à l’aide de l’IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
 * [Utilisation du Live Trail pour passer en revue l’exécution d’un scénario](/help/workfront-fusion/manage-scenarios/live-trail.md)
 * [Recherche et remplacement de variables, de sources et de connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Restaurer une version de scénario](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
