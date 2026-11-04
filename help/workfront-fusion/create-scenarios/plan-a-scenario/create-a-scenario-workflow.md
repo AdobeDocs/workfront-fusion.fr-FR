@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 21%
+source-wordcount: '810'
+ht-degree: 20%
 ---
 # Workflow de création d’un scénario
 
@@ -122,7 +122,7 @@ Le test de votre scénario vous permet de déterminer si celui-ci fonctionne com
 
 Une fois que vous avez activé un scénario, celui-ci s’exécute par défaut toutes les 15 minutes. Vous pouvez modifier cela en définissant quand et à quelle fréquence vous souhaitez qu’il s’exécute.
 
-Pour plus d’informations sur l’activation des scénarios, voir [&#x200B; Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+Pour plus d’informations sur l’activation des scénarios, voir [ Activer ou désactiver un scénario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 Pour plus d’informations sur les planifications, voir [Planification d’un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -185,6 +185,10 @@ Vous pouvez utiliser les raccourcis clavier suivants lors de la création ou de 
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>Le nouvel éditeur de scénario dispose de raccourcis clavier supplémentaires, notamment des raccourcis pour confirmer ou fermer les panneaux, passer d’un module à l’autre et ouvrir une liste de tous les raccourcis. Pour plus d’informations, voir [Raccourcis clavier](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) dans l’éditeur de scénario d’article.
 
 
 

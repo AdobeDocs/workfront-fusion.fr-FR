@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '2241'
 ht-degree: 68%
@@ -238,7 +238,7 @@ Ce module d’action crée un dossier à l’emplacement spécifié.
 
 >[!NOTE]
 >
->Si le dossier existe déjà, le module renvoie une erreur. Pour poursuivre le flux sans interruption, associez un itinéraire de gestionnaire d’erreurs au module afin de détecter l’erreur et utilisez la directive [!UICONTROL Resume] pour poursuivre le flux. Pour plus d’informations sur l’association d’un itinéraire de gestionnaire d’erreurs, voir [&#x200B; Gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Pour plus d’informations sur l’itinéraire du gestionnaire d’erreurs, voir [Directives relatives à la gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Si le dossier existe déjà, le module renvoie une erreur. Pour poursuivre le flux sans interruption, associez un itinéraire de gestionnaire d’erreurs au module afin de détecter l’erreur et utilisez la directive [!UICONTROL Resume] pour poursuivre le flux. Pour plus d’informations sur l’association d’un itinéraire de gestionnaire d’erreurs, voir [ Gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Pour plus d’informations sur l’itinéraire du gestionnaire d’erreurs, voir [Directives relatives à la gestion des erreurs dans Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -258,7 +258,7 @@ Ce module d’action crée un dossier à l’emplacement spécifié.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Définissez les autorisations souhaitées pour le dossier. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
+   <td> <p>Définissez les autorisations souhaitées pour le dossier. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ Permet de modifier les autorisations du fichier.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Définissez les autorisations de fichier souhaitées. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
+   <td> <p>Définissez les autorisations de fichier souhaitées. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ Ce module permet de charger un fichier vers le serveur SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Définissez les autorisations souhaitées pour le fichier ou le dossier. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
+   <td> <p>Définissez les autorisations souhaitées pour le fichier ou le dossier. Utilisez les paramètres chmod. Par exemple, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Ces autorisations doivent correspondre au modèle <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Pour plus d’informations sur chmod, consultez la <a href="https://ss64.com/bash/chmod.html">documentation chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Buffer size (B)]</p> </td> 

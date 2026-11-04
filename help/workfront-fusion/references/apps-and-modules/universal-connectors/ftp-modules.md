@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: dc9c66c09f6df175be6c0b1440b54df80751568b
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 83%
@@ -138,7 +138,7 @@ Pour utiliser les modules FTP, vous devez disposer d’un compte avec un service
 
 #### [!UICONTROL Contrôle des fichiers]
 
-[!UICONTROL Contrôle des fichiers] est le seul module déclencheur pour FTP. Il  le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est ajouté au dossier spécifié.
+[!UICONTROL Contrôle des fichiers] est le seul module déclencheur pour FTP. Il surveille le contenu du fichier du dossier sélectionné. Le déclencheur est exécuté lorsqu’un nouveau fichier est ajouté au dossier spécifié.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -196,7 +196,7 @@ Ce module d’action modifie les paramètres d’autorisation d’un fichier ou 
             <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Définissez les autorisations de fichier ou de dossier de votre choix. Utilisez les paramètres chmod. Par exemple, saisissez <code>777 </code> ou <code>-rwxrwxrwx</code>.</p>
-               <p>Les autorisations doivent correspondre au motif <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Les autorisations doivent correspondre au motif <code> /(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>

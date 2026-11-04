@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 11%
 ---
 # Afficher l’exécution d’un scénario spécifique
 
@@ -127,11 +127,11 @@ Dans la nouvelle expérience , lorsque vous ouvrez une exécution à partir de l
 | Commande | Détails |
 | ---------- | ---------- |
 | Aller à l&#39;erreur ou à l&#39;avertissement suivant | Indique le nombre de modules ayant rencontré un problème dans le cycle en cours. Chaque clic passe au suivant, d’abord les erreurs, puis les avertissements, de gauche à droite. Il centre le module et ouvre la première opération ayant échoué. Le bouton est masqué lorsque l’exécution ne comportait aucune erreur ou avertissement. |
-| Modules de recherche | Recherchez un module par nom et centrez-le sur la zone de travail. Appuyez sur Ctrl+K (Windows) ou Commande+K (Mac). |
+| Rechercher | Recherchez un module par nom ou ID et centrez-le sur la zone de travail. Appuyez sur Ctrl+K (Windows) ou Commande+K (Mac). |
 | Notes | Afficher ou masquer les notes du scénario. Ce contrôle s’affiche uniquement lorsque le scénario comporte des notes. Celles-ci sont en lecture seule ici. |
 | Expliquer le flux | Animez l’ordre dans lequel les modules du scénario s’exécutent. Cliquez à nouveau dessus ou appuyez sur Échap pour arrêter. |
 | Zoom avant, Zoom arrière, Focus et réduction | Fonctionne de la même manière qu’en mode d’édition. |
 
 Le commutateur **Vue compacte** est également disponible dans le coin supérieur droit. Lorsque vous révisez une exécution, la mise en page n’est modifiée que lorsque vous examinez cette exécution. Cela ne modifie pas le paramètre de la vue compacte à modifier et rien n’est enregistré dans le scénario.
 
-Sélectionnez un événement dans l’exécution pour centrer et mettre en surbrillance le module correspondant. Lorsque les détails de l’opération sont disponibles, le panneau de requête et de réponse s’ouvre. Si le panneau ne contient aucune donnée, les détails de la requête et de la réponse n’ont pas été conservés pour cette exécution. Pour les collecter en vue d’exécutions ultérieures, voir [&#x200B; Journaux de débogage temporaires &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
+Sélectionnez un événement dans l’exécution pour centrer et mettre en surbrillance le module correspondant. Lorsque les détails de l’opération sont disponibles, le panneau de requête et de réponse s’ouvre. Si le panneau ne contient aucune donnée, les détails de la requête et de la réponse n’ont pas été conservés pour cette exécution. Pour les collecter en vue d’exécutions ultérieures, voir [ Journaux de débogage temporaires ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).

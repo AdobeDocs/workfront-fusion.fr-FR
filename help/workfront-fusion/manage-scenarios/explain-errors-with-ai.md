@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # Expliquer une erreur de scénario à l’aide de l’IA
@@ -27,6 +27,8 @@ Vous pouvez expliquer les erreurs dans les domaines suivants de Workfront Fusion
 >[!NOTE]
 >
 >Le bouton **[!UICONTROL Expliquer]** n’est disponible que dans le nouveau concepteur de scénario. Il n’est pas disponible dans l’ancien concepteur de scénarios.
+>
+>Votre entreprise doit disposer d’une licence d’IA pour utiliser cette fonctionnalité.
 
 ## Conditions d’accès
 
