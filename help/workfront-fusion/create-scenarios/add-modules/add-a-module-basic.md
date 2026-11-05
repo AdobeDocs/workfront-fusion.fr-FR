@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # Ajouter un module dans un scénario
@@ -84,7 +84,7 @@ Pour plus d’informations sur les modules de déclenchement, consultez la secti
 
 1. Configurez le module .
 
-   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail.
+   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail. Vous pouvez redimensionner le panneau en faisant glisser son bord gauche.
 
    Pour obtenir des instructions sur la configuration de modules spécifiques, consultez l’article pour les applications sélectionnées, répertoriées dans [Références des applications Fusion et de leurs modules : index des articles](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -139,7 +139,7 @@ Pour plus d’informations sur les modules de déclenchement, consultez la secti
 
 1. Configurez le module .
 
-   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail.
+   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail. Vous pouvez redimensionner le panneau en faisant glisser son bord gauche.
 
    Pour obtenir des instructions sur la configuration de modules spécifiques, consultez l’article pour les applications sélectionnées, répertoriées dans [Références des applications Fusion et de leurs modules : index des articles](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -180,7 +180,7 @@ Pour plus d’informations sur les modules de déclenchement, consultez la secti
 
 1. Configurez le module .
 
-   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail.
+   Les paramètres du module s’ouvrent dans le panneau sur le côté droit de la zone de travail. Vous pouvez redimensionner le panneau en faisant glisser son bord gauche.
 
    Pour obtenir des instructions sur la configuration de modules spécifiques, consultez l’article pour les applications sélectionnées, répertoriées dans [Références des applications Fusion et de leurs modules : index des articles](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

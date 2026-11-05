@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 83%
@@ -182,7 +182,7 @@ Le présent article ne vise pas à aborder la question des expressions réguliè
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Saisissez le motif d’expression régulière. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code> extrait tous les chiffres du texte fourni.</p> <p>Note :  <p>Le motif doit contenir au moins un groupe de capture entre parenthèses <code>()</code>. Si le motif ne contient aucun groupe de capture, le bundle de sortie est vide.</p> </p> </td> 
+   <td> <p>Saisissez le motif d’expression régulière. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemple : </b></span></span> <code>&#91;+-&#93;?(\d+(\.\d+)?|\.\d+)(&#91;eE&#93;&#91;+-&#93;?\d+)?</code> extrait tous les chiffres du texte fourni.</p> <p>Note :  <p>Le motif doit contenir au moins un groupe de capture entre parenthèses <code>()</code>. Si le motif ne contient aucun groupe de capture, le bundle de sortie est vide.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 

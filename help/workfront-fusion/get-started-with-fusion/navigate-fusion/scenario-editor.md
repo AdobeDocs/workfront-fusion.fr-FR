@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 14%
+source-wordcount: '2755'
+ht-degree: 12%
 ---
 # Éditeur de scénarios
 
@@ -72,6 +72,7 @@ La nouvelle expérience comprend les éléments suivants :
 * [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), un panneau qui affiche l’exécution d’un scénario.
 * Plusieurs outils de développement sont désormais intégrés à l’éditeur de scénarios.
 * Journaux de débogage temporaires, que vous pouvez activer dans les paramètres du scénario.
+* Recherche de noms de module, de valeurs mappées, de paramètres de module, de conditions de filtrage et de raccourcis clavier pour les actions courantes du panneau.
 
 Pour basculer entre les expériences classiques et les nouvelles expériences :
 
@@ -110,6 +111,7 @@ Si vous ne voyez pas le bouton (bascule), il se peut que la nouvelle expérience
 * [Demander à l’IA](#ask-ai)
 * [Navigation dans la zone de travail](#canvas-navigation)
 * [Affichage de la zone de travail](#canvas-display)
+* [Raccourcis clavier](#keyboard-shortcuts)
 
 #### Modifier les actions
 
@@ -148,7 +150,7 @@ Vous devrez peut-être cliquer sur l&#39;icône des trois points dans la zone Co
 | Paramètres du scénario <p>![Icône Paramètres du scénario](assets/scenario-settings-icon-new.png)</p> | Le panneau des paramètres du scénario contient des paramètres avancés pour le scénario. Pour plus d’informations sur les paramètres disponibles, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Les détails de la requête et de la réponse ne sont pas conservés pour chaque exécution. Pour les collecter pour les exécutions régulières du scénario, activez les journaux de débogage temporaires. Pour plus d’informations, voir [&#x200B; Journaux de débogage temporaires &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs). |
 | Notes <p>![icône Notes](assets/notes-icon-new.png)</p> | Prenez des notes sur le scénario. Les autres utilisateurs peuvent afficher ces notes lorsqu’ils se trouvent dans le scénario. Pour plus d’informations, voir [Ajouter des notes à un scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Auto-align <p>![Icône d’alignement automatique](assets/auto-align-icon-new.png)</p> | Alignement automatique des modules dans votre scénario. |
-| Modules de recherche <p>![Icône Rechercher des modules](assets/search-modules-icon-new.png)</p> | Sélectionnez un module dans la liste pour accéder à ce module dans le scénario, ou saisissez un terme de recherche pour localiser un module, puis cliquez sur les résultats de la recherche pour accéder à ce module. Vous pouvez effectuer une recherche par nom de module, ID, type ou application. |
+| Rechercher <p>![Icône Rechercher](assets/search-modules-icon-new.png)</p> | Ouvrez Recherche (appuyez sur **Ctrl + K** sous Windows ou **⌘K** sous Mac). La recherche trouve les modules par nom ou par ID. Il trouve également chaque valeur mappée, chaque paramètre de module et chaque condition de filtre dans le scénario. Chaque résultat indique l’emplacement de la correspondance, par exemple _Mappeur · ID d’approbation_, avec le texte correspondant en surbrillance. Les filtres sont répertoriés dans leur propre section. Pour rechercher chaque emplacement utilisant une valeur, collez une référence telle que `{{1.name}}`. La recherche trouve exactement cette référence, mais pas `{{21.name}}` ni `{{1.names}}`. Cliquez sur un résultat pour ouvrir le module ou le filtre. Le champ correspondant est brièvement mis en surbrillance et fait défiler l’affichage. Lorsque vous passez d’un résultat de filtre à l’autre à l’aide des touches fléchées, la zone de travail affiche le filtre et les deux modules qu’il connecte. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | Recherche et remplacement <p>![Icône Rechercher et remplacer](assets/find-and-replace-icon-new.png)</p> | <p>Recherchez et remplacez des variables, des sources de valeurs mappées ou des connexions dans les modules du scénario. Utilisez les onglets pour :</p><ul><li>Remplacez une variable mappée sur l’ensemble du scénario ou dans un seul module.</li><li>Remapper des références d’un module source à un autre.</li><li>Copiez une connexion vers un ou tous les modules compatibles depuis la même application.</li></ul><p>Le panneau prévisualise les modules qui seront affectés avant d’effectuer la modification. Sélectionnez une ligne dans l’aperçu pour accéder à ce module sur la zone de travail.</p> <p>Pour plus d’informations, voir [Rechercher et remplacer des variables, des sources et des connexions dans un scénario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Extraits de code <p>![Icône Fragments de code](assets/snippets-icon-new.png)</p> | <p>Les fragments de code sont des sections de scénario qui sont enregistrées en tant qu’unité. Pour en créer un, sélectionnez des modules et enregistrez-les en tant que fragment de code. Dans le panneau Fragments de code, vous pouvez rechercher, baliser, prévisualiser, épingler, trier, faire glisser et déposer des fragments de code, puis les importer et les exporter. Vous pouvez partager des fragments de code avec des équipes ou des organisations, ou en envoyer une copie directement à un autre utilisateur. Les extraits partagés s’affichent dans leur propre onglet.</p> <p>Pour plus d’informations, voir [Enregistrer et réutiliser des sections de scénario avec des fragments de code](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Expliquer le flux <p>![Icône Expliquer le flux](assets/explain-flow-icon-new.png)</p> | Affichez une animation où des points mobiles montrent le flux des données dans le scénario. |
@@ -208,7 +210,25 @@ La nouvelle zone de travail modifie également l’aspect des scénarios au fur 
 | Zoom sur les détails | Les détails de la carte s’affichent lorsque vous effectuez un zoom avant. Lorsque vous effectuez un zoom arrière, les modules se simplifient en icônes afin que vous puissiez toujours voir l’ensemble du scénario. |
 | Replier un routeur | En mode d&#39;édition, vous pouvez plier un routeur pour masquer ses itinéraires. Pour plus d&#39;informations, voir [Replier un routeur](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Mode sombre | La zone de travail suit votre paramètre d’aspect sombre sous vos préférences Adobe, y compris les cartes de module, les liens, les panneaux, les commandes et les informations de statut. |
-| Panneau de droite | La configuration du module, l’inspection du module, l’explorateur de modules, la recherche et le remplacement, les fragments de code, le [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) et les détails de requête et de réponse s’ouvrent dans le même panneau sur le côté droit de la zone de travail. |
+| Ouvrir le module ou le filtre | Lorsque vous ouvrez un module, la zone de travail ne se déplace plus. Au lieu de cela, le module obtient un contour en tirets mobiles. Lorsque vous ouvrez un filtre, son libellé sur la connexion obtient la même composition. La couleur du contour correspond à la couleur du module et s’ajuste automatiquement afin qu’il reste visible en mode clair et sombre. |
+| Panneau de droite | La configuration du module, l’inspection du module, l’explorateur de modules, la recherche et le remplacement, les fragments de code, le [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) et les détails de requête et de réponse s’ouvrent dans le même panneau sur le côté droit de la zone de travail. </br>Pour redimensionner le panneau, faites glisser son bord gauche pour l’élargir ou le réduire, ou double-cliquez sur le bord pour revenir à la largeur par défaut. Votre largeur est mémorisée, y compris lorsque vous vous connectez à partir d’un autre navigateur. Sur un écran plus petit, le panneau s’adapte automatiquement à la fenêtre. Lorsqu’un panneau est agrandi, vous ne pouvez pas modifier sa largeur. |
+
+#### Raccourcis clavier
+
+Ces raccourcis vous permettent de travailler dans les panneaux sans déplacer la souris.
+
+| Raccourci (Mac / Windows) | Fonctionnement |
+| ---------- | ---------- |
+| **⌘Entrée** / **Ctrl + Entrée** | Confirme l’ouverture du panneau (comme **OK**). Fonctionne en tapant. Si aucun panneau n’est ouvert, exécute le scénario une fois. |
+| **Échap** | Ferme le panneau ouvert sans enregistrer. Si le panneau de mappage est ouvert, ferme uniquement ce panneau. |
+| **⌥←** / **⌥→** (Mac), **Alt + ←** / **Alt + →** (Windows) | Confirme l’utilisation du panneau et ouvre le module précédent ou suivant. Également disponible sous la forme des boutons ‹ ›**dans l’en-tête du panneau.** Fonctionne lorsque le curseur ne se trouve pas dans un champ de texte. |
+| **⌘Maj + Entrée** / **Ctrl + Maj + Entrée** | Confirme l’ouverture du panneau et exécute le scénario une fois. Rien ne s’exécute si le panneau comporte des erreurs. |
+| **⌘K** / **Ctrl + K** | Ouvre la recherche. |
+| **?** | Affiche la liste de tous les raccourcis du concepteur de scénarios. Également disponible à partir du menu à trois points, sous **Raccourcis clavier**. |
+
+* Des panneaux larges affichent un rappel des raccourcis confirmer et annuler en bas.
+* Les boutons **Exécuter une fois** et **Enregistrer** affichent leurs raccourcis dans leurs infobulles.
+* Lorsque vous passez au module suivant ou précédent et qu’il est masqué derrière le panneau ou hors de l’écran, la zone de travail se déplace juste assez pour l’afficher.
 
 ## Utilisation de l’éditeur de scénarios dans l’expérience classique
 

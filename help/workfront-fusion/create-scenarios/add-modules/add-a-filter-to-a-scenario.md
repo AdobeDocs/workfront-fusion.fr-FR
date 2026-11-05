@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 27%
+source-wordcount: '1012'
+ht-degree: 25%
 ---
 # Ajouter un filtre à un scénario
 
@@ -77,6 +77,10 @@ Vous devez ajouter les deux modules à un scénario avant de pouvoir ajouter un 
 1. Cliquez avec le bouton gauche de la souris sur le chemin d’accès entre les modules auxquels vous souhaitez ajouter un filtre.
 
    La fenêtre **[!UICONTROL Configurer un filtre]** s’ouvre directement. (Cliquez avec le bouton droit sur le chemin d’accès pour ouvrir un autre menu.)
+
+   Le panneau de filtrage indique les deux modules entre lesquels le filtre se trouve. En regard du titre du panneau, vous voyez les identifiants du module, par exemple **#12 → #13**. Au-dessus des paramètres de filtre, une ligne telle que **Entre ● Router #12 → ● #13 HTTP** indique la couleur et le nom de chaque module. Passez la souris sur le nom d’un module pour afficher son action. Lorsque le panneau est ouvert, le libellé du filtre sur la connexion présente un contour en tirets mobiles.
+
+   ![Panneau Filtres](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. Dans la zone qui s’affiche, saisissez un **[!UICONTROL Libellé]** pour le filtre.
 1. Définissez le filtre **[!UICONTROL Condition]**.
