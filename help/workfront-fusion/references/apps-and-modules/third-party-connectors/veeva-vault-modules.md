@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 14%
+source-wordcount: '4353'
+ht-degree: 15%
 ---
 # Modules Veeva Vault
 
@@ -1153,12 +1153,64 @@ Ce module renvoie une liste de fichiers et de dossiers pour le chemin d’accès
 ### Autre
 
 * [Effectuer un appel API personnalisé](#make-a-custom-api-call)
+* [Effectuer un appel API personnalisé (hérité)](#make-a-custom-api-call-legacy)
 * [Effectuer une requête SQL](#make-a-vql-query)
 * [Lecture des journaux](#read-logs)
 
 #### Effectuer un appel API personnalisé
 
-Ce module d&#39;action effectue un appel personnalisé à l&#39;API Veeva Vault.
+Ce module d&#39;action effectue un appel personnalisé à l&#39;API Veeva Vault. Il prend en charge plusieurs types de corps de requête.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion</td> 
+   <td> <p>Pour plus d’informations sur la connexion de votre compte Veeva Vault à Workfront Fusion, voir <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connexion de Veeva Vault à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Saisissez un chemin relatif à <code>baseurl/api/v</code>.  Par exemple, <code>/objects/documents</code>. N’incluez pas le <code>baseurl/api/v/</code>, car il est déjà inclus.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Méthode</td> 
+   <td> <p>Sélectionnez la méthode de requête HTTP dont vous avez besoin pour configurer l’appel API. Pour plus d’informations, consultez <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Méthodes de requête HTTP</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">En-têtes</td> 
+   <td> <p>Ajoutez les en-têtes de la requête sous la forme d’un objet JSON standard.</p> <p>Par exemple, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion ajoute les en-têtes d’autorisation pour vous.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Chaîne de requête</td> 
+   <td> <p>Ajoutez la requête pour l’appel API sous la forme d’un objet JSON standard.</p> <p>Par exemple : <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type de corps</td> 
+   <td> <p>Sélectionnez le type de corps à envoyer avec la requête :</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Demander du contenu</td> 
+   <td> <p>Si vous utilisez un type de corps brut ou binaire, saisissez ou mappez le contenu du corps pour l’appel API.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Champs</td> 
+   <td> <p>Si vous utilisez un type de corps de données de formulaire en plusieurs parties ou à codage URL, ou un type de corps binaire, pour chaque champ pour lequel vous souhaitez ajouter des données, cliquez sur <b>Ajouter un élément</b> et saisissez la clé et la valeur du champ.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### Effectuer un appel API personnalisé (hérité)
+
+Ce module d&#39;action effectue un appel personnalisé à l&#39;API Veeva Vault. Ce module ne prend en charge que le type de corps `raw`. Pour utiliser d’autres types de corps, utilisez le module [Effectuer un appel API personnalisé](#make-a-custom-api-call).
 
 <table style="table-layout:auto"> 
  <col> 
