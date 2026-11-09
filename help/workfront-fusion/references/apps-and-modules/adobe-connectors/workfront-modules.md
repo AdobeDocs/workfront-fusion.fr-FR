@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Modules Adobe Workfront
 
@@ -2403,11 +2403,11 @@ Les opérateurs suivants sont disponibles dans le filtre Workfront > Surveiller 
 * Est inférieur ou égal à
 * Contient
 * Existe
-  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ne nécessite pas de valeur. Par conséquent, le champ de valeur n’est pas inclus dans le filtre.
 * N’existe pas
-  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ne nécessite pas de valeur. Par conséquent, le champ de valeur n’est pas inclus dans le filtre.
 * Modifié
-  * Cet opérateur ne nécessite pas de valeur et le champ de valeur est absent.
+  * Cet opérateur ne nécessite pas de valeur. Par conséquent, le champ de valeur n’est pas inclus dans le filtre.
   * Cet opérateur ignore le champ État.
   * Lorsque vous utilisez `Changed`, sélectionnez **Événements mis à jour uniquement** dans le champ **Origine de l’enregistrement**.
 
