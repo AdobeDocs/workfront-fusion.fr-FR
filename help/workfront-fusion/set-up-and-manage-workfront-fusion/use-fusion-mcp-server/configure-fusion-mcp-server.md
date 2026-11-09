@@ -82,7 +82,7 @@ Le serveur MCP Fusion fonctionne avec les applications suivantes.
 
 * Seules les applications répertoriées dans cette section peuvent se connecter au serveur MCP Fusion.
 * Les applications de bureau et les interfaces de ligne de commande fonctionnent si elles reçoivent le rappel de connexion sur votre propre ordinateur (`localhost`).
-* Vous ne pouvez pas ajouter vos propres applications. Pour demander une prise en charge d’une nouvelle application, contactez l’équipe Fusion à l’adresse [](mailto:fusiondev@adobe.com).
+* Vous ne pouvez pas ajouter vos propres applications. Pour demander une prise en charge d’une nouvelle application, contactez l’équipe Fusion à l’adresse [&#128279;](mailto:fusiondev@adobe.com).
 
 <!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
@@ -92,7 +92,7 @@ Le serveur MCP Fusion fonctionne avec les applications suivantes.
 
 Cet article décrit les étapes de connexion pour :
 
-* [Collègue Adobe ](#use-fusion-with-coworker) : collègue en tant que travailleur autonome et collègue dans le rail de droite de Fusion
+* [Collègue Adobe &#x200B;](#use-fusion-with-coworker) : collègue en tant que travailleur autonome et collègue dans le rail de droite de Fusion
 * [Claude](#connect-fusion-to-claude) : Connecteur personnalisé
 * [ChatGPT](#connect-fusion-to-chatgpt) : serveur MCP personnalisé
 * [Une solution MCP personnalisée](#connect-fusion-to-a-custom-mcp-solution)
@@ -188,7 +188,7 @@ Ajoutez Fusion comme serveur MCP personnalisé.
 ### ChatGPT sur le web
 
 1. Connectez-vous à [ChatGPT](https://chatgpt.com).
-1. Accédez à [](https://chatgpt.com/plugins). (Il se peut que le mode Développeur doive être activé sous **Paramètres** ; dans les plans Entreprise/Entreprise, un administrateur doit autoriser les connecteurs personnalisés.)
+1. Accédez à [&#128279;](https://chatgpt.com/plugins). (Il se peut que le mode Développeur doive être activé sous **Paramètres** ; dans les plans Entreprise/Entreprise, un administrateur doit autoriser les connecteurs personnalisés.)
 1. Cliquez sur **+**.
 1. Saisissez un **nom**.
 1. Pour **Connexion**, sélectionnez **URL du serveur** et saisissez l’URL du serveur MCP.
