@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 68%
+source-wordcount: '554'
+ht-degree: 67%
 ---
 # Afficher et résoudre les exécutions incomplètes
 
@@ -25,10 +25,6 @@ Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécutions de scén
 >Par défaut, le stockage des exécutions incomplètes est désactivé. Pour l’activer, activez l’option [!UICONTROL Autoriser le stockage d’exécutions incomplètes] dans les paramètres avancés du scénario.
 >
 >Pour plus d’informations sur les paramètres de scénario, voir [Configurer les paramètres de scénario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
-Aperçu mis en surbrillance pour la {#highlighted-preview-article-level} complète de l’article
-
-<span class="preview">Les informations de cette page font référence à des fonctionnalités qui ne sont pas encore disponibles de façon générale. Cette option n’est disponible que dans l’environnement de prévisualisation de sandbox.</span>
 
 ## Afficher les exécutions incomplètes
 
