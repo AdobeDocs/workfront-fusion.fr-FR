@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 29%
@@ -22,7 +22,7 @@ Comme les applications auxquelles Workfront Fusion se connecte peuvent mettre à
 
 Si l’icône verte du module de mise à niveau s’affiche sur un module dans un scénario, Workfront Fusion a publié une nouvelle version de ce module.
 
-![Icône Mettre à jour](assets/update-indicator-workfront.png)
+![Icône Mettre à jour](assets/new-update-indicator-workfront.png)
 
 Vous pouvez mettre à jour le module sans créer de scénario.
 
@@ -57,8 +57,8 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Mise à niveau d’un module Workfront vers une nouvelle version
 
-1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
-   ![Icône Mettre à jour](assets/update-indicator-workfront.png)
+1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/new-upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
+   ![Icône Mettre à jour](assets/new-update-indicator-workfront.png)
 1. Choisissez l’une des options suivantes :
 
    * Pour sélectionner un nouveau module pour remplacer ce module (au lieu de mettre à niveau le module), cliquez sur **Choisir nouveau**, puis procédez comme décrit dans [Mettre à niveau un module non Workfront vers une nouvelle version](#upgrade-a-non-workfront-module-to-a-new-version).
@@ -73,7 +73,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Mettre à niveau un module non Workfront vers une nouvelle version
 
-1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
+1. Cliquez sur l’icône **Mettre à niveau le module** ![Icône Mettre à niveau](assets/new-upgrade-icon.png) du module que vous souhaitez mettre à niveau vers une nouvelle version.
    <!--![Update icon](assets/update-indicator.png)-->
 1. Cliquez sur **Choisir nouveau**.
 1. Sélectionnez le module qui doit remplacer le module précédent.
