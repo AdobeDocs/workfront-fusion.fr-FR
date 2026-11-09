@@ -28,7 +28,7 @@ Le dossier [!UICONTROL Exécutions incomplètes] stocke les exécutions de scén
 
 ## Afficher les exécutions incomplètes
 
-Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les bundles pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL  Exécutions incomplètes ] de la page des détails du scénario.
+Si un module rencontre une erreur lors de son fonctionnement, une nouvelle exécution incomplète est ajoutée au dossier Exécutions incomplètes. Chaque exécution incomplète contient le plan directeur du scénario et tous les bundles pouvant être mappés dans le module qui a échoué. La liste des exécutions incomplètes peut être ouverte en cliquant sur l’onglet [!UICONTROL &#x200B; Exécutions incomplètes &#x200B;] de la page des détails du scénario.
 
 <!--
 
