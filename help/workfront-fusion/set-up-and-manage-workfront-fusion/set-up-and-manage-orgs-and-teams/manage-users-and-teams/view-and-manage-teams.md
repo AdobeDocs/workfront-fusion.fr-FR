@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 43%
+source-wordcount: '323'
+ht-degree: 41%
 ---
 # Afficher et gérer des équipes
 
@@ -30,7 +30,9 @@ Les équipes sont des groupes d’utilisateurs et d’utilisatrices qui partagen
 
 Vous pouvez afficher une liste des équipes de votre organisation et modifier les noms des équipes.
 
-Pour ajouter des utilisateurs à des équipes, voir [Ajouter un utilisateur à une équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
+Pour créer et gérer les rôles dans une équipe, voir [Afficher et gérer les rôles d&#39;équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
+Pour ajouter des utilisateurs aux équipes, voir [Ajouter un utilisateur à une équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Conditions d’accès
 
@@ -75,7 +77,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
    La liste Équipes s’ouvre.
 
-1. (Facultatif) Pour trier la liste Équipes selon n’importe quelle colonne, cliquez sur l’icône **Trier** ![Icône Trier](assets/sort-icon.png) de cette colonne.
-1. (Facultatif) Pour masquer ou afficher des colonnes, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/columns-icon.png) en haut à droite de la liste, puis activez ou désactivez les colonnes.
+1. (Facultatif) Pour trier la liste Équipes selon n’importe quelle colonne, cliquez sur l’icône **Trier** ![Icône Trier](assets/sort-icon.png) pour cette colonne.
+1. (Facultatif) Pour masquer ou afficher des colonnes, cliquez sur l’icône **Colonnes** ![Icône Colonnes](assets/columns-icon.png) près du coin supérieur droit de la liste, puis activez ou désactivez les colonnes.
 1. (Facultatif) Pour filtrer la liste, commencez à saisir du texte dans la barre de recherche. La liste filtre pour inclure uniquement les équipes qui incluent votre terme de recherche.
-1. (Facultatif) Pour renommer une équipe, cliquez sur **Modifier** sur la ligne correspondant à cette équipe, puis saisissez le nouveau nom d&#39;équipe et cliquez sur **Enregistrer**.
+1. (Facultatif) Pour renommer une équipe, cliquez sur **Modifier** dans la ligne correspondant à cette équipe, puis saisissez le nouveau nom de l&#39;équipe et cliquez sur **Enregistrer**.

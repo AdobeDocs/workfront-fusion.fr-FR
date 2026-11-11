@@ -1,6 +1,6 @@
 ---
 title: Rôles d’organisation
-description: Cet article contient des informations sur l’accès et les autorisations des rôles dans [!DNL Adobe] Workfront Fusion.
+description: Cet article contient des informations sur l'accès et les autorisations des rôles dans [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 73%
+source-wordcount: '324'
+ht-degree: 65%
 ---
 # Rôles d’organisation et d’équipe
 
@@ -22,7 +22,7 @@ Cet article décrit l’accès et les fonctionnalités disponibles pour les diff
 
 >[!NOTE]
 >
->Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d’informations sur les rôles des organisations et des équipes, voir [&#x200B; Présentation des organisations et des équipes &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Les rôles d’organisation sont distincts des rôles d’équipe dans Workfront Fusion. Pour plus d&#39;informations sur les rôles de l&#39;organisation et de l&#39;équipe, consultez [Présentation des organisations et des équipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Rôles d’organisation
 
@@ -82,6 +82,10 @@ Cet article décrit l’accès et les fonctionnalités disponibles pour les diff
 
 
 ## Rôles d’équipe
+
+>[!NOTE]
+>
+>Les tableaux suivants présentent les autorisations des rôles d’équipe prédéfinis. Outre ces rôles, vous pouvez créer des rôles personnalisés pour une équipe. Pour plus d&#39;informations, voir [Rôles d&#39;équipe personnalisés](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles) et [Afficher et gérer les rôles d&#39;équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
 ### Scénarios
 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 25%
+source-wordcount: '542'
+ht-degree: 24%
 ---
 # Afficher ou modifier des rôles d’utilisateur ou d’utilisatrice
 
@@ -67,7 +67,7 @@ Les administrateurs d’Adobe Workfront Fusion peuvent afficher et mettre à jou
 
 1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
 1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
-1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une organisation, cliquez sur la liste déroulante de la colonne **[!DNL Role]** de la ligne de l’organisation dans laquelle vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
+1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une organisation, cliquez sur la liste déroulante de la colonne **[!DNL Role]** dans la ligne de l’organisation où vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
 
 ### Remarques concernant l’ajout ou la modification des propriétaires d’organisation
 
@@ -87,7 +87,12 @@ Lors de l’affectation d’un utilisateur à un rôle de propriétaire ou à pa
 
 Les administrateurs Adobe Workfront Fusion et les administrateurs d’équipe peuvent afficher et mettre à jour les rôles utilisateur.
 
+>[!NOTE]
+>
+>Outre les rôles prédéfinis, une équipe peut avoir des rôles personnalisés. Pour plus d&#39;informations sur la création et la gestion des rôles personnalisés, voir [Afficher et gérer les rôles d&#39;équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 1. Connecté en tant qu’administrateur Workfront Fusion, sélectionnez **[!UICONTROL Tous les utilisateurs]** dans le volet de navigation de gauche.
 1. Cliquez sur **[!UICONTROL Détails]** dans la ligne de l’utilisateur ou utilisatrice que vous souhaitez afficher.
 1. Cliquez sur l’icône Équipes dans la colonne **[!DNL Role]** de la ligne de l’organisation contenant l’équipe dans laquelle vous souhaitez afficher ou modifier le rôle de l’utilisateur.
 1. (Facultatif) Pour mettre à jour le rôle de l’utilisateur dans une équipe, cliquez sur la liste déroulante de la colonne **[!DNL Role]** dans la ligne de l’équipe où vous souhaitez modifier le rôle de l’utilisateur, puis sélectionnez le nouveau rôle.
+
