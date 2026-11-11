@@ -11,16 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 31%
+source-wordcount: '347'
+ht-degree: 29%
 ---
 # Ajouter un personne à une équipe
 
 Vos utilisateurs sont affectés à des équipes lorsque vous les créez. Si un utilisateur existant doit être ajouté à une équipe, vous pouvez l’ajouter sur la page Utilisateurs de l’équipe.
 
-Pour ajouter un utilisateur à Fusion, consultez [Ajout d’utilisateurs à Adobe Workfront Fusion via Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md).
+Pour ajouter un utilisateur à Fusion, consultez [Ajouter des utilisateurs à Adobe Workfront Fusion via Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md).
 
 ## Conditions d’accès
 
@@ -61,8 +61,12 @@ L’ajout d’un utilisateur à une équipe est géré à partir de la page rela
 
    Si vous êtes sur la page pour une autre équipe, cliquez sur le menu déroulant de l’équipe en haut de la page.
 
-1. Sur la page Équipe (avec le nom de l’équipe en haut de la page), sélectionnez l’onglet **Utilisateurs**.
+1. Sur la page Équipe (avec le nom de l&#39;équipe en haut de la page), sélectionnez l&#39;onglet **Utilisateurs**.
 1. Recherchez l’utilisateur sur la page. Les utilisateurs de votre organisation apparaissent sur cette page même s’ils ne sont pas membres de l’équipe.
 1. Cliquez sur **Aucun** à droite du nom de l&#39;utilisateur, puis sélectionnez le rôle que vous souhaitez lui donner dans l&#39;équipe.
 
    L&#39;utilisateur est ajouté à l&#39;équipe, avec le rôle que vous avez sélectionné.
+
+   >[!NOTE]
+   >
+   >Outre les rôles prédéfinis, une équipe peut avoir des rôles personnalisés. Pour plus d&#39;informations sur la création de rôles personnalisés, voir [Afficher et gérer les rôles d&#39;équipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
