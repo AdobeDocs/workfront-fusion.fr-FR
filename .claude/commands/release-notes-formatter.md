@@ -71,7 +71,7 @@ Règles :
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Corps** : description des fonctionnalités, puis lien vers la documentation d’aide
+&#x200B;5. **Corps** : description des fonctionnalités, puis lien vers la documentation d’aide
 
 #### Pages de présentation
 
@@ -90,11 +90,11 @@ Règles :
 
 - Si une section relative à un produit est commentée, supprimez entièrement son lien de cette liste. Ne commentez pas le lien.
 
-5. **H3 par zone de produit** avec le tableau des fonctionnalités HTML (voir .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 par zone de produit** avec le tableau des fonctionnalités HTML (voir .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Dans chaque tableau, **les plus récentes fonctionnalités apparaissent en premier** — la dernière ligne apparaît en haut du tableau (après la ligne d&#39;en-tête)
    - Si une fonctionnalité comporte un badge (tel que `[!BADGE Off schedule]{type=Neutral}`), placez-le dans son propre `<p>` directement sous le paragraphe du lien de la fonctionnalité, avant le paragraphe de description.
 
-6. **Sections de fin** (H2) : notes de mise à jour pour d’autres zones, mises à jour du lecteur de vérification pour bureau, annonces, version de l’API, mises à jour de maintenance, mises à jour de formation
+&#x200B;6. **Sections de fin** (H2) : notes de mise à jour pour d’autres zones, mises à jour du lecteur de vérification pour bureau, annonces, version de l’API, mises à jour de maintenance, mises à jour de formation
 
 ### Étape 3 : valider les liens
 
