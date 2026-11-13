@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # Vue d’ensemble du mappage
 
@@ -69,12 +69,15 @@ Le premier onglet affiche les éléments que vous pouvez mapper à partir d’au
 
 Les autres onglets comprennent des fonctions, des opérateurs et des mots-clés que vous pouvez utiliser pour créer des formules. Ils sont triés dans différents onglets en fonction du type de données traité.
 
+L&#39;onglet **[!UICONTROL Remplir par IA]** vous permet de décrire en langage clair ce que vous souhaitez qu&#39;un champ contienne, et l&#39;IA génère une expression pour vous. Pour plus d&#39;informations, voir [Générer une expression avec AI](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
+
 ![Panneau de mappage](assets/new-mapping-panel-blank.png)
 
 
 Pour plus d’informations sur les onglets de fonctions, consultez [Vue d’ensemble des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Pour plus d’informations sur le mappage d’éléments à l’aide de fonctions, voir [&#x200B; Mappage d’éléments à l’aide de fonctions intégrées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Pour plus d&#39;informations sur le mappage d&#39;éléments à l&#39;aide de fonctions, consultez [Mappage d&#39;éléments à l&#39;aide de fonctions intégrées](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Collections
 
