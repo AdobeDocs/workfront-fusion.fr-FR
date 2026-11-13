@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 44%
+source-wordcount: '1137'
+ht-degree: 28%
 ---
 # Mappage d’un élément à l’aide de fonctions intégrées
 
@@ -22,9 +22,9 @@ Workfront Fusion inclut des fonctions intégrées qui vous permettent de créer 
 
 En outre, vous pouvez créer des fonctions et des packages personnalisés que vos scénarios peuvent utiliser pour transformer et manipuler les données.
 
-Pour plus d’informations et d’instructions sur les fonctions personnalisées, voir [Mappage de données à l’aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
+Pour plus d&#39;informations et d&#39;instructions sur les fonctions personnalisées, voir [Mapper des données à l&#39;aide de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
-Pour plus d’informations et d’instructions sur les packages de fonctions, voir [&#x200B; Utilisation de packages de fonctions personnalisés &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour obtenir des informations et des instructions sur les packages de fonctions, voir [Utiliser des packages de fonctions personnalisés](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 ## Conditions d’accès
 
@@ -72,7 +72,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 1. Cliquez sur le champ dans lequel vous souhaitez insérer une fonction.
 1. Sélectionnez l’onglet dans le panneau de mappage qui contient la fonction que vous souhaitez insérer.
 
-   Pour plus d’informations sur les onglets du panneau de mappage, voir [&#x200B; Présentation des fonctions &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   Pour plus d’informations sur les onglets du panneau de mappage, consultez [Présentation des fonctions](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
 1. Cliquez sur le nom de la fonction.
 
    Ou
@@ -82,7 +82,7 @@ Pour insérer une fonction dans un champ, procédez comme suit :
 
    Pour obtenir une explication des paramètres de fonction, passez la souris sur la fonction dans le panneau de mappage.
 
-   Pour plus d’informations sur les fonctions et leurs paramètres, consultez les articles sous [Références de fonction : index d’article](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
+   Pour plus d&#39;informations sur les fonctions et leurs paramètres, consultez les articles sous [Références de fonction : index d&#39;article](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
 
 1. Continuez à configurer le module ou cliquez sur **OK**.
 
@@ -121,15 +121,73 @@ Pour imbriquer une fonction :
 
    Le panneau de mappage s’ouvre.
 
-1. Cliquez sur la première fonction que vous souhaitez ajouter. C&#39;est la fonction à l&#39;extérieur. Dans l’exemple suivant, il s’agit de la fonction `substring` .
+1. Cliquez sur la première fonction que vous souhaitez ajouter. C&#39;est la fonction à l&#39;extérieur. Si l&#39;exemple suivant, il s&#39;agit de la fonction `substring`.
 1. Dans cette fonction, cliquez où vous souhaitez que la fonction imbriquée aille. Dans cet exemple, la fonction imbriquée remplace le premier paramètre.
-1. Dans le panneau de mappage, cliquez sur la fonction imbriquée . Dans cet exemple, il s’agit de la fonction `trim` .
+1. Dans le panneau de mappage, cliquez sur la fonction imbriquée . Dans cet exemple, il s’agit de la fonction `trim`.
 1. Continuez à configurer la fonction selon vos besoins.
 1. Continuez à configurer le module ou cliquez sur **OK**.
 
+### Générer une expression avec l’IA
+
+Au lieu d’écrire la syntaxe d’une expression vous-même, vous pouvez décrire ce que vous souhaitez en langage simple, et l’IA génère l’expression pour vous. Par exemple, vous pouvez demander ce qui suit :
+
+* Joignez ces noms par une virgule.
+* Ajoutez trois jours à la date d&#39;échéance.
+
+L’IA transforme votre requête en expression qui utilise les fonctions intégrées de Workfront Fusion. De ce fait, le résultat est lisible et facile à vérifier avant de l’utiliser.
+
+Pour générer une expression :
+
+1. Cliquez sur l’onglet **[!UICONTROL Scénarios]** dans le panneau de gauche.
+1. Sélectionnez le scénario dans lequel vous souhaitez mapper les données.
+1. Cliquez n’importe où sur le scénario pour accéder à l’éditeur de scénarios.
+1. Cliquez sur le module dans lequel vous souhaitez ajouter une expression, puis sur le champ .
+
+   Le panneau de mappage s’ouvre.
+
+1. Cliquez sur l’onglet **[!UICONTROL Remplir par l’IA]** (icône de baguette magique) dans le panneau de mappage.
+
+   ![Onglet Remplir par IA](assets/fill-by-ai-tab.png)
+
+1. Dans la zone **[!UICONTROL Décrire ce que ce champ doit contenir]**, décrivez le résultat souhaité en langage clair.
+
+   Pour ajouter à votre invite un champ provenant d&#39;un module précédent, cliquez dessus dans la liste **[!UICONTROL Champs disponibles]**. Pour commencer une nouvelle ligne dans l&#39;invite, appuyez sur Maj + Entrée.
+
+   Par exemple, pour obtenir uniquement le domaine à partir d’une adresse e-mail, vous pouvez saisir l’invite suivante :
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Cliquez sur **[!UICONTROL Générer]**.
+
+   L’expression générée par AI apparaît sous **[!UICONTROL Expression suggérée]**.
+
+   ![Expression suggérée](assets/fill-by-ai-suggested-expression.png)
+
+1. Vérifiez l’expression, puis effectuez l’une des opérations suivantes :
+
+   * Cliquez sur **[!UICONTROL Appliquer]** pour insérer l&#39;expression dans le champ.
+   * Cliquez sur **[!UICONTROL Régénérer]** pour que l’IA génère une expression différente.
+
+1. (Facultatif) Modifiez l’expression dans le champ, le cas échéant.
+
+1. Continuez à configurer le module ou cliquez sur **[!UICONTROL OK]**.
+
+#### Comment l’IA génère des expressions
+
+Lorsque l’IA génère une expression, elle effectue les opérations suivantes :
+
+* **Utilise le contexte de votre scénario.** L’IA prend en compte les champs qui sont disponibles pour le mappage, leurs types, le champ de destination, ainsi que vos paramètres régionaux et vos paramètres de fuseau horaire.
+* **Valide l’expression.** Avant que l’IA ne renvoie une expression comme réussie, elle recherche les fonctions non prises en charge, les arguments manquants, les références de champ inconnues et les erreurs courantes avec les tableaux et les dates.
+* **Corrige et simplifie l&#39;expression.** L’IA corrige les erreurs de syntaxe courantes et remplace les solutions de contournement reconnues par des fonctions intégrées.
+* **Réessai en cas d&#39;échec de la validation.** L’IA utilise les commentaires spécifiques de la validation pour régénérer l’expression. S’il ne peut toujours pas créer d’expression valide, il renvoie une erreur claire au lieu d’un résultat non valide.
+
+>[!NOTE]
+>
+>Les expressions générées par l’IA peuvent être incomplètes ou inexactes. Passez en revue chaque expression et testez votre scénario avant de vous fier au résultat.
+
 ### Utiliser des fonctions [!DNL Google Sheets]
 
-Si Workfront Fusion ne comporte pas de fonction que vous souhaitez utiliser, mais qu’elle est présentée par [!DNL Google Sheets], vous pouvez l’utiliser en procédant comme suit :
+Si Workfront Fusion ne dispose pas d’une fonction que vous souhaitez utiliser, mais qu’elle est proposée par [!DNL Google Sheets], vous pouvez l’utiliser en suivant ces étapes :
 
 1. Dans [!DNL Google Sheets], créez une feuille de calcul vide.
 1. Dans Workfront Fusion, ouvrez votre scénario.
