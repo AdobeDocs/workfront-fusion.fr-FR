@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
+source-git-commit: 88b8663ed3f2ec4da1234e5c1c93531133d1e61c
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 40%
+source-wordcount: '2436'
+ht-degree: 45%
 ---
 # Modèles Adobe Workfront Fusion actuellement disponibles
 
@@ -162,36 +162,6 @@ Ce modèle numérote vos projets de manière séquentielle. Elle suppose que vou
 #### Workfront - Séries De Numérotation Séquentielle : Problèmes
 
 Ce modèle numérote vos problèmes de manière séquentielle. Elle suppose que vous avez créé un formulaire et un champ personnalisés à l’aide du modèle Workfront - Séquences de numérotation : créer un objet Formulaire et champ personnalisés , mais que vous pouvez utiliser un formulaire et un champ existants.
-
-### Workfront - Créer un projet avec le workflow AEM
-
-[!BADGE Nouveau!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
-
-Ce modèle crée un projet à partir d’un modèle de projet et peut créer les dossiers liés AEM configurés pour le modèle de projet et les lier au nouveau projet.
-
->[!TIP]
->
->* Les dossiers liés à AEM sont créés uniquement lorsque le modèle de projet sélectionné comporte un [workflow AEM](https://experienceleague.adobe.com/fr/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) activé avec au moins une arborescence de dossiers. Dans le cas contraire, le projet est créé sans dossiers liés.
->* Les arborescences de dossiers sont extraites du modèle de projet lorsque vous enregistrez l’automatisation. Si vous ajoutez ou supprimez ultérieurement des arborescences de dossiers sur le modèle de projet, vous devez modifier et enregistrer à nouveau l’automatisation pour inclure les modifications.
-
-### Workfront - Création de plusieurs enregistrements
-
-[!BADGE Nouveau!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-Ce modèle crée un ou plusieurs enregistrements sur un type d&#39;enregistrement, en fonction des choix effectués dans un champ de l&#39;enregistrement actif.
-
->[!TIP]
->
->* Un enregistrement est créé pour chaque choix qui est à la fois présent sur l&#39;enregistrement actif et qui possède un mappage de champs. Les choix sans mappage sont ignorés et aucun enregistrement n&#39;est créé pour eux.
->* Pour nommer les enregistrements créés, mappez un champ source au champ principal (nom) du nouveau type d’enregistrement. Chaque enregistrement est alors nommé *[nom de l&#39;enregistrement actuel] valeur de choix*. Si vous ne mappez pas le champ principal, le nom de l’enregistrement reste vide.
->* Si aucun des enregistrements sélectionnés ne contient un choix mappé dans le champ sélectionné, aucun enregistrement n&#39;est créé et un message vous indique quel champ est vide.
->* Les choix de champs et les mappages sont lus à partir du type d’enregistrement actuel lorsque vous enregistrez l’automatisation. Si vous ajoutez ou modifiez ultérieurement des champs ou des choix, vous devez modifier et enregistrer à nouveau l’automatisation pour inclure les modifications.
 
 ## Workfront - Modèles Workfront Proof
 
