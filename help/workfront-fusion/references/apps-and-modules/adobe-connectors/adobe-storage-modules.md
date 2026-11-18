@@ -22,16 +22,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 28%
+source-wordcount: '1542'
+ht-degree: 26%
 ---
 # Modules Adobe Storage
 
 Dans un scénario Adobe Workfront Fusion, vous pouvez créer et gérer des projets dans Adobe Admin Console.
 
-Si vous avez besoin d’instructions pour créer un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Si vous avez besoin d’instructions sur la création d’un scénario, consultez les articles sous [Créer un scénario : index d’article](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Pour plus d’informations sur les modules, consultez les articles sous [Modules : index des articles](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -86,9 +86,9 @@ Vous devez ajouter l’API à votre projet dans le Adobe Developer Console.
 1. Dans la liste des API disponibles, sélectionnez **Adobe Cloud Platform et API Collaboration**.
 1. Sur l’écran Sélectionner le type d’authentification , sélectionnez **OAuth serveur à serveur** et cliquez sur **Suivant**.
 1. Ajoutez un nom pour les informations d’identification.
-1. Cliquez sur **Suivant** puis sur **Enregistrer l’API configurée**.
+1. Cliquez sur **Suivant**, puis sur **Enregistrer l’API configurée**.
 1. Notez les informations d’identification fournies, que vous utiliserez lors de la configuration de la connexion dans Workfront Fusion.
-1. Passez à [Transformer votre compte technique en administrateur dans Adobe Admin Console](#make-your-technical-account-an-admin-in-the-adobe-admin-console).
+1. Continuer vers [Faire de votre compte technique un administrateur dans le Adobe Admin Console](#make-your-technical-account-an-admin-in-the-adobe-admin-console).
 
 ### Transformer votre compte technique en administrateur dans Adobe Admin Console
 
@@ -107,13 +107,13 @@ Sur la page Adobe Admin Console , sélectionnez l’onglet Produits dans la barr
 
    Le compte technique est transformé en administrateur.
 
-1. Passez à [Création de la connexion dans Workfront Fusion](#create-the-connection-in-workfront-fusion).
+1. Continuer vers [Création de la connexion dans Workfront Fusion](#create-the-connection-in-workfront-fusion).
 
 ### Création de la connexion dans Workfront Fusion
 
 Pour créer une connexion pour vos modules [!DNL Adobe Storage] :
 
-1. Dans n’importe quel module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion .
+1. Dans un module, cliquez sur **[!UICONTROL Ajouter]** en regard de la zone Connexion.
 
 1. Remplissez les champs suivants :
 
@@ -134,15 +134,15 @@ Pour créer une connexion pour vos modules [!DNL Adobe Storage] :
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet de la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Adobe] [!UICONTROL Client ID]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet dans [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet de la [!DNL Adobe Developer Console].</td>
+        <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous trouverez cette information dans la section [!UICONTROL Credential details] du projet dans [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>Saisissez ou mappez votre ID d’organisation Adobe IMS. Il s’agit d’une chaîne avec le <code> 123abc@AdobeOrg</code> de formulaire, où la section avant le caractère @ est un nombre hexadécimal. Cette valeur figure dans le chemin d’URL de votre organisation dans Adobe Admin Console ou dans la console Adobe.IO pour votre intégration de la gestion des utilisateurs.</td>
+        <td>Saisissez ou mappez votre ID d’organisation Adobe IMS. Il s’agit d’une chaîne de la forme <code> 123abc@AdobeOrg</code>, où la section avant le caractère @ est un nombre hexadécimal. Cette valeur figure dans le chemin d’URL de votre organisation dans Adobe Admin Console ou dans la console Adobe.IO pour votre intégration de la gestion des utilisateurs.</td>
         </tr>
       </tbody>
     </table>
@@ -178,7 +178,7 @@ Ce module d’action met en place un nouveau magasin de gestion du stockage d’
  <tbody> 
   <tr> 
    <td role="rowheader">Connexion</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nom du projet</td> 
@@ -197,7 +197,7 @@ Ce module d’action supprime définitivement un magasin ESM existant et toutes 
  <tbody> 
   <tr> 
    <td role="rowheader">Connexion</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID de magasin</td> 
@@ -216,7 +216,7 @@ Ce module d’action marque un magasin EMS pour suppression, ce qui permet une p
  <tbody> 
   <tr> 
    <td role="rowheader">Connexion</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID de magasin</td> 
@@ -235,7 +235,7 @@ Ce module d’action récupère un magasin ESM supprimé précédemment et resta
  <tbody> 
   <tr> 
    <td role="rowheader">Connexion</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID de magasin</td> 
@@ -256,7 +256,7 @@ Ce module d&#39;action envoie une invitation afin d&#39;accorder à un nouvel ut
  <tbody> 
   <tr> 
    <td role="rowheader">Connexion</td> 
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adresse e-mail</td> 
@@ -329,7 +329,7 @@ Ce module d’action effectue une requête HTTP personnalisée à l’API de sto
   <tbody>
     <tr>
       <td role="rowheader">Connexion</td>
-   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Création d’une connexion au stockage Adobe</a> dans cet article.</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -366,4 +366,35 @@ Ce module d’action effectue une requête HTTP personnalisée à l’API de sto
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### Charger un fichier
+
+Ce module d’action charge un fichier dans le stockage Adobe en une seule étape. Il crée le fichier de destination, initialise le chargement, transfère le contenu du fichier par le biais d’une URL présignée et termine le chargement. Vous n’avez pas besoin de configurer des étapes de transfert et de finalisation distinctes.
+
+Le module prend en charge les fichiers volumineux.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connexion</td> 
+   <td>Pour obtenir des instructions sur la création d’une connexion au stockage Adobe, voir <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Créer une connexion au stockage Adobe</a> dans cet article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Projet</td> 
+   <td>Sélectionnez le projet contenant le dossier dans lequel vous souhaitez charger le fichier.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Dossier</td> 
+   <td>Sélectionnez le dossier dans lequel vous souhaitez charger le fichier. Pour charger le fichier à la racine du projet, sélectionnez <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fichier source</td> 
+   <td>Sélectionnez un fichier d’un module précédent ou mappez le nom, le contenu et le type de contenu du fichier.</td> 
+  </tr> 
+ </tbody> 
 </table>
