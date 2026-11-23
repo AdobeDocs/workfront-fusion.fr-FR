@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 22%
+source-wordcount: '1806'
+ht-degree: 20%
 ---
 # Modules Workfront Fusion
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
 
 ## Connexion de Workfront Fusion à Workfront Fusion
 
-1. Dans n’importe quel module Workfront Fusion, cliquez sur **[!UICONTROL Ajouter]** en regard du champ Connexion .
+1. Dans un module Workfront Fusion, cliquez sur **[!UICONTROL Ajouter]** en regard du champ Connexion .
 1. Remplissez les champs suivants :
 
    <table style="table-layout:auto"> 
@@ -70,15 +70,15 @@ Pour plus d’informations sur le contenu de ce tableau, consultez [Conditions d
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID]</td> 
-      <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le consulter dans la section des détails [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td> 
+      <td>Saisissez votre [!UICONTROL Client ID] [!DNL Adobe]. Vous pouvez le trouver dans la section des détails [!UICONTROL Credentials] de [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client Secret]</td> 
-      <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le consulter dans la section des détails [!UICONTROL Credentials] de la [!DNL Adobe Developer Console].</td> 
+      <td>Saisissez votre [!UICONTROL Client Secret] [!DNL Adobe]. Vous pouvez le trouver dans la section des détails [!UICONTROL Credentials] de [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Organization ID]</td> 
-      <td>Saisissez votre identifiant de l’organisation IMS [!DNL Adobe].</td> 
+      <td>Saisissez votre ID d’organisation IMS [!DNL Adobe].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Region]</td> 
@@ -97,9 +97,53 @@ Si le bouton « Mapper » apparaît au-dessus d’un champ ou d’une fonction
 
 ![Bouton (bascule) de mappage](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Déclencheurs](#triggers)
 * [Actions](#actions)
 * [Exporter](#export)
 * [Divers](#misc)
+
+### Déclencheurs
+
+* [Enregistrements de surveillance](#watch-records)
+
+#### Enregistrements de surveillance
+
+Ce module de déclenchement démarre un scénario lorsque des enregistrements Workfront Fusion sont créés, mis à jour, ou les deux. Vous pouvez utiliser des filtres pour vous concentrer sur les modifications qui importent à votre équipe, de sorte que vous n’ayez pas à vérifier Workfront Fusion manuellement.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Surveiller</td> 
+   <td>Sélectionnez le type de modification que le module doit surveiller.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type d'enregistrement</td> 
+   <td>Sélectionnez le type d’enregistrement à regarder : <b>Scénario</b> ou <b>Exécution</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Identifiant du scénario</td> 
+   <td><p>Si vous observez des exécutions, sélectionnez ou mappez le scénario pour lequel vous souhaitez observer des exécutions.</p><p>Ce champ est facultatif. Si vous le laissez vide, le module recherche des exécutions dans l’ensemble de l’organisation.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Afficher les exécutions de vérification</td> 
+   <td><p>Si vous surveillez l’exécution, indiquez si les résultats incluent les exécutions de vérification :</p><ul><li><b>Oui</b> : inclure les exécutions de vérification.</li><li><b>Non</b> : n’incluez pas les exécutions de vérification.</li><li><b>Non défini</b> : ne filtrez pas les résultats par exécutions de vérification.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtrage</td> 
+   <td>Sous <b>Propriété</b>, pour chaque filtre de propriété que vous souhaitez utiliser, cliquez sur <b>Ajouter un élément</b>, sélectionnez le champ et l’opérateur, puis saisissez ou mappez la valeur que vous souhaitez filtrer. Un champ de valeur s’affiche uniquement pour les opérateurs qui en ont besoin. Par exemple, un opérateur tel que <b>Exists</b> ne nécessite pas de valeur. Les filtres de propriété sont les mêmes pour les types d’enregistrements Scénario et Exécution .</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limite</td> 
+   <td>Saisissez ou mappez le nombre maximal de résultats avec lesquels Workfront Fusion fonctionne au cours d’un cycle d’exécution. La valeur par défaut est 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Actions
 
@@ -120,7 +164,7 @@ Ce module effectue une copie de l’enregistrement spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -147,7 +191,7 @@ Ce module crée un enregistrement avec les données spécifiées.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -174,7 +218,7 @@ Ce module supprime un enregistrement spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -197,7 +241,7 @@ Ce module renvoie une liste paginée d’enregistrements à l’aide d’une pag
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -240,7 +284,7 @@ Ce module récupère l’enregistrement spécifié
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -263,7 +307,7 @@ Met à jour un enregistrement spécifié.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -295,7 +339,7 @@ Ce module exporte les journaux d’activité.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type de fichier</td> 
@@ -334,10 +378,10 @@ Ce module exporte les plans directeurs de Fusion pour un ou plusieurs scénarios
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   <tr> 
    <td role="rowheader">Identifiants de scénario</td> 
-   <td>Pour chaque scénario que vous souhaitez exporter, cliquez sur <b>Ajouter un élément</b> et saisissez l’identifiant du scénario.</td> 
+   <td>Pour chaque scénario que vous souhaitez exporter, cliquez sur <b>Ajouter un élément</b> et saisissez l’ID de scénario.</td> 
   </tr> 
   </tr> 
  </tbody> 
@@ -360,7 +404,7 @@ Ce module renvoie des statistiques de file d’attente pour le hook spécifié :
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   <tr> 
    <td role="rowheader">ID de crochet</td> 
    <td> Saisissez ou mappez l’identifiant du hook pour lequel vous souhaitez renvoyer des détails.</td> 
@@ -378,7 +422,7 @@ Ce module récupère les dépendances de l’enregistrement.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
    <td> Sélectionnez le type d’enregistrement pour lequel vous souhaitez récupérer les dépendances. </td> 
@@ -401,7 +445,7 @@ Ce module identifie ce qui dépend d’une ressource donnée. Utilisez ce module
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Type d'enregistrement</td> 
@@ -428,7 +472,7 @@ Ce module renvoie une liste paginée de scénarios qui font référence à la co
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID de connexion</td> 
@@ -467,12 +511,7 @@ Ce module renvoie l’ID de région et d’organisation de chaque organisation F
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Pour plus d’informations sur la connexion de Workfront Fusion à Workfront Fusion, voir <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Pour obtenir des instructions sur la connexion de Workfront Fusion à Workfront Fusion, consultez <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connexion de Workfront Fusion à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
