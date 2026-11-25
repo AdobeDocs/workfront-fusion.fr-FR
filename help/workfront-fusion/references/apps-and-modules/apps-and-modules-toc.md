@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: 759bfd6f1cf59e597053db18c69f4aa724f60049
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 88%
+source-wordcount: '549'
+ht-degree: 87%
 ---
 # Références des applications Fusion et leurs modules : index des articles
 
@@ -32,7 +32,7 @@ ht-degree: 88%
 Ces connecteurs vous permettent de vous connecter à toute application ou à tout service web disposant d’une API publique.
 
 * [Module http > [!UICONTROL Effectuer une requête]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête JWT] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Effectuer une requête JWT]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de base]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une requête OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [Module [!UICONTROL HTTP] > [!UICONTROL Effectuer une demande d’autorisation de certificat client]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
@@ -59,6 +59,7 @@ Fusion propose des connecteurs pour de nombreux produits et services Adobe.
 * [Modules MCP Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
 * [Modules Adobe Express](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Modules audio et vidéo Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
+* [Modules MCP de production Adobe Firefly Creative](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md)
 * [Modules Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Modules Adobe Firefly Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Modules Adobe Frame.io Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
