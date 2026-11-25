@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
-ht-degree: 8%
+source-wordcount: '2153'
+ht-degree: 7%
 ---
 # Modules Adobe CX Enterprise Coworker
 
@@ -21,11 +21,9 @@ Utilisez le connecteur Adobe CX Enterprise Coworker dans Adobe Workfront Fusion 
 Le connecteur fournit deux modules :
 
 * **[!UICONTROL Exécuter une invite]** lance une nouvelle requête et, par défaut, attend le résultat.
-* **[!UICONTROL Obtenir le statut d’exécution]** vérifie une requête que vous avez démarrée précédemment.
+* **[!UICONTROL Obtenir le statut d&#39;exécution]** vérifie une requête que vous avez démarrée précédemment.
 
 ## Conditions d’accès
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ Développez pour afficher les exigences d’accès aux fonctionnalités de cet article.
 
@@ -116,7 +114,7 @@ Si vous ne pouvez pas vous connecter ou utiliser un service requis, contactez vo
 
 ### Obtenir le statut d’exécution
 
-Ce module d&#39;action vérifie l&#39;état actuel d&#39;une tâche démarrée par **[!UICONTROL Exécuter une invite]**.
+Ce module d&#39;action vérifie l&#39;état actuel d&#39;une tâche lancée par **[!UICONTROL Exécuter une invite]**.
 
 Ce module vérifie la tâche une fois. Elle ne démarre pas de nouvelle tâche et ne continue pas à vérifier jusqu’à ce que la tâche soit terminée. Si le résultat est toujours en attente, vérifiez à nouveau ultérieurement.
 
@@ -134,11 +132,11 @@ Ce module vérifie la tâche une fois. Elle ne démarre pas de nouvelle tâche e
   </tr> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Sélectionnez la même connexion que celle que vous avez utilisée lors de l’exécution d’origine <b>[!UICONTROL Run a Prompt]</b>.</p> </td> 
+   <td> <p>Sélectionnez la même connexion que celle que vous avez utilisée lors de l'exécution <b>[!UICONTROL Run a Prompt]</b> d'origine.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Task ID]</td> 
-   <td> <p>Mappez l’ID de tâche renvoyé par <b>[!UICONTROL Run a Prompt]</b>. Conservez-le sous forme de texte tel qu’il est renvoyé.</p> </td> 
+   <td> <p>Mappez l'ID de tâche renvoyé par <b>[!UICONTROL Run a Prompt]</b>. Conservez-le sous forme de texte tel qu’il est renvoyé.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -155,15 +153,19 @@ Chaque exécution envoie l’invite une fois et démarre une nouvelle conversati
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Sélectionnez la connexion de votre collègue. Pour plus d’informations, voir <a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">Connexion d’Adobe CX Enterprise Coworker à Workfront Fusion</a> dans cet article.</p> </td> 
+   <td> <p>Sélectionnez la connexion de votre collègue. Pour obtenir des instructions, consultez <a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">Connexion d’Adobe CX Enterprise Coworker à Workfront Fusion</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL User prompt]</td> 
    <td> <p>Saisissez vos instructions. Vous pouvez utiliser plusieurs lignes et mapper les informations des modules précédents.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Wait for completion] <i>(Optional, advanced)</i></td> 
-   <td> <p>Cette option est activée par défaut. Activez cette option si vous souhaitez que le module attende la fin de la tâche ou requiert une attention particulière. Désactivez-la pour renvoyer immédiatement le résultat initial.</p><p>Pour plus d’informations, voir <a href="#wait-for-completion">Attente de l’achèvement</a> dans cet article.</p> </td> 
+   <td>[!UICONTROL Attente d'achèvement] <i>(Facultatif, avancé)</i></td> 
+   <td> <p>Cette option est activée par défaut. Activez cette option si vous souhaitez que le module attende la fin de la tâche ou requiert une attention particulière. Désactivez-la pour renvoyer immédiatement le résultat initial.</p><p>Pour plus d’informations, voir <a href="#wait-for-completion">Attendre la fin</a> dans cet article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Confirmer toutes les actions de l’outil] <i>(Facultatif, avancé)</i></td> 
+   <td> <p>Cette option est désactivée par défaut. Activez cette option si vous souhaitez que Coworker approuve automatiquement les demandes d’autorisation d’outil prises en charge au cours de cette exécution. Les outils peuvent modifier ou supprimer des données.</p><p>Pour plus d’informations, voir <a href="#confirm-all-tool-actions">Confirmer toutes les actions de l’outil</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Include raw result] <i>(Facultatif, avancé)</i></td> 
@@ -174,19 +176,32 @@ Chaque exécution envoie l’invite une fois et démarre une nouvelle conversati
 
 >[!NOTE]
 >
-> Nous vous recommandons de ne pas indiquer **[!UICONTROL Inclure le résultat brut]** sauf si vous avez besoin de la réponse complète pour un objectif spécifique. Les résultats bruts peuvent contenir des informations sensibles et ne constituent pas un enregistrement complet garanti de chaque action. Vérifiez ce que contient un résultat brut avant de l’enregistrer, de le partager ou de le transmettre à un autre service.
+> Nous vous recommandons de laisser **[!UICONTROL Inclure le résultat brut]** désactivé, sauf si vous avez besoin de la réponse complète pour un objectif spécifique. Les résultats bruts peuvent contenir des informations sensibles et ne constituent pas un enregistrement complet garanti de chaque action. Vérifiez ce que contient un résultat brut avant de l’enregistrer, de le partager ou de le transmettre à un autre service.
 
 #### Attendre la fin
 
-Lorsque l’option **[!UICONTROL Attendre la fin]** est activée, le module vérifie la tâche après une attente de cinq secondes. Si la tâche est toujours en attente, le module attend encore cinq secondes avant de vérifier à nouveau. Chaque vérification prend également du temps pour recevoir une réponse. La vérification du statut n’envoie pas à nouveau l’invite.
+Lorsque **[!UICONTROL Attente d&#39;achèvement]** est activé, le module vérifie la tâche après une attente de cinq secondes. Si la tâche est toujours en attente, le module attend encore cinq secondes avant de vérifier à nouveau. Chaque vérification prend également du temps pour recevoir une réponse. La vérification du statut n’envoie pas à nouveau l’invite.
 
 L’attente s’arrête lorsque la tâche est terminée, échoue, est annulée ou rejetée, ou nécessite votre entrée ou votre autorisation. Si Coworker fournit une réponse immédiate, le module la renvoie sans autre vérification.
 
-Lorsque l’option **[!UICONTROL Attendre l’achèvement]** est désactivée, le module renvoie le premier résultat sans attendre que la tâche soit terminée. Inspectez **[!UICONTROL État]**, **[!UICONTROL Terminé]** et **[!UICONTROL Nécessite de l’attention]** pour décider de la marche à suivre. Une tâche peut déjà être terminée lorsque le premier résultat est obtenu.
+Lorsque l&#39;option **[!UICONTROL Attendre l&#39;achèvement]** est désactivée, le module renvoie le premier résultat sans attendre que la tâche soit terminée. Inspecter **[!UICONTROL État]**, **[!UICONTROL Terminé]** et **[!UICONTROL Nécessite une attention]** pour décider de la suite à donner. Une tâche peut déjà être terminée lorsque le premier résultat est obtenu.
 
 L’attente est soumise au délai d’expiration du module de Fusion. Si le module expire ou s’arrête, il se peut que Coworker continue à travailler. Dans ce cas, il se peut que vous ne receviez pas de sortie ni d’ID de tâche.
 
-Pour un travail plus long, désactivez l’attente et enregistrez le **[!UICONTROL ID de tâche]** initial afin de pouvoir vérifier la tâche ultérieurement. N’exécutez pas à nouveau automatiquement l’invite après une temporisation. La première requête est peut-être déjà en cours, et la répéter peut dupliquer les modifications.
+Pour un travail plus long, désactivez l’attente et enregistrez l’**[!UICONTROL ID de tâche]** initial afin de pouvoir vérifier la tâche ultérieurement. N’exécutez pas à nouveau automatiquement l’invite après une temporisation. La première requête est peut-être déjà en cours, et la répéter peut dupliquer les modifications.
+
+#### Confirmer toutes les actions d’outil
+
+Lorsque **[!UICONTROL Confirmer toutes les actions de l&#39;outil]** est activé, le module approuve automatiquement les demandes d&#39;autorisation d&#39;outil prises en charge pendant l&#39;exécution, jusqu&#39;à 20 cycles d&#39;approbation et 100 appels d&#39;outil. Cette option est désactivée par défaut.
+
+>[!WARNING]
+>
+>Les outils peuvent modifier ou supprimer des données. L’activation de cette option entraîne uniquement votre consentement pour cette exécution. Il ne s’agit pas d’une autorisation permanente.
+
+Les conditions suivantes s’appliquent :
+
+* Cette option nécessite **[!UICONTROL Attendre la fin]** et un flux d&#39;autorisations en direct compatible.
+* Les limites, les demandes relues, la connexion, les questions et autres approbations nécessitent une révision manuelle.
 
 
 ## Sortie de module
@@ -203,7 +218,7 @@ Les deux modules renvoient les informations suivantes lorsqu’ils se terminent 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Context ID]</td> 
-   <td> <p>Permet d’identifier la conversation. Ce n'est pas un moyen de poursuivre la conversation.</p><p>Pour plus d’informations, voir <a href="#use-previous-answers">Utiliser les réponses précédentes</a> dans cet article.</p> </td> 
+   <td> <p>Permet d’identifier la conversation. Ce n'est pas un moyen de poursuivre la conversation.</p><p>Pour plus d'informations, voir <a href="#use-previous-answers">Utiliser les réponses précédentes</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL State]</td> 
@@ -215,7 +230,7 @@ Les deux modules renvoient les informations suivantes lorsqu’ils se terminent 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Requires attention]</td> 
-   <td> <p>Vrai quand un collègue a besoin d'entrée ou d'autorisation.</p><p>Pour plus d’informations, voir <a href="#requests-that-need-attention">Demandes nécessitant une attention particulière</a> dans cet article.</p> </td> 
+   <td> <p>Vrai quand un collègue a besoin d'entrée ou d'autorisation.</p><p>Pour plus d'informations, voir <a href="#requests-that-need-attention">Demandes nécessitant une attention</a> dans cet article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Texte de l'assistant final]</td> 
@@ -232,13 +247,13 @@ Les deux modules renvoient les informations suivantes lorsqu’ils se terminent 
  </tbody> 
 </table>
 
-Utilisez **[!UICONTROL Texte d’assistant final]** pour la réponse au lieu de combiner tous les artefacts de texte. Les artefacts peuvent inclure des descriptions de progression ou tout autre texte intermédiaire.
+Utilisez **[!UICONTROL le texte de l&#39;assistant final]** pour la réponse au lieu de combiner tous les artefacts de texte. Les artefacts peuvent inclure des descriptions de progression ou tout autre texte intermédiaire.
 
 ### Demandes nécessitant une attention particulière
 
-Un collègue peut avoir besoin d’informations supplémentaires ou d’une autorisation avant de pouvoir continuer. Dans ce cas, la mention **[!UICONTROL Nécessite une attention]** est définie sur true et la mention **[!UICONTROL Terminé]** sur false. Acheminez le résultat à une personne au lieu de le traiter comme un travail terminé.
+Un collègue peut avoir besoin d’informations supplémentaires ou d’une autorisation avant de pouvoir continuer. Dans ce cas, **[!UICONTROL Nécessite une attention]** a la valeur true et **[!UICONTROL Terminé]** a la valeur false. Acheminez le résultat à une personne au lieu de le traiter comme un travail terminé.
 
-Ces modules ne peuvent pas répondre à une question de relance ni approuver une action en votre nom. **[!UICONTROL Obtenir le statut d’exécution]** peut vérifier si le statut de la tâche a changé, mais elle ne résout pas la demande d’entrée ou d’autorisation.
+Ces modules ne peuvent pas répondre à une question de relance ni approuver une action en votre nom, à l&#39;exception des demandes d&#39;autorisation d&#39;outil prises en charge que **[!UICONTROL Confirmer toutes les actions d&#39;outil]** approuve automatiquement. **[!UICONTROL Obtenir le statut d&#39;exécution]** peut vérifier si l&#39;état de la tâche a changé, mais elle ne résout pas la demande d&#39;entrée ou d&#39;autorisation.
 
 ### Utiliser les réponses précédentes
 
@@ -248,7 +263,7 @@ Chaque exécution **[!UICONTROL Exécuter une invite]** lance une nouvelle conve
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Terminé]** ne garantit pas que l’action commerciale demandée a réussi. Par exemple, un collègue peut terminer en expliquant qu’un outil requis n’est pas disponible. Examinez la réponse et vérifiez tout résultat requis avant de passer à l’action suivante.
+>**[!UICONTROL Terminé]** ne garantit pas que l&#39;action commerciale demandée a réussi. Par exemple, un collègue peut terminer en expliquant qu’un outil requis n’est pas disponible. Examinez la réponse et vérifiez tout résultat requis avant de passer à l’action suivante.
 
 ### États de la tâche
 
@@ -258,7 +273,7 @@ Chaque exécution **[!UICONTROL Exécuter une invite]** lance une nouvelle conve
  <tbody> 
   <tr> 
    <td role="rowheader"><code>submitted</code>, <code>working</code></td> 
-   <td> <p>La tâche est en attente. <b>[!UICONTROL Completed]</b> est faux. <b>[!UICONTROL Run a Prompt]</b> continue d'attendre lorsque l'attente est activée. Sinon, enregistrez l’ID de tâche et vérifiez ultérieurement.</p> </td> 
+   <td> <p>La tâche est en attente. <b>[!UICONTROL Completed]</b> a la valeur false. <b>[!UICONTROL Run a Prompt]</b> continue d'attendre lorsque l'attente est activée. Sinon, enregistrez l’ID de tâche et vérifiez ultérieurement.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>completed</code></td> 
@@ -266,7 +281,7 @@ Chaque exécution **[!UICONTROL Exécuter une invite]** lance une nouvelle conve
   </tr> 
   <tr> 
    <td role="rowheader"><code>input-required</code>, <code>auth-required</code></td> 
-   <td> <p>La tâche a besoin d'attention. <b>[!UICONTROL Completed]</b> est faux et <b>[!UICONTROL Requires attention]</b> est vrai. L'attente s'arrête. Acheminez le résultat pour examen humain.</p> </td> 
+   <td> <p>La tâche a besoin d'attention. <b>[!UICONTROL Completed]</b> a la valeur false et <b>[!UICONTROL Requires attention]</b> a la valeur true. L'attente s'arrête. Acheminez le résultat pour examen humain.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>failed</code>, <code>canceled</code>, <code>rejected</code></td> 
@@ -292,22 +307,22 @@ Un résultat en attente ou nécessitant votre attention n’est pas un achèveme
    The team will review the delivery estimate on Friday.
    ```
 
-1. Laissez **[!UICONTROL Attendre la fin]** activé et **[!UICONTROL Inclure le résultat brut]** désactivé.
-1. Si **[!UICONTROL Nécessite de l’attention]** est vrai, acheminez le résultat pour révision humaine. Si **[!UICONTROL Terminé]** est vrai, mappez **[!UICONTROL Texte de l’assistant final]** à l’étape suivante.
+1. Laissez **[!UICONTROL Attendre la fin]** le et **[!UICONTROL Inclure le résultat brut]** désactivé.
+1. Si **[!UICONTROL Nécessite une attention]** est vrai, acheminez le résultat pour révision humaine. Si **[!UICONTROL Terminé]** est vrai, mappez **[!UICONTROL Le texte de l&#39;assistant final]** à l&#39;étape suivante.
 
 Le libellé généré par l’IA peut varier. Examinez les résultats lorsque la précision est importante.
 
 ### Vérifier une tâche plus longue ultérieurement
 
-1. Ajoutez **[!UICONTROL Exécuter une invite]**, sélectionnez votre connexion et saisissez vos instructions.
-1. Désactivez **[!UICONTROL Attendre la fin]**.
+1. Ajoutez **[!UICONTROL Exécutez une invite]**, sélectionnez votre connexion et saisissez vos instructions.
+1. Désactiver **[!UICONTROL Attendre l&#39;achèvement]**.
 1. Inspectez le résultat initial.
 
    * Si la tâche est terminée, traitez le résultat.
    * Si la tâche nécessite une attention particulière, acheminez le résultat pour révision.
-   * Si la tâche est en attente, enregistrez le **[!UICONTROL Identifiant de tâche]** en tant que texte et notez la connexion que vous avez utilisée.
+   * Si la tâche est en attente, enregistrez le **[!UICONTROL ID de tâche]** en tant que texte et notez la connexion que vous avez utilisée.
 
-1. Ultérieurement, utilisez **[!UICONTROL Obtenir le statut d’exécution]** avec cette connexion et cet ID de tâche.
+1. Ultérieurement, utilisez **[!UICONTROL Obtenir le statut d&#39;exécution]** avec cette connexion et cet ID de tâche.
 1. Si la tâche est toujours en attente, organisez une autre vérification dans les limites de votre scénario. Traitez le résultat une fois que vous avez terminé et gérez l’attention ou les erreurs séparément.
 
 N’exécutez pas à nouveau l’invite d’origine simplement pour vérifier sa progression.
@@ -318,6 +333,7 @@ N’exécutez pas à nouveau l’invite d’origine simplement pour vérifier sa
 * Ces modules ne permettent pas de restreindre des outils individuels. Des instructions telles que « ne rien modifier » décrivent votre intention, mais il ne s’agit pas d’un mode de lecture seule appliqué.
 * Les outils et les compétences disponibles varient selon le compte. Le connecteur ne fournit pas de sélecteur de compétences ni ne garantit une action particulière, telle que la création d’un parcours ou la mise à jour d’un projet. Ne présumez pas que les demandes qui doivent être approuvées se termineront sans assistance.
 * Le connecteur démarre et vérifie les requêtes de collaborateur. Il ne surveille pas les modifications apportées au projet et n’enregistre pas automatiquement les réponses dans une autre application. Ajoutez le déclencheur, le stockage et les modules de suivi appropriés à votre scénario, si nécessaire.
+* Activer **[!UICONTROL Confirmer toutes les actions d&#39;outil]** uniquement pour les invites approuvées. Lorsque cette option est activée, Coworker approuve automatiquement les demandes d’autorisation d’outil prises en charge, et les outils peuvent modifier ou supprimer des données.
 * Les réponses générées par l’IA peuvent être incomplètes ou inexactes. Validez les résultats importants avant de les utiliser pour apporter des modifications ou prendre des décisions.
 * Le connecteur ne relance pas automatiquement une requête ayant échoué. Assurez-vous que la gestion des erreurs de votre scénario ne répète pas une invite dont le résultat est incertain.
 
@@ -341,7 +357,7 @@ N’exécutez pas à nouveau l’invite d’origine simplement pour vérifier sa
   </tr> 
   <tr> 
    <td role="rowheader">Échec de la vérification de l’état</td> 
-   <td> <p>Si l’erreur inclut l’ID de tâche accepté, utilisez <b>[!UICONTROL Get Execution Status]</b> pour rechercher cette tâche. Ne redémarrez pas automatiquement l’invite.</p> </td> 
+   <td> <p>Si l’erreur inclut l’ID de tâche accepté, utilisez <b>[!UICONTROL Get Execution Status]</b> pour examiner cette tâche. Ne redémarrez pas automatiquement l’invite.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">L’exécution d’une invite expire ou perd sa réponse</td> 
