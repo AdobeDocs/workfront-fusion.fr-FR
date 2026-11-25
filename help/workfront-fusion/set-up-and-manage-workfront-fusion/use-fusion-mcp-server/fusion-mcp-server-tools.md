@@ -1,9 +1,9 @@
 ---
 title: Outils de serveur MCP Adobe Workfront Fusion
 description: Liste de référence des outils que le serveur MCP Adobe Workfront Fusion expose aux plateformes d’IA et à Coworker.
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -20,8 +20,10 @@ L’agent agit dans Fusion à l’aide de votre Adobe ID, de votre rôle d’org
 
 Chaque outil est classé comme suit :
 
-* **Lecture** : récupère des informations sans rien modifier, comme répertorier les scénarios ou obtenir une exécution.
+* **Read** : récupère des informations sans rien modifier, comme répertorier les scénarios ou obtenir une exécution.
 * **Write** : crée, modifie, exécute ou supprime des données Fusion, telles que le clonage d’un scénario ou l’effacement d’une file d’attente webhook.
+
+Les propriétaires et les administrateurs de l’organisation peuvent autoriser ou désactiver les outils en lecture seule et les outils d’écriture pour l’ensemble de l’organisation. Les outils désactivés n’apparaissent pas dans la liste d’outils et Fusion les rejette si un agent les appelle. Ce paramètre limite uniquement les appels d’outil effectués via le serveur MCP Fusion officiel. Les actions que les utilisateurs effectuent dans l’interface utilisateur de Fusion, par le biais de l’API ou de toute autre intégration sont toujours contrôlées par les propres autorisations de chaque utilisateur dans Fusion. Pour plus d&#39;informations, consultez [Gérer les préférences MCP pour votre organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
 
 ## Outils d’organisation
 
@@ -73,21 +75,21 @@ Exemples d’invites :
 
 * _Quels scénarios actifs de l’équipe marketing n’ont pas été modifiés depuis 6 mois ?_
 * _Quelles connexions le scénario « Salesforce → Workfront sync » utilise-t-il ?_
-* _Clonez la « prise de lead » dans l’équipe des ventes et remplacez la connexion de Salesforce des ventes._
-* _Valider ce plan directeur avant de l’importer._
-* _Exécutez le « rapport nocturne » une fois et dites-moi s’il réussit._
+* _Clonez « l’entrée de lead » dans l’équipe des ventes et échangez dans la connexion de Salesforce des ventes._
+* _Validez ce plan directeur avant de l’importer._
+* _Exécutez le « rapport nocturne » une fois et dites-moi s&#39;il réussit._
 
 ### Versions du scénario
 
 | Outil | Nom | Action | Description |
 | --- | --- | --- | --- |
-| Liste des versions de scénario | `fusion_scenario_versions_list` | Lire | Répertorie les versions enregistrées d’un scénario. Filtrez par `version`, `createdAt`, `comment`. |
+| Liste des versions de scénario | `fusion_scenario_versions_list` | Lire | Répertorie les versions enregistrées d’un scénario. Filtrer par `version`, `createdAt`, `comment`. |
 | Obtenir la version du scénario | `fusion_scenario_versions_get` | Lire | Renvoie le plan directeur et les métadonnées d’une version spécifique. |
 | Créer une version de scénario | `fusion_scenario_versions_create` | Write | Publie un plan directeur en tant que nouvelle version de scénario, qui devient le plan directeur actif. Les versions antérieures sont conservées et la publication d’un plan directeur identique n’a aucun effet. |
 
 Exemples d’invites :
 
-* _Qu’est-ce qui a changé entre la version 12 et la version 14 de ce scénario ?_
+* _Qu&#39;est-ce qui a changé entre la version 12 et la version 14 de ce scénario ?_
 
 ### Dossiers
 
@@ -102,13 +104,13 @@ Exemples d’invites :
 
 | Outil | Nom | Action | Description |
 | --- | --- | --- | --- |
-| Liste des exécutions | `fusion_executions_list` | Lire | Répertorie les exécutions pour un scénario ou une exécution incomplète. Filtrez par `status` (par exemple, `status==3` pour les erreurs, `status==2` pour les avertissements), `timestamp`, `duration`, `bundles`, `operations`, `transfer`. Inclut éventuellement des exécutions de vérification. |
+| Liste des exécutions | `fusion_executions_list` | Lire | Répertorie les exécutions pour un scénario ou une exécution incomplète. Filtrer par `status` (par exemple `status==3` pour les erreurs, `status==2` pour les avertissements), `timestamp`, `duration`, `bundles`, `operations`, `transfer`. Inclut éventuellement des exécutions de vérification. |
 | Obtenir l’exécution | `fusion_executions_get` | Lire | Renvoie une seule exécution et des métadonnées sur son scénario ou une exécution incomplète. |
 
 Exemples d’invites :
 
-* _Afficher les exécutions ayant échoué de la « Synchronisation des factures » depuis hier et résumer les erreurs._
-* _Quelle exécution de ce scénario a utilisé le plus d’opérations cette semaine ?_
+* _Afficher les exécutions ayant échoué de la « synchronisation des factures » depuis hier et résumer les erreurs._
+* _Quelle exécution de ce scénario a utilisé le plus d&#39;opérations cette semaine ?_
 
 ## Outils d’exploitation (utilisation)
 
@@ -120,7 +122,7 @@ Exemples d’invites :
 Exemples d’invites :
 
 * _Les 10 principaux scénarios par opération le mois dernier._
-* _Combien d’opérations l’application Salesforce a-t-elle utilisées au T3 ?_
+* _Combien d&#39;opérations l&#39;application Salesforce a-t-elle utilisées au T3 ?_
 
 ## Outils de connexion et clés
 
@@ -128,16 +130,16 @@ Ces outils renvoient uniquement des métadonnées. Ils ne renvoient pas d’info
 
 | Outil | Nom | Action | Description |
 | --- | --- | --- | --- |
-| Rechercher des connexions | `fusion_connections_search` | Lire | Répertorie les connexions. Filtrez par `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
+| Rechercher des connexions | `fusion_connections_search` | Lire | Répertorie les connexions. Filtrer par `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Obtenir la connexion | `fusion_connections_get` | Lire | Renvoie les détails d’une seule connexion. |
 | Supprimer la connexion | `fusion_connections_delete` | Write | Supprime une connexion. Échoue si un webhook en dépend toujours. Les scénarios qui l’utilisent sont désolidarisés et ne bloquent pas la suppression. |
-| Clés de recherche | `fusion_keys_search` | Lire | Répertorie les clés. Filtrez par `name`, `typeName`, `teamId`. |
+| Clés de recherche | `fusion_keys_search` | Lire | Répertorie les clés. Filtrer par `name`, `typeName`, `teamId`. |
 | Obtenir la clé | `fusion_keys_get` | Lire | Renvoie les détails d’une seule clé. |
 | Supprimer la clé | `fusion_keys_delete` | Write | Supprime une clé. Les scénarios qui l’utilisent ne bloquent pas la suppression. |
 
 Exemples d’invites :
 
-* _Quelles connexions expirent au cours des 30 prochains jours et quels scénarios les utilisent ?_
+* _Quelles connexions expirent dans les 30 prochains jours et quels scénarios les utilisent ?_
 
 ## Outils Webhook
 
@@ -145,7 +147,7 @@ Exemples d’invites :
 
 | Outil | Nom | Action | Description |
 | --- | --- | --- | --- |
-| Répertorier les webhooks | `fusion_hooks_list` | Lire | Répertorie les Webhooks (hooks). Filtrez par `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached`, etc. |
+| Répertorier les webhooks | `fusion_hooks_list` | Lire | Répertorie les Webhooks (hooks). Filtrer par `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached` et plus encore. |
 | Obtenir webhook | `fusion_hooks_get` | Lire | Renvoie la configuration d’un webhook, la liaison du propriétaire et les références externes. |
 | Obtenir les dépendances webhook | `fusion_hooks_dependencies` | Lire | Répertorie la connexion, la structure de données et la clé référencée par un webhook. Exécutez-le avant le clonage. |
 | Cloner le webhook | `fusion_hooks_clone` | Write | Copie un webhook avec une nouvelle URL, éventuellement dans une autre équipe. Peut remplacer sa connexion, sa structure de données ou sa clé. |
@@ -159,12 +161,12 @@ Exemples d’invites :
 | Obtenir les statistiques sur la file d’attente | `fusion_queue_stats` | Lire | Renvoie le nombre d’événements en file d’attente, la limite de la file d’attente et si le webhook est activé. |
 | File d’attente de la liste | `fusion_queue_list` | Lire | Répertorie les événements webhook reçus en attente de traitement. |
 | Obtenir l’élément de file d’attente | `fusion_queue_get` | Lire | Retourne un seul événement en file d&#39;attente, incluant sa payload décodée. |
-| Supprimer les éléments de la file d’attente | `fusion_hook_queue_delete` | Write | Supprime les événements webhook mis en file d’attente par ID (jusqu’à 50), ou tous ceux-ci avec des exclusions facultatives. Le nom de l&#39;outil connecté est `fusion_hook_queue_delete` et ne correspond pas à l&#39;ancien nom de `fusion_queue_delete`. |
+| Supprimer les éléments de la file d’attente | `fusion_hook_queue_delete` | Write | Supprime les événements webhook mis en file d’attente par ID (jusqu’à 50), ou tous ceux-ci avec des exclusions facultatives. Le nom de l&#39;outil connecté est `fusion_hook_queue_delete` et ne correspond pas à l&#39;ancien nom `fusion_queue_delete`. |
 
 Exemples d’invites :
 
-* _Le webhook « Envois de formulaire » est-il en cours de sauvegarde ?_
-* _Afficher la payload de l’événement en file d’attente le plus ancien._
+* _Le webhook « Envois de formulaire » est-il en train de sauvegarder ?_
+* _Afficher la payload de l&#39;événement en file d&#39;attente le plus ancien._
 
 ## Stockage des données et outils de structure des données
 
@@ -177,26 +179,26 @@ Exemples d’invites :
 | Supprimer des enregistrements du magasin de données | `fusion_data_stores_data_delete` | Write | Supprime plusieurs enregistrements par clé, ou tous les enregistrements avec des exclusions facultatives. |
 | Supprimer l’enregistrement du magasin de données | `fusion_data_stores_data_key_delete` | Write | Supprime un enregistrement par clé. Y parvient même si la clé n’existe pas. |
 | Rechercher des magasins de données dépendants | `fusion_datastores_dependents` | Lire | Recherche les magasins de données qui utilisent une structure de données donnée. |
-| Rechercher des structures de données | `fusion_data_structures_search` | Lire | Répertorie les structures de données. Filtrez par `name`, `strict`, `teamId`. |
+| Rechercher des structures de données | `fusion_data_structures_search` | Lire | Répertorie les structures de données. Filtrer par `name`, `strict`, `teamId`. |
 | Obtenir la structure des données | `fusion_data_structures_get` | Lire | Renvoie une structure de données, y compris sa spécification de champ complète. |
 | Supprimer la structure de données | `fusion_data_structures_delete` | Write | Supprime une structure de données. Échoue si un magasin de données l’utilise toujours. |
 
 Exemples d’invites :
 
-* _Quelles banques de données sont saturées à plus de 80 % ?_
-* _Afficher les 20 premiers enregistrements dans le magasin de données « Carte client »._
+* _Quels magasins de données sont saturés à plus de 80 % ?_
+* _Afficher les 20 premiers enregistrements dans le magasin de données « Customer Map »._
 
 ## Outils du journal d’activité
 
 | Outil | Nom | Action | Description |
 | --- | --- | --- | --- |
-| Liste des logs d’activité | `fusion_activity_logs_list` | Lire | Répertorie les événements d’audit de l’organisation (qui a fait quoi, à quelle entité, quand). Filtrez par `entity` (par exemple `scenario`, `connection`, `webhook`, `data store`, `user`), `action` (par exemple `created`, `deleted`, `updated`, `transferred ownership`), utilisateur, équipe et date et heure. |
+| Liste des logs d’activité | `fusion_activity_logs_list` | Lire | Répertorie les événements d’audit de l’organisation (qui a fait quoi, à quelle entité, quand). Filtrer par `entity` (par exemple `scenario`, `connection`, `webhook`, `data store`, `user`), `action` (par exemple `created`, `deleted`, `updated`, `transferred ownership`), utilisateur, équipe et date et heure. |
 | Exporter les journaux d’activité | `fusion_activity_logs_export` | Lire | Exporte les logs d’activité au format CSV ou XLSX, avec les mêmes filtres. |
 
 Exemples d’invites :
 
-* _Qui a supprimé les scénarios au cours des 7 derniers jours ?_
-* _Exporter toutes les modifications de connexion de ce trimestre vers Excel._
+* _Qui a supprimé des scénarios au cours des 7 derniers jours ?_
+* _Exportez toutes les modifications de connexion de ce trimestre vers Excel._
 
 ## Commentaires
 
@@ -204,7 +206,7 @@ Exemples d’invites :
 | --- | --- | --- | --- |
 | Envoyer des commentaires | `fusion_feedback_submit` | Write | Envoie vos commentaires (bug, résultat incorrect, demande de fonctionnalité, éloge ou autre) à l’équipe Fusion. |
 
-## Collègue
+## Coworker
 
 Tous les outils de cet article sont disponibles dans Coworker, à la fois en mode autonome et dans le rail de droite de Fusion, sous réserve des mêmes paramètres de lecture/écriture et de vos autorisations.
 
