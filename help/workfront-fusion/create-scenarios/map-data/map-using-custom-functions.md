@@ -10,10 +10,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 15%
+source-wordcount: '930'
+ht-degree: 11%
 ---
 # Mappage de données à l’aide de fonctions personnalisées
 
@@ -25,7 +25,7 @@ Les fonctions personnalisées, comme la plupart des éléments de scénario, son
 
 Les fonctions sont de simples fonctions JavaScript. Pour inclure des variables ou des dépendances dans votre logique de fonction, utilisez des packages.
 
-Pour plus d’informations sur les packages, voir [&#x200B; Utilisation de packages de fonctions personnalisées &#x200B;](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+Pour plus d&#39;informations sur les packages, consultez [Utilisation de packages de fonctions personnalisées](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion inclut également des fonctions intégrées qui vous permettent de créer des formules simples ou complexes. Ces fonctions couvrent un large éventail de cas d’utilisation, y compris les fonctions pour les tableaux, les chaînes, les nombres et les données des modules précédents.
 
@@ -72,6 +72,7 @@ Vous pouvez créer une fonction personnalisée dans la zone Fonctions qui peut �
 Les fonctions personnalisées qui peuvent être utilisées dans plusieurs scénarios sont configurées dans la zone Fonctions de Workfront Fusion. Une fois qu’une fonction est configurée, vous pouvez l’ajouter à un scénario à l’aide du connecteur Adobe App Builder.
 
 * [Initialiser votre environnement d’exécution](#initialize-your-runtime-environment)
+* [Connecter un projet App Builder existant](#connect-an-existing-app-builder-project)
 * [Créez une fonction personnalisée dans la zone Fonctions](#create-a-custom-function-in-the-functions-area)
 
 #### Initialiser votre environnement d’exécution
@@ -84,12 +85,36 @@ Avant de pouvoir créer des fonctions personnalisées, vous devez initialiser vo
 >
 >Une fois l’initialisation terminée, tous les utilisateurs de l’équipe dans laquelle l’initialisation a été effectuée peuvent créer et utiliser des fonctions.
 
-1. Cliquez sur l’onglet **Fonctions** ![Icône Fonctions](assets/functions-icon.png) dans le panneau de gauche.
+1. Cliquez sur l’onglet **Fonctions** ![Icône de fonctions](assets/functions-icon.png) dans le panneau de gauche.
 
    Si vous n’avez pas encore configuré votre environnement d’exécution, le message « Environnement d’exécution non configuré » s’affiche.
 1. Cliquez sur **Initialiser l’exécution**.
 
    Au bout d’un certain temps, une liste de fonctions s’affiche, avec deux exemples de fonctions.
+
+#### Connecter un projet App Builder existant
+
+Lorsque Fusion crée le projet App Builder, il gère la configuration d’exécution pour vous. Si votre équipe dispose déjà d’un projet App Builder créé avant l’utilisation de Fusion, vous devez le connecter manuellement en créant une connexion App Builder qui utilise l’espace de noms et les informations d’identification d’exécution de ce projet. Vous n’avez pas besoin de recréer le projet.
+
+>[!NOTE]
+>
+>Les informations d’identification que vous saisissez dans Fusion sont des informations d’identification d’exécution. Il ne s’agit pas de vos informations de connexion à Adobe. Gardez sécurisé le fichier de configuration que vous téléchargez et ne partagez pas sa valeur `auth`.
+
+1. Dans Fusion, sélectionnez l’équipe qui a besoin de la connexion.
+1. Cliquez sur l’onglet **Connexions** dans le panneau de gauche, puis sur **Créer une connexion**.
+1. Sélectionnez **Adobe App Builder** comme type de connexion et saisissez un nom qui identifie le projet existant.
+1. Dans le [Adobe Developer Console](https://developer.adobe.com/console), ouvrez le projet existant, puis sélectionnez l’espace de travail auquel vous souhaitez vous connecter.
+1. Dans la présentation du projet, cliquez sur **Télécharger tout** pour télécharger le fichier JSON de configuration de l’espace de travail, puis ouvrez le fichier dans un éditeur de texte.
+1. Dans la section `runtime` du fichier, recherchez la valeur `namespace`. Dans Fusion, saisissez-le dans le champ **Espace de noms**.
+1. Dans la section `runtime`, recherchez la valeur `auth`. Il a le format `username:password`.
+
+   * Dans Fusion, saisissez la partie située avant le signe des deux-points dans le champ **Nom d’utilisateur**.
+   * Dans Fusion, saisissez la partie après le signe des deux-points dans le champ **Mot de passe**.
+
+1. Cliquez sur **Continuer** pour enregistrer la connexion.
+1. Revenez à l’onglet **Fonctions** dans Fusion et actualisez la page si nécessaire.
+
+Pour plus d’informations sur les champs de connexion, voir [Modules Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md#create-a-connection-to-adobe-app-builder).
 
 #### Créez une fonction personnalisée dans la zone Fonctions
 
@@ -97,20 +122,20 @@ Une fois votre environnement d’exécution configuré, vous pouvez commencer à
 
 >[!IMPORTANT]
 >
->* Votre fonction personnalisée **doit** doit être une fonction JavaScript.
->* Votre fonction personnalisée **obligatoire** renvoie un objet .
+>* Votre fonction personnalisée **doit** être une fonction JavaScript.
+>* Votre fonction personnalisée **doit** renvoyer un objet.
 >* Après avoir créé une fonction personnalisée, vous ne pouvez pas :
 >
 >   * Modifier son nom
 >   * Afficher les valeurs de paramètre par défaut
 
-1. Cliquez sur l’onglet **Fonctions** ![Icône Fonctions](assets/functions-icon.png) dans le panneau de gauche.
+1. Cliquez sur l’onglet **Fonctions** ![Icône de fonctions](assets/functions-icon.png) dans le panneau de gauche.
 1. Cliquez sur **Ajouter une fonction**.
 1. Saisissez le nom de la fonction personnalisée.
 
    Vous ne pourrez pas modifier ce nom ultérieurement.
 1. Saisissez le code de la fonction.
-1. Pour chaque valeur de paramètre par défaut à ajouter, cliquez sur **Ajouter un paramètre** et saisissez le nom du paramètre et sa valeur par défaut.
+1. Pour chaque valeur de paramètre par défaut que vous souhaitez ajouter, cliquez sur **Ajouter un paramètre** et saisissez le nom du paramètre et la valeur par défaut.
 
    Vous pouvez remplacer les paramètres par défaut lors de l’ajout de la fonction à un scénario.
 1. Cliquer sur **Enregistrer**.
@@ -119,11 +144,11 @@ Une fois votre environnement d’exécution configuré, vous pouvez commencer à
 
 Pour créer une fonction personnalisée dans un scénario, utilisez le module **Exécuter un bloc de code personnalisé** dans le connecteur Adobe App Builder.
 
-Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+Pour obtenir des instructions, voir [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
 
 ## Ajouter une fonction personnalisée à un scénario
 
 Pour ajouter une fonction personnalisée à un scénario, utilisez le connecteur Adobe App Builder.
 
-Pour obtenir des instructions, consultez [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+Pour obtenir des instructions, voir [Module Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
 

@@ -4,10 +4,10 @@ description: Le connecteur Adobe App Builder vous permet d’utiliser des foncti
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 18%
+source-wordcount: '787'
+ht-degree: 17%
 ---
 # Module Adobe App Builder
 
@@ -63,6 +63,8 @@ La connexion utilise les informations d’identification Adobe I/O Runtime d’u
    >Vous pouvez également rechercher l’espace de noms et les valeurs d’authentification en exécutant `aio runtime namespace get` ou `aio app use` dans l’interface de ligne de commande Adobe I/O.
 
 ### Créer la connexion
+
+Procédez comme suit pour connecter un projet App Builder qui existe déjà. Pour connaître les étapes d’utilisation de cette connexion afin de configurer des fonctions personnalisées dans Fusion, consultez [Connexion à un projet App Builder existant](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. Dans le module , cliquez sur **Ajouter** en regard du champ **Connexion**.
 1. Remplissez les champs suivants :
@@ -190,7 +192,7 @@ Pour obtenir des instructions sur la configuration d’une fonction personnalis�
    <td>Sélectionnez la fonction personnalisée que vous souhaitez exécuter.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paramètres  </td> 
+   <td role="rowheader">Paramètres [!UICONTROL] </td> 
    <td>Saisissez les valeurs des paramètres de la fonction. Les paramètres disponibles sont basés sur les paramètres configurés lors de la création de la fonction.<p>Si un paramètre possède une valeur par défaut, vous ne le verrez pas dans le champ, mais vous pouvez le remplacer en saisissant ou en mappant une valeur dans le champ.</p></td> 
   </tr> 
    </tbody> 
