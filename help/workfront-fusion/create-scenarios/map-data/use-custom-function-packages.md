@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2064'
 ht-degree: 6%
 ---
 
@@ -77,8 +77,10 @@ La première fois que votre équipe utilise cette fonctionnalité, vous devez co
 1. Sélectionnez le projet Adobe App Builder auquel ce package appartiendra :
 
    * Pour sélectionner un projet existant, commencez à saisir le nom du projet, puis sélectionnez-le lorsqu’il apparaît.
-   * Pour créer un projet, saisissez un nom qui n’existe pas déjà et cliquez sur **Créer**.
+   * Pour créer un projet, saisissez un nom qui n&#39;existe pas déjà et cliquez sur **Créer**.
    * Si vous laissez ce champ vide, Fusion utilise un projet par défaut.
+
+   Si un projet existant ne fonctionne pas avec **Initialiser l&#39;exécution**, connectez-le manuellement. Pour obtenir des instructions, voir [Connecter un projet App Builder existant](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. Sélectionnez **Continuer**.
 
@@ -86,11 +88,11 @@ La première fois que votre équipe utilise cette fonctionnalité, vous devez co
 
    Votre environnement s’affiche sous la forme d’un onglet de connexion en haut de la page.
 
-   ![Onglet Environnement comme connexion](assets/package-environment-as-connection.png)
+   ![Onglet Environnement en tant que connexion](assets/package-environment-as-connection.png)
 
 1. (Conditionnel) Pour ajouter un environnement supplémentaire, cliquez sur l’icône Plus et suivez les instructions de cette section.
 
-1. (Conditionnel) Pour supprimer un environnement existant, passez la souris sur l’onglet de connexion de l’environnement et cliquez sur **X** lorsqu’il apparaît.
+1. (Conditionnel) Pour supprimer un environnement existant, passez la souris sur l’onglet de connexion à l’environnement et cliquez sur **X** lorsqu’il apparaît.
 
    >[!WARNING]
    >
@@ -120,11 +122,11 @@ La première fois que votre équipe utilise cette fonctionnalité, vous devez co
 Un package ouvert est organisé en quatre zones :
 
 * **Fonctions** : créez, testez et publiez la fonction.
-* **Variables** : configurez les variables de la fonction.
+* **Variables** : configurez les variables pour la fonction.
 * **Dépendances** : installez des dépendances, telles que des bibliothèques externes, pour cette fonction.
-* **Historique** : affichez les versions antérieures de chaque fonction.
+* **Historique** : affichage des versions antérieures de chaque fonction.
 
-En plus de ces quatre zones, un compteur de stockage en haut indique la part de votre espace utilisée. Chaque package est limité à une taille totale de **21 Mo**. Cela inclut les fonctions, les variables et les dépendances, y compris les versions enregistrées.
+En plus de ces quatre zones, un compteur de stockage en haut indique la part de votre espace utilisée. Chaque package a une limite de taille totale de **21 Mo**. Cela inclut les fonctions, les variables et les dépendances, y compris les versions enregistrées.
 
 Si vous manquez d’espace, nous vous recommandons de supprimer les dépendances, variables ou versions antérieures inutilisées pour en libérer.
 
@@ -138,7 +140,7 @@ Pour revenir à la liste des packages, sélectionnez la flèche Précédent en r
 
 ### Fonctions
 
-La zone **Fonctions** affiche une liste des fonctions du package, y compris le nom de la fonction, son statut, sa taille et le nombre d’entrées attendu.
+La zone **Fonctions** affiche une liste de fonctions dans le package, y compris le nom de la fonction, son statut, sa taille et le nombre d’entrées attendu.
 
 * [Affichage et gestion de la liste des fonctions](#view-and-manage-the-functions-list)
 * [Créez ou modifiez une fonction dans la zone Packages](#create-or-edit-a-function-in-the-packages-area)
@@ -149,7 +151,7 @@ La zone **Fonctions** affiche une liste des fonctions du package, y compris le n
 
 Pour filtrer la liste Fonctions :
 
-1. Filtrez par statut en cliquant sur **Tous**, **Brouillons** ou **Publié**.
+1. Filtrez par statut en cliquant sur **Tous**, **Brouillons** ou **Publiés**.
 1. Utilisez la barre de recherche pour rechercher des fonctions spécifiques.
 
 Une fonction peut avoir le statut brouillon ou publié.
@@ -185,17 +187,17 @@ L’utilisation de brouillons permet d’apporter des modifications en toute sé
    * Vous pouvez lire les entrées que vous définissez, réutiliser vos variables et appeler vos autres fonctions.
    * Lorsque vous tapez, des suggestions s’affichent.
 
-1. Pour nettoyer le formatage des fonctions, cliquez sur **embellir**.
+1. Pour nettoyer le formatage des fonctions, cliquez sur **Embellir**.
 
 1. (Facultatif) Dans l’onglet **Paramètres**, définissez les entrées attendues par votre fonction.
 
    Pour plus d’informations sur les entrées, voir [Définir des entrées](#define-inputs) dans cet article.
 
-1. Dans l’onglet **Test**, testez votre fonction.
+1. Dans l&#39;onglet **Tester**, testez votre fonction.
 
    Pour obtenir des instructions, voir [Tester une fonction](#test-a-function) dans cet article.
 
-1. Pour enregistrer cette fonction en tant que brouillon, cliquez sur **Enregistrer en tant que brouillon**.
+1. Pour enregistrer cette fonction comme brouillon, cliquez sur **Enregistrer en tant que brouillon**.
 
    Ou
 
@@ -210,7 +212,7 @@ L’utilisation de brouillons permet d’apporter des modifications en toute sé
 
 ##### Définir les entrées
 
-Vous pouvez utiliser l’onglet **Paramètres** pour décrire les informations dont votre fonction a besoin à chaque exécution.
+Vous pouvez utiliser l&#39;onglet **Paramètres** pour décrire les informations dont votre fonction a besoin à chaque exécution.
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
 1. Dans la zone **Fonctions**, sélectionnez **Créer une fonction**.
@@ -219,13 +221,13 @@ Vous pouvez utiliser l’onglet **Paramètres** pour décrire les informations d
 
    Cochez la case en regard d’une fonction existante, puis sélectionnez **Modifier** dans la barre d’actions située au bas de la page.
 
-1. Cliquez sur l’onglet **Paramètres**.
+1. Cliquez sur l&#39;onglet **Paramètres**.
 
 1. Pour chaque paramètre à ajouter, cliquez sur **Ajouter un paramètre** et configurez les éléments suivants :
 
-* **Name** : nom de l’entrée
+* **Nom** : nom de l’entrée
 * **Libellé** : nom convivial affiché lorsque vous testez la fonction
-* **Type** : type de données, tel que du texte, un nombre, true/false ou un objet structuré.
+* **Type** : type de données, tel que texte, nombre, true/false ou objet structuré.
 * **Obligatoire** : indique si une valeur doit être fournie.
 
 Ces entrées deviennent les champs que vous renseignez lors du test et les valeurs que votre scénario transmet lorsqu’il exécute la fonction.
@@ -241,7 +243,7 @@ Nous vous recommandons de tester une fonction avant de la publier.
 
    Cochez la case en regard d’une fonction existante, puis sélectionnez **Modifier** dans la barre d’actions située au bas de la page.
 
-1. Cliquez sur l’onglet **Test**.
+1. Cliquez sur l&#39;onglet **Test**.
 
 1. Saisissez une valeur pour chaque entrée.
 
@@ -254,11 +256,11 @@ Nous vous recommandons de tester une fonction avant de la publier.
 
 >[!NOTE]
 >
->L’option **Exécuter publié** n’est disponible qu’après la publication d’une fonction.
+>L&#39;option **Exécuter publié** n&#39;est disponible qu&#39;après la publication d&#39;une fonction.
 
 #### Apporter des modifications à une fonction active
 
-Une fois la fonction publiée, le bouton **Publier** devient un menu :
+Une fois une fonction publiée, le bouton **Publier** devient un menu :
 
 * **Republier** — Poussez vos dernières modifications de brouillon vers la version active.
 * **Dépublier** — mettre la fonction hors service. Votre travail est conservé en tant que brouillon afin que vous puissiez y revenir.
@@ -328,7 +330,7 @@ Certaines fonctions nécessitent des bibliothèques supplémentaires pour faire 
 #### Suppression d’une bibliothèque
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
-1. Dans l’onglet **Dépendances**, cliquez sur l’icône **Supprimer** en regard de la bibliothèque à supprimer.
+1. Sur l’onglet **Dépendances**, cliquez sur l’icône **Supprimer** en regard de la bibliothèque que vous souhaitez supprimer.
 
 >[!WARNING]
 >
@@ -336,12 +338,12 @@ Certaines fonctions nécessitent des bibliothèques supplémentaires pour faire 
 
 ### Historique
 
-Chaque fois que vous enregistrez un brouillon d’une fonction, Fusion conserve une copie. L’onglet **Historique** vous permet d’afficher et de restaurer des versions antérieures.
+Chaque fois que vous enregistrez un brouillon d’une fonction, Fusion conserve une copie. L&#39;onglet **Historique** vous permet d&#39;afficher et de restaurer des versions antérieures.
 
 1. Cliquez sur l’onglet **Packages** ![Icône Packages](assets/packages-icon.png) dans le panneau de navigation de gauche.
-1. Dans l’onglet **Historique**, sélectionnez une fonction sur la gauche pour afficher d’abord ses versions enregistrées, la plus récente.
+1. Dans l’onglet **Historique**, sélectionnez une fonction sur la gauche pour afficher ses versions enregistrées, la plus récente en premier.
 1. Sélectionnez une version pour afficher exactement ce qu’elle contenait à ce moment.
-1. Pour restaurer une version, cliquez sur **Restaurer en tant que brouillon**.
+1. Pour restaurer une version, cliquez sur **Restaurer comme brouillon**.
 
    La version est restaurée en tant que nouveau brouillon, afin que vous puissiez la réviser et la tester avant de la publier. Votre version active reste en place jusqu’à la publication.
 1. Pour supprimer une version, sélectionnez-la, cliquez sur **Supprimer la version** et confirmez.
@@ -358,7 +360,7 @@ Chaque fois que vous enregistrez un brouillon d’une fonction, Fusion conserve 
 L’objectif de la création de fonctions et de variables est de les mettre à profit dans vos scénarios. Pour utiliser des fonctions et des variables, utilisez le connecteur **Adobe App Builder**.
 
 * **Utiliser la fonction à partir du package** : ce module exécute l’une de vos fonctions en tant qu’étape d’un scénario. Choisissez le package et la fonction, renseignez les entrées que vous avez définies, et le résultat de la fonction est transmis aux modules qui suivent.
-* **Utiliser la variable du package** : ce module intègre l’une de vos variables de package dans un scénario afin que vous puissiez mapper sa valeur à d’autres modules.
+* **Utiliser la variable du package** : ce module apporte l’une de vos variables de package dans un scénario afin que vous puissiez mapper sa valeur dans d’autres modules.
 
 Pour obtenir des informations et des instructions, voir [Modules Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
 

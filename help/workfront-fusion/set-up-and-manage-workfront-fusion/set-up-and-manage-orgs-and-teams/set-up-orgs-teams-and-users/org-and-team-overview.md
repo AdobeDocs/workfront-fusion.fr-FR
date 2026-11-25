@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 39%
@@ -89,8 +89,6 @@ Un utilisateur ou une utilisatrice possède l’un des rôles suivants dans chac
 Pour plus d’informations sur les actions spécifiques dont les utilisateurs et les utilisatrices disposent dans chaque rôle d’équipe, voir [Rôles d’organisation et d’équipe](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
 ### Rôles d&#39;équipe personnalisés
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 Outre les rôles d&#39;équipe prédéfinis, chaque équipe comporte un onglet **[!UICONTROL Rôles]** dans lequel vous pouvez créer vos propres rôles. Vous pouvez créer, mettre à jour et supprimer des rôles, et choisir exactement les autorisations incluses par chaque rôle. Vous n’êtes plus limité à un ensemble fixe de rôles.
 
