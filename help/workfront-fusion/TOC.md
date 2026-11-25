@@ -3,9 +3,9 @@ user-guide-title: Documentation d’Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilisez les documents, tutoriels et autres ressources pour apprendre à mettre en œuvre et utiliser efficacement Adobe Workfront Fusion dans votre organisation.
 nudge: true
-source-git-commit: 9df7ab4710dd5b0edc55dc2f640861bda4a173bc
+source-git-commit: 759bfd6f1cf59e597053db18c69f4aa724f60049
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2859'
 ht-degree: 46%
 ---
 
@@ -424,6 +424,7 @@ ht-degree: 46%
       * [Modules MCP Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
       * [Modules Adobe Express](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
       * [Modules audio et vidéo Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
+      * [Modules MCP de production Adobe Firefly Creative](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md)
       * [Modules Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
       * [Modules Adobe Firefly Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
       * [Modules Adobe Frame.io Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
